@@ -4,7 +4,7 @@ As with the previous version of the Fluff and Logic redesign, the goal is contin
 not on selling myself, but trying to connect with what issues potential employees / clients might be having, and
 helping them solve them.
 
-In addition, I'm using a more Product Design (instead of Graphics Design) focused approach to the website, including using tools like Lean Business Canvas, Value Propisition Canvas, and trying to understand the Product (me) -> Market (potential employer) fit.
+In addition, I'm using a more Product Design (instead of Graphics Design) focused approach to the website, including using tools like **Lean Business Canvas[https://medium.com/@steve_mullen/an-introduction-to-lean-canvas-5c17c469d3e0]**, **Value Proposition Canvas[https://strategyzer.com/canvas/value-proposition-canvas]**, and trying to understand the **Product (me) -> Market (potential employer)** fit.
 
 ## This is an alpha version
 A lot of pieces are still missing, including:
