@@ -2,6 +2,10 @@
   "name": "fluffnlogic",
   "version": "1.0.0",
   "description": "Fluff and Logic npm repo",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/metaninja/fluffandlogic-design.git",
+  },
   "main": "index.php",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
