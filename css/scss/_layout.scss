@@ -9,11 +9,10 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  font: var(--font-brand);
-  text-transform: uppercase;
+  font: 16px/14px var(--title-font);
 }
 .site-header__title a {
-  color: var(--brand-gray900);
+  color: var(--brand-primary);
 }
 .site-header__links,
 .site-footer__links {
