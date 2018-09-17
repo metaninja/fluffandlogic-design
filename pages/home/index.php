@@ -48,10 +48,14 @@
     <div class="page-footer center bg-gray">
         <h2>The Bottom Line?</h2>
         <p>
-            In a recent study, design-lead companies outperformed the competition by as much as <strong>228%</strong>.
+            In a recent study, design-lead companies outperformed<br> the competition by as much as <strong>228%</strong>.
         </p>
-        <div style="background-color: white; width: 80%; height: 450px; margin: auto; margin-bottom: 64px; box-shadow: 0 3px 6px rgba(0,0,0,.1)"></div>
+        <div class="placeholder-graph"></div>
 
-        <button class="btn-page-footer">Next: What is Design Thinking?</button>
+        <a href="/pages/what/" class="btn-page-footer">Next: What is Design Thinking?</a>
+
     </div>
+
+
+    <p>&nbsp;</p>
 </div>

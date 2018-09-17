@@ -5,6 +5,7 @@
   --brand-gray800: #4E4E4E;
   --brand-gray900: #3B3B3B;
   --brand-primary: #5F41EC;
+  --brand-primary-shadow: #5F41EC33;
   --body-font: 'Avenir Book', Arial, sans-serif;
   --strong-font: 'Avenir Heavy', Arial, sans-serif;
   --title-font: 'Merriweather', Arial, sans-serif;
@@ -97,7 +98,7 @@ html, body {
     grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end: 2;
-    margin-bottom: 160px; }
+    margin-bottom: 100px; }
   .home .page-hero-text {
     grid-column-start: 2;
     grid-column-end: 4;
@@ -147,7 +148,7 @@ h2 {
 
 h3 {
   font: var(--font-display3);
-  padding: 32px 0;
+  padding: 32px 0 16px 0;
   margin: 0; }
 
 p {
@@ -186,18 +187,27 @@ strong {
   background-color: var(--brand-gray100); }
 
 .btn-page-footer {
-  display: flex;
+  margin: 40px auto -160px auto;
+  padding: 32px 64px;
+  width: 350px;
+  display: block;
   align-items: center;
   justify-content: center;
   border-radius: var(--border-radius1);
   background-color: var(--brand-primary);
+  box-shadow: 0 8px 20px var(--brand-primary-shadow);
+  font-family: var(--strong-font);
   font-size: 20px;
   text-transform: uppercase;
+  color: white; }
+
+.placeholder-graph {
+  background-color: white;
+  width: 80%;
+  height: 450px;
   margin: auto;
-  padding: 32px 64px;
-  color: white;
-  margin-top: 40px;
-  margin-bottom: -120px; }
+  margin-bottom: 64px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); }
 
 .placeholder {
   background-color: var(--brand-gray100);
@@ -236,13 +246,16 @@ strong {
 .site-header__links li,
 .site-footer__links li {
   padding: 0;
-  margin-right: 20px;
+  margin-right: 48px;
   font-size: 16px; }
 
 .site-header__links li a {
   display: block;
-  color: var(--brand-gray900);
+  color: var(--brand-gray700);
   font-family: var(--body-font); }
+
+.site-header__links li a:hover {
+  color: var(--brand-gray900); }
 
 .site-footer__links li a {
   font-family: var(--strong-font); }
@@ -250,7 +263,6 @@ strong {
 .page-hero-text-subtitle {
   display: block;
   font: normal 24px/32px var(--strong-font);
-  color: var(--brand-gray700);
-  margin-bottom: 16px; }
+  margin-bottom: 8px; }
 
 /*# sourceMappingURL=main.css.map */
