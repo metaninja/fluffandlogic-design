@@ -1,0 +1,154 @@
+// Global / Site grid
+html,body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+
+.site-container {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: 1fr minmax(0, 600px) minmax(0, 600px) 1fr;
+  grid-template-rows: 100px 1fr 100px;
+
+}
+.site-header {
+  display: flex;
+  flex-direction: row;
+
+  grid-column-start: 2;
+  grid-column-end: 4;
+
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.site-body {
+  grid-column-start: 2;
+  grid-column-end: 4;
+
+  grid-row-start: 2;
+  grid-row-end: 3;
+
+  padding-bottom: 200px;
+}
+.site-footer-left-blank,
+.site-footer-right-blank,
+.site-footer-left,
+.site-footer-right {
+  height: 100px;
+}
+
+.site-footer-left-blank {
+  grid-column-start: 1;
+  grid-column-end: 2;
+
+  grid-row-start: 6;
+  grid-row-end: 6;
+}
+.site-footer-right-blank {
+  grid-column-start: 4;
+  grid-column-end: 5;
+
+  grid-row-start: 6;
+  grid-row-end: 6;
+}
+
+.site-footer-left {
+  grid-column-start: 2;
+  grid-column-end: 3;
+
+  grid-row-start: 6;
+  grid-row-end: 6;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.site-footer-right {
+  grid-column-start: 3;
+  grid-column-end: 4;
+
+  grid-row-start: 6;
+  grid-row-end: 6;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+// Grid for home page
+.home {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-gap: 0 64px;
+
+  .page-hero-image {
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+    grid-row-start: 2;
+    grid-row-end: 2;
+
+    margin-bottom: 160px;
+  }
+  .page-hero-text {
+    grid-column-start: 2;
+    grid-column-end: 4;
+
+    grid-row-start: 2;
+    grid-row-end: 2;
+  }
+  .page-body-one {
+    grid-column-start: 1;
+    grid-column-end: 4;
+
+    grid-row-start: 3;
+    grid-row-end: 3;
+
+    margin-bottom: 100px;
+  }
+  .page-body-two {
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+    grid-row-start: 4;
+    grid-row-end: 4;
+
+    margin-bottom: 100px;
+  }
+  .page-body-three {
+    grid-column-start: 2;
+    grid-column-end: 4;
+
+    grid-row-start: 4;
+    grid-row-end: 4;
+
+    margin-bottom: 100px;
+  }
+  .page-footer {
+    grid-column-start: 1;
+    grid-column-end: 4;
+
+    grid-row-start: 5;
+    grid-row-end: 5;
+
+    padding: 80px 80px 80px 80px;
+
+    p {
+      font: 28px/40px var(--body-font);
+    }
+
+
+  }
+
+}
+
+
