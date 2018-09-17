@@ -133,25 +133,26 @@ html,body {
 
     margin-bottom: 100px;
   }
-  .page-footer {
-    grid-column-start: 1;
-    grid-column-end: 4;
-
-    grid-row-start: 5;
-    grid-row-end: 5;
-
-    padding: 80px 80px 80px 80px;
-
-    p {
-      font: 28px/40px var(--body-font);
-    }
-
-
-  }
 
 }
 
-.page-what {
+.page-footer {
+  grid-column-start: 1;
+  grid-column-end: 4;
+
+  grid-row-start: 5;
+  grid-row-end: 5;
+
+  padding: 80px 80px 80px 80px;
+
+  p {
+    font: 28px/40px var(--body-font);
+  }
+}
+
+.page-what,
+.page-why,
+.page-who {
   grid-column-start: 2;
   grid-column-end: 4;
 }

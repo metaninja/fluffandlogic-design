@@ -122,16 +122,19 @@ html, body {
     grid-row-start: 4;
     grid-row-end: 4;
     margin-bottom: 100px; }
-  .home .page-footer {
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 5;
-    grid-row-end: 5;
-    padding: 80px 80px 80px 80px; }
-    .home .page-footer p {
-      font: 28px/40px var(--body-font); }
 
-.page-what {
+.page-footer {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 5;
+  grid-row-end: 5;
+  padding: 80px 80px 80px 80px; }
+  .page-footer p {
+    font: 28px/40px var(--body-font); }
+
+.page-what,
+.page-why,
+.page-who {
   grid-column-start: 2;
   grid-column-end: 4; }
 
@@ -197,6 +200,9 @@ strong {
 
 .bg-gray {
   background-color: var(--brand-gray100); }
+
+.intro {
+  font: 24px/32px var(--strong-font); }
 
 .btn-page-footer {
   margin: 40px auto -160px auto;
@@ -321,5 +327,12 @@ body {
   font-family: var(--strong-font);
   left: 140px;
   top: -24px; }
+
+.page-why .page-hero {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 100px; }
 
 /*# sourceMappingURL=main.css.map */
