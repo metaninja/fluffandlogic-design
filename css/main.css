@@ -131,8 +131,15 @@ html, body {
     .home .page-footer p {
       font: 28px/40px var(--body-font); }
 
+.page-what {
+  grid-column-start: 2;
+  grid-column-end: 4; }
+
+* {
+  box-sizing: border-box; }
+
 body {
-  font: 16px/24px var(--body-font);
+  font: 20px/32px var(--body-font);
   color: var(--brand-gray700); }
 
 h1,
@@ -160,7 +167,8 @@ a {
   color: var(--brand-primary); }
 
 strong {
-  font-family: var(--strong-font); }
+  font-family: var(--strong-font);
+  color: var(--brand-gray900); }
 
 .left {
   text-align: left; }
@@ -183,13 +191,17 @@ strong {
   display: flex;
   flex-direction: row; }
 
+.two-col {
+  column-count: 2;
+  column-gap: 64px; }
+
 .bg-gray {
   background-color: var(--brand-gray100); }
 
 .btn-page-footer {
   margin: 40px auto -160px auto;
-  padding: 32px 64px;
-  width: 350px;
+  padding: 32px;
+  width: 430px;
   display: block;
   align-items: center;
   justify-content: center;
@@ -199,7 +211,8 @@ strong {
   font-family: var(--strong-font);
   font-size: 20px;
   text-transform: uppercase;
-  color: white; }
+  color: white;
+  text-align: center; }
 
 .placeholder-graph {
   background-color: white;
@@ -257,6 +270,10 @@ strong {
 .site-header__links li a:hover {
   color: var(--brand-gray900); }
 
+.site-header__links li a.active {
+  color: var(--brand-gray900);
+  font-family: var(--strong-font); }
+
 .site-footer__links li a {
   font-family: var(--strong-font); }
 
@@ -264,5 +281,45 @@ strong {
   display: block;
   font: normal 24px/32px var(--strong-font);
   margin-bottom: 8px; }
+
+.page-steps {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  margin: 32px 0;
+  padding: 0; }
+
+.page-steps li {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  margin-right: 7%;
+  margin-bottom: 64px;
+  position: relative; }
+
+.page-steps li .placeholder-icon {
+  margin-bottom: 24px; }
+
+body {
+  counter-reset: page-steps; }
+
+.page-steps li:before {
+  counter-increment: page-steps;
+  content: counter(page-steps);
+  border-radius: 24px;
+  width: 48px;
+  height: 48px;
+  background: var(--brand-gray700);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  font-size: 24px;
+  font-family: var(--strong-font);
+  left: 140px;
+  top: -24px; }
 
 /*# sourceMappingURL=main.css.map */
