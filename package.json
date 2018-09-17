@@ -4,7 +4,7 @@
   "description": "Fluff and Logic npm repo",
   "repository": {
     "type": "git",
-    "url": "https://github.com/metaninja/fluffandlogic-design.git",
+    "url": "https://github.com/metaninja/fluffandlogic-design.git"
   },
   "main": "index.php",
   "scripts": {
