@@ -1,6 +1,6 @@
 <div class="site-body home">
     <div class="page-hero-image">
-        <div class="placeholder" style="width: 650px; height: 400px; margin-left: -100px;"></div>
+        <img src="images/turbocharge.svg" style="width: auto; min-width: 600px; height: auto;">
     </div>
 
     <div class="page-hero-text">
@@ -52,7 +52,7 @@
         </p>
         <div class="placeholder-graph"></div>
 
-        <a href="/pages/what/" class="btn-page-footer">Next: What is Design Thinking?</a>
+        <a href="/pages/why/" class="btn-page-footer">Next: Why Design Thinking?</a>
 
     </div>
 

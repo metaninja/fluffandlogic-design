@@ -53,7 +53,7 @@
 
     <p>&nbsp;</p>
 
-    <div class="page-footer center bg-gray">
+    <div class="page-footer center bg-gray" style="margin-bottom: 10rem;">
         <h2>Saving Time With Design Thinking</h2>
 
         <p>
@@ -63,8 +63,8 @@
 
         </p>
 
-        <a href="/pages/where/" class="btn-page-footer">
-            Next: Design Thinking In Action
+        <a href="/pages/what/" class="btn-page-footer">
+            Next: What Is Design Thinking?
         </a>
 
     </div>

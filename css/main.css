@@ -30,7 +30,7 @@ html, body {
   display: grid;
   width: 100%;
   height: 100%;
-  grid-template-columns: 1fr minmax(0, 600px) minmax(0, 600px) 1fr;
+  grid-template-columns: minmax(20px, 1fr) minmax(0, 600px) minmax(0, 600px) minmax(20px, 1fr);
   grid-template-rows: 100px 1fr 100px; }
 
 .site-header {
@@ -57,20 +57,20 @@ html, body {
 .site-footer-left-blank {
   grid-column-start: 1;
   grid-column-end: 2;
-  grid-row-start: 6;
-  grid-row-end: 6; }
+  grid-row-start: 3;
+  grid-row-end: 4; }
 
 .site-footer-right-blank {
   grid-column-start: 4;
   grid-column-end: 5;
-  grid-row-start: 6;
-  grid-row-end: 6; }
+  grid-row-start: 3;
+  grid-row-end: 4; }
 
 .site-footer-left {
   grid-column-start: 2;
   grid-column-end: 3;
-  grid-row-start: 6;
-  grid-row-end: 6;
+  grid-row-start: 3;
+  grid-row-end: 4;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -79,8 +79,8 @@ html, body {
 .site-footer-right {
   grid-column-start: 3;
   grid-column-end: 4;
-  grid-row-start: 6;
-  grid-row-end: 6;
+  grid-row-start: 3;
+  grid-row-end: 4;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -99,6 +99,10 @@ html, body {
     grid-row-start: 2;
     grid-row-end: 2;
     margin-bottom: 100px; }
+  .home .page-hero-image .placeholder {
+    width: 650px;
+    height: 400px;
+    margin-left: -100px; }
   .home .page-hero-text {
     grid-column-start: 2;
     grid-column-end: 4;
@@ -137,6 +141,36 @@ html, body {
 .page-who {
   grid-column-start: 2;
   grid-column-end: 4; }
+
+@media screen and (max-width: 1235px) {
+  .home {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 0; }
+    .home .page-hero-image,
+    .home .page-hero-text,
+    .home .page-body-one,
+    .home .page-body-two,
+    .home .page-body-three,
+    .home .page-footer {
+      grid-column-start: auto;
+      grid-column-end: auto;
+      grid-row-start: auto;
+      grid-row-end: auto;
+      margin-bottom: 0;
+      justify-content: center;
+      text-align: center; }
+    .home .page-body-one,
+    .home .page-body-two,
+    .home .page-body-three {
+      margin-bottom: 3rem; }
+    .home .page-hero-image .placeholder {
+      margin: auto; }
+  .horizontal {
+    flex-wrap: wrap;
+    flex-direction: column; }
+  .placeholder-icon {
+    margin: auto !important; } }
 
 * {
   box-sizing: border-box; }

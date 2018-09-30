@@ -51,18 +51,11 @@
 
     <div class="two-col">
         <p>
-            What we’ve found from user interviews and extensive user testing is that, users have a difficult time expressing
-            the problem; they can describe the symptoms of the problem, but without observing them in action, taking that as a
-            feature list is putting band aid on the customer’s problem rather than digging into the root of the problem and
-            fixing it.
+            What we’ve found from user interviews and extensive user testing is that, users can only tell us what they <em>think</em> the problem is;
+            if we stop there and develop a solution based on that conversation, it's like putting a band aid on an infection. You've temporarily healed
+            some of the symptoms, but the source of the problem is still there, and continues to grow.
         </p>
 
-        <p>
-            What we’ve found from user interviews and extensive user testing is that, users have a difficult time expressing
-            the problem; they can describe the symptoms of the problem, but without observing them in action, taking that as a
-            feature list is putting band aid on the customer’s problem rather than digging into the root of the problem and
-            fixing it.
-        </p>
     </div>
 
     <p>&nbsp;</p>
@@ -70,15 +63,14 @@
     <h3>Enter Design Thinking</h3>
 
     <p>
-        With Design Thinking, the Product team is responsible for talking to the customer. But instead of asking for a
-        list of features to build, the team asks the customer to explain step-by-step what they’re doing currently that’s so
-        problematic and ideally capture the customer’s emotions and thought process at each step. The team then goes back
-        and analyzes the customer journey, surfaces opportunities and pain points.
+        To understand the real problem, we have to dig deeper. We have to listen to the user to understand what their pain points are,
+        develop a hypothesis that we can build into a solution, and then measure the user's response using usability testing and analytics
+        to validate and iterate on that solution.
     </p>
 
     <p style="height: 80px;">&nbsp;</p>
 
-    <a href="/pages/why/" class="btn-page-footer" style="margin: 0">Next: Why Design Thinking?</a>
+    <a href="/pages/who/" class="btn-page-footer" style="margin: 0">Next: About Me</a>
 
     <p style="height: 160px;">&nbsp;</p>
 

@@ -36,9 +36,9 @@
             <h1 class="site-header__title"><a href="/">Fluff and Logic</a></h1>
             <ul class="site-header__links">
                 <li><a href="/" <?php echo isSiteLinkActive('home') ?>>Home</a></li>
-                <li><a href="/pages/what/" <?php isSiteLinkActive('what') ?>>What</a></li>
                 <li><a href="/pages/why/" <?php isSiteLinkActive('why') ?>>Why</a></li>
-                <li><a href="/pages/where/" <?php isSiteLinkActive('where') ?>>Where</a></li>
+                <li><a href="/pages/what/" <?php isSiteLinkActive('what') ?>>What</a></li>
+                <!-- <li><a href="/pages/where/" <?php isSiteLinkActive('where') ?>>Where</a></li> -->
                 <li><a href="/pages/who/" <?php isSiteLinkActive('who') ?>>Who</a></li>
             </ul>
         </nav>
