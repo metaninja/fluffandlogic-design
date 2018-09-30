@@ -25,11 +25,8 @@ html,body {
   grid-row-end: 2;
 }
 .site-body {
-  grid-column-start: 2;
-  grid-column-end: 4;
-
-  grid-row-start: 2;
-  grid-row-end: 3;
+  grid-column: 2 / 4;
+  grid-row: 2 / 3;
 
   padding-bottom: 200px;
 }
@@ -41,26 +38,17 @@ html,body {
 }
 
 .site-footer-left-blank {
-  grid-column-start: 1;
-  grid-column-end: 2;
-
-  grid-row-start: 3;
-  grid-row-end: 4;
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
 }
 .site-footer-right-blank {
-  grid-column-start: 4;
-  grid-column-end: 5;
-
-  grid-row-start: 3;
-  grid-row-end: 4;
+  grid-column: 4 / 5;
+  grid-row: 3 / 4;
 }
 
 .site-footer-left {
-  grid-column-start: 2;
-  grid-column-end: 3;
-
-  grid-row-start: 3;
-  grid-row-end: 4;
+  grid-column: 2 / 3;
+  grid-row-start: 3 / 4;
 
   display: flex;
   flex-direction: row;
@@ -98,11 +86,13 @@ html,body {
 
     margin-bottom: 100px;
   }
-  .page-hero-image .placeholder {
-    width: 650px;
-    height: 400px;
-    margin-left: -100px;
+  .page-hero-image img {
+    width: auto;
+    min-width: 600px;
+    height: auto;
+    margin-left: -5%;
   }
+
   .page-hero-text {
     grid-column-start: 2;
     grid-column-end: 4;
@@ -147,18 +137,17 @@ html,body {
   grid-row-start: 5;
   grid-row-end: 5;
 
-  padding: 80px 80px 80px 80px;
+  padding: 10%;
 
   p {
-    font: 28px/40px var(--body-font);
+    font: 20px/32px var(--body-font);
   }
 }
 
 .page-what,
 .page-why,
 .page-who {
-  grid-column-start: 2;
-  grid-column-end: 4;
+  grid-column: 2 / 4;
 }
 
 @media screen and (max-width: 1235px) {
@@ -199,6 +188,40 @@ html,body {
   .placeholder-icon {
     margin: auto !important;
   }
+}
 
+@media screen and (max-width: 800px) {
+  .site-header {
+    flex-direction: column;
+  }
+
+  .site-header__title,
+  .site-header__links{
+    margin: auto;
+  }
+
+  .home .page-hero-image img {
+    min-width: 100%;
+    width: 100%;
+    height: auto;
+  }
+
+  .page-what,
+  .page-why,
+  .page-who {
+    text-align: center;
+  }
+
+  .site-footer-left,
+  .site-footer-right {
+    grid-column: 1 / 5;
+    grid-row: auto;
+    justify-content: center;
+  }
+
+  .site-footer-left-blank,
+  .site-footer-right-blank {
+    display: none;
+  }
 }
 

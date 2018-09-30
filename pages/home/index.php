@@ -1,6 +1,6 @@
 <div class="site-body home">
     <div class="page-hero-image">
-        <img src="images/turbocharge.svg" style="width: auto; min-width: 600px; height: auto;">
+        <img src="images/turbocharge.svg">
     </div>
 
     <div class="page-hero-text">

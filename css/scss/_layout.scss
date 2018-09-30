@@ -97,3 +97,29 @@ body {
   justify-content: space-between;
   margin-bottom: 100px;
 }
+
+@media screen and (max-width: 800px) {
+  .page-why .page-hero {
+    flex-direction: column;
+  }
+
+  .page-steps {
+    flex-flow: column;
+    justify-content: center;
+  }
+  .page-steps li {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+  }
+  .page-steps li:before {
+    left: calc(50% - 24px);
+  }
+  .placeholder-icon {
+    margin-bottom: 24px !important;
+  }
+  .placeholder-graph {
+    width: 100%;
+  }
+}
