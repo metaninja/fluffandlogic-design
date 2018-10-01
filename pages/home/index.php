@@ -1,106 +1,61 @@
-    <header class="page-header">
-        <div class="section-content">
-            <div class="page-header__text">
-                <h2 class="page-header__title">
-                    <strong>Supercharge</strong> your
-                    product development with
-                    <strong>Design Thinking.</strong>
-                </h2>
-                <p class="page-header__desc">
-                    Design thinking is a way to solve problems by supercharging
-                    the most powerful tool in your company:
-                    <strong>your product team</strong>.
-                </p>
-            </div>
-            <div class="page-header__image">
-            </div>
-        </div>
-    </header>
+<div class="site-body home">
+    <div class="page-hero-image">
+        <img src="images/turbocharge.svg">
+    </div>
 
-    <section class="page-section page-section--home1">
-        <div class="section-content">
-            <div class="page-section__figure">
-                <div class="page-section__figure-circle page-section__figure-circle-home1"></div>
-            </div>
+    <div class="page-hero-text">
+        <h1>
+            <span class="page-hero-text-subtitle">
+                Supercharge your product team with
+            </span>
+            Design Thinking
+        </h1>
+    </div>
 
-            <div class="page-section__text">
-                <h2 class="page-section__title">
-                    Reduce Barriers To Collaboration.
-                </h2>
-                <p class="page-section__desc">
-                    Most companies struggle with getting their teams to work together because of
-                    silos imposed by traditional development techniques wasting time and money.
-                    Design thinking helps your teams work across silos and come together
-                    with a singular objective.
-                </p>
+    <div class="page-body-one">
+        <div class="horizontal flex-center">
+            <object class="placeholder-icon" style="margin-right: 64px;"></object>
+
+            <div class="vertical">
+                <h3>Reduce barriers to collaboration</h3>
+
+                <p>Most companies struggle with getting their teams to work together because of silos imposed by traditional
+                development techniques wasting time and money. Design thinking helps your teams work across silos and come
+                together with a singular objective.</p>
             </div>
         </div>
-    </section>
+    </div>
 
-    <section class="page-section page-section--home2">
-        <div class="section-content">
-            <div class="page-section__text">
-                <h2 class="page-section__title">
-                    Build The Right Product.
-                </h2>
-                <p class="page-section__desc">
-                    Take the guess work out of the traditional software development life cycle.
-                    Ensure product-market fit to make sure your team is solving for the right problem.
-                </p>
-            </div>
+    <div class="page-body-two">
+        <object class="placeholder-icon"></object>
+        <h3>Build the right product</h3>
+        <p>
+            Take the guess work out of the traditional software development life cycle. Ensure product-market fit to
+            make sure your team is solving for the right problem.
+        </p>
+    </div>
 
-            <div class="page-section__figure">
-                <div class="page-section__figure-circle page-section__figure-circle-home2"></div>
-            </div>
-        </div>
-    </section>
+    <div class="page-body-three">
+        <object class="placeholder-icon"></object>
+        <h3>Speed time to market</h3>
+        <p>
+            Stop wasting your team’s time. Validate your ideas early and often so your developers can build with
+            confidence.
+        </p>
 
-    <section class="page-section page-section--home3">
-        <div class="section-content">
-            <div class="page-section__figure">
-                <div class="page-section__figure-circle page-section__figure-circle-home3"></div>
-            </div>
+    </div>
 
-            <div class="page-section__text">
-                <h2 class="page-section__title">
-                    Speed Time To Market.
-                </h2>
-                <p class="page-section__desc">
-                    Stop wasting your team’s time. Validate your ideas early and often so your
-                    developers can build with confidence.
-                </p>
-            </div>
-        </div>
-    </section>
+    <div class="page-footer center bg-gray">
+        <h2>The Bottom Line?</h2>
+        <p>
+            In a recent study, design-lead companies outperformed<br> the competition by as much as <strong>228%</strong>.
+        </p>
+        <div class="placeholder-graph"></div>
 
-    <section class="page-section page-section--home4">
-        <div class="section-content">
-            <div class="page-section__text">
-                <h2 class="page-section__title">
-                    The Bottom Line?
-                </h2>
-                <p class="page-section__desc">
-                    In a recent study, design-lead companies outperformed
-                    the competition by as much as 228%.
-                    [link to report]
-                </p>
-            </div>
+        <a href="/pages/why/" class="btn-page-footer">Next: Why Design Thinking?</a>
 
-            <div class="page-section__figure">
-
-            </div>
-        </div>
-    </section>
-
-    <section class="page-body__conclusion">
-        <div class="section-content">
-            <p>&nbsp;</p>
-        </div>
-    </section>
+    </div>
 
 
-    <section class="page-footer page-footer--home">
-            <a href="/pages/what/" class="page-footer__link">
-                Learn more about Design Thinking
-            </a>
-    </section>
+    <p>&nbsp;</p>
+</div>
