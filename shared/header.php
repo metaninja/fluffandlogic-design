@@ -4,7 +4,7 @@
         global $currentSitePage;
 
         if ($link === $GLOBALS['currentSitePage']) {
-        echo 'class="active" ';
+            echo 'class="active" ';
         }
         else {
             echo 'class="'.$currentSitePage.'" ';
@@ -33,9 +33,11 @@
     <main>
 
         <header>
-            <h1>
-                <a href="/">Fluff and Logic</a>
-            </h1>
+            <a href="/">
+                <h1 class="brand">
+                    Fluff and Logic
+                </h1>
+            </a>
 
             <nav>
                 <ul>

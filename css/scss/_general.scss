@@ -12,28 +12,28 @@ html,body {
 
 body {
   counter-reset: page-steps;
-  font: 20px/28px var(--body-font);
+  font: 20px/24px var(--body-font);
   color: var(--brand-gray700);
 }
 
-h1,
-h2,
-h3 {
-  color: var(--brand-gray900);
-}
-
 h1 {
-  font: var(--font-brand);
+  text-indent: -9999px;
+  width: 144px;
+  height: 17px;
+  margin: 0 0 12px 0;
+  background: url(../images/v2/logo-fluff-logic.svg) no-repeat left top;
 }
 
 h2 {
   font: var(--font-display2);
+  line-height: 1;
+  margin: 0;
 }
 
 h3 {
   font: var(--font-display3);
   padding: 0;
-  margin: 0;
+  line-height: 1;
 }
 
 p {
@@ -41,12 +41,26 @@ p {
   line-height: 1.6;
 }
 
-a {
-  text-decoration: none;
-  color: var(--brand-primary);
+header .brand {
+  text-indent: -9999px;
+  width: 144px;
+  height: 17px;
+
 }
 
-strong {
-  font-family: var(--strong-font);
-  color: var(--brand-gray900);
+header ul,
+footer ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+}
+header nav ul li {
+  font-size: 16px;
+  margin-right: 24px;
+}
+header nav a {
+  text-decoration: none;
+  color: var(--brand-gray100);
 }

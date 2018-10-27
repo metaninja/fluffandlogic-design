@@ -9,6 +9,9 @@
                     <li><a href="https://behance.net/metaninja">Behance</a></li>
                 </ul>
             </section>
+            <section class="footnote">
+                Photo by Nikita Katsevich on Unsplash
+            </section>
         </footer>
     </main>
 
