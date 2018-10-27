@@ -1,6 +1,0 @@
-{
-  "Import Name": "Carriers",
-  "Import Icon": "linearicon-cloud linearicon-2x",
-  "Import Redirect": "/app/pages/carriers/",
-  "Import Table": "app/pages/carriers/bulk/table.html"
-}
