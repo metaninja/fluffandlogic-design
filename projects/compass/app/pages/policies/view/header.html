@@ -1,0 +1,32 @@
+<div class="ez-page-header">
+    <div class="row">
+        <div class="col-lg-6 ez-page-title">
+            <span class="ez-page-title-icon">
+                <i class="linearicon-document linearicon-2x"></i>
+            </span>
+
+            <h1 class="h1">
+                <span class="subtitle"><a href="#app/pages/policies/matched/index.html">Policies &raquo; </a>Policy Details</span>
+                Policy 304570
+            </h1>
+        </div>
+    </div>
+
+    <div class="tabs">
+        <a href="#/app/pages/policies/view/" class="tab-link">Summary</a>
+        <a href="#/app/pages/policies/view/details/" class="tab-link">Details</a>
+    </div>
+</div>
+
+
+<script>
+    $(function() {
+        var page = $(".ez-page-header").parent().data("page");
+        
+        if (page === "summary") {
+            $(".tab-link").eq(0).addClass("active");
+        } else if (page === "details") {
+            $(".tab-link").eq(1).addClass("active");
+        }
+    });
+</script>

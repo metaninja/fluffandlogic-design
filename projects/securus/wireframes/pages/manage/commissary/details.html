@@ -1,0 +1,107 @@
+<div class="panel-call-details log-details" style="padding-top: 12px;">
+
+    <div class="panel-body">
+        <ul class="nav nav-tabs">
+            <li class="active">
+                <a href="#call-details" data-toggle="tab">Details</a>
+            </li>
+            <li class="pull-right">
+                <a class="btn btn-link btn-print"> <i class="fa fa-print fa-lg"></i>&nbsp; Print</a>
+            </li>
+        </ul>
+
+        <div class="tab-content right-panel-style">
+
+            <div id="call-details" class="tab-pane active right-panel-content">
+
+                <div class="commissary-detail">
+
+                    <h4 class="settings-headline">
+                        <a data-toggle="collapse" href="#inmate-name">
+                            <!--<i class="fa fa-inmate heading-icon"></i>-->
+                            Manuel Snyder
+                            <div class="pull-right">
+                                <span class="toggle-hide"></span>
+                                <span class="toggle-show"></span>
+                            </div>
+                        </a>
+                    </h4>
+
+                    <div class="collapse in" id="inmate-name">
+
+                        <table class="table table-condensed table-panel">
+                            <tbody>
+                            <tr>
+                                <td>ID</td>
+                                <td>123488234</td>
+                            </tr>
+                            <tr>
+                                <td>Date:</td>
+                                <td>9-01-2013 09:18:12</td>
+                            </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+
+                    <h4 class="settings-headline">
+                        <a data-toggle="collapse" href="#commissary-products">
+                            <!--<i class="fa fa-shopping-cart heading-icon"></i>-->
+                            Ordered Products
+                            <div class="pull-right">
+                                <span class="toggle-hide"></span>
+                                <span class="toggle-show"></span>
+                            </div>
+                        </a>
+                    </h4>
+
+                    <div class="collapse in" id="commissary-products">
+
+                        <table class="table table-condensed table-hover table-panel commissary-shopping-cart">
+                            <tbody>
+                            <tr>
+                                <td></td>
+                                <td>Price</td>
+                                <td>Qty</td>
+                            </tr>
+                            <tr>
+                                <td>Lays Chips</td>
+                                <td>$1.75</td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td>Skittles</td>
+                                <td>$1.25</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>Deodorant</td>
+                                <td>$4.00</td>
+                                <td>1</td>
+                            </tr>
+                            <tr class="success">
+                                <td>Total</td>
+                                <td>$14.00</td>
+                                <td></td>
+                            </tr>
+                            </tbody>
+                        </table>
+
+                        <a class="btn btn-success-outline confirm-order">
+                            <span class="confirm-order-content">Confirm Order</span>
+                            <span class="order-confirmed-content"><i class="fa fa-check"></i> Order Confirmed</span>
+                        </a><span class="text-muted confirmed-date hide" style="margin-left: 15px;">12-1-2013 16:30</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script type="text/javascript" src="../js/wireframes/pages/manage/commissary/details.js"></script>

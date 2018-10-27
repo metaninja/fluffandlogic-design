@@ -1,0 +1,110 @@
+<style>
+    .tasks>.task>.activityItem:before {
+        content: initial;
+    }
+</style>
+
+<div class="design-container">
+    <div class="design-leftnav">
+        <div class="bff-include" data-src="app/shared/leftnav.html"></div>
+    </div>
+    <div class="design-content">
+        <header class="design-page-header">
+            <h1>Expandable Header</h1>
+        </header>
+        <section class="design-page-content">
+
+            <div class="taskList"> 
+                <div id="" class=""> 
+                    <div class="" onclick="toggleAccordion()"> 
+                        <h4 class="taskSectionHeader">Title 
+                            <span>(1)</span> 
+                            <i class="icon-chevron-up"></i> 
+                        </h4> 
+                        <ol class="tasks"> 
+                            <li class="task" style="display: block;">
+                                <div class="activityItem">
+                                    <div class="noteOptions">
+                                        <button type="button" class="btn btn-link editTask" title="Edit this task">
+                                            <i class="icon-wrench"></i>
+                                        </button>
+                                    </div>
+                                    <span><a title="View this applicant">Paul Walker</a> - </span>
+                                    <div class="taskDescription">Campaign (Copy (2/7/2013) of EZLynx Template Base) ends on this date.</div>
+                                    
+                                    <span class="noteModified" title="Last modified">
+                                        5/3/14 7:01 AM
+                                    </span>
+                                    <small class="noteFooter">
+                                        <span title="Task is assigned to this user" class="assignee">
+                                            Task assigned to Commercial Download
+                                        </span>
+                                        <span title="Task due date" class="dueDate">
+                                            Due on 
+                                            May 5, 2014
+                                        </span>
+                                    </small>
+                                </div>
+                            </li>
+                        </ol> 
+                    </div>
+                </div>
+            </div>
+
+            <pre><code class="html">
+&lt;div class="taskList"&gt; 
+    &lt;div id="" class=""&gt; 
+        &lt;div class=""&gt; 
+            &lt;h4 class="taskSectionHeader"&gt;Title 
+                &lt;span&gt;(1)&lt;/span&gt; 
+                &lt;i class="icon-chevron-up"&gt;&lt;/i&gt; 
+            &lt;/h4&gt; 
+            &lt;ol class="tasks"&gt; 
+                &lt;li class="task" style="display: block;"&gt;
+                    &lt;!-- Content goes here. --&gt;
+                    &lt;div class="activityItem"&gt;
+                        &lt;div class="noteOptions"&gt;
+                            &lt;button type="button" class="btn btn-link editTask" title="Edit this task"&gt;
+                                &lt;i class="icon-wrench"&gt;&lt;/i&gt;
+                            &lt;/button&gt;
+                        &lt;/div&gt;
+                        &lt;span&gt;&lt;a title="View this applicant"&gt;Paul Walker&lt;/a&gt; - &lt;/span&gt;
+                        &lt;div class="taskDescription"&gt;Campaign (Copy (2/7/2013) of EZLynx Template Base) ends on this date.&lt;/div&gt;
+                        
+                        &lt;span class="noteModified" title="Last modified"&gt;
+                            5/3/14 7:01 AM
+                        &lt;/span&gt;
+                        &lt;small class="noteFooter"&gt;
+                            &lt;span title="Task is assigned to this user" class="assignee"&gt;
+                                Task assigned to Commercial Download
+                            &lt;/span&gt;
+                            &lt;span title="Task due date" class="dueDate"&gt;
+                                Due on 
+                                May 5, 2014
+                            &lt;/span&gt;
+                        &lt;/small&gt;
+                    &lt;/div&gt;
+                &lt;/li&gt;
+            &lt;/ol&gt; 
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+            </code></pre>
+        </section>
+    </div>
+</div>
+
+<script>
+    function toggleAccordion() {
+        var $task = $('.task'),
+            $arrow = $('.taskSectionHeader i');
+
+        $task.toggle();
+
+        $arrow.toggleClass('icon-chevron-up')
+              .toggleClass('icon-chevron-down');
+
+    }
+</script>
+
+<div class="bff-script" data-src="app/shared/activate-highlight.js"></div>

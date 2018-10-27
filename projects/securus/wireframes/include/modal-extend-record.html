@@ -1,0 +1,48 @@
+<!-- begin: Extend Time modal -->
+<div class="modal fade" id="extendtimeModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+            <div class="modal-header modal-primary">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <div class="modal-title">
+                    Extend Time
+                </div>
+            </div>
+            <div class="modal-body">
+                <p>The file will be saved in the system until 5/01/2014. To save the file for an additional number of days from that point, please select an option below:</p>
+
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="extendTimeRadios" id="extendTime30" value="30" checked>30 days
+                        <span class="disabled">(until 5/31/2014)</span>
+                    </label>
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="extendTimeRadios" id="extendTime60" value="60">60 days
+                        <span class="disabled">(until 6/29/2014)</span>
+                    </label>
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="extendTimeRadios" id="extendTime90" value="90">90 days
+                        <span class="disabled">(until 7/28/2014)</span>
+                    </label>
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="extendTimeRadios" id="extendTimeContract" value="life of contract">Life of Contract
+                    </label>
+                </div>
+                <div class="alert alert-danger">
+                    <strong>WARNING!</strong>You can only extend the time once.
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href class="btn btn-link" data-dismiss="modal">Cancel</a>
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Extend Time</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end: Extend time modal -->

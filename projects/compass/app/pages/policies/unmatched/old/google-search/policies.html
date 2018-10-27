@@ -1,0 +1,98 @@
+    <form class="js-policy-search">
+        <div class="search-form my-2">
+            <div class="input-group">
+                <input type="text" class="form-control form-control-lg" id="filter-user" placeholder="Type something" aria-label="Type something">
+                <span class="input-group-btn">
+                  <button class="btn btn-primary btn-lg px-4 js-btn-policy-search" type="button"><i class="linearicon-magnifier"></i></button>
+                </span>
+            </div>
+        </div>
+    </form>
+
+    <label class="block text-muted js-search-suggestions px-3">
+        <strong>Suggestions:</strong><br>
+        only commercial auto<br>
+        all lobs in texas <br>
+        all dwelling + fire <br>
+    </label>
+
+
+<div class="results-summary">
+    <div class="results-count">
+        47 unmatched policies found
+    </div>
+
+    <div class="results-actions">
+        <a href="#/app/pages/policies/unmatched/old/smart-matching/" class="btn-link mr-4 results-action"><strong>Smart Matching</strong></a>
+        <a href="#/app/pages/policies/unmatched/" class="btn-link mr-4 results-action"><strong>Find Agencies</strong></a>
+
+        <a href="javascript:void(0);" class="btn-link mr-4 results-action">Export to Excel</a>
+        <a href="javascript:void(0);" class="btn-link mr-4 results-action">Edit Columns</a>
+    </div>
+</div>
+
+
+
+<div id="policies" class="my-3">
+</div>
+
+<div class="bff-include pagination m-3" data-src="app/shared/pagination.html"></div>
+
+
+<script>
+    $('#policies').hide();
+    $('.pagination').hide();
+    $('.results-summary').hide();
+    $('.agencies-list').hide();
+
+    $('.js-policy-search').submit(function() {
+        location.hash = "#/app/pages/policies/unmatched/index.html";
+    });
+
+    $('.js-btn-policy-search').click(function() {
+        location.hash = "#/app/pages/policies/unmatched/index.html";
+    });
+
+</script>
+
+<script id="policies-template" type="x-handlebars-template">
+    {{#policies}}
+    <div class="px-2 py-1 border-bottom-gray">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-6">
+                        <label class="h5 px-2"><input type="checkbox"> {{Customer}}</label>
+                    </div>
+                    <div class="col-md-6 text-right">
+                        <a href="javascript:void(0);"  class="btn btn-outline-primary my-1">View</a>
+                        <a href="javascript:void(0);"  class="btn btn-outline-primary my-1">Merge</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row px-2 py-1">
+                    <div class="col-md-6">Carrier</div>
+                    <div class="col-md-6">{{Carrier}}</div>
+                </div>
+                <div class="row px-2 py-1">
+                    <div class="col-md-6">Policy #</div>
+                    <div class="col-md-6">{{Policy}}</div>
+                </div>
+                <div class="row px-2 py-1">
+                    <div class="col-md-6">LOB</div>
+                    <div class="col-md-6">{{LOB}}</div>
+                </div>
+                <div class="row px-2 py-1">
+                    <div class="col-md-6">Effective Date</div>
+                    <div class="col-md-6">{{EffectiveDate}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{/policies}}
+</script>
+
+<div class="bff-script" data-src="app/pages/policies/unmatched/google-search/policies.js"></div>

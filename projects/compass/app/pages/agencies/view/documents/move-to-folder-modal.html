@@ -1,0 +1,48 @@
+<div class="modal fade" id="move-to-folder-modal" tabindex="-1" role="dialog" aria-labelledby="move-to-folder-modal-title">
+    <div class="modal-dialog modal-success" role="document">
+        <div class="modal-content">
+            <div class="modal-header clearfix">
+                <h5 class="modal-title" id="bulk-add-users-modal-title">Move To Folder</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <i class="linearicon-cross2" aria-hidden="true"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+
+                <div class="card" style="height: 40vh; overflow-y: scroll;">
+                    <div class="card-body">
+                        <div id="folder-hierarchy">
+                            <ul>
+                                <li>Root node 1
+                                    <ul>
+                                        <li>Child node 1</li>
+                                        <li>Child node 2</li>
+                                    </ul>
+                                </li>
+                                <li>Root node 1
+                                    <ul>
+                                        <li>Child node 1</li>
+                                        <li>Child node 2</li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-success btn-upload" data-dismiss="modal">Move</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function() {
+       $('#folder-hierarchy').jstree();
+    });
+</script>

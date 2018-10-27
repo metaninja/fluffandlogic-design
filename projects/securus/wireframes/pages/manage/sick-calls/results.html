@@ -1,0 +1,117 @@
+<style>
+    .table-sickcalls .days {
+        text-align: center;
+    }
+    .table-sickcalls .date {
+        text-align: left;
+    }
+</style>
+
+<table class="table table-hover table-sickcalls table-data">
+    <thead>
+    <tr>
+        <th><input type="checkbox"></th>
+        <th><a href="#">Inmate<i class="fa fa-caret-down"></i></a></th>
+        <th><a href="#">Location</a></th>
+        <th><a href="#">Housing Unit</a></th>
+        <th><a href="#">Days in Queue</a></th>
+        <th><a href="#">Date Submitted</a></th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr class="rows active">
+        <td><input type="checkbox"></td>
+        <td>Manuel Snyder <span class="small text-muted">(123456789)</span></td>
+        <td>Pod A</td>
+        <td>Min Security</td>
+        <td class="days">2</td>
+        <td class="date"></td>
+    </tr>
+    <tr class="rows">
+        <td><input type="checkbox"></td>
+        <td>Bill Burgess <span class="small text-muted">(123456789)</span></td>
+        <td>Pod A</td>
+        <td>Min Security</td>
+        <td class="days">5</td>
+        <td class="date"></td>
+    </tr>
+    <tr class="rows">
+        <td><input type="checkbox"></td>
+        <td>Erick Norris <span class="small text-muted">(123456789)</span></td>
+        <td>Pod B</td>
+        <td>Med Security</td>
+        <td class="days">1</td>
+        <td class="date"></td>
+    </tr>
+    <tr class="rows">
+        <td><input type="checkbox"></td>
+        <td>Karl Glover <span class="small text-muted">(123456789)</span></td>
+        <td>Pod C</td>
+        <td>Med Security</td>
+        <td class="days">2</td>
+        <td class="date"></td>
+    </tr>
+    <tr class="rows">
+        <td><input type="checkbox"></td>
+        <td>Ismael Jefferson <span class="small text-muted">(123456789)</span></td>
+        <td>Pod D</td>
+        <td>Min Security</td>
+        <td class="days">1</td>
+        <td class="date"></td>
+    </tr>
+    <tr class="rows">
+        <td><input type="checkbox"></td>
+        <td>Troy Wright <span class="small text-muted">(123456789)</span></td>
+        <td>Pod E</td>
+        <td>Min Security</td>
+        <td class="days"d>1</td>
+        <td class="date"></td>
+    </tr>
+    </tbody>
+</table>
+
+<div class="bff-include" data-src="include/Pagination.html"></div>
+
+
+<script type="text/javascript">
+
+    var sickData = [
+        { inmate: 'Manuel Snyder',     id: 7642106235,  location: 'Pod A',  days: 5},
+        { inmate: 'Bill Burgess',      id: 261692368,   location: 'Pod A',  days: 2},
+        { inmate: 'Erick Norris',      id: 7069709858,  location: 'Pod B',  days: 2},
+        { inmate: 'Karl Glover',       id: 8067979993,  location: 'Pod C',  days: 1},
+        { inmate: 'Ismael Jefferson',  id: 0567523610,  location: 'Pod D',  days: 1},
+        { inmate: 'Troy Wright',       id: 5854502317,  location: 'Pod E',  days: 1},
+    ];
+
+    for (var i=0; i<sickData.length; i++ ) {
+        var today = new Date();
+        var date = new Date();
+        date.setDate(today.getDate() - sickData[i].days);
+        sickData[i].date = date.getFullYear() + '-' +
+                          (date.getMonth() > 10 ? date.getMonth() : '0' + date.getMonth()) + '-' +
+                          (date.getDate() > 10 ? date.getDate() : '0' + date.getDate());
+    }
+
+    $('.table-sickcalls .rows').each(function(i) {
+       $(this).find('.text-muted').html('(' + sickData[i].id + ')');
+       $(this).find('.days').text(sickData[i].days);
+       $(this).find('.date').text(sickData[i].date);
+    });
+
+
+
+
+
+
+    // ----------------------------------------
+    //      Enable Download, Export links
+    // ----------------------------------------
+    $('.table-sickcalls input[type=checkbox]').click(function() {
+        $('.panel-action button').removeClass('disabled');
+    });
+</script>
+
+
+

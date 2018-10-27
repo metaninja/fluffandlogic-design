@@ -1,0 +1,292 @@
+<div class="modal fade" id="call-frequency-results-modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content modal-lg">
+            <div class="modal-header modal-primary">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <div class="modal-title">
+                    Frequently Dialed Numbers
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="col-md-4">
+                    <div class="panel panel-default panel-filters js-yes-filters">
+                        <h3 class="panel-title clearfix">
+                            <span class="js-no-results">Refine by:</span>
+                            <a href="#" class="js-toggle-filters pull-right">Show All</a>
+                        </h3>
+                        <div class="panel-body">
+                            <!-- Filter by Call Status -->
+                            <div>
+                                <h4 class="panel-header">
+                                    <a data-toggle="collapse" href="#filter-call-status">
+                                        Call Status
+
+                                       <div class="pull-right">
+                                            <span class="toggle-hide"></span>
+                                            <span class="toggle-show"></span>
+                                       </div>
+                                    </a>
+                                </h4>
+                                <div class="collapse" id="filter-call-status">
+                                    <div class="filter-select filter-status">
+                                        <label>
+                                            <input type="checkbox">Complete</label>
+                                        <label>
+                                            <input type="checkbox">Incomplete</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Filter by Termination Category -->
+                            <div>
+                                <h4 class="panel-header">
+                                    <a data-toggle="collapse" href="#filter-termination-category">
+                                        Termination Category
+
+                                       <div class="pull-right">
+                                            <span class="toggle-hide"></span>
+                                            <span class="toggle-show"></span>
+                                       </div>
+                                    </a>
+                                </h4>
+                                <div class="collapse" id="filter-termination-category">
+                                    <div class="filter-search">
+                                        <input type="text" class="form-control" placeholder="Search">
+                                        <span class="fa fa-search filter-search-icon"></span>
+                                    </div>
+                                    <div class="filter-select filter-status">
+                                        <label>
+                                            <input type="checkbox">3-way call detected</label>
+                                        <label>
+                                            <input type="checkbox">Account Activator</label>
+                                        <label>
+                                            <input type="checkbox">Account In Use</label>
+                                        <label>
+                                            <input type="checkbox">Account Not Active</label>
+                                        <label>
+                                            <input type="checkbox">Allowed Accepts Reached</label>
+                                        <label>
+                                            <input type="checkbox">Allowed Attempts Reached</label>
+                                        <label>
+                                            <input type="checkbox">Allowed Blocks Reached</label>
+                                        <label>
+                                            <input type="checkbox">Allowed Calls Reached</label>
+                                        <label>
+                                            <input type="checkbox">Allowed Connects Reached</label>
+                                        <label>
+                                            <input type="checkbox">Allowed Daily Debit Minutes Reached</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Filter by Call Type -->
+                            <div>
+                                <h4 class="panel-header">
+                                    <a data-toggle="collapse" href="#filter-call-type">
+                                        Call Type
+
+                                       <div class="pull-right">
+                                            <span class="toggle-hide"></span>
+                                            <span class="toggle-show"></span>
+                                       </div>
+                                    </a>
+                                </h4>
+                                <div class="collapse" id="filter-call-type">
+                                    <div class="filter-search">
+                                        <input type="text" class="form-control" placeholder="Search">
+                                        <span class="fa fa-search filter-search-icon"></span>
+                                    </div>
+                                    <div class="filter-select filter-status">
+                                        <label>
+                                            <input type="checkbox">AIS</label>
+                                        <label>
+                                            <input type="checkbox">Advanced Connect</label>
+                                        <label>
+                                            <input type="checkbox">Commissary Call</label>
+                                        <label>
+                                            <input type="checkbox">Commissary IVR</label>
+                                        <label>
+                                            <input type="checkbox">Debit</label>
+                                        <label>
+                                            <input type="checkbox">Direct Bill</label>
+                                        <label>
+                                            <input type="checkbox">FCC</label>
+                                        <label>
+                                            <input type="checkbox">FCC2</label>
+                                        <label>
+                                            <input type="checkbox">Free Call</label>
+                                        <label>
+                                            <input type="checkbox">Instant Pay</label>
+                                        <label>
+                                            <input type="checkbox">Instant Pay-Account Activator</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Filter by Site -->
+                            <div>
+                                <h4 class="panel-header">
+                                    <a data-toggle="collapse" href="#filter-other">
+                                        Site
+
+                                       <div class="pull-right">
+                                            <span class="toggle-hide"></span>
+                                            <span class="toggle-show"></span>
+                                       </div>
+                                    </a>
+                                </h4>
+                                <div class="collapse" id="filter-other">
+                                    <div class="filter-select filter-status">
+                                        <label>
+                                            <input type="checkbox">Frisco City Jail</label>
+                                        <label>
+                                            <input type="checkbox">Collin County Jail</label>
+                                        <label>
+                                            <input type="checkbox">King County Community Correction Div Wrk Rel, WA</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Filter by Other Filters -->
+                            <div>
+                                <h4 class="panel-header">
+                                    <a data-toggle="collapse" href="#filter-other">
+                                        Other Filters
+
+                                       <div class="pull-right">
+                                            <span class="toggle-hide"></span>
+                                            <span class="toggle-show"></span>
+                                       </div>
+                                    </a>
+                                </h4>
+                                <div class="collapse" id="filter-other">
+                                    <div class="filter-select filter-status">
+                                        <label>
+                                            <input type="checkbox">International</label>
+                                        <label>
+                                            <input type="checkbox">Watched</label>
+                                        <label>
+                                            <input type="checkbox">Private</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <!-- Search -->
+                    <div class="row">
+                        <div class="col-md-2">
+                            <div class="form-group">
+                                 <label class="control-label">Threshold</label>
+                                <input type="text" class="form-control search-text">
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="form-group">
+                                <label for="reservation">Date</label>
+                                <div class="input-group">
+                                    <input type="text" id="reservation" class="form-control">
+                                    <span class="input-group-addon"><i class="fa fa-calendar"></i>
+                                        </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label>&nbsp;</label>
+                                <a class="btn btn-primary btn-search">Search</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bff-include" data-src="include/results-export.html"></div>
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th><input type="checkbox" id="frequentlyDialedCheckbox"></th>
+                                <th>Phone Number</th>
+                                <th>Site</th>
+                                <th>Times Dialed</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td><a href="#">(532) 536-9821</a></td>
+                                <td>Frisco City Jail</td>
+                                <td><span class="badge">113</span></td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td><a href="#">(144) 345-7173</a></td>
+                                <td>Frisco City Jail</td>
+                                <td><span class="badge">101</span></td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td><a href="#">(661) 455-1634</a></td>
+                                <td>Frisco City Jail</td>
+                                <td><span class="badge">87</span></td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td><a href="#">(323) 616-7654</a></td>
+                                <td>Frisco City Jail</td>
+                                <td><span class="badge">86</span></td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td><a href="#">(214) 441-2351</a></td>
+                                <td>Frisco City Jail</td>
+                                <td><span class="badge">71</span></td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td><a href="#">(532) 536-9821</a></td>
+                                <td>Frisco City Jail</td>
+                                <td><span class="badge">113</span></td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td><a href="#">(532) 536-9821</a></td>
+                                <td>Frisco City Jail</td>
+                                <td><span class="badge">113</span></td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td><a href="#">(532) 536-9821</a></td>
+                                <td>Frisco City Jail</td>
+                                <td><span class="badge">113</span></td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td><a href="#">(532) 536-9821</a></td>
+                                <td>Frisco City Jail</td>
+                                <td><span class="badge">113</span></td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td><a href="#">(532) 536-9821</a></td>
+                                <td>Frisco City Jail</td>
+                                <td><span class="badge">113</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="bff-include" data-src="include/pagination.html"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $('#frequentlyDialedCheckbox').click(function() {
+        var isChecked = $(this).is(':checked');
+
+        var parentTable = $(this).closest('table');
+        var tableCheckboxes = parentTable.find('input[type=checkbox]');
+
+        if (isChecked === true) {
+            tableCheckboxes.prop('checked', false);
+        } else {
+            tableCheckboxes.prop('checked', true);
+        }
+    })
+</script>

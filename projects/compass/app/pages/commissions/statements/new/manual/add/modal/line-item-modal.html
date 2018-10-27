@@ -1,0 +1,68 @@
+<div class="modal fade" id="line-item-modal" tabindex="-1" role="dialog" aria-labelledby="line-item-title" style="overflow: scroll;">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header clearfix">
+                <h5 class="modal-title" id="line-item-title">Add/Edit Line Item</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <i class="linearicon-cross2" aria-hidden="true"></i>
+                </button>
+            </div>
+
+            <div class="modal-body" style="overflow-y: unset">
+
+                <!-- Add Commission Line Item -->
+                <div class="js-modal-body-edit-line-item">
+                    <ul class="tabs">
+                        <li class="tab"><a class="tab-link active" href="javascript:void(0);" onclick="showTab(this, '.js-edit-line-item')">Add Line Item</a></li>
+                        <li class="tab"><a class="tab-link" href="javascript:void(0);" onclick="showTab(this, '.js-payout')">Payout</a></li>
+                    </ul>
+
+                    <!-- Add Line Item -->
+                    <div class="js-tab js-edit-line-item">
+                        <div class="bff-include" data-src="app/pages/commissions/statements/new/manual/add/modal/edit-line-item.html"></div>
+                    </div>
+                    <!-- Add Line Item -->
+
+                    <!-- Edit Payouts -->
+                    <div class="js-tab js-payout" style="display: none;">
+                        <div class="bff-include" data-src="app/pages/commissions/statements/new/manual/add/modal/edit-payouts.html"></div>
+                    </div>
+                    <!-- Edit Payouts -->
+                </div>
+                <!-- Add Commission Line Item -->
+
+                <!-- Add New Policy -->
+                <div class="js-modal-body-add-policy" style="display: none;">
+                    <div class="bff-include" data-src="app/pages/commissions/statements/new/manual/add/modal/add-new-policy.html"></div>
+                </div>
+                <!-- Add New Policy -->
+
+            </div>
+
+            <div class="modal-footer">
+                <div class="modal-footer-left">
+                    <label for="checkbox-add-new-policy" class="js-btn-add-new-policy hide-content">
+                        Create new policy
+                    </label>
+
+                    <label for="checkbox-add-new-policy" class="switch js-btn-add-new-policy ml-2 hide-content">
+                        <input type="checkbox" id="checkbox-add-new-policy" onclick="toggleAddPolicy(this)">
+                        <div class="slider round">
+                            <span class="on">YES</span>
+                            <span class="off">NO</span>
+                        </div>
+                    </label>
+                </div>
+                <div class="modal-footer-right">
+                    <button class="btn btn-outline-primary" data-dismiss="modal">Cancel</button>
+                    <button class="btn btn-success js-btn-save-add-another ml-2" onclick="saveAndAddAnother()">Save + Add Another</button>
+                    <button class="btn btn-primary ml-2 js-btn-save-line-item  hide-content" onclick="saveLineItem(false); $('#line-item-modal').modal('hide');">Save</button>
+                    <button class="btn btn-primary ml-2 js-btn-save-existing-line-item" onclick="saveLineItem(true); $('#line-item-modal').modal('hide');">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="bff-script" data-src="app/pages/commissions/statements/new/manual/add/modal/line-item-modal.js"></div>
+<div class="bff-script" data-src="app/shared/required-fields.js"></div>

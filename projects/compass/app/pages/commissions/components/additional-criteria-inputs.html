@@ -1,0 +1,59 @@
+<div class="row mb-2 criteriaRow js-additional-criteria-inputs">
+	<span class="col-md-1 js-condition-name">and</span>
+
+	<div class="col-md-4 js-typeof-condition">
+        <select onchange="updateCriteriaRowDropdown.call(this)">
+            <option selected>Agency Code</option>
+            <option>Assigned To</option>
+            <option>Billing Company</option>
+            <option>Lead Source</option>
+            <option>LOB</option>
+            <option>Master Company</option>
+            <option>Member Agency</option>
+            <option>Policy Effective Date</option>
+            <option>Policy Term</option>
+            <option>Policy Producer Code</option>
+            <option>State</option>
+            <option>Transaction</option>
+            <option>Writing Company</option>
+        </select>
+	</div>
+
+	<div class="col-md-2">
+        <div class="js-regular-conditions">
+            <select>
+                <option value="1">is</option>
+                <option value="2">is one of</option>
+                <option value="3">is not</option>
+            </select>
+        </div>
+
+        <div class="js-date-conditions">
+            <select>
+                <option>is between</option>
+            </select>
+        </div>
+	</div>
+
+	<div class="col-md-4">
+        <div class="bff-include js-criteria-row-dropdown js-agency-code" data-src="app/pages/commissions/components/criteria-inputs-dropdowns/agency-code.html"></div>
+        <div class="bff-include js-criteria-row-dropdown js-assigned-to" data-src="app/pages/commissions/components/criteria-inputs-dropdowns/assigned-to.html"></div>
+        <div class="bff-include js-criteria-row-dropdown js-billing-company-dropdown" data-src="app/pages/commissions/components/criteria-inputs-dropdowns/master-company.html"></div>
+        <div class="bff-include js-criteria-row-dropdown js-lead-source-dropdown" data-src="app/pages/commissions/components/criteria-inputs-dropdowns/lead-source.html"></div>
+        <div class="bff-include js-criteria-row-dropdown js-lob-dropdown" data-src="app/pages/commissions/components/criteria-inputs-dropdowns/lob.html"></div>
+        <div class="bff-include js-criteria-row-dropdown js-master-company-dropdown" data-src="app/pages/commissions/components/criteria-inputs-dropdowns/master-company.html"></div>
+        <div class="bff-include js-criteria-row-dropdown js-agency" data-src="app/pages/commissions/components/criteria-inputs-dropdowns/agency.html"></div>
+        <div class="bff-include js-criteria-row-dropdown js-policy-effective-date-dropdown" data-src="app/pages/commissions/components/criteria-inputs-dropdowns/policy-effective-date.html"></div>
+        <div class="bff-include js-criteria-row-dropdown js-new-renewal-dropdown" data-src="app/pages/commissions/components/criteria-inputs-dropdowns/new-renewal.html"></div>
+        <div class="bff-include js-criteria-row-dropdown js-policy-producer-code-dropdown" data-src="app/pages/commissions/components/criteria-inputs-dropdowns/policy-producer-code.html"></div>
+        <div class="bff-include js-criteria-row-dropdown js-state-dropdown" data-src="app/pages/commissions/components/criteria-inputs-dropdowns/state.html"></div>
+        <div class="bff-include js-criteria-row-dropdown js-transaction-dropdown" data-src="app/pages/commissions/components/criteria-inputs-dropdowns/transaction.html"></div>
+        <div class="bff-include js-criteria-row-dropdown js-writing-company-dropdown" data-src="app/pages/commissions/components/criteria-inputs-dropdowns/master-company.html"></div>
+	</div>
+
+	<div class="col-md-1 pt-1">
+		<a href="javascript:void(0);" class="button-trash" onclick="showDeleteConfirmationModal.call(this, 'Condition')">
+			<i class="linearicon-trash2 linearicon-lg red"></i>
+		</a>
+	</div>
+</div>

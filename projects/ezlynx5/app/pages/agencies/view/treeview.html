@@ -1,0 +1,87 @@
+<!-- https://www.jstree.com/ -->
+
+<h3>Org View</h3>
+<div id="jstree_demo_div" style="border:1px solid #ccc; padding: 1rem; border-radius: .5rem; background-color: #eee">
+    <ul data-jstree="{'type' : 'demo' }">
+        <li>Root node 1
+            <ul>
+                <li>Child node 1</li>
+                <li>Child node 2</li>
+                <li>Child node 3</li>
+                <li>Child node 4</li>
+            </ul>
+        </li>
+        <li>Root node 2</li>
+    </ul>
+</div>
+
+
+<script>
+    $(document).ready(function() {
+        $("#org_demo").jstree({
+            "core": {
+                "check_callback" : true,
+            },
+            "types" : {
+                "default": {
+                    "icon": "fa fa-building"
+                },
+            },
+            "plugins" : [ "types" ]
+        });
+
+        $('#jstree_demo_div').jstree({
+            "core": {
+                "check_callback" : true,
+                'data' : [
+                    {
+                        "text" : "Smart Choice",
+                        "state" : { "opened" : true },
+                        "icon" : "fa fa-building",
+                        "children" : [
+                            {
+                                "state" : { "selected" : true},
+                                "text" : "Mike Leonard",
+                                "icon" : "fa fa-cubes",
+                                "children" : [
+                                    {
+                                        "text": "Mike Leonard (Frisco)",
+                                        "icon" : "fa fa-cube"
+                                    },
+                                    {
+                                        "text": "Mike Leonard (Coppell)",
+                                        "icon" : "fa fa-cube"
+                                    },
+
+                                ]
+                            },
+                            {
+                                "text" : "Alex Huan",
+                                "icon" : "fa fa-cubes",
+                                "children" : [
+                                    {
+                                        "text": "Penguin Insurance Services",
+                                        "icon" : "fa fa-cube"
+                                    },
+                                    {
+                                        "text": "Cactus Independent Insurance",
+                                        "icon" : "fa fa-cube"
+                                    },
+
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "types" : {
+                "default": {
+                    "icon": "fa fa-folder-open"
+                },
+            },
+            "plugins" : [ "dnd", "types" ]
+
+        });
+
+    });
+</script>

@@ -1,0 +1,96 @@
+<title>CDR Search</title>
+
+<!-- begin: Page Heading -->
+<div class="container-fluid page-header">
+    <div class="container">
+
+        <div class="pull-left">
+            <div class="page-header-icon">
+                <span class="fa fa-search fa-2x"></span>
+            </div>
+            <h2>Communication Search</h2>
+        </div>
+
+        <div class="page-header-btn-group pull-right">
+            <a class="btn btn-link btn-link-next" href="#/pages/search/communication/advanced.html">
+                Advanced Search
+            </a>
+        </div>
+
+    </div>
+</div>
+<!-- end: Page Heading -->
+
+<div class="container no-breadcrumb">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="bff-include" data-src="pages/search/communication/shared/search-types.html"></div>
+        </div>
+        <div class="col-md-4">
+
+            <div class="form-group">
+                <label for="reservation">
+                    Date Range
+                </label>
+
+                <div class="input-group">
+                    <input type="text" id="reservation" class="form-control">
+                    <span class="input-group-addon"><i class="fa fa-calendar"></i>
+                    </span>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-md-2">
+            <div class="form-group">
+                <label>&nbsp;</label>
+                <a class="btn btn-primary btn-search" href="#/pages/search/communication/results/index.html">Search</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container" style="margin-top: 20px">
+
+    <div class="row">
+        <div class="col-md-8">
+            <h4 class="section-header">Announcements</h4>
+            <hr />
+            <small>October 13, 2014</small>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla malesuada ipsum vitae nisl ultricies, sed finibus tortor pulvinar. Ut eu accumsan est. Fusce hendrerit eros auctor pulvinar consectetur. Etiam non orci sed lacus mattis bibendum. Maecenas ultrices massa et sem sollicitudin, quis vehicula lectus accumsan. Etiam rhoncus semper tempor. Duis elementum dignissim orci, vel ornare nibh lobortis nec. Nam ullamcorper lacinia risus, eget aliquam arcu laoreet eget. Aliquam efficitur, ante ac rutrum vehicula, ante magna volutpat neque, vitae rutrum sapien mauris ac lorem.</p>
+            <blockquote>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                <footer>Someone famous in
+                    <cite title="Source Title">Source Title</cite>
+                </footer>
+            </blockquote>
+
+        </div>
+
+        <div class="col-md-4">
+            <h4 class="section-header">Search by popular tags
+                <div class="section-header-action pull-right">
+                    <button class="btn btn-link btn-sm private-tags">Private</button>
+                    <button class="btn btn-link btn-sm public-tags">Public</button>
+                </div>
+            </h4>
+            <hr/>
+            <div class="bff-include hide-delete" data-src="shared/tags/tags.html" data-event="TagsLoaded">
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script type="text/javascript">
+    $('#reservation').daterangepicker();
+    eraseCookie('cdrsearch');
+    $('.btn-cdr-tips').hide();
+
+    $('.btn-search').click(function() {
+        if (bff.searchCriteria) {
+            bff.savedSearchCriteria = bff.searchCriteria;
+        }
+    });
+</script>

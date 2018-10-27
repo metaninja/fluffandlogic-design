@@ -1,0 +1,267 @@
+<div class="ez-main-content">
+    <div class="bff-include js-navigation" data-src="app/pages/applicants/shared/navigation.html" data-current-link="9" data-page-title="Applicant" data-page-subtitle="Random Construction, LLC"></div>
+
+    <div class="ez-three-pane ez-page-body">
+
+        <div id="tour-masters-list" class="ez-three-pane ez-page-sidebar certificate-masters-list" style="overflow: auto; height: calc(100vh - 190px)">
+
+            <div id="tour-masters-search" class="ez-page-sidebar-actions">
+
+                <div class="input-group px-1">
+                    <input type="text" class="form-control" placeholder="Search masters" aria-label="Search masters" onkeyup="searchMasters(this, event)">
+                    <span class="input-group-addon" id="basic-addon2"><i class="linearicon-magnifier"></i></span>
+                </div>
+
+                <div>-- OR --</div>
+
+                <a href="javascript:void(0)" id="tour-add-cert-master" class="btn btn-success mt-1" onclick="newMaster()">Add Certificate Master<i class="linearicon-plus ml-2"></i></a>
+            </div>
+
+            <div id="js-masters-existing">
+                <div id="masters-current"></div>
+
+                <h2 id="tour-pending-title" class="ez-page-sidebar-title-muted">Pending</h2>
+                <div id="masters-pending"></div>
+
+                <h2 id="tour-expired-title" class="ez-page-sidebar-title-muted">Expired</h2>
+                <div id="masters-expired"></div>
+            </div>
+
+            <div id="js-masters-search-results"  class="hide-content">
+                <div id="masters-current-search"></div>
+
+                <h2 class="ez-page-sidebar-title-muted">Pending</h2>
+                <div id="masters-pending-search"></div>
+
+                <h2 class="ez-page-sidebar-title-muted">Expired</h2>
+                <div id="masters-expired-search"></div>
+            </div>
+
+            <div id="js-masters-no-results" class="hide-content">
+                No masters match that description
+            </div>
+
+
+        </div>
+
+        <div class="ez-three-pane ez-page-content js-no-master" style="overflow: auto; height: calc(100vh - 190px)">
+
+            <div class="d-flex flex-column align-items-center justify-content-center js-no-master-created" style="width: 100; height: 100%;">
+                <div class="d-flex flex-column align-items-center justify-content-center text-center" style="width: 100%; height: 100%;">
+                    <i class="linearicon-document2" style="font-size: 3rem;"></i>
+                    <span class="mt-2">No master certificates available.</span>
+                    <span>Please click <strong>New Master Certificate</strong> above.</span>
+                </div>
+            </div>
+
+
+            <div class="d-flex flex-column align-items-center justify-content-center text-center js-no-master-selected" style="width: 100%; height: 100%;">
+                <i class="linearicon-document2" style="font-size: 3rem;"></i>
+                <strong class="mt-2">No master certificate selected.</strong>
+                <span>Please select one on the left</span>
+                <span>Or <a href="#/app/pages/applicants/certificates/edit-certificate/pre-fill/" onclick="newMaster()">create one.</a></span>
+            </div>
+        </div>
+
+        <div class="ez-three-pane ez-page-content js-master-details hide-content" style="overflow: auto; height: calc(100vh - 190px)">
+
+            <div class="ez-three-pane content-container" style="background-color: #fafafa">
+                <div class="row mb-3">
+                    <div class="col-md-5">
+                        <h2 class="h2 mb-0">
+                            <span class="subtitle">Certificate of Garage Insurance (ACORD 30)</span>
+                            <span class="js-cert-name">Master AUTOC 17-18</span>
+                        </h2>
+                    </div>
+
+                    <div class="col-md-7">
+                        <div class="row">
+                            <div class="fact col-md-3 m-0">
+                                <span class="fact-label">Policies</span>
+                                <span class="fact-value">
+                                    <!--<nobr>AUTOB-298437</nobr>,-->
+                                    <nobr>
+                                        <span class="js-cert-policy">CPKG-222456</span>
+                                        <small class="badge badge-warning js-cert-policy-expired hide-content">Expired</small>
+                                    </nobr>
+                                    <!--<nobr>GL-190283574-00</nobr>,-->
+                                    <!--<nobr>WC-9283547-01</nobr>-->
+                                </span>
+                            </div>
+
+                            <div class="fact col-md-4 m-0">
+                                <span class="fact-label">LOBs</span>
+                                <span class="fact-value js-cert-lob">Property</span> <!-- Auto (Commercial), General Liability, Inland Marine, Workers Compensation -->
+                            </div>
+
+                            <div class="fact col-md-3 m-0">
+                                <span class="fact-label">Valid From</span>
+                                <span class="fact-value js-cert-date-valid">11/28/2017</span>
+                            </div>
+
+                            <div class="fact col-md-2 m-0">
+                                <span class="fact-label">Expires</span>
+                                <span class="fact-value js-cert-date-expires">11/28/2018</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <a href="#/app/pages/applicants/certificates/edit-certificate/pre-fill/" class="btn btn-outline-primary mr-2">
+                            Edit
+                            <i class="linearicon-pencil ml-2"></i>
+                        </a>
+                        <a href="#/app/pages/applicants/certificates/edit-certificate/pre-fill/" id="tour-copy-master" class="btn btn-outline-primary mr-2">
+                            Copy
+                            <i class="linearicon-copy ml-2"></i>
+                        </a>
+                        <a href="javascript:void(0)" class="btn btn-outline-primary mr-2" data-toggle="modal" data-target="#certificate-holder-report-modal">
+                            Cert holder report
+                            <i class="linearicon-chart-bars ml-2"></i>
+                        </a>
+                    </div>
+                    <div class="col-md-6 text-right">
+                        <a href="javascript:void(0)" id="tour-add-cert-holder" class="btn btn-primary js-no-certificate-holders" onclick="quickCertificateHolder()">
+                            Add cert holder
+                            <i class="linearicon-user ml-2"></i>
+                        </a>
+                        <a href="#/app/pages/applicants/certificates/edit-certificate/review/review-pdf/" class="btn btn-outline-primary ml-2">
+                            Preview Cert Master
+                            <i class="linearicon-eye ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="content-container">
+
+                <div class="row">
+                    <div class="col">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search certificates" aria-label="Search certificates">
+                            <span class="input-group-addon" id="basic-addon2"><i class="linearicon-magnifier"></i></span>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="text-right">
+                            <div class="alert alert-primary">
+                                <i class="linearicon-info-circle linearicon-lg mr-2"></i>
+                                <span>Click Action to view a certificate, distribute it again, or edit the certificate holder <i class="linearicon-arrow-down"></i>.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                    <div class="results-summary">
+                        <div class="results-count">
+                            900 certificates found
+                        </div>
+                        <div class="results-actions">
+                            <a href="#/app/pages/applicants/certificates/edit-certificate/review/review-pdf/" class="btn btn-link btn-link-primary" disabled>Preview Cert</a>
+                            <a href="javascript:void(0)" class="btn btn-link btn-link-primary" disabled>Edit Columns</a>
+                        </div>
+                    </div>
+
+                    <table id="tour-certificates" class="table table-hover">
+                        <thead>
+                        <tr>
+                            <th>
+                                <input type="checkbox">
+                            </th>
+                            <th>Certificate Holder</th>
+                            <th>Address</th>
+                            <th>Date Sent</th>
+                            <th>Distribution Method</th>
+                            <th>Destination</th>
+                            <th id="tour-history" class="text-center">History</th>
+                            <th id="tour-actions"></th>
+                        </tr>
+                        </thead>
+
+                        <tbody id="certificates"></tbody>
+                    </table>
+
+                    <div class="bff-include" data-src="app/shared/pagination.html"></div>
+
+
+                    <div class="col-md-10 js-selected-certificate-master-content hide-content">
+                        <div class="flex-column-align-center" style="height: 100%">
+                            <i class="linearicon-3x linearicon-license2"></i>
+                            <span>No Certificate Masters Added.</span>
+                            <a href="#/app/pages/applicants/certificates/edit-certificate/pre-fill">Add a Certificate Master</a>
+                        </div>
+                    </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script id="masters-template" type="x-handlebars-template">
+    {{#masters}}
+        <a href="javascript:void(0)" class="master" style="color: #455a64" onclick="showMasterDetails(this, '{{ Label }}', {{ @index }})">
+            <h2 class="h3 mb-0">
+                {{ Name }}
+            </h2>
+            <p style="line-height: 1.2">
+                <small><strong>Form:</strong> {{ AcordForm }}</small><br>
+                <small><strong>LOB:</strong> {{LOB}}</small><br>
+                <small><strong>Expires</strong>: {{ Expires }}</small>
+                {{#if Expired}}
+                <small class="badge badge-warning">Expired</small>
+                {{/if}}
+            </p>
+        </a>
+    {{/masters}}
+</script>
+
+<script id="certificates-template" type="x-handlebars-template">
+    {{#certificates}}
+    <tr>
+        <td>
+            <input type="checkbox">
+        </td>
+        <td>{{interestHolder}}</td>
+        <td>{{address}}</td>
+        <td>{{dateSent}}</td>
+        <td>{{distributionMethod}}</td>
+        <td>{{destination}}</td>
+        <td class="text-center">
+            {{#if history}}
+            <a href="javascript:void(0)" onclick="expandWorkspace('.js-workspace-distribution-history')">
+                <i class="material-icons">history</i>
+            </a>
+            {{/if}}
+        </td>
+        <td>
+            <div class="dropdown">
+                <a href="javascript:void(0);" class="dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Action
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="#/app/pages/applicants/certificates/edit-certificate/review/review-holder/index.html">Preview Certificate</a>
+                    <a class="dropdown-item" href="javascript:void(0)">Download</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="javascript:void(0)" data-toggle="modal" data-target="#new-certificate-holders-modal">Edit Certificate Holder</a>
+                </div>
+            </div>
+        </td>
+    </tr>
+    {{/certificates}}
+</script>
+
+
+<div class="bff-include" data-src="app/pages/applicants/certificates/edit-certificate/select-certificate-holder/certificate-holders-modal/new-modal.html"></div>
+<div class="bff-include" data-src="app/pages/applicants/certificates/edit-certificate/select-certificate-holder/report-modal.html"></div>
+<div class="bff-include" data-src="app/pages/applicants/certificates/edit-certificate/shared/cancel-modal.html"></div>
+<div class="bff-include" data-src="app/pages/applicants/certificates/report/holder.html"></div>
+<div class="bff-include" data-src="app/pages/applicants/certificates/welcome-modal.html"></div>
+<div class="bff-include" data-src="app/shared/email-modal.html"></div>
+<div class="bff-include" data-src="app/shared/text-modal.html"></div>
+
+<div class="bff-script" data-src="app/shared/filters/dropdown.js"></div>
+<div class="bff-script" data-src="app/pages/applicants/certificates/index.js"></div>
+<div class="bff-script" data-src="app/pages/applicants/certificates/table.js"></div>
+<div class="bff-script" data-src="app/pages/applicants/certificates/certificate-masters/index.js"></div>

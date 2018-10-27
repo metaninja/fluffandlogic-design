@@ -1,0 +1,69 @@
+<div class="ez-main-content">
+    <div class="bff-include js-wizard" id="commission-statements-tabs" data-src="app/pages/commissions/member-agency/statements/header.html" data-wizard-step="3"></div>
+
+    <div class="ez-page-body">
+        <div class="ez-page-sidebar content-container ez-page-sidebar-collapsed">
+            <div class="bff-include" data-src="app/pages/commissions/member-agency/statements/generated/filters.html"></div>
+        </div>
+
+        <div class="ez-page-content content-container">
+
+            <div>
+                <div class="alert alert-success">
+                    <i class="linearicon-checkmark-circle linearicon-lg mr-2"></i>
+                    <div>
+                        Member Agency Statements have been sent.
+                    </div>
+                </div>
+            </div>
+
+            <!--<div class="search-form">-->
+                <!--<div class="row">-->
+                    <!--<div class="col-md-4">-->
+                        <!--<div class="input-group">-->
+                            <!--<input type="text" class="form-control" placeholder="Statement #, carrier" aria-label="Statement #, carrier">-->
+                            <!--<span class="input-group-addon" id="basic-addon2"><i class="linearicon-magnifier"></i></span>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+
+            <div class="results-summary">
+                <div class="results-count">
+                    25 statements found
+
+                    <a href="javascript:void(0)" class="results-action btn btn-link filter-link" data-target="#filter-statements">
+                        Filters <i class="linearicon-chevron-down ml-2"></i>
+                    </a>
+                </div>
+
+                <div class="results-actions">
+                    <button class="btn btn-link results-actions btn-disabled js-disable-btn mr-2" disabled="disabled">Export</button>
+                    <button class="btn btn-link results-actions" data-toggle="modal" data-target="#edit-columns-modal">Edit Columns</button>
+                </div>
+            </div>
+
+            <div class="filters-applied"></div>
+
+            <div class="bff-include" data-src="app/pages/commissions/member-agency/statements/generated/table.html"></div>
+
+            <div class="bff-include" data-src="app/shared/pagination.html"></div>
+
+            <div class="section-footer">
+                <div class="section-footer-left">
+                    <a href="#/app/pages/commissions/member-agency/statements/" class="btn btn-outline-primary">
+                        <i class="linearicon-arrow-left" aria-hidden="true"></i> Approve More Payouts
+                    </a>
+                </div>
+                <div class="section-footer-right">
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="bff-include" data-src="app/pages/commissions/member-agency/statements/generate/send-modal.html"></div>
+<div class="bff-include" data-src="app/pages/commissions//member-agency/statements/generate/send-history-modal.html"></div>
+<div class="bff-include" data-src="app/shared/edit-columns/modal.html"></div>
+<div class="bff-script" data-src="app/pages/commissions/member-agency/statements/index.js"></div>

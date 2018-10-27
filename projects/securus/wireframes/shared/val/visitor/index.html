@@ -1,0 +1,36 @@
+<div class="col-md-12 popup popup-val" id="popup-val">
+
+    <div class="bff-include val-list" data-src="shared/val/visitor/view/list.html" data-event="ValInmateListLoaded"></div>
+
+    <div class="bff-include val-new-existing" data-src="shared/val/visitor/search/new-existing.html" data-event="ValInmateNewExistingLoaded"></div>
+
+    <div class="bff-include val-search" data-src="shared/val/visitor/search/index.html" data-event="ValInmateSearchLoaded"></div>
+
+    <div class="bff-include val-add-visitor" data-src="shared/val/visitor/add/index.html" data-event="ValInmateAddLoaded"></div>
+
+</div>
+
+<div class="bff-include" data-src="shared/val/visitor/view/exists-on-other-val.html" data-event="ValInmateAddLoaded"></div>
+
+<div class="bff-include" data-src="shared/val/devmode.html" data-event="DevModeLoaded"></div>
+
+<script>
+$(document).ready(function() {
+
+    // When the VAL popup opens,
+    // Show only the VAL list and settings
+    $('.val-new-existing').hide();
+    $('.val-add-visitor').hide();
+    $('.val-search').hide();
+    $('.val-disabled-count').hide();
+
+
+    // Animation for showing the VA popup
+    $('.show-popup-val').click(function() {
+        $('.popup-val').show().velocity({
+            width: "100%",
+            height: "100%"
+        },400);
+    });
+});
+</script>

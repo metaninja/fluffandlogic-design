@@ -1,0 +1,164 @@
+<div class="ez-main-content">
+    <div class="bff-include js-navigation" data-src="app/pages/applicants/shared/navigation.html" data-current-link="9" data-page-title="Applicant" data-page-subtitle="Random Construction, LLC"></div>
+
+    <div class="ez-page-body">
+        <div class="ez-page-content">
+
+            <!-- Certificate Summary -->
+            <div class="content-container mb-3 d-flex align-items-center justify-content-between" style="background-color: #fafafa">
+                <h2 class="h2 mb-0">
+                    <span class="subtitle js-master-acord">NO ACORD FORM SELECTED</span>
+                    <span class="js-master-title">New Certificate Master</span>
+                </h2>
+                <div class="fact m-0">
+                    <span class="fact-label">Policies</span>
+                    <span class="fact-value js-master-policies hide-content">
+                        <!--<nobr>AUTOB-298437</nobr>,-->
+                        <nobr>CPKG-222456</nobr>
+                        <!--<nobr>GL-190283574-00</nobr>,-->
+                        <!--<nobr>WC-9283547-01</nobr>-->
+                    </span>
+                </div>
+
+                <div class="fact m-0">
+                    <span class="fact-label">LOBs</span>
+                    <span class="fact-value js-master-lobs hide-content">Auto (Commercial), General Liability, Inland Marine, Workers Compensation</span>
+                </div>
+            </div>
+            <!-- Certificate Summary -->
+
+            <div>
+                <div class="alert alert-primary align-items-center">
+                    <span class="circle circle-white mr-2">1</span>
+                    <span>Edit Master Certificate. You will need to add Certificate Holders to view or distribute certificates.</span>
+                </div>
+            </div>
+
+            <div class="accordion mb-3">
+                <button class="accordion-header">
+                    <h2 class="h2">Pre-Fill</h2>
+                    <div class="summary text-center">Required</div>
+                    <div class="accordion-toggle">
+                        <i class="linearicon-chevron-down accordion-expand"></i>
+                        <i class="linearicon-chevron-up accordion-collapse"></i>
+                    </div>
+                </button>
+                <div class="accordion-body">
+                    <div class="bff-include" data-src="app/pages/applicants/certificates/single/pre-fill.html"></div>
+                </div>
+            </div>
+
+            <div class="accordion mb-3">
+                <button class="accordion-header">
+                    <h2 class="h2">Add Master Remarks</h2>
+                    <div class="summary text-center"></div>
+                    <div class="accordion-toggle">
+                        <i class="linearicon-chevron-down accordion-expand"></i>
+                        <i class="linearicon-chevron-up accordion-collapse"></i>
+                    </div>
+                </button>
+                <div class="accordion-body">
+                    <div class="bff-include" data-src="app/pages/applicants/certificates/single/certificate-master-remarks.html"></div>
+                </div>
+            </div>
+
+            <div class="accordion mb-3">
+                <button class="accordion-header">
+                    <h2 class="h2">Add Certificate Holders</h2>
+                    <div class="summary text-center">Required</div>
+                    <div class="accordion-toggle">
+                        <i class="linearicon-chevron-down accordion-expand"></i>
+                        <i class="linearicon-chevron-up accordion-collapse"></i>
+                    </div>
+                </button>
+                <div class="accordion-body">
+                    <div class="bff-include" data-src="app/pages/applicants/certificates/single/holders.html"></div>
+                </div>
+            </div>
+
+            <div class="accordion mb-3">
+                <button class="accordion-header">
+                    <h2 class="h2">Edit Agency Contact Info</h2>
+                    <div class="summary text-center">Optional</div>
+                    <div class="accordion-toggle">
+                        <i class="linearicon-chevron-down accordion-expand"></i>
+                        <i class="linearicon-chevron-up accordion-collapse"></i>
+                    </div>
+                </button>
+                <div class="accordion-body">
+                    <div class="bff-include" data-src="app/pages/applicants/certificates/single/agency-contact-info.html"></div>
+                </div>
+            </div>
+
+            <div class="accordion mb-3">
+                <button class="accordion-header">
+                    <h2 class="h2">Add Documents</h2>
+                    <div class="summary text-center">Optional</div>
+                    <div class="accordion-toggle">
+                        <i class="linearicon-chevron-down accordion-expand"></i>
+                        <i class="linearicon-chevron-up accordion-collapse"></i>
+                    </div>
+                </button>
+                <div class="accordion-body">
+                    <div class="bff-include" data-src="app/pages/applicants/certificates/single/documents.html"></div>
+                </div>
+            </div>
+
+            <div>
+                <div class="alert alert-primary align-items-center">
+                    <span class="circle circle-white mr-2">2</span>
+                    <span>Certificates</span>
+                </div>
+            </div>
+
+            <div class="content-container mb-3">
+                <button class="btn btn-outline-primary mr-2 js-btn-review" data-toggle="modal" data-target="#preview-modal">
+                    View certificates
+                    <i class="linearicon-eye ml-2"></i>
+                </button>
+            </div>
+
+
+
+            <div>
+                <div class="alert alert-primary align-items-center">
+                    <span class="circle circle-white mr-2">3</span>
+                    <span>Distribute to Certificate Holders.</span>
+                </div>
+            </div>
+
+            <div class="accordion mb-3">
+                <button class="accordion-header">
+                    <h2 class="h2">Select Distribution Methods</h2>
+                    <div class="summary text-center"></div>
+                    <div class="accordion-toggle">
+                        <i class="linearicon-chevron-down accordion-expand"></i>
+                        <i class="linearicon-chevron-up accordion-collapse"></i>
+                    </div>
+                </button>
+                <div class="accordion-body">
+                    <div class="bff-include" data-src="app/pages/applicants/certificates/single/distribution-methods.html"></div>
+                </div>
+            </div>
+
+            <div class="accordion mb-3">
+                <button class="accordion-header">
+                    <h2 class="h2">Customize Messages and Send</h2>
+                    <div class="summary text-center"></div>
+                    <div class="accordion-toggle">
+                        <i class="linearicon-chevron-down accordion-expand"></i>
+                        <i class="linearicon-chevron-up accordion-collapse"></i>
+                    </div>
+                </button>
+                <div class="accordion-body">
+                    <div class="bff-include" data-src="app/pages/applicants/certificates/single/customize-messages.html"></div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+<div class="bff-include" data-src="app/pages/applicants/certificates/single/preview.html"></div>
+
+<div class="bff-script" data-src="app/pages/applicants/certificates/single/index.js"></div>

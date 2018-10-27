@@ -1,0 +1,65 @@
+<div class="design-container">
+    <div class="design-leftnav">
+        <div class="bff-include" data-src="app/shared/leftnav.html"></div>
+    </div>
+    <div class="design-content">
+        <header class="design-page-header">
+            <h1>Applicant Search</h1>
+        </header>
+        <section class="design-page-content">
+            <h2>Applicant Search</h2>
+            <p>Type in the input box below to see a list.</p>
+
+            <div style="width:100%; display:block;  padding-bottom:10px; margin-bottom: 138px;">
+                <input type="text" id="billingSearchInput" name="searchPhrase" placeholder="Search Customer or Invoice #" autocomplete="off" value="Har" onkeyup="toggleList()" style="width: 35%;">
+                <ul class="typeahead dropdown-menu quickSearchResultMenu" style="top: 281px; left: 240px; display: block;">
+                    <li class="active">
+                        <a href="">
+                            <div class="itemHeading">
+                                <span class="typeahead-display-val">HARPER, ED</span>
+                                <span class="type">Organization</span></div>
+                            <div class="itemBody"> 750 State Hwy 121 Bypass, Suite 150, Lewisville, VA, 75067 </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div class="itemHeading">
+                                <span class="typeahead-display-val">Tony Glenn Harper</span>
+                                <span class="type">Organization</span>
+                            </div>
+                            <div class="itemBody">  </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div class="itemHeading">
+                                <span class="typeahead-display-val">Harper Insurance Services</span>
+                                <span class="type">Organization</span>
+                            </div>
+                            <div class="itemBody"> 41707 Winchester Road Suite 202, Temecula, CA, 92590 </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <pre><code class="html">
+
+            </code></pre>
+        </section>
+    </div>
+</div>
+
+<script>
+    function toggleList() {
+        var $input = $('#billingSearchInput'),
+            $menu = $('input + ul');
+
+        if ($input.val() !== '') {
+            $menu.show();
+        } else {
+            $menu.hide();
+        }
+    }
+</script>
+
+<div class="bff-script" data-src="app/shared/activate-highlight.js"></div>

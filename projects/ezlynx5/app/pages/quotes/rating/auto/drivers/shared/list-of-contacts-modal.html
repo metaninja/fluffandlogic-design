@@ -1,0 +1,104 @@
+<div class="modal fade" id="list-of-contacts-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Select Drivers</h5>
+                <button type="button" class="btn btn-link close" data-dismiss="modal" aria-label="Close">
+                    <i class="linearicon-cross linearicon-lg" aria-hidden="true"></i>
+                </button>
+            </div>
+
+            <div class="modal-body">
+
+                <div class="alert alert-primary js-driver-required hide-content">
+                    <i class="linearicon-info-circle linearicon-lg mr-2"></i>
+                    Please select a driver.
+                </div>
+
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Relationship</th>
+                            <th>Phone</th>
+                            <th>Email</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>
+                                <input type="radio" name="contactToPrefill" onclick="hideAlerts()">
+                            </td>
+
+                            <td>Mary</td>
+
+                            <td>Orth</td>
+
+                            <td>Spouse</td>
+
+                            <td>817-777-7777</td>
+
+                            <td>maryorth@gmail.com</td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <input type="radio" name="contactToPrefill" onclick="hideAlerts()">
+                            </td>
+
+                            <td>Jason</td>
+
+                            <td>Orth</td>
+
+                            <td>Child</td>
+
+                            <td>817-657-7547</td>
+
+                            <td>jasonorth@gmail.com</td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <input type="radio" name="contactToPrefill" onclick="hideAlerts()">
+                            </td>
+
+                            <td>Groot</td>
+
+                            <td>Orth</td>
+
+                            <td>Relative</td>
+
+                            <td>817-741-5213</td>
+
+                            <td>grootorth@gmail.com</td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <input type="radio" name="contactToPrefill" onclick="hideAlerts()">
+                            </td>
+
+                            <td>Gamora</td>
+
+                            <td>Orth</td>
+
+                            <td>Parent</td>
+
+                            <td>817-777-7777</td>
+
+                            <td>gamoraorth@gmail.com</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" onclick="filloutDriverInfo()">Add Driver</button>
+            </div>
+        </div>
+    </div>
+</div>

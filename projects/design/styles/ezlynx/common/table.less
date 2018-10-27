@@ -1,0 +1,1053 @@
+@import (reference) "../../ezbootstrap/_ezVariables.less";
+@import (reference) "../../ezbootstrap/ezbootstrap.less";
+
+// =======================================================
+//  
+//  1.  Table Variables
+//  2.  Tables
+//  3.  Quotes Table
+//  4.  Tables Striped
+//  5.  Tables Condensed
+//  6.  Table Search
+//  7.  Pagination
+//  8.  Legacy
+//
+// =======================================================
+
+// ---------------------------------------------
+// Table Variables
+// ---------------------------------------------
+@tableBackground:               transparent;
+@dataviewHeaderColor:           transparent;
+
+@tableHeaderBackground:         @white;
+@tableHeaderText:               @greyDarker;
+@tableHeaderBorder:             @blueDark;
+@tableHeaderHover:              rgba(0,0,0,0.075);
+@tableHeaderBorderWidth:        2px;
+
+@tableBody:                     @white;
+@tableRowStripe:                @greyLighter;
+
+@subtableHeaderBackground:      #464851;
+@subtableHeaderText:            @white;
+@subtableBody:                  @white;
+
+
+// ---------------------------------------------
+// Tables
+// ---------------------------------------------
+.table,
+table.grid,
+table#policiesTable,
+.DataView > table,
+table.grid {
+    background: @tableBackground;
+    width: 100%;
+    margin-bottom: 0;
+    
+    tbody {
+        background: @tableBody;
+        border: 0;
+        border-bottom: 1px solid #ccc;
+        border-top: 0;
+        
+        & + tbody {
+            border-bottom-width: 1px;
+        }
+    }
+    
+    input[type="submit"] {
+        .btn-link;
+        padding: 0;
+    }
+    
+    // Table Header
+    // ---------------------
+    thead,
+    thead.DataViewSorter {
+        background: @tableHeaderBackground; 
+        border-bottom: @tableHeaderBorderWidth solid @tableHeaderBorder;
+                
+        tr,
+        tr.gridHeader {
+            background: transparent;
+            border: 0;
+            cursor: default;
+            
+            > th {
+                background: transparent;
+                height: @tableRowHeight;
+                padding: 0 0 0 10px;
+                .font-size (12);
+                color: @tableHeaderText;
+                vertical-align: middle;
+                font-weight: bold;
+                text-align: left;
+                border: 0;
+                
+                &:first-child {
+                    -moz-border-radius-topleft: 2px;
+                    -webkit-border-top-left-radius: 2px;
+                    border-top-left-radius: 2px
+                }
+
+                &:last-child {
+                    -moz-border-radius-topright: 2px;
+                    -webkit-border-top-right-radius: 2px;
+                    border-top-right-radius: 2px;
+                }
+
+                
+                a {
+                    color: @tableHeaderText;
+                    font-weight: bold;
+                    text-decoration: none;
+                }
+            }
+        }        
+        
+        // Sorting
+        // ---------------------
+        .sorting {
+            cursor: pointer;
+            padding-right: 20px;
+            position: relative;
+
+            &:after {
+                position: absolute;
+                font-family: 'EZAwesome';
+                content: @icon-sort;
+                right: 0;
+                color: #B1B1B1;
+            }
+            
+            &.ascending:after {
+                content: @icon-sort-up;
+            }
+
+            &.descending:after  {
+                content: @icon-sort-down;
+            }
+
+            &:hover  {
+                background-color: @tableHeaderHover;
+            }
+
+            .dataTables_scrollBody &:after {
+                content: none;
+            }
+        }
+    }
+    
+    // Table Body
+    // -----------------------
+    tr,
+    tr.gridItem,
+    tr.gridItemAlt,
+    tr.appQuotesGridItem,
+    tr.appQuotesGridItemAlt,
+    tr.policyDescription {
+        background: transparent;
+        height: @tableRowHeight;
+        .tableRowBorder;
+
+        &:first-child {
+            border-width: 0;
+        }
+        
+        &:hover,
+        &:hover td {
+            height: @tableRowHeight;
+        }
+        
+        // Table Cells
+        // ---------------------
+        td,
+        td.odd {
+            background: transparent!important;
+            border: none!important;
+            height: @tableRowHeight;
+            color: @greyDark;
+            vertical-align: middle;
+            text-align: left;
+            border: 0;
+            padding: 0 10px!important;
+            
+            a {
+                margin-right: 10px;
+                
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+            
+            .folderNamePath:empty {
+                display: none;
+            }
+            
+        }        
+        
+        // Status
+        // ----------------------
+        &.valid,
+        &.invalid,
+        &.active,
+        &.inactive,
+        &.unknown {
+			background: transparent!important;
+			border-bottom: 1px solid #ccc;
+            border-left-width: 2px;
+			border-left-style: solid;
+        }
+
+        &.valid,
+        &.active {
+			border-left-color: @green!important;
+			
+			.policyStatus {
+				color: @green;
+			}
+        }
+
+        &.invalid,
+        &.inactive {
+			border-left-color: @red!important;
+
+			.policyStatus {
+				color: @red;
+			}
+        }
+        
+        &.unknown {
+			border-left-color: @purple!important;
+            text-transform: none;
+            font-weight: bold;
+
+			.policyStatus {
+				color: @purple;
+			}
+        }
+        
+        & td tr {
+            border: 0;
+        }
+    }
+    
+    // Table Footer
+    // ----------------------
+    tfoot {
+        border: 0;
+        
+        tr {
+            background: @white;
+            border: 0;
+            
+            td.footerRow {
+                color: @greyDarker;
+                font-weight: bold;
+                background: none;
+                border-top: none;
+                
+                &.first-child {
+                    font-weight: normal;
+                    text-align: left;
+                    border-bottom: 1px solid #ccc!important;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+// remove padding on riskInfo table and policies table btn-group buttons
+table#policiesTable, #applicantQuotes {
+     .btn-group .btn {
+        padding: 0;
+    }
+}
+
+// ---------------------------------------------
+// Quotes Table
+// ---------------------------------------------
+.ApplicantTabContent  {
+    > fieldset {
+        background: @white;
+        margin: 0;
+        .widgetBorder;
+        .borderRadiusLarge;
+        
+        .grid {
+            
+            // Table Header
+            // -------------------
+            > tbody > tr.gridHeader,
+            > tbody > tr.gridHeader:hover{
+                background: @tableHeaderBackground!important;
+                border: 1px solid @tableHeaderBackground!important;
+                border-bottom: @tableHeaderBorderWidth solid @tableHeaderBorder!important;
+                
+                th {
+                    color: @tableHeaderText;
+                }
+            }
+            
+            .gridItem,
+            .gridItemAlt {
+                background: transparent!important;
+
+                > td:first-child {
+                    img {
+                        min-width: 11px;
+                        padding: 2px 0;
+                    }
+                }
+            }
+            
+            .subtable {
+                border: 0;
+                
+                > tbody {
+                    background: @subtableBody;
+                    border: 1px solid #ccc;
+                    border-top: 0;
+                }
+                
+                tr.gridHeader,
+                tr.gridHeader:hover {
+                    background: @subtableHeaderBackground;
+                    border: 1px solid @subtableHeaderBackground!important;
+                    cursor: default;
+                    
+                    th {
+                        color: @subtableHeaderText;
+                    }
+                }
+                
+                table {
+                    tbody {
+                        border: 0;
+                    }
+                }
+            }
+        }
+        
+        table.subtable {
+            width: 100%;
+            margin: @padding 0!important;
+        }
+    }
+}
+.tabContent table tr:nth-child(even) {
+    background: @white;
+}
+// ---------------------------------------------
+// Table Striped
+// ---------------------------------------------
+.table-striped {
+    tr.gridItem:nth-child(odd) {
+        td,
+        td.valid,
+        td.invalid {
+            background: transparent;
+            height: @tableRowHeight;
+        }
+    }
+}
+/*tr:nth-child(even),
+tr.gridItemAlt:nth-child(even),
+tr.appQuotesGridItem:nth-child(even),
+tr.appQuotesGridItemAlt:nth-child(even),
+tr.policyDescription:nth-child(even),
+#policiesTable .policyRow:nth-child(even),*/
+tr.gridItem:nth-child(even),
+.DataView tr:nth-child(even) {
+}
+#leadinfoform {
+    tr:nth-child(even) {
+        background: transparent;
+    }
+}
+
+
+// ---------------------------------------------
+// Table Condensed
+// ---------------------------------------------
+.table.table-condensed .btn-condensed {
+    
+}
+
+
+// ---------------------------------------------
+// Table Search
+// ---------------------------------------------
+.DataViewSearch {
+    margin-bottom: 9px;
+    margin-left: 14px;
+    .font-size (@fontSizeBase);
+    
+    .SearchTerm {
+        border: solid 1px @inputBorder;
+        padding: @paddingSmaller;
+        width: 248px;
+        margin-right: 5px;
+    }
+
+    .SearchBy {
+        padding: 2px;
+    }
+}
+
+
+// ---------------------------------------------
+// Pagination
+// ---------------------------------------------
+.pagination,
+.DataViewPager,
+tfoot {
+    margin: 0;
+    margin-top: 6px;
+    padding: 0;
+    .line-height (12);
+    .borderRadiusLarge;
+    
+    ul {
+        .borderRadius;
+        .box-shadow(none);
+        
+        > li  {
+            display: inline-block;
+            .borderRadiusNone;
+            .box-shadow(none);
+            
+            &.pageSelector {
+                border-right: 1px solid #ccc;
+                height: 22px;
+                
+                > span {
+                    background: transparent;
+                    border: 0;
+                    padding: 0 6px;
+                    color: @grey;
+
+                    select.pageNumDropDown {
+                        width: auto;
+                        padding: 1px 4px;
+                        .line-height (22);
+                        height: 22px;
+                    }
+                }
+            }
+
+            &.disabled a,
+            &.disabled:hover a {
+                display: none;
+                /*background: transparent;
+                font-weight: bold;
+                color: #ccc!important;
+                border: 1px solid #ccc;
+                border-left: 0;
+                .borderRadiusNone;*/
+            }
+
+            &.active a,
+            &.active a:hover  {
+                background: @blue;
+                color: @white;
+                font-weight: bold;
+                border: 1px solid @blue;
+                border-left: 0;
+                .borderRadiusNone;
+            }
+
+            &:last-child > a {
+                .borderRadiusRight;
+            }
+            &:first-child > a  {
+                .borderRadiusLeft;
+            }
+            
+            &.firstBtn a {
+                border-left: 1px solid #ccc;
+            }
+            
+            > a {
+                display: block;
+                background: @btnDefault;
+                color: @btnDefaultText;
+                margin: 0;
+                padding: 4px 6px;
+                .font-size (12);
+                font-weight: bold;
+                cursor: pointer;
+                border: 1px solid #ccc;
+                border-left: 0;
+                .borderRadiusNone;
+                
+                &:hover {
+                    background: @btnDefaultHover;
+                    text-decoration: none;
+                    filter: none;
+                }
+            }
+
+        }
+    }
+    
+    .PagingInfo {
+        display: inline-block;
+        vertical-align: top;
+        padding: 3px 10px 3px;
+        margin: auto 10px;
+        float: right;
+        border-right: @borderSmall solid #ccc;
+    }
+}
+
+.DataViewPager .PagingInfo {
+    margin-top: -20px;
+}
+
+// ---------------------------------------------
+// Legacy **Remove**
+// ---------------------------------------------
+tr#_ctl0__ctl0_MainContentPlaceHolder_cphContent_documentTemplateASPxGrid_DXHeadersRow0 > td{
+    border-bottom: @tableHeaderBorderWidth solid @tableHeaderBorder;
+    padding: 0;
+}
+.dxgvControl_Webcetera,
+.dxgvDisabled_Webcetera {
+	border: 0;
+	font-family: Helvetica, Arial, sans-serif;
+	background-color: transparent;	
+    cursor: default;
+	width: 100%;
+}
+table.grid,
+appQuotesGrid {
+    border: 0!important;
+    
+    tbody {
+        border: 0;
+    }
+    tr.gridHeader {
+        background: @tableHeaderBackground;
+        border: 0;
+        border-bottom: @tableHeaderBorderWidth solid @tableHeaderBorder!important;
+        
+        th,
+        td {
+            background: transparent!important;
+            border: 0!important;
+            padding: 0 @padding!important;
+            white-space: nowrap;
+            color: @tableHeaderText;
+            font-size: 12px;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            
+            a {
+                font-family: Arial, sans-serif!important;
+                font-size: @baseFontSize!important;
+                color: @tableHeaderText!important;
+                text-decoration: none!important;
+            }
+        }
+    }
+    
+    tr {
+        border-bottom: 1px solid #ccc;
+        
+        &:last-child {
+            border-bottom-width: 2px;
+        }
+        
+        input[type="button"] {
+            .btn-link;
+            padding: 0;
+        }
+        
+        input[type="submit"] {
+            float: right;
+        }
+    }
+    
+    > td {
+        padding: 0 @padding!important;
+    }
+    
+    #appQuotesGridPager {
+        background: @white!important;
+        border: 0;
+    }
+}
+
+// Quote Tab
+// ---------------
+.ApplicantTabContent > fieldset {
+    .grid.rowSelectable {
+        > tbody {
+            border: 0;
+            border-bottom: 2px solid #ccc;
+            
+            > tr {
+                background: @greyLighter;
+                border: 0;
+                border-bottom: 1px solid #ccc;
+                
+                > td
+                > td:hover {
+                    border: 0;
+                    background: @greyLighter!important;
+                }
+                
+                &:last-child {
+                    border-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+// Modal Forms {
+.smallBottomMargin {
+    tr {
+        margin-bottom: @paddingSmaller;
+    }
+}
+
+// Quote Details Header
+div.quoteDetailsGrid {
+    
+    table.grid {
+        
+        tbody {
+            border: 0!important;
+        }
+        
+        .gridItem,
+        .gridItemAlt {
+            background: @white;
+            border: 1px solid #ccc;
+            border-top: 0;
+            
+            &:last-child {
+                border-bottom-width: 2px;
+            }
+            
+            &:hover {
+                background: @white!important;
+            }
+        }
+    }
+}
+
+// Quote Details Button Bar
+.QuoteDetails {
+    // Quote Results Button Bar
+    .gridButtonBar {
+        border: 0;
+        padding-right: 0;
+        .clearfix;
+        
+        ul {
+            display: inline-block;
+            float: right;
+        }
+    }
+}
+// Policy Table
+// ---------------------
+#policiesTable .policyHead th.serviceteam-header,
+#policyWidget .centerContent,
+#policyWidget .premium {
+    text-align: left!important;
+}
+
+// Popover Dropdown {
+.ui-layout-center #policyPage .policyBar .menus .popover .formMenu li a:hover {
+    color: @grey;
+}
+
+#policiesTable,
+.DataView {
+    tr.policyDescription {
+        background: rgba(0,0,0,0.025)!important;
+		border-bottom: 1px solid #ccc;
+    }
+    tr.pendingPolicy td {
+        color: @gold!important;
+    }
+}
+
+// List Applicant Page
+// ---------------------
+.box > div:nth-child(3) {
+    margin-top: 24px;
+    background: @white;
+    display: block;
+    .borderRadiusLarge;
+    .widgetBorder;
+}
+
+.instructions {
+    margin-top: @paddingLarger!important;
+}
+
+table#Table1 {
+    padding: @padding;
+    width: 100%;
+    
+    input[value="Save"],
+    input[value="Close"],
+    input[value="Cancel"] {
+        margin: 0;
+        margin-right: 3px;
+    }
+    
+    #_ctl0__ctl0_MainContentPlaceHolder_cphContent_scriptstable > tbody > tr:nth-child(1){
+        display: none;
+    }
+    
+    .gridHeader td {
+        color: @greyDarker;
+        font-weight: bold;
+    }
+
+    input {
+        &[disabled="disabled"] {
+            .btn-disabled;
+        }
+    }
+}
+
+
+// Lead Info Table
+// ---------------------
+#leadinfoform {
+    table {
+        width: 100%;
+    }
+}
+
+.PageContent table tr:nth-child(even) {
+    background: none;
+}
+
+// Carrier Logins
+// -----------------------
+#Table1 {
+    .borderRadiusLarge;
+    
+    .gridHeader,
+    .gridHeader:hover {
+        background: @tableHeaderBackground!important;
+        
+        td {
+            background: transparent;
+            color: @tableHeaderText!important;
+        }
+    }
+}
+
+
+// Policy Management
+// ---------------------
+#policyReports {
+    postition: relative;
+    display: block;
+    background: @white;
+    .borderRadiusLarge;
+    .widgetBorder;
+    
+    input[type="submit"] {
+        .btn-primary;
+    }
+    
+    #_ctl0__ctl0_MainContentPlaceHolder_cphContent_simpleReport_ReportFilters_DatesFilterDiv {
+        .ReportFilterLeftBox {
+            position: relative;
+
+            > input {
+                min-width: 185px;
+            }
+
+            > img {
+                position: absolute;
+                right: 26px;
+                top: 8px;
+                z-index: 10;
+            }
+        }
+    }
+    
+    hr {
+        display: none;
+    }
+    
+    div.ReportDescription,
+    div.ReportFilterContainer {
+        float: left;
+        padding: 6px;
+        margin: 2px 0;
+        font-weight: bold;
+        border: 1px solid #ccc;
+        background: @greyLighter;
+        .borderRadiusLarge;
+    }
+}
+.PageContent {
+    #siteNavListCommissions li, 
+    #siteNavListCommissions li:hover, 
+    #CommissionReportList li,
+    #CommissionReportList li:hover {
+        background-color: transparent;
+        border: 0;
+        .borderRadiusNone;
+    }
+}
+table.dxgvControl_Webcetera {
+    width: 100%!important;
+}
+tr#_ctl0__ctl0_MainContentPlaceHolder_cphContent_gvSteps_DXHeadersRow0 > td {
+    border-bottom: @tableHeaderBorderWidth solid @tableHeaderBorder;
+}
+.dxgvControl_Webcetera {
+    
+    table tbody {
+        
+        tr#_ctl0__ctl0_MainContentPlaceHolder_cphContent_downloadAspxGrid_DXHeadersRow0 {
+            border-right: 0;
+            border-left: 0;
+
+            > td {
+                border-bottom: @tableHeaderBorderWidth solid @tableHeaderBorder;
+            }
+        }
+    }
+    
+    a {
+        color: @linkColor;
+        
+        &:hover {
+            color: @linkHoverColor;
+            text-decoration: none;
+        }
+    }
+    .dxgvHeader_Webcetera,
+    .dxgvHeader_Webceteratable td {
+        background: @tableHeaderBackground;
+        border-bottom: @tableHeaderBorderWidth solid @tableHeaderBorder;
+        font-weight: bold;
+    }
+    
+    .dxgvHeader_Webcetera {
+        border: 0;
+        table {
+            background: transparent;
+            height: @inputHeight;
+        }
+
+        td {
+            color: @tableHeaderText;
+            padding: 0 @paddingSmall;
+        }
+
+        img {
+            max-width: none;
+        }
+    }
+    
+    .dxpCtrl table {
+        background: @white;
+        
+        td {
+            color: #666;
+         //   display: none;
+        }
+        .dxpPageNumber_Webcetera {
+            display: block;
+            border: 1px solid #ccc;
+            color: @grey;
+            margin: 0;
+        }
+        .dxpCurrentPageNumber_Webcetera {
+            .btn-small;
+            background: @blue;
+            color: @white;
+            border: 1px solid @blue;
+            .borderRadiusNone;
+        }
+    }
+    .dxgvPagerBottomPanel_Webcetera {
+        background:#fff;
+    }
+    
+    .dxb {
+        width: auto;
+    }
+}
+div#_ctl0__ctl0_MainContentPlaceHolder_cphContent_divExportFunctions > table {
+    float: right;
+    margin-top: 6px;
+}
+.dxbButton {
+    .btn-primary;
+    
+    &:hover {
+        color: @white;
+    }
+}
+
+font[color="DarkGreen"] {
+    color: @green;
+}
+font[color="DarkRed"] {
+    color: @red;
+}
+
+// Manage LOBS
+// ---------------------------
+.ui-layout-center {
+    #ManageLOBSGrid_wrapper {
+        padding: 18px 18px 18px 8px;
+    }
+    .dataTables_section, 
+    .dataTables_filter, 
+    .EZ_dataTables_footer {
+        border: 0;
+        background-color: #fff;
+    }
+    .dataTables_filter {
+        label {
+            input {
+                min-width: 250px;
+            }
+        }
+    }
+    .dataTables_wrapper {
+        border: 0;
+    }
+    .dataTables_scroll .dataTables_scrollHead table.grid.dataTable th {
+        text-indent: 0;
+        padding-left: 6px;
+        background: @tableHeaderBackground;
+        color: @tableHeaderText;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        .font-size (12);
+        font-weight: bold;
+        border: 0;
+    }
+    .dataTables_scrollHead {
+        border: 0!important;
+    }
+    .dataTables_scrollBody {
+        overflow: hidden!important;
+        width: 100%!important;
+        border: 0!important;
+        
+        .gridHeader,
+        thead {
+            border: 0!important;
+        }
+    }
+}
+ 
+// Policy Management (Logi)
+// --------------------------
+th.rdThemeDataTableHeader {
+    background: transparent;
+}
+#divGrid thead {
+    border-bottom: 2px solid @blueDark;
+}
+.rdThemeDataTable, 
+.rdAgDataTable, 
+.rdOgOlapTable, 
+.rdDgOlapTable {
+    background: transparent;
+}
+.rdThemeDataTableSummaryRow td {
+    background: transparent;
+    border: 0;
+}
+tr.rdDataCalendarWeekdayCaption td {
+    background: #fff;
+    color: @blue;
+    .font-size (11);
+}
+.rdDataCalendarDay {
+    padding: 4px;
+    text-align: center;
+}
+span.rdDataCalendarDayLabel {
+    color: #666;
+}
+table.rdPopupPanel.rdDataCalendarPopUp {
+    box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+}
+.rdPopupPanel {
+    border-color: #ccc;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+}
+.rdDataCalendarDayLabelHighlight {
+    text-align: center;
+}
+IMG.rdDataCalendarImage {
+    display: none;
+}
+#actDatePickerForInputDate_txtStart,
+#actDatePickerForInputDate_txtEnd {
+    position: relative;
+}
+#actDatePickerForInputDate_txtStart:before,
+#actDatePickerForInputDate_txtEnd:before {
+    position: absolute;
+    font-family: @iconFontFamily;
+    display: block;
+    content: @icon-calendar;
+    font-size:16px;
+    z-index: 1;
+    right: 6px;
+    top: -3px;
+    color: @iconColor;
+}
+input.rdThemeInput:focus {
+    background: #fff;
+}
+input[type='text'],
+.rd-checkboxlist-dropdown, 
+.ThemeLinkButton, 
+.ThemeLinkButtonSmall, 
+.yui-nav A:link {
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+}
+#divFilters .ReportDescription {
+    background: @blueLightest;
+    color: @blueDark;
+    border: 0;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+}
+input.rdThemeInput, 
+textarea.rdThemeInput, 
+select.rdThemeInput, 
+select.rdDataCalendarDropdown {
+    margin-left: 3px;
+}
+#divFilters {
+    > table.inputGrid {
+        background: @greyLighter;
+        box-shadow: inset 0 0 0 1px #ccc;
+        -webkit-border-radius: 2px;
+        border-radius: 2px;
+        
+        > tbody {
+            margin: 10px;
+            display: block;
+        }
+    }
+}

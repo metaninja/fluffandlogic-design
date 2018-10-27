@@ -1,0 +1,354 @@
+<div class="ez-main-content">
+
+    <div class="bff-include" data-src="app/pages/maps/view/header.html" data-page="details"></div>
+
+    <div class="page-actions">
+        <div class="row">
+            <div class="col-md-6">
+            </div>
+            <div class="col-md-6 text-right">
+                <a href="javascript:void(0);" class="btn btn-link pull-right mr-2" data-toggle="modal" data-target="#unsaved-changes-modal" data-redirect="/app/pages/maps/index.html">Cancel</a>
+                <a href="#/app/pages/dashboard/" class="btn btn-success pull-right btn-save-org-profile js-persona js-persona-map-admin">Save <i class="linearicon-check ml-2"></i></a>
+                <a href="#/app/pages/maps/" class="btn btn-success pull-right btn-save-org-profile js-persona js-persona-superuser">Save <i class="linearicon-check ml-2"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="ez-page-body">
+        <div class="ez-page-content content-container">
+
+            <ul class="tabs js-persona js-persona-superuser mb-2">
+                <li class="tab"><a class="tab-link active" href="#/app/pages/maps/view/index.html">Overview</a></li>
+                <li class="tab"><a class="tab-link" href="#/app/pages/maps/view/ivans/index.html">IVANS</a></li>
+                <li class="tab"><a class="tab-link" href="#/app/pages/maps/view/history/index.html">History</a></li>
+            </ul>
+
+            <div class="row">
+                <div class="col-md-9">
+                    <div class="row form-org-profile">
+                        <div class="col-lg-2">
+                            <img src="libs/images/logo-smart-choice.png" alt="" class="img-thumbnail mt-3">
+                        </div>
+                        <div class="col-lg-5 pr-5">
+                            <div class="form-group">
+                                <label class="required">My Agency's Legal Name</label>
+                                <input type="text" class="form-control" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="required">Type</label>
+                                <select class="form-control" required>
+                                    <option value="">--Select--</option>
+                                    <option>MGA</option>
+                                    <option>MGU</option>
+                                    <option>Wholesaler</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="required">Status</label>
+                                <select class="form-control" required>
+                                    <option>Enabled</option>
+                                    <option>Disabled</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="required">Management System Used</label>
+                                <select class="form-control" required>
+                                    <option value="">--Select--</option>
+                                    <option value="1">Agency Advantage</option>
+                                    <option value="2">Agency Master</option>
+                                    <option value="40">Agency Matrix</option>
+                                    <option value="3">Agency On-Line</option>
+                                    <option value="4">Agency Software, Inc</option>
+                                    <option value="5">Agency Solution</option>
+                                    <option value="12">Agency Systems, Inc - Agency Management Software</option>
+                                    <option value="13">Agency Systems, Inc - Apps/ACORD &amp; Agency Mgmt.</option>
+                                    <option value="14">Agency Systems, Inc - Internet Agency Systems/Apps</option>
+                                    <option value="11">Agency Systems, Inc.</option>
+                                    <option value="15">AMS Services, Inc - AfW</option>
+                                    <option value="16">AMS Services, Inc - AfW Online</option>
+                                    <option value="17">AMS Services, Inc - AMS360</option>
+                                    <option value="18">AMS Services, Inc - Prime 2000</option>
+                                    <option value="19">AMS Services, Inc - Sagitta/Sagitta Online</option>
+                                    <option value="6">AMSOFT</option>
+                                    <option value="36">Applied Systems, Inc.- Epic</option>
+                                    <option value="20">Applied Systems, Inc.- TAM</option>
+                                    <option value="21">Applied Systems, Inc.- TAM Online</option>
+                                    <option value="22">Applied Systems, Inc.- Vision</option>
+                                    <option value="7">ARS Insurance Software</option>
+                                    <option value="23">DORIS Insurance Systems - FILESERVERonline</option>
+                                    <option value="24">DORIS Insurance Systems - The Agents Choice</option>
+                                    <option value="25">Ebix, Inc.</option>
+                                    <option value="39">EZLynx</option>
+                                    <option value="26">FSC Insurance Solutions - MI Management System</option>
+                                    <option value="27">HawkSoft Client Management System</option>
+                                    <option value="28">InStar Corporation - MeGA</option>
+                                    <option value="29">InStar Corporation - Orion</option>
+                                    <option value="9">Insurance Automation - Smart Agent</option>
+                                    <option value="8">IRS/AIMS MARS</option>
+                                    <option value="10">NASA - Eclipse</option>
+                                    <option selected="selected" value="33">No Management System</option>
+                                    <option value="32">Other</option>
+                                    <option value="37">QQ Evolution</option>
+                                    <option value="30">Quick File</option>
+                                    <option value="38">Quomation Insurance Services, Inc - PowerManage</option>
+                                    <option value="34">Strategic Insurance Software, Inc. - SEMCI PARTNER</option>
+                                    <option value="35">Xanatek, Inc.-Insurance Management Solutions(IMS)</option>
+                                    <option value="31">XDimensional Technologies, Inc. - Nexsure</option>
+
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Website URL</label>
+                                <input type="text" class="form-control" value="http://index.html">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-5">
+                            <div class="form-group">
+                                <label>DBA Name</label>
+                                <input type="text" class="form-control">
+                            </div>
+
+                            <div class="form-group">
+                                <label>Org Description</label>
+                                <input type="text" class="form-control">
+                            </div>
+
+                            <div class="form-group">
+                                <label>Status Description</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label>Trial Mode</label>
+                                <select class="form-control">
+                                    <option>--Select--</option>
+                                    <option>Yes</option>
+                                    <option>No</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-lg-12">
+                <p>&nbsp;</p>
+
+                <div class="section-header">
+                    <h2 class="h2">Address</h2>
+                    <a href="javascript:void(0);" class="btn btn-success" data-toggle="modal" data-target="#add-address-modal">
+                        Add Address
+                        <i class="linearicon-plus ml-2"></i>
+                    </a>
+                </div>
+
+                <table class="table table-hover">
+                    <thead>
+                    <tr>
+                        <th>Type</th>
+                        <th>Point of Contact</th>
+                        <th>Street</th>
+                        <th>City</th>
+                        <th>State</th>
+                        <th>Zip</th>
+                        <th>Primary</th>
+                        <th></th>
+                    </tr>
+                    </thead>
+                    <body>
+                    <tr>
+                        <td>Work</td>
+                        <td>John Doe</td>
+                        <td>5100 Gerrymander Rd</td>
+                        <td>San Antonio</td>
+                        <td>TX</td>
+                        <td>78240-0000</td>
+                        <td class="col-primary">
+                            <i class="linearicon-checkmark-circle linearicon-lg text-success status-primary show"></i>
+                        </td>
+                        <td>
+                            <div class="dropdown">
+                                <a class="dropdown-toggle" href="https://example.com" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Actions
+                                </a>
+
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <a class="dropdown-item" href="javascript:void(0);" data-toggle="modal" data-target="#add-address-modal">Edit</a>
+                                    <a class="dropdown-item" href="javascript:void(0);">Remove</a>
+                                    <a class="dropdown-item btn-set-as-primary" href="javascript:void(0);">Set As Primary</a>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Office</td>
+                        <td>John Doe</td>
+                        <td>5100 Gerrymander Rd</td>
+                        <td>San Antonio</td>
+                        <td>TX</td>
+                        <td>78240</td>
+                        <td class="col-primary">
+                            <i class="linearicon-checkmark-circle linearicon-lg text-success status-primary"></i>
+                        </td>
+                        <td>
+                            <div class="dropdown">
+                                <a class="dropdown-toggle" href="https://example.com" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Actions
+                                </a>
+
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <a class="dropdown-item" href="javascript:void(0);" data-toggle="modal" data-target="#add-address-modal">Edit</a>
+                                    <a class="dropdown-item" href="javascript:void(0);">Remove</a>
+                                    <a class="dropdown-item btn-set-as-primary" href="javascript:void(0);">Set As Primary</a>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    </body>
+                </table>
+
+                <p>&nbsp;</p>
+
+                <div class="section-header">
+                    <h2 class="h2">Phone and Fax</h2>
+                    <a href="javascript:void(0);" class="btn btn-success" data-toggle="modal" data-target="#add-phone-modal">
+                        Add Phone/Fax
+                        <i class="linearicon-plus ml-2"></i>
+                    </a>
+                </div>
+
+                <table class="table table-hover">
+                    <thead>
+                    <tr>
+                        <th>Type</th>
+                        <th>Contact Name</th>
+                        <th>Department</th>
+                        <th>Phone Number</th>
+                        <th>Primary</th>
+                        <th></th>
+                    </tr>
+                    </thead>
+                    <body>
+                    <tr>
+                        <td>Work</td>
+                        <td>John Doe</td>
+                        <td>Billing</td>
+                        <td>(210) 730-2606</td>
+                        <td class="col-primary">
+                            <i class="linearicon-checkmark-circle linearicon-lg text-success status-primary show" data-primary="y"></i>
+                        </td>
+                        <td>
+                            <div class="dropdown">
+                                <a class="dropdown-toggle" href="javascript:void(0);" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Actions
+                                </a>
+
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <a class="dropdown-item" href="javascript:void(0);" data-toggle="modal" data-target="#add-phone-modal">Edit</a>
+                                    <a class="dropdown-item" href="javascript:void(0);">Remove</a>
+                                    <a class="dropdown-item btn-set-as-primary" href="javascript:void(0);">Set As Primary</a>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Office</td>
+                        <td>John Doe</td>
+                        <td>Admin</td>
+                        <td>(210) 730-2606</td>
+                        <td class="col-primary">
+                            <i class="linearicon-checkmark-circle linearicon-lg text-success status-primary" data-primary=""></i>
+                        </td>
+                        <td>
+                            <div class="dropdown">
+                                <a class="dropdown-toggle" href="javascript:void(0);" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Actions
+                                </a>
+
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <a class="dropdown-item" href="javascript:void(0);" data-toggle="modal" data-target="#add-phone-modal">Edit</a>
+                                    <a class="dropdown-item" href="javascript:void(0);">Remove</a>
+                                    <a class="dropdown-item btn-set-as-primary" href="javascript:void(0);">Set As Primary</a>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    </body>
+                </table>
+
+                <p>&nbsp;</p>
+
+                <div class="section-header">
+                    <h2 class="h2">Email</h2>
+                    <a href="javascript:void(0);" class="btn btn-success" data-toggle="modal" data-target="#add-email-modal">
+                        Add Email
+                        <i class="linearicon-plus ml-2"></i>
+                    </a>
+                </div>
+
+                <table class="table table-hover">
+                    <thead>
+                    <tr>
+                        <th>Type</th>
+                        <th>Contact Name</th>
+                        <th>Email</th>
+                        <th>Primary</th>
+                        <th></th>
+                    </tr>
+                    </thead>
+                    <body>
+                    <tr>
+                        <td>Work</td>
+                        <td>John Doe</td>
+                        <td>johnd@mgallc.com</td>
+                        <td class="col-primary">
+                            <i class="linearicon-checkmark-circle linearicon-lg text-success status-primary show"></i>
+                        </td>
+                        <td>
+                            <div class="dropdown">
+                                <a class="dropdown-toggle" href="javascript:void(0);" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Actions
+                                </a>
+
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <a class="dropdown-item" href="javascript:void(0);" data-toggle="modal" data-target="#add-email-modal">Edit</a>
+                                    <a class="dropdown-item" href="javascript:void(0);">Remove</a>
+                                    <a class="dropdown-item btn-set-as-primary" href="javascript:void(0);">Set As Primary</a>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    </body>
+                </table>
+
+                <p>&nbsp;</p>
+
+            </div>
+
+            <div class="bff-include" data-src="app/shared/crud-history.html"></div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function() {
+        $(".nav-parent").eq(1).find(".nav-parent-header").addClass("active");
+    })
+</script>
+
+
+
+<div class="bff-include" data-src="app/shared/contact/add-address-modal.html"></div>
+<div class="bff-include" data-src="app/shared/contact/add-phone-modal.html"></div>
+<div class="bff-include" data-src="app/shared/contact/add-email-modal.html"></div>
+<div class="bff-include" data-src="app/shared/unsaved-changes-modal.html"></div>
+
+<div class="bff-script" data-src="app/shared/set-as-primary.js"></div>
+<div class="bff-script" data-src="app/shared/forms/required.js"></div>
+<div class="bff-script" data-src="app/shared/persona.js"></div>

@@ -1,0 +1,189 @@
+<title>Advanced CDR Search</title>
+
+<form>
+    <!-- begin: Page Heading -->
+    <div class="container-fluid page-header">
+        <div class="container">
+
+            <div class="pull-left">
+                <div class="page-header-icon">
+                    <span class="fa fa-search fa-2x"></span>
+                </div>
+                <h2>Communciation Search</h2>
+            </div>
+
+            <div class="page-header-btn-group pull-right">
+                <a class="btn btn-link-previous" href="#/pages/search/communication/index.html">
+                    Return to Basic Search
+                </a>
+            </div>
+
+        </div>
+    </div>
+    <!-- end: Page Heading -->
+
+    <div class="container no-breadcrumb">
+
+        <!--Row2-->
+        <div class="row">
+            <div class="col-md-2">
+                <h4>
+                    Date/Time
+                </h4>
+            </div>
+            <div class="col-md-5">
+                <div class="form-group">
+                    <label>
+                        Communication Date Range
+                    </label>
+
+                    <div class="input-group">
+                        <input type="text" id="reservation" class="form-control" placeholder="MM/DD/YYYY hh:mm A - MM/DD/YYYY hh:mm A">
+                        <span class="input-group-addon"><i class="fa fa-calendar"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5">
+            </div>
+        </div>
+
+        <hr>
+
+        <!--Row3-->
+        <div class="row">
+            <div class="col-md-2">
+                <h4>
+                    Inmate Info
+                </h4>
+            </div>
+            <div class="col-md-5">
+                <label>
+                    Inmate Name
+                </label>
+
+                <input type="text" class="form-control" placeholder="Inmate name">
+            </div>
+            <div class="col-md-5">
+                <div class="form-group">
+                    <label>
+                        Inmate ID (Custody Account #)
+                    </label>
+
+                    <input type="text" class="form-control" placeholder="Inmate ID or custody account">
+                </div>
+            </div>
+            <div class="col-md-2">
+            </div>
+            <div class="col-md-5">
+                <div class="form-group">
+                    <label>
+                        Prepaid Account Number
+                    </label>
+
+                    <input type="text" class="form-control" placeholder="Prepaid account number">
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="form-group">
+                    <label>
+                        PIN
+                    </label>
+
+                    <input type="text" class="form-control" placeholder="PIN">
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <!--Row4-->
+        <div class="form-group row">
+            <div class="col-md-2">
+                <h4>
+                    Communication Info
+                </h4>
+            </div>
+            <div class="col-md-5">
+                <div class="form-group">
+                    <label>
+                        Dialed Number(s)
+                    </label>
+
+                    <div class="controls">
+                        <input type="text" class="form-control" placeholder="Dialed number(s)">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+
+                        <div class="form-group">
+                            <label>
+                                Duration
+                            </label>
+                            <select class="form-control">
+                                <option>
+                                    Greater Than
+                                </option>
+                                <option>
+                                    Less Than
+                                </option>
+                            </select>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-6">
+
+                        <div class="form-group">
+                            <label for="DurationMinutes">Minutes</label>
+                            <input id="DurationMinutes" name="DurationMinutes" class="form-control" placeholder="0" type="text">
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="col-md-5">
+
+                <div class="form-group">
+                    <label>
+                        Destination Zone
+                    </label>
+
+                    <select class="form-control">
+                        <option>All</option>
+                        <option>Interlata/Interstate</option>
+                        <option>Interlata/Intrastate</option>
+                        <option>International</option>
+                        <option>Intralata/Interstate</option>
+                        <option>Intralata/Intrastate</option>
+                        <option>Local</option>
+                    </select>
+                </div>
+
+            </div>
+            <div class="col-md-5">
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-2">
+                <a class="btn btn-primary btn-search" href="#/CDRSearchResults_Basic.html"> Search</a>
+            </div>
+        </div>
+        <!-- main content -->
+    </div>
+</form>
+
+<!-- Sidebar and Main Content -->
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('.btn-update-search').hide();
+    });
+</script>

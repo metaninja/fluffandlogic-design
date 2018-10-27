@@ -1,0 +1,35 @@
+<div class="contact-section">
+    <div class="contact-title">
+        <div class="contact-title-icon ">
+            <i class="linearicon-envelope linearicon-lg"></i>
+        </div>
+        <h2 class="h2">
+            Email
+        </h2>
+    </div>
+    <div class="contact-form-group">
+        <div class="contact-primary">
+            <label class="check-primary" for="check-email-primary1" data-toggle="tooltip" data-placement="top" title="Primary">
+                <input type="radio" class="btn-success" id="check-email-primary1" name="contact-email">
+                <i class="check-primary-content linearicon-circle-checkmark linearicon-lg text-success"></i>
+            </label>
+        </div>
+        <div class="contact-form">
+            <div class="contact-form-row">
+                <input type="text" class="form-control" placeholder="Email">
+                <select class="form-control ml-2">
+                    <option>Home</option>
+                    <option>Work</option>
+                    <option>Other</option>
+                </select>
+            </div>
+        </div>
+        <a href="javascript:void(0)" class="contact-action" onclick="deleteContact(this)">
+            <i class="linearicon-trash2 linearicon-lg text-danger"></i>
+        </a>
+    </div>
+    <a href="javascript:void(0)" onclick="addContact(this)" class="contact-add text-success">
+        <i class="linearicon-plus-circle linearicon-lg mr-2"></i>
+        Add Email
+    </a>
+</div>

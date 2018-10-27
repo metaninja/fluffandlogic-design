@@ -1,0 +1,132 @@
+<!-- begin: Forward Call modal -->
+<div class="modal fade" id="forwardModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content modal-md">
+            <div class="modal-header modal-primary">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <div class="modal-title">
+                    Forward Call To
+                </div>
+            </div>
+            <div class="modal-body">
+
+                <label class="rounded-check">
+                    <input type="radio" name="forwardRadios" id="forwardRadios" value="latest" checked>
+                    <span class="icon"></span>
+                    <span class="rows">
+                        <span class="title">
+                            <strong>Last forwarded recipient:</strong>
+                        </span>
+                    <span class="desc">
+                            Stella Cooley &nbsp; 214-123-4567
+                        </span>
+                    </span>
+                </label>
+
+                <label class="rounded-check forward-select-investigator">
+                    <input type="radio" name="forwardRadios" id="forwardRadios" value="latest">
+                    <span class="icon"></span>
+                    <span class="rows">
+                        <span class="title">
+                            <strong>Search for investigators:</strong>
+                        </span>
+                    <span class="desc" style="position: relative">
+                            <!-- should be an autocomplete dropdown -->
+                            <input type="text" class="form-control find-investigator" placeholder="Search for a name or phone number" style="width: 200%">
+                            <div class="col-md-6 autocomplete" style="max-height: 130px; padding: 5px; z-index: 20; overflow-y: auto; border: 1px solid #ccc;
+                                                                         border-bottom-left-radius: 5px; border-bottom-right-radius: 5px; box-shadow: 0 3px 3px 1px rgba(0,0,0,.1);
+                                                                         position: absolute; left: 0; top: 32px; background-color: white; width: 200%;">
+                                <a href="#" class="btn btn-link">Stella Cooley &nbsp; 214-123-4567</a>
+                                <a href="#" class="btn btn-link">Stella Cooley &nbsp; 214-123-4567</a>
+                                <a href="#" class="btn btn-link">Stella Cooley &nbsp; 214-123-4567</a>
+                                <a href="#" class="btn btn-link">Stella Cooley &nbsp; 214-123-4567</a>
+                                <a href="#" class="btn btn-link">Stella Cooley &nbsp; 214-123-4567</a>
+                                <a href="#" class="btn btn-link">Stella Cooley &nbsp; 214-123-4567</a>
+                                <a href="#" class="btn btn-link">Stella Cooley &nbsp; 214-123-4567</a>
+                                <a href="#" class="btn btn-link">Stella Cooley &nbsp; 214-123-4567</a>
+
+                            </div>
+                        </span>
+                    </span>
+                </label>
+
+                <label class="rounded-check">
+                    <input type="radio" name="forwardRadios" id="forwardRadioss" value="latest">
+                    <span class="icon"></span>
+                    <span class="rows">
+                        <span class="title">
+                            <strong>New name and phone number</strong>
+                        </span>
+                    <span class="form-inline form-horizontal desc">
+                            <input type="text" class="form-control" placeholder="Name">
+                            <input type="tel" class="form-control" placeholder="Phone">
+                        </span>
+                    </span>
+                </label>
+                <input type="checkbox" style="margin-left:35px; margin-top: -41px">&nbsp;Save name and number to call forward list
+
+                <hr />
+
+                <h4>This call is currently being forwarded to:</h4>
+
+                <hr />
+
+                <table class="table table-condensed table-striped table-end-call-forward">
+                    <thead>
+                        <th>Name
+                        </th>
+                        <th>Phone Number
+                        </th>
+                        <th style="text-align: center">End Call Forward</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Jason Kreis</td>
+                            <td>555-231-6234</td>
+                            <td>
+                                <button class="btn btn-danger btn-icon" data-dismiss="modal" data-toggle="modal" data-target="#terminateForwardModal">
+                                    <i class="fa fa-times-circle fa-2x"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Manli Manson</td>
+                            <td>412-231-6234</td>
+                            <td>
+                                <button class="btn btn-danger btn-icon" data-dismiss="modal" data-toggle="modal" data-target="#terminateForwardModal">
+                                    <i class="fa fa-times-circle fa-2x"></i>
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+            <div class="modal-footer">
+                <a href class="btn btn-link" data-dismiss="modal">Cancel </a>
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Forward Call</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end: Forward Call modal -->
+
+<script>
+    //----------------------------------------
+    //          Forward Call autocomplete
+    //----------------------------------------
+
+    $('.autocomplete').hide();
+
+    //Show autocomplete dropdown
+    $('.find-investigator').click(function() {
+        $('.autocomplete').show();
+    });
+
+    //Hide autocomplete when you click a link
+    $('.autocomplete a').click(function() {
+        $('.autocomplete').hide();
+//  $('.autocomplete').parents('label').attr('checked','checked');
+    });
+
+</script>

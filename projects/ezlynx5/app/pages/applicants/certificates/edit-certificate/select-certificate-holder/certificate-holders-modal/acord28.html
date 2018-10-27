@@ -1,0 +1,141 @@
+<div class="ez-dropdown-container content-container bg-gray200 my-4">
+    <div class="ez-dropdown-heading collapsed" data-toggle="collapse" data-target="#collapse-acord28" aria-expanded="true">
+        <h2 class="h2">Location and Building</h2>
+        <a href="javascript:void(0);">
+            <i class="icon-chevron-sign-down linearicon-chevron-down"></i>
+            <i class="icon-chevron-up linearicon-chevron-up"></i>
+        </a>
+    </div>
+
+    <div class="ez-dropdown-content collapse" id="collapse-acord28" tabindex="-1">
+        <div class="form-group">
+            <label>Location </label>
+            <select class="form-control" id="locations"> <!-- onchange="addToMasterRemarks(this)" -->
+                <option>-- Select --</option>
+                <option>1 - 927 Hogsmeade Hwy, Suite 2122, Newbury NE 82190</option>
+                <option>2 - 1232 Jefferson Rd, #1015, Newbury NE 82190</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Building</label>
+            <select class="form-control" id="locations"><!--  onchange="addToMasterRemarks(this)" -->
+                <option>-- Select --</option>
+                <option>Building 1 (927 Hogsmeade Hwy, Suite 2122, Newbury NE 82190)</option>
+                <option>Building 2 (1232 Jefferson Rd, #1015, Newbury NE 82190)</option>
+            </select>
+        </div>
+
+        <select class="form-control mb-2" id="choose-vehicle-location" onchange="chooseVehicleOrLocation(this)">
+            <option>-- Select Building or Business Personal Property --</option>
+            <option>Building</option>
+            <option>Business Personal Property</option>
+        </select>
+
+        <div class="form-group">
+            <label>Commercial Property Amount of  Insurance</label>
+            <input type="text" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label>Deductible</label>
+            <input type="text" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label>Loan #</label>
+            <input type="text" class="form-control">
+        </div>
+
+        <h3 class="h3">Additional Interest</h3>
+
+        <div class="row">
+            <div class="col">
+                <div class="form-group">
+                    <label for="waiver-umbrella">
+                        Contract of Sale
+                    </label>
+
+                    <label class="switch mt-0">
+                        <input type="checkbox" id="waiver-umbrella">
+                        <div class="slider round">
+                            <span class="on">YES</span>
+                            <span class="off">NO</span>
+                        </div>
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <label for="waiver-compensation">
+                        Mortgagee
+                    </label>
+
+                    <label class="switch mt-0">
+                        <input type="checkbox" id="waiver-compensation">
+                        <div class="slider round">
+                            <span class="on">YES</span>
+                            <span class="off">NO</span>
+                        </div>
+                    </label>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="form-group">
+                    <label for="waiver-umbrella">
+                        Lender's Loss Payable
+                    </label>
+
+                    <label class="switch mt-0">
+                        <input type="checkbox" id="waiver-umbrella">
+                        <div class="slider round">
+                            <span class="on">YES</span>
+                            <span class="off">NO</span>
+                        </div>
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <label for="waiver-compensation">
+                        Loss Payee
+                    </label>
+
+                    <label class="switch mt-0">
+                        <input type="checkbox" id="waiver-compensation">
+                        <div class="slider round">
+                            <span class="on">YES</span>
+                            <span class="off">NO</span>
+                        </div>
+                    </label>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="form-group">
+                    <label for="waiver-umbrella">
+                        Other
+                    </label>
+
+                    <label class="switch mt-0">
+                        <input type="checkbox" id="waiver-umbrella">
+                        <div class="slider round">
+                            <span class="on">YES</span>
+                            <span class="off">NO</span>
+                        </div>
+                    </label>
+
+                    <div class="form-group mt-2">
+                        <input type="text" class="form-control">
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+
+    </div>
+</div>

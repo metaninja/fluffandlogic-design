@@ -1,0 +1,55 @@
+<div class="panel panel-action clearfix">
+    <div class="results-number-container pull-left">
+        <span class="results-number" data-count="92"></span>&nbsp;
+        <span class="results-label">Results</span>
+    </div>
+
+    <div class="pull-right">
+        <a data-toggle="modal" data-target="#delete-commissary-requests" class="btn btn-link btn-delete-commissary-request disabled">
+            <i class="fa fa-trash-o"></i> Delete
+        </a>
+
+        <div class="btn-group btn-export-results">
+            <button class="btn btn-link dropdown-toggle disabled" data-toggle="dropdown">
+                Export Results
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+                <li><a href="#">CSV</a></li>
+                <li><a href="#">Excel</a></li>
+                <li><a href="#">PDF</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- Delete Phone Number Modal -->
+<div class="modal fade" id="delete-commissary-requests" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content modal-md">
+            <div class="modal-header modal-danger">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title" id="myModalLabel">Delete Commissary Requests?</h4>
+            </div>
+            <div class="modal-body">
+                <p>You are about to delete the commissary requests for 3 inmate(s).</b>
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-link" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Yes, Delete Commissary Requests</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+$(document).ready(function() {
+    // Enable Download, Export links
+    $('.table input[type=checkbox]').click(function() {
+        $('.panel-action button').removeClass('disabled');
+    });
+});
+
+
+</script>

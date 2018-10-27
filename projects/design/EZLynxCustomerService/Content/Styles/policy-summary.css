@@ -1,0 +1,124 @@
+.bold {
+    font-weight: bold;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-left: 8px;
+}
+td {
+    padding: 4px;
+}
+thead tr {
+    border-bottom: 2px solid #385C94;
+    font-weight: bold;
+}
+tbody tr {
+    border-bottom: 1px solid #ccc;
+}
+.ps-large {
+    font-size: 16px;
+}
+.ps-section {
+    margin-top: 30px;
+}
+.ps-named-insured {
+    margin-bottom: 8px;
+}
+.unpad {
+    padding: 0;
+    margin-top: -1px;
+    margin-left: 0;
+}
+.unpad td {
+    padding:0;
+}
+.unpad tr {
+    border: 0;
+}
+.indent-left {
+    padding-left: 8px;
+}
+.thin {
+    font-weight: 300;
+}
+.ps-list {
+    list-style: circle;
+    margin-left: 25px;
+}
+#policy-summary h5 {
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-size: 1.4rem;
+    line-height: 14px;
+    line-height: 1.4rem;
+    color: #777;
+    padding-left: 0;
+    letter-spacing: 0.5px;
+}
+#policy-summary h6 {
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 12px;
+    color: black;
+    padding-left: 0;
+    letter-spacing: 0.5px;
+}
+#policy-summary h4 {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 12px;
+    color: black;
+    padding-left: 0;
+    letter-spacing: 0.5px;
+}
+table .half-width {
+    width: 50%;
+}
+.bufbot {
+    margin-bottom: 24px;
+}
+table.propCoverageTable td {
+    text-align : center;
+}
+table.propCoverageTable td:nth-child(1) {
+    text-align : left;
+}
+.quake-line-height {
+    line-height : 35px;
+}
+.quake-amount {
+    width : 25%;
+    margin-left: 0px !important;
+}
+.quake-ded {
+    width : 50%;
+    margin-left: 0px !important;
+}
+.padding-top-25 {
+    padding-top: 25px;
+}
+.no-bottom-border {
+    border-bottom: 0px;
+}
+.no-bottom-border {
+    border-bottom: 0px;
+}
+.td-width {
+    width: 60%;
+}
+.package-header {
+    display: block;
+    margin-bottom: 20px;
+}
+.package-toggle-header {
+    border-radius: 5px;
+    background-color: DodgerBlue;
+    color: #FFFFFF;
+    margin-right: 20px;
+}
+.package-monoline-section {
+    margin-bottom: 30px;
+}

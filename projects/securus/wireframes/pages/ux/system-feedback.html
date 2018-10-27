@@ -1,0 +1,271 @@
+<style>
+
+    .container {
+        position: relative;
+    }
+
+    .data {
+        position: relative;
+    }
+
+
+</style>
+
+<!-- See =Notification for jQuery -->
+<div class="notify-container">
+    <div class="notify notify-info">
+        <div class="text"><i class="fa fa-info-circle"></i> Password changes can take up to 30 minutes to take effect.</div>
+        <div class="close"><i class="fa fa-times-circle"></i></div>
+    </div>
+
+    <div class="notify notify-alert notify-alert-multiple">
+        <div class="text"><i class="fa fa-warning"></i> CDR could not be downloaded <span class="badge">3</span></div>
+        <div class="close"><i class="fa fa-times-circle"></i></div>
+    </div>
+
+    <div class="notify notify-alert">
+        <div class="text"><i class="fa fa-warning"></i> Please correct the errors in the form before saving.</div>
+        <div class="close"><i class="fa fa-times-circle"></i></div>
+    </div>
+
+    <div class="notify notify-success">
+        <div class="text"><i class="fa fa-check-circle"></i> Changes saved.</div>
+    </div>
+
+    <div class="notify notify-system">
+        <div class="text"><i class="fa fa-exclamation-circle"></i> We were unable to save the changes. Please try again later.</div>
+        <div class="close"><i class="fa fa-times-circle"></i></div>
+    </div>
+</div>
+<!-- See =Notification for jQuery -->
+
+
+<div class="container-fluid page-header">
+    <div class="container">
+        <div class="pull-left">
+            <div class="page-header-icon">
+                <span class="fa fa-search fa-2x"></span>
+            </div>
+            <h2>Page Header</h2>
+        </div>
+        <div class="page-header-btn-group pull-right">
+            <button class="btn btn-success btn-save">Save</button>
+        </div>
+    </div>
+</div>
+
+<div class="container no-breadcrumb">
+
+    <!-- page busy -->
+    <!-- see =BusyIndicator for jQuery -->
+    <div class="busy page-busy">
+        <div class="busy-icon">
+            <i class="fa fa-cog fa-2x fa-spin"></i>
+        </div>
+    </div>
+    <!-- see =BusyIndicator for jQuery -->
+    <!-- page busy -->
+
+    <div class="row">
+
+        <div class="col-md-7">
+
+
+            <div style="margin-bottom: 20px;">
+                <!-- See =Notification for jQuery -->
+                <button class="btn btn-primary btn-show-info">Show info</button>
+                <button class="btn btn-danger btn-show-alert">Show alert</button>
+                <button class="btn btn-success btn-show-success">Show success</button>
+                <button class="btn btn-system btn-show-system">Show system</button>
+                <button class="btn btn-danger btn-show-alert-multiple">Show multiple alerts</button>
+                <!-- See =Notification for jQuery -->
+            </div>
+
+
+            <div class="row">
+                <div class="col-md-9">
+                    <div class="form-group">
+                        <label for="search-text">Click Search to see section busy indicator</label>
+                        <input id="search-text" type="text" class="form-control" placeholder="Click Search to see section busy indicator">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <label for="btn-search">&nbsp;</label>
+                    <button id="btn-search" class="btn btn-primary btn-search">
+                        Search
+                    </button>
+                </div>
+            </div>
+
+            <div class="data">
+                <!-- section busy -->
+                <!-- see =BusyIndicator for jQuery -->
+                <div class="busy section-busy">
+                    <div class="busy-icon">
+                        <i class="fa fa-spinner fa-2x fa-spin"></i>
+                    </div>
+                </div>
+                <!-- see =BusyIndicator for jQuery -->
+                <!-- section busy -->
+
+                <table class="table table-hover">
+                    <tr>
+                        <th>Col 1</th>
+                        <th>Col 2</th>
+                        <th>Col 3</th>
+                    </tr>
+                    <tr>
+                        <td>Data 1</td>
+                        <td>Data 2</td>
+                        <td>Data 3</td>
+                    </tr>
+                    <tr>
+                        <td>Data 1</td>
+                        <td>Data 2</td>
+                        <td>Data 3</td>
+                    </tr>
+                    <tr>
+                        <td>Data 1</td>
+                        <td>Data 2</td>
+                        <td>Data 3</td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+
+        <div class="col-md-5">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    Form with Validation
+                </div>
+                <div class="panel-body">
+                    <p>Tab out of a field below to see tab-based field validation.
+                        Hit Save above to see Page level notifications.
+                    </p>
+
+                    <form role="form">
+                        <!-- See =FormValidation for jQuery -->
+                        <div class="form-group">
+                            <label for="required-field" class="control-label">Required Field*</label>
+                            <input id="required-field" type="text" class="form-control ng-invalid" placeholder="Required field">
+                            <!--<span class="fa fa-warning form-control-feedback"></span>-->
+                            <div class="validation-error">Field is required</div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="numeric-field" class="control-label">Number only</label>
+                            <input id="numeric-field" type="number" class="form-control ng-invalid" placeholder="Number only">
+                            <!--<span class="fa fa-warning form-control-feedback"></span>-->
+                            <div class="validation-error">Must be a number from 0-60</div>
+                        </div>
+                        <!-- See =FormValidation for jQuery -->
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    (function() {
+        $(document).ready(function() {
+            //--------- =Notification ---------------
+            $('.notify').hide();
+
+            $('.btn-show-info').click(function() {
+                $('.notify-info').slideDown(100);
+            });
+
+            $('.notify .close').click(function() {
+                $(this).parents('.notify').slideUp(100);
+            });
+
+            $('.btn-show-alert').click(function() {
+                $('.notify-alert').slideDown(100);
+            });
+
+            $('.btn-show-alert-multiple').click(function() {
+                $('.notify-alert-multiple').slideDown(100);
+            });
+
+
+            $('.btn-show-success').click(function() {
+                $('.notify-success').slideDown(100);
+                setTimeout(function() {
+                    $('.notify-success').slideUp(100);
+                }, 2000);
+            });
+
+            $('.btn-show-system').click(function() {
+                $('.notify-system').slideDown(100);
+            });
+
+
+            //--------- =Notification ---------------
+
+
+            //--------- =BusyIndicator ---------------
+
+            //Hide busy indicators on page load.
+            $('.page-busy').hide();
+            $('.section-busy').hide();
+
+            //Show page busy indicators when Save button is pressed.
+            $('.btn-save').click(function() {
+                $('.page-busy').show();
+                setTimeout(function() {
+                    $('.page-busy').hide();
+                }, 1000);
+            });
+
+            //Show section busy indicator when Search button is pressed.
+            $('.btn-search').click(function() {
+                $('.btn-search').attr('disabled','disabled');
+                $('.section-busy').show();
+                setTimeout(function() {
+                    $('.section-busy').hide();
+                    $('.btn-search').removeAttr('disabled');
+                }, 3000);
+            });
+
+            //--------- =BusyIndicator ---------------
+
+
+            //--------- =FormValidation ---------------
+            $('.validation-error').hide();
+
+
+            //Required field validation
+            $('#required-field').blur(function() {
+                var that = this;
+                if ($(this).val() === '') {
+                    $(this).addClass('aa-had-focus').show();
+                    $(this).next().show();
+                }
+                else {
+                    $(this).removeClass('aa-had-focus');
+                    $(this).next().hide();
+                }
+            });
+
+            //Number field validation
+            $('#numeric-field').blur(function() {
+                var that = this;
+                if ($(this).val !== '' && !Number($(this).val())) {
+                    $(this).parents('.form-group').addClass('has-error').children('.validation-error').show();
+                }
+                else {
+                    $(this).parents('.form-group').removeClass('has-error').children('.validation-error').hide();
+                }
+            });
+
+            //--------- =FormValidation ---------------
+
+
+        });
+    })();
+
+
+</script>

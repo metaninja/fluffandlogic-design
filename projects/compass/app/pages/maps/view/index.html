@@ -1,0 +1,78 @@
+<div class="ez-main-content">
+    <div class="bff-include" data-src="app/pages/maps/view/header.html" data-page="scorecard"></div>
+
+    <div class="ez-page-body full-width">
+        <div class="ez-page-content">
+            <main>
+                <div class="bff-include" data-src="app/pages/dashboard/shared/widgets.html"></div>
+            </main>
+        </div>
+    </div>
+</div>
+
+<script id="agency-info" type="text/x-handlebars-template">
+    <div class="content">
+        <h5>Agency Name: {{agencyName}}</h5>
+        <h5>Total Premium: {{totalPremium}}</h5>
+        <h5>Loss Ratio: {{lossRatio}}%</h5>
+    </div>
+</script>
+
+<script>
+    $(function() {
+        $(".nav-parent").eq(0).find(".nav-parent-header").addClass("active");
+    });
+
+    function addAgencyInfo(obj) {
+        var source = $("#agency-info").html();
+        var template = Handlebars.compile(source);
+        return template(obj);
+    }
+
+    var map;
+
+    function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 5,
+          center: new google.maps.LatLng(32.819595, -96.945419),
+          mapTypeId: 'terrain'
+        });
+
+        $.getJSON("app/pages/dashboard/shared/agency-data.json", function(data) {
+            displayData(data);
+        });
+    }
+
+    function displayData(data) {
+        var markers = data.map(function(obj) {
+            var location = {
+                lat: obj.latitude,
+                lng: obj.longitude
+            };
+
+            var marker = new google.maps.Marker({
+              position: location
+            });
+
+            var infowindow = new google.maps.InfoWindow({
+                content: addAgencyInfo(obj)
+            });
+
+            marker.addListener('mouseover', function() {
+                infowindow.open(map, marker);
+            });
+
+            marker.addListener('mouseout', function() {
+                infowindow.close(map, marker);
+            });
+
+            marker.addListener('click', function() {
+                window.open('#/app/pages/agencies/view/','_blank');
+            });
+
+            return marker;
+        });
+
+        var markerCluster = new MarkerClusterer(map, markers, {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
+    }
+</script>

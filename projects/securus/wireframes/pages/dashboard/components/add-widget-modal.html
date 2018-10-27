@@ -1,0 +1,195 @@
+<!-- begin: Add Note modal -->
+<div class="modal fade" id="addWidgetModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content modal-lg">
+            <div class="modal-header modal-primary">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <div class="modal-title">
+                    Add Widget
+                </div>
+            </div>
+            <div class="modal-body">
+
+                <div class="row">
+                    <div class="col-md-3">
+
+                        <ul class="bsnav bsnav-pills bsnav-stacked">
+
+                            <li class="accordion active">
+                                <a href="#" class="accordion-header gallery-activity">
+                                    <span>Activity</span>&nbsp;
+                                    <span class="badge">6</span>
+                                </a>
+                            </li>
+
+                            <li class="accordion">
+                                <a href="#" class="accordion-header gallery-tasks">
+                                    <span>Approval and Tasks</span>&nbsp;
+                                    <span class="badge">1</span>
+                                </a>
+                            </li>
+
+                            <li class="accordion">
+                                <a href="#" class="accordion-header gallery-investigate">
+                                    <span>Investigate</span>&nbsp;
+                                    <span class="badge">4</span>
+                                </a>
+                            </li>
+
+                            <li class="accordion">
+                                <a href="#" class="accordion-header gallery-manage">
+                                    <span>Manage</span>&nbsp;
+                                    <span class="badge">2</span>
+                                </a>
+                            </li>
+
+
+                        </ul>
+
+                    </div>
+                    <div class="col-md-9">
+
+                        <!-- Gallery of Activity Widgets -->
+                        <div class="gallery gallery-activity active">
+                            <div class="row margin-bottom-30">
+                                <div class="col-md-4 gallery-widget-container">
+                                    <a href="#" class="add-gallery-widget" data-dismiss="modal"></a>
+                                    <div class="bff-include widget-style" data-src="pages/dashboard/widgets/site-activity.html"></div>
+                                </div>
+                                <div class="col-md-4 gallery-widget-container">
+                                    <a href="#" class="add-gallery-widget" data-dismiss="modal"></a>
+                                    <div class="bff-include widget-style" data-src="pages/dashboard/widgets/calls.html"></div>
+                                </div>
+                                <div class="col-md-4 gallery-widget-container">
+                                    <a href="#" class="add-gallery-widget" data-dismiss="modal"></a>
+                                    <div class="bff-include widget-style" data-src="pages/dashboard/widgets/visits.html"></div>
+                                </div>
+                            </div>
+                            <div class="row margin-bottom-30">
+                                <div class="col-md-4 gallery-widget-container">
+                                    <a href="#" class="add-gallery-widget" data-dismiss="modal"></a>
+                                    <div class="bff-include widget-style" data-src="pages/dashboard/widgets/covert-alerts-table.html"></div>
+                                </div>
+                                <div class="col-md-4 gallery-widget-container">
+                                    <a href="#" class="add-gallery-widget" data-dismiss="modal"></a>
+                                    <div class="bff-include widget-style" data-src="pages/dashboard/widgets/top-dialed-numbers-list.html"></div>
+                                </div>
+                                <div class="col-md-4 gallery-widget-container">
+                                    <a href="#" class="add-gallery-widget" data-dismiss="modal"></a>
+                                    <div class="bff-include widget-style" data-src="pages/dashboard/widgets/due-today-empty.html"></div>
+                                </div>
+                            </div>
+                            <div class="row margin-bottom-30">
+                                <div class="col-md-4 gallery-widget-container">
+                                    <a href="#" class="add-gallery-widget" data-dismiss="modal"></a>
+                                    <div class="bff-include widget-style" data-src="pages/dashboard/widgets/covert-alerts-bar-graph.html"></div>
+                                </div>
+                                <div class="col-md-4 gallery-widget-container">
+                                    <a href="#" class="add-gallery-widget" data-dismiss="modal"></a>
+                                    <div class="bff-include widget-style" data-src="pages/dashboard/widgets/top-dialed-numbers-vertical-bar-chart.html"></div>
+                                </div>
+                                <div class="col-md-4 gallery-widget-container">
+                                    <a href="#" class="add-gallery-widget" data-dismiss="modal"></a>
+                                    <div class="bff-include widget-style" data-src="pages/dashboard/widgets/due-today-list.html"></div>
+                                </div>
+                            </div>
+                            <div class="row margin-bottom-30">
+                                <div class="col-md-4 gallery-widget-container">
+                                    <a href="#" class="add-gallery-widget" data-dismiss="modal"></a>
+                                    <div class="bff-include widget-style" data-src="pages/dashboard/widgets/covert-alerts-empty.html"></div>
+                                </div>
+                                <div class="col-md-4 gallery-widget-container">
+                                    <a href="#" class="add-gallery-widget" data-dismiss="modal"></a>
+                                    <div class="bff-include widget-style" data-src="pages/dashboard/widgets/top-dialed-numbers-horizontal-bar-chart.html"></div>
+                                </div>
+                                <div class="col-md-4 gallery-widget-container">
+                                    <a href="#" class="add-gallery-widget" data-dismiss="modal"></a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Gallery of Activity Widgets -->
+
+                        <!-- Gallery of Approvals and Tasks Widgets -->
+                        <div class="gallery gallery-tasks">
+                            <div class="col-md-12 gallery-widget-container">
+                                <a href="#" class="add-gallery-widget" data-dismiss="modal"></a>
+                                <ul class="nav nav-tabs">
+                                    <li class="active"><a href="#approve-visitors" data-toggle="tab">Visitors <span class="badge">3</span></a></li>
+                                    <li><a href="#approve-visits" data-toggle="tab">Visits <span class="badge">3</span></a></li>
+                                    <li><a href="#process-grievances" data-toggle="tab">Process Grievances <span class="badge">2</span></a></li>
+                                    <li><a href="#assign-grievances" data-toggle="tab">Assign Grievances  <span class="badge">3</span></a></li>
+                                </ul>
+                                <div class="tab-content">
+                                    <div role="tabpanel" class="tab-pane active" id="approve-visitors">
+                                        <div class="bff-include" data-src="pages/dashboard/visitor-approvals.html"></div>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane" id="approve-visits">
+                                        <div class="bff-include" data-src="pages/dashboard/visit-approvals.html"></div>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane" id="process-grievances">
+                                        <div class="bff-include" data-src="pages/dashboard/grievances.html"></div>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane" id="assign-grievances">
+                                        <div class="bff-include" data-src="pages/dashboard/grievances-assigner.html"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Gallery of Approvals and Tasks Widgets -->
+
+                        <!-- Gallery of Investigate Widgets -->
+                        <div class="gallery gallery-investigate">
+                            <div class="row margin-bottom-30">
+                                <div class="col-md-4 gallery-widget-container">
+                                    <a href="#" class="add-gallery-widget" data-dismiss="modal"></a>
+                                    <div class="bff-include widget-style" data-src="pages/dashboard/widgets/top-dialed-numbers-original.html"></div>
+                                </div>
+                                <div class="col-md-4 gallery-widget-container">
+                                    <a href="#" class="add-gallery-widget" data-dismiss="modal"></a>
+                                    <div class="bff-include widget-style" data-src="pages/dashboard/widgets/covert-alerts-original.html"></div>
+                                </div>
+                                <div class="col-md-4 gallery-widget-container">
+                                    <a href="#" class="add-gallery-widget" data-dismiss="modal"></a>
+                                    <div class="bff-include widget-style" data-src="pages/dashboard/my-tags.html"></div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Gallery of Investigate Widgets-->
+
+
+                        <!-- Gallery of Manage widgets -->
+                        <div class="gallery gallery-manage">
+                            <div class="row margin-bottom-30">
+                                <div class="col-md-4 gallery-widget-container">
+                                    <a href="#" class="add-gallery-widget" data-dismiss="modal"></a>
+                                    <div class="bff-include widget-style" data-src="pages/dashboard/widgets/search-phone-number.html"></div>
+                                </div>
+                                <div class="col-md-4 gallery-widget-container">
+                                    <a href="#" class="add-gallery-widget" data-dismiss="modal"></a>
+                                    <div class="bff-include widget-style" data-src="pages/dashboard/widgets/users.html"></div>
+                                </div>
+                                <div class="col-md-4 gallery-widget-container">
+                                    <a href="#" class="add-gallery-widget" data-dismiss="modal"></a>
+                                    <div class="bff-include widget-style" data-src="pages/dashboard/grievance-performance.html"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Gallery of Manage widgets -->
+                    </div>
+                </div>
+
+
+
+            </div>
+            <div class="modal-footer">
+                <a href class="btn btn-link" data-dismiss="modal">Cancel</a>
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Add Widget</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end: Add Note modal -->
+
+<div class="bff-script" data-src="../js/wireframes/pages/dashboard/components/add-widget-modal.js"></div>

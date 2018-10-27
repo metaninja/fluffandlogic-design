@@ -1,0 +1,301 @@
+<title>Location Based Services</title>
+
+<script>
+$('.locating-feedback').hide();
+
+function initialize() {
+
+    // Create the map and define map options.
+    var mapOptions = {
+        mapTypeId: google.maps.MapTypeId.ROADMAP,
+        disableDefaultUI: false,
+        center: new google.maps.LatLng(32.7758, -96.7967),
+        zoom: 10,
+        scrollwheel: true,
+        streetViewControl: false,
+    };
+
+    var map = new google.maps.Map(document.getElementById('map-canvas'),
+        mapOptions);
+
+    // City locations (data-city="")
+    var cities = {
+        'Rockwall': [32.921641, -96.455198, 11, 3218.69], // Latitude, longitude, zoom level, radius (in meters)
+        'Frisco': [33.135406, -96.823336, 10, 10000],
+        'Collin': [33.245544, -96.635248, 11, 2000],
+        'Denton': [33.213340, -97.113190, 10, 6437.38],
+    };
+
+    // Pan to city location on click.
+    $(".table-geofence").on("click", ".map_link", function() {
+
+        // Find correct array from cities object
+        var data = cities[$(this).data('city')]; // Returns array
+        var laLatLng = new google.maps.LatLng(data[0], data[1]);
+        map.panTo(laLatLng);
+        map.setZoom(data[2]);
+    });
+
+    // Drop marker on Locate Phone button.
+    var locatePhone = {
+        'Locate': [32.945123, -96.825387, 12],
+    };
+
+    $(".locate-phone").on("click", ".map_link", function() {
+
+        // Show the feedback
+        $('.locating-feedback').show();
+
+        // Hide the feedback after 3.4 seconds
+        setTimeout(function() {
+            $('.locating-feedback').hide();
+        }, 3400);
+
+        // Find correct array from cities object
+        var data = locatePhone[$(this).data('city')]; // Return the array
+        var laLatLng = new google.maps.LatLng(data[0], data[1]);
+
+        // After 3.5 seconds, pan, zoom, and drop marker
+        setTimeout(function() {
+
+            map.panTo(laLatLng);
+            map.setZoom(data[2]);
+
+            // Drop the marker
+            marker = new google.maps.Marker({
+                position: laLatLng,
+                map: map,
+                animation: google.maps.Animation.DROP,
+                title: 'Phone Number: (555) 555-5555',
+                draggable: true,
+            });
+
+        }, 3500);
+    });
+
+    // Create marker locations.
+    for (var key in cities) {
+        var data = cities[key];
+        var marker = new google.maps.Marker({
+            position: new google.maps.LatLng(data[0], data[1]),
+            map: map,
+        });
+    }
+
+    // Create circle locations.
+    var cityCircle;
+
+    $('.table-geofence .map_link').each(function() {
+
+        var data = $(this).data('city');
+        var laLatLng = new google.maps.LatLng(cities[data][0], cities[data][1]);
+        var meters = cities[data][3];
+
+        var circleOptions = {
+            strokeColor: '#0089cf',
+            strokeOpacity: 0.8,
+            strokeWeight: 2,
+            fillColor: '#0089cf',
+            fillOpacity: 0.35,
+            map: map,
+            center: laLatLng,
+            radius: meters,
+        };
+        // Add the circle for this city to the map.
+        cityCircle = new google.maps.Circle(circleOptions);
+    });
+
+    // SearchBox and Auto complete
+    var markers = [];
+
+    // Create the search box and link it to the UI element.
+    var input = /** @type {HTMLInputElement} */ (
+        document.getElementById('pac-input'));
+    map.controls[google.maps.ControlPosition.TOP_CENTER].push(input);
+
+    var searchBox = new google.maps.places.SearchBox(
+        /** @type {HTMLInputElement} */
+        (input));
+
+    // Listen for the event fired when the user selects an item from the
+    // pick list. Retrieve the matching places for that item.
+    google.maps.event.addListener(searchBox, 'places_changed', function() {
+        var places = searchBox.getPlaces();
+
+        if (places.length == 0) {
+            return;
+        }
+        for (var i = 0, marker; marker = markers[i]; i++) {
+            marker.setMap(null);
+        }
+
+        // For each place, get the icon, place name, and location.
+        markers = [];
+        var bounds = new google.maps.LatLngBounds();
+        for (var i = 0, place; place = places[i]; i++) {
+            var image = {
+                url: place.icon,
+                size: new google.maps.Size(71, 71),
+                origin: new google.maps.Point(0, 0),
+                anchor: new google.maps.Point(17, 34),
+                scaledSize: new google.maps.Size(25, 25)
+            };
+
+            // Create a marker for each place.
+            var marker = new google.maps.Marker({
+                map: map,
+                icon: image,
+                title: place.name,
+                position: place.geometry.location
+            });
+
+            markers.push(marker);
+
+            bounds.extend(place.geometry.location);
+        }
+
+    });
+
+    // Bias the SearchBox results towards places that are within the bounds of the
+    // current map's viewport.
+    google.maps.event.addListener(map, 'bounds_changed', function() {
+        var bounds = map.getBounds();
+        searchBox.setBounds(bounds);
+    });
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
+<div class="bff-include" data-src="pages/investigate/lbs/header.html"></div>
+
+<div class="container lbs">
+
+    <div class="row">
+
+        <div class="col-md-12">
+
+            <div class="locating-feedback">
+
+                <div class="locating-message"><i class="fa fa-spinner fa-spin"></i>
+                    <br /><i class="fa fa-map-marker"></i> Locating (555) 555-5555...</div>
+
+            </div>
+
+            <input id="pac-input" class="controls" type="text" placeholder="Search...">
+
+            <div id="map-canvas"></div>
+
+        </div>
+
+    </div>
+
+    <br>
+
+    <div class="row">
+
+        <div class="col-md-7">
+
+            <h3 class="section-header">
+                Geofences
+                <span class="fa fa-info-circle info"
+                      data-toggle="tooltip"
+                      title=""
+                      data-original-title="Geofences allow investigators to create defined areas to monitor inmate activity to mobile phones. If an inmate places a call inside the geofence, a covert alert can be sent. The call must terminate inside the defined area.">
+                </span>
+
+                <div class="pull-right">
+                    <div class="form-group">
+                        <select class="form-control">
+                            <option>All geofences</option>
+                            <option selected>Active geofences only</option>
+                            <option>Inactive geofences only</option>
+                            <option>Expired geofences only</option>
+                        </select>
+                    </div>
+                </div>
+            </h3>
+            <hr />
+            <table class="table table-condensed table-geofence">
+                <thead>
+                    <tr>
+                        <th><a href="#">Show</a>
+                        </th>
+                        <th><a href="#">Name <i class="fa fa-caret-down"></i></a>
+                        </th>
+                        <th><a href="#">Status</a>
+                        </th>
+                        <th><a href="#">Radius</a>
+                        </th>
+                        <th><a href="#">Private</a>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="#" class="map_link" data-city="Rockwall"><i class="fa fa-geofence"></i></td>
+                    <td><a href="#/pages/investigate/lbs/add/index.html">Rockwall LBS</a>
+                        </td>
+                        <td>Active</td>
+                        <td>2 miles</td>
+                        <td><i class="fa fa-check brand-success"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a href="#" class="map_link" data-city="Frisco"><i class="fa fa-geofence"></i></td>
+                    <td><a href="#/pages/investigate/lbs/add/index.html">Frisco City Jail</a>
+                        </td>
+                        <td>Active</td>
+                        <td>10 kilometers</td>
+                        <td><i class="fa fa-check brand-success"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a href="#" class="map_link" data-city="Collin"><i class="fa fa-geofence"></i></td>
+                    <td><a href="#/pages/investigate/lbs/add/index.html">Collin County Jail</a>
+                        </td>
+                        <td>Active</td>
+                        <td>2 kilometers</td>
+                        <td><i class="fa fa-check brand-success"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a href="#" class="map_link" data-city="Denton"><i class="fa fa-geofence"></i></td>
+                    <td><a href="#/pages/investigate/lbs/add/index.html">Denton County Jail</a>
+                        </td>
+                        <td>Active</td>
+                        <td>4 miles</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#"><i class="fa fa-geofence"></i></td>
+                    <td><a href="#/pages/investigate/lbs/add/index.html">ISAAC Test Site</a>
+                        </td>
+                        <td>Inactive</td>
+                        <td>6 miles</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#"><i class="fa fa-geofence"></i></td>
+                    <td><a href="#/pages/investigate/lbs/add/index.html">Terry Prison</a>
+                        </td>
+                        <td>Expired</td>
+                        <td>2 miles</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="bff-include" data-src="include/Pagination.html"></div>
+
+        </div>
+
+        <div class="col-md-5">
+
+            <div class="bff-include" data-src="pages/investigate/lbs/on-demand.html"></div>
+
+        </div>
+
+    </div>
+
+</div>

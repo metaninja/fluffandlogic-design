@@ -1,0 +1,44 @@
+<div class="js-add-task hide-content">
+	<h5 class="h5">Task Details</h5>
+
+	<div class="row no-gutters mb-2">
+		<div class="col-md-2">
+			<button class="btn" onclick="toggleImportantTask.call(this)">
+				<i class="linearicon-exclamation"></i>
+			</button>
+		</div>
+
+		<div class="col-md-10">
+			<div class="input-group">
+			    <select class="form-control">
+			    	<option>Mike Cooper</option>
+			    	<option>Sam Sammy</option>
+			    	<option>Tom Terry</option>
+			    </select>
+			    <span class="input-group-addon" id="basic-addon2"><i class="linearicon-user"></i></span>
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-6">
+			<div class="input-group">
+			    <input type="text" class="form-control" placeholder="No Due Date" title="Task due date">
+			    <span class="input-group-addon" id="basic-addon2">
+			        <i class="linearicon-calendar-full"></i>
+			    </span>
+			</div>
+		</div>
+
+		<div class="col-md-6">
+			<div class="input-group">
+			    <input type="text" class="form-control" placeholder="Time not set" title="Task due date time">
+			    <span class="input-group-addon" id="basic-addon2">
+			        <i class="linearicon-clock3"></i>
+			    </span>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="bff-script" data-src="app/shared/workspace/add-task/index.js"></div>

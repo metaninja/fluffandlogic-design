@@ -1,0 +1,55 @@
+@validationColor:           @red;
+@validationBorderColor:     @redDark;
+@validationBackgroundColor: @white;
+
+.input-validation-error {
+    border: 2px solid @red!important;
+}
+
+.validation-tip {
+    &.in {
+        .opacity(90)
+    }
+    &.top .tooltip-arrow {
+    border-top-color: @red;
+    }
+    &.right .tooltip-arrow {
+    border-right-color: @red;
+    }
+    &.left .tooltip-arrow {
+    border-left-color: @red;
+    }
+    &.bottom .tooltip-arrow {
+    border-bottom-color:  @red;
+    }
+    
+    .tooltip-inner {
+        background: @red;
+    }
+}
+
+.validationtip.popover {
+    background-color: @validationBackgroundColor;
+    border-color: @validationBorderColor;
+    border-radius: 3px;
+    color: @validationColor;
+    .popover-title {
+        display: none;
+    }
+    .popover-content {
+        padding: 4px 4px 4px 8px;
+    }
+    .icon-remove.icon-border {
+        margin: 0 0 0 5px;
+        border-color: lighten(@validationBorderColor, 20%);
+    }
+    &:hover {
+        cursor: pointer;
+
+        .icon-remove.icon-border {
+            background-color: @validationBorderColor;
+            color: @validationBackgroundColor;
+            border-color: @validationColor;
+        }
+    }
+}

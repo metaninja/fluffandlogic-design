@@ -1,0 +1,232 @@
+<div class="player">
+
+    <div class="row video-playback hide">
+
+        <div class="col-md-12">
+
+            <div class="inmate-video">
+
+                <img src="//placehold.it/1280x640" class="img-responsive">
+
+                <div class="row name no-margin">
+                    <div class="col-md-6">
+                        <dl class="dl-horizontal">
+                            <dt>Visitor:</dt>
+                            <dd>Jennifer Terrell</dd>
+                        </dl>
+                        <dl class="dl-horizontal">
+                            <dt>Username:</dt>
+                            <dd>email@address.com</dd>
+                        </dl>
+                        <dl class="dl-horizontal">
+                            <dt>Location:</dt>
+                            <dd>Visitor Lobby</dd>
+                        </dl>
+                    </div>
+
+                    <div class="col-md-6">
+                        <dl class="dl-horizontal">
+                            <dt>Inmate:</dt>
+                            <dd>Jonathan Smith</dd>
+                        </dl>
+                        <dl class="dl-horizontal">
+                            <dt>Account:</dt>
+                            <dd>123456789</dd>
+                        </dl>
+                        <dl class="dl-horizontal">
+                            <dt>Location:</dt>
+                            <dd>Visitor West Wing</dd>
+                        </dl>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- <div class="col-md-6">
+
+            <div class="inmate-video">
+                <img src="//placehold.it/640x480" class="img-responsive">
+                <div class="name">
+                    <dl class="dl-horizontal">
+                        <dt>Visitor:</dt>
+                        <dd>Jennifer Terrell</dd>
+                    </dl>
+                    <dl class="dl-horizontal">
+                        <dt>Username:</dt>
+                        <dd>email@address.com</dd>
+                    </dl>
+                    <dl class="dl-horizontal">
+                        <dt>Location:</dt>
+                        <dd>Visitor Lobby</dd>
+                    </dl>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-6">
+
+            <div class="visitor-video">
+                <img src="//placehold.it/640x480" class="img-responsive">
+                <div class="name">
+                    <dl class="dl-horizontal">
+                        <dt>Inmate:</dt>
+                        <dd>Jonathan Smith</dd>
+                    </dl>
+                    <dl class="dl-horizontal">
+                        <dt>Account:</dt>
+                        <dd>123456789</dd>
+                    </dl>
+                    <dl class="dl-horizontal">
+                        <dt>Location:</dt>
+                        <dd>Visitor West Wing</dd>
+                    </dl>
+                </div>
+            </div>
+
+        </div> -->
+
+    </div>
+
+    <div class="row call-playback hide">
+
+        <div class="col-md-6 col-md-12">
+
+            <dl class="dl-horizontal">
+                <dt>Inmate:</dt>
+                <dd>Jonathan Smith</dd>
+            </dl>
+            <dl class="dl-horizontal">
+                <dt>Account:</dt>
+                <dd>123456789</dd>
+            </dl>
+            <dl class="dl-horizontal">
+                <dt>Location:</dt>
+                <dd>Visitor West Wing</dd>
+            </dl>
+
+        </div>
+
+    </div>
+
+    <div class="start-time">02:41</div>
+
+    <div class="end-time pull-right">30:00</div>
+
+    <div class="player-scrubber">
+        <div class="play-status"></div>
+        <button class="player-scrubber-button"></button>
+    </div>
+
+    <div class="controls-container">
+
+        <div class="row">
+
+            <div class="col-md-6 col-md-offset-3">
+
+                <button class="rewind">
+                    <i class="fa fa-step-backward"></i>
+                </button>
+
+                <button class="play">
+                    <i class="fa fa-play"></i>
+                </button>
+
+                <button class="forward">
+                    <i class="fa fa-step-forward"></i>
+                </button>
+
+            </div>
+
+            <div class="col-md-3">
+
+                <div class="pull-right volume-position">
+
+                    <button class="volume">
+                        <i class="fa fa-lg fa-volume-down"></i>
+                    </button>
+
+                    <div class="volume-scrubber">
+                        <div class="volume-status"></div>
+                        <button class="player-scrubber-button"></button>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <button class="close-player">
+        <i class="fa fa-times"></i>
+    </button>
+
+</div>
+
+<script>
+$(document).ready(function() {
+
+    $('.player').hide();
+
+    var reset = function() {
+        $('.player').slideUp(330);
+        $('.btn-pause').hide();
+        $('.btn-play').show();
+        $('.play-call-one').show();
+        $('.playing-call-one').hide();
+        $('.panel-filter-summary').hide();
+    };
+
+    // ----------------------------------------
+    //           Show Player
+    // ----------------------------------------
+    $('.btn-play').click(function() {
+        $('.btn-pause').hide();
+        $('.btn-play').show();
+        $('.player').slideDown(330);
+        $(this).next('.btn-pause').show();
+        $('.call-playback').removeClass('hide');
+        $('.video-playback').addClass('hide');
+        $(this).hide();
+//        $(this).next('.playing-call-one').show();
+    });
+
+    $('.btn-play-video').click(function() {
+        $('.player').slideDown(330);
+        $(this).next('.btn-pause').show();
+        $('.call-playback').addClass('hide');
+        $('.video-playback').removeClass('hide');
+        $(this).hide();
+//        $('.play-call-one').hide();
+//        $('.playing-call-one').show();
+    });
+
+    $('.btn-pause').click(function() {
+        $('.player').slideUp(300);
+        $('.btn-pause').hide();
+        $(this).prev('.btn-play').show();
+        reset();
+    });
+
+//    $('.play-call-one').each(function() {
+//        var that = this;
+//        $(that).click(function() {
+//            $('.player').slideDown(330);
+//            $(that).next('.btn-pause').show();
+//            $('.btn-play').hide();
+//            $(that).hide();
+//            $(that).next('.playing-call-one').show();
+//        });
+//    });
+
+    $('.close-player').click(function() {
+        reset();
+    });
+});
+</script>

@@ -1,0 +1,37 @@
+<div class="alert alert-primary" role="alert">
+  <i class="linearicon-info-circle linearicon-lg mr-2"></i> Documents selected from the other tabs will show up here. Add, remove, or reorder documents.
+</div>
+
+<table class="table table-hover bg-white">
+    <thead>
+        <tr>
+            <th>Reorder</th>
+            <th>Form Type</th>
+            <th>Form Name</th>
+            <th class="text-center">Actions</th>
+        </tr>
+    </thead>
+
+    <tbody id="selected-documents"></tbody>
+</table>
+
+<div class="bff-include" data-src="app/shared/pagination.html"></div>
+
+<script id="selected-documents-template" type="x-handlebars-template">
+    {{#selectedDocuments}}
+    <tr>
+        <td>
+            <i class="icon-reorder" style="color: #aaa; cursor: move"></i>
+        </td>
+        <td>{{formType}}</td>
+        <td>{{formName}}</td>
+        <td class="text-center">
+        	<a class="text-danger" href="javascript:;" onclick="deleteDocument.call(this)">
+                <i class="linearicon-trash2 linearicon-lg"></i>
+            </a>
+        </td>
+    </tr>
+    {{/selectedDocuments}}
+</script>
+
+<div class="bff-script" data-src="app/pages/applicants/certificates/edit-certificate/add-documents/selected-documents/index.js"></div>

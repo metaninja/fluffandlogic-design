@@ -1,0 +1,69 @@
+<div class="filters" id="filter-policies" tabindex="-1">
+    <div class="form-group js-filter-date-type">
+        <label for="filter-date-type">Date Type</label>
+
+        <div class="input-group">
+            <select class="form-control" id="filter-date-type" title="Date Type">
+                <option>Transaction Date</option>
+                <option>Effective Date</option>
+                <option>Expiry Date</option>
+            </select>
+
+            <div class="input-group-addon"><i class="linearicon-calendar-full"></i></div>
+        </div>
+    </div>
+
+    <div class="form-group js-filter-date-range">
+        <label for="filter-date-range">Date Range</label>
+
+        <div class="input-group">
+            <input type="text" class="form-control filter-input" id="filter-date-range" title="Date Range">
+            <div class="input-group-addon"><i class="linearicon-calendar-full"></i></div>
+        </div>
+    </div>
+
+    <div class="form-group js-filter-source">
+        <label for="filter-source">Source</label>
+        <select class="form-control filter-control" id="filter-source" title="Source">
+            <option value="All">All</option>
+            <option value="Manual">Manual</option>
+            <option value="Download">Download</option>
+        </select>
+    </div>
+
+    <div class="form-group js-filter-policy-type">
+        <label for="filter-policy-type">Policy Type</label>
+        <select class="form-control filter-control" id="filter-policy-type" title="Policy Type">
+            <option value="All">All</option>
+            <option value="Active">Active</option>
+            <option value="Inactive">Inactive</option>
+        </select>
+    </div>
+
+    <div class="form-group js-filter-carriers">
+        <label for="filter-carriers">Carriers</label>
+        <div class="input-group">
+            <input type="text" class="form-control filter-input" id="filter-carriers" title="Carriers">
+            <div class="input-group-addon"><i class="linearicon-magnifier"></i></div>
+        </div>
+    </div>
+
+    <div class="form-group js-filter-agencies">
+        <label for="filter-carriers">Agencies</label>
+        <div class="input-group">
+            <input type="text" class="form-control filter-input" id="filter-agencies" title="Agencies">
+            <div class="input-group-addon"><i class="linearicon-magnifier"></i></div>
+        </div>
+    </div>
+
+    <div class="form-group js-filter-lobs">
+        <label for="filter-lobs">LOBs</label>
+        <div class="input-group">
+            <input type="text" class="form-control filter-input" id="filter-lobs" title="LOBs">
+            <div class="input-group-addon"><i class="linearicon-magnifier"></i></div>
+        </div>
+    </div>
+
+</div>
+
+<div class="bff-script" data-src="app/shared/filters/dropdown.js"></div>

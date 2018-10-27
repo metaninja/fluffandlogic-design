@@ -1,0 +1,54 @@
+<h4 class="section-header no-margin-top">Site Grievances Due</h4>
+
+<div align="center">
+
+    <canvas id="grievances" width="115" height="115"></canvas>
+
+</div>
+
+<div class="row counter-section">
+    <div class="col-md-4">
+        <span class="value success">7</span>
+        <span class="desc">Before</span>
+    </div>
+    <div class="col-md-4">
+        <span class="value warning">2</span>
+        <span class="desc">Near</span>
+    </div>
+    <div class="col-md-4">
+        <span class="value danger">3</span>
+        <span class="desc">Past</span>
+    </div>
+</div>
+
+<script>
+    (function () {
+        // Chart data
+        var myGrievancesData = [{
+            value: 7,
+            color: "rgba(63,174,41, 1.0)",
+            label: "Before Due"
+        }, {
+            value: 2,
+            color: "rgba(242,97,34,1.0)",
+            label: "Near Due"
+        }, {
+            value: 3,
+            color: "rgba(192,57,43,1.0)",
+            label: "Past Due"
+        }];
+
+        var chartOptions = {
+            segmentShowStroke: true,
+            percentageInnerCutout: 50,
+            animationEasing: "easeOutBounce",
+            animateRotate: true
+        };
+
+        // Get chart canvas
+        var grievanceActivity = document.getElementById('grievances').getContext('2d');
+
+        // Draw chart
+        new Chart(grievanceActivity).Doughnut(myGrievancesData, chartOptions);
+    }());
+</script>

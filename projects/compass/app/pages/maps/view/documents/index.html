@@ -1,0 +1,59 @@
+<div class="ez-main-content">
+    <div class="bff-include" data-src="app/pages/maps/view/header.html" data-page="documents"></div>
+
+    <div class="ez-page-body">
+
+        <div class="ez-page-content content-container">
+
+            <div class="search-form">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search files and folders" aria-label="Search files and folders">
+                            <span class="input-group-addon" id="basic-addon2"><i class="linearicon-magnifier"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="results-summary">
+                <div class="results-count">
+                    25 results found
+                </div>
+                <div class="results-actions">
+                    <a href="javascript:void(0)" class="btn btn-link" data-toggle="modal" data-target="#send-email-modal">Send Via Email</a>
+                    <a href="javascript:void(0)" class="btn btn-link" data-toggle="modal" data-target="#upload-files-modal">Upload File(s)</a>
+                    <a href="javascript:void(0)" class="btn btn-link" data-toggle="modal" data-target="#move-to-folder-modal" disabled>Move To Folder</a>
+                    <a href="javascript:void(0)" class="btn btn-link btn-link-danger" disabled>Delete</a>
+                </div>
+            </div>
+
+            <div class="filters-applied"></div>
+
+            <nav aria-label="breadcrumb" role="navigation" class="mt-2">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item active" aria-current="page">Documents</li>
+                </ol>
+            </nav>
+
+            <div class="bff-include" data-src="app/pages/carriers/view/documents/table.html"></div>
+
+        </div>
+    </div>
+</div>
+
+<div class="workspace" id="agency-documents-workspace">
+</div>
+
+
+<div class="bff-include" data-src="app/pages/carriers/view/documents/move-to-folder-modal.html"></div>
+<div class="bff-include" data-src="app/pages/carriers/view/documents/preview-modal.html"></div>
+<div class="bff-include" data-src="app/pages/carriers/view/documents/rename-modal.html"></div>
+<div class="bff-include" data-src="app/pages/carriers/view/documents/delete-modal.html"></div>
+<div class="bff-include" data-src="app/shared/file-uploader/modal.html"></div>
+<div class="bff-include" data-src="app/shared/labels/modal.html"></div>
+<div class="bff-include" data-src="app/shared/email/modal.html"></div>
+
+<div class="bff-script" data-src="app/pages/carriers/view/documents/index.js"></div>
+<div class="bff-script" data-src="app/shared/tables/toggle-row.js"></div>
+<div class="bff-script" data-src="app/shared/persona.js"></div>

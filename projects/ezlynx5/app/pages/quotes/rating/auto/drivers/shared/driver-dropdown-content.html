@@ -1,0 +1,260 @@
+<div>
+    <div class="row">
+        <div class="col-md-2">
+            <div class="form-group">
+                <label for="input-primary-driver-first-name">First Name</label>
+                <input type="text" class="form-control js-input-first-name" id="input-primary-driver-first-name" onkeyup="updateDriverName.call(this)">
+            </div>
+
+            <div class="form-group">
+                <label for="input-primary-driver-last-name">Last Name</label>
+                <input type="text" class="form-control js-input-last-name" id="input-primary-driver-last-name" onkeyup="updateDriverName.call(this)">
+            </div>
+
+            <div class="form-group">
+                <label class="required-label" for="input-primary-driver-dob">DOB</label>
+                <div class="input-group">
+                    <input type="text" class="form-control js-input-dob" id="input-primary-driver-dob" aria-describedby="basic-addon2" onblur="formatDate(this); ">
+                    <span class="input-group-addon" id="basic-addon2">
+                        <i class="linearicon-calendar-full linearicon-lg"></i>
+                    </span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="required-label" for="input-primary-driver-gender">Gender</label>
+                <select class="form-control" id="input-primary-driver-gender">
+                    <option>Male</option>
+                    <option>Female</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label class="required-label" for="input-primary-driver-marital-status">Marital Status</label>
+                <select class="form-control" id="input-primary-driver-marital-status">
+                    <option>Select</option>
+                    <option>Married</option>
+                    <option>Single</option>
+                    <option>Divorced</option>
+                    <option>Domestic Partner</option>
+                    <option>Widowed</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label class="required-label" for="input-primary-driver-relationship">Relationship</label>
+                <select class="form-control js-input-relationship" id="input-primary-driver-relationship">
+                    <option value="Insured">Insured</option>
+                    <option value="Child">Child</option>
+                    <option value="Domestic Partner">Domestic Partner</option>
+                    <option value="Employee">Employee</option>
+                    <option value="Other">Other</option>
+                    <option value="Parent">Parent</option>
+                    <option value="Relative">Relative</option>
+                    <option value="Spouse">Spouse</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="col-md-2 ml-auto">
+            <div class="form-group">
+                <label class="required-label" for="input-primary-driver-ssn">SSN</label>
+                <input type="text" class="form-control js-input-ssn" id="input-primary-driver-ssn" onblur="formatSSN(this)">
+            </div>
+
+            <div class="form-group">
+                <label class="required-label" for="input-primary-driver-occupation-industry">Occupation Industry</label>
+                <select class="form-control" id="input-primary-driver-occupation-industry">
+                    <option>Select</option>
+                    <option selected="selected" value="1">Homemaker/House person</option>
+                    <option value="2">Retired</option>
+                    <option value="3">Disabled</option>
+                    <option value="4">Unemployed</option>
+                    <option value="5">Student</option>
+                    <option value="6">Agriculture/Forestry/Fishing</option>
+                    <option value="7">Art/Design/Media</option>
+                    <option value="8">Banking/Finance/Real Estate</option>
+                    <option value="9">Business/Sales/Office</option>
+                    <option value="10">Construction/Energy Trades</option>
+                    <option value="11">Education/Library</option>
+                    <option value="12">Engineer/Architect/Science/Math</option>
+                    <option value="13">Government/Military</option>
+                    <option value="14">Information Technology</option>
+                    <option value="15">Insurance</option>
+                    <option value="16">Legal/Law Enforcement/Security</option>
+                    <option value="17">Maintenance/Repair/Housekeeping</option>
+                    <option value="18">Manufacturing/Production</option>
+                    <option value="19">Medical/Social Services/Religion</option>
+                    <option value="20">Personal Care/Service</option>
+                    <option value="21">Restaurant/Hotel Services</option>
+                    <option value="22">Sports/Recreation</option>
+                    <option value="23">Travel/Transportation/Warehousing</option>
+                    <option value="24">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label class="required-label" for="input-primary-driver-occupation-title">Occupation Title</label>
+                <select class="form-control" id="input-primary-driver-occupation-title">
+                    <option>Select</option>
+                    <option value="179">Administrative Assistant</option>
+                    <option value="180">Analyst</option>
+                    <option value="181">Clerk</option>
+                    <option value="182">Director/Administrator</option>
+                    <option value="183">Engineer-Hardware</option>
+                    <option value="184">Engineer-Software</option>
+                    <option value="185">Engineer-Systems</option>
+                    <option value="186">Executive</option>
+                    <option value="187">Manager-Systems</option>
+                    <option value="188">Network Administrator</option>
+                    <option value="189">Other</option>
+                    <option value="190">Programmer</option>
+                    <option value="191">Project Coordinator</option>
+                    <option value="192">Receptionist/Secretary</option>
+                    <option value="193">Support Technician</option>
+                    <option value="194">Systems Security</option>
+                    <option value="195">Technical Writer</option>
+                    <option value="196">Web Developer</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label class="required-label" for="input-primary-driver-dl-status">DL Status</label>
+                <select class="form-control" id="input-primary-driver-dl-status">
+                    <option>Valid</option>
+                    <option>Permit</option>
+                    <option>Expired</option>
+                    <option>Suspended</option>
+                    <option>Cancelled</option>
+                    <option>Not Licensed</option>
+                    <option>Permanently Revoked</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label class="required-label" for="input-primary-driver-age-licensed">Age Licensed</label>
+                <select class="form-control" id="input-primary-driver-age-licensed">
+                    <option>14</option>
+                    <option>15</option>
+                    <option>16</option>
+                    <option>17</option>
+                    <option>18</option>
+                    <option>19</option>
+                    <option>20</option>
+                    <option>21+</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label class="required-label" for="input-primary-driver-dl-number">DL #</label>
+                <input type="text" class="form-control js-dl-number" id="input-primary-driver-dl-number">
+            </div>
+        </div>
+
+        <div class="col-md-2 ml-auto">
+            <div class="form-group">
+                <label for="input-primary-driver-dl-state">DL State</label>
+                <select class="form-control js-usa-states-input" id="input-primary-driver-dl-state"></select>
+            </div>
+
+            <div class="form-group">
+                <label for="input-primary-driver-rated-driver">Rated Driver</label>
+                <select class="form-control" id="input-primary-driver-rated-driver">
+                    <option>Rated</option>
+                    <option value="Excluded">Excluded</option>
+                    <option value="NonRated">Non Rated</option>
+                    <option value="NeverLicensed">Never Licensed</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label class="required-label" for="input-primary-driver-defensive-driver-course-date">Defensive Driver Course Date</label>
+                <div class="input-group">
+                    <input type="text" class="form-control js-defensive-driver-course-date" id="input-primary-driver-defensive-driver-course-date" aria-describedby="basic-addon2">
+                    <span class="input-group-addon" id="basic-addon2">
+                        <i class="linearicon-calendar-full linearicon-lg"></i>
+                    </span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="d-block required-label" for="input-primary-driver-license-sus-rev">License Sus/Rev (Last 5 years)</label>
+                <label class="switch">
+                    <input type="checkbox" id="input-primary-driver-license-sus-rev" checked>
+                    <div class="slider round">
+                        <span class="on">YES</span>
+                        <span class="off">NO</span>
+                    </div>
+                </label>
+            </div>
+
+            <div class="form-group">
+                <label class="d-block required-label" for="input-primary-driver-sr-22">SR-22 Required</label>
+                <label class="switch">
+                    <input type="checkbox" id="input-primary-driver-sr-22" checked>
+                    <div class="slider round">
+                        <span class="on">YES</span>
+                        <span class="off">NO</span>
+                    </div>
+                </label>
+            </div>
+        </div>
+
+        <div class="col-md-2 mx-auto">
+            <div class="form-group">
+                <label class="d-block required-label" for="input-primary-driver-good-student">Good Student</label>
+                <label class="switch">
+                    <input type="checkbox" id="input-primary-driver-good-student" checked>
+                    <div class="slider round">
+                        <span class="on">YES</span>
+                        <span class="off">NO</span>
+                    </div>
+                </label>
+            </div>
+
+            <div class="form-group">
+                <label class="d-block required-label" for="input-primary-driver-student-miles-away">Student > 100 miles away</label>
+                <label class="switch">
+                    <input type="checkbox" id="input-primary-driver-student-miles-away" checked>
+                    <div class="slider round">
+                        <span class="on">YES</span>
+                        <span class="off">NO</span>
+                    </div>
+                </label>
+            </div>
+
+            <div class="form-group">
+                <label class="d-block required-label" for="input-primary-driver-education">Driver Education</label>
+                <label class="switch">
+                    <input type="checkbox" id="input-primary-driver-education" checked>
+                    <div class="slider round">
+                        <span class="on">YES</span>
+                        <span class="off">NO</span>
+                    </div>
+                </label>
+            </div>
+
+            <div class="form-group">
+                <label class="d-block required-label" for="input-primary-driver-mature-driver">Mature Driver</label>
+                <label class="switch">
+                    <input type="checkbox" id="input-primary-driver-mature-driver" checked>
+                    <div class="slider round">
+                        <span class="on">YES</span>
+                        <span class="off">NO</span>
+                    </div>
+                </label>
+            </div>
+
+            <div class="form-group">
+                <label class="d-block required-label" for="input-primary-driver-good-driver">Good Driver</label>
+                <label class="switch">
+                    <input type="checkbox" id="input-primary-driver-good-driver" checked>
+                    <div class="slider round">
+                        <span class="on">YES</span>
+                        <span class="off">NO</span>
+                    </div>
+                </label>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,81 @@
+<div class="modal fade" id="generate-statement-modal" tabindex="-1" role="dialog" aria-labelledby="generate-statement-modal-title">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header clearfix">
+                <h2 class="h3 modal-title" id="generate-statement-modal-title">Generate Statements for Member Agencies?</h2>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <i class="linearicon-cross2" aria-hidden="true"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="js-unapplied-cash">
+                    <p>Summary of commissions statements to be generated for member agencies:</p>
+
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th><input type="checkbox" checked></th>
+                                <th>Member Agency Name</th>
+                                <th>Total Premiums</th>
+                                <th>Member Agency Commissions</th>
+                                <th>My Agency Commissions</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th><input type="checkbox" checked></th>
+                                <td>Penguin Insurance Services</td>
+                                <td>$15,000</td>
+                                <td>$750</td>
+                                <td>$750</td>
+                                <td><i>Generated 11/22/2017 11:03pm</i></td>
+                            </tr>
+                            <tr>
+                                <th><input type="checkbox" checked></th>
+                                <td>Alex Huan Agency</td>
+                                <td>$7,000</td>
+                                <td>$450</td>
+                                <td>$450</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th><input type="checkbox" checked></th>
+                                <td>Cactus Independence Agency</td>
+                                <td>$10,000</td>
+                                <td>$500</td>
+                                <td>$500</td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-outline-primary" data-dismiss="modal">Cancel</button>
+                <button class="btn btn-primary" onclick="generateStatements()">Generate Statements</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function generateStatements() {
+        $('#generate-statement-modal').modal('hide');
+
+        $('#commissions input[type="checkbox"]').each(function() {
+            if ($(this).prop("checked")) {
+                $(this).parents('tr').find('td').css('background-color', '#eee');
+                $(this).parents('tr').next('tr').find('.table-note').css('background-color', '#eee');
+                $(this).parents('tr').find('.col-send').html('<i>Generated</i>');
+
+            }
+        });
+
+        $("input[type=checkbox]").prop("checked", false);
+        $(".js-disable-btn").prop("disabled", true);
+
+    }
+</script>

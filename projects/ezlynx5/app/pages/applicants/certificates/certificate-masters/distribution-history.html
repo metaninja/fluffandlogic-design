@@ -1,0 +1,62 @@
+<div>
+    <div class="clearfix">
+        <h2 class="h2 mx-2 my-4 float-left">Distribution History</h2>
+        <a href="javascript:void(0)" class="btn-workspace-close float-right mt-4 mr-2" onclick="collapseWorkspace()"><i class="linearicon-cross linearicon-lg"></i></a>
+    </div>
+
+    <div class="mx-2">
+        <h3 class="h3">Bank of America</h3>
+    </div>
+
+    <div id="distribution-history"></div>
+</div>
+
+<script id="distribution-history-template" type="x-handlebars-template">
+    {{#distributionHistory}}
+    <div class="card mx-2 my-3" style="box-shadow: 0 2px 3px 0 rgba(0,0,0,.2);">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-5 text-muted">{{type}}:</div>
+                <div class="col-md-7 text-right"><strong>{{date}}</strong></div>
+            </div>
+            {{#if distributionMethod}}
+            <div class="row">
+                <div class="col-md-8 text-muted">Distribution Method:</div>
+                <div class="col-md-4 text-right"><strong>{{distributionMethod}}</strong></div>
+            </div>
+            {{/if}}
+            {{#if destination}}
+            <div class="row">
+                <div class="col-md-5 text-muted">Destination:</div>
+                <div class="col-md-7 text-right"><strong>{{destination}}</strong></div>
+            </div>
+            {{/if}}
+            {{#if byUser}}
+            <div class="row">
+                <div class="col-md-4 text-muted">By User:</div>
+                <div class="col-md-8 text-right"><strong>{{byUser}}</strong></div>
+            </div>
+            {{/if}}
+            {{#if actions}}
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="dropdown">
+                        <a href="javascript:void(0);" class="dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Actions
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#/app/pages/applicants/certificates/edit-certificate/review/review-pdf">View Certificate</a>
+                            <a class="dropdown-item" href="javascript:void(0);" data-toggle="modal" data-target="#email-modal">Email</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{/if}}
+        </div>
+    </div>
+    {{/distributionHistory}}
+</script>
+
+<div class="bff-script" data-src="app/pages/applicants/certificates/certificate-masters/distribution-history.js"></div>
+
+<div class="bff-include" data-src="app/shared/email-modal.html"></div>

@@ -1,0 +1,40 @@
+<div class="modal fade" id="addVisitSchedule" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content modal-lg">
+
+            <div class="modal-header modal-primary">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <div class="modal-title">
+                    Assign Visit Schedule Locations
+                </div>
+            </div>
+
+            <div class="modal-body">
+
+                <p>Select one or more sites, terminal groups, phone numbers, and/or inmates to apply this Visit Schedule. This action will replace existing Visit Schedule for the selected location(s).</p>
+
+                <div class="bff-include assign-locations-visit-schedule-modal" data-src="include/modal-select-locations.html"></div>
+
+                <div class="modal-footer">
+                    <a href class="btn btn-link" data-dismiss="modal">Cancel</a>
+                    <button type="button" class="btn btn-primary toggle-locations" data-dismiss="modal">Assign Visit Schedule</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+//bff.Inception('.assign-locations-visit-schedule-modal');
+
+$('document').ready(function() {
+
+    $('.no-inmate-selected').hide();
+
+    $('.toggle-locations').click(function() {
+        $('.no-inmate-selected').show();
+        $('.location-selected').hide();
+    });
+});
+</script>

@@ -1,0 +1,107 @@
+<!-- multi-level menu -->
+<div class="location-selected">
+
+    <ul class="bsnav bsnav-pills bsnav-stacked">
+
+        <li class="sub-menu facilities-nav admin-nav">
+            <a href="#" class="toggle-sub">
+                <span>National</span>&nbsp;
+                <span class="badge">1</span>
+            </a>
+            <ul class="bsnav bsnav-pills bsnav-stacked sub site-list facility-nav-padding">
+                <li><a href="#">United States of America</a></li>
+            </ul>
+        </li>
+
+        <li class="sub-menu sites-nav cdr-nav">
+            <a href="#" class="toggle-sub">
+                <span>Region</span>&nbsp;
+                <span class="badge">5</span>
+            </a>
+            <ul class="bsnav bsnav-pills bsnav-stacked sub phone-sites-list facility-nav-padding">
+                <li><a href="#">EAST SOUTH CENTRAL</a></li>
+                <li><a href="#">MIDDLE ATLANTIC</a></li>
+                <li><a href="#">MOUNTAIN</a></li>
+                <li><a href="#">NEW ENGLAND</a></li>
+                <li><a href="#">PACIFIC</a></li>
+            </ul>
+        </li>
+
+        <li class="sub-menu inmates-nav monitor-nav">
+            <a href="#" class="toggle-sub">
+                <span>State</span>&nbsp;
+                <span class="badge">7</span>
+            </a>
+            <ul class="bsnav bsnav-pills bsnav-stacked sub terminal-list facility-nav-padding">
+                <div class="filter-search">
+                    <input type="text" class="form-control" placeholder="Search">
+                    <span class="fa fa-search filter-search-icon"></span>
+                </div>
+                <li><a href="#">Alabama</a></li>
+                <li><a href="#">Connecticut</a></li>
+                <li><a href="#">Florida</a></li>
+                <li><a href="#">Georgia</a></li>
+                <li><a href="#">Iowa</a></li>
+                <li><a href="#">Mississippi</a></li>
+                <li><a href="#">Texas</a></li>
+            </ul>
+        </li>
+
+        <li class="sub-menu community-nav monitor-nav">
+            <a href="#" class="toggle-sub">
+                <span>Custom</span>&nbsp;
+                <span class="badge">2</span>
+            </a>
+            <ul class="bsnav bsnav-pills bsnav-stacked sub geofences-list facility-nav-padding" style="display: none;">
+                <div class="filter-search">
+                    <input type="text" class="form-control" placeholder="Search">
+                    <span class="fa fa-search filter-search-icon"></span>
+                </div>
+                <li><a href="#">BROCK</a></li>
+                <li><a href="#">CCA</a></li>
+
+            </ul>
+        </li>
+
+    </ul>
+
+</div>
+<!-- multi-level menu -->
+
+
+<script>
+
+
+
+    $('.sub').hide();
+    $('.geofences-nav').hide();
+    $('.sub').slideUp();
+    $('.toggle-sub').click(function() {
+        $('.sub-menu').children('.sub').slideUp(300);
+        $(this).next().slideDown(500);
+    });
+
+    $(document).ready(function() {
+
+        $('.facilities-nav a').click(function() {
+            $('.bsnav  li').removeClass('active');
+            $(this).parents('li').addClass('active');
+        });
+
+        $('.sites-nav a').click(function() {
+            $('.bsnav li').removeClass('active');
+            $(this).parents('li').addClass('active');
+        });
+
+        $('.inmates-nav a').click(function() {
+            $('.bsnav li').removeClass('active');
+            $(this).parents('li').addClass('active');
+        });
+
+        $('.geofences-nav a').click(function() {
+            $('.bsnav li').removeClass('active');
+            $(this).parents('li').addClass('active');
+        });
+
+    });
+</script>

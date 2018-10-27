@@ -1,0 +1,50 @@
+<style>
+    .btn-tour {
+        background-color: #e53935;
+        color: white;
+    }
+</style>
+
+<div class="modal fade" id="welcome-modal" tabindex="-1" role="dialog" aria-labelledby="welcome-modal-title">
+    <div class="modal-dialog modal-success" role="document">
+        <div class="modal-content">
+            <div class="modal-header clearfix">
+                <h5 class="modal-title pull-left" id="welcome-modal-title" style="color: #e53935;">Welcome to the new Certificates portal</h5>
+                <button type="button" class="close pull-right" data-dismiss="modal" aria-label="Close">
+                    <i class="linearicon-cross2" aria-hidden="true"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+
+                <div style="overflow: hidden; width: calc(100% + 4rem); height: 260px;margin-left: -2rem;margin-right: -4rem;">
+                    <img src="images/certificates/welcome.svg" style="width: 100%; height: auto">
+                </div>
+                <p class="mt-4">
+                    We've updated the Certificates workflow based on your feedback.
+                    Click <strong>Start Tour</strong> for a walk through.
+                </p>
+            </div>
+            <div class="modal-footer">
+                <div class="modal-footer-left"></div>
+                <div class="modal-footer-right">
+                    <button type="button" class="btn btn-outline-primary mr-3" onclick="dismissModal(false)" >Cancel</button>
+                    <button type="button" class="btn btn-tour" onclick="dismissModal(true)">
+                        Start Tour
+                        <i class="linearicon-arrow-right ml-2"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function dismissModal(startTour) {
+        $('#welcome-modal').modal('hide');
+        if (startTour) {
+            initTour();
+        } else {
+            tourComplete = false;
+        }
+    }
+</script>

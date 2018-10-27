@@ -1,0 +1,84 @@
+<div class="modal fade" id="match-line-item-modal" tabindex="-1" role="dialog" aria-labelledby="match-line-item-title" style="overflow: scroll;">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header clearfix">
+                <h5 class="modal-title" id="match-line-item-title">Match Line Item</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <i class="linearicon-cross2" aria-hidden="true"></i>
+                </button>
+            </div>
+
+            <div class="modal-body" style="overflow-y: unset">
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="type-ahead js-search-policy-number">
+                            <div class="input-group type-ahead-input-group">
+                                <input type="text" class="form-control type-ahead-input" placeholder="Search Policy #" aria-label="Search"
+                                       onkeyup="typeAheadSearch.call(this); searchPolicies(this);">
+                                <span class="input-group-addon" id="basic-addon-search-policy"><i class="linearicon-magnifier"></i></span>
+                            </div>
+
+                            <div class="type-ahead-results">
+                                <div id="policies">
+                                </div>
+                                <div class="type-ahead-no-results hide-content">
+                                    <div>
+                                        No results found.<br>
+                                        <a href="javascript:void(0);" onclick="showEditor()">
+                                            <strong>Create a new policy</strong>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-4">
+                    <div class="col-md-12">
+                        <div class="type-ahead js-search-transaction-number hide-content">
+                            <div class="input-group type-ahead-input-group">
+                                <input type="text" class="form-control type-ahead-input" placeholder="Search Transaction">
+                                <span class="input-group-addon" id="basic-addon-search-transaction"><i class="linearicon-magnifier"></i></span>
+                            </div>
+
+                            <div class="type-ahead-results show">
+                                <a href="javascript:void(0);" class="type-ahead-result" onclick="matchPolicy('PCH')">
+                                    <div>Policy Change (PCH)</div>
+                                    <div><small class="text-muted">Applied Date: 7/7/2017</small></div>
+                                </a>
+                                <a href="javascript:void(0);" class="type-ahead-result" onclick="matchPolicy('PCH')">
+                                    <div>Policy Change (PCH)<br></div>
+                                    <div><small class="text-muted">Applied Date: 7/7/2017</small></div>
+                                </a>
+                                <a href="javascript:void(0);" class="type-ahead-result" onclick="matchPolicy('PCH')">
+                                    <div>Policy Change (PCH)</div>
+                                    <div><small class="text-muted">Applied Date: 7/4/2017</small></div>
+                                </a>
+                                <a href="javascript:void(0);" class="type-ahead-result" onclick="matchPolicy('NBS')">
+                                    <div>New Business<br></div>
+                                    <div><small class="text-muted">Applied Date: 7/6/2017</small></div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-outline-primary" data-dismiss="modal">Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="bff-script" data-src="app/pages/commissions/statements/new/manual/add/modal/match-policy.js"></div>
+
+<script id="policies-template" type="x-handlebars-template">
+    {{#policies}}
+        <a href="javascript:void(0);" class="type-ahead-result" onclick="typeAheadSearchResult.call(this); showSearchTransactionNumber('{{ PolicyNumber }}');">{{ PolicyNumber }} ( {{ Carrier }} )</a>
+    {{/policies}}
+</script>
+
+

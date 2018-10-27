@@ -1,0 +1,41 @@
+<div class="ez-main-content">
+    <div class="ez-page-header">
+        <div class="row">
+            <div class="col-md-6 ez-page-title">
+                <span class="ez-page-title-icon">
+                    <i class="linearicon-cash-dollar linearicon-3x"></i>
+                </span>
+
+                <h1 class="h1">
+                    <span class="subtitle">Commissions</span>
+                    Rules
+                </h1>
+            </div>
+
+            <div class="col-md-6 ez-page-actions">
+                <button class="btn btn-default" onclick="toggleTableViews()">Toggle Table Views</button>
+                <a href="#/app/pages/commissions/rules/view/" class="btn btn-success">New Rule <i class="fa fa-plus ml-2"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="ez-page-body full-width">
+    	<div class="ez-page-content content-container">
+
+    		<div class="bff-include" data-src="app/pages/commissions/rules/shared/header.html"></div>
+
+    		<div class="bff-include table-view js-rules-summary-table" data-src="app/pages/commissions/rules/shared/table.html"></div>
+
+            <div class="bff-include table-view js-table-with-all-conditions hide-content" data-src="app/pages/commissions/rules/shared/table2.html"></div>
+    	</div>
+    </div>
+</div>
+
+<div class="bff-include" data-src="app/pages/commissions/rules/shared/modal.html"></div>
+<div class="bff-include" data-src="app/pages/commissions/components/delete-criteria-confirmation-modal.html"></div>
+<div class="bff-include" data-src="app/pages/commissions/rules/shared/conflicts-modal.html"></div>
+<div class="bff-include" data-src="app/pages/commissions/rules/shared/preview-rule-modal.html"></div>
+
+<div class="bff-script" data-src="app/pages/commissions/javascript/main.js"></div>
+<!-- <div class="bff-script" data-src="app/shared/filters/filter.js"></div> -->
+<div class="bff-script" data-src="app/shared/persona.js"></div>

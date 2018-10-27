@@ -1,0 +1,680 @@
+<!-- Alternate message when only 1 search result is found; this is displayed in place of the panel filters below -->
+<div class="panel panel-default panel-filters js-no-filters">
+    <div class="panel-body">
+        <div class="filter-message">There is only one record. Please expand your search results to refine.</div>
+    </div>
+</div>
+
+
+<!-- Display panel filters when user checks a filter -->
+<div class="panel panel-default panel-tertiary js-selected-filters">
+    <div class="panel-body">
+
+        <h3 class="no-margin-top">Selected Filters</h3>
+
+        <div class="filters-selected">
+
+            <div class="filters-selected-group">
+                <h4>Agency Type</h4>
+
+                <label class="filter-selected">
+                <span class="label" data-toggle="tooltip" title="FLDOC">
+                    FLDOC
+                </span>
+                    <input type="checkbox" checked="checked">
+                    <i class="icon"></i>
+                </label>
+            </div>
+
+            <div class="filters-selected-group">
+                <h4>Communication Type</h4>
+
+                <label class="filter-selected">
+                <span class="label" data-toggle="tooltip" title="Crime Tip">
+                    Crime Tip
+                </span>
+                    <input type="checkbox" checked="checked">
+                    <i class="icon"></i>
+                </label>
+
+                <label class="filter-selected">
+                <span class="label" data-toggle="tooltip" title="Emergency Call">
+                    Emergency Call
+                </span>
+                    <input type="checkbox" checked="checked">
+                    <i class="icon"></i>
+                </label>
+
+                <label class="filter-selected">
+                <span class="label" data-toggle="tooltip" title="Informant Line">
+                    Informant Line
+                </span>
+                    <input type="checkbox" checked="checked">
+                    <i class="icon"></i>
+                </label>
+
+                <label class="filter-selected">
+                <span class="label" data-toggle="tooltip" title="Voice Biometrics">
+                    Voice Biometrics
+                </span>
+                    <input type="checkbox" checked="checked">
+                    <i class="icon"></i>
+                </label>
+            </div>
+
+
+        </div>
+
+        <!-- Filter buttons -->
+        <div class="row btn-row">
+            <div class="col-md-7">
+                <button id="applyButton" class="btn btn-success js-btn-apply-filters">
+                    Apply
+                </button>
+            </div>
+            <div class="col-md-5">
+                <button id="clearButton" class="btn btn-default js-btn-clear-filters">
+                    Clear
+                </button>
+            </div>
+        </div>
+        <!-- Filter buttons -->
+    </div>
+</div>
+
+
+<!-- Displayed when more than 1 search result is returned; do not show the message above -->
+<div class="panel panel-default panel-filters js-yes-filters margin-top-20">
+    <h3 class="panel-title clearfix">
+        <span class="js-no-results">Refine by:</span>
+        <a href="#" class="js-toggle-filters pull-right">Show All</a>
+    </h3>
+    <div class="panel-body">
+        <!-- Filter by Agency Type -->
+        <div>
+            <h4 class="panel-header">
+                <a data-toggle="collapse" href="#filter-agency-type">
+                    Agency Type
+
+                   <div class="pull-right">
+                        <span class="toggle-hide"></span>
+                        <span class="toggle-show"></span>
+                   </div>
+                </a>
+            </h4>
+            <div class="collapse" id="filter-agency-type">
+                <div class="filter-select filter-status">
+                    <label>
+                        <input type="checkbox">None</label>
+                    <label>
+                        <input type="checkbox">AKDOC</label>
+                    <label>
+                        <input type="checkbox">AZDOC</label>
+                    <label>
+                        <input type="checkbox">BOP</label>
+                    <label>
+                        <input type="checkbox">CDCR</label>
+                    <label>
+                        <input type="checkbox">CODOC</label>
+                    <label>
+                        <input type="checkbox">COUNTY</label>
+                    <label>
+                        <input type="checkbox">COUNTY-CURRY</label>
+                    <label>
+                        <input type="checkbox">COUNTY-SIER</label>
+                    <label>
+                        <input type="checkbox">COUNTY-TORR</label>
+                    <label>
+                        <input type="checkbox">CSOSA</label>
+                    <label>
+                        <input type="checkbox">DCDOC</label>
+                    <label>
+                        <input type="checkbox">FELONY</label>
+                    <label>
+                        <input type="checkbox">FLDOC</label>
+                    <label>
+                        <input type="checkbox">GADOC</label>
+                    <label>
+                        <input type="checkbox">HIDOC</label>
+                    <label>
+                        <input type="checkbox">ICE</label>
+                    <label>
+                        <input type="checkbox">ICE-FAMILY</label>
+                    <label>
+                        <input type="checkbox">ICE-FEMALE</label>
+                    <label>
+                        <input type="checkbox">IDDOC</label>
+                    <label>
+                        <input type="checkbox">JAIL</label>
+                    <label>
+                        <input type="checkbox">KYDOC</label>
+                    <label>
+                        <input type="checkbox">LADOC</label>
+                    <label>
+                        <input type="checkbox">MNDOC</label>
+                    <label>
+                        <input type="checkbox">MSDOC</label>
+                    <label>
+                        <input type="checkbox">MTDOC</label>
+                    <label>
+                        <input type="checkbox">NMDOC</label>
+                    <label>
+                        <input type="checkbox">OKDOC</label>
+                    <label>
+                        <input type="checkbox">PASCUA</label>
+                    <label>
+                        <input type="checkbox">TDCJ</label>
+                    <label>
+                        <input type="checkbox">TNDOC</label>
+                    <label>
+                        <input type="checkbox">TRANS</label>
+                    <label>
+                        <input type="checkbox">USMS</label>
+                    <label>
+                        <input type="checkbox">USMS-DCSC</label>
+                    <label>
+                        <input type="checkbox">USMS-DOMD</label>
+                    <label>
+                        <input type="checkbox">USMS-EDPA</label>
+                    <label>
+                        <input type="checkbox">USMS-JPATS</label>
+                    <label>
+                        <input type="checkbox">USMS-KNOX</label>
+                    <label>
+                        <input type="checkbox">USMS-LITT</label>
+                    <label>
+                        <input type="checkbox">USMS-MD</label>
+                    <label>
+                        <input type="checkbox">USMS-MDPA</label>
+                    <label>
+                        <input type="checkbox">USMS-MEMP</label>
+                    <label>
+                        <input type="checkbox">USMS-NASH</label>
+                    <label>
+                        <input type="checkbox">USMS-NDWVA</label>
+                    <label>
+                        <input type="checkbox">USMS-NEOH</label>
+                    <label>
+                        <input type="checkbox">USMS-WDNY</label>
+                    <label>
+                        <input type="checkbox">USMS-WDPA</label>
+                    <label>
+                        <input type="checkbox">USMS-WVA</label>
+                    <label>
+                        <input type="checkbox">USMS-WYAN</label>
+                    <label>
+                        <input type="checkbox">VTDOC</label>
+                    <label>
+                        <input type="checkbox">WADOC</label>
+                    <label>
+                        <input type="checkbox">WYDOC</label>
+                </div>
+            </div>
+        </div>
+        <!-- Filter by Geo Location -->
+        <div>
+            <h4 class="panel-header">
+                <a data-toggle="collapse" href="#filter-geo-location">
+                    Geo Location
+
+                   <div class="pull-right">
+                        <span class="toggle-hide"></span>
+                        <span class="toggle-show"></span>
+                   </div>
+                </a>
+            </h4>
+            <div class="collapse" id="filter-geo-location">
+                <div class="filter-select filter-status">
+                    <label>
+                        <input type="checkbox"> No Geo Location</label>
+                    <label>
+                        <input type="checkbox"> Geo Location </label>
+                </div>
+            </div>
+        </div>
+        <!-- Filter by Communication Type -->
+        <div>
+            <h4 class="panel-header">
+                <a data-toggle="collapse" href="#filter-communication-type">
+                    Communication Type
+                    <div class="pull-right">
+                        <span class="toggle-hide"></span>
+                        <span class="toggle-show"></span>
+                    </div>
+                </a>
+            </h4>
+            <div class="collapse" id="filter-communication-type">
+                <div class="filter-select filter-status">
+                    <label>
+                        <input type="checkbox">Calls</label>
+                    <label>
+                        <input type="checkbox">Crime Tip</label>
+                    <label>
+                        <input type="checkbox">Emergency Call</label>
+                    <label>
+                        <input type="checkbox">Informant Line</label>
+                    <label>
+                        <input type="checkbox">Voice Biometrics</label>
+                    <label>
+                        <input type="checkbox">Onsite Video Visit</label>
+                    <label>
+                        <input type="checkbox">Remote Video Visit</label>
+                </div>
+            </div>
+        </div>
+        <!-- Filter by Communication Status -->
+        <div>
+            <h4 class="panel-header">
+                <a data-toggle="collapse" href="#filter-communication-status">
+                    Communication Status
+                    <div class="pull-right">
+                        <span class="toggle-hide"></span>
+                        <span class="toggle-show"></span>
+                    </div>
+                </a>
+            </h4>
+            <div class="collapse" id="filter-communication-status">
+                <div class="filter-select filter-status">
+                    <label>
+                        <input type="checkbox">Complete</label>
+                    <label>
+                        <input type="checkbox">Incomplete</label>
+                </div>
+            </div>
+        </div>
+        <!-- Filter by Inmate ID -->
+        <div class="release-one">
+            <h4 class="panel-header">
+                <a data-toggle="collapse" href="#filter-custody-account">
+                    Inmate ID
+                    <div class="pull-right">
+                        <span class="toggle-hide"></span>
+                        <span class="toggle-show"></span>
+                    </div>
+                </a>
+            </h4>
+            <div class="collapse" id="filter-custody-account">
+                <div class="filter-search">
+                    <input type="text" class="form-control" placeholder="Search">
+                    <span class="fa fa-search filter-search-icon"></span>
+                </div>
+                <div class="filter-select filter-custody">
+                    <label>
+                        <input type="checkbox">244893726</label>
+                    <label>
+                        <input type="checkbox">413222849</label>
+                    <label>
+                        <input type="checkbox">195968427</label>
+                    <label>
+                        <input type="checkbox">370232884</label>
+                    <label>
+                        <input type="checkbox">771717072</label>
+                    <label>
+                        <input type="checkbox">376309599</label>
+                </div>
+            </div>
+        </div>
+        <!-- Filter by Inmate Name -->
+        <div class="release-one">
+            <h4 class="panel-header">
+                <a data-toggle="collapse" href="#filter-inmate-name">
+                    Inmate Name
+                    <div class="pull-right">
+                        <span class="toggle-hide"></span>
+                        <span class="toggle-show"></span>
+                    </div>
+                </a>
+            </h4>
+            <div class="collapse" id="filter-inmate-name">
+                <div class="filter-select filter-name">
+                    <label>
+                        <input type="checkbox">John Smith</label>
+                    <label>
+                        <input type="checkbox">Johnny Smith</label>
+                    <label>
+                        <input type="checkbox">Jothathan Smith</label>
+                </div>
+            </div>
+        </div>
+        <!-- Filter by Phone Number -->
+        <div class="release-one">
+            <h4 class="panel-header">
+                <a data-toggle="collapse" href="#filter-phone-number">
+                    Phone Number
+                    <div class="pull-right">
+                        <span class="toggle-hide"></span>
+                        <span class="toggle-show"></span>
+                    </div>
+                </a>
+            </h4>
+            <div class="collapse" id="filter-phone-number">
+                <div class="filter-select filter-phone">
+                    <label>
+                        <input type="checkbox">(811) 810-9121</label>
+                    <label>
+                        <input type="checkbox">(833) 591-0501</label>
+                    <label>
+                        <input type="checkbox">(833) 581-3992</label>
+                    <label>
+                        <input type="checkbox">(899) 396-7576</label>
+                </div>
+            </div>
+        </div>
+        <!-- Filter by Visitor -->
+        <div class="release-one">
+            <h4 class="panel-header">
+                <a data-toggle="collapse" href="#filter-visitor">
+                    Visitor
+                    <div class="pull-right">
+                        <span class="toggle-hide"></span>
+                        <span class="toggle-show"></span>
+                    </div>
+                </a>
+            </h4>
+            <div class="collapse" id="filter-visitor">
+                <div class="filter-search">
+                    <input type="text" class="form-control" placeholder="Search">
+                    <span class="fa fa-search filter-search-icon"></span>
+                </div>
+                <div class="filter-select filter-terminal">
+                    <label>
+                        <input type="checkbox">
+                        <span class="wrap">
+                                Alexandro Gauajardo
+                                <br />
+                                <span class="small text-muted">alexandrogauajardo@thisisalongemail.com</span>
+                        </span>
+                    </label>
+                    <label>
+                        <input type="checkbox">
+                        <span class="wrap">
+                            Max Adomson
+                            <br />
+                            <span class="small text-muted">max@inmatevisit.com</span>
+                        </span>
+                    </label>
+                    <label>
+                        <input type="checkbox">
+                        <span class="wrap">
+                            Jordan Wallace
+                            <br />
+                            <span class="small text-muted">jordanwallace@securustech.net</span>
+                        </span>
+                    </label>
+                    <label>
+                        <input type="checkbox">
+                        <span class="wrap">
+                            Cynthia Morrison
+                            <br />
+                            <span class="small text-muted">cynthiamorrison@thisisalongemail.com</span>
+                        </span>
+                    </label>
+                    <label>
+                        <input type="checkbox">
+                        <span class="wrap">
+                            Danielle Simpson
+                            <br />
+                            <span class="small text-muted">daniellesimpson@hotmail.com</span>
+                        </span>
+                    </label>
+                    <label>
+                        <input type="checkbox">
+                        <span class="wrap">
+                            Nicole Spencer
+                            <br />
+                            <span class="small text-muted">nicoles@yahoo.com</span>
+                        </span>
+                    </label>
+                    <label>
+                        <input type="checkbox">
+                        <span class="wrap">
+                            Joshua Oliver
+                            <br />
+                            <span class="small text-muted">joshuao@email.com</span>
+                        </span>
+                    </label>
+                    <label>
+                        <input type="checkbox">
+                        <span class="wrap">
+                            Brenda Moreno
+                            <br />
+                            <span class="small text-muted">brenda@email.com</span>
+                        </span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <!-- Filter by Visitor Group -->
+        <div class="release-one">
+            <h4 class="panel-header">
+                <a data-toggle="collapse" href="#filter-visitor-group">
+                    Visitor Group
+                    <div class="pull-right">
+                        <span class="toggle-hide"></span>
+                        <span class="toggle-show"></span>
+                    </div>
+                </a>
+            </h4>
+            <div class="collapse" id="filter-visitor-group">
+                <div class="filter-search">
+                    <input type="text" class="form-control" placeholder="Search">
+                    <span class="fa fa-search filter-search-icon"></span>
+                </div>
+                <div class="filter-select filter-pin">
+                    <label>
+                        <input type="checkbox">Friends &amp; Family</label>
+                    <label>
+                        <input type="checkbox">Attorney</label>
+                    <label>
+                        <input type="checkbox">Private Attorney</label>
+                    <label>
+                        <input type="checkbox">Clergy</label>
+                    <label>
+                        <input type="checkbox">Facility Admin</label>
+                </div>
+            </div>
+        </div>
+        <!-- Filter by PIN -->
+        <div class="release-one">
+            <h4 class="panel-header">
+                <a data-toggle="collapse" href="#filter-pin">
+                    PIN
+                    <div class="pull-right">
+                        <span class="toggle-hide"></span>
+                        <span class="toggle-show"></span>
+                    </div>
+                </a>
+            </h4>
+            <div class="collapse" id="filter-pin">
+                <div class="filter-search">
+                    <input type="text" class="form-control" placeholder="Search">
+                    <span class="fa fa-search filter-search-icon"></span>
+                </div>
+                <div class="filter-select filter-pin">
+                    <label>
+                        <input type="checkbox">9816039</label>
+                    <label>
+                        <input type="checkbox">3125221</label>
+                    <label>
+                        <input type="checkbox">8437979</label>
+                    <label>
+                        <input type="checkbox">6162800</label>
+                    <label>
+                        <input type="checkbox">9320612</label>
+                    <label>
+                        <input type="checkbox">5077551</label>
+                </div>
+            </div>
+        </div>
+        <!-- Filter by Terminal -->
+        <div>
+            <h4 class="panel-header">
+                <a data-toggle="collapse" href="#filter-inmate-terminal">
+                    Inmate Terminal
+                    <div class="pull-right">
+                        <span class="toggle-hide"></span>
+                        <span class="toggle-show"></span>
+                    </div>
+                </a>
+            </h4>
+            <div class="collapse" id="filter-inmate-terminal">
+                <div class="filter-search">
+                    <input type="text" class="form-control" placeholder="Search">
+                    <span class="fa fa-search filter-search-icon"></span>
+                </div>
+                <div class="filter-select filter-terminal">
+                    <label>
+                        <input type="checkbox">lp1</label>
+                    <label>
+                        <input type="checkbox">lp2</label>
+                    <label>
+                        <input type="checkbox">lp3</label>
+                    <label>
+                        <input type="checkbox">lp4</label>
+                    <label>
+                        <input type="checkbox">lp5</label>
+                    <label>
+                        <input type="checkbox">lp6</label>
+                    <label>
+                        <input type="checkbox">lp7</label>
+                    <label>
+                        <input type="checkbox">lp8</label>
+                    <label>
+                        <input type="checkbox">lp9</label>
+                    <label>
+                        <input type="checkbox">lp10</label>
+                </div>
+            </div>
+        </div>
+        <!-- Filter by Covert Alert Recipient -->
+        <div>
+            <h4 class="panel-header">
+                <a data-toggle="collapse" href="#filter-covert-alert-recipient">
+                    Covert Alert Recipient
+                    <div class="pull-right">
+                        <span class="toggle-hide"></span>
+                        <span class="toggle-show"></span>
+                    </div>
+                </a>
+            </h4>
+            <div class="collapse" id="filter-covert-alert-recipient">
+                <div class="filter-select filter-other-call-types">
+                    <label>
+                        <input type="checkbox">No Covert Alert</label>
+                    <label>
+                        <input type="checkbox">Jill Valentine</label>
+                    <label>
+                        <input type="checkbox">Chris Redfield</label>
+                    <label>
+                        <input type="checkbox">Jason Kreis</label>
+                    <label>
+                        <input type="checkbox">Rudy Mitchell</label>
+                    <label>
+                        <input type="checkbox">Juan Jordan</label>
+                    <label>
+                        <input type="checkbox">Mildred Rodgers</label>
+                    <label>
+                        <input type="checkbox">Jay Fitzgerald</label>
+                    <label>
+                        <input type="checkbox">Manuel Ramsey</label>
+                    <label>
+                        <input type="checkbox">Lucilie Parsons</label>
+                </div>
+            </div>
+        </div>
+        <!-- Filter by Tag -->
+        <div>
+            <h4 class="panel-header">
+                <a data-toggle="collapse" href="#filter-tags">
+                    Tags
+                    <div class="pull-right">
+                        <span class="toggle-hide"></span>
+                        <span class="toggle-show"></span>
+                    </div>
+                </a>
+            </h4>
+            <div class="collapse" id="filter-tags">
+                <div class="filter-search">
+                    <input type="text" class="form-control" placeholder="Search">
+                    <span class="fa fa-search filter-search-icon"></span>
+                </div>
+                <div class="filter-select filter-terminal">
+                    <label>
+                        <input type="checkbox"><i class="fa fa-user"></i> Case ID 34151</label>
+                    <label>
+                        <input type="checkbox"><i class="fa fa-users"></i> Heisenberg</label>
+                    <label>
+                        <input type="checkbox"><i class="fa fa-users"></i> FBI Case</label>
+                    <label>
+                        <input type="checkbox"><i class="fa fa-user"></i> Case ID 62621</label>
+                    <label>
+                        <input type="checkbox"><i class="fa fa-users"></i> Bloods</label>
+                    <label>
+                        <input type="checkbox"><i class="fa fa-users"></i> Crips</label>
+                    <label>
+                        <input type="checkbox"><i class="fa fa-user"></i> Out of State call</label>
+                    <label>
+                        <input type="checkbox"><i class="fa fa-user"></i> Blue Meth Case</label>
+                </div>
+            </div>
+        </div>
+        <!-- Filter by Alternate ID -->
+        <div>
+            <h4 class="panel-header">
+                <a data-toggle="collapse" href="#filter-alternate-id">
+                    Alternate ID
+                    <div class="pull-right">
+                        <span class="toggle-hide"></span>
+                        <span class="toggle-show"></span>
+                    </div>
+                </a>
+            </h4>
+            <div class="collapse" id="filter-alternate-id">
+                <div class="filter-search">
+                    <input type="text" class="form-control" placeholder="Search">
+                    <span class="fa fa-search filter-search-icon"></span>
+                </div>
+                <div class="filter-select filter-terminal">
+                    <label>
+                        <input type="checkbox">ALTID4567</label>
+                    <label>
+                        <input type="checkbox">ALTID4136</label>
+                    <label>
+                        <input type="checkbox">ALTID5165</label>
+                    <label>
+                        <input type="checkbox">ALTID2689</label>
+                    <label>
+                        <input type="checkbox">ALTID6499</label>
+                    <label>
+                        <input type="checkbox">ALTID1324</label>
+                    <label>
+                        <input type="checkbox">ALTID789456</label>
+                    <label>
+                        <input type="checkbox">ALTID123456</label>
+                </div>
+            </div>
+        </div>
+        <!-- Filter by Gang/Alternate ID -->
+        <div>
+            <h4 class="panel-header">
+                <a data-toggle="collapse" href="#filter-gangs">
+                    Alternate Misc. Group
+                    <div class="pull-right">
+                        <span class="toggle-hide"></span>
+                        <span class="toggle-show"></span>
+                    </div>
+                </a>
+            </h4>
+            <div class="collapse" id="filter-gangs">
+                <div class="filter-select filter-terminal">
+                    <label>
+                        <input type="checkbox">Bloods</label>
+                    <label>
+                        <input type="checkbox">Crips</label>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="bff-script" data-src="../js/wireframes/pages/search/communication/results/refiners.js"></div>

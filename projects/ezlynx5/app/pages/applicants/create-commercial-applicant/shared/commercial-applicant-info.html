@@ -1,0 +1,133 @@
+<div class="ez-dropdown-container content-container mb-4">
+    <div class="ez-dropdown-heading" data-toggle="collapse" data-target="#commercial-applicant-info">
+        <div class="heading-with-picture">
+            <div class="applicant-picture-container">
+                <img class="commercial-applicant-picture js-current-commercial-applicant-picture" src="images/commercial-applicant-logos/building.svg">
+                <span class="add-additional-input js-add-commercial-applicant-picture" title="Add a photo" data-toggle="modal" data-target="#commercialApplicantPicturesModal">
+                    <i class="icon-plus icon-large"></i>
+                </span>
+            </div>
+            </i>
+
+            <div class="mx-2">
+                <h2 class="h2">Business Info</h2>
+                <span class="js-business-name"></span>
+            </div>
+
+            <div class="form-inline js-vip-switch" style="margin-left: 2rem;">
+                <label class="text-center mr-2" for="input-commercial-applicant-vip">VIP</label>
+                <label class="switch">
+                    <input type="checkbox" id="input-commercial-applicant-vip" checked="">
+                    <div class="slider round">
+                        <span class="on">YES</span>
+                        <span class="off">NO</span>
+                    </div>
+                </label>
+            </div>
+        </div>
+
+        <div class="flex-container-align-center">
+            <button class="btn btn-outline-danger js-delete-button mr-3" role="button" onclick="deleteBusinessInfo.call(this)">Remove</button>
+            <a href="#">
+                <i class="icon-chevron-sign-down linearicon-chevron-down"></i>
+                <i class="icon-chevron-up linearicon-chevron-up"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="ez-dropdown-content collapse show" id="commercial-applicant-info">
+        <div class="row mb-4">
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label for="input-first-name">Business Name</label>
+                    <input type="text" class="form-control" id="input-first-name" onkeyup="updateBusinesstName.call(this)">
+                </div>
+
+                <div class="form-group">
+                    <label for="input-legal-entity-type">Legal Entity Type</label>
+                    <select class="form-control" id="input-legal-entity-type">
+                        <option value="">&lt;select&gt;</option>
+                        <option value="Association">Association</option>
+                        <option selected="selected" value="Corporation">Corporation</option>
+                        <option value="District">District</option>
+                        <option value="LimitedLiabilityCompany">Limited Liability Company (LLC)</option>
+                        <option value="LimitedLiabilityPartnership">Limited Liability Partnership (LLP)</option>
+                        <option value="NonProfit">Non-Profit</option>
+                        <option value="Partnership">Partnership</option>
+                        <option value="PublicEntity">Public Entity</option>
+                        <option value="SCorporation">S Corporation</option>
+                        <option value="SoleProprietorship">Sole Proprietorship</option>
+                        <option value="Trust">Trust</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="input-website-url">Website URL</label>
+                    <input type="text" class="form-control" id="input-website-url">
+                </div>
+            </div>
+
+            <div class="col-md-3 ml-auto">
+                <div class="form-group">
+                    <label for="input-tax-id">Tax ID</label>
+                    <input type="text" class="form-control" id="input-tax-id">
+                </div>
+
+                <div class="form-group">
+                    <label for="input-naics-sic-code">NAICS / SIC Code</label>
+                    <input type="text" class="form-control" id="input-naics-sic-code">
+                </div>
+
+                <div class="form-group">
+                    <div class="flex-container-align-center">
+                        <label class="mr-3" for="input-dba">DBA</label>
+                        <a href="javascript:;" class="add-additional-input" onclick="addAdditionalDbaRow.call(this)">
+                            <i  class="linearicon-plus ml-2"></i>
+                        </a>
+                    </div>
+                    <div class="js-container-dba-list">
+                        <div class="row mb-2 js-dba-row">
+                            <div class="col-md-10">
+                                <input type="text" class="form-control" id="input-dba">
+                            </div>
+
+                            <div class="col-md-2 flex-container-align-center js-dba-delete-button" style="display: none;">
+                                <a href="javascript:;" class="text-danger" onclick="deleteRow.call(this); countDbaRows();">
+                                    <i class=" linearicon-trash2 linearicon-lg" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 mx-auto">
+                <div class="form-group">
+                    <label for="input-commercial-applicant-account-name">Account Name</label>
+                    <input type="text" class="form-control" id="input-commercial-applicant-account-name">
+                </div>
+
+                <div class="form-group">
+                    <label for="input-applicant-type">Applicant Type</label>
+                    <select class="form-control" id="input-applicant-type">
+                        <option>Prospect/Lead</option>
+                        <option>Acitve Client</option>
+                        <option>Inactive Client</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="input-commercial-customer-since">Customer Since</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control datepicker" id="input-commercial-customer-since" aria-describedby="basic-addon2">
+                        <span class="input-group-addon" id="basic-addon2">
+                            <i class="linearicon-calendar-full linearicon-lg"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bff-include" data-src="app/pages/applicants/create-commercial-applicant/shared/commercial-applicant-contact-info.html"></div>
+    </div>
+</div>

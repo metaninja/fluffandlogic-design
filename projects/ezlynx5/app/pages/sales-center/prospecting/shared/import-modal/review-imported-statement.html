@@ -1,0 +1,209 @@
+<div class="modal-body">
+    <h3 class="h3">Review Imported Statement</h3>
+
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        <i class="fa fa-check-circle fa-lg mr-1" aria-hidden="true"></i>The statement looks valid. Click Finish to complete, or click on a row to edit it.
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <i class="linearicon-cross linearicon-lg" aria-hidden="true"></i>
+        </button>
+    </div>
+
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <i class="icon-warning-sign icon-large mr-1" aria-hidden="true"></i>The imported statement has errors. Hover over the error to see more details. Click a row to edit it.
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <i class="linearicon-cross linearicon-lg" aria-hidden="true"></i>
+        </button>
+    </div>
+
+    <div class="bg-grey100 p-2 clearfix">
+        <div class="pull-left">
+            <label for="show-invalid-only"><input type="checkbox" id="show-invalid-only" checked=""> Show invalid entries only</label>
+        </div>
+
+        <div class="pull-right">
+            <div class="dropdown mt-1">
+                <button href="javascript:void(0);" class="dropdown-toggle btn" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Export <span class="caret"></span>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="javascript:void(0)">CSV</a>
+                    <a class="dropdown-item" href="javascript:void(0)">Excel</a>
+                    <a class="dropdown-item" href="javascript:void(0)">PDF</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="position: relative;">
+        <table class="table editable-table">
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Middle Name</th>
+                    <th>Last Name</th>
+                    <th>Address Line 1</th>
+                    <th>Address Line 2</th>
+                    <th>City</th>
+                    <th>State Code</th>
+                    <th>Zip Code</th>
+                    <th>Extension</th>
+                    <th>Fax</th>
+                    <th>Mobile Phone</th>
+                    <th>Home Phone</th>
+                    <th>Work Phone</th>
+                    <th>Email</th>
+                    <th>Lead Channel ID</th>
+                    <th>OrigName</th>
+                    <th>Prefix</th>
+                    <th>Suffix</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Mark</td>
+                    <td></td>
+                    <td>Smith</td>
+                    <td>123 Fake ST</td>
+                    <td></td>
+                    <td>Dallas</td>
+                    <td>TX</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>123-456-7890</td>
+                    <td></td>
+                    <td></td>
+                    <td>marksmith@gmail.com</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <i class="icon-pencil icon-large blue pointer" aria-hidden="true"></i>
+                    </td>
+                    <td>
+                        <i class="icon-trash icon-large red pointer"></i>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Mark</td>
+                    <td></td>
+                    <td>Smith</td>
+                    <td>123 Fake ST</td>
+                    <td></td>
+                    <td>Dallas</td>
+                    <td>TX</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>123-456-7890</td>
+                    <td></td>
+                    <td></td>
+                    <td>marksmith@gmail.com</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <i class="icon-pencil icon-large blue pointer" aria-hidden="true"></i>
+                    </td>
+                    <td>
+                        <i class="icon-trash icon-large red pointer"></i>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Mark</td>
+                    <td></td>
+                    <td>Smith</td>
+                    <td>123 Fake ST</td>
+                    <td></td>
+                    <td>Dallas</td>
+                    <td>TX</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>123-456-7890</td>
+                    <td></td>
+                    <td></td>
+                    <td>marksmith@gmail.com</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <i class="icon-pencil icon-large blue pointer" aria-hidden="true"></i>
+                    </td>
+                    <td>
+                        <i class="icon-trash icon-large red pointer"></i>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Mark</td>
+                    <td></td>
+                    <td>Smith</td>
+                    <td>123 Fake ST</td>
+                    <td></td>
+                    <td>Dallas</td>
+                    <td>TX</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>123-456-7890</td>
+                    <td></td>
+                    <td></td>
+                    <td>marksmith@gmail.com</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <i class="icon-pencil icon-large blue pointer" aria-hidden="true"></i>
+                    </td>
+                    <td>
+                        <i class="icon-trash icon-large red pointer"></i>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="trans-type-code-dropdown" style="display: none;">
+            <a href="javascript:void(0)" class="row-fluid">
+                <div class="trans-type-code-value span4">RNWL</div>
+                <div class="trans-type-code-desc span8 text-muted text-right">Renewal</div>
+            </a>
+            <a href="javascript:void(0)" class="row-fluid">
+                <div class="span4">NBS</div>
+                <div class="span8 text-muted text-right">New Business</div>
+            </a>
+            <a href="javascript:void(0)" class="row-fluid">
+                <div class="span4">PCH</div>
+                <div class="span8 text-muted text-right">Policy Change</div>
+            </a>
+            <a href="javascript:void(0)" class="row-fluid">
+                <div class="span4">REI</div>
+                <div class="span8 text-muted text-right">Reinstate</div>
+            </a>
+            <a href="javascript:void(0)" class="row-fluid">
+                <div class="span4">REW</div>
+                <div class="span8 text-muted text-right">Rewrite</div>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="modal-footer">
+    <div class="pull-left">
+        <button class="btn btn-outline-primary" data-dismiss="modal">Cancel</button>
+    </div>
+
+    <div class="pull-right">
+        <a href="javascript:void(0);" class="btn btn-outline-primary" onclick="showMapColumnHeadersView()">< Map Column Headers</a>
+        <a href="javascript:void(0);" class="btn btn-primary" onclick="showCreateListView()">Create List ></a>
+    </div>
+</div>
+
+
+<div class="bff-script" data-src="app/pages/commissions/statements/new/import/review/index.js"></div>

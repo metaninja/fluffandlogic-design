@@ -1,0 +1,11 @@
+<script id="payees-template" type="x-handlebars-template">
+	<div class="large-bold-text">
+		<span class='color-grey500'>Pay</span> {{payeeType}} 
+		{{#if agencyPayee}}
+			Fox Valley
+		{{else}}
+			Clay Crowell
+		{{/if}}
+		 {{payeeAmount}} <span class='color-grey500'>of </span>{{payeeTypeofPayment}}
+	</div>
+</script>

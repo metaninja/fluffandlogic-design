@@ -1,0 +1,206 @@
+<!-- begin: Create CD Modal -->
+<div class="modal fade" id="createCDModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content modal-lg">
+            <div class="modal-header modal-primary">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <div class="modal-title">
+                    Package Records
+                </div>
+            </div>
+            <div class="modal-body">
+                <ul class="nav nav-tabs">
+                    <li class="active"><a href="#cd-image-details" data-toggle="tab">Details</a>
+                    </li>
+                    <li><a href="#selected-records" data-toggle="tab">Records <span class="badge">63</span></a>
+                    </li>
+                </ul>
+                <div class="tab-content right-panel-style">
+                    <div id="cd-image-details" class="tab-pane active right-panel-content">
+                        <p>Select the options and files to include for downloading recordings. Once the files have been packaged for download, you will receive a notification to download them.</p>
+                        <div class="row">
+                            <div class="col-md-7">
+                                <h4 class="settings-headline">Package Details</h4>
+                                <div class="form-group">
+                                    <label for="cdName" class="control-label required">Package Name</label>
+                                    <input type="text" id="cdName" class="form-control">
+                                </div>
+                                <label class="rounded-check" for="rounded-check-tag">
+                                    <input type="checkbox" name="check" id="rounded-check-tag" value="None">
+                                    <span class="icon"></span> Save package name as a tag
+                                </label>
+                                <div class="form-group">
+                                    <label class="rounded-check">
+                                        <input type="checkbox" data-toggle="collapse" data-target="#email-link" class="collapsed">
+                                        <span class="icon"></span>Send an email when the package is ready to download</label>
+                                    <div class="collapse" id="email-link" style="margin: 10px 0 10px 40px">
+                                        <label for="recipients" class="control-label">Email Recipient(s)
+                                            <small>(separate by comma)</small>
+                                        </label>
+                                        <input type="text" id="recipients" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group" style="padding-top: 10px;">
+                                    <label for="imageFormat">Package Format:</label>
+                                    <select class="form-control" id="imageFormat">
+                                        <option value="iso" selected>ISO</option>
+                                        <option value="targz">TARGZ</option>
+                                        <option value="zip">ZIP</option>
+                                    </select>
+                                </div>
+                                <h4 class="settings-headline">File Types</h4>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label class="rounded-check" for="rounded-check-ogg">
+                                            <input type="checkbox" name="check" id="rounded-check-ogg" value="None" checked disabled>
+                                            <span class="icon"></span> .ogg
+                                        </label>
+                                        <label class="rounded-check" for="rounded-check-wav">
+                                            <input type="checkbox" name="check" id="rounded-check-wav" value="None" checked>
+                                            <span class="icon"></span> .wav
+                                        </label>
+                                        <label class="rounded-check" for="rounded-check-gsm">
+                                            <input type="checkbox" name="check" id="rounded-check-gsm" value="None" disabled>
+                                            <span class="icon"></span> .gsm
+                                        </label>
+                                        <label class="rounded-check" for="rounded-check-mp3">
+                                            <input type="checkbox" name="check" id="rounded-check-mp3" value="None" checked>
+                                            <span class="icon"></span> .mp3
+                                        </label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="rounded-check" for="rounded-check-wav">
+                                            <input type="checkbox" name="check" id="rounded-check-wav" value="None" checked>
+                                            <span class="icon"></span> .mp4
+                                        </label>
+                                        <label class="rounded-check" for="rounded-check-image">
+                                            <input type="checkbox" name="check" id="rounded-check-image" value="None" checked>
+                                            <span class="icon"></span> Image file
+                                        </label>
+                                        <label class="rounded-check" for="rounded-check-gsm">
+                                            <input type="checkbox" name="check" id="rounded-check-gsm" value="None" checked>
+                                            <span class="icon"></span> HTML5 Support
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <h4 class="settings-headline">Package Summary</h4>
+                                <table class="table table-condensed table-panel">
+                                    <tbody>
+                                        <tr>
+                                            <td align="right">
+                                                <strong>63</strong>
+                                            </td>
+                                            <td>Records</td>
+                                        </tr>
+                                        <tr>
+                                            <td align="right">
+                                                <strong>147.23</strong>
+                                            </td>
+                                            <td>MB</td>
+                                        </tr>
+                                        <tr>
+                                            <td align="right">
+                                                <strong>341</strong>
+                                            </td>
+                                            <td>Total seconds</td>
+                                        </tr>
+                                        <tr>
+                                            <td align="right">
+                                                <strong>5.68</strong>
+                                            </td>
+                                            <td>Total minutes</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="row">
+                                    <div class="col-md-6 clearfix">
+                                        <h4>CD
+                                            <small class="pull-right" style="margin-top: 6px;">700 mb</small>
+                                        </h4>
+                                        <hr>
+                                        <div align="center">
+                                            <canvas id="cd-image" height="125" width="125"></canvas>
+                                        </div>
+                                        <p style="margin-top: 10px;" align="center">CD is <b>21%</b> full.</p>
+                                        </p>
+                                    </div>
+                                    <div class="col-md-6 clearfix">
+                                        <h4>DVD
+                                            <small class="pull-right" style="margin-top: 6px;">4700 mb</small>
+                                        </h4>
+                                        <hr>
+                                        <div align="center">
+                                            <canvas id="dvd-image" height="125" width="125"></canvas>
+                                        </div>
+                                        <p style="margin-top: 10px;" align="center">DVD is <b>3%</b> full.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="selected-records" class="tab-pane right-panel-content">
+                    <div class="bff-include" data-src="pages/search/communication/results/cdr-results-table.html"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href class="btn btn-link" data-dismiss="modal">Cancel</a>
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Create Package</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+// Chart data
+var cdSpace = [{
+    value: 700,
+    color: "#e9eaea",
+    label: "Available"
+}, {
+    value: 147.23,
+    color: "#33b44b",
+    label: "Used"
+}];
+
+var chartOptions = {
+    segmentShowStroke: false,
+    animationEasing: "easeOutBounce",
+    animateRotate: true,
+    tooltipFontSize: 12,
+};
+
+// Get chart canvas
+var cd = document.getElementById('cd-image').getContext('2d');
+
+// Draw chart
+new Chart(cd).Pie(cdSpace, chartOptions);
+</script>
+<script type="text/javascript">
+// Chart data
+var dvdSpace = [{
+    value: 4700,
+    color: "#e9eaea",
+    label: "Available"
+}, {
+    value: 147.23,
+    color: "#33b44b",
+    label: "Used"
+}];
+
+var chartOptions = {
+    segmentShowStroke: false,
+    animationEasing: "easeOutBounce",
+    animateRotate: true,
+    tooltipFontSize: 12,
+};
+
+// Get chart canvas
+var dvd = document.getElementById('dvd-image').getContext('2d');
+
+// Draw chart
+new Chart(dvd).Pie(dvdSpace, chartOptions);
+
+//--------------- END CHART ---------------------
+</script>

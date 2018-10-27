@@ -1,0 +1,105 @@
+<div class="ez-main-content">
+    <div class="ez-page-header">
+        <div class="row">
+            <div class="col-md-6 ez-page-title">
+                <span class="ez-page-title-icon">
+                    <i class="linearicon-cloud linearicon-3x"></i>
+                </span>
+
+                <h1 class="h1">
+                    <span class="subtitle">Carrier Setup</span>
+                    Carriers
+                </h1>
+            </div>
+            <div class="col-md-6 ez-page-actions">
+                <a href="#/app/pages/setup/carriers/new/index.html" class="btn btn-success">Add Carrier <i class="linearicon-plus ml-2"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="ez-page-body">
+        <div class="ez-page-content content-container">
+
+            <div class="search-form">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Carrier name" aria-label="Carrier name">
+                            <span class="input-group-addon" id="basic-addon2"><i class="linearicon-magnifier"></i></span>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="results-summary">
+                <div class="results-count">
+                    25 carriers found
+                    <label for="show-hidden-lob" class="ml-3 d-flex align-items-center"><input type="checkbox" id="show-hidden-lob">&nbsp;Show Hidden Carriers</label>
+                </div>
+
+                <div class="results-actions">
+                    <a href="javascript:void(0);" class="btn btn-link results-action disabled">Hide Carriers</a>
+                </div>
+            </div>
+
+            <table class="table table-hover">
+                <thead>
+                <tr>
+                    <th style="width:1rem;"><input type="checkbox"></th>
+                    <th>Name</th>
+                    <!--<th>Type</th>-->
+                    <th>Visibility</th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tbody id="carriers">
+                </tbody>
+            </table>
+
+            <div class="bff-include results-pagination" data-src="app/shared/pagination.html"></div>
+
+        </div>
+    </div>
+</div>
+
+<script id="carriers-template" type="x-handlebars-template">
+    {{#carriers}}
+        <tr>
+            <td>
+                <input type="checkbox">
+            </td>
+            <td>
+                <a href="#/app/pages/setup/carriers/view/index.html">{{Name}}</a>
+            </td>
+            <!--<td>-->
+                <!--{{Type}}-->
+            <!--</td>-->
+            <td>
+                {{#if Visible}}
+                {{else}}
+                    <span class="text-danger">Hidden</span>
+                {{/if}}
+            </td>
+            <td class="text-right">
+                <div class="dropdown">
+                    <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Actions
+                    </a>
+
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="javascript:void(0);" data-toggle="modal" data-target="#edit-carrier-modal">Edit</a>
+                        <a class="dropdown-item" href="javascript:void(0);">Hide</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item text-danger" href="javascript:void(0);">Delete</a>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    {{/carriers}}
+</script>
+
+<div class="bff-script" data-src="app/pages/setup/carriers/index.js"></div>
+<div class="bff-script" data-src="app/shared/persona.js"></div>

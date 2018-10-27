@@ -1,0 +1,74 @@
+<div class="ez-main-content">
+    <div class="bff-include js-navigation" data-src="app/pages/applicants/shared/navigation.html" data-current-link="3" data-page-title="Quote Results" data-page-subtitle="Lenny Bergman"></div>
+
+    <div class="ez-page-body">
+        <div class="ez-page-content">
+
+            <i class="linearicon-loading3 loading-icon hide-content"></i>
+
+
+            <div class="content-container mb-3">
+                <div class="alert alert-success js-resubmitted-alert" role="alert" style="display: none">
+                    <i class="linearicon-notification-circle linearicon-lg mr-2"></i> Resubmitted quotes with applicant and co-applicant switched.
+                </div>
+
+                <h2 class="h2 mb-0">CA- Auto Quotes (Run on 08/07/2017)</h2>
+
+                <div class="bff-include" data-src="app/pages/applicants/quotes/quote-results/shared/table.html"></div>
+            </div>
+
+            <div class="content-container pt-3 pb-1 px-2">
+                <div class="row">
+                    <div class="col-md-4">
+                        <a href="javascript:void(0)" class="btn btn-outline-primary mr-2 mb-2 d-inline-flex align-items-center" role="button">
+                            <i class="linearicon-printer linearicon-lg mr-2"></i>
+                            Print View
+                        </a>
+                        <a href="javascript:void(0)" class="btn btn-outline-primary mr-2 mb-2 d-inline-flex align-items-center" role="button">
+                            <i class="linearicon-envelope linearicon-lg mr-2"></i>
+                            Email Quote(s)
+                        </a>
+                        <a href="javascript:void(0)" class="btn btn-outline-primary mr-2 mb-2 d-inline-flex align-items-center" role="button">
+                            <i class="linearicon-cloud-download linearicon-lg mr-2"></i>
+                            Export
+                        </a>
+                        <a href="javascript:void(0)" class="btn btn-outline-danger mr-2 mb-2 d-inline-flex align-items-center" role="button">
+                            <i class="linearicon-trash2 linearicon-lg mr-2"></i>
+                            Delete
+                        </a>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <a href="#/app/pages/quotes/rating/home/ratings" class="btn btn-outline-primary mr-2 mb-2 d-inline-flex align-items-center" role="button">
+                            <i class="mr-2 linearicon-home fa-lg"></i>
+                            Save & Go To Home
+                        </a>
+
+                        <a href="#/app/pages/quotes/rating/dwelling-fire/ratings" class="btn btn-outline-primary mr-2 mb-2 d-inline-flex align-items-center" role="button">
+                            <i class="linearicon-fire linearicon-lg mr-2"></i>
+                            Save & Go To Dwelling Fire
+                        </a>
+                    </div>
+                    <div class="col-md-4 text-right">
+                        <a href="javascript:;" class="btn btn-lg btn-primary mr-2 mb-2" role="button" data-toggle="modal" data-target="#switch-applicants-modal">
+                            <i class="linearicon-user"></i>
+                            <i class="linearicon-tab"></i>
+                            <i class="linearicon-user mr-2"></i>
+                            Switch Applicant and Re-Submit
+                        </a>
+
+                        <a href="javascript:;" class="btn btn-lg btn-primary mr-2 mb-2" role="button" onclick="scrollToTopOfThePage()">
+                            <i class="linearicon-cloud-fog mr-1"></i>
+                            <i class="linearicon-arrow-right mr-2"></i>
+                            Re-Submit to all carriers
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="bff-script" data-src="app/pages/applicants/quotes/quote-results/index.js"></div>
+<div class="bff-include" data-src="app/pages/applicants/quotes/quote-results/shared/resubmit-modal.html"></div>
+<div class="bff-include" data-src="app/pages/applicants/quotes/quote-results/shared/switch-applicants-modal.html"></div>

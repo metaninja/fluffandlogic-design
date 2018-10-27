@@ -1,0 +1,63 @@
+<div class='row details-page-header'>
+    <ul class='col-md-2 interview'>
+        <li class='header-arrow header-arrow-white-bg header-arrow-highlight js-arrow-mouseover-event'>
+			<h2 class='section-heading'>Interview</h2>
+        </li>
+    </ul>
+
+    <ul class='col-md-2 pricing'>
+        <li class='header-arrow header-arrow-white-bg js-arrow-mouseover-event'>
+			<h2 class='section-heading'>Pricing</h2>
+        </li>
+    </ul>
+
+    <ul class='col-md-2 presentation'>
+        <li class='header-arrow header-arrow-white-bg js-arrow-mouseover-event'>
+          	<h2 class='section-heading'>Presentation</h2>
+        </li>
+    </ul>
+
+    <ul class='col-md-2 decision'>
+        <li class='header-arrow header-arrow-white-bg js-arrow-mouseover-event'>
+            <h2 class='section-heading'>Decision</h2>
+        </li>
+    </ul>
+
+    <ul class='col-md-2 fulfillment'>
+        <li class='header-arrow header-arrow-white-bg js-arrow-mouseover-event'>
+            <h2 class='section-heading'>Fulfillment</h2>
+        </li>
+    </ul>
+
+    <ul class='col-md-2 hold'>
+        <li class='header-arrow-reverse header-arrow-reverse-white-bg table-hold-view js-arrow-mouseover-event'>
+			<h2 class='section-heading'>Hold</h2>
+        </li>
+    </ul>
+</div>
+
+<script>
+	$(function() {
+        $(".js-arrow-mouseover-event").on("mouseover", function() {
+            if ($(this).hasClass("header-arrow-highlight")) {
+                return;
+            }
+            
+            var $h2 = $(this).find("h2");
+
+            $h2.text("Move to " + $h2.text());
+        });
+
+        $(".js-arrow-mouseover-event").on("mouseout", function() {
+            var $h2 = $(this).find("h2"),
+                text = $h2.text();
+
+            $h2.text(text.replace(/Move to /, ""));
+        });
+
+        $(".header-arrow, .header-arrow-reverse").on("click", function() {
+		    $('.header-arrow-highlight').toggleClass('header-arrow-highlight');
+		    $(this).toggleClass('header-arrow-highlight');
+        });
+	});
+</script>

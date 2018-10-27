@@ -1,0 +1,101 @@
+<div class="ez-main-content">
+    <div class="ez-page-header">
+        <div class="row">
+            <div class="col-lg-6 ez-page-title">
+            <span class="ez-page-title-icon">
+                <i class="linearicon-cloud linearicon-2x"></i>
+            </span>
+
+                <h1 class="h1">
+                    <span class="subtitle">Carrier</span>
+
+                    <div class="d-flex align-items-center">
+                        <div class="js-page-title">
+                            New Carrier
+                        </div>
+                    </div>
+                </h1>
+            </div>
+
+            <div class="col-md-6 ez-page-actions ">
+                <a href="javascript:void(0);" class="btn btn-link pull-right mr-2" data-toggle="modal" data-target="#unsaved-changes-modal" data-redirect="#/app/pages/setup/carriers/index.html">Cancel</a>
+                <a href="#/app/pages/setup/carriers" class="btn btn-success pull-right btn-save-org-profile">Save <i class="linearicon-check ml-2"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="ez-page-body">
+        <div class="ez-page-content content-container">
+
+            <div class="row">
+                <div class="col-md-6">
+
+                    <div class="form-group">
+                    <label for="carrier-name" class="required">Carrier Name (Search or enter a custom company)</label>
+                    <select type="text" class="form-control" id="carrier-name" style="width: auto;">
+                        <option></option>
+                        <option value="1">A. J. Wayne & Associates (Prof Liab)</option>
+                        <option value="2">AAA - Auto Club Group</option>
+                        <option value="3">AAA Insurance</option>
+                        <option value="4">AAA Insurance - Western United</option>
+                        <option value="5">AAA MID ATLANTIC REINS CO</option>
+                        <option value="6">AAA SOUTHERN NEW ENGLAND INS CO</option>
+                        <option value="7">ABA Insurance Svc.</option>
+                        <option value="8">Abacus Insurance</option>
+                        <option value="9">ABS BOILER & MARINE INS CO	Hidden</option>
+                        <option value="10">Acceptance Indemnity Ins Co	Hidden</option>
+                        <option value="11">A-Central Auto Insurance Company</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="writing-companies">Search for Writing Companies</label>
+                    <div class="input-group">
+                        <select type="text" class="form-control" id="writing-companies" multiple >
+                            <option>AAA Life Ins Co - 71854</option>
+                            <option>AAA LIFE INS CO - 71854</option>
+                            <option>AAA LIFE INS CO OF NY - 15282</option>
+                            <option>AAA LIFE RE LTD - 194228</option>
+                            <option>AAA MID ATLANTIC INS CO - 10675</option>
+                            <option>AAA MID ATLANTIC INS CO OF NJ - 42960</option>
+                            <option>AAA MID ATLANTIC REINS CO - 11329</option>
+                            <option>AAA SOUTHERN NEW ENGLAND INS CO - 12487</option>
+                            <option>AAA TX CNTY MUT INS CO - 29327</option>
+                            <option>AAAA INS CO LTD - 190385</option>
+                            <option>JPAAAA REINS LTD - 052272</option>
+                        </select>
+                    </div>
+                </div>
+
+
+                <h2 class="h3 mt-2">Commissions</h2>
+                <div class="form-inline">
+                    <label for="commission-variance" class="mr-2">
+                        <span class="text-danger mr-2">Highlight</span>
+                        <span>commission if actual commission is</span>
+                    </label>
+                    <div class="input-group" style="width: 8rem;">
+                        <input type="number" class="form-control text-right" placeholder=""
+                               aria-label="commission-variance" aria-describedby="commission-variance">
+                        <span class="input-group-addon" id="commission-variance">%</span>
+                    </div>
+                    <span class="ml-2">less than expected commission</span>
+                </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="bff-include" data-src="app/shared/unsaved-changes-modal.html"></div>
+
+<script>
+    $(document).ready(function() {
+       $('#writing-companies').select2();
+
+       $('#carrier-name').change(function() {
+           $('.js-page-title').text($(this).find(':selected').text());
+       });
+    });
+</script>

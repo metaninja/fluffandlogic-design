@@ -1,0 +1,185 @@
+<style>
+    .search-for-applicant-policy {
+        position: relative;
+    }
+    .search-result,
+    .search-results-transactions {
+        position: absolute;
+        left: 0;
+        top: 2rem;
+        z-index: 10;
+        background-color: white;
+        border: 1px solid #ccc;
+    }
+    .search-result-item {
+        display: block;
+        padding: .5rem;
+        border-bottom: 1px solid #ccc;
+    }
+
+</style>
+
+<div class="p2">
+    <header class="clearfix js-add-commission-heading">
+        <div class="pull-left form-inline">
+            <span class="italic mr-1">Starting typing to add: </span>
+            <div class="search-for-applicant-policy">
+                <input class="form-control js-search-input" type="text" placeholder="Search for Applicant/Policy #" onkeyup="toggleSearchResults.call(this)" style="width: 220px">
+
+                <div class="search-result hide-content" onclick="hideSearchResults()">
+                    <a href="javascript:void(0);" class="search-result-item">ABC Corporation</a>
+                    <a href="javascript:void(0);" class="search-result-item">Policy: 123 / Aviation Insurance</a>
+                    <a href="javascript:void(0);" class="search-result-item">ABA Insurance Svc.</a>
+                </div>
+
+                <ul class="search-results-transactions hide-content" onclick="showPolicyInfo.call(this)">
+                    <li>
+                        <p class="search-result-item">Select a transaction</p>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="search-result-item">
+                            Policy Change (PCH)<br>
+                            Applied Date: 7/7/2017
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="search-result-item">
+                            Policy Change (PCH)<br>
+                            Applied Date: 7/4/2017
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="search-result-item">
+                            New Business<br>
+                            Applied Date: 7/6/2017
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <span class="mx-2"> - or - </span>
+            <button class="btn btn-success">Create New Applicant/Policy</button>
+        </div>
+    </header>
+
+    <main class="mb0 js-policy-info hide-content">
+        <div class="row">
+            <div class="col-md-11">
+                <div class="row">
+                    <div class="col-md-2">
+                        <label class="bold inline-block mb1">Applicant Name</label>
+                        <span class="block">ABC Corporation</span>
+                    </div>
+
+                    <div class="col-md-2">
+                        <label class="bold">LOB</label>
+                        <select class="form-control">
+                            <option>Aviation Insurance</option>
+                        </select>
+                    </div>
+
+                    <div class="col-md-2">
+                        <label class="bold">Transaction Type</label>
+                        <select class="form-control">
+                            <option>Audit</option>
+                            <option>Binder</option>
+                        </select>
+                    </div>
+
+                    <div class="col-md-2">
+                        <label class="bold">Transaction Date</label>
+
+                        <div class="input-group iconInput filterInput">
+                            <input type="text" class="form-control daterangeinput" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                            <span class="input-group-addon" id="basic-addon2"><i class="icon-calendar"></i> </span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-2">
+                        <label class="bold">Premium</label>
+                        <input class="form-control" type="text">
+                    </div>
+
+                    <div class="col-md-2">
+                        <label class="bold">Commission</label>
+                        <input class="form-control" type="text">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-1 mt3">
+                <label>&nbsp;</label>
+                <div>
+                    <i class="fa fa-check-circle fa-2x green pointer mr-1" aria-hidden="true" onclick="addCommissionToRow.call(this)"></i>
+                    <i class="fa fa-times-circle fa-2x red pointer" aria-hidden="true" onclick="deleteAddCommissionRow.call(this)"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-right">
+            <em class="text-muted">Hit Enter to Save, or Esc to Cancel</em>
+        </div>
+
+        <div class="card js-service-team-container p-2 mt-2">
+            <div class="col-md-3">
+                <span class=""><strong>Service Team</strong></span>
+                <button class="btn btn-secondary" onclick="addServiceTeamRule()">
+                    <i class="icon-user icon-large"></i> Add
+                </button>
+            </div>
+
+            <div class="col-md-6 center">
+                <p class="blue bold js-rule-title">No rule matches</p>
+
+                <div class="js-service-team-rules hide-content">
+                    <div class="row js-service-team-rule hide-content mb1">
+                        <div class="col-md-2"></div>
+
+                        <select class="col-md-3">
+                            <option></option>
+                        </select>
+
+                        <input type="text" class="col-md-2">
+                        <div class="dropdown col-md-1">
+                            <button type="button" class="btn dropdown-toggle px1 width-full" data-toggle="dropdown"> 
+                                %A <b class="caret"></b> 
+                            </button> 
+                            <ul class="dropdown-menu left-align" role="menu"> 
+                                <li> 
+                                    <a tabindex="-1" href="javascript:void(0);">Flat Fee ($)</a>
+                                </li> 
+                                <li> 
+                                    <a tabindex="-1" href="javascript:void(0);">Agency Commission (%A)</a>
+                                </li>
+                                <li> 
+                                    <a tabindex="-1" href="javascript:void(0);">Written Premium (%P)</a>
+                                </li>
+                            </ul> 
+                        </div>
+                        <span class="col-md-1">$0.00</span>
+
+                        <i class="fa fa-window-close fa-2x col-md-1 red pointer" onclick="deleteServiceRule.call(this)" aria-hidden="true"></i>
+
+                        <div class="col-md-2"></div>
+                    </div>
+
+                    <div class="row js-service-team-disabled-rule mb1">
+                        <div class="col-md-2"></div>
+
+                        <input class="col-md-3" type="text" value="Agency" disabled>
+
+                        <input type="text" class="col-md-2" disabled>
+                        <input type="text" class="col-md-1" value="%" disabled>
+                        <span class="col-md-1">$0.00</span>
+                        <div class="col-md-2"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <label>
+                    <input type="checkbox"> Override Rule
+                </label>
+            </div>
+        </div>
+    </main>
+</div>

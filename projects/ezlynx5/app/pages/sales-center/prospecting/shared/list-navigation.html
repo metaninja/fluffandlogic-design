@@ -1,0 +1,107 @@
+<div>
+	<div class="p-3">
+		<button class="btn btn-primary mb-3" onclick="toggleImportModal()">Import</button>
+
+		<div>
+			<select class="form-control" onchange="filterProspectingLists.call(this)">
+				<option>All</option>
+				<option>Personal</option>
+				<option>Commercial</option>
+			</select>
+		</div>
+	</div>
+
+	<ul>
+		<li>
+			<div class="prospecting-list selected-item" data-id="js-call-next-list">
+				<div class="clearfix">
+					<span class="prospecting-list-name">Call Next</span>
+					<span class="prospecting-list-amount"></span>
+				</div>
+
+				<small class="js-last-touched font-italic">Last touched 03/12/2016</small>
+			</div>
+		</li>
+
+		<li>
+			<ul class="js-list-names-sortable">
+				<li class="prospecting-list js-personal-list" data-id="js-personal-only-list">
+					<div class="clearfix">
+						<span class="prospecting-list-name">Personal Only</span>
+						<span class="prospecting-list-amount"></span>
+					</div>
+
+					<small class="js-last-touched font-italic">Last touched 10/21/2017</small>
+
+					<a class="delete-icon-container" href="javascript:;" onclick="deleteProspectList.call(this)">
+                    	<i class="icon-trash icon-large red"></i>
+                	</a>
+				</li>
+
+				<li class="prospecting-list js-personal-list" data-id="js-list-one-list">
+					<div class="clearfix">
+						<span class="prospecting-list-name">List 1</span>
+						<span class="prospecting-list-amount"></span>
+					</div>
+
+					<small class="js-last-touched font-italic">Last touched 12/10/2015</small>
+
+					<a class="delete-icon-container" href="javascript:;" onclick="deleteProspectList.call(this)">
+                    	<i class="icon-trash icon-large red"></i>
+                	</a>
+				</li>
+
+				<li class="prospecting-list js-commercial-list" data-id="js-commercial-auto-list">
+					<div class="clearfix">
+						<span class="prospecting-list-name">Commercial Auto</span>
+						<span class="prospecting-list-amount"></span>
+					</div>
+
+					<small class="js-last-touched font-italic">Last touched 06/11/2017</small>
+
+					<a class="delete-icon-container" href="javascript:;" onclick="deleteProspectList.call(this)">
+                    	<i class="icon-trash icon-large red"></i>
+                	</a>
+				</li>
+
+				<li class="prospecting-list js-personal-list" data-id="js-import1-list">
+					<div class="clearfix">
+						<span class="prospecting-list-name">Imported 11/22/2017</span>
+						<span class="prospecting-list-amount"></span>
+					</div>
+
+					<small class="js-last-touched font-italic">Last touched 04/16/2017</small>
+
+					<a class="delete-icon-container" href="javascript:;" onclick="deleteProspectList.call(this)">
+                    	<i class="icon-trash icon-large red"></i>
+                	</a>
+				</li>
+
+				<li class="prospecting-list js-personal-list" data-id="js-import2-list">
+					<div class="clearfix">
+						<span class="prospecting-list-name">Imported 11/28/2017</span>
+						<span class="prospecting-list-amount"></span>
+					</div>
+
+					<small class="js-last-touched font-italic">Last touched 10/05/2017</small>
+
+					<a class="delete-icon-container" href="javascript:;" onclick="deleteProspectList.call(this)">
+                    	<i class="icon-trash icon-large red"></i>
+                	</a>
+				</li>
+			</ul>
+		</li>
+	</ul>
+</div>
+
+<li class="card-divider clearfix hide-content font-size-small px1" style="margin: 0;">
+    <div class="pull-left">
+        <span>5-10</span>
+    </div>
+
+    <div class="pull-right">
+        <a href="javascript:void(0);" onclick="scrollToTop.call(this)">
+            Back To Top <i class="fa fa-arrow-circle-up fa-lg" aria-hidden="true"></i>
+        </a>
+    </div>
+</li>

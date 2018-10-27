@@ -1,0 +1,84 @@
+<div class="applicant-sidebar applicant-sidebar-collapse">
+    <h3 class="h4 font-weight-bold">Lenny Bergman</h3>
+
+    <div class="applicant-image">
+        <img class="applicant-picture js-current-applicant-picture" src="images/applicant-pictures/applicant-1.jpg">
+    </div>
+
+    <div class="applicant-icons">
+        <a href="#" title="VIP">
+            <i class="vip-icon"></i>
+        </a>
+        <a href="#" title="Email">
+            <i class="email-icon"></i>
+        </a>
+        <a href="#" title="Personal URL (PURL)">
+            <i class="url-icon"></i>
+        </a>
+        <a href="#" title="Text Message">
+            <i class="text-icon"></i>
+        </a>
+        <a href="#" title="Client Center">
+            <i class="client-center-icon"></i>
+        </a>
+        <a href="#" title="Opportunities">
+            <i class="opportunities-icon"></i>
+        </a>
+        <i class="fa fa-camera fa-2x snapshot-icon" aria-hidden="true" title="ezSnap" onclick="showSnapshot();" style="display: none;"></i>
+    </div>
+
+    <div class="applicant-info mt-4">
+        <p class="mb-0">
+            <span class="font-weight-bold">Type:</span> Active Client
+        </p>
+        <p class="mb-0">
+            <span class="font-weight-bold">Since:</span> Unknown
+        </p>
+        <p class="mb-0">
+            <span class="font-weight-bold">Assigned:</span> Commercial Download
+        </p>
+        <p class="mb-0">
+            <span class="font-weight-bold">Agency:</span> Commercial Download
+        </p>
+    </div>
+
+    <div class="applicant-address mt-4">
+        <h4 class="h4">Address</h4>
+        <p class="mb-0">3925 OLD TROUP HWY</p>
+        <p class="mb-0">TYLER, TX 75707</p>
+        <a href="#" class="mr-2">Map</a>
+        <a href="#">Zillow</a>
+    </div>
+
+    <div class="applicant-contact-info mt-4">
+        <h4 class="h4">Applicant</h4>
+        <p class="mb-0">Lenny Bergman</p>
+        <a href="#" class="font-size-small">Stephen.kolbo@ezlynx.com</a>
+        <a href="#" class="font-size-small">stephen.kolbo@ezlynx.com</a>
+        <p class="mb-0">Mobile: 903-920-8600</p>
+    </div>
+
+    <div class="applicant-sidebar-close-arrow mb-2">
+        <i class="fa fa-chevron-right fa-lg pointer js-applicant-sidebar-popover" data-container="body" data-toggle="popover" data-placement="right" title="Popover title" data-content="Click this button to show the Applicant Sidebar." onclick="toggleApplicantSidebar.call(this)"></i>
+    </div>
+</div>
+
+<script>
+    function toggleApplicantSidebar() {
+        $(".applicant-sidebar").toggleClass("applicant-sidebar-collapse");
+
+        $(".applicant-sidebar").parent().toggleClass("applicant-sidebar-collapsed applicant-sidebar-expanded");
+
+        $(this).toggleClass("fa-chevron-left fa-chevron-right");
+    }
+
+    $(function() {
+        if ($(".ez-page-content").hasClass("js-overview-page")) {
+            $(".snapshot-icon").show();
+        }
+
+        if ($(".applicant-sidebar").is(":visible")) {
+            $(".applicant-sidebar").parent().addClass("applicant-sidebar-collapsed");
+        }
+    });
+</script>

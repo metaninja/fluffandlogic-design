@@ -1,0 +1,78 @@
+<h4 class="settings-headline">
+    <a data-toggle="collapse" href="#visitor-settings-detail">
+        Visitor Type
+        <div class="pull-right">
+            <span class="toggle-hide"></span>
+            <span class="toggle-show"></span>
+        </div>
+    </a>
+</h4>
+<div class="collapse in" id="visitor-settings-detail">
+    <div class="input-group" style="width: 100%; margin-bottom: 15px">
+        <!-- Single button -->
+        <button type="button" class="btn btn-default dropdown-toggle dropdown-toggle-visitor-type" data-toggle="dropdown" style="background-color: transparent; color: #333; width: 100%; text-align: left;"> Attorney
+            <span class="pull-right">
+                <span class="caret"></span>
+            </span>
+        </button>
+        <ul class="dropdown-menu dropdown-visitor-type" role="menu">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search" style="margin-top: -6px; border-bottom-left-radius: 0; border-bottom-right-radius: 0;">
+                <div class="fa fa-search input-group-addon" style="margin-top: -6px; border-bottom-left-radius: 0; border-bottom-right-radius: 0;"></div>
+            </div>
+            <li><a href="#">Attorney</a></li>
+            <li><a href="#">Clergy</a></li>
+            <li><a href="#">Friend &amp; Family</a></li>
+            <li><a href="#">Home User</a></li>
+            <li><a href="#">Private Official</a></li>
+            <li><a href="#">Public Official</a></li>
+        </ul>
+    </div>
+</div>
+<div class="attorney-settings">
+    <h4 class="section-header">
+        <a data-toggle="collapse" href="#attorney">
+            Attorney Information
+            <div class="pull-right">
+                <span class="toggle-hide"></span>
+                <span class="toggle-show"></span>
+            </div>
+        </a>
+    </h4>
+    <div class="collapse in" id="attorney">
+        <div class="row">
+            <div class="form-group col-md-6">
+                <label for="license-field">License Number</label>
+                <input type="email" class="form-control" id="license-field">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="release-date" class="control-label">Expiration Date</label>
+                <div class="input-group">
+                    <input type="text" id="release-date" class="form-control col-md-4">
+                    <span class="input-group-addon"><i class="fa fa-calendar"></i>
+                            </span>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="firmField">Name of Firm</label>
+            <input type="email" class="form-control" id="firmField">
+        </div>
+    </div>
+</div>
+<script>
+$('.dropdown-visitor-type').click(function(e) {
+
+    var dropdownIcon = '<span class="pull-right"><span class="caret"></span></span>';
+
+    var selectedNode = e.target.childNodes[0].nodeValue;
+
+    $('.dropdown-toggle-visitor-type').html(selectedNode + dropdownIcon);
+
+    if (selectedNode.indexOf('Attorney') >= 0) {
+        $('.attorney-settings').show();
+    } else {
+        $('.attorney-settings').hide();
+    }
+});
+</script>

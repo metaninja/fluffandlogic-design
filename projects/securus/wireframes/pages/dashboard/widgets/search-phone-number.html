@@ -1,0 +1,78 @@
+<h4 class="settings-headline">
+    Top Dialed Numbers
+    <div class="bff-include pull-right" data-src="pages/dashboard/components/widget-cog-droplist.html"></div>
+</h4>
+
+<div class="call-frequency-search-results">
+    <table class="table no-margin-bottom">
+        <tbody>
+        <tr>
+            <td style="border-top: 0;padding-top: 0;">1</td>
+            <td style="border-top: 0;padding-top: 0;"><a>(532) 536-9821</a></td>
+            <td style="border-top: 0;padding-top: 0;"><span class="badge">113</span></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td><a>(144) 345-7173</a></td>
+            <td><span class="badge primary">101</span></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td><a>(661) 455-1634</a></td>
+            <td><span class="badge">87</span></td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td><a>(323) 616-7654</a></td>
+            <td><span class="badge">86</span></td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td><a>(214) 441-2351</a></td>
+            <td><span class="badge">71</span></td>
+        </tr>
+        </tbody>
+    </table>
+
+    <p class="pull-left"><em>last 30 days</em></p>
+    <a href="#" class="btn-link pull-right" data-toggle="modal" data-target="#call-frequency-results-modal">All Numbers &raquo;</a>
+</div>
+
+<div class="bff-include" data-src="pages/dashboard/widgets/search-phone-number-results.html"></div>
+
+<script>
+
+    $('.btn-call-frequency-search').click(function() {
+        $('.call-frequency-search-results').show();
+        $('.call-frequency-search-form').hide();
+    });
+
+    $('.btn-call-frequence-search-again').click(function() {
+        $('.call-frequency-search-results').hide();
+        $('.call-frequency-search-form').show();
+    });
+
+    var refiners = {};
+    refiners.showAll = "Expand All";
+    refiners.hideAll = "Hide All";
+
+    $('.panel-title .js-toggle-filters').text(refiners.showAll);
+
+    $('.js-toggle-filters').click(function() {
+
+        if ($(this).text() === refiners.showAll) {
+            $(this).text(refiners.hideAll);
+            $('.panel-filters .collapse').collapse('show');
+        } else {
+            if ($(this).text() === refiners.hideAll) {
+                $(this).text(refiners.showAll);
+                $('.panel-filters .collapse').collapse('hide');
+            }
+        }
+    });
+</script>
+
+
+
+
+

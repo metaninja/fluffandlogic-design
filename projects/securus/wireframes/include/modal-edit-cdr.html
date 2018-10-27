@@ -1,0 +1,69 @@
+<div class="modal fade" id="editCDRModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content modal-lg">
+            <div class="modal-header modal-primary">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <div class="modal-title">
+                    Edit CDR
+                </div>
+            </div>
+            <div class="modal-body">
+                <table class="table table-condensed">
+                    <thead>
+                        <th>Database Key</th>
+                        <th>Updated Value</th>
+                        <th></th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <select class="form-control">
+                                    <option>Select Key</option>
+                                    <option>FACILITY_ID</option>
+                                    <option>COUNTRY_CODE</option>
+                                    <option>DESTINATION_ZONE</option>
+                                </select>
+                            </td>
+                            <td><input type="text" class="form-control"></td>
+                            <td>
+                                <button class="btn btn-link btn-delete">
+                                    <i class="fa fa-trash-o"></i> Delete
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <button class="btn btn-success btn-add">
+                                    <i class="fa fa-plus-circle"></i>&nbsp; Add
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="modal-footer">
+                <a href class="btn btn-link" data-dismiss="modal">Cancel</a>
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Save Changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Add a new row when you click the add row button
+    $('.btn-add').click(function() {
+        var parentRow = $(this).closest('tr');
+
+        var newRowContent = "<tr><td><select class='form-control'><option>Select Key</option><option>FACILITY_ID</option><option>COUNTRY_CODE</option><option>DESTINATION_ZONE</option></select></td><td><input type='text' class='form-control'></td><td><button class='btn btn-link btn-delete'><i class='fa fa-trash-o'></i> Delete</button></td></tr>";
+
+        parentRow.before(newRowContent);
+    });
+
+    // Delete row when you click the delete row button
+    $('.btn-delete').click(function() {
+        var parentRow = $(this).closest('tr');
+
+        debugger;
+        parentRow.detach();
+    });
+</script>

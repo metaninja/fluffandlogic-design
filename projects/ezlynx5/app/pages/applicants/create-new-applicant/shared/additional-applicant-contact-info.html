@@ -1,0 +1,101 @@
+<div class="mb-4">
+    <h2 class="h3">Contact Info</h2>
+
+    <div class="pb-2" id="co-contact-info">
+        <div class="row mb-4">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <div class="flex-container-align-center">
+                        <label class="mr-3" for="input-co-applicant-phone">Phone</label>
+                        <a href="#" class="add-additional-input" onclick="addAdditionalPhoneRow.call(this)">
+                            <i  class="linearicon-plus ml-2"></i>
+                        </a>
+                    </div>
+
+                    <div class="js-container-phone-list mb-4">
+                        <div class="row mb-2">
+                            <div class="col-md-3">
+                                <select class="form-control" onchange="updatePhoneType.call(this)">
+                                    <option>Home</option>
+                                    <option>Work</option>
+                                    <option>Mobile</option>
+                                    <option>Fax</option>
+                                </select>
+                            </div>
+
+                            <div class="col-md-4">
+                                <input type="text" class="form-control" id="input-co-applicant-phone">
+                            </div>
+
+                            <div class="col-md-2 js-phone-ext-input hide-content">
+                                <input type="text" class="form-control" placeholder="ext">
+                            </div>
+
+                            <div class="col-md-3 flex-container-align-center">
+                                <a href="javascript:;" class=" text-danger" onclick="deleteRow.call(this)">
+                                    <i class=" linearicon-trash2 linearicon-lg" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="form-group js-email-container">
+                    <div class="flex-container-align-center">
+                        <label class="mr-3" for="input-applicant-email">Email</label>
+                        <a href="#" class="add-additional-input" onclick="addAdditionalEmailRow.call(this)">
+                            <i  class="linearicon-plus-circle linearicon-lg"></i>
+                        </a>
+                    </div>
+
+                    <div class="js-container-email-list mb-4">
+                        <div class="row mb-2 js-email-input-row">
+                            <div class="col-md-3">
+                                <select class="form-control">
+                                    <option>Primary</option>
+                                    <option>Secondary</option>
+                                </select>
+                            </div>
+
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" id="input-applicant-email">
+                            </div>
+
+                            <div class="col-md-3 flex-container-align-center">
+                                <a href="javascript:;" class=" text-danger" onclick="showAddEmailButton.call(this); deleteRow.call(this);">
+                                    <i class=" linearicon-trash2 linearicon-lg" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="input-co-applicant-contact-method">Contact Method</label>
+                    <div class="form-inline">
+                        <select class="form-control" id="input-co-applicant-contact-method">
+                            <option>Email</option>
+                            <option>Home Phone</option>
+                            <option>Work Phone</option>
+                            <option>Mobile Phone</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="input-co-applicant-contact-time">Contact Time</label>
+                    <div class="form-inline">
+                        <select class="form-control" id="input-co-applicant-contact-time">
+                            <option>Morning</option>
+                            <option>Afternoon</option>
+                            <option>Evening</option>
+                            <option>Anytime</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

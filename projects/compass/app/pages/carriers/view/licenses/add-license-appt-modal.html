@@ -1,0 +1,59 @@
+<div class="modal fade" id="add-license-appt-modal" tabindex="-1" role="dialog" aria-labelledby="add-license-appt-modal-title">
+    <div class="modal-dialog modal-success" role="document">
+        <div class="modal-content">
+            <div class="modal-header clearfix">
+                <h5 class="modal-title" id="add-license-appt-modal-title">License Appointment</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <i class="linearicon-cross2" aria-hidden="true"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+
+                <div class="form-group">
+                    <label for="appt-carrier">Carrier</label>
+                    <select class="form-control" id="appt-carrier">
+                        <option>All State</option>
+                        <option>Farmers Insurance</option>
+                        <option>Geico</option>
+                        <option>Progressive</option>
+                        <option>State Farm</option>
+                        <option>Liberty Mutual</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="appt-type">Appointment Type</label>
+                    <select class="form-control" id="appt-type">
+                        <option>Casualty</option>
+                        <option>Property</option>
+                        <option>Life</option>
+                        <option>Health</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="appt-status">Status</label>
+                    <select class="form-control" id="appt-status">
+                        <option>Active</option>
+                        <option>Expired</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="appt-active-date">Active Date</label>
+                    <input type="date" class="form-control" id="appt-active-date">
+                </div>
+
+                <div class="form-group">
+                    <label for="appt-expiry-date">Expiry Date</label>
+                    <input type="date" class="form-control" id="appt-expiry-date">
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-link mr-2" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-success" data-dismiss="modal">Save Appointment <i class="linearicon-check"></i></button>
+            </div>
+        </div>
+    </div>
+</div>

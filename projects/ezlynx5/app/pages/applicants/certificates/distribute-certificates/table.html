@@ -1,0 +1,81 @@
+<div class="results-summary mb-2 py-1">
+
+    <span class="results-count">
+        10 results found
+
+        <label class="switch ml-5 mr-2">
+            <input type="checkbox" id="never-received-cert">
+            <div class="slider round">
+                <span class="on">YES</span>
+                <span class="off">NO</span>
+            </div>
+        </label>
+
+        <label for="never-received-cert">
+            Show only certificate holders that never received a certificate
+        </label>
+
+        <!--<label class="switch ml-5 mr-2">-->
+            <!--<input type="checkbox" id="update-preferred-distribution">-->
+            <!--<div class="slider round">-->
+                <!--<span class="on">YES</span>-->
+                <!--<span class="off">NO</span>-->
+            <!--</div>-->
+        <!--</label>-->
+
+        <!--<label for="update-preferred-distribution">-->
+            <!--Update certificate holders' preferred distribution method-->
+        <!--</label>-->
+
+    </span>
+
+</div>
+
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th>
+                <input type="checkbox" checked>
+            </th>
+            <th>Certificate Holder</th>
+            <th>Last Sent</th>
+            <th>Preferred Distribution Method</th>
+            <th>Destination</th>
+        </tr>
+    </thead>
+
+    <tbody id="policies"></tbody>
+</table>
+
+<div class="bff-include" data-src="app/shared/pagination.html"></div>
+
+<script id="policies-template" type="x-handlebars-template">
+    {{#policies}}
+    <tr>
+        <td>
+            <input type="checkbox" checked>
+        </td>
+        <td>{{certificateHolder}}</td>
+        <td>{{lastSent}}</td>
+        <td>
+            {{#if email }}Email{{/if}}
+            {{#if text }}Text{{/if}}
+            {{#if fax }}Fax{{/if}}
+            {{#if mail }}Postal Mail{{/if}}
+            {{#if client }}Client Center{{/if}}
+
+
+
+            <!--<select class="form-control">-->
+                <!--<option {{#if email }}  selected {{/if}}>Email</option>-->
+                <!--<option {{#if text }}   selected {{/if}}>Text</option>-->
+                <!--<option {{#if fax }}    selected {{/if}}>Fax</option>-->
+                <!--<option {{#if mail }}   selected {{/if}}>Postal Mail</option>-->
+                <!--<option {{#if client }} selected {{/if}}>Client Center</option>-->
+            <!--</select>-->
+        </td>
+        <td>{{destination}}</td>
+    {{/policies}}
+</script>
+
+<div class="bff-script" data-src="app/pages/applicants/certificates/distribute-certificates/table.js"></div>

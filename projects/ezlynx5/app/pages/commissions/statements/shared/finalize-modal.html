@@ -1,0 +1,59 @@
+<div class="modal fade" id="finalize-modal" tabindex="-1" role="dialog" aria-labelledby="finalize-modal-title">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="finalize-modal-title">Finalize Statement</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <i class="linearicon-cross linearicon-lg" aria-hidden="true"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="js-unapplied-cash">
+                    <p>The following statements have unapplied cash/unmatched commission:</p>
+
+
+                    <ul class="js-unapplied-cash-list">
+                        <li><a href="#/app/pages/commissions/statements/new/manual/add/" target="_blank" onclick="removeLink.call(this)">Statement # 1497</a></li>
+                        <li><a href="#/app/pages/commissions/statements/new/manual/add/" target="_blank" onclick="removeLink.call(this)">Statement # 2345</a></li>
+                    </ul>
+                    <br>
+                </div>
+
+                <p>Do you want to finalize these statements?</p>
+            </div>
+            <div class="modal-footer">
+                <a href="javascript:void(0);" class="js-toggle-unapplied-cash pull-left">Toggle Finalize</a>
+                <div class="right modal-buttons">
+                    <button class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                    <a href="javascript:void(0);" class="btn btn-primary px4" data-dismiss="modal">Finalize Statement(s)</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+    $(document).ready(function() {
+        $('.js-toggle-unapplied-cash').click(function() {
+            $('.js-unapplied-cash').toggle();
+        });
+
+        $(document).focus(function() {
+            console.log('window got focus.');
+            $('.js-unapplied-cash-list').children('li:first-child').remove();
+        });
+    });
+
+    function removeLink() {
+        $(this).closest('li').remove();
+    }
+
+    function toggleFinalizeModal(finalize) {
+        if (finalize) {
+            $("input[type=checkbox]").prop("checked", false);
+            
+            $(".js-disable-btn").prop("disabled", true);
+        }
+    }
+</script>

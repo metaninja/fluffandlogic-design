@@ -1,0 +1,30 @@
+<div class="modal fade" id="confirmation-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <h2>Are you sure?</h2>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" onclick="deleteItem()">Yes</button>
+                <button type="button" class="btn btn-outline-primary" data-dismiss="modal">No</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function deleteItem() {
+        var message = localStorage.messageToConfirmationModal;
+
+        $itemToDelete.remove();
+        $itemToDelete = "";
+        $("#confirmation-modal").modal("hide");
+
+        if (message === 'show-business-button') {
+            $(".js-add-business-btn").removeClass("hide-content");
+        }
+
+        localStorage.messageToConfirmationModal = '';
+    }
+</script>

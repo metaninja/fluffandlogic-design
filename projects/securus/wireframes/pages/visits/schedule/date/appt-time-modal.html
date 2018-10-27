@@ -1,0 +1,35 @@
+<!-- begin: Appt Time modal -->
+<div class="modal fade in" id="apptTimeModal" tabindex="-1" role="dialog" aria-hidden="false">
+    <div class="modal-dialog">
+        <div class="modal-content modal-md">
+            <div class="modal-header modal-danger">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title" id="addScheduleModalTitle">
+                    <strong>Allow visit?</strong>
+                </h4>
+            </div>
+            <div class="modal-body">
+                <p>This visitations is not allowed because of the following restriction(s) on <strong>[Inmate Name]</strong>:</p>
+                <p><strong>Inmates are allowed 1 on-site visit and unlimited remote visits.</strong>
+                </p>
+
+                <p>Are you sure you want to override this rule and allow the visit?</p>
+            </div>
+            <div class="modal-footer">
+                <a href="javascript:;" class="btn btn-link" data-dismiss="modal">Cancel</a>
+                <a href="javascript:;" class="btn btn-danger btn-add-schedule-time" data-dismiss="modal">Allow Visit</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end: Appt Time modal -->
+
+<script>
+    $('.btn-add-schedule-time').click(function() {
+        var selectedRow = '.specify-schedule tr:nth-child(' + (bff.selectedRow + 1) + ')';
+        bff.ScheduleTime = $(selectedRow + ' td:first-child').text();
+        $('.specify-schedule tr').removeClass('scheduled');
+        $(selectedRow).addClass('scheduled');
+        $('.visit-schedule-finish .btn').removeAttr('disabled');
+    });
+</script>

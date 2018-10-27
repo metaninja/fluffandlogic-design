@@ -1,0 +1,182 @@
+<h3 class="section-header">
+    Visitation <span class="bff-include" data-src="shared/val/devmode-allow-block.html"></span> List for Visitor
+
+    <!-- Buttons for Add/Edit VAN details -->
+    <div class="pull-right">
+        <a class="btn btn-link btn-add-val">Cancel</a>
+        <a class="btn btn-success btn-save-val" href="#">Save</a>
+    </div>
+</h3>
+
+
+<div class="row">
+
+    <div class="col-md-12">
+
+        <div class="section-header">
+            <h4>Inmate Details</h4>
+
+            <a class="btn btn-danger pull-right section-header-action" data-toggle="modal" data-target="#deleteVAL">
+                <i class="fa fa-times-circle"></i>&nbsp; Delete From Visitation List<span class="bff-include" data-src="shared/val/devmode-allow-block.html"></span>
+            </a>
+        </div>
+
+        <div class="form-group permissions-form-background">
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" class="form-control" id="last-name" disabled value="Canfield">
+
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="first-name">First Name</label>
+                        <input type="text" class="form-control" id="first-name" disabled value="Justin">
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="username">PIN</label>
+                        <input type="text" class="form-control" id="username" disabled value="087456710">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <label for="last-name">Date of Birth</label>
+                    <input type="text" class="form-control" id="last-name" disabled value="8-24-1969">
+                </div>
+
+                <div class="col-md-4">
+                    <label for="last-name">Site</label>
+                    <input type="text" class="form-control" id="last-name" disabled value="Kellway">
+                </div>
+
+                <div class="col-md-4">
+                    <label></label>
+                    <label class="rounded-check" for="rounded-check-enable-val">
+                        <input type="checkbox" name="check" id="rounded-check-enable-val" value="None" checked="checked" disabled="disabled">
+                        <span class="icon"></span>
+                        <strong>
+                            Active
+                        </strong>
+                    </label>
+                </div>
+            </div>
+
+            <div class="view-modified">Last modified 9/17/2014 at 12:03PM by jvalentine.
+                <a href="#/Logging.html">
+                    <small>View change history →</small>
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+        <h4 class="section-header">
+            Visitor Relationship
+        </h4>
+
+        <div class="form-group">
+            <label for="relationship">Visitor is inmate&#8217;s:</label>
+            <select class="form-control" id="relationship">
+                <option>-- Select a relationship --</option>
+                <option>Attorney</option>
+                <option>Aunt</option>
+                <option>Boyfriend</option>
+                <option>Brother</option>
+                <option>Brother in Law</option>
+                <option>Child Father</option>
+                <option>Child Mother</option>
+                <option>Clergy</option>
+                <option>Cousin</option>
+                <option>Daughter</option>
+                <option>Daughter in Law</option>
+                <option>Employer</option>
+                <option>Father</option>
+                <option>Father in Law</option>
+                <option>Financial Advisor</option>
+                <option>Friend</option>
+                <option>Girlfriend</option>
+                <option>Grandfather</option>
+                <option>Grandmother</option>
+                <option>Grandparents</option>
+                <option>Husband</option>
+                <option>Mother</option>
+                <option>Mother in Law</option>
+                <option>Nephew</option>
+                <option>Niece</option>
+                <option>Other - Use Description Field</option>
+                <option>Parents</option>
+                <option>Significant Other</option>
+                <option>Sister</option>
+                <option>Sister in Law</option>
+                <option>Step Brother</option>
+                <option>Step Daughter</option>
+                <option>Step Father</option>
+                <option>Step Mother</option>
+                <option>Step Sister</option>
+                <option>Step Son</option>
+                <option>Uncle</option>
+                <option>Wife</option>
+            </select>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <h4 class="section-header">
+            <span class="bff-include" data-src="shared/val/devmode-allow-block.html"></span> Status
+        </h4>
+
+        <label></label>
+
+        <label class="rounded-check" for="rounded-check-add-blocked-val-entry">
+            <input type="checkbox" name="check" id="rounded-check-add-blocked-val-entry" value="None" checked>
+            <span class="icon"></span>
+            <strong>Active</strong>
+        </label>
+    </div>
+</div>
+
+<div class="row">
+
+    <div class="col-md-12">
+
+        <hr class="divider" />
+
+        <div class="pull-right btn-group-val-edit">
+            <a class="btn btn-link btn-save-val">Cancel</a>
+            <a class="btn btn-success btn-save-val" href="#">Save</a>
+            <a class="btn btn-success btn-add-val" href="#">Save and Add New Entry</a>
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+    $('.visitor-search').show();
+    $('.visitor-results').show();
+    $('.visitor-selected').hide();
+
+    $('.btn-save-val').click(function() {
+        $('.val-list').show();
+        $('.val-add-visitor').hide();
+    });
+
+    $('.btn-add-val').click(function() {
+        $('.val-list').hide();
+        $('.val-search').show();
+        $('.val-add-visitor').hide();
+    });
+</script>

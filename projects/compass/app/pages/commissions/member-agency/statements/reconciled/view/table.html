@@ -1,0 +1,220 @@
+<table class="table table-hover js-commission-table">
+    <thead>
+        <tr>
+            <th><input type="checkbox"></th>
+            <th>Member Agency</th>
+            <th>Policy #</th>
+            <th>LOB</th>
+            <th>Trans Type</th>
+            <th>Trans Date</th>
+            <th class="text-right">Premium</th>
+            <th class="text-right">Total Commission</th>
+            <th class="text-right">My Agency Commission</th>
+            <th class="text-right">Member Agency Commission</th>
+            <th class="text-right">Policy Fee</th>
+            <th class="text-right">Inspection Fee</th>
+            <th class="text-right">Agency Fee</th>
+            <th class="text-center">Payouts Approved</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody id="records">
+    </tbody>
+</table>
+
+<script id="records-template" type="x-handlebars-template">
+    {{#records}}
+    <tr>
+        <td><input type="checkbox"></td>
+        <td onclick="toggleTableRow.call(this)">{{MemberAgency}}</td>
+        <td style="white-space: nowrap;">
+            <a href="#/app/pages/policies/view">{{Policy}}</a>
+        </td>
+        <td onclick="toggleTableRow.call(this)">{{LOB}}</td>
+        <td onclick="toggleTableRow.call(this)">{{TransType}}</td>
+        <td onclick="toggleTableRow.call(this)">{{TransDate}}</td>
+        <td class="text-right" onclick="toggleTableRow.call(this)">${{Premium}}</td>
+        <td class="text-right" onclick="toggleTableRow.call(this)">${{TotalCommission}}</td>
+        <td class="text-right" onclick="toggleTableRow.call(this)">${{ExpectedCommission}}</td>
+        <td class="text-right" onclick="toggleTableRow.call(this)">${{ActualCommission}}</td>
+        <td class="text-right" onclick="toggleTableRow.call(this)">${{PolicyFee}}</td>
+        <td class="text-right" onclick="toggleTableRow.call(this)">${{InspectionFee}}</td>
+        <td class="text-right" onclick="toggleTableRow.call(this)">${{AgencyFee}}</td>
+        <td class="text-center js-approved-column" onclick="toggleTableRow.call(this)"></td>
+        <td class="col-expand">
+            <i class="linearicon-chevron-down pointer" onclick="toggleTableRow.call(this)"></i>
+        </td>
+    </tr>
+
+    <tr style="display: none;">
+        <td colspan="20" style="background: linear-gradient(to bottom, #eee 95%, #ddd 99%);">
+
+            <!-- Carrier Rule Summary -->
+            <div class="alert alert-success js-rule-collapsed">
+                <i class="linearicon-checkmark-circle linearicon-lg mr-2"></i>
+                <span class="mr-2">Matches Rule: "Pay Agency 15% of  Earned Premium for New Business"</span>
+                <a href="javascript:void(0)" class="js-btn-expand-rule">Show Details</a>
+            </div>
+
+            <div class="alert alert-success js-rule-expanded">
+                <div>
+                    <p>
+                        <select class="form-control">
+                            <option>Matches Rule: "Pay Agency 15% of  Earned Premium for New Business"</option>
+                        </select>
+                    </p>
+                    <p>
+                        If New/Renewal is New<br>
+                        and Transaction is New Business or Policy Change or Rewrite<br>
+                        and State is one of AZ, AL, KY, TX<br>
+                        Pay My Agency 80% of My Agency Commission<br>
+                        Pay My Agency 100% of Inspection Fees<br>
+                        Pay My Agency 50% of Policy Fees<br>
+                    </p>
+
+                    <a href="javascript:void(0)" class="js-btn-collapse-rule">Hide Details</a>
+                </div>
+            </div>
+            <br class="clearfix">
+            <div class="alert alert-warning hide-content js-alert-overriding-commission-rule">
+                <i class="linearicon-warning linearicon-lg mr-2"></i>
+                <span class="mr-2">Overriding commission rule</span>
+
+                <a href="javascript:void(0)" class="js-cancel-override">Cancel Override</a>
+            </div>
+            <!-- Carrier Rule Summary -->
+
+
+            <!-- Payees section -->
+            <table class="table table-hover table-more-info js-payees-list">
+                <thead>
+                <tr>
+                    <th>Pay</th>
+                    <th>Commission</th>
+                    <th>Policy Fees</th>
+                    <th>Inspection Fees</th>
+                    <th>Agency Fees</th>
+                    <th></th>
+                </tr>
+                </thead>
+
+                <tbody>
+                <tr class="payout-row">
+                    <td class="payout-recipient">
+                        <strong>My Agency</strong>
+                    </td>
+                    <td class="js-payout-commission">
+                            <span class="d-flex align-items-center">
+                                <input type="text" class="form-control payout-split-value" style="width: 70px" value="80" disabled>
+                                <select type="text" class="form-control payout-split-value-type" disabled onchange="renderPayouts()">
+                                    <option value="%">%</option>
+                                    <option value="$">$</option>
+                                </select>
+                            </span>
+                        <div class="payout-split-dollars">=$1,200</div>
+                    </td>
+                    <td class="js-payout-policy-fee">
+                            <span class="d-flex align-items-center">
+                                <input type="text" class="form-control payout-split-value" style="width: 70px" value="50" disabled>
+                                <select type="text" class="form-control payout-split-value-type" onchange="renderPayouts()">
+                                    <option value="%">%</option>
+                                    <option value="$">$</option>
+                                </select>
+                            </span>
+                        <div class="payout-split-dollars">=$50</div>
+                    </td>
+                    <td class="js-payout-inspection-fee">
+                            <span class="d-flex align-items-center">
+                                <input type="text" class="form-control payout-split-value" style="width: 70px" value="50" disabled>
+                                <select type="text" class="form-control payout-split-value-type" onchange="renderPayouts()">
+                                    <option value="%">%</option>
+                                    <option value="$">$</option>
+                                </select>
+                            </span>
+                        <div class="payout-split-dollars">=$165</div>
+                    </td>
+                    <td class="js-payout-agency-fee">
+                            <span class="d-flex align-items-center">
+                                <input type="text" class="form-control payout-split-value" style="width: 70px" value="50" disabled>
+                                <select type="text" class="form-control payout-split-value-type" onchange="renderPayouts()">
+                                    <option value="%">%</option>
+                                    <option value="$">$</option>
+                                </select>
+                            </span>
+                        <div class="payout-split-dollars">=$100</div>
+                    </td>
+                    <td class="payout-actions">
+                        <div class="js-btn-group-edit">
+                            <a href="javascript:void(0)" class="text-success mr-2" onclick="editPayout(0)"><i class="linearicon-pencil linearicon-lg"></i></a>
+                        </div>
+                        <div class="js-btn-group-save hide-content">
+                            <a href="javascript:void(0)" class="text-success mr-2" onclick="savePayout(0)"><i class="linearicon-checkmark-circle linearicon-lg"></i></a>
+                            <a href="javascript:void(0)" class="text-danger" onclick="cancelPayout(0)"><i class="linearicon-cross-circle linearicon-lg"></i></a>
+                        </div>
+                    </td>
+                </tr>
+
+
+                <tr class="payout-row">
+                    <td class="payout-recipient">
+                        <strong>Member Agency</strong>
+                    </td>
+                    <td class="js-payout-commission">
+                            <span class="d-flex align-items-center">
+                                <input type="text" class="form-control payout-split-value" style="width: 70px" value="20" disabled>
+                                <select type="text" class="form-control payout-split-value-type" disabled onchange="renderPayouts()">
+                                    <option value="%">%</option>
+                                    <option value="$">$</option>
+                                </select>
+                            </span>
+                        <div class="payout-split-dollars">=$1,200</div>
+                    </td>
+                    <td class="js-payout-policy-fee">
+                            <span class="d-flex align-items-center">
+                                <input type="text" class="form-control payout-split-value" style="width: 70px" value="50" disabled>
+                                <select type="text" class="form-control payout-split-value-type" onchange="renderPayouts()">
+                                    <option value="%">%</option>
+                                    <option value="$">$</option>
+                                </select>
+                            </span>
+                        <div class="payout-split-dollars">=$50</div>
+                    </td>
+                    <td class="js-payout-inspection-fee">
+                            <span class="d-flex align-items-center">
+                                <input type="text" class="form-control payout-split-value" style="width: 70px" value="50" disabled>
+                                <select type="text" class="form-control payout-split-value-type" onchange="renderPayouts()">
+                                    <option value="%">%</option>
+                                    <option value="$">$</option>
+                                </select>
+                            </span>
+                        <div class="payout-split-dollars">=$165</div>
+                    </td>
+                    <td class="js-payout-agency-fee">
+                            <span class="d-flex align-items-center">
+                                <input type="text" class="form-control payout-split-value" style="width: 70px" value="50" disabled>
+                                <select type="text" class="form-control payout-split-value-type" onchange="renderPayouts()">
+                                    <option value="%">%</option>
+                                    <option value="$">$</option>
+                                </select>
+                            </span>
+                        <div class="payout-split-dollars">=$100</div>
+                    </td>
+                    <td class="payout-actions">
+                        <div class="js-btn-group-edit">
+                            <a href="javascript:void(0)" class="text-success mr-2" onclick="editPayout(1)"><i class="linearicon-pencil linearicon-lg"></i></a>
+                        </div>
+                        <div class="js-btn-group-save hide-content">
+                            <a href="javascript:void(0)" class="text-success mr-2" onclick="savePayout(1)"><i class="linearicon-checkmark-circle linearicon-lg"></i></a>
+                            <a href="javascript:void(0)" class="text-danger" onclick="cancelPayout(1)"><i class="linearicon-cross-circle linearicon-lg"></i></a>
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+        </td>
+    </tr>
+    {{/records}}
+</script>
+
+<div class="bff-script" data-src="app/pages/commissions/member-agency/statements/reconciled/view/table.js"></div>

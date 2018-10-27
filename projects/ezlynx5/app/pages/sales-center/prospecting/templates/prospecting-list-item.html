@@ -1,0 +1,71 @@
+<script id="prospecting-list-item" type="x-handlebars-template">
+    {{#customerData}}
+        <li class="prospecting-list-item" 
+            data-first-name='{{firstName}}' 
+            data-last-name='{{lastName}}' 
+            data-company-name='{{companyName}}'
+            data-x-date='{{x-date}}'
+            data-street-address='{{streetAddress}}'
+            data-city='{{city}}'
+            data-state='{{state}}'
+            data-postal-code='{{postalCode}}'
+            data-phone='{{phone}}'
+            data-email='{{email}}'
+            data-applicant='{{applicant}}'
+            data-commercial-applicant='{{commercialApplicant}}'>
+            <div class="row">
+                <div class="col-md-1">
+                    <input type="checkbox" onchange="toggleSelectedClass.call(this); checkSelectedItems();">
+                </div>
+
+                <div class="col-md-10">
+                    <div class="applicant-name-container mb2">
+                        {{#if applicant}}
+                            <div>
+                                <a href="#/app/pages/applicants/overview">
+                                    <div class="applicant-name h2">{{firstName}} {{lastName}}</div>
+                                </a>
+
+                                <div>Click for Applicant Info</div>
+                            </div>
+                        {{else}}
+                            <span class="applicant-name h2">{{firstName}} {{lastName}}</span>
+                        {{/if}}
+                    </div>
+
+                    {{#if commercialApplicant}}
+                        <div class="row">
+                            <div class="col-md-1">
+                                <i class="icon-building icon-large" aria-hidden="true"></i>
+                            </div>
+
+                            <div class="col-md-10">
+                                <span>{{companyName}}</span>
+                            </div>
+                        </div>
+                    {{/if}}
+
+                    <div class="row my-2">
+                        <div class="col-md-1">
+                            <i class="icon-map-marker icon-large mr2" aria-hidden="true"></i>
+                        </div>
+
+                        <div class="col-md-10">
+                            <span>{{city}}, {{state}} {{postalCode}}</span>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-1">
+                            <i class="icon-phone icon-large mr2" aria-hidden="true"></i>
+                        </div>
+
+                        <div class="col-md-10">
+                            <span>{{phone}}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+    {{/customerData}}
+</script>

@@ -1,0 +1,133 @@
+<h4 class="settings-headline">
+    <a data-toggle="collapse" href="#user-details">
+        User Details
+       <div class="pull-right">
+            <span class="toggle-hide"></span>
+            <span class="toggle-show"></span>
+       </div>
+    </a>
+</h4>
+
+<div class="collapse in" id="user-details">
+    <!-- Begin Form Fields -->
+    <div class="form-group has-feedback width-percent-70">
+
+        <label class="control-label required">Username</label>
+        <input type="text" id="usernameField" class="form-control"><span class="help-block">Max allowed 11 characters</span>
+        <span class="fa fa-spinner fa-spin form-control-feedback username-checking"></span>
+        <span class="fa fa-times form-control-feedback username-error"></span>
+        <span class="fa fa-warning form-control-feedback username-warning"></span>
+        <span class="fa fa-check form-control-feedback username-ok"></span>
+
+    </div>
+
+    <div class="alert alert-info username-error-msg width-percent-70"></div>
+
+    <div class="form-group width-percent-70">
+        <label>First name</label>
+        <input type="email" class="form-control">
+    </div>
+
+    <div class="form-group width-percent-70">
+        <label>Last name</label>
+        <input type="email" class="form-control">
+    </div>
+
+    <div class="form-group width-percent-70">
+        <label>Email address</label>
+        <input type="email" class="form-control">
+    </div>
+
+    <div class="input-group width-percent-70">
+
+        <label for="jobTitleDroplist" class="control-label">Job Title</label>
+
+        <button id="jobTitleDroplist" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+            <span class="selected-value">&nbsp;</span>
+            <span class="caret"></span>
+        </button>
+
+        <ul class="dropdown-menu" role="menu">
+
+            <div class="input-group" style="margin-top: -5px; margin-bottom: 10px;">
+                <input type="text" class="form-control" placeholder="Search" style="border-bottom-left-radius: 0; border-bottom-right-radius: 0; border-left: none; border-top: none">
+                <div class="fa fa-search input-group-addon" style="border-bottom-left-radius: 0; border-bottom-right-radius: 0; border-right: none; border-top: none;"></div>
+            </div>
+
+            <li><a>Admin</a>
+            </li>
+            <li><a>Investigator</a>
+            </li>
+            <li><a>Warden</a>
+            </li>
+            <li class="divider"></li>
+            <li><a data-toggle="modal" data-target="#jobTitlesModal">Manage Job Titles...</a>
+            </li>
+
+        </ul>
+
+    </div>
+
+</div>
+
+<script>
+var userExists = 'user';
+var userErrorMsg = '<p>* Leave blank for default validation, <strong class="user-exists">user</strong> for "User already exists", anything else for valid state</p>';
+$('.user-exists').text(userExists);
+$('.username-error-msg').html(userErrorMsg).show();
+
+$('.username-error').hide();
+$('.username-warning').hide();
+$('.username-ok').hide();
+$('.username-checking').hide();
+
+function reset() {
+    $('#usernameField').parent().removeClass('has-success');
+    $('#usernameField').parent().removeClass('has-warning');
+    $('#usernameField').parent().removeClass('has-error');
+
+    $('.username-error').hide();
+    $('.username-warning').hide();
+    $('.username-ok').hide();
+    $('.username-checking').hide();
+
+    $('.username-error-msg').removeClass('alert')
+        .removeClass('alert-info')
+        .removeClass('alert-warning')
+        .removeClass('alert-danger')
+        .hide();
+}
+
+$('#usernameField').bind('blur', function() {
+    var usernameTimeout;
+    reset();
+
+    switch ($('#usernameField').val()) {
+        case '':
+            $('#usernameField').parent().addClass('has-error');
+            $('.username-error').show();
+            $('.username-error-msg').text('Please enter a username').addClass('alert').addClass('alert-danger').show();
+            break;
+
+        case 'user':
+            $('#usernameField').parent().addClass('has-warning');
+            $('.username-checking').show();
+            usernameTimeout = setTimeout(function() {
+                $('.username-checking').hide();
+                $('#usernameField').parent().addClass('has-warning');
+                $('.username-error-msg').text('Username already exists').addClass('alert').addClass('alert-warning').show();
+                $('.username-warning').show();
+            }, 1000);
+            break;
+
+        default:
+            $('.username-checking').show();
+            usernameTimeout = setTimeout(function() {
+                $('.username-checking').hide();
+                $('#usernameField').parent().addClass('has-success');
+                $('.username-error-msg').text('').hide();
+                $('.username-ok').show();
+            }, 1000);
+    }
+});
+</script>

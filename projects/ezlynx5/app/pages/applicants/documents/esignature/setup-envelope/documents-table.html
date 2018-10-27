@@ -1,0 +1,36 @@
+<div class="mt-5">
+    <h2 class="h2">Document Order</h2>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Order</th>
+                <th>Document Name</th>
+                <th>Document Type</th>
+            </tr>
+        </thead>
+
+        <tbody class="js-documents">
+            <tr>
+                <td>
+                    <i class="icon-reorder" style="color: #aaa;"></i>
+                </td>
+                <td>ACORD 126 Commercial General Liability Section</td>
+                <td>PDF</td>
+            </tr>
+
+            <tr>
+                <td>
+                    <i class="icon-reorder" style="color: #aaa;"></i>
+                </td>
+                <td>ACORD 126 Commercial General Liability Section</td>
+                <td>PDF</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<script>
+    $(function() {
+        $('.js-documents').sortable();
+    });
+</script>

@@ -1,0 +1,639 @@
+<title>Edit Role</title>
+
+<!-- begin: Page Heading -->
+<div class="container-fluid page-header">
+    <div class="container">
+        <div class="pull-left">
+
+            <div class="page-header-icon">
+                <span class="fa fa-group fa-2x"></span>
+            </div>
+
+            <h2>Edit Security Role: Investigator All</h2>
+
+        </div>
+
+        <div class="page-header-btn-group pull-right">
+            <a class="btn btn-link" href="#/pages/manage/security-roles/index.html">Cancel</a>
+            <a class="btn btn-success" href="#/pages/manage/security-roles/index.html"><i class="fa fa-save"></i>&nbsp; Save</a>
+        </div>
+
+    </div>
+</div>
+<!-- end: Page Heading -->
+
+<div class="container no-breadcrumb">
+
+    <div class="row">
+
+        <div class="col-md-10 col-md-offset-1">
+
+            <h4 class="section-header">
+              Security role details
+
+              <a class="btn btn-danger pull-right section-header-action" href="#" data-toggle="modal" data-target="#myModal">
+                <i class="fa fa-times-circle"></i>&nbsp; Delete Security Role</a>
+            </h4>
+
+
+
+            <div class="form-group permissions-form-background">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Role Name</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter the role name">
+                </div>
+                <div class="form-group">
+                    <label>Role Description</label>
+                    <textarea class="form-control" rows="4" placeholder="Enter the role description"></textarea>
+                    <div>Character limit: 255</div>
+                </div>
+                <div class="view-modified">Last modified 9/17/2014 at 12:03PM by jvalentine.
+                    <a href="#/pages/search/system-logs/index.html">
+                        <small>View change history →</small>
+                    </a>
+                </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12">
+                <h4 class="section-header">Role includes these permissions</h4>
+                <hr>
+              </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col-md-3">
+                    <ul class="bsnav bsnav-pills bsnav-stacked">
+                        <li class="admin-nav active"><a href="#">Admin</a>
+                        </li>
+                        <li class="cdr-nav"><a href="#">Searches</a>
+                        </li>
+                        <li class="monitor-nav"><a href="#">Monitor Activity</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-9">
+
+                    <div class="permissions permissions-admin">
+
+                        <table class="table table-hover table-responsive table-condensed table-all-permissions">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <a data-toggle="tooltip" title="This feature lorem ipsum...">All Admin Permissions</a>
+                                    </th>
+                                    <th>
+                                        <label class="rounded-check " for="rounded-check1-1">
+                                            <input type="checkbox" name="check" id="rounded-check1-1" value="None" checked/>
+                                            <span class="icon"></span>
+                                        </label>
+                                    </th>
+                                </tr>
+                            </thead>
+                        </table>
+
+                        <table class="table table-hover table-responsive table-condensed">
+                            <thead>
+                                <tr>
+                                    <th>Users Permissions
+                                    </th>
+                                    <th>Has Permission
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tr>
+                                <td><a data-toggle="tooltip" title="This feature lorem ipsum...">All User Permissions</a>
+                                </td>
+                                <td>
+                                    <label class="rounded-check" for="rounded-check1-1">
+                                        <input type="checkbox" name="check" id="rounded-check1-1" value="None" checked/>
+                                        <span class="icon"></span>
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a data-toggle="tooltip" title="This feature lorem ipsum...">Add Users</a>
+                                </td>
+                                <td>
+                                    <label class="rounded-check" for="rounded-check1-3">
+                                        <input type="checkbox" name="check" id="rounded-check1-3" value="None" checked/>
+                                        <span class="icon"></span>
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a data-toggle="tooltip" title="This feature lorem ipsum...">Edit Users</a>
+                                </td>
+                                <td>
+                                    <label class="rounded-check" for="rounded-check1-4">
+                                        <input type="checkbox" name="check" id="rounded-check1-4" value="None" checked/>
+                                        <span class="icon"></span>
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a data-toggle="tooltip" title="This feature lorem ipsum...">Reset User Passwords</a>
+                                </td>
+                                <td>
+                                    <label class="rounded-check" for="rounded-check1-5">
+                                        <input type="checkbox" name="check" id="rounded-check1-5" value="None" checked/>
+                                        <span class="icon"></span>
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a data-toggle="tooltip" title="This feature lorem ipsum...">Export User Lists</a>
+                                </td>
+                                <td>
+                                    <label class="rounded-check" for="rounded-check1-8">
+                                        <input type="checkbox" name="check" id="rounded-check1-8" value="None" checked/>
+                                        <span class="icon"></span>
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a data-toggle="tooltip" title="This feature lorem ipsum...">Job Title Management</a>
+                                </td>
+                                <td>
+                                    <label class="rounded-check" for="rounded-check1-9">
+                                        <input type="checkbox" name="check" id="rounded-check1-9" value="None" class="p-roles" />
+                                        <span class="icon"></span>
+                                    </label>
+                                </td>
+                            </tr>
+                            <!-- 
+                            <tr class="tr-hidden child-row">
+                                <td>
+                                    <a data-toggle="tooltip" title="This feature lorem ipsum...">View Job Titles</a>
+                                </td>
+                                <td>
+                                    <label class="rounded-check " for="rounded-check1-6">
+                                        <input type="checkbox" name="check" id="rounded-check1-6" value="None" checked/>
+                                        <span class="icon"></span>
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr class="tr-hidden child-row">
+                                <td>
+                                    <a data-toggle="tooltip" title="This feature lorem ipsum...">Create/Edit Job Titles</a>
+                                </td>
+                                <td>
+                                    <label class="rounded-check " for="rounded-check1-7">
+                                        <input type="checkbox" name="check" id="rounded-check1-7" value="None" checked/>
+                                        <span class="icon"></span>
+                                    </label>
+                                </td>
+                            </tr> -->
+                        </table>
+
+                        <table class="table table-hover table-responsive table-condensed">
+                            <thead>
+                                <tr>
+                                    <th>Security Roles Permissions
+                                    </th>
+                                    <th>Has Permission
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tr>
+                                <td><a data-toggle="tooltip" title="This feature lorem ipsum...">All Security Role Permissions</a>
+                                </td>
+                                <td>
+                                    <label class="rounded-check" for="rounded-check2-1">
+                                        <input type="checkbox" name="check" id="rounded-check2-1" value="None" checked/>
+                                        <span class="icon"></span>
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a data-toggle="tooltip" title="This feature lorem ipsum...">Add New Security Role</a>
+                                </td>
+                                <td>
+                                    <label class="rounded-check" for="rounded-check2-2">
+                                        <input type="checkbox" name="check" id="rounded-check2-2" value="None" checked/>
+                                        <span class="icon"></span>
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a data-toggle="tooltip" title="This feature lorem ipsum...">Edit Security Role</a>
+                                </td>
+                                <td>
+                                    <label class="rounded-check" for="rounded-check2-4">
+                                        <input type="checkbox" name="check" id="rounded-check2-4" value="None" checked/>
+                                        <span class="icon"></span>
+                                    </label>
+                                </td>
+                            </tr>
+                        </table>
+
+                    </div>
+
+                    <div class="permissions permissions-cdr">
+
+                        <table class="table table-hover table-responsive table-condensed table-all-permissions">
+                            <thead class="all-permissions">
+                                <tr>
+                                    <th>
+                                        <a data-toggle="tooltip" title="This feature lorem ipsum...">All Searches Permissions</a>
+                                    </th>
+                                    <th>
+                                        <label class="rounded-check" for="rounded-check1-1">
+                                            <input type="checkbox" name="check" id="rounded-check1-1" value="None" checked/>
+                                            <span class="icon"></span>
+                                        </label>
+                                    </th>
+                                </tr>
+                            </thead>
+                        </table>
+
+                        <table class="table table-hover table-responsive table-condensed">
+                            <thead>
+                                <tr>
+                                    <th>Communication Search Permissions
+                                    </th>
+                                    <th class="has-permission">Has Permission
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tr>
+                                <td><a data-toggle="tooltip" title="This feature lorem ipsum...">All Communication Search Permissions</a>
+                                </td>
+                                <td>
+                                    <label class="rounded-check" for="rounded-check3-1">
+                                        <input type="checkbox" name="check" id="rounded-check3-1" value="None" checked/>
+                                        <span class="icon"></span>
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a data-toggle="tooltip" title="This feature lorem ipsum...">Basic CDR Search</a>
+                                </td>
+                                <td>
+                                    <label class="rounded-check" for="rounded-check3-2">
+                                        <input type="checkbox" name="check" id="rounded-check3-2" value="None" checked/>
+                                        <span class="icon"></span>
+                                    </label>
+                                </td>
+                            </tr>
+                            <!-- 
+                            <tr>
+                                <td><a data-toggle="tooltip" title="This feature lorem ipsum...">Save Search</a>
+                                </td>
+                                <td>
+                                    <label class="rounded-check " for="rounded-check3-3">
+                                        <input type="checkbox" name="check" id="rounded-check3-3" value="None" checked/>
+                                        <span class="icon"></span>
+                                    </label>
+                                </td>
+                            </tr> -->
+                            <tr>
+                                <td><a data-toggle="tooltip" title="This feature lorem ipsum...">Export Search Results</a>
+                                </td>
+                                <td>
+                                    <label class="rounded-check" for="rounded-check3-5">
+                                        <input type="checkbox" name="check" id="rounded-check3-5" value="None" checked/>
+                                        <span class="icon"></span>
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a data-toggle="tooltip" title="This feature lorem ipsum...">Phone Recording Playback</a>
+                                </td>
+                                <td>
+                                    <label class="rounded-check" for="rounded-check3-6">
+                                        <input type="checkbox" name="check" id="rounded-check3-6" value="None" checked/>
+                                        <span class="icon"></span>
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a data-toggle="tooltip" title="This feature lorem ipsum...">Extend Call Recording</a>
+                                </td>
+                                <td>
+                                    <label class="rounded-check" for="rounded-check3-7">
+                                        <input type="checkbox" name="check" id="rounded-check3-7" value="None" checked/>
+                                        <span class="icon"></span>
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a data-toggle="tooltip" title="This feature lorem ipsum...">Download Call Recording</a>
+                                </td>
+                                <td>
+                                    <label class="rounded-check" for="rounded-check3-8">
+                                        <input type="checkbox" name="check" id="rounded-check3-8" value="None" checked/>
+                                        <span class="icon"></span>
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a data-toggle="tooltip" title="This feature lorem ipsum...">View Call Detail Record Notes</a>
+                                </td>
+                                <td>
+                                    <label class="rounded-check" for="rounded-check3-9">
+                                        <input type="checkbox" name="check" id="rounded-check3-9" value="None" checked/>
+                                        <span class="icon"></span>
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a data-toggle="tooltip" title="This feature lorem ipsum...">Add Notes to Call Detail Record</a>
+                                </td>
+                                <td>
+                                    <label class="rounded-check" for="rounded-check3-10">
+                                        <input type="checkbox" name="check" id="rounded-check3-10" value="None" checked/>
+                                        <span class="icon"></span>
+                                    </label>
+                                </td>
+                            </tr>
+                            <!--
+                            <tr>
+                                <td><a data-toggle="tooltip" title="This feature lorem ipsum...">Search Notes</a>
+                                </td>
+                                <td>
+                                    <label class="rounded-check " for="rounded-check3-11">
+                                        <input type="checkbox" name="check" id="rounded-check3-11" value="None" checked/>
+                                        <span class="icon"></span>
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a data-toggle="tooltip" title="This feature lorem ipsum...">Share Notes</a>
+                                </td>
+                                <td>
+                                    <label class="rounded-check " for="rounded-check3-12">
+                                        <input type="checkbox" name="check" id="rounded-check3-12" value="None" checked/>
+                                        <span class="icon"></span>
+                                    </label>
+                                </td>
+                            </tr> -->
+                            <tr>
+                                <td><a data-toggle="tooltip" title="This feature lorem ipsum...">Tag Communication Detail Record</a>
+                                </td>
+                                <td>
+                                    <label class="rounded-check" for="rounded-check3-13">
+                                        <input type="checkbox" name="check" id="rounded-check3-13" value="None" checked/>
+                                        <span class="icon"></span>
+                                    </label>
+                                </td>
+                            </tr>
+                            <!--
+                            <tr>
+                                <td><a data-toggle="tooltip" title="This feature lorem ipsum...">TIPS Line CDR Calls</a>
+                                </td>
+                                <td>
+                                    <label class="rounded-check " for="rounded-check3-14">
+                                        <input type="checkbox" name="check" id="rounded-check3-14" value="None" checked/>
+                                        <span class="icon"></span>
+                                    </label>
+                                </td>
+                            </tr> -->
+                        </table>
+
+                    </div>
+
+                    <div class="permissions permissions-monitor">
+                        <table class="table table-hover table-responsive table-condensed table-all-permissions">
+                            <thead class="all-permissions">
+                                <tr>
+                                    <th>
+                                        <a data-toggle="tooltip" title="This feature lorem ipsum...">All Monitor Activity</a>
+                                    </th>
+                                    <th>
+                                        <label class="rounded-check" for="rounded-check1-1">
+                                            <input type="checkbox" name="check" id="rounded-check1-1" value="None" checked/>
+                                            <span class="icon"></span>
+                                        </label>
+                                    </th>
+                                </tr>
+                            </thead>
+                        </table>
+
+                        <table class="table  table-hover table-responsive table-condensed">
+                            <thead>
+                                <tr>
+                                    <th>Monitor Activity Permissions
+                                    </th>
+                                    <th class="has-permission">Has Permissions
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tr>
+                                <td><a data-toggle="tooltip" title="This feature lorem ipsum...">All Monitor Activity Permissions</a>
+                                </td>
+                                <td>
+                                    <label class="rounded-check" for="rounded-check4-1">
+                                        <input type="checkbox" name="check" id="rounded-check4-1" value="None" checked/>
+                                        <span class="icon"></span>
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a data-toggle="tooltip" title="This feature lorem ipsum...">Listen to Live Calls</a>
+                                </td>
+                                <td>
+                                    <label class="rounded-check" for="rounded-check4-2">
+                                        <input type="checkbox" name="check" id="rounded-check4-2" value="None" checked/>
+                                        <span class="icon"></span>
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a data-toggle="tooltip" title="This feature lorem ipsum...">Terminate Call</a>
+                                </td>
+                                <td>
+                                    <label class="rounded-check" for="rounded-check4-3">
+                                        <input type="checkbox" name="check" id="rounded-check4-3" value="None" checked/>
+                                        <span class="icon"></span>
+                                    </label>
+                                </td>
+                            </tr>
+                            <!-- 
+                            <tr>
+                                <td><a data-toggle="tooltip" title="This feature lorem ipsum...">Forward Call</a>
+                                </td>
+                                <td>
+                                    <label class="rounded-check " for="rounded-check4-4">
+                                        <input type="checkbox" name="check" id="rounded-check4-4" value="None" checked/>
+                                        <span class="icon"></span>
+                                    </label>
+                                </td>
+                            </tr> -->
+                            <tr>
+                                <td><a data-toggle="tooltip" title="This feature lorem ipsum...">Scan Live Call</a>
+                                </td>
+                                <td>
+                                    <label class="rounded-check" for="rounded-check4-5">
+                                        <input type="checkbox" name="check" id="rounded-check4-5" value="None" checked/>
+                                        <span class="icon"></span>
+                                    </label>
+                                </td>
+                            </tr>
+
+                        </table>
+
+                        <table class="table table-hover table-responsive table-condensed">
+                            <thead>
+                                <tr>
+                                    <th>Recently Ended Calls
+                                    </th>
+                                    <th class="has-permission">Has Permissions
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tr>
+                                <td><a data-toggle="tooltip" title="This feature lorem ipsum...">All Recently Ended Calls Permissions</a>
+                                </td>
+                                <td>
+                                    <label class="rounded-check" for="rounded-check5-1">
+                                        <input type="checkbox" name="check" id="rounded-check5-1" value="None" checked/>
+                                        <span class="icon"></span>
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a data-toggle="tooltip" title="This feature lorem ipsum...">Phone Recording Playback</a>
+                                </td>
+                                <td>
+                                    <label class="rounded-check" for="rounded-check5-2">
+                                        <input type="checkbox" name="check" id="rounded-check5-2" value="None" checked/>
+                                        <span class="icon"></span>
+                                    </label>
+                                </td>
+                            </tr>
+                            <!--
+                            <tr>
+                                <td><a data-toggle="tooltip" title="This feature lorem ipsum...">Add Notes to Call Detail Record</a>
+                                </td>
+                                <td>
+                                    <label class="rounded-check " for="rounded-check5-3">
+                                        <input type="checkbox" name="check" id="rounded-check5-3" value="None" checked/>
+                                        <span class="icon"></span>
+                                    </label>
+                                </td>
+                            </tr> -->
+
+                        </table>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="row">
+
+        <div class="col-md-10 col-md-offset-1">
+
+            <hr class="divider" />
+
+            <div class="pull-right">
+                <a class="btn btn-link" href="#">Cancel</a>
+                <a class="btn btn-success" href="#"><i class="fa fa-save"></i>&nbsp; Save</a>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header modal-danger">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel">Delete Role: Investigator All</h4>
+            </div>
+            <div class="modal-body">
+                <p>You are about to delete the <b>Investigator All</b> role. Deleting this role will affect 12 users.</p>
+                <p>Do you wish to delete this role?</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-link" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-danger">Yes, Delete Role</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script type="text/javascript">
+$(document).ready(function() {
+    $(".slidingDiv").hide();
+    $("select").change(function() {
+        $("select option:selected").each(function() {
+
+            if ($(this).attr("value") == "admin") {
+                $(".slidingDiv").slideUp();
+                $(".slidingDiv").slideDown();
+                $(".show_hide").hide();
+                $(".slidingDiv").show();
+            }
+            if ($(this).attr("value") == "investigator") {
+                $(".slidingDiv").slideUp();
+                $(".slidingDiv").slideDown();
+                $(".show_hide").hide();
+                $(".slidingDiv").show();
+            }
+            if ($(this).attr("value") == "select") {
+                $(".slidingDiv").slideUp();
+                $(".show_hide").hide();
+            }
+        });
+    })
+});
+</script>
+
+<script type="text/javascript">
+$('[data-toggle="tooltip"]').tooltip({
+    'placement': 'right'
+});
+</script>
+
+<script>
+$(document).ready(function() {
+    $('.permissions-cdr').hide();
+    $('.permissions-monitor').hide();
+
+    $('.admin-nav a').click(function() {
+        $('.bsnav  li').removeClass('active');
+        $(this).parents('li').addClass('active');
+        $('.permissions').slideUp();
+        $('.permissions-admin').slideDown();
+    });
+
+    $('.cdr-nav a').click(function() {
+        $('.bsnav li').removeClass('active');
+        $(this).parents('li').addClass('active');
+        $('.permissions').slideUp();
+        $('.permissions-cdr').slideDown();
+    });
+
+    $('.monitor-nav a').click(function() {
+        $('.bsnav li').removeClass('active');
+        $(this).parents('li').addClass('active');
+        $('.permissions').slideUp();
+        $('.permissions-monitor').slideDown();
+    });
+});
+</script>
+
+<script>
+$('.tr-hidden').hide();
+</script>
+
+
+<script>
+$('.p-roles').click(function() {
+    $('.tr-hidden').toggle(300);
+});
+</script>

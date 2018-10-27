@@ -1,0 +1,153 @@
+//
+// Typography
+// --------------------------------------------------
+
+
+// Body text
+// -------------------------
+
+p {
+  margin: 0 0 .71em;
+}
+.lead {
+
+  font-size: 1.5em;
+  line-height: 2.15em;
+}
+
+
+// Emphasis & misc
+// -------------------------
+
+// Ex: 14px base font * 85% = about 12px
+small   { font-size: 85em; }
+
+
+
+// Headings
+// -------------------------
+
+h1, h2, h3, h4, h5, h6 {
+  margin: .71em 0;
+}
+
+h1,
+h2,
+h3 { line-height: 2.86em; }
+
+h1 { font-size: 2.75em; } // ~38px
+h2 { font-size: 2.25em; } // ~32px
+h3 { font-size: 1.75em; } // ~24px
+h4 { font-size: 1.25em; } // ~18px
+h5 { font-size: 1em; }
+h6 { font-size: 0.85em; } // ~12px
+
+h1 small { font-size: 1.75em; } // ~24px
+h2 small { font-size: 1.25em; } // ~18px
+h3 small { font-size: 1em; }
+h4 small { font-size: 1em; }
+
+
+// Page header
+// -------------------------
+
+.page-header {
+  padding-bottom: .64em;
+  margin: 1.43em 0 2.14em;
+}
+
+
+
+// Lists
+// --------------------------------------------------
+
+// Unordered and Ordered lists
+ul, ol {
+  margin: 0 0 .71em 1.79em;
+}
+
+
+
+// Single-line list items
+ul.inline,
+ol.inline {
+  > li {
+    padding-left: .36em;
+    padding-right: .36em;
+  }
+}
+
+dd {
+  margin-left: .71em;
+}
+
+
+// MISC
+// ----
+
+
+// Blockquotes
+blockquote {
+  padding: 0 0 0 1.07em;
+  border-left: .36em solid @grayLighter;
+  p {
+    font-size: 1.25em;
+    line-height: 1.25em;
+  }
+
+  // Float right with text-align: right
+  &.pull-right {
+    float: right;
+    padding-right: 1.07em;
+    border-right: .36em solid @grayLighter;
+  }
+}
+
+
+
+
+//
+// Code (inline and blocK)
+// --------------------------------------------------
+
+
+// Inline and block code styles
+code,
+pre {
+  padding: 0 .21em .15em;
+  font-size: .85em;
+}
+
+// Inline code
+code {
+  padding: .15em .29em;
+}
+
+// Blocks of code
+pre {
+  padding: .68em;
+  margin: 0 0 .71em;
+  font-size: .93em; // 14px to 13px
+}
+
+
+//
+// Wells
+// --------------------------------------------------
+
+
+// Base class
+.well {
+  
+  padding: 1.36em;
+  margin-bottom: 1.43em;
+}
+
+// Sizes
+.well-large {
+  padding: 1.71em;
+}
+.well-small {
+  padding: .64em;
+}
+

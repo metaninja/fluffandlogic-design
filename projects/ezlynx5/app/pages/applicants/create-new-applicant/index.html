@@ -1,0 +1,113 @@
+<div class="bff-include js-applicant-sidebar hide-content" data-src="app/shared/applicant-sidebar.html"></div>
+
+<div class="ez-main-content">
+    <div class="ez-page-header">
+        <div class="row">
+            <div class="col-lg-6 ez-page-title d-flex align-items-center">
+                <i class="linearicon-apps linearicon-2x pointer mr-4" onclick="toggleDropdownTabs()" style="color: #56707c; display: none;"></i>
+                <span class="ez-page-title-icon">
+                    <i class="linearicon-user linearicon-2x"></i>
+                </span>
+
+                <h1 class="h1">
+                    <span class="subtitle">Applicant</span>
+                    Create New Applicant
+                </h1>
+            </div>
+
+            <div class="col-lg-6 ez-page-actions">
+                <span class="font-size-lg font-weight-bold mx-2">Save Time</span>
+                <button class="btn btn-primary" data-toggle="modal" data-target="#pre-fill-modal">Pre-Fill Drivers and Vehicles</button>
+                <button class="btn btn-primary">Pre-Fill Home Info</button>
+            </div>
+        </div>
+
+        <ul class="tabs dropdown-tabs" style="display: none">
+            <li class="tab">
+                <a class="tab-link" href="#/app/pages/applicants/overview">
+                    <i class="linearicon-users2 linearicon-2x"></i>
+                    <span>Overview</span>
+                </a>
+            </li>
+            <li class="tab">
+                <a class="tab-link active" href="#/app/pages/applicants/create-new-applicant">
+                    <i class="linearicon-list linearicon-2x"></i>
+                    <span>Details</span>
+                </a>
+            </li>
+            <li class="tab">
+                <a class="tab-link" href="#/app/pages/applicants/quotes">
+                    <i class="linearicon-cart linearicon-2x"></i>
+                    <span>Quotes</span>
+                </a>
+            </li>
+            <li class="tab">
+                <a class="tab-link" href="#">
+                    <i class="linearicon-clipboard-user linearicon-2x"></i>
+                    <span>Lead Info</span>
+                </a>
+            </li>
+            <li class="tab">
+                <a class="tab-link" href="#">
+                    <i class="linearicon-map-marker-user linearicon-2x"></i>
+                    <span>Contacts</span>
+                </a>
+            </li>
+            <li class="tab">
+                <a class="tab-link" href="#/app/pages/applicants/documents">
+                    <i class="linearicon-files linearicon-2x"></i>
+                    <span>Documents</span>
+                </a>
+            </li>
+            <li class="tab">
+                <a class="tab-link" href="#">
+                    <i class="linearicon-clock3 linearicon-2x"></i>
+                    <span>Activity</span>
+                </a>
+            </li>
+            <li class="tab">
+                <a class="tab-link" href="#">
+                    <i class="linearicon-receipt linearicon-2x"></i>
+                    <span>Invoices</span>
+                </a>
+            </li>
+            <li class="tab">
+                <a class="tab-link" href="#/app/pages/applicants/certificates/certificate-masters">
+                    <i class="linearicon-license linearicon-2x"></i>
+                    <span>Certificates</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="ez-page-body max-width-limit">
+        <div class="ez-page-content">
+            <div class="js-personal-lines-applicant-page">
+                <div class="bff-include" data-src="app/pages/applicants/create-new-applicant/shared/applicant-info.html" style="position: relative;"></div>
+
+                <div class="js-additional-applicants-container">
+                    <div class="bff-include js-additional-applicant hide-content" data-src="app/pages/applicants/create-new-applicant/shared/additional-applicant-info.html"></div>
+                </div>
+
+                <button class="btn btn-primary my-3 mr-2" onclick="addAdditionalContact()">Add Contact <i class="linearicon-plus ml-2"></i></button>
+
+                <button class="btn btn-primary my-3 js-add-business-btn" onclick="addABusiness.call(this)">Add a Business <i class="linearicon-plus ml-2"></i></button>
+
+                <div class="bff-include" data-src="app/pages/applicants/create-new-applicant/shared/footer.html"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="bff-script" data-src="app/pages/applicants/create-new-applicant/index.js"></div>
+<div class="bff-script" data-src="libs/js/validation/format-date.js"></div>
+
+<div class="bff-include" data-src="app/pages/applicants/shared/address/military-address-modal.html"></div>
+<div class="bff-include" data-src="app/pages/applicants/shared/address/multiple-address-elements.html"></div>
+<div class="bff-include" data-src="app/pages/applicants/create-new-applicant/shared/swap-applicants-modal.html"></div>
+<div class="bff-include" data-src="app/pages/applicants/create-new-applicant/shared/applicant-pictures-modal.html"></div>
+<div class="bff-include" data-src="app/pages/applicants/create-new-applicant/shared/duplicate-applicants-modal.html"></div>
+<div class="bff-include" data-src="app/pages/applicants/create-new-applicant/shared/pre-fill-modal/pre-fill-modal.html"></div>
+<div class="bff-include" data-src="app/pages/applicants/create-new-applicant/shared/co-applicant-confirmation-modal.html"></div>
+<div class="bff-include" data-src="app/pages/applicants/create-commercial-applicant/shared/commercial-applicant-pictures-modal.html"></div>
+<div class="bff-include js-business-info hide-content" data-src="app/pages/applicants/create-commercial-applicant/shared/commercial-applicant-info.html"></div>

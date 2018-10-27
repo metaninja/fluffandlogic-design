@@ -1,0 +1,11 @@
+<script id="payees-template" type="x-handlebars-template">
+	<div class="large-bold-text">
+		<span class='color-gray500'>Pay</span>
+		{{#if agencyPayee}}
+			My Agency
+		{{else}}
+			Member Agency
+		{{/if}}
+		 {{payeeAmount}} <span class='color-gray500'>of </span>{{payeeTypeofPayment}}
+	</div>
+</script>

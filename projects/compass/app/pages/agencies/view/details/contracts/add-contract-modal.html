@@ -1,0 +1,51 @@
+<div class="modal fade" id="add-contract-modal" tabindex="-1" role="dialog" aria-labelledby="add-contract-modal-title">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header clearfix">
+                <h5 class="modal-title" id="upload-file-modal-title">Add Agreement</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <i class="linearicon-cross2" aria-hidden="true"></i>
+                </button>
+            </div>
+
+            <div class="modal-body" style="overflow-y: unset">
+
+                <div class="form-group">
+                    <label for="start-date">Effective Date</label>
+                    <div class="input-group">
+                        <input type="date" class="form-control" id="start-date" aria-label="Effective Date">
+                        <div class="input-group-append">
+                            <span class="input-group-text">
+                                <i class="linearicon-calendar-full"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="expiration-date">Expiration Date</label>
+                    <div class="input-group">
+                        <input type="date" class="form-control" id="expiration-date" aria-label="Expiration Date">
+                        <div class="input-group-append">
+                            <span class="input-group-text">
+                                <i class="linearicon-calendar-full"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bff-include" data-src="app/shared/labels/index.html"></div>
+
+                <label>Upload File</label>
+                <div class="bff-include" data-src="app/shared/file-uploader/index.html"></div>
+
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Add Agreement</button>
+            </div>
+        </div>
+    </div>
+</div>
+

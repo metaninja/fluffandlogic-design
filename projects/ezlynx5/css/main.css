@@ -1,0 +1,205 @@
+.ez-global-container {
+  overflow: hidden; }
+
+.main-topnav {
+  margin-left: 0; }
+
+.ez-global-content {
+  margin-left: 0;
+  height: calc(100vh - 60px);
+  overflow-y: scroll; }
+
+.ez-page-header.ez-page-header-fixed {
+  top: 60px;
+  left: 0; }
+  .ez-page-header.ez-page-header-fixed .tabs .tab-link {
+    padding-top: 1.5rem; }
+
+.ratings-navigation-fixed {
+  top: 60px;
+  left: 0; }
+
+.ez-page-header .fact {
+  margin-left: 2rem; }
+
+.ez-page-header {
+  position: relative; }
+
+.dropdown-tabs {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 24rem;
+  border-bottom: 0;
+  background-color: #37474f;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 88px;
+  left: 0;
+  z-index: 1; }
+  .dropdown-tabs .tab-link {
+    color: white;
+    border: 0; }
+
+.dropdown-tabs .tab-link {
+  color: #f5f5f5;
+  width: 8rem;
+  font-weight: 400;
+  font-size: .9rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.dropdown-tabs .tab-link:hover {
+  background-color: #849ea7;
+  color: white; }
+
+.dropdown-tabs .tab-link i {
+  opacity: .7; }
+
+.dropdown-tabs .tab-link:hover i {
+  opacity: 1; }
+
+.dropdown-tabs .tab-link span {
+  margin-top: .5rem;
+  margin-bottom: 1rem; }
+
+.new-leftnav {
+  display: block;
+  position: absolute;
+  width: 360px;
+  top: 59px;
+  bottom: 0;
+  left: 0;
+  z-index: 999999;
+  background-color: #37474f;
+  overflow-x: hidden;
+  transition: bottom .2s ease-out; }
+
+.new-leftnav-hidden {
+  bottom: calc(100% - 59px); }
+
+.nav-parents {
+  display: flex;
+  flex-wrap: wrap; }
+
+.nav-parents,
+.nav-children {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  padding: 15px; }
+  .nav-parents ul,
+  .nav-children ul {
+    display: flex;
+    flex-wrap: wrap; }
+  .nav-parents li,
+  .nav-children li {
+    float: left;
+    vertical-align: top;
+    color: black;
+    width: 33.33%; }
+    .nav-parents li:nth-child(3n),
+    .nav-children li:nth-child(3n) {
+      margin-right: 0; }
+    .nav-parents li a,
+    .nav-children li a {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      color: white;
+      padding: 5px; }
+      .nav-parents li a:hover,
+      .nav-children li a:hover {
+        background: #4db6ac; }
+    .nav-parents li .rating-icon,
+    .nav-children li .rating-icon {
+      margin-bottom: 5px; }
+
+.nav-children,
+.nav-content {
+  left: 500px; }
+
+.nav-content {
+  position: absolute;
+  width: 100%;
+  padding: 1rem 0 0 0; }
+  .nav-content li a {
+    display: flex;
+    align-items: center;
+    color: white !important;
+    padding: 5px; }
+    .nav-content li a:hover {
+      background: #4db6ac; }
+
+.nav-parents,
+.nav-children {
+  padding: 1rem 0 0 0; }
+
+.nav-parents ul,
+.nav-children ul {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap; }
+
+.nav-parents li a,
+.nav-children li a {
+  height: 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.2;
+  padding: 0; }
+
+.icon-solid-white {
+  background-color: white;
+  border-radius: 50%;
+  padding: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  line-height: 1; }
+
+.leftnav-icon {
+  margin-bottom: .5rem; }
+
+.app-default:hover {
+  background-color: #26a69a;
+  color: white; }
+
+.app-mgmt:hover {
+  background-color: #c52928 !important;
+  color: white; }
+
+.app-mgmt-sub:hover {
+  background-color: #f0534e !important;
+  color: white; }
+
+.app-websites:hover {
+  background-color: #004381 !important;
+  color: white; }
+
+.app-comms-center:hover {
+  background-color: #01838f !important;
+  color: white; }
+
+.app-sales-center:hover {
+  background-color: #64a145 !important;
+  color: white; }
+
+.app-client-center:hover {
+  background-color: #f47721 !important;
+  color: white; }
+
+.app-reporting:hover {
+  background-color: #5e4237 !important;
+  color: white; }
+
+.app-rating:hover {
+  background-color: #849ea7 !important;
+  color: white; }
+
+/*# sourceMappingURL=main.css.map */

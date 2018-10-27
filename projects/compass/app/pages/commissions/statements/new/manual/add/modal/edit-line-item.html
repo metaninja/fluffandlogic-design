@@ -1,0 +1,137 @@
+<div class="row">
+    <div class="col-md-6">
+
+        <div class="form-group js-enter-line-item">
+            <label>Policy # <em class="text-muted-light">Hint: Type PL1234 for policy found.</em></label>
+            <input type="text" class="form-control js-policy-empty-policy-number" onblur="searchExistingPolicy(this)">
+            <div class="progress-bar-inline js-policy-searching-progress-bar"><div class="progress-bar-indeterminate"></div></div>
+            <div class="form-validation-message text-info js-policy-searching hide-content"><em>Searching for policy</em></div>
+            <div class="form-validation-message text-success js-policy-found hide-content"><em>Policy found <i class="linearicon-checkmark-circle ml-1"></i></em></div>
+            <div class="form-validation-message text-danger js-policy-not-found hide-content"><em><i class="linearicon-warning mr-1"></i> Policy not found.</em></div>
+        </div>
+
+        <div class="form-group">
+            <label>Insured</label>
+            <input type="text" class="form-control js-policy-empty-insured">
+        </div>
+
+        <div class="form-group">
+            <label>LOB</label>
+            <div class="type-ahead js-policy-empty-lob">
+                <div class="input-group type-ahead-input-group">
+                    <input type="text" class="form-control type-ahead-input" placeholder="Search LOB" aria-label="Search"
+                           onkeyup="typeAheadSearch.call(this)">
+                    <span class="input-group-addon" id="basic-addon-search-policy"><i class="linearicon-magnifier"></i></span>
+                </div>
+
+                <div class="type-ahead-results">
+                    <a href="javascript:void(0);" class="type-ahead-result" onclick="typeAheadSearchResult.call(this)">AUTO (Commercial)</a>
+                    <a href="javascript:void(0);" class="type-ahead-result" onclick="typeAheadSearchResult.call(this)">AUTO (Personal)</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Transaction Type</label>
+            <div class="type-ahead js-policy-empty-lob">
+                <div class="input-group type-ahead-input-group">
+                    <input type="text" class="form-control type-ahead-input" placeholder="Search Transaction Type" aria-label="Search"
+                           onkeyup="typeAheadSearch.call(this)">
+                    <span class="input-group-addon" id="basic-addon-trans-type"><i class="linearicon-magnifier"></i></span>
+                </div>
+
+                <div class="type-ahead-results">
+                    <a href="javascript:void(0);" class="type-ahead-result" onclick="typeAheadSearchResult.call(this)">New Business (NBS)</a>
+                    <a href="javascript:void(0);" class="type-ahead-result" onclick="typeAheadSearchResult.call(this)">Renewal (RWL)</a>
+                    <a href="javascript:void(0);" class="type-ahead-result" onclick="typeAheadSearchResult.call(this)">Change (PCH)</a>
+                    <a href="javascript:void(0);" class="type-ahead-result" onclick="typeAheadSearchResult.call(this)">Cancellation (XLC)</a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="form-group">
+            <label>Transaction Type</label>
+            <input type="text" class="form-control js-policy-empty-transaction-type">
+        </div>
+
+        <div class="form-group">
+            <label>Transaction Date</label>
+            <div class="input-group">
+                <input type="input" class="form-control js-policy-empty-transaction-date" aria-label="Transaction Date">
+                <div class="input-group-append">
+                                <span class="input-group-text">
+                                    <i class="linearicon-calendar-full"></i>
+                                </span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="col-md-1"></div>
+    <div class="col-md-5">
+        <div class="form-group">
+            <label>Premium</label>
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">$</span>
+                </div>
+                <input type="text" class="form-control text-right js-policy-empty-premium" aria-label="Premium">
+            </div>
+        </div>
+
+        <!--
+        <div class="form-group">
+            <label>Expected Commission</label>
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">$</span>
+                </div>
+                <input type="text" class="form-control text-right js-policy-empty-expected-commission" aria-label="Expected Commission">
+            </div>
+        </div>
+        -->
+
+        <div class="form-group">
+            <label>Commission</label>
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">$</span>
+                </div>
+                <input type="text" class="form-control text-right js-policy-empty-actual-commission" aria-label="Actual Commission">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Policy Fee</label>
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">$</span>
+                </div>
+                <input type="text" class="form-control text-right js-policy-empty-policy-fee" aria-label="Policy Fee">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Inspection Fee</label>
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">$</span>
+                </div>
+                <input type="text" class="form-control text-right js-policy-empty-inspection-fee" aria-label="Inspection Fee">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Agency Fee</label>
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">$</span>
+                </div>
+                <input type="text" class="form-control text-right js-policy-empty-agency-fee" aria-label="Agency Fee">
+            </div>
+        </div>
+
+    </div>
+
+</div>

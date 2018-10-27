@@ -1,0 +1,70 @@
+<div class="content-container
+ steps-container mb-3">
+    <ul class="container-rating-icons">
+        <li>
+            <a href="#/app/pages/quotes/rating/dwelling-fire/ratings" class="js-rating-link">
+                <i class="linearicon-clock3 rating-icon">
+                    <i class="linearicon-check rating-icon-check" aria-hidden="true"></i>
+                </i>
+                <p class="rating-icon-name mb-0">Rating</p>
+            </a>
+        </li>
+        <li>
+            <a href="#/app/pages/quotes/rating/dwelling-fire/policy-info" class="js-rating-link">
+                <i class="linearicon-document rating-icon">
+                    <i class="linearicon-check rating-icon-check" aria-hidden="true"></i>
+                </i>
+                <p class="rating-icon-name mb-0">Policy Info</p>
+            </a>
+        </li>
+        <li>
+            <a href="#/app/pages/quotes/rating/dwelling-fire/dwelling-info" class="js-rating-link">
+                <i class="ez-icon-dwelling-info rating-icon">
+                    <i class="linearicon-warning rating-icon-warning" aria-hidden="true"></i>
+                </i>
+                <p class="rating-icon-name mb-0">Dwelling Info</p>
+            </a>
+        </li>
+        <li>
+            <a href="#/app/pages/quotes/rating/dwelling-fire/coverage" class="js-rating-link">
+                <i class="linearicon-list2 rating-icon"></i>
+                <p class="rating-icon-name mb-0">Coverage</p>
+            </a>
+        </li>
+        <li>
+            <a href="#/app/pages/quotes/rating/dwelling-fire/endorsements" class="js-rating-link">
+                <i class="ez-icon-endorsements rating-icon">
+                    <i class="linearicon-check rating-icon-check" aria-hidden="true"></i>
+                </i>
+                <p class="rating-icon-name mb-0">Endorsements</p>
+            </a>
+        </li>
+        <li>
+            <a href="#/app/pages/quotes/rating/dwelling-fire/carrier-questions" class="js-rating-link">
+                <i class="linearicon-question rating-icon"></i>
+                <p class="rating-icon-name mb-0">Carrier Questions</p>
+            </a>
+        </li>
+        <li>
+            <a href="#/app/pages/quotes/rating/dwelling-fire/finish" class="js-rating-link">
+                <div class="js-application-incomplete" style="display: none;">
+                    <i class="linearicon-warning rating-icon incomplete-application-rating-icon" aria-hidden="true"></i>
+                    <p class="rating-icon-name mb-0">Incomplete</p>
+                </div>
+
+                <div class="js-application-complete" style="display: none;">
+                    <i class="linearicon-check rating-icon complete-application-rating-icon" aria-hidden="true"></i>
+                    <p class="rating-icon-name mb-0">Ready to Submit</p>
+                </div>
+            </a>
+        </li>
+    </ul>
+</div>
+
+<script>
+    $(function() {
+        var iconNumber = $(".js-navigation-ratings").data("highlight-rating-icon") - 1;
+        
+        $(".container-rating-icons").find("li").eq(iconNumber).find(".rating-icon").addClass("rating-icon-current");
+    });
+</script>

@@ -1,0 +1,89 @@
+<!--
+Symptoms tree:
+------------------
+jQuery Sortable:
+http://johnny.github.io/jquery-sortable/
+
+Need to find a good equivalent but UI Sortable and Angular UI Tree seem like good possibilities
+https://github.com/angular-ui/ui-sortable
+http://jimliu.github.io/angular-ui-tree/
+
+-->
+
+<title>Sick Call Admin</title>
+
+<div class="bff-include" data-src="pages/manage/sick-calls/admin/header.html"></div>
+
+<div class="container">
+
+    <div class="row">
+
+
+        <div class="row">
+
+            <div class="col-md-10 col-md-offset-1">
+
+                <div role="tabpanel">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="active">
+                            <a href="#sickcall-symptoms" aria-controls="grievance-form" role="tab" data-toggle="tab">
+                                Manage Symptoms
+                            </a>
+                        </li>
+
+                        <li role="presentation">
+                            <a href="#sickcall-settings" aria-controls="grievance-detail" role="tab" data-toggle="tab">
+                                General Settings
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="tab-content right-panel-style" style="padding: 20px;">
+
+                    <!-- begin tab: Grievance Form -->
+                    <div role="tabpanel" class="tab-pane active" id="sickcall-symptoms">
+
+                        <div class="row">
+                            <div class="col-md-4">
+
+                                <div class="bff-include" data-src="pages/manage/sick-calls/admin/symptoms.html"></div>
+
+                            </div>
+
+                            <div class="col-md-8 symptom-properties">
+
+                                <div class="bff-include" data-src="pages/manage/sick-calls/admin/symptom-details.html"></div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="sickcall-settings">
+
+                        <div class="bff-include" data-src="pages/manage/sick-calls/admin/general-settings.html"></div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+
+
+    </div>
+
+</div>
+
+<div class="alert alert-warning alert-dismissable devmode" role="alert">
+    <button type="button" class="close devmode-close" data-dismiss="alert" aria-label="Close" style="margin-right: 20px">
+        <span aria-hidden="true">&times</span>
+    </button>
+    <strong>Developers: </strong>The Sick Call Symptoms tree uses the jQuery-Sortable plugin.
+    Look for an equivalent Angular plugin, e.g.
+    <a href="http://jimliu.github.io/angular-ui-tree/index.html">http://jimliu.github.io/angular-ui-tree/</a> or
+    <a href="https://github.com/angular-ui/ui-sortable">https://github.com/angular-ui/ui-sortable</a>
+</div>
+
+

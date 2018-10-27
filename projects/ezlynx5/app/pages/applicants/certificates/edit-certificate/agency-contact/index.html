@@ -1,0 +1,111 @@
+<div class="ez-main-content">
+    <div class="bff-include js-navigation" data-src="app/pages/applicants/shared/navigation.html" data-current-link="9" data-page-title="Applicant" data-page-subtitle="Random Construction, LLC"></div>
+
+    <div class="ez-page-body">
+        <div class="ez-page-content">
+            <div class="content-container">
+                <header>
+                    <div class="bff-include" data-src="app/pages/applicants/certificates/edit-certificate/shared/steps.html" data-page-number="3"></div>
+                </header>
+
+                <main class="mt-3">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <label>Contact Default</label>
+                                </div>
+
+                                <div class="col-md-8">
+                                    <select class="form-control mb-3" onchange="checkContactName.call(this)">
+                                        <option>Commercial Downloads</option>
+                                        <option>Jason Todd</option>
+                                        <option>Mark Smith</option>
+                                        <option>Lady Jaye</option>
+                                        <option>CUSTOM</option>
+                                    </select>
+
+                                    <input type="text" class="form-control js-contact-name" placeholder="Name for Authorized Signature" onkeyup="updateSignature.call(this)">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-5 ml-auto">
+                            <p>Preview</p>
+
+                            <table class="table">
+                                <tbody>
+                                <tr>
+                                    <td class="uppercase">Contact Name:</td>
+                                    <td>Commercial Downloads</td>
+                                </tr>
+
+                                <tr>
+                                    <td class="uppercase">Phone(A/C, NO, EXT)</td>
+                                    <td>(998) 608-8088</td>
+                                </tr>
+
+                                <tr>
+                                    <td class="uppercase">FAX(A/C, NO, EXT)</td>
+                                    <td>(999) 860-8801</td>
+                                </tr>
+
+                                <tr>
+                                    <td class="uppercase">E-MAIL ADDRESS</td>
+                                    <td>arpita@ezlynx.com</td>
+                                </tr>
+                                </tbody>
+                            </table>
+
+
+                            <label class="uppercase">Authorized Signature</label>
+                            <span class="form-control js-signature" style="font: 38px 'Great Vibes', Helvetica, sans-serif;">Commercial Downloads</span>
+                        </div>
+                    </div>
+                </main>
+
+                <div class="section-footer">
+                    <div class="section-footer-left">
+                        <a href="javascript:void(0)" class="btn btn-outline-primary" data-toggle="modal" data-target="#cancel-modal">Cancel</a>
+                    </div>
+                    <div class="section-footer-right">
+
+                        <a href="#/app/pages/applicants/certificates/edit-certificate/master-remarks/" class="btn btn-outline-primary mr-2">
+                            <i class="linearicon-arrow-left" aria-hidden="true"></i> Previous
+                        </a>
+
+                        <a href="#/app/pages/applicants/certificates/edit-certificate/add-documents/" class="btn btn-primary mr-2">
+                            Save and Continue <i class="linearicon-arrow-right ml-2" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="bff-include" data-src="app/pages/applicants/certificates/edit-certificate/shared/cancel-modal.html"></div>
+
+<script>
+
+    $(".js-contact-name").val("").hide();
+
+    function updateSignature() {
+        var val = $(this).val();
+
+        $(".js-signature").text(val);
+    }
+
+    function checkContactName() {
+        var val = $(this).val(),
+            $contactNameInput = $(".js-contact-name");
+
+        if (val === "CUSTOM") {
+            $contactNameInput.val("").show();
+            updateSignature.call($contactNameInput);
+        } else {
+            $contactNameInput.val(val).hide();
+            updateSignature.call($contactNameInput);
+        }
+    }
+</script>

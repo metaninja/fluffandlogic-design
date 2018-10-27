@@ -1,0 +1,68 @@
+<div class="tags py-2">
+    <i class="linearicon-tags linearicon-lg text-muted-light"></i>
+    <span class="badge badge-secondary">Midwest <i class="linearicon-cross2"></i></span>
+    <span class="badge badge-secondary">Chicago branch <i class="linearicon-cross2"></i></span>
+    <span class="tags__add">
+        <a href="javascript:void(0);" class="tags__add__btn">Add Tags</a>
+        <div class="tags__dropdown">
+            <input type="text" class="form-control tags__search">
+            <div class="tags__list-container">
+                <ul class="tags__list">
+                    <li class="tags__list__tag"><input type="checkbox"> Southwestern Region</li>
+                    <li class="tags__list__tag"><input type="checkbox"> Northwestern Region</li>
+                    <li class="tags__list__tag"><input type="checkbox"> Phoenix, Arizona branch</li>
+                    <li class="tags__list__tag"><input type="checkbox"> Tag 4</li>
+                    <li class="tags__list__tag"><input type="checkbox"> Tag 5</li>
+                    <li class="tags__list__tag"><input type="checkbox"> Tag 1</li>
+                    <li class="tags__list__tag"><input type="checkbox"> Tag 2</li>
+                    <li class="tags__list__tag"><input type="checkbox"> Tag 3</li>
+                    <li class="tags__list__tag"><input type="checkbox"> Tag 4</li>
+                    <li class="tags__list__tag"><input type="checkbox"> Tag 5</li>
+                    <li class="tags__list__tag"><input type="checkbox"> Tag 1</li>
+                    <li class="tags__list__tag"><input type="checkbox"> Tag 2</li>
+                    <li class="tags__list__tag"><input type="checkbox"> Tag 3</li>
+                    <li class="tags__list__tag"><input type="checkbox"> Tag 4</li>
+                    <li class="tags__list__tag"><input type="checkbox"> Tag 5</li>
+                    <li class="tags__list__tag"><input type="checkbox"> Tag 1</li>
+                    <li class="tags__list__tag"><input type="checkbox"> Tag 2</li>
+                    <li class="tags__list__tag"><input type="checkbox"> Tag 3</li>
+                    <li class="tags__list__tag"><input type="checkbox"> Tag 4</li>
+                    <li class="tags__list__tag"><input type="checkbox"> Tag 5</li>
+                </ul>
+            </div>
+
+            <span class="tags__search-results"></span> <a href="javascript:void(0);" class="tags__new__btn">Create New</a>
+
+        </div>
+    </span>
+</div>
+
+<script>
+    $(document).ready(function() {
+
+        $('.tags__search').on('input', function() {
+            var tagsInput = $(this).parents('.tags__add').find('.tags__search-results');
+
+           $(tagsInput).text($(this).val());
+        });
+
+        $('.tags__new__btn').click(function() {
+            var tagsDropdown = $(this).parents('.tags__add').find('.tags__dropdown');
+            $(tagsDropdown).removeClass('visible');
+        });
+
+        $('.tags__add__btn').click(function() {
+            var tagsDropdown = $(this).parents('.tags__add').find('.tags__dropdown');
+
+           if (tagsDropdown.hasClass('visible')) {
+               $(tagsDropdown).removeClass('visible');
+           }
+           else {
+               $(tagsDropdown).addClass('visible');
+           }
+        });
+    });
+</script>
+
+
+

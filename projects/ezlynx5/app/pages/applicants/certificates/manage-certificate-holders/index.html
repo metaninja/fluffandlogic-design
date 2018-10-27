@@ -1,0 +1,111 @@
+<div class="ez-main-content">
+    <div class="bff-include js-navigation" data-src="app/pages/applicants/shared/navigation.html" data-current-link="9" data-page-title="Applicant" data-page-subtitle="Random Construction, LLC"></div>
+
+    <div class="ez-page-body">
+        <div class="ez-page-content content-container">
+            <main>
+                <ul class="tabs m-0">
+                    <li class="tab">
+                        <a class="tab-link" href="#/app/pages/applicants/certificates/certificate-masters" title="Certificate Masters">Certificate Masters</a>
+                    </li>
+
+                    <li class="tab">
+                        <a class="tab-link active" href="#/app/pages/applicants/certificates/manage-certificate-holders" title="Manage Certificate Holders">Manage Certificate Holders</a>
+                    </li>
+                </ul>
+
+				<div>
+					<div class="search-form">
+					    <div class="row">
+					        <div class="col-md-4">
+					            <div class="input-group">
+					                <input type="text" class="form-control" placeholder="Certificate Holder, LOB, ACORD form, Policy #">
+					                <span class="input-group-addon" id="basic-addon2"><i class="linearicon-magnifier"></i></span>
+					            </div>
+					        </div>
+
+					        <div class="col-md-8 text-right">
+					        	<button class="btn btn-outline-primary" data-toggle="modal" data-target="#report-modal">Report</button>
+
+					        	<a href="#/app/pages/applicants/certificates/certificate-masters" class="btn btn-success">New Certificate Holder</a>
+					        </div>
+					    </div>
+					</div>
+
+					<div class="results-summary">
+					    <div class="results-count">
+					        25 certificates found
+					        <a href="javascript:void(0)" class="results-action btn btn-link filter-link" data-target="#filter-certificate-holders">
+					            Filters
+					        </a>
+
+					        <div class="bff-include" data-src="app/pages/applicants/certificates/manage-certificate-holders/filters.html"></div>
+					    </div>
+					</div>
+
+					<table class="table">
+					    <thead>
+					        <tr>
+					            <th>
+					                <input type="checkbox">
+					            </th>
+					            <th>Certificate Holder</th>
+					            <th>Address</th>
+					            <th>Phone</th>
+					            <th>Email</th>
+					            <th>Contact Method</th>
+					            <th>History</th>
+					            <th></th>
+					        </tr>
+					    </thead>
+
+					    <tbody id="certificate-holders"></tbody>
+					</table>
+
+					<div class="bff-include" data-src="app/shared/pagination.html"></div>
+				</div>
+			</main>
+		</div>
+	</div>
+</div>
+
+<div class="bff-include" data-src="app/pages/applicants/certificates/edit-certificate/select-certificate-holder/report-modal.html"></div>
+
+<div class="bff-script" data-src="app/shared/filters/dropdown.js"></div>
+
+<div class="bff-script" data-src="app/pages/applicants/certificates/manage-certificate-holders/index.js"></div>
+
+<script id="certificate-holders-template" type="x-handlebars-template">
+    {{#certificates}}
+    <tr>
+        <td>
+            <input type="checkbox">
+        </td>
+        <td>{{certificateHolder}}</td>
+        <td>{{address}}</td>
+        <td>{{phone}}</td>
+        <td>{{email}}</td>
+        <td>{{contactMethod}}</td>
+        <td>
+        	{{#if history}}
+        		<a href="javascript:void(0)" onclick="expandWorkspace('.js-workspace-distribution-history')">
+        			<i class="linearicon-history2"></i>
+        		</a>
+        	{{/if}}
+        </td>
+        <td>
+			<div class="dropdown">
+			    <a href="javascript:void(0);" class="dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			        Action
+			    </a>
+			    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+			        <a class="dropdown-item" href="javascript:void(0);">Edit</a>
+			        <a class="dropdown-item" href="javascript:void(0);">Copy</a>
+			        <a class="dropdown-item" href="javascript:void(0);">Create Certificate</a>
+			        <a class="dropdown-item text-danger" href="javascript:void(0);">Delete</a>
+			    </div>
+			</div>
+        </td>
+    </tr>
+    {{/certificates}}
+</script>

@@ -1,0 +1,20 @@
+<div class="row">
+    <div class="col-md-12">
+
+        <div class="bff-include" data-src="pages/manage/grievances/processor-results.html" data-event="ProcessorResultsLoaded"></div>
+        <div class="bff-include" data-src="pages/manage/grievances/assigner-results.html" data-event="AssignerResultsLoaded"></div>
+        <div class="bff-include" data-src="pages/manage/grievances/mixed-results.html" data-event="MixedResultsLoaded"></div>
+
+    </div>
+</div>
+<script>
+    $(document).on('ProcessorResultsLoaded',function() {
+        $('.grievance-processor-view').show();
+    });
+    $(document).on('AssignerResultsLoaded',function() {
+        $('.grievance-assigner-view').hide();
+    });
+    $(document).on('MixedResultsLoaded',function() {
+        $('.grievance-mixed-view').hide();
+    });
+</script>

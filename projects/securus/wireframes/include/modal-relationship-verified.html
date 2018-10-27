@@ -1,0 +1,79 @@
+<div class="modal fade" id="addVerified" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content modal-md">
+            <div class="modal-header modal-primary">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title" id="myModalLabel">Add Phone Number for Inmate</h4>
+            </div>
+            <div class="modal-body">
+
+                <p>You have selected an inmate for this (managed phone number/blocked) phone number. Please select the owner's relationship to the inmate and indicate the verified status.</p>
+
+                <div class="form-group">
+                    <label class="required">Relationship</label>
+                    <select class="form-control">
+                        <option>Attorney</option>
+                        <option>Aunt</option>
+                        <option>Boyfriend</option>
+                        <option>Brother</option>
+                        <option>Brother in Law</option>
+                        <option>Child Father</option>
+                        <option>Child Mother</option>
+                        <option>Clergy</option>
+                        <option>Cousin</option>
+                        <option>Daughter</option>
+                        <option>Daughter in Law</option>
+                        <option>Employer</option>
+                        <option>Father</option>
+                        <option>Father in Law</option>
+                        <option>Financial Advisor</option>
+                        <option>Friend</option>
+                        <option>Girlfriend</option>
+                        <option>Grandfather</option>
+                        <option>Grandmother</option>
+                        <option>Grandparents</option>
+                        <option>Husband</option>
+                        <option>Mother</option>
+                        <option>Mother in Law</option>
+                        <option>Nephew</option>
+                        <option>Niece</option>
+                        <option>Other - Use Description Field</option>
+                        <option>Parents</option>
+                        <option>Significant Other</option>
+                        <option>Sister</option>
+                        <option>Sister in Law</option>
+                        <option>Step Brother</option>
+                        <option>Step Daughter</option>
+                        <option>Step Father</option>
+                        <option>Step Mother</option>
+                        <option>Step Sister</option>
+                        <option>Step Son</option>
+                        <option>Uncle</option>
+                        <option>Wire</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Verified</label>
+                    <select class="form-control">
+                        <option>Not Verified</option>
+                        <option>Verified</option>
+                        <option>Denied</option>
+                    </select>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-link" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-primary pan-list-style" data-dismiss="modal">I'm Done</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$('.pan-list-style').click(function() {
+    $('.pan-list-options').show();
+    $('.non-pan-list-options').hide();
+});
+</script>

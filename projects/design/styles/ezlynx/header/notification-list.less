@@ -1,0 +1,161 @@
+// =================================================
+//
+//  1.  Notifications
+//  2.  Sub-Header
+//  3.  Sub-Footer
+//  4.  Notification Section
+//  5.  Loading
+//
+// =================================================
+
+@notification-task-icon: "\e62d";
+
+// Notifications
+// ------------------------
+#RightPanel {
+    #notificationSection {
+        width: 100%;
+        
+        // Notificaton Header
+        // -------------------------
+        > div {
+            padding: 12px;
+        }
+        
+        .notificationListHeader {
+          background: @greyLighter;
+          min-height: 46px;
+          
+          .btn {
+            padding: 0;
+            height: auto;
+          }
+
+          a {
+            position: absolute;
+            right: 12px;
+            top: 13px;
+          }
+        }
+
+        // Notification Section
+        // ----------------------
+        #notificationList {
+            padding: 0;
+
+            li {
+                position: relative;
+                padding: 12px;
+                padding-left: 58px;
+                padding-right: 22px;
+                border-bottom: @borderSmall solid #ccc;
+                left: 0;
+
+                // Notification Icons
+                // -----------------------
+                &:before {
+                    font-family: @iconFontFamily;
+                    position: absolute;
+                    top: 9px;
+                    left: 9px;
+                    font-size: 15px;
+                    line-height: 26px;
+                    text-align: center;
+                    height: 26px;
+                    width: 26px;
+                    border-radius: 13px;
+                  
+                    color: @white;
+                }
+                
+                &.taskNotification:before {
+                    content: @notification-task-icon;
+					background: @icon-task-bgcolor;
+                }
+                
+                &.noteNotification:before {
+                    content: @icon-note;
+					background: @blue;
+                }
+                
+                &.textNotification:before {
+                    content: @icon-text;
+					background: @blueLight;
+                }
+                
+                &.emailNotification:before {
+                    content: @icon-email;
+					background: @red
+                }
+
+                &.dismissingNotification {
+                    transition: left 700ms cubic-bezier(0.250, 0.460, 0.450, 0.940); /* easeOutQuad */
+                    transition-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940); /* easeOutQuad */
+
+                    left: 400px;
+                    .notificationRead;
+                }
+                
+                // Read Notifications
+                // ----------------------
+                &.notificationRead {
+                    background: @greyLighter;
+                    color: @greyLighter;
+                    
+                    &:before {
+                        .transparent;
+                    }
+                    
+                    .notificationText {
+                        color: @grey;
+
+                        a {
+                            white-space: nowrap;
+                        }
+                    }
+                }
+                
+                .notificationText {
+                    color: @greyDark;
+                    margin: 0;
+                }
+                
+                // Remove Notification
+                // --------------------
+                .dismissButton {
+                    position: absolute;
+                    display: block;
+                    background: none;
+                    border: none;
+                    top: 4px;
+                    right: 8px;
+                    padding: 0;
+                    vertical-align: text-top;
+                    
+                    i {
+                      color: @grey;
+                    }
+                }
+                
+                // Small Text
+                // -------------------
+                div {
+                    display: inline-block;
+                    
+                    small:first-child {
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+        
+        // Loading
+        // -----------------------
+        .well {
+            color: @grey;
+            border: 0;
+            padding: @paddingLarge;
+            height: auto;
+        }
+    }
+}

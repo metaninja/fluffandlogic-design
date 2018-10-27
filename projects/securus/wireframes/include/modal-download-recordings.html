@@ -1,0 +1,55 @@
+<div class="modal fade" id="downloadRecordingsModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content modal-md">
+            <div class="modal-header modal-primary">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <div class="modal-title">
+                    Download Recordings
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h4 class="section-header">Choose format for audio files</h4>
+                            <hr>
+
+                            <label class="rounded-check" for="rounded-check-format-mp3">
+                                <input type="radio" name="check" id="rounded-check-format-mp3" value="MP3">
+                                <span class="icon"></span> MP3
+                            </label>
+
+                            <label class="rounded-check" for="rounded-check-format-ogg">
+                                <input type="radio" name="check" id="rounded-check-format-ogg" value="Ogg">
+                                <span class="icon"></span> Ogg
+                            </label>
+
+                            <label class="rounded-check" for="rounded-check-format-wav">
+                                <input type="radio" name="check" id="rounded-check-format-wav" value="WAV">
+                                <span class="icon"></span> WAV
+                            </label>
+                        </div>
+                        <div class="col-md-6">
+                            <h4 class="section-header">Choose format for video files</h4>
+                            <hr>
+
+                            <label class="rounded-check" for="rounded-check-format-mp3">
+                                <input type="checkbox" name="check" id="rounded-check-format-mp3" value="MP4" checked disabled>
+                                <span class="icon"></span> MP4
+                            </label>
+
+                            <p>&nbsp;</p>
+
+                            <p class="info">
+                                <b>Note: </b> Video files may take longer to download, depending on the length of the recording.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a href class="btn btn-link" data-dismiss="modal">Cancel</a>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Download</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

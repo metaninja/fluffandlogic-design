@@ -1,0 +1,101 @@
+<div class="ez-main-content">
+    <div class="bff-include js-navigation" data-src="app/pages/applicants/shared/navigation.html" data-current-link="9" data-page-title="Applicant" data-page-subtitle="Random Construction, LLC"></div>
+
+    <div class="ez-page-body full-width">
+        <div class="ez-page-content content-container">
+            <main class="row">
+                <div class="col-md-8">
+                    <h2 class="h2 mb-3">
+                        <span class="subtitle">Certificate Holders</span>
+                        Review File
+                    </h2>
+
+                    <div>
+                        <div class="alert alert-success">
+                            <i class="linearicon-check linearicon-lg mr-2" aria-hidden="true"></i>
+                            <span>Success. Click Finish to import the Certificate Holders into the master certificate.</span>
+                        </div>
+                    </div>
+
+                    <div class="alert alert-danger">
+                        <i class="linearicon-warning linearicon-lg mr-2" aria-hidden="true"></i>
+
+                        <span>There are errors. Click a row to edit it.</span>
+                    </div>
+
+                    <table class="table table-hover">
+                        <thead>
+                        <tr>
+                            <th>Certificate Holder</th>
+                            <th>Address</th>
+                            <th>Email</th>
+                            <th>Phone</th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                        </thead>
+
+                        <tbody id="selected-certificate-holders"></tbody>
+                    </table>
+
+
+
+                    <div class="section-footer mt-5">
+                        <div class="section-footer-left">
+                            <a href="#/app/pages/applicants/certificates/edit-certificate/select-certificate-holder/upload" class="btn btn-outline-primary mr-2">
+                                <i class="linearicon-arrow-left mr-2"></i>
+                                Upload File
+                            </a>
+                        </div>
+                        <div class="section-footer-right">
+                            <a href="#/app/pages/applicants/certificates/edit-certificate/select-certificate-holder/" class="btn btn-primary">
+                                Finish <i class="linearicon-check ml-2" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+</div>
+
+<script id="certificate-holders-template" type="x-handlebars-template">
+    {{#certificateHolders}}
+    {{#if edit}}
+        <tr>
+            <td><input type="text" class="form-control" value="{{certificateHolder}}"></td>
+            <td><input type="text" class="form-control" value="{{address}}"></td>
+            <td>
+                <span data-toggle="tooltip" title="Email is invalid">
+                    <input type="text" class="form-control" value="{{email}}" style="border-color: #e53935;">
+                </span>
+            </td>
+            <td><input type="text" class="form-control" value="{{phone}}"></td>
+            <td>
+                <i class="linearicon-checkmark-circle linearicon-lg text-success pointer" aria-hidden="true"></i>
+            </td>
+            <td>
+                <i class="linearicon-cross-circle linearicon-lg text-danger pointer" aria-hidden="true"></i>
+            </td>
+        </tr>
+    {{else}}
+        <tr>
+            <td>{{certificateHolder}}</td>
+            <td>{{address}}</td>
+            <td>{{email}}</td>
+            <td><nobr>{{phone}}</nobr></td>
+            <td>
+                <a href="javascript:void(0)"><i class="linearicon-pencil linearicon-lg pointer" aria-hidden="true"></i></a>
+            </td>
+            <td>
+                <a href="javascript:void(0)"><i class="linearicon-trash2 linearicon-lg text-danger pointer"></i></a>
+            </td>
+        </tr>
+    {{/if}}
+
+    {{/certificateHolders}}
+</script>
+
+
+
+<div class="bff-script" data-src="app/pages/applicants/certificates/edit-certificate/select-certificate-holder/upload/review/table.js"></div>

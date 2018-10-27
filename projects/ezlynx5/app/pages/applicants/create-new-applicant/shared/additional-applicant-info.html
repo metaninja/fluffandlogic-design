@@ -1,0 +1,280 @@
+<div class="ez-dropdown-container content-container mb-4">
+    <div class="ez-dropdown-heading" data-toggle="collapse" data-target="#co-applicant-info">
+        <div class="flex-container-align-center">
+            <div>
+                <h2 class="h2 js-contact-title">Additional Contact</h2>
+                <span class="js-contact-name"></span>
+            </div>
+
+            <div class="js-co-applicant-extra-field-1 hide-content" style="margin-left: 2rem;">
+                <button class="btn btn-primary" data-toggle="modal" data-target="#swap-applicants-modal">Swap Applicant and Co-Applicant</button>
+            </div>
+        </div>
+
+        <div class="flex-container-align-center">
+            <button class="btn btn-outline-danger mr-3 js-delete-button" role="button" onclick="deleteAdditionalApplicant.call(this)">Remove</button>
+            <a href="#">
+                <i class="icon-chevron-sign-down linearicon-chevron-down"></i>
+                <i class="icon-chevron-up linearicon-chevron-up"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="ez-dropdown-content collapse" id="co-applicant-info">
+        <div class="row mb-3">
+            <div class="col-md-3">
+                <div class="flex-container-align-center">
+                    <span class="font-size-normal mr-2">Make this contact Co-Applicant</span>
+                    <label class="switch">
+                        <input class="js-co-applicant-switch" type="checkbox" id="togBtn" onchange="updateCoApplicant.call(this)">
+                        <div class="slider round">
+                            <span class="on">YES</span>
+                            <span class="off">NO</span>
+                        </div>
+                    </label>
+                </div>
+            </div>
+
+<!--             <div class="col-md-3 js-co-applicant-extra-field-1 hide-content">
+                <button class="btn btn-primary" data-toggle="modal" data-target="#swap-applicants-modal">Swap Applicant and Co-Applicant</button>
+            </div> -->
+
+            <!-- <div class="col-md-3 js-co-applicant-extra-field-1 hide-content">
+                <div class="flex-container-align-center">
+                    <span class="font-size-normal mr-2">Hide Co-Applicant from Rating</span>
+                    <label class="switch">
+                        <input type="checkbox" id="togBtn" checked>
+                        <div class="slider round">
+                            <span class="on">YES</span>
+                            <span class="off">NO</span>
+                        </div>
+                    </label>
+                </div>
+            </div> -->
+
+            <div class="col-md-3 js-make-contact-a-driver-field">
+                <div class="flex-container-align-center">
+                    <span class="font-size-normal mr-2">Make this contact a Driver</span>
+                    <label class="switch">
+                        <input class="js-make-contact-a-driver-switch" type="checkbox" id="togBtn">
+                        <div class="slider round">
+                            <span class="on">YES</span>
+                            <span class="off">NO</span>
+                        </div>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mb-4">
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label for="input-relationship">Relationship</label>
+                    <select class="form-control js-contact-relationship" id="input-relationship" onchange="updateAdditionalContactTitle.call(this)">
+                        <option value="Additional Contact">&lt;Select&gt;</option>
+                        <option>Child</option>
+                        <option>Domestic Partner</option>
+                        <option>Employee</option>
+                        <option>Other</option>
+                        <option>Parent</option>
+                        <option>Relative</option>
+                        <option>Spouse</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="input-co-applicant-prefix">Prefix</label>
+                    <select class="form-control" id="input-co-applicant-prefix">
+                        <option>Mr</option>
+                        <option>Mrs</option>
+                        <option>Ms</option>
+                        <option>Dr</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="input-co-applicant-first-name">First Name</label>
+                    <input type="text" class="form-control js-additional-contact-first-name" id="input-co-applicant-first-name" onkeyup="updateAdditionalApplicantName.call(this)">
+                </div>
+
+                <div class="form-group">
+                    <label for="input-co-applicant-middle-initial">Middle Initial</label>
+                    <input type="text" class="form-control" id="input-co-applicant-middle-initial">
+                </div>
+
+                <div class="form-group">
+                    <label for="input-co-applicant-last-name">Last Name</label>
+                    <input type="text" class="form-control js-additional-contact-last-name" id="input-co-applicant-last-name" onkeyup="updateAdditionalApplicantName.call(this)">
+                </div>
+
+                <div class="form-group">
+                    <label for="input-co-applicant-suffix">Suffix</label>
+                    <select class="form-control" id="input-co-applicant-suffix">
+                        <option>Jr</option>
+                        <option>Sr</option>
+                        <option>I</option>
+                        <option>II</option>
+                        <option>III</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="input-co-applicant-maiden-name">Maiden Name</label>
+                    <input type="text" class="form-control" id="input-co-applicant-maiden-name">
+                </div>
+
+                <div class="form-group">
+                    <label for="input-co-applicant-nickname">Nickname</label>
+                    <input type="text" class="form-control" id="input-co-applicant-nickname">
+                </div>
+            </div>
+
+            <div class="col-md-3 ml-auto">
+                <div class="form-group">
+                    <label for="input-co-applicant-gender">Gender</label>
+                    <select class="form-control" id="input-co-applicant-gender">
+                        <option>Male</option>
+                        <option>Female</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="input-co-applicant-dob">DOB</label>
+                    <input type="text" class="form-control" id="input-co-applicant-dob" onblur="formatDate(this)">
+                </div>
+
+                <div class="form-group">
+                    <label for="input-co-applicant-marital-status">Marital Status</label>
+                    <select class="form-control" id="input-co-applicant-marital-status">
+                        <option>Select</option>
+                        <option>Married</option>
+                        <option>Single</option>
+                        <option>Divorced</option>
+                        <option>Domestic Partner</option>
+                        <option>Widowed</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="input-co-applicant-ssn">SSN</label>
+                    <input type="text" class="form-control" id="input-co-applicant-ssn" onblur="formatSSN(this)">
+                </div>
+
+                <div class="form-group">
+                    <label for="input-co-applicant-dl-number">DL#</label>
+                    <input type="text" class="form-control" id="input-co-applicant-dl-number">
+                </div>
+
+                <div class="form-group">
+                    <label for="input-co-applicant-dl-status">DL Status</label>
+                    <select class="form-control" id="input-co-applicant-dl-status">
+                        <option>Valid</option>
+                        <option>Permit</option>
+                        <option>Expired</option>
+                        <option>Suspended</option>
+                        <option>Cancelled</option>
+                        <option>Not Licensed</option>
+                        <option>Permanently Revoked</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="input-co-applicant-dl-state">DL State</label>
+                    <select class="form-control js-usa-states-input" id="input-co-applicant-dl-state"></select>
+                </div>
+            </div>
+
+            <div class="col-md-3 mx-auto">
+                <div class="form-group">
+                    <label for="input-co-applicant-education">Education</label>
+                    <select class="form-control" id="input-co-applicant-education">
+                        <option>Select</option>
+                        <option value="NoHighSchoolDiploma">No High School Diploma</option>
+                        <option value="HighSchoolDiploma">High School Diploma</option>
+                        <option value="SomeCollegeNoDegree">Some College - No Degree</option>
+                        <option value="VocationalTechnicalDegree">Vocational/Technical Degree</option>
+                        <option value="AssociatesDegree">Associates Degree</option>
+                        <option value="Bachelors">Bachelors</option>
+                        <option value="Masters">Masters</option>
+                        <option value="Phd">Phd</option>
+                        <option value="MedicalDegree">Medical Degree</option>
+                        <option value="LawDegree">Law Degree</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="input-co-applicant-industry">Industry</label>
+                    <select class="form-control" id="input-co-applicant-industry">
+                        <option>Select</option>
+                        <option selected="selected" value="1">Homemaker/House person</option>
+                        <option value="2">Retired</option>
+                        <option value="3">Disabled</option>
+                        <option value="4">Unemployed</option>
+                        <option value="5">Student</option>
+                        <option value="6">Agriculture/Forestry/Fishing</option>
+                        <option value="7">Art/Design/Media</option>
+                        <option value="8">Banking/Finance/Real Estate</option>
+                        <option value="9">Business/Sales/Office</option>
+                        <option value="10">Construction/Energy Trades</option>
+                        <option value="11">Education/Library</option>
+                        <option value="12">Engineer/Architect/Science/Math</option>
+                        <option value="13">Government/Military</option>
+                        <option value="14">Information Technology</option>
+                        <option value="15">Insurance</option>
+                        <option value="16">Legal/Law Enforcement/Security</option>
+                        <option value="17">Maintenance/Repair/Housekeeping</option>
+                        <option value="18">Manufacturing/Production</option>
+                        <option value="19">Medical/Social Services/Religion</option>
+                        <option value="20">Personal Care/Service</option>
+                        <option value="21">Restaurant/Hotel Services</option>
+                        <option value="22">Sports/Recreation</option>
+                        <option value="23">Travel/Transportation/Warehousing</option>
+                        <option value="24">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="input-co-applicant-occupation">Occupation</label>
+                    <div class="row">
+                        <div class="col-md-9">
+                            <select class="form-control" id="input-co-applicant-occupation">
+                                <option>Select</option>
+                                <option value="179">Administrative Assistant</option>
+                                <option value="180">Analyst</option>
+                                <option value="181">Clerk</option>
+                                <option value="182">Director/Administrator</option>
+                                <option value="183">Engineer-Hardware</option>
+                                <option value="184">Engineer-Software</option>
+                                <option value="185">Engineer-Systems</option>
+                                <option value="186">Executive</option>
+                                <option value="187">Manager-Systems</option>
+                                <option value="188">Network Administrator</option>
+                                <option value="189">Other</option>
+                                <option value="190">Programmer</option>
+                                <option value="191">Project Coordinator</option>
+                                <option value="192">Receptionist/Secretary</option>
+                                <option value="193">Support Technician</option>
+                                <option value="194">Systems Security</option>
+                                <option value="195">Technical Writer</option>
+                                <option value="196">Web Developer</option>
+                            </select>
+                        </div>
+
+                        <div class="col-md-3">
+                            <input type="text" class="form-control" placeholder="years">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="input-co-applicant-prior-employer-in-years">Prior Employer In Years</label>
+                    <input type="text" class="form-control" id="input-co-applicant-prior-employer-in-years">
+                </div>
+            </div>
+        </div>
+
+        <div class="bff-include" data-src="app/pages/applicants/create-new-applicant/shared/additional-applicant-contact-info.html"></div>
+    </div>
+</div>
+
+<div class="bff-script" data-src="libs/js/validation/format-date.js"></div>

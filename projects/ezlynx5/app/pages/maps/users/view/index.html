@@ -1,0 +1,363 @@
+<div class="ez-page-header">
+    <div class="row">
+        <div class="col-lg-6">
+            <h1>
+                <span>Organization User</span>
+                Alonzo Sanders
+            </h1>
+        </div>
+        <div class="col-md-6">
+            <a href="#/app/pages/maps/users/" class="btn btn-success pull-right">Save</a>
+            <a href="#" class="btn btn-default pull-right" data-toggle="modal" data-target="#unsaved-changes-modal" data-redirect="/app/pages/maps/users/index.html">Cancel</a>
+        </div>
+    </div>
+</div>
+
+<div class="ez-page-body">
+    <div class="ez-page-content">
+        <div class="bff-include" data-src="app/shared/tags.html"></div>
+
+        <div class="row mt-3">
+            <div class="col-lg-2">
+                <img src="images/pixel-gray.png" alt="" class="img-profile">
+            </div>
+            <div class="col-lg-5">
+                <div class="form-group">
+                    <label class="required">First Name</label>
+                    <input type="text" class="form-control" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Middle Name</label>
+                    <input type="text" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label class="required">Last Name</label>
+                    <input type="text" class="form-control" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Type *</label>
+                    <select class="form-control" required>
+                        <option>-- Select --</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Title/Responsibility</label>
+                    <select class="form-control user-title">
+                        <option>Agency Owner</option>
+                        <option>Office Manager</option>
+                        <option selected>Producer</option>
+                        <option>Service Representatives (CSR)</option>
+                        <option>Field Representative</option>
+                        <option>Phone Representative</option>
+                        <option>CSR Assistant</option>
+                        <option>Accounting Personnel</option>
+                        <option value="custom">Custom</option>
+                    </select>
+                    <br>
+                    <input type="text" class="form-control custom-user-title" disabled="disabled">
+                </div>
+
+            </div>
+
+            <div class="col-lg-5">
+                <div class="form-group">
+                    <label>Organization</label>
+                    <select class="form-control">
+                        <option>-- Select --</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Department</label>
+                    <input type="text" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label>Division</label>
+                    <input type="text" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label>Status</label>
+                    <select class="form-control">
+                        <option>Active</option>
+                        <option>Inactive</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Language</label>
+                    <select class="form-control">
+                        <option>-- Select --</option>
+                        <option>English</option>
+                    </select>
+                </div>
+
+
+                <div class="form-group form-inline">
+                    <input type="checkbox" class="form-control"> &nbsp;
+                    <label>Opt-in to emails</label>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col-lg-6">
+                <h2 class="h3">Compass Settings</h2>
+
+                <div class="form-group">
+                    <label for="compass-user-name">Username</label>
+                    <input type="text" class="form-control" id="compass-user-name" disabled="disabled" value="map">
+                </div>
+
+                <!--<div class="form-group">-->
+                <!--<label for="compass-user-type">User Type</label>-->
+                <!--<select class="form-control" id="compass-user-type">-->
+                <!--<option>&#45;&#45; Select &#45;&#45;</option>-->
+                <!--<option>Admin</option>-->
+                <!--<option>Guest</option>-->
+                <!--<option>Power User</option>-->
+                <!--</select>-->
+                <!--</div>-->
+
+                <div class="form-group">
+                    <label for="compass-role-group">Role Group</label>
+
+                    <select class="form-control" id="compass-role-group">
+                        <option> -- Select -- </option>
+                        <option>Admin</option>
+                        <option>Owner</option>
+                        <option>CSR</option>
+                        <option>Producer</option>
+                    </select>
+
+                    <p class="mt-1"><a href="#" data-toggle="modal" data-target="#custom-role-group-modal">View/Customize Role Group</a></p>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col-lg-12">
+
+                <div class="bff-include" data-src="app/shared/licenses/table.html"></div>
+
+            </div>
+        </div>
+
+
+        <div class="row mt-3">
+            <div class="col-lg-12">
+
+                <h2 class="pull-left mt-3">Address</h2>
+                <a href="#" class="btn btn-success mb-1 pull-right" data-toggle="modal" data-target="#add-address-modal">Add Address</a>
+
+                <table class="table table-hover">
+                    <thead>
+                    <tr>
+                        <th>Type</th>
+                        <th>Point of Contact</th>
+                        <th>Street</th>
+                        <th>City</th>
+                        <th>State</th>
+                        <th>Zip</th>
+                        <th>Primary</th>
+                        <th></th>
+                    </tr>
+                    </thead>
+                    <body>
+                    <tr>
+                        <td>Work</td>
+                        <td>John Doe</td>
+                        <td>5100 Gerrymander Rd</td>
+                        <td>San Antonio</td>
+                        <td>TX</td>
+                        <td>78240-0000</td>
+                        <td class="col-primary">
+                            <i class="fa fa-check-circle text-success status-primary show"></i>
+                        </td>
+                        <td>
+                            <div class="dropdown">
+                                <a class="dropdown-toggle" href="https://example.com" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Actions
+                                </a>
+
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Edit</a>
+                                    <a class="dropdown-item btn-set-as-primary" href="#">Set As Primary</a>
+                                    <a class="dropdown-item" href="#">Remove</a>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Office</td>
+                        <td>John Doe</td>
+                        <td>5100 Gerrymander Rd</td>
+                        <td>San Antonio</td>
+                        <td>TX</td>
+                        <td>78240</td>
+                        <td class="col-primary">
+                            <i class="fa fa-check-circle text-success status-primary"></i>
+                        </td>
+                        <td>
+                            <div class="dropdown">
+                                <a class="dropdown-toggle" href="https://example.com" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Actions
+                                </a>
+
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Edit</a>
+                                    <a class="dropdown-item btn-set-as-primary" href="#">Set As Primary</a>
+                                    <a class="dropdown-item" href="#">Remove</a>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    </body>
+                </table>
+
+                <p>&nbsp;</p>
+
+                <h2 class="pull-left mt-3">Phone and Fax</h2>
+                <a href="#" class="btn btn-success mb-1 pull-right" data-toggle="modal" data-target="#add-phone-modal">Add Phone/Fax</a>
+
+                <table class="table table-hover">
+                    <thead>
+                    <tr>
+                        <th>Type</th>
+                        <th>Contact Name</th>
+                        <th>Department</th>
+                        <th>Phone Number</th>
+                        <th>Primary</th>
+                        <th></th>
+                    </tr>
+                    </thead>
+                    <body>
+                    <tr>
+                        <td>Work</td>
+                        <td>John Doe</td>
+                        <td>Billing</td>
+                        <td>(210) 730-2606</td>
+                        <td class="col-primary">
+                            <i class="fa fa-check-circle text-success status-primary show" data-primary="y"></i>
+                        </td>
+                        <td>
+                            <div class="dropdown">
+                                <a class="dropdown-toggle" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Actions
+                                </a>
+
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Edit</a>
+                                    <a class="dropdown-item btn-set-as-primary" href="#">Set As Primary</a>
+                                    <a class="dropdown-item" href="#">Remove</a>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Office</td>
+                        <td>John Doe</td>
+                        <td>Admin</td>
+                        <td>(210) 730-2606</td>
+                        <td class="col-primary">
+                            <i class="fa fa-check-circle text-success status-primary" data-primary=""></i>
+                        </td>
+                        <td>
+                            <div class="dropdown">
+                                <a class="dropdown-toggle" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Actions
+                                </a>
+
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Edit</a>
+                                    <a class="dropdown-item btn-set-as-primary" href="#">Set As Primary</a>
+                                    <a class="dropdown-item" href="#">Remove</a>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    </body>
+                </table>
+
+                <p>&nbsp;</p>
+
+                <h2 class="pull-left mt-3">Email</h2>
+                <a href="#" class="btn btn-success mb-1 pull-right" data-toggle="modal" data-target="#add-email-modal">Add Email</a>
+
+                <table class="table table-hover">
+                    <thead>
+                    <tr>
+                        <th>Type</th>
+                        <th>Contact Name</th>
+                        <th>Email</th>
+                        <th>Primary</th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                    </thead>
+                    <body>
+                    <tr>
+                        <td>Work</td>
+                        <td>John Doe</td>
+                        <td>johnd@mgallc.com</td>
+                        <td><i class="fa fa-check-circle text-success status-primary show"></i></td>
+                        <td></td>
+                        <td>
+                            <div class="dropdown">
+                                <a class="dropdown-toggle" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Actions
+                                </a>
+
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <a class="dropdown-item" href="#">View</a>
+                                    <a class="dropdown-item" href="#">Make Primary</a>
+                                    <a class="dropdown-item" href="#">Disable</a>
+                                    <a class="dropdown-item" href="#">Remove</a>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    </body>
+                </table>
+
+                <p>&nbsp;</p>
+
+            </div>
+        </div>
+
+        <div class="bff-include" data-src="app/shared/crud-history.html"></div>
+    </div>
+</div>
+
+
+
+<div class="bff-include" data-src="app/shared/contact/add-address-modal.html"></div>
+<div class="bff-include" data-src="app/shared/contact/add-phone-modal.html"></div>
+<div class="bff-include" data-src="app/shared/contact/add-email-modal.html"></div>
+<div class="bff-include" data-src="app/shared/unsaved-changes-modal.html"></div>
+<div class="bff-include" data-src="app/pages/role-groups/view/custom-role-groups-modal.html"></div>
+
+<div class="bff-script" data-src="app/shared/required-fields.js"></div>
+<div class="bff-script" data-src="app/shared/set-as-primary.js"></div>
+<div class="bff-script" data-src="app/shared/persona.js"></div>
+
+<script>
+    $(document).ready(function() {
+        $('.user-title').change(function() {
+           if ($(this).val() === "custom") {
+               $('.custom-user-title').removeAttr("disabled");
+           }
+           else {
+               $('.custom-user-title').attr("disabled", "disabled");
+           }
+        });
+    })
+</script>

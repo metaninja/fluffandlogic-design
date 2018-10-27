@@ -1,0 +1,52 @@
+<div class="search-form">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search" aria-label="Search">
+                <span class="input-group-addon" id="basic-addon2"><i class="linearicon-magnifier"></i></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="results-summary">
+    <div class="results-count">
+        25 results found
+
+        <a href="javascript:void(0)" class="results-action btn btn-link filter-link" data-target="#filter-unmatched">
+            Filters <i class="linearicon-chevron-down ml-2"></i>
+        </a>
+    </div>
+
+    <div class="results-actions">
+        <button class="btn btn-link js-disable-btn js-approve-btn mr-1" data-toggle="modal" data-target="#approve-commissions-modal" disabled>Approve Payouts</button>
+        <button class="btn btn-link js-disable-btn js-unapprove-btn mr-1" data-toggle="modal" data-target="#unapprove-commissions-modal" disabled>Unapprove Payouts</button>
+        <button class="btn btn-link mr-1" data-toggle="modal" data-target="#audit-modal">Audit Trail</button>
+        <button class="btn btn-link btn-link-danger js-disable-btn mr-1" data-toggle="modal" data-target="#delete-commissions-modal" disabled>Delete</button>
+    </div>
+</div>
+
+<div class="filters-applied"></div>
+
+
+<div class="filter-dropdown" id="filter-unmatched" tabindex="-1">
+    <div class="form-group">
+        <label for="approval-status">Approval Status</label>
+
+        <select class="form-control" id="approval-status">
+            <option>All</option>
+            <option>Approved</option>
+            <option>Unapproved</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+
+    </div>
+
+</div>
+
+<div class="bff-include" data-src="app/pages/commissions/member-agency/statements/reconciled/view/finalize-modal.html"></div>
+<div class="bff-include" data-src="app/pages/commissions/member-agency/statements/reconciled/view/approve-modal.html"></div>
+<div class="bff-include" data-src="app/pages/commissions/member-agency/statements/reconciled/view/unapprove-modal.html"></div>

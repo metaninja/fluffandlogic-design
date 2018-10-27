@@ -1,0 +1,66 @@
+<div class="search-form">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search" aria-label="Statement #, carrier">
+                <span class="input-group-addon" id="basic-addon2"><i class="linearicon-magnifier"></i></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="results-summary">
+    <div class="results-count">
+        25 documents found
+        <a href="javascript:void(0)" class="results-action btn btn-link filter-link" data-target="#filter-documents">
+            Filters
+        </a>
+
+        <div class="bff-include" data-src="app/pages/applicants/certificates/edit-certificate/add-documents/document-library/filters.html"></div>
+    </div>
+
+    <div class="results-actions">
+    </div>
+</div>
+
+<table class="table table-hover bg-white">
+    <thead>
+        <tr>
+            <th>
+                <input type="checkbox">
+            </th>
+            <th>Type</th>
+            <th>Document Name</th>
+            <th>Document Type</th>
+            <th>Policy#</th>
+            <th>Created By</th>
+            <th>Date Created</th>
+            <th>Date Modified</th>
+        </tr>
+    </thead>
+
+    <tbody id="documents"></tbody>
+</table>
+
+<div class="bff-include" data-src="app/shared/pagination.html"></div>
+
+<script id="documents-template" type="x-handlebars-template">
+    {{#documents}}
+    <tr>
+        <td>
+            <input type="checkbox">
+        </td>
+        <td>
+            <i class="linearicon-document linearicon-lg"></i>
+        </td>
+        <td>{{documentName}}</td>
+        <td>{{documentType}}</td>
+        <td>{{policyNumber}}</td>
+        <td>{{createdBy}}</td>
+        <td>{{dateCreated}}</td>
+        <td>{{dateModified}}</td>
+    </tr>
+    {{/documents}}
+</script>
+
+<div class="bff-script" data-src="app/pages/applicants/certificates/edit-certificate/add-documents/document-library/index.js"></div>

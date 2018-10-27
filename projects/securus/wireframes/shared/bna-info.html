@@ -1,0 +1,26 @@
+<h4 class="section-header">
+    <a data-toggle="collapse" href="#bna-info">
+        BNA Info
+        <div class="pull-right">
+            <span class="toggle-hide"></span>
+            <span class="toggle-show"></span>
+        </div>
+    </a>
+</h4>
+
+<div class="collapse in" id="bna-info">
+    <div class="bna-info hide"><b>Sarah McCaulkin</b>
+        <br>40510 Franker Street
+        <br>San Francisco, CA 95912
+        <br>
+        <small>Last verified: 9/17/2014 at 12:03PM</small>
+    </div>
+    <div class="no-bna bna-btn">No BNA information available.</div>
+</div>
+
+<script type="text/javascript">
+$(".bna-btn").click(function() {
+    $(".bna-info").removeClass("hide");
+    $('.no-bna').addClass("hide");
+});
+</script>

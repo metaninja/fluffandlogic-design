@@ -1,0 +1,169 @@
+
+
+<h3 class="section-header">
+    Symptoms
+
+    <div class="section-header-action">
+
+        <!-- Single button -->
+        <div class="btn-group">
+            <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                Add <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+                <li>
+                    <a href="#" class="btn-add-sibling-treeview" title="Add a new symptom on the same level as the selected symptom">
+                        <i class="fa fa-add-sibling fa-lg"></i>
+
+                        Symptom
+                    </a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                    <a href="#" class="btn-add-child-treeview" title="Add a new symptom below the selected symptom">
+                        <i class="fa fa-add-child fa-lg"></i>
+
+                        Sub Symptom
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+
+
+
+        <a href="#" class="btn btn-default btn-danger">
+            <i class="fa fa-trash-o"></i>
+        </a>
+    </div>
+</h3>
+
+<hr>
+
+
+<!-- begin: Sick Forms Tree View -->
+<div class="treeview">
+    <ol class="treeview-list">
+        <li class="add-treeview-row">
+            <input type="text" class="form-control" placeholder="Add treeview">
+            <a href="#" class="btn btn-success btn-add-treeview-add"><i class="fa fa-check"></i></a>
+            <a href="#" class="btn btn-danger btn-add-treeview-cancel"><i class="fa fa-times"></i></a>
+        </li>
+        <li><a href="#" class="active">Pain</a></li>
+        <li><a href="#">Nose</a>
+            <ol>
+                <li><a href="#">Sneezing</a></li>
+                <li><a href="#">Bleeding</a></li>
+            </ol>
+        </li>
+        <li><a href="#">Leg</a>
+            <ol>
+                <li><a href="#">Swelling</a></li>
+                <li><a href="#">Broken</a></li>
+            </ol>
+        </li>
+        <li><a href="#">Arm</a>
+            <ol>
+                <li><a href="#">Left</a></li>
+                <li><a href="#">Right</a></li>
+            </ol>
+        </li>
+        <li><a href="#">Wrist</a></li>
+        <li><a href="#">Head</a></li>
+        <li><a href="#">Back</a>
+            <ol>
+                <li><a href="#">Lower Back</a></li>
+            </ol>
+        </li>
+        <li><a href="#">Running Nose</a></li>
+        <li><a href="#">Illness</a>
+            <ol>
+                <li><a href="#">Stomach</a></li>
+                <li><a href="#">Chest</a>
+                    <ol>
+                        <li><a href="#">Tingling Sensation</a></li>
+                    </ol>
+                </li>
+                <li><a href="#">Cough</a></li>
+                <li><a href="#">Vomit</a></li>
+            </ol>
+        </li>
+        <li><a href="#">General Complaint</a></li>
+        <li><a href="#">Classes</a>
+            <ol>
+                <li><a href="#">Dads Class</a></li>
+                <li><a href="#">GED Class</a></li>
+            </ol>
+        </li>
+        <li><a href="#">ob gyn</a>
+            <ol>
+                <li><a href="#">PREG RELATED</a>
+                    <ol>
+                        <li><a href="#">BLEEDING</a></li>
+                    </ol>
+                </li>
+            </ol>
+        </li>
+    </ol>
+</div>
+<!-- end: Sick Forms Tree View -->
+
+
+<script type="text/javascript">
+
+    // Display Symptom Name in Symptom Properites -> Name field
+    // And highlight active symptom
+    $('.treeview a').click(function() {
+        $('.treeview a').removeClass('active');
+        $(this).addClass('active');
+        $('.symptom-properties-name input[type="text"]').val($(this).text());
+    });
+
+    //Show Add row after active treeview
+    $('.btn-add-sibling-treeview').click(function() {
+        $('.add-treeview-row').clone().insertAfter($('.treeview a.active').parent('li')).addClass('show');
+
+        // Note: you must add the click event *after* inserting the row,
+        //      otherwise, the event doesn't have a DOM element to attach to.
+        // Hide/destroy Add Row when user adds/cancels
+        $('.add-treeview-row.show .btn').click(function() {
+            var Input = $('.add-treeview-row.show').find('.form-control');
+            Input.parent().append(Input.val()).wrap('<a href="#"></a>').wrap('<li></li>');
+            Input.parent().find('.btn').remove();
+            Input.remove();
+            $('.add-treeview-row.show').removeClass();
+        });
+    });
+
+
+    //Show Add row after active treeview
+    $('.btn-add-child-treeview').click(function() {
+
+        var activeTreeview = $('.treeview a.active');
+        var addTreeview = $('.add-treeview-row').clone();
+        var activeTreeviewParent = activeTreeview.parent('li').find('ol');
+        if (activeTreeviewParent.length !== 0) {
+            activeTreeviewParent.append(addTreeview).addClass('show');
+        }
+        else {
+            activeTreeview.parent('li').append("<ol></ol>").append(addTreeview);
+            activeTreeview.parent('li').find(addTreeview).addClass('show');
+        }
+
+
+
+        // Note: you must add the click event *after* inserting the row,
+        //      otherwise, the event doesn't have a DOM element to attach to.
+        // Hide/destroy Add Row when user adds/cancels
+        $('.add-treeview-row.show .btn').click(function() {
+            $(this).parents('.add-treeview-row.show').find('form-control').val().parent().append();
+        });
+    });
+
+
+    $(document).ready(function() {
+        $('.treeview-list').sortable();
+
+    });
+
+</script>

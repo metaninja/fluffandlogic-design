@@ -1,0 +1,59 @@
+<div class="modal fade" id="upload-files-modal" tabindex="-1" role="dialog" aria-labelledby="upload-files-modal-title">
+    <div class="modal-dialog modal-success" role="document">
+        <div class="modal-content">
+            <div class="modal-header clearfix">
+                <h5 class="modal-title" id="bulk-add-users-modal-title">Upload File(s)</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <i class="linearicon-cross2" aria-hidden="true"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+
+                <div class="document-details">
+                    <div class="bff-include" data-src="app/shared/labels/OLD.html"></div>
+                    <label>Add file(s)</label>
+                    <div class="bff-include" data-src="app/shared/file-uploader/index.html"></div>
+                </div>
+
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 0" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-success btn-upload">Upload</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function() {
+        $('.progress').hide();
+
+        function progress(width) {
+            $('.progress-bar').css('width', width + '%');
+        }
+
+       $('.btn-upload').click(function() {
+
+           $('.document-details').slideUp(300);
+           $('.progress').show();
+
+           setTimeout(function() { progress(30); }, 300);
+           setTimeout(function() { progress(70); }, 1000);
+           setTimeout(function() { progress(100); }, 1000);
+           setTimeout(function() {
+               $('#upload-files-modal').modal('hide');
+           }, 2000);
+           setTimeout(function() {
+               $('.progress').hide();
+               progress(0);
+               $('.document-details').show();
+           }, 2500);
+
+       });
+    });
+</script>

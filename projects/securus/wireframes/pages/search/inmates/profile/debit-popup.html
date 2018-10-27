@@ -1,0 +1,234 @@
+<div class="col-md-12 popup popup-debit">
+
+    <h3 class="settings-headline">Debit Balance <span class="brand-success">$45.23</span>
+        <button class="btn btn-link" data-toggle="modal" data-target="#refund-balance">
+            <i class="fa fa-dollar"></i> Refund Balance
+        </button>
+
+        <div class="pull-right">
+            <a class="btn btn-link no-padding hide-popup-debit">Close &nbsp;<i class="fa fa-times"></i></a>
+        </div>
+    </h3>
+
+    <div class="row">
+
+        <div class="col-md-3">
+            <div class="form-group">
+                <label for="reservation">
+                    Type
+                </label>
+
+                <select class="form-control">
+                    <option>Debit</option>
+                    <option>Credit</option>
+                    <option>Apply Payment</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="col-md-7">
+            <div class="form-group">
+                <label for="reservation">
+                    Date Range
+                </label>
+
+                <div class="input-group">
+                    <input type="text" id="reservation" class="form-control" placeholder="">
+                    <span class="input-group-addon"><i class="fa fa-calendar"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-2">
+            <div class="form-group">
+                <label>&nbsp;</label>
+                <button class="btn btn-primary" style="width: 100%">Search</button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="panel panel-action clearfix">
+        <div class="results-number-container pull-left">
+            <span class="results-number" data-count="4124"></span>&nbsp;
+            <span class="results-label">Results</span>
+        </div>
+
+
+        <div class="pull-right">
+            <button class="btn btn-link btn-add">
+                <i class="fa fa-plus-circle"></i> Add Debit Transaction
+            </button>
+        </div>
+    </div>
+
+    <table class="table table-hover table-editable">
+        <thead>
+            <tr>
+                <th class="stuff">Date</th>
+                <th>Type</th>
+                <th>Amount</th>
+                <th>Comment</th>
+                <th class="stuff">Description</th>
+                <th class="stuff">Reference #</th>
+                <th class="stuff">Added by User</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="add-row">
+                <td>
+                    <select class="form-control" id="siteLocation">
+                        <option value="site1" selected="">Debit</option>
+                        <option value="site2">Credit</option>
+                        <option value="site3">Apply Payment</option>
+                    </select>
+                </td>
+                <td>
+                    <input type="text" class="form-control" placeholder="Amount">
+                </td>
+                <td colspan="3">
+                    <input type="text" class="form-control" placeholder="Comment">
+                </td>
+                <td colspan="3" class="close-add-row">
+                    <button class="btn btn-danger btn-link">Cancel</button>
+                    <button class="btn btn-success"><i class="fa fa-save"> Save</i>
+                    </button>
+                </td>
+            </tr>
+            <!-- End Add Transaction -->
+            <tr>
+                <td>10-31-2014</td>
+                <td>Debit</td>
+                <td class="brand-danger">- $15.00</td>
+                <td>Site Issued Debit</td>
+                <td>Site Issued Debit</td>
+                <td>
+                    <small>20148491961666-11134</small>
+                </td>
+                <td>jvalentine</td>
+            </tr>
+            <tr>
+                <td>9-13-2014</td>
+                <td>Debit</td>
+                <td class="brand-danger">- $12.00</td>
+                <td>Site Issued Debit</td>
+                <td>Site Issued Debit</td>
+                <td>
+                    <small>20148491961666-61616</small>
+                </td>
+                <td>E-Imports</td>
+            </tr>
+            <tr>
+                <td>8-7-2014</td>
+                <td>Credit</td>
+                <td class="brand-success">$24.00</td>
+                <td>Credit for accounting error</td>
+                <td>Securus Demo Payment</td>
+                <td>
+                    <small>20148491961666-54262</small>
+                </td>
+                <td>E-Imports</td>
+            </tr>
+            <tr>
+                <td>8-5-2014</td>
+                <td>Debit</td>
+                <td class="brand-danger">- $8.00</td>
+                <td>Site Issued Debit</td>
+                <td>Securus Demo Payment</td>
+                <td>
+                    <small>20148491961666-74523</small>
+                </td>
+                <td>E-Imports</td>
+            </tr>
+            <tr>
+                <td>7-3-2014</td>
+                <td>Credit</td>
+                <td class="brand-success">$1.00</td>
+                <td>Refund for call</td>
+                <td>Securus Demo Payment</td>
+                <td>
+                    <small>20148491961666-25152</small>
+                </td>
+                <td>awesker</td>
+            </tr>
+            <tr>
+                <td>6-29-2014</td>
+                <td>Credit</td>
+                <td class="brand-success">$52.00</td>
+                <td>Inmate made a deposit in person</td>
+                <td>Securus Demo Payment</td>
+                <td>
+                    <small>20148491961666-84653</small>
+                </td>
+                <td>hschrader</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="bff-include" data-src="include/Pagination.html">
+                <div class="center">
+                    <ul class="pagination">
+                        <li class="prev disabled"><a href="#">← Previous</a>
+                        </li>
+                        <li class="disabled"><a href="#">First</a>
+                        </li>
+                        <li class="active"><a href="#">1</a>
+                        </li>
+                        <li><a href="#">2</a>
+                        </li>
+                        <li><a href="#">3</a>
+                        </li>
+                        <li><a href="#">4</a>
+                        </li>
+                        <li><a href="#">5</a>
+                        </li>
+                        <li><a href="#">Last</a>
+                        </li>
+                        <li class="next"><a href="#">Next → </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="bff-include" data-src="pages/search/inmates/profile/modals/refund-balance.html"></div>
+
+<script>
+$(document).ready(function() {
+
+    $('.popup-debit').hide();
+
+    $('.show-popup-debit').click(function() {
+        $('.popup-debit').show().velocity({
+            width: "100%",
+            height: "100%"
+        },500);
+    });
+
+    $('.hide-popup-debit').click(function() {
+        $('.popup-debit').velocity({
+            width: "0",
+            height: "0"
+        },500).hide();
+    });
+
+});
+
+$('.add-row').hide();
+
+$('.btn-add').click(function() {
+    $('.add-row').show();
+    $('.stuff').addClass('hide');
+});
+
+$('.close-add-row button').click(function() {
+    $('.add-row').hide();
+    $('.stuff').removeClass('hide');
+});
+</script>

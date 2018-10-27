@@ -1,0 +1,70 @@
+<div class="form-group permissions-form-background non-pan-list-options">
+
+    <div class="row form-group no-margin-bottom">
+
+        <div class="col-md-3">
+            <label for="countrycode" class="required">Country Code</label>
+            <select class="form-control" id="countrycode">
+                <option>1 - United States</option>
+                <option>31 - Netherlands</option>
+                <option>40 - Romania</option>
+                <option>44 - United Kingdom</option>
+                <option>47 - Norway</option>
+                <option>51 - Peru</option>
+                <option>52 - Mexico</option>
+                <option>55 - Brazil</option>
+                <option>57 - Colombia</option>
+                <option>65 - Singapore</option>
+                <option>91 - India</option>
+                <option>98 - Iran</option>
+                <option>233 - Ghana</option>
+                <option>250 - Rwanda</option>
+                <option>254 - Kenya</option>
+                <option>Other</option>
+            </select>
+        </div>
+
+        <div class="col-md-3 other-countrycode">
+            <div class="form-group">
+                <label for="other-countrycode-input" class="form-label required">Other Country Code</label>
+                <input type="text" class="form-control other-countrycode-input" id="other-countrycode-input">
+            </div>
+        </div>
+
+        <div class="col-md-9">
+            <div class="form-group">
+                <label for="phone-number" class="required">Phone Number (include area or city code)</label>
+                <input type="email" class="form-control" id="phone-number" placeholder="Enter the phone number to block">
+            </div>
+        </div>
+
+    </div>
+
+    <div class="form-group no-margin-bottom">
+        <label>Description</label>
+        <textarea class="form-control" rows="2" placeholder="Enter the blocked description"></textarea>
+        <div>Character limit: 255</div>
+    </div>
+
+    <div class="view-modified" style="margin-top: 15px;">Last modified 9/17/2014 at 12:03PM by jvalentine.
+        <a href="#/pages/search/system-logs/index.html">
+            <small>View change history →</small>
+        </a>
+    </div>
+
+</div>
+
+<script>
+    //-- Other country code --
+    $('.other-countrycode').hide();
+    $('#countrycode').change(function() {
+        if ($(this).val().toLowerCase() === 'other') {
+            $('#phone-number').parents('.col-md-9').removeClass('col-md-9').addClass('col-md-6');
+            $('.other-countrycode').show();
+            $('.other-countrycode-input').focus();
+        } else {
+            $('.other-countrycode').hide();
+            $('#phone-number').parents('.col-md-6').removeClass('col-md-6').addClass('col-md-9');
+        }
+    });
+</script>

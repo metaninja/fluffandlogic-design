@@ -1,0 +1,38 @@
+<div class="snapshot-heading-2">
+    <a href="#" onclick="closeCurrentPolicy()">
+        <i class="fa fa-arrow-left" aria-hidden="true"></i> Back
+    </a>
+
+    <div class="flex-space-between">
+        <label for="input-expand-all-sections-home">Expand All Sections</label>
+        <label class="switch">
+            <input type="checkbox" id="input-expand-all-sections-home" onchange="expandAllSections.call(this)">
+            <div class="slider round">
+                <span class="on">YES</span>
+                <span class="off">NO</span>
+            </div>
+        </label>
+    </div>
+</div>
+
+<ul class="snapshot-content-container">
+    <li class="snapshot-item">
+        <div class="bff-include js-navigation-ratings" data-src="app/pages/quotes/rating/home/shared/snapshot/policy-info/policy-info.html"></div>
+    </li>
+
+    <li class="snapshot-item">
+        <div class="bff-include js-navigation-ratings" data-src="app/pages/quotes/rating/home/shared/snapshot/underwriting/underwriting.html"></div>
+    </li>
+
+    <li class="snapshot-item">
+        <div class="bff-include js-navigation-ratings" data-src="app/pages/quotes/rating/home/shared/snapshot/dwelling-info/dwelling-info.html"></div>
+    </li>
+
+    <li class="snapshot-item">
+        <div class="bff-include js-navigation-ratings" data-src="app/pages/quotes/rating/home/shared/snapshot/coverages/coverages.html"></div>
+    </li>
+
+    <li class="snapshot-item">
+        <div class="bff-include js-navigation-ratings" data-src="app/pages/quotes/rating/home/shared/snapshot/endorsements/endorsements.html"></div>
+    </li>
+</ul>

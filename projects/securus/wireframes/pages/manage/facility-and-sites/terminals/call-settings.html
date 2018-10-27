@@ -1,0 +1,122 @@
+<div class="form-group">
+    <div class="row">
+        <div class="col-md-12">
+            <h4 class="settings-headline">
+                <a data-toggle="collapse" href="#status">
+                    Terminal Status <span class="fa fa-info-circle" style="font-size: 14px; color: #aaa; padding-left: 2px" data-toggle="tooltip" title="" data-original-title="Disabling the site prevents all calls from being made."></span>
+                   <div class="pull-right">
+                        <span class="toggle-hide"></span>
+                        <span class="toggle-show"></span>
+                   </div>
+                </a>
+            </h4>
+            <div class="collapse in" id="status">
+                <div class="form-group">
+                    <label class="rounded-check">
+                        <input type="checkbox" data-toggle="collapse" data-target="#disconnect-rule" checked>
+                        <span class="icon"></span>
+                        <strong>Enable</strong>
+                    </label>
+                </div>
+            </div>
+            <div class="collapse" id="disconnect-rule">
+                <div class="alert alert-danger">
+                    Calls in progress will finish before the terminal is disabled.
+                </div>
+            </div>
+            <h4 class="settings-headline facility-and-sites-separator">
+                <a data-toggle="collapse" href="#settings">
+                    Call Settings
+                   <div class="pull-right">
+                        <span class="toggle-hide"></span>
+                        <span class="toggle-show"></span>
+                   </div>
+                </a>
+            </h4>
+            <div class="collapse in" id="settings">
+                <div class="form-group">
+                    <label class="rounded-check">
+                        <input type="checkbox" checked>
+                        <span class="icon"></span>
+                        <strong>3-Way Calling Detection</strong>
+                        <span class="inherit-badge remove-override"><a>Remove override</a> and use setting from: CI Eden.</span>
+                        <span class="inherit-badge override">Enabled at: CI Eden. <a>Override.</a></span>
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label class="rounded-check">
+                        <input type="checkbox" checked>
+                        <span class="icon"></span>
+                        <strong>Voice Biometrics</strong>
+                        <span class="inherit-badge remove-override"><a>Remove override</a> and use setting from: CI Eden.</span>
+                        <span class="inherit-badge override">Enabled at: CI Eden. <a>Override.</a></span>
+                    </label>
+                </div>
+            </div>
+            <h4 class="settings-headline facility-and-sites-separator">
+                <a data-toggle="collapse" href="#virtual-groups">
+                    Virtual Groups
+                   <div class="pull-right">
+                        <span class="toggle-hide"></span>
+                        <span class="toggle-show"></span>
+                   </div>
+                </a>
+            </h4>
+            <div class="collapse in" id="virtual-groups">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="virtual-group" class="control-label">Virtual Group</label>
+                            <select id="virtual-group" class="form-control">
+                                <option>None</option>
+                                <option selected="">Cell Block A</option>
+                                <option>Cell Block C</option>
+                                <option>Cell Block D</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row additional-visitor-field">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <select id="virtual-group" class="form-control">
+                                <option selected="">None</option>
+                                <option>Cell Block A</option>
+                                <option>Cell Block C</option>
+                                <option>Cell Block D</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <a href="#" class="add-additional-visitor"><i class="fa fa-plus-circle"></i> Add Virtual Group to Terminal</a>
+                </div>
+                <div class="margin-top-20"><a href="#/pages/manage/call-settings/virtual-groups">Manage virtual groups →</a></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+$('.remove-override').hide().parent().children('input[type=checkbox]').attr('disabled', 'disabled');
+
+$('.remove-override').click(function() {
+    $(this).parent().children('.override').show();
+    $(this).hide();
+    $(this).parent().children('input[type=checkbox]').attr('disabled', 'disabled');
+    $(this).parent().children('input[type=text]').attr('disabled', 'disabled');
+});
+
+$('.override').click(function() {
+    $(this).parent().children('.remove-override').show();
+    $(this).hide();
+    $(this).parent().children('input[type=checkbox]').removeAttr('disabled');
+    $(this).parent().children('input[type=text]').removeAttr('disabled');
+});
+</script>
+<script type="text/javascript">
+$('.additional-visitor-field').hide();
+
+$('.add-additional-visitor').click(function() {
+    $('.additional-visitor-field').show();
+});
+</script>

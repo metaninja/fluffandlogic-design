@@ -1,0 +1,135 @@
+<style>
+	.quote-results-table tbody td {
+		vertical-align: middle;
+	}
+</style>
+<table class="table table-hover ez-table-normal quote-results-table">
+	<thead>
+		<tr>
+			<th>Carrier Name</th>
+			<th>Status</th>
+			<th>
+				<div class="flex-column relative">
+					<span>Agent Input</span>
+					<span>StateMinimum</span>
+					<div>
+						<i class="linearicon-info-circle linearicon-lg quote-info-icon"></i>
+						<div class="bff-include" data-src="app/pages/applicants/quotes/quote-results/shared/hover-menu.html"></div>
+					</div>
+				</div>
+			</th>
+			<th>
+				<div class="flex-column relative">
+					<span>Option 1</span>
+					<span>50/100/50</span>
+					<div>
+						<i class="linearicon-info-circle linearicon-lg quote-info-icon"></i>
+						<i class="linearicon-star" title="Change the coverage values to the ones listed here."></i>
+						<div class="bff-include" data-src="app/pages/applicants/quotes/quote-results/shared/hover-menu.html"></div>
+					</div>
+				</div>
+			</th>
+			<th>
+				<div class="flex-column relative">
+					<span>Option 2</span>
+					<span>100/300/100</span>
+					<div>
+						<i class="linearicon-info-circle linearicon-lg quote-info-icon"></i>
+						<i class="linearicon-star" title="Change the coverage values to the ones listed here."></i>
+						<div class="bff-include" data-src="app/pages/applicants/quotes/quote-results/shared/hover-menu.html"></div>
+					</div>
+				</div>
+			</th>
+			<th>
+				<div class="flex-column relative">
+					<span>Option 3</span>
+					<span>250/500/100</span>
+					<div>
+						<i class="linearicon-info-circle linearicon-lg quote-info-icon"></i>
+						<i class="linearicon-star" title="Change the coverage values to the ones listed here."></i>
+						<div class="bff-include" data-src="app/pages/applicants/quotes/quote-results/shared/hover-menu.html"></div>
+					</div>
+				</div>
+			</th>
+			<th>Actions</th>
+		</tr>
+	</thead>
+
+	<tbody id="quotes">
+	</tbody>
+</table>
+
+<script id="quotes-template" type="x-handlebars-template">
+	{{#quotes}}
+		{{#if Valid}}
+		<tr>
+			<td><img style="height: 4rem; width: auto;" src="{{ Logo }}"></td>
+			<td style="width: 40%">{{ ResultStatus }}</td>
+			<td class="text-center">{{ StateMin }}</td>
+			<td class="text-center">{{ Option1 }}</td>
+			<td class="text-center">{{ Option2 }}</td>
+			<td class="text-center">{{ Option3 }}</td>
+			<td>
+				<button class="btn btn-primary" role="button">
+					EZLogin+
+				</button>
+			</td>
+		</tr>
+		{{else if SetLogin}}
+		<tr>
+            <td><img style="height: 4rem; width: auto;" src="{{ Logo }}"></td>
+			<td>
+				<i class="linearicon-warning linearicon-lg"></i>
+				<strong>The login information for this carrier is incorrect.</strong>
+			</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>
+				<button class="btn btn-warning" role="button">
+					Set Logins
+				</button>
+			</td>
+		</tr>
+		{{else if ReportError}}
+		<tr>
+            <td><img style="height: 4rem; width: auto;" src="{{ Logo }}"></td>
+			<td>
+				<i class="linearicon-warning linearicon-lg"></i>
+				<strong>Unable to load a page from carrier web site. It is possible the carrier web site is experiencing technical difficulties.
+					Please try again later. The EZLynx team has been notified. Please contact EZLynx support for further assistance if the error persists.</strong>
+			</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>
+				<span class="text-important">
+					<button class="btn btn-danger" role="button">Report Error</button>
+				</span>
+			</td>
+		</tr>
+		{{else}}
+		<tr>
+            <td><img style="width: 9rem; height: auto;" src="{{ Logo }}"></td>
+			<td class="js-resubmitted-quote-container">
+				<i class="linearicon-warning linearicon-lg"></i>
+				<strong>Unable to load a page from carrier web site. It is possible the carrier web site is experiencing technical difficulties.
+					Please try again later. The EZLynx team has been notified. Please contact EZLynx support for further assistance if the error persists.</strong>
+			</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>
+				<span class="text-important">
+					<button class="btn btn-primary" role="button" data-toggle="modal" data-target="#resubmit-modal">Re-Submit</button>
+				</span>
+			</td>
+		</tr>
+		{{/if}}
+	{{/quotes}}
+</script>
+
+<div class="bff-script" data-src="app/pages/applicants/quotes/shared/table.js"></div>

@@ -1,0 +1,297 @@
+<title>Create Geofence</title>
+
+<script>
+function initialize() {
+
+    var markers = [];
+
+    // Create the map and define map options.
+    var mapOptions = {
+        mapTypeId: google.maps.MapTypeId.ROADMAP,
+        disableDefaultUI: false,
+        center: new google.maps.LatLng(32.7758, -96.7967),
+        zoom: 10,
+        scrollwheel: true,
+        streetViewControl: false,
+    };
+
+    var map = new google.maps.Map(document.getElementById('map-canvas'),
+        mapOptions);
+
+    // On map click, drop a marker
+    google.maps.event.addListenerOnce(map, 'click', function(event) {
+        placeMarker(event.latLng);
+    });
+
+    function placeMarker(location) {
+        var marker = new google.maps.Marker({
+            position: location,
+            map: map,
+            animation: google.maps.Animation.DROP,
+            draggable: true,
+        });
+
+        // Add circle overlay and bind to marker
+        var circle = new google.maps.Circle({
+            map: map,
+            radius: 8046.72, // 5 miles in metres
+            fillColor: '#0089cf',
+            strokeColor: '#0089cf',
+            editable: true,
+        });
+
+        circle.bindTo('center', marker, 'position');
+    };
+
+    var markers = [];
+
+    // Create the search box and link it to the UI element.
+    var input = /** @type {HTMLInputElement} */ (
+        document.getElementById('pac-input'));
+    map.controls[google.maps.ControlPosition.TOP_CENTER].push(input);
+
+    var searchBox = new google.maps.places.SearchBox(
+        /** @type {HTMLInputElement} */
+        (input));
+
+    // Listen for the event fired when the user selects an item from the
+    // pick list. Retrieve the matching places for that item.
+    google.maps.event.addListener(searchBox, 'places_changed', function() {
+        var places = searchBox.getPlaces();
+
+        if (places.length == 0) {
+            return;
+        }
+        for (var i = 0, marker; marker = markers[i]; i++) {
+            marker.setMap(null);
+        }
+
+        // For each place, get the icon, place name, and location.
+        markers = [];
+        var bounds = new google.maps.LatLngBounds();
+        for (var i = 0, place; place = places[i]; i++) {
+            var image = {
+                url: place.icon,
+                size: new google.maps.Size(71, 71),
+                origin: new google.maps.Point(0, 0),
+                anchor: new google.maps.Point(17, 34),
+                scaledSize: new google.maps.Size(25, 25)
+            };
+
+            // Create a marker for each place.
+            var marker = new google.maps.Marker({
+                map: map,
+                icon: image,
+                title: place.name,
+                position: place.geometry.location
+            });
+
+            markers.push(marker);
+
+            bounds.extend(place.geometry.location);
+        }
+
+        map.fitBounds(bounds);
+    });
+
+    // Bias the SearchBox results towards places that are within the bounds of the
+    // current map's viewport.
+    google.maps.event.addListener(map, 'bounds_changed', function() {
+        var bounds = map.getBounds();
+        searchBox.setBounds(bounds);
+    });
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
+<!-- begin: Page Heading -->
+<div class="container-fluid page-header">
+    <div class="container">
+        <div class="pull-left">
+
+            <div class="page-header-icon">
+                <span class="fa fa-geofence fa-2x"></span>
+            </div>
+
+            <h2>Geofence</h2>
+
+        </div>
+
+        <div class="page-header-btn-group pull-right">
+            <a class="btn btn-link" href="#/pages/investigate/lbs/index.html">Cancel</a>
+            <a class="btn btn-success" href="#/pages/investigate/lbs/index.html"><i class="fa fa-save"></i>&nbsp; Save</a>
+        </div>
+
+    </div>
+</div>
+<!-- end: Page Heading -->
+
+<div class="container-fluid breadcrumb-container">
+    <div class="container">
+        <ol class="breadcrumb">
+            <li>Investigate</li>
+            <li>Location Based Services</li>
+            <li>Create Geofence</li>
+        </ol>
+    </div>
+</div>
+
+<div class="container lbs-add">
+
+    <div class="col-md-10 col-md-offset-1">
+
+        <h4 class="section-header">
+            <a data-toggle="collapse" href="#details">
+                Geofence details
+            </a>
+
+            <a class="btn btn-danger pull-right section-header-action" href="#" data-toggle="modal" data-target="#deleteGeofence">
+                <i class="fa fa-times-circle"></i>&nbsp; Delete Geofence
+            </a>
+        </h4>
+
+        <div class="form-group permissions-form-background collapse in" id="details">
+
+            <div class="row">
+
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="geofence-name" class="required">Geofence Name</label>
+                        <input type="email" class="form-control" id="geofence-name" placeholder="">
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="form-group">
+                        <label for="geofence-radius" class="required">Geofence Radius</label>
+                        <input type="email" class="form-control" id="geofence-radius" placeholder="">
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <label for="radius">Measurement</label>
+                    <select class="form-control" id="radius">
+                        <option>Miles</option>
+                        <option>Kilometers</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <div class="form-group no-margin-bottom">
+                <label>Description</label>
+                <textarea class="form-control" rows="2" placeholder=""></textarea>
+                <div>Character limit: 255</div>
+            </div>
+
+            <div class="bff-include" data-src="shared/view-modified.html"></div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-12">
+
+                <h4 class="section-header">
+                    <a data-toggle="collapse" href="#select-location">
+                        Select a location on the map to create a geofence...
+
+                        <div class="pull-right">
+                            <span class="toggle-hide"></span>
+                            <span class="toggle-show"></span>
+                        </div>
+                    </a>
+                </h4>
+
+                <hr />
+
+                <div class="collapse in" id="select-location">
+
+                    <input id="pac-input" class="controls" type="text" placeholder="Search...">
+
+                    <div id="map-canvas"></div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-8">
+
+                <div class="bff-include" data-src="pages/investigate/lbs/add/geofence-settings.html"></div>
+
+                <p>&nbsp;</p>
+
+                <div class="bff-include" data-src="include/Covert_Alerts_List.html" data-event="CovertAlertLoaded"></div>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <h4 class="section-header">
+                    <a data-toggle="collapse" href="#history">
+                        History
+                        <div class="pull-right">
+                            <span class="toggle-hide"></span>
+                            <span class="toggle-show"></span>
+                        </div>
+                    </a>
+                </h4>
+
+                <div class="collapse in" id="history">
+
+                </div>
+
+                <h4 class="section-header">
+                    <a data-toggle="collapse" href="#notes">
+                        Notes
+                        <div class="pull-right">
+                            <span class="toggle-hide"></span>
+                            <span class="toggle-show"></span>
+                        </div>
+                    </a>
+                </h4>
+
+                <div class="collapse in" id="notes">
+                    <div class="bff-include" data-src="shared/notes/btn-add-simple-note.html"></div>
+                    <div class="bff-include" data-src="shared/notes/notes.html"></div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="bff-include" data-src="shared/notes/modal-add-simple-note.html"></div>
+
+<!-- begin: Delete Geofence modal -->
+<div class="modal fade" id="deleteGeofence" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content modal-md">
+            <div class="modal-header modal-danger">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title" id="myModalLabel">Delete Geofence</h4>
+            </div>
+            <div class="modal-body">
+                <p>You are about to delete the geofence <b>Frisco City Jail.</b>
+                </p>
+
+                <p>3 covert alert recpients will no longer receive alerts for this geofence.</p>
+
+                <p>Do you wish to delete this geofence?</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-link" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Yes, Delete Geofence</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end: Delete Geofence modal -->

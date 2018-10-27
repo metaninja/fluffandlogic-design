@@ -1,0 +1,77 @@
+<div class="ez-main-content">
+    <div class="ez-page-header">
+        <div class="row">
+            <div class="col-md-6 ez-page-title">
+                <span class="ez-page-title-icon">
+                    <i class="linearicon-cash-dollar linearicon-3x"></i>
+                </span>
+
+                <h1 class="h1">
+                    <span class="subtitle">Commissions</span>
+                    Statements
+                </h1>
+            </div>
+            <div class="col-md-6 ez-page-actions">
+                <a href="#/app/pages/commissions/statements/new/" class="btn btn-success">New Statement <i class="fa fa-plus ml-2"></i></a>
+            </div>
+        </div>
+
+<!--         <ul class="tabs">
+            <li class="tab">
+                <a class="tab-link active" href="#/app/pages/commissions/statements/index.html">
+                    <i class="linearicon-home fa-lg mr-2"></i>
+                    Agencies
+                </a>
+            </li>
+            <li class="tab">
+                <a class="tab-link" href="#/app/pages/commissions/statements/service-team/index.html">
+                    <i class="fa fa-user fa-lg mr-2"></i>
+                    Service Team
+                </a>
+            </li>
+        </ul> -->
+    </div>
+
+    <div class="ez-page-body full-width">
+        <div class="ez-page-content content-container">
+
+            <div class="search-form">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Statement #, agency, carrier" aria-label="Statement #, agency, carrier">
+                            <span class="input-group-addon" id="basic-addon2"><i class="fa fa-search"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="results-summary">
+                <div class="results-count">
+                    25 statements found
+
+                    <a href="javascript:void(0)" class="results-action btn btn-link filter-link" data-target="#filter-statements">
+                        Filters
+                    </a>
+                <!--     <div class="bff-include" data-src="app/pages/commissions/statements/filters.html"></div> -->
+                </div>
+
+                <div class="results-actions">
+                    <button class="btn btn-link results-actions btn-disabled js-disable-btn mr-2" data-toggle="modal" data-target="#finalize-modal" disabled="disabled">Finalize</button>
+                    <button class="btn btn-link results-actions btn-disabled js-disable-btn mr-2" disabled="disabled">Export</button>
+                    <button class="btn btn-link results-actions">Edit Columns</button>
+                </div>
+            </div>
+
+
+            <div class="bff-include" data-src="app/pages/commissions/statements/shared/table.html"></div>
+            <div class="bff-include" data-src="app/shared/pagination.html"></div>
+        </div>
+    </div>
+</div>
+
+<div class="bff-include" data-src="app/pages/commissions/statements/shared/finalize-modal.html"></div>
+
+<div class="bff-script" data-src="app/pages/commissions/javascript/main.js"></div>
+<div class="bff-script" data-src="app/pages/commissions/statements/index.js"></div>
+<div class="bff-script" data-src="app/shared/filters/dropdown.js"></div>

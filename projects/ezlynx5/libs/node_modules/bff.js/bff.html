@@ -1,0 +1,96 @@
+<style>
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(359deg);
+    }
+  }
+
+  .selected,
+  .selected:active,
+  .selected:visited {
+    border-radius: 3px;
+    padding: 6px;
+    background-color: #424242;
+    color: white !important;
+    text-decoration: none !important;
+  }
+
+  .visible {
+    display: block !important;
+  }
+
+  .bff-page-status {
+    display: none;
+    position: absolute;
+    z-index: 9999;
+    top: 0;
+    left: calc(50% - 100px);
+    border-bottom-left-radius: .5em;
+    border-bottom-right-radius: .5em;
+    padding: .2em .8em .4em;
+    color: #fff;
+    vertical-align: middle;
+    text-align: center;
+    white-space: nowrap;
+    font-size: 75%;
+    font-weight: bold;
+    line-height: 1;
+  }
+
+  .bff-page-status-loading {
+    background-color: #3498db;
+  }
+
+  .bff-page-status-error {
+    background-color: #d35400;
+  }
+
+  .bff-spin {
+    display: inline-block;
+    animation: spin 2s infinite linear;
+  }
+
+  .bff-icon-loading:after {
+    content: "\2731";
+  }
+
+  .bff-icon-warning:after {
+    content: "\26A0";
+  }
+
+  .bff-devmode,
+  .bff-devmode-options {
+    display: none;
+  }
+
+  .bff-devmode-container {
+    position: fixed;
+    display: none;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    min-height: 32px;
+    padding: 12px;
+    background-color: #ffc;
+    text-align: center;
+  }
+
+  .bff-devmode-container .bff-devmode,
+  .bff-devmode-container .bff-devmode-options {
+    display: block;
+  }
+
+</style>
+
+<!-- Loading indicator -->
+<span class="bff-page-status bff-page-status-loading">
+   <span class="bff-page-status-text">Loading page</span> <span class="bff-icon-loading bff-spin"></span>
+</span>
+
+<!-- Unable to load page -->
+<span class="bff-page-status bff-page-status-error">
+  <span class="bff-icon-warning"></span> <span class="bff-page-status-text">Could not find page</span>
+</span>

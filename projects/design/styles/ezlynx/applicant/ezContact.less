@@ -1,0 +1,100 @@
+﻿ul.EzFlyout
+{
+	width: 180px;
+	padding: 0 6px;
+
+    position: absolute;
+    background-color: #fafafa;
+    border: solid 1px #cfcfcf;
+    box-shadow: 2px 2px 5px #999999;
+    z-index: 9999;
+
+	li
+	{
+		clear: both;
+		display: block;
+		height: 22px;
+		padding-bottom: 4px;
+		border-bottom: dotted 1px #999999;
+
+		div.subMenu
+		{
+			display: none;
+            position: absolute;
+            background-color: White;
+            border: solid 1px #cfcfcf;
+            padding: 8px;
+            box-shadow: 2px 2px 5px #999999;
+
+            td.bottomRight
+            {
+                text-align: right;
+                vertical-align: bottom;
+            }
+		}
+
+		.icon
+		{
+			display: inline-block;
+			vertical-align: top;
+			margin-left: 3px;
+			margin-right: 3px;
+		}
+		
+		a.menuLink
+		{
+			text-decoration: none;
+			display: block;
+			height: 22px;
+			color: #333333;
+			margin-bottom: 3px;
+			margin-top: 2px;
+			line-height: 22px;
+			border: solid 1px transparent;
+			font-family: Verdana;
+			font-size: 90%;
+		}
+		a.menuLink:hover
+		{
+			border: solid 1px #666666;
+			background-color: #eeeeee;
+			
+		}
+		&.last
+		{
+			border-bottom: solid 1px transparent;
+		}
+	}
+}
+
+
+#EzContactImg:hover {
+    cursor: pointer;
+    outline: 1px solid rgb(184, 184, 184);
+}
+#EzContactPlaceholder {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 193px;
+  font-size: 100%;
+  padding: 10px;
+  z-index: 9999;
+  background-color: #fafafa;
+  border: solid 1px #cfcfcf;
+  box-shadow: 2px 2px 5px #999999;
+  display: none;
+}
+
+.phoneMenu, .emailMenu, .commentMenu, .purlMenu, .calendarMenu, .textMessageMenu, .campaignMenu
+{
+    font-size: 90%;
+}
+.EzFlyoutIcon
+{
+    vertical-align: middle;
+}
+.campaignMenu .campaignItem
+{
+    color: #009900;
+}

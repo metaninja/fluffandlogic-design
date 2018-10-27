@@ -1,0 +1,642 @@
+<div class="col-md-12 popup popup-pan" id="popup-pan">
+
+    <h3 class="section-header">Personal Allowed Numbers (PAN)
+
+        <!-- Buttons for PAN popup -->
+        <div class="pull-right btn-group-pan">
+            <a class="btn btn-link hide-popup-pan">Cancel</a>
+            <a class="btn btn-success btn-save-pan" href="#">Save and Close</a>
+        </div>
+
+        <!-- Buttons for Add/Edit PAN details -->
+        <div class="pull-right btn-group-pan-edit">
+            <a class="btn btn-link hide-popup-pan">Cancel</a>
+            <a class="btn btn-success btn-save-pan" href="#">Save</a>
+        </div>
+    </h3>
+
+    <div class="pan-list">
+
+        <div class="row">
+
+            <div class="col-md-6">
+
+                <label class="rounded-check pan-enable" for="rounded-check-enable">
+                    <input type="checkbox" name="check" id="rounded-check-enable" value="None" checked="checked">
+                    <span class="icon"></span>
+                    <span class="pan-enabled-title">Enabled</span>
+                    <span class="pan-disabled-title">Disabled</span>
+                    <i class="fa fa-info-circle info" data-toggle="tooltip" data-original-title="Enables the PAN list. This inmate will only be able to call to this defined list of numbers and the phone numbers list."></i>
+                </label>
+                <span class="inherit-badge pan-remove-override"> <a href="#">Remove override</a> and use default settings</span>
+                <span class="inherit-badge pan-override"> Enabled by default. <a href="#">Override.</a></span>
+
+
+                <label class="rounded-check pan-exclude" for="rounded-check-exclude">
+                    <input type="checkbox" name="check" id="rounded-check-exclude" value="None">
+                    <span class="icon"></span> Exclude Phone Number List
+                    <i class="fa fa-info-circle info" data-toggle="tooltip" title="" data-original-title="Inmates will be able to make phone calls only from the PAN list. Inmates will not be allowed to make calls to phone numbers on the Phone Number list."></i>
+                </label>
+
+            </div>
+
+            <div class="col-md-3 pan-max-active">
+                <label>Max Active PAN Entries
+                    <span class="fa fa-info-circle" style="font-size: 14px; color: #aaa; padding-left: 2px" data-toggle="tooltip" title="" data-original-title="Phone numbers that are blocked or inactive do not count toward the maximum number of PAN entries."></span>
+                </label>
+                <input type="text" class="form-control" placeholder="">
+
+                <div>Max allowed: 10 entries</div>
+            </div>
+
+        </div>
+
+        <div class="pan-search-results">
+
+            <hr/>
+
+            <div class="panel panel-action clearfix">
+                <div class="results-number-container pull-left">
+                    <span class="results-number" data-count="5"></span>&nbsp;
+                    <span class="results-label">Results</span>
+                </div>
+
+
+                <div class="pull-right">
+                    <button class="btn btn-link btn-pan-bna-export disabled">Export BNA</button>
+
+                    <div class="btn-group btn-group">
+                        <div class="btn-group btn-export-results">
+                            <button class="btn btn-link dropdown-toggle disabled" data-toggle="dropdown">
+                                Export Results
+                                <i class="fa fa-caret-down"></i>
+                            </button>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">CSV</a>
+                                </li>
+                                <li><a href="#">Excel</a>
+                                </li>
+                                <li><a href="#">PDF</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <a class="btn btn-link btn-add btn-add-pan">
+                        <i class="fa fa-plus-circle"></i> Add
+                    </a>
+
+                </div>
+
+            </div>
+
+            <table class="table table-pan">
+
+                <thead>
+                    <th>
+                        <input type="checkbox">
+                    </th>
+                    <th>
+                        <a href="#">Phone Number</a>
+                    </th>
+                    <th>
+                        <a href="#">Relationship</a>
+                    </th>
+                    <th>
+                        <a href="#">Status</a>
+                    </th>
+                    <th>
+                        <a href="#">Last Modified</a>
+                    </th>
+                    <th>
+                        <a href="#">Exists On</a>
+                    </th>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td><a class="btn-add-pan">(441) 515-2416</a>
+                        </td>
+                        <td>Brother in Law</td>
+                        <td>Active</td>
+                        <td>10-27-2014</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td><a class="btn-add-pan">(632) 237-9454</a>
+                        </td>
+                        <td>Sister</td>
+                        <td>Active</td>
+                        <td>10-20-2014</td>
+                        <td><a data-toggle="modal" data-target="#existsPAN"><i class="fa fa-inmate fa-2x"><span class="badge exists-on-other-pan">4</span></i></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td><a class="btn-add-pan">(253) 383-9946</a>
+                        </td>
+                        <td>Sister</td>
+                        <td>Inactive</td>
+                        <td>10-15-2014</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td><a class="btn-add-pan">(854) 727-2416</a></td>
+                        <td>Son</td>
+                        <td>Active</td>
+                        <td>09-30-2014</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td><a class="btn-add-pan">(944) 234-7345</a></td>
+                        <td>Wife</td>
+                        <td>Inactive</td>
+                        <td>09-29-2014</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td><a class="btn-add-pan">(123) 424-6743</a>
+                        </td>
+                        <td>Daughter in Law</td>
+                        <td>Active</td>
+                        <td>09-15-2014</td>
+                        <td></td>
+                    </tr>
+                    <tr class="danger">
+                        <td><input type="checkbox"></td>
+                        <td><a class="btn-add-pan">(737) 141-5693</a>
+                        </td>
+                        <td>Cousin</td>
+                        <td>Blocked</td>
+                        <td>09-14-2014</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </div>
+    </div>
+
+    <div class="pan-add-number">
+
+        <div class="row">
+
+            <div class="col-md-12">
+
+                <div class="section-header">
+                    <h4>PAN entry details</h4>
+
+                    <a class="btn btn-danger pull-right section-header-action" data-toggle="modal" data-target="#deletePhone">
+                        <i class="fa fa-times-circle"></i>&nbsp; Delete PAN Entry
+                    </a>
+                </div>
+
+                <div class="form-group permissions-form-background">
+
+                    <div class="row">
+
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label for="countrycode" class="required">Country Code</label>
+                                <select class="form-control" id="countrycode">
+                                    <option>1 - United States</option>
+                                    <option>31 - Netherlands</option>
+                                    <option>40 - Romania</option>
+                                    <option>44 - United Kingdom</option>
+                                    <option>47 - Norway</option>
+                                    <option>51 - Peru</option>
+                                    <option>52 - Mexico</option>
+                                    <option>55 - Brazil</option>
+                                    <option>57 - Colombia</option>
+                                    <option>65 - Singapore</option>
+                                    <option>91 - India</option>
+                                    <option>98 - Iran</option>
+                                    <option>233 - Ghana</option>
+                                    <option>250 - Rwanda</option>
+                                    <option>254 - Kenya</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 other-countrycode" style="display: none;">
+                            <div class="form-group">
+                                <label for="other-countrycode-input" class="form-label required">Country Code</label>
+                                <input type="text" class="form-control other-countrycode-input" id="other-countrycode-input">
+                            </div>
+                        </div>
+
+                        <div class="col-md-9 phone-number">
+                            <div class="form-group">
+                                <label for="phone-number" class="required">Phone Number (include area or city code)</label>
+                                <input type="tel" class="form-control" id="phone-number" placeholder="Enter the phone number">
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-md-3">
+
+                            <div class="form-group">
+                                <label>Relationship</label>
+                                <select class="form-control">
+                                    <option>Attorney</option>
+                                    <option>Aunt</option>
+                                    <option>Boyfriend</option>
+                                    <option>Brother</option>
+                                    <option>Brother in Law</option>
+                                    <option>Child Father</option>
+                                    <option>Child Mother</option>
+                                    <option>Clergy</option>
+                                    <option>Cousin</option>
+                                    <option>Daughter</option>
+                                    <option>Daughter in Law</option>
+                                    <option>Employer</option>
+                                    <option>Father</option>
+                                    <option>Father in Law</option>
+                                    <option>Financial Advisor</option>
+                                    <option>Friend</option>
+                                    <option>Girlfriend</option>
+                                    <option>Grandfather</option>
+                                    <option>Grandmother</option>
+                                    <option>Grandparents</option>
+                                    <option>Husband</option>
+                                    <option>Mother</option>
+                                    <option>Mother in Law</option>
+                                    <option>Nephew</option>
+                                    <option>Niece</option>
+                                    <option>Other - Use Description Field</option>
+                                    <option>Parents</option>
+                                    <option>Significant Other</option>
+                                    <option>Sister</option>
+                                    <option>Sister in Law</option>
+                                    <option>Step Brother</option>
+                                    <option>Step Daughter</option>
+                                    <option>Step Father</option>
+                                    <option>Step Mother</option>
+                                    <option>Step Sister</option>
+                                    <option>Step Son</option>
+                                    <option>Uncle</option>
+                                    <option>Wife</option>
+                                </select>
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-6">
+
+                            <div class="form-group no-margin-bottom">
+                                <label>Description</label>
+                                <textarea class="form-control" rows="1" placeholder="Enter the description"></textarea>
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-3">
+
+                            <div class="form-group">
+                                <label>Verified</label>
+                                <select class="form-control">
+                                    <option>Not Verified</option>
+                                    <option>Verified</option>
+                                    <option>Denied</option>
+                                </select>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="view-modified">Last modified 9/17/2014 at 12:03PM by jvalentine.
+                        <a href="#/Logging.html">
+                            <small>View change history →</small>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-8">
+
+                <div class="manage-pan-phone-number">
+
+                    <div class="clearfix">
+
+                        <div class="pull-left">
+
+                            <h4>Phone number settings</h4>
+
+                        </div>
+
+                        <div class="pull-right">
+
+                            <div class="btn btn-link block-phone-btn" style="margin-top:4px;">Block this phone number</div>
+
+                        </div>
+
+                    </div>
+
+                    <hr style="margin-top: 10px;">
+
+                    <div class="all-sites-phone-settings">
+
+                        <div class="row">
+
+                            <div class="col-md-7">
+
+                                <label class="rounded-check" for="rounded-check-active" style="margin-top: 0;">
+                                    <input type="checkbox" name="check" id="rounded-check-active" value="None" checked="">
+                                    <span class="icon"></span>
+                                    <a data-toggle="tooltip" title="" data-original-title="The phone number settings below will be active within the system">Active</a>
+                                </label>
+
+                                <hr>
+
+                                <label class="rounded-check" for="rounded-check-3way">
+                                    <input type="checkbox" name="check" id="rounded-check-3way" value="None">
+                                    <span class="icon"></span>
+                                    <a data-toggle="tooltip" title="" data-original-title="Detects 3-way calls and flags the CDR record">3-Way Call Detection</a>
+                                </label>
+
+                                <label class="rounded-check" for="rounded-check-dtmf">
+                                    <input type="checkbox" name="check" id="rounded-check-dtmf" value="None">
+                                    <span class="icon"></span>
+                                    <a data-toggle="tooltip" title="" data-original-title="Dual-tone multi-frequency (allows users to enter and detect extra digits during calls)">DTMF
+                                                        - Allow &amp; Detect</a>
+                                </label>
+
+                                <div class="form-group rounded-check-indent" id="max-digits-section" style="display: none;">
+                                    <label for="max-digits-allowed">Max Digits Allowed (6 or less)</label>
+                                    <select class="form-control">
+                                        <option>--</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                        <option>6</option>
+                                    </select>
+                                </div>
+
+                                <div class="private-number">
+
+                                    <label class="rounded-check" for="rounded-check-watch">
+                                        <input type="checkbox" name="check" id="rounded-check-watch" value="None">
+                                        <span class="icon"></span>
+                                        <a data-toggle="tooltip" title="" data-original-title="Flag this phone number when it is dialed">Watch</a>
+                                    </label>
+
+                                </div>
+
+                                <label class="rounded-check" for="rounded-check-private">
+                                    <input type="checkbox" name="check" id="rounded-check-private" value="None">
+                                    <span class="icon"></span>
+                                    <a data-toggle="tooltip" title="" data-original-title="The phone call will be treated as a private. You will not be able to watch or record private calls.">Private
+                                                        (Use for Attorney/Client Privilege)</a>
+                                </label>
+
+                                <div class="form-group rounded-check-indent" id="private-schedule-section" style="display: none;">
+                                    <label for="private-schedule">Set Private Schedule</label>
+
+                                    <div class="input-group">
+                                        <input type="text" id="private-schedule" class="form-control" placeholder="MM/DD/YYYY hh:mm A - MM/DD/YYYY hh:mm A">
+                                        <span class="input-group-addon"><i class="fa fa-calendar"></i>
+                                                        </span>
+                                    </div>
+                                </div>
+
+                                <label class="rounded-check" for="rounded-check-passive">
+                                    <input type="checkbox" name="check" id="rounded-check-passive" value="None">
+                                    <span class="icon"></span>
+                                    <a data-toggle="tooltip" title="" data-original-title="Does not require dialed party to actively accept the phone call (use this for rotary phone numbers)">Passive
+                                                        Acceptance</a>
+                                </label>
+
+                                <label class="rounded-check" for="rounded-check-suspended">
+                                    <input type="checkbox" name="check" id="rounded-check-suspended" value="None">
+                                    <span class="icon"></span>
+                                    <a data-toggle="tooltip" title="" data-original-title="Allows the inmate to make phone calls to this number even though they are suspended">Allow
+                                                        Calls on Suspension</a>
+                                </label>
+                            </div>
+
+                            <div class="col-md-5">
+
+                                <div class="form-group">
+                                    <label for="dialing-class">Dialing Class of Service</label>
+                                    <select class="form-control" id="dialing-class">
+                                        <option>None</option>
+                                        <option>AIS</option>
+                                        <option>Collect</option>
+                                        <option>Commisary IVR</option>
+                                        <option>Crime Tip</option>
+                                        <option>Free</option>
+                                        <option>Informant Line</option>
+                                        <option>Operator22</option>
+                                        <option>Probono</option>
+                                        <option>Third Party IVR</option>
+                                    </select>
+                                </div>
+
+                                <div class="informant-line" style="margin-bottom: 15px; display: none;">
+
+                                    <label class="rounded-check" for="rounded-check-unlist-port">
+                                        <input type="checkbox" name="check" id="rounded-check-unlist-port" value="None">
+                                        <span class="icon"></span>
+                                        <a data-toggle="tooltip" title="" data-original-title="Will not capture the port loacation where call was made on call detail record">Unlist
+                                                            Port Location</a>
+                                    </label>
+
+                                    <label class="rounded-check" for="rounded-check-unlist-dialed-number">
+                                        <input type="checkbox" name="check" id="rounded-check-unlist-dialed-number" value="None">
+                                        <span class="icon"></span>
+                                        <a data-toggle="tooltip" title="" data-original-title="Will not capture the number dialed on call detail record">Unlist
+                                                            Dialed Number</a>
+                                    </label>
+
+                                    <label class="rounded-check" for="rounded-check-unlist-speed-dial">
+                                        <input type="checkbox" name="check" id="rounded-check-unlist-speed-dial" value="None">
+                                        <span class="icon"></span>
+                                        <a data-toggle="tooltip" title="" data-original-title="Will not capture the speed dial number on call detail record">Unlist
+                                                            Speed Dial Number</a>
+                                    </label>
+
+                                    <label class="rounded-check" for="rounded-check-unlist-account-info">
+                                        <input type="checkbox" name="check" id="rounded-check-unlist-account-info" value="None">
+                                        <span class="icon"></span>
+                                        <a data-toggle="tooltip" title="" data-original-title="Will not capture the inmate's identifying information on call detail record">Unlist
+                                                            Inmate Information</a>
+                                    </label>
+
+                                    <label class="rounded-check" for="rounded-check-enable-dtmf-pass">
+                                        <input type="checkbox" name="check" id="rounded-check-enable-dtmf-pass" value="None">
+                                        <span class="icon"></span>
+                                        <a data-toggle="tooltip" title="" data-original-title="Allows users to skip detection and entering of extra digits during calls">Enable
+                                                            DTMF Pass Thru</a>
+                                    </label>
+
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="max-call-duration">Max Call Duration (minutes)</label>
+                                    <input class="form-control" id="max-call-duration" placeholder="Enter max call duration">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="speed-dial-code">Speed Dial Code</label>
+                                    <input class="form-control" id="speed-dial-code" placeholder="Enter speed dial code">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="dialing-class">RCFD Action</label>
+                                    <select class="form-control" id="dialing-class">
+                                        <option>None</option>
+                                        <option>Disconnect</option>
+                                        <option>Mark Only</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="dialing-class">Call Schedule</label>
+                                    <select class="form-control" id="dialing-class">
+                                        <option>--</option>
+                                        <option selected="">Limit calls after 9:00 p.m.</option>
+                                        <option>No calls on Friday</option>
+                                        <option>No calls during meals</option>
+                                    </select>
+                                </div>
+
+                                <div class="panel panel-default">
+                                    <div class="panel-body">
+                                        <div>
+                                            <img src="../images/call-schedule-2.jpg" class="img-responsive">
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="bff-include" data-src="include/Covert_Alerts_List.html" data-event="CovertAlertLoaded"></div>
+
+                </div>
+
+                <div class="block-pan-phone-number">
+
+                    <div class="clearfix">
+
+                        <div class="pull-left">
+
+                            <h4>Block settings</h4>
+
+                        </div>
+
+                        <div class="pull-right">
+
+                            <div class="btn btn-link manage-phone-btn" style="margin-top:4px;">Manage this phone number</div>
+
+                        </div>
+
+                    </div>
+
+                    <hr style="margin-top: 10px;">
+
+                    <div class="all-sites-phone-settings">
+
+                        <div class="row">
+
+                            <div class="col-md-7">
+
+                                <label class="rounded-check" for="rounded-check-reason">
+                                    <input type="checkbox" name="check" id="rounded-check-reason" value="None" checked="">
+                                    <span class="icon"></span>
+                                    <a data-toggle="tooltip" title="" data-original-title="Blocks this phone number from being dialed">Active</a>
+                                </label>
+
+                            </div>
+
+                            <div class="col-md-5">
+
+                                <div class="input-group" style="width: 100%;">
+                                    <label for="blockedReason" class="control-label">Blocked Reason</label>
+                                    <span style="padding-left: 10px; font-weight: normal; font-size: 11px; color: #c0392b;">Required</span>
+
+                                    <!-- Single button -->
+
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" style="background-color: transparent; color: #333; width: 100%;">
+                                        <span class="pull-right">
+                                                            <span class="caret"></span>
+                                        </span>
+                                    </button>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="#">Employee number</a>
+                                        </li>
+                                        <li><a href="#">Friend or family request</a>
+                                        </li>
+                                        <li><a href="#">Harassment</a>
+                                        </li>
+                                        <li><a href="#">Witness</a>
+                                        </li>
+                                        <li class="divider"></li>
+                                        <li><a data-toggle="modal" data-target="#blockedReasonModal">Add/Edit Blocked
+                                                            Reason...</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <div class="bff-include" data-src="shared/bna-info.html"></div>
+
+                <div class="bff-include" data-src="shared/notes.html"></div>
+
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-12">
+
+                <hr class="divider" />
+
+                <div class="pull-right btn-group-pan-edit">
+
+                    <a class="btn btn-link btn-save-pan">Cancel</a>
+                    <a class="btn btn-success btn-save-pan" href="#">Save Changes</a>
+                    <a class="btn btn-success btn-add-pan" href="#">Save and Add New PAN</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="bff-script" data-src="../js/wireframes/pages/search/inmates/profile/pan-popup.js"></div>

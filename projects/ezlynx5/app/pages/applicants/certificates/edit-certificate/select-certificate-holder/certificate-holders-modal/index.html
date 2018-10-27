@@ -1,0 +1,14 @@
+<div class="modal fade" id="certificate-holders-modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="bff-include js-add-certificate-content" data-src="app/pages/applicants/certificates/edit-certificate/select-certificate-holder/certificate-holders-modal/add-certificate-holders-content.html"></div>
+
+        <div class="bff-include js-new-certificate-content hide-content" data-src="app/pages/applicants/certificates/edit-certificate/select-certificate-holder/certificate-holders-modal/new-certificate-holder-content.html"></div>
+    </div>
+</div>
+
+<script>
+    function toggleModalContent() {
+        $(".js-add-certificate-content, .js-new-certificate-content").toggleClass('hide-content');
+    }
+</script>
+

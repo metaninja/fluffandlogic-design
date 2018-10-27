@@ -1,0 +1,170 @@
+// ================================================================
+// Select2 
+// ================================================================
+#labelFilterDiv.well {
+    border: 0!important;
+}
+
+.select2-container {
+    width: 100%!important;
+    max-width: 350px!important;
+    min-height: @inputHeight!important;
+    .boxShadowNone!important;
+    
+    .select2-choice,
+    .select2-choices { 
+        background-image: none!important;
+        min-height: @inputHeight!important;
+        .font-size (12)!important;
+        color: @greyDarker!important;
+        border: @borderSmall solid #ccc!important;
+        .boxShadowNone!important;
+        .borderRadiusLarge!important;
+        .boxShadowNone!important;
+        
+        .select2-search-field {
+            height: @inputHeight - 2px!important;
+            
+            input {
+                height: @inputHeight - 2px!important;
+                padding: 3px 5px!important;
+            }
+        }
+        
+        .select2-chosen {
+            color: @greyDarker!important;
+        }
+    }
+}
+// Select2 Multi
+// ------------------------
+.select2-container-multi {
+    background-image: none!important;
+    .boxShadowNone!important;
+    outline: 0!important;
+    width: 100%!important;
+    
+    &.select2-container-active {
+        .select2-choices,
+        .select2-choice {
+            .inputBorderFocus!important;   
+        }
+    }
+    
+    .select2-choices,
+    .select2-choice {
+        background: @white!important;
+        background-image: none!important;
+        padding-right: 30px!important;
+        border: 0!important;
+        color: @grey!important;
+        .borderRadiusLarge!important;
+        .boxShadowNone!important;
+        border: @borderSmall solid @inputBorderColor!important;
+        
+        .select2-search-choice {
+            border: @borderSmall solid @greyLighter!important;
+            background: @greyLighter!important;
+            background-image: 0!important;
+            color: @greyDark!important;
+            .font-size (12)!important;
+            .line-height (12)!important;
+            padding: 4px 8px 4px 18px!important;
+            margin: 3px!important;
+            .borderRadiusLarge!important;
+            .boxShadowNone!important;
+            filter: none!important;
+
+            .select2-search-choice-close {
+                background: none!important;
+                top: 0px!important;
+                
+                &:before {
+                    position: absolute;
+                    font-family: @iconFontFamily;
+                    content: '\e665'; /* Change Icon */
+                    color: @grey;
+                    .font-size (9);
+                    top: 5px;
+                    left: 1px;
+                    
+                    &:hover {
+                        color: @white;
+                    }
+                }
+            }
+        } 
+        
+        .select2-chosen {
+            .font-size (@fontSizeBase);
+        }
+        
+        .select2-arrow {
+            background: transparent!important;
+            background-image: none!important;
+            .borderRadiusNone!important;
+            border: 0!important;
+        }
+        
+        input {
+            margin: 0!important;
+        }
+    }
+}
+
+.select2-with-searchbox.select2-drop {
+    //margin-top: -@inputHeight!important;
+    
+    .select2-search {
+        margin: 0!important;
+        padding: 0!important;
+        
+        input {
+            border: 0!important;
+            border-top: @borderSmall solid @inputBorderColor!important;
+            border-bottom: @borderSmall solid @inputBorderColor!important;
+            .borderRadiusLarge!important;
+            
+            &:active,
+            &:focus {
+                border: @borderSmall solid @blueLight!important;
+            }        
+        }
+    }
+}
+.select2-drop {
+    min-height: @inputHeight!important;
+    margin-top: 0!important;
+    background-image: none!important;
+    border: @borderSmall solid @inputBorderColor!important;
+    .boxShadowNone!important;
+    border-radius: 0 0 @borderLarge @borderLarge!important;
+    .boxShadow!important;
+    filter: none!important;
+    
+    .select2-search {
+        margin: 4px 0 2px!important;
+        min-height: @inputHeight!important;
+        background-image: none!important;
+        .boxShadowNone!important;
+        
+        input {
+            min-height: @inputHeight!important;
+            background: @white!important;
+            background-image: none!important;
+            border: @borderSmall solid @inputBorderColor!important;
+            margin-top: -3px!important;
+        }
+    }
+}
+
+.iconInput {
+    .select2-arrow {
+        display: none!important;
+    }
+}
+#RightPanel {
+    .select2-arrow {
+        display: none!important;
+    }
+}

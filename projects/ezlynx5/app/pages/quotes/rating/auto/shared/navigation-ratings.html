@@ -1,0 +1,83 @@
+<div class="content-container steps-container mb-3">
+    <ul class="container-rating-icons">
+        <li>
+            <a href="#/app/pages/quotes/rating/auto/ratings" class="js-rating-link">
+                <i class="linearicon-clock3 rating-icon">
+                    <i class="linearicon-check rating-icon-check" aria-hidden="true"></i>
+                </i>
+                <p class="rating-icon-name mb-0">Rating</p>
+            </a>
+        </li>
+        <li>
+            <a href="#/app/pages/quotes/rating/auto/policy-info" class="js-rating-link">
+                <i class="linearicon-document rating-icon">
+                    <i class="linearicon-check rating-icon-check" aria-hidden="true"></i>
+                </i>
+                <p class="rating-icon-name mb-0">Policy Info</p>
+            </a>
+        </li>
+        <li>
+            <a href="#/app/pages/quotes/rating/auto/drivers" class="js-rating-link">
+                <i class="linearicon-user rating-icon">
+                    <i class="linearicon-warning rating-icon-warning" aria-hidden="true"></i>
+                </i>
+                <p class="rating-icon-name mb-0">Drivers</p>
+            </a>
+        </li>
+        <li>
+            <a href="#/app/pages/quotes/rating/auto/vehicles" class="js-rating-link">
+                <i class="linearicon-car2 rating-icon">
+                    <i class="linearicon-check rating-icon-check" aria-hidden="true"></i>
+                </i>
+                <p class="rating-icon-name mb-0">Vehicles</p>
+            </a>
+        </li>
+        <li>
+            <a href="#/app/pages/quotes/rating/auto/incidents" class="js-rating-link">
+                <i class="ez-icon-incidents rating-icon"></i>
+                <p class="rating-icon-name mb-0">Incidents</p>
+            </a>
+        </li>
+        <li>
+            <a href="#/app/pages/quotes/rating/auto/coverage" class="js-rating-link">
+                <i class="linearicon-list2 rating-icon">
+                    <i class="linearicon-warning rating-icon-warning" aria-hidden="true"></i>
+                </i>
+                <p class="rating-icon-name mb-0">Coverage</p>
+            </a>
+        </li>
+        <li>
+            <a href="#/app/pages/quotes/rating/auto/carrier-questions" class="js-rating-link">
+                <i class="linearicon-question rating-icon"></i>
+                <p class="rating-icon-name mb-0">Carrier Questions</p>
+            </a>
+        </li>
+        <li>
+            <a href="#/app/pages/quotes/rating/auto/quote-scenario" class="js-rating-link">
+                <i class="ez-icon-scenarios rating-icon"></i>
+                <p class="rating-icon-name mb-0">Quote Scenario</p>
+            </a>
+        </li>
+        <li>
+            <a href="#/app/pages/quotes/rating/auto/finish" class="js-rating-link">
+                <div class="js-application-incomplete" style="display: none;">
+                    <i class="linearicon-warning rating-icon incomplete-application-rating-icon" aria-hidden="true"></i>
+                    <p class="rating-icon-name mb-0">Incomplete</p>
+                </div>
+
+                <div class="js-application-complete" style="display: none;">
+                    <i class="linearicon-check rating-icon complete-application-rating-icon" aria-hidden="true"></i>
+                    <p class="rating-icon-name mb-0">Ready to Submit</p>
+                </div>
+            </a>
+        </li>
+    </ul>
+</div>
+
+<script>
+    $(function() {
+        var iconNumber = $(".js-navigation-ratings").data("highlight-rating-icon") - 1;
+        
+        $(".container-rating-icons").find("li").eq(iconNumber).find(".rating-icon").addClass("rating-icon-current");
+    });
+</script>

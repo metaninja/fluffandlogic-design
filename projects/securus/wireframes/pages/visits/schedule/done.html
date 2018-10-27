@@ -1,0 +1,49 @@
+<title>Create Visit: Finished</title>
+<!-- begin: Page Heading -->
+<div class="container-fluid page-header">
+    <div class="container">
+        <div class="pull-left">
+            <div class="page-header-icon">
+                <span class="fa fa-calendar fa-2x"></span>
+            </div>
+            <h2>Visit Added</h2>
+        </div>
+        <div class="page-header-btn-group pull-right">
+            <a class="btn btn-link" href="#/pages/visits/index.html"><i class="fa fa-arrow-left"></i>&nbsp; Return to Visits</a>
+            <a class="btn btn-success" href="#/pages/visits/schedule/visit-type.html">Add New Visit</a>
+        </div>
+    </div>
+</div>
+<!-- end: Page Heading -->
+<div class="container-fluid no-breadcrumb">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <h4 class="section-header">
+                <i class="fa fa-check-circle fa-lg brand-success"></i>&nbsp; Visit added to schedule
+
+                <span class="section-header-action pull-right">
+                    <a class="btn btn-link btn-print"> <i class="fa fa-print fa-lg"></i>&nbsp; Print</a>
+                </span>
+            </h4>
+            <hr />
+            <div class="securus-panel-style securus-panel-padding">
+                <div class="bff-include" data-src="pages/visits/schedule/done-onsite.html" data-event="OnsiteViewLoaded"></div>
+                <div class="bff-include" data-src="pages/visits/schedule/done-remote.html" data-event="RemoteViewLoaded"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="bff-include" data-src="pages/visits/schedule/done-devmode.html"></div>
+<script>
+$(document).on('OnsiteViewLoaded', function() {
+    $(document).on('RemoteViewLoaded', function() {
+        $('.remote-view').hide();
+    });
+});
+
+$(document).ready(function() {
+    $('.btn-print').click(function() {
+        window.print();
+    });
+});
+</script>

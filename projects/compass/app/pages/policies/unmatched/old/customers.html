@@ -1,0 +1,56 @@
+<div class="search-form col-md-6 my-2">
+    <div class="input-group">
+        <input type="text" class="form-control" placeholder="Customer name, policy #, carrier" aria-label="Customer name, policy #, carrier">
+        <span class="input-group-btn">
+          <button class="btn btn-primary px-3" type="button"><i class="linearicon-magnifier"></i></button>
+        </span>
+    </div>
+</div>
+
+
+<div id="customers" class="my-3">
+</div>
+
+<div class="bff-include" data-src="app/shared/pagination.html"></div>
+
+<script id="customers-template" type="x-handlebars-template">
+    {{#customers}}
+    <div class="px-2 py-1 border-bottom-gray">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-6">
+                        <label class="h5 px-2"><input type="checkbox"> {{Customer}}</label>
+                    </div>
+                    <div class="col-md-6 text-right">
+                        <a href="javascript:void(0);"  class="btn btn-outline-primary my-1">View</a>
+                        <a href="javascript:void(0);"  class="btn btn-outline-primary my-1">Merge</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row px-2 py-1">
+                    <div class="col-md-6">Carrier</div>
+                    <div class="col-md-6">{{Carrier}}</div>
+                </div>
+                <div class="row px-2 py-1">
+                    <div class="col-md-6">Policy #</div>
+                    <div class="col-md-6">{{Policy}}</div>
+                </div>
+                <div class="row px-2 py-1">
+                    <div class="col-md-6">LOB</div>
+                    <div class="col-md-6">{{LOB}}</div>
+                </div>
+                <div class="row px-2 py-1">
+                    <div class="col-md-6">Effective Date</div>
+                    <div class="col-md-6">{{EffectiveDate}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{/customers}}
+</script>
+
+<div class="bff-script" data-src="app/pages/policies/unmatched/customers.js"></div>

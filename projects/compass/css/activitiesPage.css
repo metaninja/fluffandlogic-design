@@ -1,0 +1,646 @@
+.activitiesPageContent {
+  position: relative;
+}
+.activitiesPageContent > div.pull-right,
+.activitiesPageContent > label.checkbox {
+  margin-top: 12px;
+}
+.activitiesPageContent #activityFilters {
+  padding: 0;
+  border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  min-width: 600px;
+}
+.activitiesPageContent #activityFilters #mainFilterDiv {
+  margin-bottom: 3px;
+}
+.activitiesPageContent #activityFilters #mainFilterDiv > button {
+  margin-top: -3px;
+  padding: 4px 8px;
+}
+.activitiesPageContent #activityFilters #mainFilterDiv .input-append {
+  position: relative;
+  margin-bottom: 0;
+  width: 35%;
+  max-width: 300px;
+}
+.activitiesPageContent #activityFilters #mainFilterDiv .input-append input {
+  width: 100%;
+}
+.activitiesPageContent #activityFilters #mainFilterDiv .input-append input:focus {
+  border: 1px solid #5988cf;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  outline: 0;
+}
+.activitiesPageContent #activityFilters #mainFilterDiv .input-append button {
+  position: absolute;
+  background: transparent;
+  border: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding: 6px 6px;
+  z-index: 1000;
+}
+.activitiesPageContent #activityFilters #mainFilterDiv .input-append button:focus,
+.activitiesPageContent #activityFilters #mainFilterDiv .input-append button:active {
+  border: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  outline: 0;
+}
+.activitiesPageContent #activityFilters #mainFilterDiv .input-append button i {
+  font-size: 18px;
+}
+.activitiesPageContent #activityFilters #filterOptions {
+  float: right;
+}
+.activitiesPageContent #activityFilters #filterOptions button {
+  margin-left: 3px;
+}
+.activitiesPageContent #activityFilters #filterOptions .dropdown {
+  display: inline-block;
+}
+.activitiesPageContent #activityFilters label.checkbox {
+  display: inline-block;
+  line-height: 30px;
+  line-height: 3rem;
+  margin-left: 12px;
+}
+.activitiesPageContent #activityFilters label.checkbox input {
+  display: inlin-block;
+  margin: 7px 0 7px -20px;
+}
+.activitiesPageContent #activityFilters #additionalFilters {
+  position: relative;
+  background: #f2f2f2;
+  padding: 6px;
+  margin-top: 6px;
+  border: 1px solid #ccc;
+  *zoom: 1;
+}
+.activitiesPageContent #activityFilters #additionalFilters:before,
+.activitiesPageContent #activityFilters #additionalFilters:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.activitiesPageContent #activityFilters #additionalFilters:after {
+  clear: both;
+}
+.activitiesPageContent #activityFilters #additionalFilters #labelFilterDiv {
+  position: relative;
+  display: inline-block;
+  float: left;
+  border: none;
+  padding: 0;
+  width: 30%;
+  max-width: 300px;
+  margin-right: 12px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.activitiesPageContent #activityFilters #additionalFilters #labelFilterDiv .select2-choices:before {
+  position: absolute;
+  font-family: 'EZAwesome';
+  color: #777;
+  content: '\e62f';
+  right: 6px;
+  top: 4px;
+  font-size: 18px;
+  font-size: 1.8rem;
+}
+.activitiesPageContent #activityFilters #additionalFilters #dateRangeFilterDiv {
+  position: relative;
+  display: inline-block;
+  float: left;
+  width: 30%;
+  max-width: 300px;
+  background: none;
+  margin: 0 12px 0 0;
+  border: 0;
+  padding: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.activitiesPageContent #activityFilters #additionalFilters #dateRangeFilterDiv input#SearchDate {
+  width: 100%;
+  height: 30px;
+  margin-bottom: 0;
+  border-radius: 1px;
+  -moz-border-radius: 1px;
+  -webkit-border-radius: 1px;
+  border: 1px solid #ccc;
+  outline: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.activitiesPageContent #activityFilters #additionalFilters #dateRangeFilterDiv input#SearchDate:focus,
+.activitiesPageContent #activityFilters #additionalFilters #dateRangeFilterDiv input#SearchDate:active {
+  border: 1px solid #5988cf;
+}
+.activitiesPageContent #activityFilters #additionalFilters #dateRangeFilterDiv label.add-on {
+  position: absolute;
+  right: 6px;
+  top: 6px;
+}
+.activitiesPageContent #activityFilters #additionalFilters #dateRangeFilterDiv label.add-on i {
+  font-size: 18px;
+  font-size: 1.8rem;
+  color: #777;
+}
+.activitiesPageContent #activityFilters #additionalFilters #userIdFilterDiv,
+.activitiesPageContent #activityFilters #additionalFilters #createdUserIdFilterDiv {
+  display: inline-block;
+  float: left;
+  width: 30%;
+  max-width: 300px;
+  padding: 0;
+  background: none;
+  border: 0;
+  margin: 0 12px 0 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.activitiesPageContent #activityFilters #additionalFilters #userIdFilterDiv .select2-choices .select2-search-field:before,
+.activitiesPageContent #activityFilters #additionalFilters #createdUserIdFilterDiv .select2-choices .select2-search-field:before {
+  position: absolute;
+  font-family: 'EZAwesome';
+  content: "\e610";
+  font-size: 18px;
+  font-size: 1.8rem;
+  right: 6px;
+  top: 4px;
+  z-index: 30;
+}
+.activitiesPageContent #activityFilters #additionalFilters div#filterToggles {
+  position: relative;
+  display: inline-block;
+  float: left;
+  height: 30px;
+}
+.activitiesPageContent #activityFilters #additionalFilters div#filterToggles label {
+  margin: 0;
+}
+.activitiesPageContent #activityFilters #additionalFilters div#filterToggles label input {
+  margin-bottom: 0;
+}
+#ActivitiesPage .timelineView .activityDiv.expanded {
+  margin: 0;
+  box-shadow: none;
+  border: 0;
+  border-radius: 2px;
+}
+#ActivitiesPage .timelineView .activityDiv.expanded .notes > li {
+  min-height: 66px;
+  background: #fff;
+}
+#ActivitiesPage .timelineView .activityDiv.expanded .notes > li .noteOptions {
+  position: absolute;
+  padding: 0;
+  margin-right: 12px;
+  line-height: 12px;
+  right: 0;
+  z-index: 1;
+  min-width: 15px;
+  background: #eee;
+  border-radius: 4px;
+  overflow: hidden;
+  border: 1px solid #BBB;
+}
+#ActivitiesPage .timelineView .activityDiv.expanded .notes > li .noteOptions button {
+  background: #eee;
+  float: left;
+  padding: 4px;
+  border-radius: 0;
+  border-left: 1px solid #d5d5d5;
+}
+#ActivitiesPage .timelineView .activityDiv.expanded .notes > li .noteOptions button:hover {
+  background-color: #ddd;
+}
+#ActivitiesPage .timelineView .activityDiv.expanded .notes > li .noteOptions button:first-child {
+  border-left: 0;
+}
+#ActivitiesPage .timelineView .activityDiv.expanded .notes > li .noteOptions button.stickyToggled {
+  display: inline;
+  background: #4976bb;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+#ActivitiesPage .timelineView .activityDiv.expanded .notes > li .noteOptions button.stickyToggled i {
+  color: #fff;
+}
+#ActivitiesPage .timelineView .activityDiv.expanded .notes > li .noteOptions i {
+  padding: 0 4px;
+  color: #555;
+  font-size: 16px;
+  line-height: 22px;
+}
+#ActivitiesPage .timelineView .activityDiv.expanded ol > li {
+  border: 1px solid #ccc;
+}
+#ActivitiesPage #activitiesContainer.fetchingActivites {
+  opacity: .5;
+  filter: alpha(opacity=50);
+}
+#ActivitiesPage .activityContainer {
+  clear: both;
+}
+#ActivitiesPage .activityContainer h4.dateHeaderText {
+  color: #777;
+  font-size: 14px;
+  font-weight: normal;
+  margin-top: 24px;
+  margin-bottom: 6px;
+  padding: 0;
+  border: none;
+  text-transform: uppercase;
+}
+#ActivitiesPage .activityContainer .activityDiv {
+  will-change: margin;
+}
+#ActivitiesPage .activityContainer .activityDiv ol > li {
+  position: relative;
+  background: #f2f2f2;
+  padding: 12px;
+  padding-left: 58px;
+  border: 0;
+  margin-top: -1px;
+  border: 1px solid #ccc;
+}
+#ActivitiesPage .activityContainer .activityDiv ol > li.expanded {
+  border-top: 0;
+  min-height: 66px;
+}
+#ActivitiesPage .activityContainer .activityDiv .topLevel li {
+  background: #f2f2f2;
+  border-left: 2px solid #ccc;
+  min-height: 60px;
+}
+#ActivitiesPage .activityContainer .activityDiv .topLevel li:hover {
+  border-left-color: #777;
+  cursor: pointer;
+  background-color: #e8e8e8;
+}
+#ActivitiesPage .activityContainer .activityDiv .discussionTitle {
+  display: none;
+}
+#ActivitiesPage .activityContainer .activityDiv.expanded {
+  margin: 10px 0;
+  padding: 0;
+  border: 1px solid #A6A5A5;
+  border-bottom: 2px solid #949494;
+  border-right: 2px solid #949494;
+  transition: all 0.3s ease-in;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+#ActivitiesPage .activityContainer .activityDiv.expanded ol > li {
+  background: #fff;
+}
+#ActivitiesPage .activityContainer .activityDiv.expanded .discussionTitle {
+  display: block;
+  cursor: pointer;
+  background: #30333c;
+  color: #fff;
+  font-weight: 600;
+  min-height: 34px;
+  border-bottom: none;
+  margin: 0;
+  padding: 7px 80px 7px 12px;
+  margin: -1px -1px 0 -1px;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  border-top-right-radius: 2px;
+  border-top-left-radius: 2px;
+}
+#ActivitiesPage .activityContainer .activityDiv.expanded .discussionTitle .titleButton {
+  position: absolute;
+  right: 10px;
+  top: 4px;
+}
+#ActivitiesPage .activityContainer .activityDiv.expanded .discussionTitle .titleButton:hover {
+  color: #6690D0;
+}
+#ActivitiesPage .activityContainer .activityDiv.expanded .discussionTitle .titleButton + .titleButton {
+  right: 40px;
+}
+#ActivitiesPage .activityContainer .activityDiv.expanded .discussionTitle .btn.btn-link,
+#ActivitiesPage .activityContainer .activityDiv.expanded .discussionTitle .btn.btn-link i {
+  padding: 0;
+  color: #ddd;
+  font-size: 16px;
+}
+#ActivitiesPage .activityContainer .activityDiv.expanded .discussionTitle .btn.btn-link:hover,
+#ActivitiesPage .activityContainer .activityDiv.expanded .discussionTitle .btn.btn-link i:hover {
+  color: #fff;
+}
+#ActivitiesPage .activityContainer .activityDiv.expanded .discussionTitle .btn.btn-link {
+  font-size: 14px;
+}
+#ActivitiesPage .activityContainer .activityDiv.expanded .discussionTitle .applicantLink {
+  font-size: 10px;
+}
+#ActivitiesPage .activityContainer .activityDiv.expanded .discussionTitle .applicantLink:hover {
+  text-decoration: underline;
+}
+#ActivitiesPage .activityContainer .activityDiv.expanded ol > li {
+  border-left: 0;
+  border-right: 0;
+  border-top: 1px solid #ccc;
+  border-bottom: 0;
+}
+#ActivitiesPage .activityContainer .activityDiv.expanded .task .notes {
+  background: #f2f2f2;
+  margin: 10px 0 0 -12px;
+  border-radius: 2px;
+  min-height: 66px;
+}
+#ActivitiesPage .activityContainer .activityDiv.expanded .task .note {
+  padding: 12px;
+  padding-left: 50px;
+  border-left: 2px solid #777;
+  min-height: 66px;
+}
+#ActivitiesPage .activityContainer .activityDiv .attachment-wrap {
+  position: relative;
+  background: #f2f2f2;
+  padding: 0;
+  margin: 3px 5px 3px 0;
+  border-bottom: 1px solid #ccc;
+  border-radius: 2px;
+  display: inline-block;
+  height: 33px;
+  vertical-align: middle;
+  width: 175px!important;
+}
+#ActivitiesPage .activityContainer .activityDiv .attachment-wrap:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-width: 0 10px 10px 0;
+  border-style: solid;
+  border-color: #fff #fff #ccc #ccc;
+}
+#ActivitiesPage .activityContainer .activityDiv .attachment {
+  height: auto;
+  border: 0;
+  margin: 0;
+  width: 100%;
+  text-align: left;
+  padding: 7px 12px 5px 32px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -ms-text-overflow: ellipsis;
+  word-wrap: normal;
+  background-color: #f2f2f2;
+  background-repeat: no-repeat;
+  background-position: 8px 8px;
+  background-image: url(https://cdn.webcetera.com/CommonResources/EZLynx/Shared/images/mimetype/unknown.gif);
+}
+#ActivitiesPage .activityContainer .activityDiv .attachment[value$='.wav'],
+#ActivitiesPage .activityContainer .activityDiv .attachment[value$='.mp3'] {
+  background-image: url(https://cdn.webcetera.com/CommonResources/EZLynx/Shared/images/mimetype/audio.gif);
+}
+#ActivitiesPage .activityContainer .activityDiv .attachment[value$='.bmp'],
+#ActivitiesPage .activityContainer .activityDiv .attachment[value$='.gif'],
+#ActivitiesPage .activityContainer .activityDiv .attachment[value$='.png'],
+#ActivitiesPage .activityContainer .activityDiv .attachment[value$='.jpg'],
+#ActivitiesPage .activityContainer .activityDiv .attachment[value$='.jpeg'] {
+  background-image: url(https://cdn.webcetera.com/CommonResources/EZLynx/Shared/images/mimetype/bmp.gif);
+}
+#ActivitiesPage .activityContainer .activityDiv .attachment[value$='.doc'],
+#ActivitiesPage .activityContainer .activityDiv .attachment[value$='.docx'] {
+  background-image: url(https://cdn.webcetera.com/CommonResources/EZLynx/Shared/images/mimetype/doc.gif);
+}
+#ActivitiesPage .activityContainer .activityDiv .attachment[value$='.xls'],
+#ActivitiesPage .activityContainer .activityDiv .attachment[value$='.csv'],
+#ActivitiesPage .activityContainer .activityDiv .attachment[value$='.xlsx'] {
+  background-image: url(https://cdn.webcetera.com/CommonResources/EZLynx/Shared/images/mimetype/excel.gif);
+}
+#ActivitiesPage .activityContainer .activityDiv .attachment[value$='.pdf'] {
+  background-image: url(https://cdn.webcetera.com/CommonResources/EZLynx/Shared/images/mimetype/pdf.gif);
+}
+#ActivitiesPage .activityContainer .activityDiv .attachment[value$='.msg'] {
+  background-image: url(https://cdn.webcetera.com/CommonResources/EZLynx/Shared/images/mimetype/outlook.gif);
+}
+#ActivitiesPage .activityContainer .activityDiv .attachment[value$='.txt'],
+#ActivitiesPage .activityContainer .activityDiv .attachment[value$='.xml'] {
+  background-image: url(https://cdn.webcetera.com/CommonResources/EZLynx/Shared/images/mimetype/Text.gif);
+}
+#ActivitiesPage .activityContainer .activityDiv .attachment[value$='.zip'],
+#ActivitiesPage .activityContainer .activityDiv .attachment[value$='.rar'] {
+  background-image: url(https://cdn.webcetera.com/CommonResources/EZLynx/Shared/images/mimetype/zip.gif);
+}
+#ActivitiesPage .activityContainer {
+  position: relative;
+  z-index: 1;
+}
+#ActivitiesPage .activityContainer .activityDiv {
+  display: block;
+  position: relative;
+  background: #fff;
+  border-radius: 1px;
+  border: 0;
+  z-index: 1;
+}
+#ActivitiesPage .activityContainer .activityDiv:hover,
+#ActivitiesPage .activityContainer .activityDiv:focus {
+  outline: 0;
+}
+#ActivitiesPage .activityContainer .activityDiv .noteText {
+  display: block;
+  margin-right: 100px;
+  max-width: 1020px;
+}
+#ActivitiesPage .activityContainer .activityDiv .noteText > div {
+  display: inline;
+}
+#ActivitiesPage .activityContainer .activityDiv .noteText button.btn-link {
+  padding: 0 0 3px;
+}
+#ActivitiesPage .activityContainer .activityDiv .noteTitle {
+  color: #222;
+  font-weight: bold;
+  margin: 0 80px 0 0;
+}
+#ActivitiesPage .activityContainer .activityDiv .notePreview {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -ms-text-overflow: ellipsis;
+  word-wrap: normal;
+  overflow: hidden;
+  display: inline-block;
+  max-width: 95%;
+  vertical-align: bottom;
+  line-height: 16px;
+}
+#ActivitiesPage .activityContainer .activityDiv div.noteDateTime {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  width: 12px;
+  color: #999;
+  text-align: center;
+}
+#ActivitiesPage .activityContainer .activityDiv div.noteDateTime:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -0.25em;
+}
+#ActivitiesPage .activityContainer .activityDiv div.noteDateTime div {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 11px;
+  font-size: 1.1rem;
+}
+#ActivitiesPage .activityContainer .activityDiv div.noteDateTime div .noteDate,
+#ActivitiesPage .activityContainer .activityDiv div.noteDateTime div .noteTime {
+  display: block;
+}
+#ActivitiesPage .activityContainer .activityDiv div.noteDateTime div .noteTime {
+  font-size: 12px;
+}
+#ActivitiesPage .activityFooter {
+  position: relative;
+  background: #fff;
+  margin: 3px 0 0;
+  *zoom: 1;
+}
+#ActivitiesPage .activityFooter:before,
+#ActivitiesPage .activityFooter:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+#ActivitiesPage .activityFooter:after {
+  clear: both;
+}
+#ActivitiesPage .activityFooter button {
+  font-size: 11px;
+  font-size: 1.1rem;
+  line-height: 11px;
+  line-height: 1.1rem;
+  padding: 0;
+  margin-right: 18px;
+  height: auto;
+}
+#ActivitiesPage .activityFooter button .icon-add-note {
+  display: inline-block;
+  font-size: 11px;
+  font-size: 1.1rem;
+  line-height: 11px;
+  line-height: 1.1rem;
+  color: #777;
+}
+#ActivitiesPage .activityFooter .watchers {
+  color: #aaa;
+  font-size: 11px;
+  font-size: 1.1rem;
+  float: right;
+  max-width: 50%;
+  text-align: right;
+}
+#ActivitiesPage .activityFooter .watchers label {
+  display: inline-block;
+  font-size: 11px;
+  font-size: 1.1rem;
+  cursor: text;
+}
+#ActivitiesPage .activityFooter .watchers .watcherList {
+  display: inline;
+  line-height: 12px;
+  line-height: 1.2rem;
+  color: #555;
+  margin-left: 3px;
+  border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+}
+#ActivitiesPage .activityFooter .watchers .addFollower {
+  margin-right: 5px;
+}
+#ActivitiesPage .activityFooter .watchers .addFollower a:hover {
+  color: #4976bb;
+}
+#ActivitiesPage .activityFooter .watchers .addFollower i.icon-plus {
+  margin-left: 3px;
+}
+#ActivitiesPage .activityContainer .activityDiv {
+  max-width: 1200px;
+  min-width: 700px;
+}
+#ActivitiesPage .ApplicantActivity .activityDiv,
+#ActivitiesPage .SystemActivity .activityDiv {
+  background: transparent;
+  padding: 0;
+  border: 0;
+}
+#ActivitiesPage .ApplicantActivity .activityDiv div,
+#ActivitiesPage .SystemActivity .activityDiv div {
+  border: 0!important;
+}
+#ActivitiesPage .ApplicantActivity .activityDiv .firstNote,
+#ActivitiesPage .SystemActivity .activityDiv .firstNote {
+  background: transparent;
+  color: #555;
+  padding: 0 0 0 12px;
+  border: 0;
+}
+#ActivitiesPage .ApplicantActivity .activityDiv .firstNote small,
+#ActivitiesPage .SystemActivity .activityDiv .firstNote small {
+  display: inline-block;
+}
+#ActivitiesPage .ApplicantActivity .activityDiv .firstNote:before,
+#ActivitiesPage .SystemActivity .activityDiv .firstNote:before,
+#ActivitiesPage .ApplicantActivity .activityDiv .firstNote:after,
+#ActivitiesPage .SystemActivity .activityDiv .firstNote:after {
+  border: 0;
+}
+#ActivitiesPage button.showMore {
+  margin-top: 10px;
+}
+.activities .activity {
+  position: relative;
+  background: #f2f2f2;
+  color: #555;
+  padding: 12px;
+  padding-left: 50px;
+  border-bottom: 1px solid #ccc;
+}
+.activities .activity:before {
+  font-family: 'EZAwesome';
+  position: absolute;
+  top: 9px;
+  left: 9px;
+  font-size: 15px;
+  line-height: 26px;
+  text-align: center;
+  height: 26px;
+  width: 26px;
+  border-radius: 13px;
+  background: #bbb;
+  color: #fff;
+}
+.activities .activityUser:before {
+  content: "\e610";
+}
+.activities .activitySystem:before {
+  content: '\e6f2';
+}
+span[ez-discussion-title-popover]:hover {
+  text-decoration: underline;
+}

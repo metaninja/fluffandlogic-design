@@ -1,0 +1,142 @@
+<div class="modal fade in" id="NewProductFamily" tabindex="-1" role="dialog" aria-hidden="false">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content modal-md">
+            <div class="modal-header modal-primary">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title" id="NewProductFamilyLabel">New Product Category</h4>
+            </div>
+            <div class="modal-body">
+
+                    <table class="table table-hover table-editable">
+                        <thead>
+                        <tr>
+                            <th>
+                                Product Category
+                            </th>
+                            <th>
+                                <button class="btn btn-link btn-add pull-right">
+                                    <i class="fa fa-plus-circle"></i> Add
+                                </button>
+                            </th>
+                        </tr>
+                        </thead>
+                        <tbody>
+
+                        <!-- Add Phone Number -->
+                        <tr class="add-row" style="display: none; background-color: rgba(52, 152, 219, 0.0980392);">
+                            <td>
+                                <input type="text" class="form-control" placeholder="Product category">
+                            </td>
+                            <td class="close-add-row">
+                                <button class="btn btn-danger btn-link">Cancel</button>
+                                <button class="btn btn-success"><i class="fa fa-save"> Save</i></button>
+                            </td>
+
+                        </tr>
+                        <!-- Add Phone Number -->
+
+                        <!-- Edit Phone Number -->
+                        <tr class="edit-row" style="display: none; background-color: rgba(39, 174, 96, 0.0980392);">
+                            <td>
+                                <input type="text" class="form-control" value="Product category">
+                            </td>
+
+                            <td class="close-edit-row">
+                                <button class="btn btn-danger btn-link">Cancel</button>
+                                <button class="btn btn-success"><i class="fa fa-save"> Save</i>
+                                </button>
+                            </td>
+
+                        </tr>
+                        <!-- Edit Phone Number -->
+
+                        <tr>
+                            <td>Snacks</td>
+                            <td>
+                                <div class="row-actions">
+                                    <button class="btn btn-link btn-edit">
+                                        <i class="fa fa-pencil"></i> Edit
+                                    </button>
+
+                                    <button class="btn btn-link btn-delete" data-toggle="modal" data-target="#DeleteForwardingCallModal">
+                                        <i class="fa fa-trash-o"></i> Delete
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Hygiene</td>
+                            <td>
+                                <div class="row-actions">
+                                    <button class="btn btn-link btn-edit">
+                                        <i class="fa fa-pencil"></i> Edit
+                                    </button>
+
+                                    <button class="btn btn-link btn-delete" data-toggle="modal" data-target="#DeleteForwardingCallModal">
+                                        <i class="fa fa-trash-o"></i> Delete
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>General Items</td>
+                            <td>
+                                <div class="row-actions">
+                                    <button class="btn btn-link btn-edit">
+                                        <i class="fa fa-pencil"></i> Edit
+                                    </button>
+
+                                    <button class="btn btn-link btn-delete" data-toggle="modal" data-target="#DeleteForwardingCallModal">
+                                        <i class="fa fa-trash-o"></i> Delete
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">I'm Done</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    //-- Blocked Reason Modal --
+    $('.add-row').hide();
+    $('.edit-row').hide();
+
+    $('.btn-add').click(function() {
+        $('.add-row').show();
+        $('.edit-row').hide();
+    });
+
+    var editRow = $('.edit-row').html();
+
+    $('.btn-edit').click(function() {
+        //Remove any existing Edit Rows from the DOM
+        //Don't want duplicates
+        $('.edit-row').remove();
+
+        //Hide the Add Row if it exists
+        $('.add-row').hide();
+        //Dynamically add Edit Row to the DOM
+        $(this).parents('tr').addClass('.row-being-edited')
+                .after('<tr class="edit-row">' + editRow + '</tr>');
+        $('.row-being-edited').hide();
+
+        // Add the hide Edit Row click action *after*
+        // The row has been added to the DOM.
+        $('.close-edit-row button').click(function() {
+            $('.edit-row').hide();
+            $('.row-being-edited').removeClass('.row-being-edited');
+        });
+
+    });
+
+    $('.close-add-row button').click(function() {
+        $('.add-row').hide();
+    });
+</script>

@@ -1,0 +1,59 @@
+<h4 class="section-header">
+    <a data-toggle="collapse" href="#geofence-settings">
+        Geofence settings
+        <div class="pull-right">
+            <span class="toggle-hide"></span>
+            <span class="toggle-show"></span>
+        </div>
+    </a>
+</h4>
+
+<div class="collapse in" id="geofence-settings">
+    <div class="row">
+        <div class="col-md-12">
+
+            <label class="rounded-check" for="rounded-check-reason">
+                <input type="checkbox" name="check" id="rounded-check-reason" value="None" checked="">
+                <span class="icon"></span>
+                <a href="#" data-toggle="tooltip" title="" data-original-title="Sets the geofence as active">Active</a>
+            </label>
+
+            <label class="rounded-check" for="rounded-check-reason-1">
+                <input type="checkbox" name="check" id="rounded-check-reason-1" value="None" checked="">
+                <span class="icon"></span>
+                <a href="#" data-toggle="tooltip" title="" data-original-title="Marks the geofence private so that only you see this geofence.">Private Geofence</a>
+            </label>
+        </div>
+    </div>
+
+    <p>&nbsp;</p>
+
+
+    <div class="row">
+
+        <div class="col-md-12">
+            <div class="form-group">
+                <label for="geofence-date-range" class="control-label">Date Range</label>
+                <div class="input-group">
+                    <input type="text" id="geofence-date-range" class="form-control">
+                    <span class="input-group-addon"><i class="fa fa-calendar"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+    (function() {
+        $('#geofence-date-range').daterangepicker({
+            timePicker: true,
+            format: 'MM/DD/YYYY h:mm A',
+            timePickerIncrement: 30,
+            timePicker12Hour: true,
+            timePickerSeconds: false
+        });
+    })();
+</script>

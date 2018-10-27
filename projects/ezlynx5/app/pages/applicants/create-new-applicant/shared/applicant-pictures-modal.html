@@ -1,0 +1,39 @@
+<div class="modal fade" id="applicantPicturesModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Photos</h5>
+                <a href="javascript:void(0)" class="btn btn-link" data-dismiss="modal" aria-label="Close">
+                    <i class="linearicon-cross linearicon-lg" aria-hidden="true"></i>
+                </a>
+            </div>
+
+            <div class="modal-body">
+                <ul class="flex-space-between">
+                    <li>
+                        <a href="#">
+                            <img class="applicant-picture selected-picture" src="images/applicant-pictures/applicant-1.jpg">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <img class="applicant-picture" src="images/applicant-pictures/applicant-2.jpg">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <img class="applicant-picture" src="images/applicant-pictures/applicant-3.png">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" onclick="updateApplicantPicture()">Add Photo</button>
+            </div>
+        </div>
+    </div>
+</div>

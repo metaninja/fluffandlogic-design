@@ -1,0 +1,64 @@
+<div class="workspace-title">
+    <h4 class="mb-0" style="color: white;">Add Note</h4>
+
+    <div>
+        <a href="javascript:void(0)" class="note-icon mr-2" onclick="toggleWorkspacePinned()">
+            <i class="linearicon-pushpin linearicon-lg" aria-hidden="true"></i>
+        </a>
+
+        <a href="javascript:void(0)" class="note-icon" onclick="collapseWorkspace(); hideAddNoteSection();">
+            <i class="linearicon-cross2 linearicon-lg" aria-hidden="true"></i>
+        </a>
+    </div>
+</div>
+
+<div class="workspace-body">
+    <div class="input-group">
+        <input type="text" class="form-control" placeholder="Member Agency">
+        <span class="input-group-addon" id="basic-addon2"><i class="linearicon-magnifier"></i></span>
+    </div>
+
+    <div class="input-group">
+        <input type="text" class="form-control" placeholder="Discussion Title">
+        <span class="input-group-addon" id="basic-addon2"><i class="linearicon-magnifier"></i></span>
+    </div>
+
+    <div class="add-note-section">
+        <textarea class="form-control" placeholder="Type your note here..." title="Note Description" rows="4" maxlength="1000"></textarea>
+
+        <div class="note-options">
+            <a href="javascript:void(0)" class="note-icon" title="Add task" onclick="toggleAddTask.call(this)">
+                <i class="linearicon-clipboard-check"></i>
+            </a>
+
+            <a href="javascript:void(0)" class="note-icon" title="Add labels">
+                <i class="linearicon-tag"></i>
+            </a>
+
+            <a href="javascript:void(0)" class="note-icon" title="Toggle sticky note">
+                <i class="linearicon-pushpin" aria-hidden="true"></i>
+            </a>
+
+            <a href="javascript:void(0)" class="note-icon" title="Add attachments">
+                <i class="linearicon-paperclip" aria-hidden="true"></i>
+            </a>
+
+            <a href="javascript:void(0)" class="note-icon" title="Associate to a policy">
+                <i class="linearicon-folder" aria-hidden="true"></i>
+            </a>
+
+            <a href="javascript:void(0)" class="note-icon" title="Followers">
+                <i class="linearicon-users2" aria-hidden="true"></i> 1
+            </a>
+
+            <a href="javascript:void(0)" class="note-icon" title="Create opportunity">
+                <i class="linearicon-briefcase" aria-hidden="true"></i>
+            </a>
+
+            <div>
+                <button class="btn btn-link btn-sm">Reset</button>
+                <button class="btn btn-primary btn-sm">Save</button>
+            </div>
+        </div>
+    </div>
+</div>

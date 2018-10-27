@@ -1,0 +1,93 @@
+<div class="modal fade" id="switch-applicants-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Switch Applicants</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <i class="linearicon-cross linearicon-lg" aria-hidden="true"></i>
+                </button>
+            </div>
+
+            <div class="modal-body">
+                <p>Are you sure you want to switch applicants?</p>
+
+                <div class="row no-gutters">
+                    <div class="col-md-5">
+                        <div class="card mb-3">
+                            <div class="card-header">Applicant</div>
+
+                            <div class="card-block mt-3">
+                                <div>
+                                    <strong>Name</strong>: Marie Bergman
+                                </div>
+
+                                <div>
+                                    <strong>DOB</strong>: 05/14/1980
+                                </div>
+
+                                <div>
+                                    <strong>SSN</strong>: 111-111-1111
+                                </div>
+
+                                <div>
+                                    <strong>DL#</strong>: 6541265
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-5 ml-auto">
+                        <div class="card mb-3">
+                            <div class="card-header">Co-Applicant</div>
+
+                            <div class="card-block mt-3">
+                                <div>
+                                    <strong>Name</strong>: Lenny Bergman
+                                </div>
+
+                                <div>
+                                    <strong>DOB</strong>: 04/20/1979
+                                </div>
+
+                                <div>
+                                    <strong>SSN</strong>: 222-222-2222
+                                </div>
+
+                                <div>
+                                    <strong>DL#</strong>: 4683546
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="switchApplicants()">Switch and Re-Submit</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function scrollToTopOfThePage() {
+        $('.ez-global-container').animate({
+            scrollTop: 0,
+        });
+    }
+
+    function switchApplicants() {
+        $(".loading-icon").show();
+        $(".ez-page-content main").css("opacity", ".3");
+        scrollToTopOfThePage();
+
+        localStorage.setItem("applicantCoAapplicantSwitched", true);
+
+        setTimeout(function() {
+            $(".loading-icon").hide();
+            $(".ez-page-content main").css("opacity", "1");
+            $(".js-resubmitted-alert").show();
+        }, 1000);
+    }
+</script>

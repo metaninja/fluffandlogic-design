@@ -1,0 +1,419 @@
+<title>Grievance Admin</title>
+
+
+<!-- begin: Page Heading -->
+<div class="container-fluid page-header">
+    <div class="container">
+        <div class="pull-left">
+
+            <div class="page-header-icon">
+                <span class="fa fa-file-text fa-2x"></span>
+            </div>
+
+            <h2>Grievance Admin</h2>
+
+        </div>
+
+        <div class="page-header-btn-group pull-right">
+            <a class="btn btn-link" href="#/pages/manage/grievances/index.html">Cancel</a>
+            <a class="btn btn-success" href="#/pages/manage/grievances/index.html"><i class="fa fa-save"></i>&nbsp; Save</a>
+        </div>
+
+    </div>
+</div>
+<!-- end: Page Heading -->
+
+<!-- begin: Breadcrumb -->
+<div class="container-fluid breadcrumb-container">
+    <div class="container">
+        <ol class="breadcrumb">
+            <li>Admin</li>
+            <li>Grievance Admin</li>
+        </ol>
+    </div>
+</div>
+<!-- end: Breadcrumb -->
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+            <div class="section-header clearfix">
+                <h4>Grievance Form</h4>
+            </div>
+
+            <div class="form-group permissions-form-background section">
+
+                <div class="form-group">
+                    <!--<label for="GrievanceForm" class="required">Select Grievance Form</label>-->
+                    <div class="row">
+                        <div class="col-md-7">
+                            <div class="form-group">
+                                <select id="GrievanceForm" class="form-control select-grievance-form">
+                                    <option value="0" selected>-- Select a Grievance Form --</option>
+                                    <option value="1">Eyman Cook, AZ (INACTIVE FORM)</option>
+                                    <option value="2">Eyman Meadows, AZ Juvenile Detention Inmate Grievance Form
+                                    </option>
+                                    <option value="3">Eyman Rynning, AZ Sheriff's Office Correction Division Inmate
+                                        Grievance Form
+                                    </option>
+                                    <option value="4">Eyman SMU 1, AZ Sheriff's Office Correction Division Inmate
+                                        Grievance Form
+                                    </option>
+                                    <option value="5">Eyman SMU 2, AZ Inmate Grievance Form</option>
+                                    <option value="6">Florence East, AZ Inmate Grievance Form</option>
+                                    <option value="7">Florence Main, AZ Inmate Grievance Form</option>
+                                    <option value="8">Florence West, AZ Inmate Grievance Form</option>
+                                    <option value="9">Ft. Grant, AZ Inmate Grievance Form</option>
+                                    <option value="10">Globe, AZ Inmate Grievance Form</option>
+                                    <option value="11">Kingman Correctional, AZ Inmate Grievance Form</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <a href="../../../../../images/grievance_form.pdf" target="_blank"
+                               class="btn btn-primary btn-full-width grievance-form-preview">Preview</a>
+                        </div>
+                        <div class="col-md-3">
+                            <span class="grievance-form-version inline-center-vertically"><i class="fa fa-info-circle"></i> Form version: 3 2014-12-02</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-7">
+                                <label class="rounded-check grievance-form-active" for="formActive">
+                                    <input type="checkbox" id="formActive">
+                                    <span class="icon"></span>
+                                    <span class="active-disabled-message"><strong>Activate Form</strong></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="grievance-form-inactive" style="margin-top: 10px; margin-left: 5px;">
+                    <span class="active-disabled-message">
+                        <i class="fa fa-warning" style="color: orange;"></i> &nbsp;
+                        <strong>Form cannot be activated unless each level has assigners and processors.</strong>
+                    </span>
+                </div>
+
+
+            </div>
+        </div>
+
+
+        <div class="col-md-10 col-md-offset-1 grievance-workflow">
+            <fieldset>
+                <legend class="escalation-level">
+
+                    <ul class="pagination">
+                        <li class="title">Escalation Level:</li>
+                        <li class="active"><a href="#">0</a></li>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                    </ul>
+                </legend>
+
+                <div class="grievance-workflow-settings">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="threshold-nearing">Show "Days in queue" in <span
+                                        class="brand-warning">orange</span> after:</label>
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <input type="number" class="form-control" id="threshold-nearing">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <select class="form-control">
+                                            <option>hours</option>
+                                            <option selected>days</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="form-inline">
+                                <div class="grievance-auto-assign">
+                                    <label for="auto-assign">Auto assign to this processor:</label>
+                                    <select class="form-control" id="auto-assign">
+                                        <option>-- Select a processor --</option>
+                                        <option>Avanthi Nalam</option>
+                                        <option>Keith Masten</option>
+                                        <option>Mark Goza</option>
+                                        <option>Slade Corbin</option>
+                                        <option>Keith Masten</option>
+                                        <option>Jonathan Masters</option>
+                                        <option>Jack Winstrom</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <label for="threshold-past">Show "Days in queue" in <span class="brand-danger">red</span>
+                                after:</label>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <input type="number" class="form-control" id="threshold-past">
+                                </div>
+                                <div class="col-md-6">
+                                    <select class="form-control">
+                                        <option>hours</option>
+                                        <option selected>days</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row">
+
+                    <div class="col-md-4">
+
+                        <h4 class="section-header">
+                            Assigners
+
+                            <i class="fa fa-info-circle info" data-toggle="tooltip"
+                               title="Assigns grievances to processors"></i>
+
+                            <span class="section-header-action pull-right">
+                                <a class="btn btn-link" data-toggle="modal" data-target="#manageUsersModal">
+                                    Change
+                                </a>
+                            </span>
+                        </h4>
+
+
+                        <hr/>
+
+                        <table class="table table-grievance-admin">
+                            <tbody>
+                            <tr>
+                                <td><i class="fa fa-user"></i></td>
+                                <td>Avanthi Nalam</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa fa-user"></i></td>
+                                <td>Keith Masten</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa fa-users"></i></td>
+                                <td><a data-toggle="modal" data-target="#editUserGroupsModal">Grievance Pod A</a></td>
+                            </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+
+
+                    <div class="col-md-4">
+
+                        <h4 class="section-header">
+                            Processors
+
+                            <i class="fa fa-info-circle info" data-toggle="tooltip"
+                               title="Handles grievance from inmate"></i>
+
+                            <span class="section-header-action pull-right">
+                                <a class="btn btn-link" data-toggle="modal" data-target="#manageUsersModal">
+                                    Change
+                                </a>
+                            </span>
+                        </h4>
+
+                        <hr/>
+
+                        <table class="table table-grievance-admin">
+                            <tbody>
+                            <tr>
+                                <td><i class="fa fa-user"></i></td>
+                                <td>Avanthi Nalam</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa fa-user"></i></td>
+                                <td>Slade Corbin</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa fa-user"></i></td>
+                                <td>Keith Masten</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa fa-user"></i></td>
+                                <td>Jonathan Masters</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa fa-user"></i></td>
+                                <td>Jack Winstrom</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa fa-users"></i></td>
+                                <td><a data-toggle="modal" data-target="#editUserGroupsModal">Grievance Pod A</a></td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa fa-users"></i></td>
+                                <td><a data-toggle="modal" data-target="#editUserGroupsModal">Grievance Analysis</a></td>
+                            </tr>
+                            </tbody>
+                        </table>
+
+
+                    </div>
+
+                    <div class="col-md-4">
+
+                        <h4 class="section-header">
+                            View Only <i class="fa fa-info-circle info" data-toggle="tooltip"
+                                         title="Can view but not edit grievances"></i>
+
+                            <span class="section-header-action pull-right">
+                                <a class="btn btn-link" data-toggle="modal" data-target="#manageUsersModal">
+                                    Change
+                                </a>
+                            </span>
+                        </h4>
+
+                        <hr/>
+
+                        <table class="table table-grievance-admin">
+                            <tbody>
+                            <tr>
+                                <td><i class="fa fa-user"></i></td>
+                                <td>Avanthi Nalam
+                                <td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa fa-user"></i></td>
+                                <td>Keith Masten</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa fa-user"></i></td>
+                                <td>Mark Goza</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa fa-users"></i></td>
+                                <td><a data-toggle="modal" data-target="#editUserGroupsModal">Grievance Pod A</a></td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa fa-users"></i></td>
+                                <td><a data-toggle="modal" data-target="#editUserGroupsModal">Grievance Analysis</a></td>
+                            </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+
+                </div>
+            </fieldset>
+
+        </div>
+
+    </div>
+
+    <div class="row">
+
+        <div class="col-md-10 col-md-offset-1">
+
+            <hr class="divider"/>
+
+            <div class="page-header-btn-group pull-right">
+                <a class="btn btn-link" href="#/pages/manage/grievances/index.html">Cancel</a>
+                <a class="btn btn-success" href="#/pages/manage/grievances/index.html"><i class="fa fa-save"></i>&nbsp; Save</a>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+<div class="bff-include" data-src="pages/manage/grievances/admin/modal-users.html"></div>
+<div class="bff-include" data-src="pages/manage/grievances/admin/modal-new-group.html"></div>
+<div class="bff-include" data-src="pages/manage/grievances/admin/modal-edit-group.html"></div>
+
+
+
+<!-- Hide/show blocked locations -->
+<script>
+
+    $('.select-entity a').click(function () {
+        $('.select-entity li').removeClass('active');
+        $(this).parent('li').addClass('active');
+        if ($(this).hasClass('select-entity-users')) {
+            $('.add-entity-users').show();
+            $('.add-entity-groups').hide();
+        }
+        else if ($(this).hasClass('select-entity-groups')) {
+            $('.add-entity-users').hide();
+            $('.add-entity-groups').show();
+        }
+
+    });
+
+    $('.add-entity-users').show();
+    $('.add-entity-groups').hide();
+
+    $('.btn-add-users').click(function () {
+        $('.table-grievance-admin').show();
+        $('.grievance-form-inactive').hide();
+        $('.grievance-form-active input').removeAttr('disabled');
+    });
+
+    $('.btn-add').click(function () {
+        $('.add-row').show();
+        $('.manage-groups-add-users').hide();
+        $('.manage-groups-no-users').hide();
+    });
+
+    $('.close-add-row button').click(function () {
+        $('.add-row').hide();
+        $('.manage-groups-no-users').show();
+    });
+
+    $('.select-grievance-form').change(function () {
+        $('.grievance-form-active').show();
+        if ($(this).val() === '0') {
+            $('.grievance-workflow').hide();
+        } else if ($(this).val() === '1') {
+            $('.grievance-form-inactive').show();
+            $('.grievance-form-version').show();
+            $('.grievance-workflow').show();
+            $('.table-grievance-admin').hide();
+            $('.grievance-form-active input').attr('disabled', 'disabled');
+        } else {
+            $('.grievance-form-version').show();
+            $('.grievance-form-inactive').hide();
+            $('.grievance-workflow').show();
+            $('.table-grievance-admin').show();
+        }
+    });
+
+    $('.table-grievance-groups tr:not(".add-row")').click(function () {
+        $('.manage-groups-add-users').show();
+        $('.manage-groups-no-users').hide();
+    });
+
+    $(document).ready(function () {
+        $('.grievance-form-active').hide();
+        $('.signature-date').datetimepicker();
+        $('.add-row').hide();
+        $('.grievance-form-inactive').hide();
+        $('.manage-groups-add-users').hide();
+        $('.manage-groups-no-users').show();
+        $('.grievance-workflow').hide();
+        $('.grievance-form-version').hide();
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+</script>

@@ -1,0 +1,82 @@
+<div class="specify-schedule-container">
+    <table class="table table-date specify-schedule" data-toggle="modal" data-target="#addScheduleModal">
+        <tbody></tbody>
+    </table>
+</div>
+
+
+<script>
+    //Use this function to generate time slots of varying lengths e.g. 5min, 20 min, 30 min
+    //To see how the UI would react to shorter and more numerous or longer and fewer time slots.
+    var timeSlots = function() {
+        var startTime = 8; //8:00
+        var endTime = 22; //20:00
+        var increment = 30; //minutes
+        var hour = 60; //minutes
+        var slots = hour/increment;
+        var hourTemplate = '';
+
+        for (var time = startTime; time <=endTime; time++ )
+        {
+            for (var i=0; i<slots; i++) {
+                var minutes = i*increment;
+                slotTime = (time < 10 ? "0" + time : time) + ":" + (minutes < 10 ? "0" + minutes : minutes);
+
+                hourTemplate =  '<tr data-toggle="modal" data-target="#apptTimeModal">' +
+                                '<td class="hour">' + slotTime + '</td>' +
+                                '<td></td>' +
+                                '</tr>';
+
+                $('.table-date tbody').append(hourTemplate);
+
+            }
+        }
+    };
+
+    var unavailableSlots = function() {
+        var unavailable = [ {text:'', time: 2,    duration: 2},
+                            {text:'', time: 7,    duration: 2},
+                            {text:'', time: 15,   duration: 1},
+                            {text:'', time: 23,   duration: 3}];
+
+
+        for (var i=0; i < unavailable.length; i++) {
+            for (var j=0; j<unavailable[i].duration; j++) {
+                var slot = '.specify-schedule tr:nth-child(' + (unavailable[i].time + j) + ')';
+                $(slot).addClass('unavailable');
+            }
+
+            var text = '.specify-schedule tr:nth-child(' + unavailable[i].time + ') td:nth-child(2)';
+            $(text).text(unavailable[i].text);
+        }
+
+
+        /*
+        $('.specify-schedule tr:nth-child(2)').addClass('unavailable');
+        $('.specify-schedule tr:nth-child(2) td:nth-child(2)').text('');
+        $('.specify-schedule tr:nth-child(3)').addClass('unavailable');
+
+        $('.specify-schedule tr:nth-child(7)').addClass('unavailable');
+        $('.specify-schedule tr:nth-child(7) td:nth-child(2)').text('Visitor Saul Goodman with Inmate Mike Ehrmantraut');
+
+        $('.specify-schedule tr:nth-child(15)').addClass('unavailable');
+        $('.specify-schedule tr:nth-child(15) td:nth-child(2)').text('');
+
+        $('.specify-schedule tr:nth-child(23)').addClass('unavailable');
+        $('.specify-schedule tr:nth-child(23) td:nth-child(2)').text('Visitor Nick Knight with Inmate Francois LaCroix');
+        $('.specify-schedule tr:nth-child(24)').addClass('unavailable');
+        $('.specify-schedule tr:nth-child(25)').addClass('unavailable');
+        */
+    };
+
+
+    timeSlots();
+    unavailableSlots(); //Future proposed functionality.
+
+    bff.selectedRow = 0;
+
+    $('.specify-schedule tr').click(function(e) {
+        bff.selectedRow = e.target.parentElement.rowIndex;
+    });
+
+</script>

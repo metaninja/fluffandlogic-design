@@ -1,0 +1,116 @@
+<title>Inmate Balance</title>
+
+<!-- Page Header -->
+<div class="container-fluid page-header">
+    <div class="container">
+        <div class="pull-left">
+            <div class="page-header-icon">
+                <span class="fa fa-bank fa-2x"></span>
+            </div>
+
+            <h2>Inmate Balance</h2>
+        </div>
+    </div>
+</div>
+
+<div class="container no-breadcrumb">
+    <!-- Search -->
+    <div class="row">
+        <div class="col-md-2">
+            <h4>
+                Inmate Info
+            </h4>
+        </div>
+        <div class="col-md-5">
+            <label>
+                First Name
+            </label>
+
+            <input type="text" class="form-control" placeholder="First name">
+        </div>
+        <div class="col-md-5">
+            <div class="form-group">
+                <label>
+                    Last Name
+                </label>
+
+                <input type="text" class="form-control" placeholder="Last name">
+            </div>
+        </div>
+        <div class="col-md-5 col-md-offset-2">
+            <div class="form-group">
+                <label>
+                    Custody Account
+                </label>
+
+                <input type="text" class="form-control" placeholder="Custody account number">
+            </div>
+        </div>
+        <div class="col-md-5">
+            <div class="form-group">
+                <label>
+                    PIN
+                </label>
+
+                <input type="text" class="form-control" placeholder="PIN">
+            </div>
+        </div>
+        <div class="col-md-5 col-md-offset-2">
+            <div class="form-group">
+                <label>
+                    Status
+                </label>
+
+                <select class="form-control">
+                    <option>Active</option>
+                    <option>Inactive</option>
+                </select>
+            </div>
+        </div>
+        <div class="col-md-5">
+            <div class="form-group">
+                <label>Debit Balance ($)</label>
+
+                <div class="input-group">
+                    <div class="input-group-btn">
+                      <div class="search-criteria-dropdown-checkbox dropdown-checkbox dropdown">
+                        <button class="dropdown-checkbox-toggle input-group-addon" data-toggle="dropdown" href="#">Search Range</button>
+                            <div class="dropdown-checkbox-content">
+                                <ul class="dropdown-checkbox-menu">
+                                    <li>
+                                        <div class="layout">
+                                            <input type="checkbox" id="340674634438.2337" class="search-type-call"><label for="340674634438.2337">Above</label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="layout">
+                                            <input type="checkbox" id="498495386552.9741"><label for="498495386552.9741">Below</label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <input type="text" class="form-control search-text">
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-12">
+            <button class="btn btn-primary pull-right debit-transaction-search">Search Debit Balance</button>
+        </div>
+    </div>
+
+    <!-- Faked iFrame Results -->
+    <div class="row debit-transaction-results" style="display: none; margin-top: 15px;">
+        <div class="col-md-10">
+            <img src="../images/debit-balance-results.jpg">
+        </div>
+    </div>
+</div>
+
+<script>
+    $('.debit-transaction-search').click(function() {
+        $('.debit-transaction-results').show();
+    });
+</script>

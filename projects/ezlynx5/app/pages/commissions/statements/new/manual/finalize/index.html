@@ -1,0 +1,83 @@
+<div class="ez-main-content">
+    <div class="ez-page-header">
+        <div class="row">
+            <div class="col-md-6 ez-page-title">
+                <span class="ez-page-title-icon">
+                    <i class="linearicon-cash-dollar linearicon-3x"></i>
+                </span>
+
+                <h1 class="h1">
+                    <span class="subtitle">Commissions</span>
+                    Statements
+                </h1>
+            </div>
+
+            <div class="col-md-6 ez-page-actions"></div>
+        </div>
+    </div>
+
+    <div class="ez-page-body full-width">
+        <div class="ez-page-content content-container">
+            <header>
+                <div class="page-manual">
+                    <div class="bff-include" data-src="app/pages/commissions/statements/new/manual/shared/steps.html" data-page-number="3"></div>
+                </div>
+            </header>
+
+            <main class="row">
+                <div class="col-md-8">
+                     <h2 class="h4">Finalize Statement</h2>
+
+                    <div class="js-valid-callouts">
+                        <div class="bff-include" data-src="app/pages/commissions/statements/new/manual/finalize/shared/valid-callouts.html"></div>
+
+                        <div class="row mt3">
+                            <div class="alert alert-success col-md-7 bold">
+                                <div class="pull-left">
+                                    <i class="fa fa-check-circle fa-lg mr-1" aria-hidden="true"></i>All commissions matched.
+                                </div>
+
+                                <div class="pull-right">
+                                    <i class="fa fa-times fa-lg pointer" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="js-invalid-callouts hide-content">
+                        <div class="bff-include" data-src="app/pages/commissions/statements/new/manual/finalize/shared/invalid-callouts.html"></div>
+
+                        <div class="row mt3">
+                            <div class="col-md-7">
+                                You have unmatched commissions and unapplied cash. <a href="#/app/pages/commissions/statements/new/manual/add/index.html">Please fix these issues</a> before clicking Finish.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 clearfix">
+                        <div class="pull-left">
+                            <a href="#/app/pages/commissions/statements/" class="btn btn-outline-primary">Create Receipt</a>
+                            <a href="#/app/pages/commissions/statements/" class="btn btn-outline-primary ml2 js-mark-finalize-btn">Mark As Not Ready To Finalize</a>
+                        </div>
+
+                        <div class="pull-right">
+                            <a href="#/app/pages/commissions/statements/new/manual/add" class="btn btn-outline-primary mr-2">
+                                <i class="fa fa-arrow-left" aria-hidden="true"></i> Add & Approve Commissions
+                            </a>
+
+                            <a href="#/app/pages/commissions/statements/" class="btn btn-success js-finish-btn">Finish <i class="fa fa-check ml-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            <button class="btn absolute mt-5" onclick="toggleCallouts()">Click Here To Toggle Different Callouts</button>
+        </div>
+    </div>
+</div>
+
+<div class="bff-include hide-content js-cancel-modal" data-src="app/pages/commissions/statements/new/import/shared/cancel-modal.html"></div>
+
+<div class="bff-script" data-src="app/pages/commissions/javascript/main.js"></div>
+
+<div class="bff-script" data-src="app/pages/commissions/statements/new/manual/finalize/index.js"></div>

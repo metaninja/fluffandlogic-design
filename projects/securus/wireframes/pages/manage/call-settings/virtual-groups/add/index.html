@@ -1,0 +1,404 @@
+<title>Add/Edit Virtual Group</title>
+
+<!-- begin: Page Heading -->
+<div class="container-fluid page-header">
+    <div class="container">
+        <div class="pull-left">
+
+            <div class="page-header-icon">
+                <span class="fa fa-group fa-2x"></span>
+            </div>
+
+            <h2>Add Virtual Group</h2>
+
+        </div>
+
+        <div class="page-header-btn-group pull-right">
+            <a class="btn btn-link" href="#/pages/manage/call-settings/virtual-groups/index.html">Cancel</a>
+            <a class="btn btn-success" href="#/pages/manage/call-settings/virtual-groups/index.html"><i class="fa fa-save"></i>&nbsp; Save</a>
+        </div>
+
+    </div>
+</div>
+<!-- end: Page Heading -->
+
+<!-- begin: Breadcrumb -->
+<div class="container-fluid breadcrumb-container">
+    <div class="container">
+        <ol class="breadcrumb">
+            <li>Manage</li>
+            <li>Virtual Groups</li>
+            <li>Add Virtual Group</li>
+        </ol>
+    </div>
+</div>
+<!-- end: Breadcrumb -->
+
+<div class="container">
+
+    <div class="row">
+
+        <div class="col-md-10 col-md-offset-1">
+
+            <div class="section-header">
+                <h4><div class="step-style">1</div> Virtual group details</h4>
+
+                <a class="btn btn-danger pull-right section-header-action" data-toggle="modal" data-target="#deleteGroup">
+                    <i class="fa fa-times-circle"></i>&nbsp; Delete Virtual Group
+                </a>
+            </div>
+
+            <div class="form-group permissions-form-background">
+
+                <div class="row form-group">
+
+                    <div class="col-md-12">
+                        <div class="form-group no-margin-bottom">
+                            <label for="phone-number">Virtual Group Name</label>
+                            <span style="padding-left: 10px; font-weight: normal; font-size: 11px; color: #c0392b;">Required</span>
+                            <input type="email" class="form-control" id="phone-number" placeholder="">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="form-group no-margin-bottom">
+                    <label>Description</label>
+                    <textarea class="form-control" rows="2" placeholder=""></textarea>
+                    <div>Character limit: 255</div>
+                </div>
+
+                <div class="view-modified" style="margin-top: 15px;">Last modified 9/17/2014 at 12:03PM by jvalentine.
+                    <a href="#/pages/search/system-logs/index.html">
+                        <small>View change history &rarr;</small>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="col-md-8">
+
+                    <div class="row">
+
+                        <div class="col-md-12">
+
+                            <h4><div class="step-style">2</div> <span class="no-terminals-selected">8</span> Terminals
+                                <button class="btn btn-link pull-right heading-btn btn-add-terminal" data-toggle="modal" data-target="#addTerminals">
+                                    <span class="no-terminals-selected"><i class="fa fa-plus-circle"></i> &nbsp;Add Terminals</span>
+                                </button>
+                            </h4>
+
+                            <hr/>
+
+                            <div class="terminals-selected">
+                                <p>You have not selected any terminals to assign to this virtual group.</p>
+                                <p><a class="btn-add-terminal" data-toggle="modal" data-target="#addTerminals">Add Terminals &rarr;</a>
+                                </p>
+                            </div>
+
+                            <div class="no-terminals-selected">
+
+                                <table class="table table-hover table-editable table-virtual-groups">
+                                    <thead>
+                                    <tr>
+                                        <th>Terminal</th>
+                                        <th>Terminal Group</th>
+                                        <th>Active Terminal</th>
+                                        <th></th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td><a href="#/pages/manage/facility-and-sites/terminals/index.html">LP1</a>
+                                        </td>
+                                        <td><a href="#/pages/manage/facility-and-sites/terminal-groups/index.html">Primary</a>
+                                        </td>
+                                        <td><i class="fa fa-check brand-success"></i>
+                                        </td>
+                                        <td>
+                                            <div class="row-actions">
+                                                <button class="btn btn-link btn-delete" data-toggle="modal" data-target="#RemoveTerminal">
+                                                    <i class="fa fa-trash-o"></i> Remove
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#/pages/manage/facility-and-sites/terminals/index.html">LP2</a>
+                                        </td>
+                                        <td><a href="#/pages/manage/facility-and-sites/terminal-groups/index.html">Primary</a>
+                                        </td>
+                                        <td></td>
+                                        <td>
+                                            <div class="row-actions">
+                                                <button class="btn btn-link btn-delete" data-toggle="modal" data-target="#RemoveTermina">
+                                                    <i class="fa fa-trash-o"></i> Remove
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#/pages/manage/facility-and-sites/terminals/index.html">LP4</a>
+                                        </td>
+                                        <td><a href="#/pages/manage/facility-and-sites/terminal-groups/index.html">Primary</a>
+                                        </td>
+                                        <td><i class="fa fa-check brand-success"></i>
+                                        </td>
+                                        <td>
+                                            <div class="row-actions">
+                                                <button class="btn btn-link btn-delete" data-toggle="modal" data-target="#RemoveTermina">
+                                                    <i class="fa fa-trash-o"></i> Remove
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#/pages/manage/facility-and-sites/terminals/index.html">LP5</a>
+                                        </td>
+                                        <td><a href="#/pages/manage/facility-and-sites/terminal-groups/index.html">Primary</a>
+                                        </td>
+                                        <td><i class="fa fa-check brand-success"></i>
+                                        </td>
+                                        <td>
+                                            <div class="row-actions">
+                                                <button class="btn btn-link btn-delete" data-toggle="modal" data-target="#RemoveTermina">
+                                                    <i class="fa fa-trash-o"></i> Remove
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#/pages/manage/facility-and-sites/terminals/index.html">LP6</a>
+                                        </td>
+                                        <td><a href="#/pages/manage/facility-and-sites/terminal-groups/index.html">Primary</a>
+                                        </td>
+                                        <td><i class="fa fa-check brand-success"></i>
+                                        </td>
+                                        <td>
+                                            <div class="row-actions">
+                                                <button class="btn btn-link btn-delete" data-toggle="modal" data-target="#RemoveTermina">
+                                                    <i class="fa fa-trash-o"></i> Remove
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#/pages/manage/facility-and-sites/terminals/index.html">LP8</a>
+                                        </td>
+                                        <td><a href="#/pages/manage/facility-and-sites/terminal-groups/index.html">Main</a>
+                                        </td>
+                                        <td><i class="fa fa-check brand-success"></i>
+                                        </td>
+                                        <td>
+                                            <div class="row-actions">
+                                                <button class="btn btn-link btn-delete" data-toggle="modal" data-target="#RemoveTermina">
+                                                    <i class="fa fa-trash-o"></i> Remove
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#/pages/manage/facility-and-sites/terminals/index.html">LP10</a>
+                                        </td>
+                                        <td><a href="#/pages/manage/facility-and-sites/terminal-groups/index.html">Main</a>
+                                        </td>
+                                        <td><i class="fa fa-check brand-success"></i>
+                                        </td>
+                                        <td>
+                                            <div class="row-actions">
+                                                <button class="btn btn-link btn-delete" data-toggle="modal" data-target="#RemoveTermina">
+                                                    <i class="fa fa-trash-o"></i> Remove
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#/pages/manage/facility-and-sites/terminals/index.html">LP12</a>
+                                        </td>
+                                        <td><a href="#/pages/manage/facility-and-sites/terminal-groups/index.html">Main</a>
+                                        </td>
+                                        <td><i class="fa fa-check brand-success"></i>
+                                        </td>
+                                        <td>
+                                            <div class="row-actions">
+                                                <button class="btn btn-link btn-delete" data-toggle="modal" data-target="#RemoveTermina">
+                                                    <i class="fa fa-trash-o"></i> Remove
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    </tbody>
+                                </table>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-4">
+
+                    <h4><div class="step-style">3</div> Assigned Inmates <span class="no-inmate-selected">(12)</span>
+                        <button class="btn btn-link pull-right heading-btn btn-add-inmates" data-toggle="modal" data-target="#addInmatesVirtualGroups">
+                            <span class="no-inmate-selected"><i class="fa fa-pencil"></i> &nbsp;Manage</span>
+                        </button>
+                    </h4>
+
+                    <hr/>
+
+                    <div class="location-selected">
+                        <p>You have not selected any inmates to assign to this virtual group.</p>
+                        <p><a class="btn-add-inmates" data-toggle="modal" data-target="#addInmatesVirtualGroups">Assign Inmates &rarr;</a>
+                        </p>
+                    </div>
+
+                    <div class="no-inmate-selected">
+
+                        <div class="filter-search">
+                            <input type="text" class="form-control" placeholder="Search">
+                            <span class="fa fa-search filter-search-icon"></span>
+                        </div>
+
+                        <ul class="single-selected-location">
+                            <li>
+                                <a href="#/pages/search/inmates/profile/index.html">Louis Blair <span class="small text-muted">(98239283)</span></a>
+                            </li>
+                            <li>
+                                <a href="#/pages/search/inmates/profile/index.html">Toby Brown <span class="small text-muted">(23462727)</span></a>
+                            </li>
+                            <li>
+                                <a href="#/pages/search/inmates/profile/index.html">Austin Bryant <span class="small text-muted">(97689356)</span></a>
+                            </li>
+                            <li>
+                                <a href="#/pages/search/inmates/profile/index.html">Marion Castro <span class="small text-muted">(42346263)</span></a>
+                            </li>
+                            <li>
+                                <a href="#/pages/search/inmates/profile/index.html">Edgar Cross <span class="small text-muted">(12346788)</span></a>
+                            </li>
+                            <li>
+                                <a href="#/pages/search/inmates/profile/index.html">Tom Cunningham <span class="small text-muted">(78978692)</span></a>
+                            </li>
+                            <li>
+                                <a href="#/pages/search/inmates/profile/index.html">Andres Fletcher <span class="small text-muted">(24523467)</span></a>
+                            </li>
+                            <li>
+                                <a href="#/pages/search/inmates/profile/index.html">Ramiro Floyd <span class="small text-muted">(56795351)</span></a>
+                            </li>
+                            <li>
+                                <a href="#/pages/search/inmates/profile/index.html">Julio Francis <span class="small text-muted">(67897584)</span></a>
+                            </li>
+                            <li>
+                                <a href="#/pages/search/inmates/profile/index.html">Stewart George <span class="small text-muted">(84568456)</span></a>
+                            </li>
+                            <li>
+                                <a href="#/pages/search/inmates/profile/index.html">Cesar Glover <span class="small text-muted">(12341567)</span></a>
+                            </li>
+                            <li>
+                                <a href="#/pages/search/inmates/profile/index.html">Timothy Hawkins <span class="small text-muted">(56765463)</span></a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="row">
+
+        <div class="col-md-10 col-md-offset-1">
+
+            <hr class="divider" />
+
+            <div class="page-header-btn-group pull-right">
+                <a class="btn btn-link" href="#/pages/manage/call-settings/virtual-groups/index.html">Cancel</a>
+                <a class="btn btn-success" href="#/pages/manage/call-settings/virtual-groups/index.html"><i class="fa fa-save"></i>&nbsp; Save</a>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="bff-include" data-src="include/modal-assign-terminals-virtual-group.html"></div>
+
+<div class="bff-include" data-src="include/modal-assign-inmates-virtual-group.html"></div>
+
+<div class="bff-include" data-src="include/modal-delete-virtual-group.html"></div>
+
+<!-- Hide/show blocked locations -->
+<script>
+    $('document').ready(function() {
+
+        $('.btn-add-terminal').click(function() {
+
+            // Hide the select types
+            $('.modal-location-type').hide();
+
+            // Hide the selected types
+            $('.modal-selected-type').hide();
+
+            // Hide all non-used nav types
+            $('.facilities').hide();
+            $('.sites').hide();
+            $('.terminal-groups').hide();
+            $('.phone-numbers').hide();
+            $('.visit-types').hide();
+            $('.visitor-types').hide();
+            $('.visitors').hide();
+            $('.inmates').hide();
+
+            // Show the primary nav type
+            $('.terminal-selections').show();
+
+            // Show all the selected types
+            $('.selected-terminals').show();
+
+            // Add the active class to the primary nav type
+            $('.select-location-nav .terminals').addClass('active').show();
+
+        });
+
+        $('.btn-add-inmates').click(function() {
+
+            // Hide the select types
+            $('.modal-location-type').hide();
+
+            // Hide the selected types
+            $('.modal-selected-type').hide();
+
+            // Hide all non-used nav types
+            $('.facilities').hide();
+            $('.sites').hide();
+            $('.terminal-groups').hide();
+            $('.terminals').hide();
+            $('.phone-numbers').hide();
+            $('.visit-types').hide();
+            $('.visitor-types').hide();
+            $('.visitors').hide();
+
+            // Show the primary nav type
+            $('.inmates-selections').show();
+
+            // Show all the selected types
+            $('.selected-inmates').show();
+
+            // Add the active class to the primary nav type
+            $('.select-location-nav .inmates').addClass('active').show();
+        });
+    });
+
+    $('[data-toggle="tooltip"]').tooltip({
+        'placement': 'bottom'
+    });
+</script>

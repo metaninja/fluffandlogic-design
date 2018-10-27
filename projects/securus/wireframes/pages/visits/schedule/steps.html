@@ -1,0 +1,181 @@
+<div class="steps">
+
+    <!-- Step 1: Visit Type -->
+    <a class="step step1" href="#/pages/visits/schedule/visit-type.html">
+        <span class="not-set">Visit Type</span>
+    
+        <span class="set">
+          <span class="label">Type</span>
+          <span class="desc">On Site</span>
+        </span>
+
+        <div class="triangle-container">
+            <div class="separator-triangle"></div>
+            <div class="triangle"></div>
+        </div>
+    </a>
+
+    <!-- Step 2: Inmate Search -->
+    <a class="step step2" href="#/pages/visits/schedule/inmate-search.html">
+        <span class="not-set">Inmate</span>
+    
+        <span class="set">
+          <span class="label">Inmate</span>
+          <span class="desc">Justin Canfield The third</span>
+        </span>
+
+        <div class="triangle-container">
+            <div class="separator-triangle"></div>
+            <div class="triangle"></div>
+        </div>
+    </a>
+
+
+    <!-- Step 3: Visitor Search -->
+    <a class="step step3 active" href="#/pages/visits/schedule/visitor-search.html">
+        <span class="not-set">Visitor</span>
+
+        <span class="set">
+          <span class="label">Visitor</span>
+          <span class="desc">Mary Jonathan Baker</span>
+        </span>
+
+        <div class="triangle-container">
+            <div class="separator-triangle"></div>
+            <div class="triangle"></div>
+        </div>
+    </a>
+
+
+    <!-- Step 4: Visitor Details -->
+    <a class="step step4" href="#/pages/visits/schedule/visitor-detail.html">
+        <span class="not-set">Visitor Details</span>
+
+        <span class="set detailed">
+          <span class="label">Visitor Details</span>
+          <span class="desc">
+            <span class="line1">Wife</span>
+            <span class="line2">and 2 visitors</span>
+          </span>
+        </span>
+
+        <div class="triangle-container">
+            <div class="separator-triangle"></div>
+            <div class="triangle"></div>
+        </div>
+    </a>
+
+
+    <!-- Step 5: Date and Time -->
+    <a class="step step5" href="#/pages/visits/schedule/date.html">
+        <span class="not-set">Date &amp; Time</span>
+
+        <span class="set detailed">
+          <span class="label">Date &amp; Time</span>
+          <span class="desc">
+            <span class="line1">03/12/2015</span>
+            <span class="line2">08:40am (120min)</span>
+          </span>
+        </span>
+
+        <div class="triangle-container">
+            <div class="separator-triangle"></div>
+            <div class="triangle"></div>
+        </div>
+    </a>
+
+
+    <!-- Step 6: Confirm -->
+    <a class="step step6" href="#/pages/visits/schedule/confirm.html">
+        <span class="not-set">Confirm</span>
+
+        <div class="triangle-container">
+            <div class="separator-triangle"></div>
+            <div class="triangle"></div>
+        </div>
+    </a>
+
+</div>
+
+<script>
+    var data = $('.steps').parents('[data-data]').data('data');
+
+    $('.steps .step').removeClass('active').removeClass('completed');
+    $('.steps .set').hide();
+    $('.steps .not-set').show();
+
+    switch(data.step) {
+
+        case 'type':
+            $('.step1').addClass('active');
+            break;
+
+        case 'inmate':
+            $('.step1').addClass('completed');
+            $('.step2').addClass('active');
+            $('.step1 .not-set').hide();
+            $('.step1 .set').show();
+            break;
+
+        case 'visitor':
+            $('.step1').addClass('completed');
+            $('.step2').addClass('completed');
+            $('.step3').addClass('active');
+            $('.step1 .not-set').hide();
+            $('.step1 .set').show();
+            $('.step2 .not-set').hide();
+            $('.step2 .set').show();
+            break;
+
+        case 'visitor-details':
+            $('.step1').addClass('completed');
+            $('.step2').addClass('completed');
+            $('.step3').addClass('completed');
+            $('.step4').addClass('active');
+            $('.step1 .not-set').hide();
+            $('.step1 .set').show();
+            $('.step2 .not-set').hide();
+            $('.step2 .set').show();
+            $('.step3 .not-set').hide();
+            $('.step3 .set').show();
+            break;
+
+        case 'date-time':
+            $('.step1').addClass('completed');
+            $('.step2').addClass('completed');
+            $('.step3').addClass('completed');
+            $('.step4').addClass('completed');
+            $('.step5').addClass('active');
+            $('.step1 .not-set').hide();
+            $('.step1 .set').show();
+            $('.step2 .not-set').hide();
+            $('.step2 .set').show();
+            $('.step3 .not-set').hide();
+            $('.step3 .set').show();
+            $('.step4 .not-set').hide();
+            $('.step4 .set').show();
+            break;
+
+        case 'done':
+            $('.step1').addClass('completed');
+            $('.step2').addClass('completed');
+            $('.step3').addClass('completed');
+            $('.step4').addClass('completed');
+            $('.step5').addClass('completed');
+            $('.step6').addClass('active');
+            $('.step1 .not-set').hide();
+            $('.step1 .set').show();
+            $('.step2 .not-set').hide();
+            $('.step2 .set').show();
+            $('.step3 .not-set').hide();
+            $('.step3 .set').show();
+            $('.step4 .not-set').hide();
+            $('.step4 .set').show();
+            $('.step5 .not-set').hide();
+            $('.step5 .set').show();
+            break;
+
+        default:
+            break;
+    }
+</script>

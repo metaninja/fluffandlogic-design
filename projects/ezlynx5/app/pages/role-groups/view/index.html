@@ -1,0 +1,30 @@
+<div class="ez-page-header">
+    <div class="row">
+        <div class="col-lg-6">
+            <h1>
+                <span>Role Group</span>
+                Admin
+            </h1>
+        </div>
+        <div class="col-md-6">
+            <a href="#/app/pages/role-groups/" class="btn btn-success pull-right">Save</a>
+            <a href="#" class="btn btn-default pull-right" data-toggle="modal" data-target="#unsaved-changes-modal" data-redirect="/app/pages/role-groups/index.html">Cancel</a>
+        </div>
+    </div>
+</div>
+
+<div class="ez-page-body">
+    <div class="ez-page-content">
+        <div class="bff-include" data-src="app/pages/role-groups/view/permissions.html"></div>
+
+        <div class="container-fluid crud-history">
+            <p class="pull-left"><i>Created by John Smith, 1/10/2016</i></p>
+            <p class="pull-right"><i>Last Modified by John Smith, 2/17/2017</i></p>
+        </div>
+    </div>
+</div>
+
+
+<div class="bff-include" data-src="app/shared/unsaved-changes-modal.html"></div>
+
+<div class="bff-script" data-src="app/shared/persona.js"></div>

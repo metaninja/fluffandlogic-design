@@ -1,0 +1,53 @@
+<div class="ez-main-content">
+    <div class="bff-include js-wizard" id="commission-statements-tabs" data-src="app/pages/commissions/member-agency/statements/header.html" data-wizard-step="2"></div>
+
+    <div class="ez-page-body">
+        <div class="ez-page-content content-container">
+
+            <div>
+                <div class="alert alert-success">
+                    <i class="linearicon-checkmark-circle linearicon-lg mr-2"></i>
+                    <div>
+                        Member Agency Statements have been generated and are ready to send.
+                    </div>
+                </div>
+            </div>
+
+            <!--<div class="row">-->
+                <!--<div class="form-group col-md-4">-->
+                    <!--<label for="statement-date" class="required">-->
+                        <!--Statement Date-->
+                    <!--</label>-->
+                    <!--<div class="input-group">-->
+                        <!--<input type="date" class="form-control" id="statement-date" aria-label="Statement Date" required>-->
+                        <!--<div class="input-group-append">-->
+                            <!--<span class="input-group-text">-->
+                                <!--<i class="linearicon-calendar-full"></i>-->
+                            <!--</span>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="invalid-feedback"></div>-->
+                <!--</div>-->
+            <!--</div>-->
+
+
+            <div class="bff-include" data-src="app/pages/commissions/member-agency/statements/generate/review/table.html"></div>
+
+            <div class="section-footer">
+                <div class="section-footer-left">
+                </div>
+                <div class="section-footer-right">
+                    <a href="#/app/pages/commissions/member-agency/statements/" class="btn btn-outline-primary mr-2">
+                        <i class="linearicon-arrow-left mr-2" aria-hidden="true"></i> Approve Payouts
+                    </a>
+
+                    <a href="#/app/pages/commissions/member-agency/statements/generated/" class="btn btn-success">Send Statements <i class="linearicon-paper-plane ml-2" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="bff-script" data-src="app/pages/commissions/member-agency/statements/generate/review/index.js"></div>
+<div class="bff-script" data-src="app/shared/forms/required.js"></div>

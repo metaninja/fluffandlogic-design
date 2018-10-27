@@ -1,0 +1,65 @@
+<div class="search-form">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Name, admin, parent agency" aria-label="Name, admin, parent agency">
+                <span class="input-group-addon" id="basic-addon2"><i class="linearicon-magnifier"></i></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="results-summary">
+    <div class="results-count">
+        25 users found
+
+        <a href="javascript:void(0)" class="results-action btn btn-link filter-link" data-target="#filter-agencies-card">
+            Filters <i class="linearicon-chevron-down ml-2"></i>
+        </a>
+        <!-- <div class="bff-include" data-src="app/pages/agencies/filters.html"></div> -->
+    </div>
+    <div class="results-actions">
+    </div>
+</div>
+
+<div id="agencies-cards" class="row mt-4">
+
+</div>
+
+<script id="agencies-cards-template" type="x-handlebars-template">
+    {{#agencies}}
+    <div class="card-container">
+        <div class="card">
+            <div class="card-body">
+                <a href="#/app/pages/agencies/view/" class="card-title">{{Agency}}</a>
+                <hr>
+                <div class="card-logo" style="background-image: url(libs/images/agencies/{{Logo}});">
+                </div>
+                <div class="card-fact">
+                    <div class="card-fact-label">Address</div>
+                    <div class="card-fact-value">
+                        {{ Address1 }}<br>
+                        {{ Address2 }}
+                    </div>
+                </div>
+
+                <div class="card-fact">
+                    <div class="card-fact-label">Phone</div>
+                    <div class="card-fact-value">{{ Phone }}</div>
+                </div>
+                <div class="card-fact">
+                    <div class="card-fact-label">Premium Volume</div>
+                    <div class="card-fact-value">{{premiumVolume}}</div>
+                </div>
+
+                <div class="card-fact">
+                    <div class="card-fact-label">Loss Ratio</div>
+                    <div class="card-fact-value">{{lossRatio}}</div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    {{/agencies}}
+</script>

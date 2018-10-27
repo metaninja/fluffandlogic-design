@@ -1,0 +1,65 @@
+
+<div class="bff-include" data-src="app/shared/topnav.html"></div>
+<div class="bff-include" data-src="app/shared/leftnav/leftnav.html"></div>
+
+<div id="LayoutContainer">
+
+    <div class="bff-include" data-src="app/shared/rightpanel.html"></div>
+    <div class="bff-include" data-src="app/shared/notifications.html"></div>
+
+    <div class="pane ui-layout-center">
+        <div class="floatContain">
+            <div class="bootstrapForms">
+
+                <div class="PageTitle">
+                    <h1>Commission Rules</h1>
+                </div>
+
+                <div id="CommissionRulesController" ng-controller="CommissionRulesController as model" class="PageContent ng-scope">
+                    <p>Rules are evaluated in the order specified. The first rule matching for a commission transaction applies. Reorder the rules to get the correct precedence.</p>
+
+                    <div class="widget-panel">
+                        <section class="widget-toolbar">
+                            <div class="btn-toolbar">
+                                <button id="btnAddCommissionRule" type="button" class="btn btn-primary btn-small modalTrigger">
+                                    Add New Rule
+                                </button>
+                            </div>
+                        </section>
+                        <section class="widget-content">
+                            <div class="DataView">
+                                <table id="CommissionRules" class="table">
+                                    <thead class="DataViewSorter">
+                                    <tr>
+                                        <th>Order</th>
+                                        <th>Rule</th>
+                                        <th>Payee</th>
+                                        <th class="text-center">Reorder</th>
+                                        <th class="text-center"></th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>Test</td>
+                                        <td>Test</td>
+                                        <td>Test</td>
+                                        <td><a href="javascript:void(0);">Down</a></td>
+                                        <td>
+                                            <a href="javascript:void(0);">Edit</a>
+                                            <a href="javascript:void(0);">Copy</a>
+                                            <a href="javascript:void(0);">Delete</a>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </section>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="bff-include" data-src="app/pages/commissions/rules/edit-commission-rule-modal.html"></div>

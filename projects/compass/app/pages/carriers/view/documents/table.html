@@ -1,0 +1,91 @@
+<table class="table table-hover">
+    <thead>
+    <tr>
+        <th style="width: 1.5rem"><input type="checkbox"></th>
+        <th colspan="2">Name</th>
+        <th></th>
+        <th>Owner</th>
+        <th>Modified</th>
+        <th>File Size</th>
+        <th></th>
+        <th></th>
+    </tr>
+    </thead>
+
+    <tbody id="files">
+    </tbody>
+    <tbody>
+
+    </tbody>
+</table>
+
+<div class="bff-include" data-src="app/shared/pagination.html"></div>
+
+<script id="files-template" type="x-handlebars-template">
+    {{#files}}
+    <tr>
+        <td><input type="checkbox" onclick="toggleRow({{ @index }}, this)"></td>
+        <td style="width: 1.5rem"><i class="{{Icon}} linearicon-lg draggable"></i></td>
+
+        {{#if isFolder}}
+        <td><a href="javascript:void(0)" class="draggable">{{Name}}</a></td>
+        <td></td>
+        {{else}}
+        <td><a href="javascript:void(0)" class="draggable" data-toggle="modal" data-target="#preview-modal">{{Name}}</a></td>
+        <td>
+            {{#each tags}}
+            <span class="ez-label">{{this}}</span>
+            {{/each}}
+        </td>
+        {{/if}}
+        <td><a href="#/app/pages/maps/view/users/view/index.html">{{Username}}</a></td>
+        <td>{{Modified}}</td>
+        <td>{{Size}}</td>
+        {{#if isFolder}}
+        <td>
+            <div class="dropdown">
+                <a class="dropdown-toggle" href="javascript:void(0);" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Actions
+                </a>
+
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="javascript:void(0)" data-toggle="modal" data-target="#move-to-folder-modal">Move To Folder</a>
+                    <a class="dropdown-item" href="javascript:void(0)" data-toggle="modal" data-target="#rename-modal">Rename</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item text-danger" href="javascript:void(0);" data-toggle="modal" data-target="#delete-modal">Delete</a>
+                </div>
+            </div>
+        </td>
+        {{else}}
+        <td>
+            <div class="dropdown">
+                <a class="dropdown-toggle" href="javascript:void(0);" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Actions
+                </a>
+
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="javascript:void(0)" data-toggle="modal" data-target="#preview-modal">Preview</a>
+                    <a class="dropdown-item" href="javascript:void(0)">Download</a>
+                    <a class="dropdown-item" href="javascript:void(0)">Move To Folder</a>
+                    <a class="dropdown-item" href="javascript:void(0)" data-toggle="modal" data-target="#rename-modal">Rename</a>
+                    <a class="dropdown-item" href="javascript:void(0)" data-toggle="modal" data-target="#labels-modal">Edit Tags</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item text-danger" href="javascript:void(0);" data-toggle="modal" data-target="#delete-modal">Delete</a>
+                </div>
+            </div>
+        </td>
+        {{/if}}
+
+        {{#if hasVersions}}
+        <td>
+            <a href="javascript:void(0)" class="btn-versions"><i class="linearicon-history linearicon-lg"></i></a>
+        </td>
+        {{else}}
+        <td></td>
+        {{/if}}
+
+    </tr>
+    {{/files}}
+</script>
+
+<div class="bff-script" data-src="app/pages/carriers/view/documents/table.js"></div>

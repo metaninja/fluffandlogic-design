@@ -1,0 +1,32 @@
+<div class="modal fade" id="unapprove-commissions-modal" tabindex="-1" role="dialog" aria-labelledby="unapprove-commissions-modal-title">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content modal-warning">
+            <div class="modal-header clearfix">
+                <h5 class="modal-title pull-left" id="bulk-add-agencies-modal-title">Unapprove Payouts</h5>
+                <button type="button" class="close pull-right" data-dismiss="modal" aria-label="Close">
+                    <i class="linearicon-cross2" aria-hidden="true"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Do you want to unapprove these payouts?</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-warning" onclick="unApproveCommissions()">Unapprove Payouts</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function unApproveCommissions() {
+         $('.js-commission-table').find('tr td:first-child input[type="checkbox"]').each(function(index) {
+            if ($(this).is(':checked')) {
+                $(this).parents('tr').find(".js-approved-column").html("");
+            }
+        });
+        $("#unapprove-commissions-modal").modal('hide');
+        $('.js-commission-table tr th:first-child input[type="checkbox"]').prop("checked", false);
+        $('.js-commission-table tr td:first-child input[type="checkbox"]').prop("checked", false);
+    }
+</script>

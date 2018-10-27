@@ -1,0 +1,110 @@
+<div class="ez-dropdown-container content-container bg-gray200 my-4">
+    <div class="ez-dropdown-heading collapsed" data-toggle="collapse" data-target="#collapse-acord27" aria-expanded="true">
+        <h2 class="h2">Certificate Details</h2>
+        <a href="javascript:void(0);">
+            <i class="icon-chevron-sign-down linearicon-chevron-down"></i>
+            <i class="icon-chevron-up linearicon-chevron-up"></i>
+        </a>
+    </div>
+
+    <div class="ez-dropdown-content collapse" id="collapse-acord27" tabindex="-1">
+        <div class="form-group">
+            <label>Location </label>
+            <select class="form-control" id="locations"> <!-- onchange="addToMasterRemarks(this)" -->
+                <option>-- Select --</option>
+                <option>1 - 927 Hogsmeade Hwy, Suite 2122, Newbury NE 82190</option>
+                <option>2 - 1232 Jefferson Rd, #1015, Newbury NE 82190</option>
+            </select>
+        </div>
+
+        <h3 class="h3">Certificate Holder Type</h3>
+        <div class="row">
+            <div class="col">
+                <div class="form-group">
+                    <label for="vehicle-collision-loss">
+                        Additional Insured
+                    </label>
+
+                    <label class="switch mt-0">
+                        <input type="checkbox" id="vehicle-collision-loss">
+                        <div class="slider round">
+                            <span class="on">YES</span>
+                            <span class="off">NO</span>
+                        </div>
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <label for="vehicle-comp">
+                        Lenders Loss Payable
+                    </label>
+
+                    <label class="switch mt-0">
+                        <input type="checkbox" id="vehicle-comp">
+                        <div class="slider round">
+                            <span class="on">YES</span>
+                            <span class="off">NO</span>
+                        </div>
+                    </label>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="form-group">
+                    <label for="equipment">
+                        Mortgagee
+                    </label>
+
+                    <label class="switch mt-0">
+                        <input type="checkbox" id="equipment">
+                        <div class="slider round">
+                            <span class="on">YES</span>
+                            <span class="off">NO</span>
+                        </div>
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <label for="loss-payee-other">
+                        Loss Payee
+                    </label>
+
+                    <label class="switch mt-0">
+                        <input type="checkbox" id="loss-payee-other">
+                        <div class="slider round">
+                            <span class="on">YES</span>
+                            <span class="off">NO</span>
+                        </div>
+                    </label>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="form-group">
+                    <label for="loss-payee-define">
+                        Other
+                    </label>
+
+                    <input type="text" class="form-control" id="loss-payee-define">
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="ez-dropdown-container content-container bg-gray200 my-4">
+    <div class="ez-dropdown-heading collapsed" data-toggle="collapse" data-target=".certificate-holder-remarks" aria-expanded="true">
+        <h2 class="h2">Certificate Holder Remarks</h2>
+        <a href="javascript:;">
+            <i class="icon-chevron-sign-down linearicon-chevron-down"></i>
+            <i class="icon-chevron-up linearicon-chevron-up"></i>
+        </a>
+    </div>
+
+    <div class="ez-dropdown-content collapse certificate-holder-remarks" id="certificate-holder-remarks" tabindex="-1" style="">
+
+        <div class="bff-include" data-src="app/pages/applicants/certificates/edit-certificate/settings/certificate-master-remarks.html"></div>
+
+    </div>
+</div>

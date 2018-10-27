@@ -1,0 +1,39 @@
+<div class="alert alert-warning alert-dismissable dev" role="alert">
+    <div class="dev-options">
+        Block vs Allowed List:
+        <a href="#" class="devmode-view-link devmode-block selected">Block List</a> |
+        <a href="#" class="devmode-view-link devmode-allow">Allow List</a>
+    </div>
+
+    <div class="dev-options">
+        Inmate Photo:
+        <a href="#" class="dev-option" data-target=".inmate-no-photo">No Photo</a> |
+        <a href="#" class="dev-option" data-target=".inmate-photo-placeholder">Placeholder Photo</a> |
+        <a href="#" class="dev-option" data-target=".inmate-photo">Inmate Photo</a>
+    </div>
+</div>
+
+<style>
+    .view-allow {
+        display: none;
+    }
+</style>
+
+<script>
+    $('.devmode-block').click(function() {
+        $('.view-allow').hide();
+        $('.devmode-view-link').removeClass('selected');
+        $(this).addClass('selected');
+
+        $('.view-block').show();
+    });
+
+    $('.devmode-allow').click(function() {
+        $('.view-block').hide();
+        $('.devmode-view-link').removeClass('selected');
+        $(this).addClass('selected');
+
+        $('.view-allow').show();
+    });
+</script>
+

@@ -1,0 +1,125 @@
+<div class="form-group">
+  <label class="control-label">Search</label>
+  <div class="input-group">
+    <div class="input-group-btn">
+      <div class="search-criteria-dropdown-checkbox"></div>
+    </div>
+    <input type="text" class="form-control search-text">
+  </div>
+</div>
+
+<script>
+  $('.checkbox-tips-search').click(function() {
+    if (this.checked) {
+// $('.search-text').val('TIPS').attr('disabled','disabled');
+      $('.search-text').attr('disabled', 'disabled');
+      createCookie('cdrsearch', 'tips', .04);
+      $('.btn-cdr-tips').show();
+      $('.btn-cdr').hide();
+    } else {
+      $('.search-text').val('').removeAttr('disabled');
+      eraseCookie('cdrsearch');
+      $('.btn-cdr-tips').hide();
+      $('.btn-cdr').show();
+    }
+  });
+
+
+  //Pass the search criteria from Search Page to the Search Results page
+  // So we can maintain the state, and show the same criteria
+  if (bff.searchCriteria === null || bff.searchCriteria  === undefined) {
+    bff.searchCriteria = [{
+      id: "1",
+      label: "Calls",
+      isChecked: true
+      },
+      {
+        id: "2",
+        label: "Videos",
+        isChecked: true
+      },
+      {
+        id: "3",
+        label: "Crime Tip",
+        isChecked: true
+      },
+      {
+        id: "4",
+        label: "Informant Line",
+        isChecked: true
+      },
+      {
+        id: "5",
+        label: "Emergency Call",
+        isChecked: true
+      },
+      {
+        id: "6",
+        label: "Voice Biometrics",
+        isChecked: true
+      },
+      {
+        id: "6",
+        label: "Voice Biometrics Failure",
+        isChecked: true
+      }];
+  }
+
+  $('.search-criteria-dropdown-checkbox').dropdownCheckbox({
+    data: bff.searchCriteria,
+    autosearch: true,
+    title: "Search types",
+    after: "",
+    all: "All ",
+    btnClass: "input-group-addon",
+    hideHeader: false
+  });
+
+  var callSearchTypeClicked = function() {
+    $('.search-type-call').click(function() {
+      if ($(this).is(':checked')) {
+        $('.search-type-crime-tip').attr('checked','checked');
+        $('.search-type-informant-line').attr('checked','checked');
+        $('.search-type-emergency-call').attr('checked','checked');
+        $('.search-type-voice-biometrics').attr('checked','checked');
+        $('.search-type-voice-biometrics-failure').attr('checked','checked');
+
+
+        $('.search-type-crime-tip').click();
+        $('.search-type-informant-line').click();
+        $('.search-type-emergency-call').click();
+        $('.search-type-voice-biometrics').click();
+        $('.search-type-voice-biometrics-failure').click();
+      }
+    })
+  };
+
+  $(document).ready(function() {
+    $('.search-criteria-dropdown-checkbox .dropdown-checkbox-menu li').each(function(index) {
+
+      var label = $(this).find('label');
+
+      if (label.text().toLowerCase() === 'calls') {
+        label.prev('input').addClass('search-type-call');
+        callSearchTypeClicked();
+      }
+      else if (label.text().toLowerCase().indexOf('tip') >= 0) {
+        label.prev('input').addClass('search-type-crime-tip');
+      }
+      else if (label.text().toLowerCase().indexOf('informant') >= 0) {
+        label.prev('input').addClass('search-type-informant-line');
+      }
+      else if (label.text().toLowerCase().indexOf('emergency') >= 0) {
+        label.prev('input').addClass('search-type-emergency-call');
+      }
+      else if (label.text().toLowerCase().indexOf('failure') >= 0) {
+          label.prev('input').addClass('search-type-voice-biometrics-failure');
+      }
+      else if (label.text().toLowerCase().indexOf('biometric') >= 0) {
+        label.prev('input').addClass('search-type-voice-biometrics');
+      }
+
+    });
+
+  });
+</script>

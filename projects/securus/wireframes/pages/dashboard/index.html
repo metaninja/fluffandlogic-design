@@ -1,0 +1,168 @@
+<title>Dashboard</title>
+<div class="bff-include" data-src="pages/dashboard/header.html"></div>
+<div class="container-fluid no-breadcrumb">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <h3 class="section-header no-margin-top">Activity
+                    <div class="bff-include pull-right" data-src="pages/dashboard/components/header-cog-droplist.html"></div>
+                </h3>
+                <div class="row margin-bottom-20">
+                    <div class="col-md-4">
+                        <div class="bff-include widget-style" data-src="pages/dashboard/widgets/site-activity.html"></div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="bff-include widget-style" data-src="pages/dashboard/widgets/calls.html"></div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="bff-include widget-style" data-src="pages/dashboard/widgets/visits.html"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="bff-include widget-style" data-src="pages/dashboard/widgets/vbio-failure.html"></div>
+                    </div>
+                </div>
+                <h3 class="section-header">Approvals and Tasks
+                    <div class="bff-include pull-right" data-src="pages/dashboard/components/header-cog-droplist.html"></div>
+                </h3>
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a href="#approve-visitors" data-toggle="tab">Visitors <span class="badge">3</span></a>
+                            </li>
+                            <li><a href="#approve-visits" data-toggle="tab">Visits <span class="badge">3</span></a>
+                            </li>
+                            <li><a href="#process-grievances" data-toggle="tab">Process Grievances <span class="badge">2</span></a>
+                            </li>
+                            <li><a href="#assign-grievances" data-toggle="tab">Assign Grievances  <span class="badge">3</span></a>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="approve-visitors">
+                                <div class="bff-include" data-src="pages/dashboard/visitor-approvals.html"></div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="approve-visits">
+                                <div class="bff-include" data-src="pages/dashboard/visit-approvals.html"></div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="process-grievances">
+                                <div class="bff-include" data-src="pages/dashboard/grievances.html"></div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="assign-grievances">
+                                <div class="bff-include" data-src="pages/dashboard/grievances-assigner.html"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="section-header no-margin-top">Investigate
+                    <div class="bff-include pull-right" data-src="pages/dashboard/components/header-cog-droplist.html"></div>
+                </h3>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="bff-include widget-style" data-src="pages/dashboard/widgets/top-dialed-numbers-original.html"></div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="bff-include widget-style" data-src="pages/dashboard/widgets/covert-alerts-original.html"></div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="bff-include widget-style" data-src="pages/dashboard/my-tags.html"></div>
+
+                    </div>
+                </div>
+
+                <h3 class="section-header">Manage
+                    <div class="bff-include pull-right" data-src="pages/dashboard/components/header-cog-droplist.html"></div>
+                </h3>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="bff-include widget-style" data-src="pages/dashboard/widgets/search-phone-number.html"></div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="bff-include widget-style" data-src="pages/dashboard/widgets/users.html"></div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="bff-include widget-style" data-src="pages/dashboard/grievance-performance.html"></div>
+                    </div>
+                </div>
+
+                <!-- Dori: In Progress, Pending Approval by Sherif/Brad -->
+                <h3 class="section-header">Proposed (Unapproved) Widgets
+                    <div class="bff-include pull-right" data-src="pages/dashboard/components/header-cog-droplist.html"></div>
+                </h3>
+                <div class="row margin-bottom-30">
+                    <div class="col-md-4">
+                        <div class="bff-include" data-src="pages/dashboard/widgets/covert-alerts-table.html"></div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="bff-include" data-src="pages/dashboard/widgets/top-dialed-numbers-list.html"></div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="bff-include" data-src="pages/dashboard/widgets/due-today-empty.html"></div>
+                    </div>
+                </div>
+                <div class="row margin-bottom-30">
+                    <div class="col-md-4">
+                        <div class="bff-include" data-src="pages/dashboard/widgets/covert-alerts-bar-graph.html"></div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="bff-include" data-src="pages/dashboard/widgets/top-dialed-numbers-vertical-bar-chart.html"></div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="bff-include" data-src="pages/dashboard/widgets/due-today-list.html"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="bff-include" data-src="pages/dashboard/widgets/covert-alerts-empty.html"></div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="bff-include" data-src="pages/dashboard/widgets/top-dialed-numbers-horizontal-bar-chart.html"></div>
+                    </div>
+                    <div class="col-md-4">
+                        <!--<div class="bff-include" data-src="pages/dashboard/widgets/due-today-grid.html"></div>-->
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="bff-include" data-src="pages/dashboard/widgets/geofences-active.html"></div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="bff-include" data-src="pages/dashboard/widgets/geofences-empty.html"></div>
+                    </div>
+                    <div class="col-md-4">
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="margin-bottom-20">
+                    <div class="bff-include" data-src="pages/dashboard/sidebars/geofences-active.html" data-event="GeofenceSidebarLoaded"></div>
+                </div>
+                <!--<div class="margin-bottom-20">-->
+                    <!--<div class="bff-include" data-src="pages/dashboard/sidebars/geofences-empty.html"></div>-->
+                <!--</div>-->
+                <div>
+                    <div class="bff-include" data-src="pages/dashboard/timeline.html"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-9">
+        </div>
+        <div class="col-md-3">
+            <!-- <div class="bff-include" data-src="pages/dashboard/home-users.html"></div> -->
+            <!-- <div class="bff-include" data-src="pages/dashboard/calls-today.html"></div>
+                <div class="bff-include" data-src="pages/dashboard/call-types.html"></div> -->
+        </div>
+    </div>
+</div>
+
+<div class="bff-include" data-src="shared/announcements/modal.html" data-event="AnnouncementsModalLoaded"></div>
+<div class="bff-include" data-src="pages/dashboard/components/add-widget-modal.html"></div>
+
+<script>
+    $(document).on('AnnouncementsModalLoaded', function() {
+        //$('#announcements-modal').modal('show');
+    });
+</script>

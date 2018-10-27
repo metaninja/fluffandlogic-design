@@ -1,0 +1,129 @@
+
+<div class="design-container">
+    <div class="design-leftnav">
+        <div class="bff-include" data-src="app/shared/leftnav.html"></div>
+    </div>
+    <div class="design-content">
+        <header class="design-page-header">
+            <h1>Sidebar</h1>
+        </header>
+        <section class="design-page-content">
+            <h2>Left Panel</h2>
+
+            <div class="design-demo clearfix" style="position: relative;">
+                <div runat="server" id="LayoutContainer" class="hasSideBar">
+                    <div class="pane ui-layout-west" id="LeftPanel" style="position: relative; height: 600px; margin: -40px 0 0 -40px;"> 
+                        <div class="expandoHandle"></div> 
+                        <div class="closeArrow" onclick="toggleView()" onmouseenter="toggleHover()" onmouseleave="toggleHover()"></div> 
+                        <div class="viewport" style="position: absolute; top:0px; bottom:0px; overflow:hidden">
+                            <div class="paneContent overview" style="position: relative; top: 0px;">
+                                <div id="ApplicantContextInfoBar" class="ApplicantContextInfoBar">
+                                    <div class="applicantInfo">
+                                        <h1>
+                                            <a href="#" title="Go to Applicant Overview">First Last</a>
+                                        </h1>
+                                        <small title="Applicant Type">
+                                            <b>Type: </b>
+                                            Active Client
+                                        </small>
+                                        <small title="Customer Since">
+                                            <b>Since: </b>
+                                                Unknown
+                                        </small>
+                                        <small title="Assigned To">
+                                            <b>Assigned: </b>
+                                            Commercial Download
+                                        </small>
+                                        <small title="Assigned To Org">
+                                            <b>Agency: </b>
+                                            Commercial Downloads
+                                        </small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="scrollbar disable" style="height: 933px;">
+                            <div class="track" style="height: 933px;">
+                                <div class="thumb" style="top: 0px; height: 933px;">
+                                    <div class="end"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <p style="margin-top: 30px;">&nbsp;</p>
+
+            <pre><code class="html">
+&lt;div runat="server" id="LayoutContainer" class="hasSideBar"&gt;
+    &lt;div class="pane ui-layout-west" id="LeftPanel"&gt; 
+        &lt;div class="expandoHandle"&gt;&lt;/div&gt; 
+        &lt;div class="closeArrow"&gt;&lt;/div&gt; 
+        &lt;div class="viewport" style="position: absolute; top:0px; bottom:0px; overflow:hidden"&gt;
+            &lt;div class="paneContent overview" style="position: relative; top: 0px;"&gt;
+                &lt;div id="ApplicantContextInfoBar" class="ApplicantContextInfoBar"&gt;
+                    &lt;div class="applicantInfo"&gt;
+                        &lt;h1&gt;
+                            &lt;a href="#" title="Go to Applicant Overview"&gt;First Last&lt;/a&gt;
+                        &lt;/h1&gt;
+                        &lt;small title="Applicant Type"&gt;
+                            &lt;b&gt;Type: &lt;/b&gt;
+                            Active Client
+                        &lt;/small&gt;
+                        &lt;small title="Customer Since"&gt;
+                            &lt;b&gt;Since: &lt;/b&gt;
+                                Unknown
+                        &lt;/small&gt;
+                        &lt;small title="Assigned To"&gt;
+                            &lt;b&gt;Assigned: &lt;/b&gt;
+                            Commercial Download
+                        &lt;/small&gt;
+                        &lt;small title="Assigned To Org"&gt;
+                            &lt;b&gt;Agency: &lt;/b&gt;
+                            Commercial Downloads
+                        &lt;/small&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt; 
+        &lt;div class="scrollbar disable" style="height: 933px;"&gt;
+            &lt;div class="track" style="height: 933px;"&gt;
+                &lt;div class="thumb" style="top: 0px; height: 933px;"&gt;
+                    &lt;div class="end"&gt;&lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+            </code></pre>
+        </section>
+    </div>
+</div>
+
+<script>
+    function toggleView() {
+        var $layoutContainer = $('#LayoutContainer');
+
+        if ($layoutContainer.hasClass('closed')) {
+            $layoutContainer.removeClass('closed');
+        } else {
+            $layoutContainer.addClass('closed');
+        }
+    }
+
+    function toggleHover() {
+        var $closeArrow = $('.closeArrow'),
+            $expandoHandle = $('.expandoHandle');
+
+        if ($closeArrow.hasClass('hover')) {
+            $closeArrow.removeClass('hover');
+            $expandoHandle.removeClass('hover');
+        } else {
+            $closeArrow.addClass('hover');
+            $expandoHandle.addClass('hover');
+        }
+    }
+</script>
+
+<div class="bff-script" data-src="app/shared/activate-highlight.js"></div>

@@ -1,0 +1,104 @@
+<script id='card-template-producer' type='text/x-handlebars-template'>
+    {{#if new}}
+        <li class='card-sylo card-producer font-size-small new-card mb2'>
+    {{else}}
+        <li class='card-sylo card-producer font-size-small stale-card mb2'>
+    {{/if}}
+
+        <div class="card-title">
+            <div class="card-title-text">
+                <a href="javascript:void(0);" class="card-title-name"><strong>{{name}}</strong></a>
+                <span  class="card-title-amount">{{amount}}</span>
+            </div>
+            
+            <div class="card-title-icons">
+                {{#if commercial}}
+                    <a href="#/app/pages/sales-center/commercial-opportunity/" class="card-title-icon">
+                        <i class="fa fa-expand fa-lg" aria-hidden="true"></i>
+                    </a>
+                {{else}}
+                    <a href="#/app/pages/sales-center/opportunity-details.html" class="card-title-icon">
+                        <i class="fa fa-expand fa-lg" aria-hidden="true"></i>
+                    </a>
+                {{/if}}
+
+                {{#if vip}}
+                    <a href="javascript:void(0);" class="card-title-icon">
+                        <i class='vip vip-icon'></i>
+                    </a>
+                {{/if}}
+            </div>
+        </div>
+
+        <div class="dropdown mb2">
+            <span class="dropdown-toggle border-bottom-dashed block" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                New
+                <span class="caret right"></span>
+            </span>
+            <ul class="dropdown-menu width-full" aria-labelledby="dropdownMenu1">
+                <li><a href="javascript:void(0);">Action</a></li>
+                <li><a href="javascript:void(0);">Another action</a></li>
+                <li><a href="javascript:void(0);">Something else here</a></li>
+            </ul>
+        </div>
+
+        {{#if commercial}}
+            <div class='card-flex-row'>
+                <i class="icon-user icon-large align-middle card-flex-row-icon" aria-hidden="true"></i>
+                <span class="card-flex-row-text">{{applicantName}}</span>
+            </div>
+        {{else}}
+            <div style="height: 20px;"></div>
+        {{/if}}
+
+        <div class='primary-contact mt1 card-flex-row' style="height: 22px;">
+            {{#if primaryContact.phone}}
+                <i class="icon-mobile-phone icon-large card-flex-row-icon" aria-hidden="true"></i>
+                <div class="card-flex-row-text">
+                    <span>{{primaryContact.number}}</span>
+                    <span class='divider pt1 m1'></span>
+                    <a href='#'>
+                        <i class='icon-text icon-large align-middle' onclick="toggleTextModal()"></i>
+                    </a>
+                </div>
+            {{else}}
+                <div class="card-flex-row-icon">
+                    <i class="icon-applicant-email pointer" onclick="toggleEmailModal()"></i>
+                </div>
+                <a href='#' class='truncate email card-flex-row-text' data-toggle="tooltip" data-placement="top" title={{primaryContact.email}}>{{primaryContact.email}}</a>
+            {{/if}}
+        </div>
+
+        <div class="mt1">
+            <span class="m0 truncate" data-toggle="tooltip" data-placement="top" title="{{lob}}">{{lob}}</span>
+        </div>
+
+        <div class='last-contact mt1 card-flex-row'>
+            <i class="icon-user icon-large align-middle card-flex-row-icon" aria-hidden="true"></i>
+            <span class="card-flex-row-text">{{lastContact.days}} days ago</span>
+        </div>
+
+        <div class="card-flex-row mt1">
+            <div class="card-flex-row-icon">
+                {{#if document}}
+                    <i class="icon-file-text-alt align-middle document-file" aria-hidden="true"></i>
+                {{else}}
+                    <i class="icon-square-empty align-middle document-square" aria-hidden="true"></i>
+                {{/if}}
+            </div>
+            <a href='#' class='note container-note card-flex-row-text font-size-small'>{{note.info}}</a>
+        </div>
+
+        <div class="dropdown mt2">
+            <span class="dropdown-toggle block font-size-small purple" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                <i class="fa fa-circle" aria-hidden="true"></i>
+                {{agentName}}
+                <span class="caret right"></span>
+            </span>
+            <ul class="dropdown-menu width-full" aria-labelledby="dropdownMenu1">
+                <li><a href="javascript:void(0);">May Lei</a></li>
+                <li><a href="javascript:void(0);">Alex Jones</a></li>
+            </ul>
+        </div>
+    </li>
+</script>

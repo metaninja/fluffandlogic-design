@@ -1,0 +1,94 @@
+<div class="ez-main-content">
+    <div class="ez-page-header">
+        <div class="row">
+            <div class="col-lg-6 ez-page-title">
+                <span class="ez-page-title-icon">
+                    <i class="linearicon-user linearicon-2x"></i>
+                </span>
+
+                <h1 class="h1">
+                    <span class="subtitle">
+                        My Agency
+                    </span>
+                    Users
+                </h1>
+            </div>
+            <div class="col-md-6 ez-page-actions">
+                <a href="#/app/pages/maps/view/users/view/" class="btn btn-success">Add User <i class="linearicon-plus ml-2"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="ez-page-body">
+        <div class="ez-page-sidebar content-container ez-page-sidebar-collapsed">
+            <div class="bff-include" data-src="app/pages/maps/view/users/filters.html"></div>
+        </div>
+
+        <div class="ez-page-content content-container">
+
+            <div class="search-form">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="input-group">
+                            <input type="text" class="form-control js-input-dob" id="input-primary-driver-dob" aria-describedby="basic-addon2">
+                            <span class="input-group-addon" id="basic-addon2">
+                                <i class="linearicon-magnifier"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="results-summary">
+                <div class="results-count">
+                    25 users found
+
+                    <a href="javascript:void(0)" class="results-action btn btn-link filter-link" data-target="#filter-map-users">
+                        Filters <i class="linearicon-chevron-down ml-2"></i>
+                    </a>
+                    
+                </div>
+
+                <div class="results-actions">
+                    <button class="btn btn-link results-actions" data-toggle="modal" data-target="#edit-columns-modal">Edit Columns</button>
+
+                    <div class="dropdown btn btn-link pull-left">
+                        <a href="javascript:void(0);" class="dropdown-toggle results-action" id="dropdown-assign-role-groups" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Assign Role Groups
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="javascript:void(0);">Admin</a>
+                            <a class="dropdown-item" href="javascript:void(0);">Owner</a>
+                            <a class="dropdown-item" href="javascript:void(0);">CSR</a>
+                            <a class="dropdown-item" href="javascript:void(0);">Producer</a>
+                        </div>
+                    </div>
+                    <a href="javascript:void(0);" class="btn btn-link results-action" data-toggle="modal" data-target="#bulk-add-users-modal">Bulk Add Users</a>
+                    <a href="javascript:void(0);" class="btn btn-link btn-link-danger results-action text-danger">Disable Users</a>
+                    <a href="javascript:void(0);" class="btn btn-link btn-link-danger results-action text-danger">Remove Users</a>
+                </div>
+            </div>
+
+            <div class="filters-applied"></div>
+
+            <div class="bff-include" data-src="app/pages/maps/view/users/table.html"></div>
+            <div class="bff-include" data-src="app/shared/pagination.html"></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function() {
+        $(".nav-parent").eq(1).find(".nav-parent-header").addClass("active");
+    })
+</script>
+
+
+<div class="bff-include" data-src="app/pages/maps/view/users/bulk-add-users-modal.html"></div>
+<div class="bff-include" data-src="app/shared/edit-columns/modal.html"></div>
+
+<div class="bff-script" data-src="app/shared/forms/required.js"></div>
+<div class="bff-script" data-src="app/shared/persona.js"></div>

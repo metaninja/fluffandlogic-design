@@ -1,0 +1,47 @@
+<div class="ez-dropdown-container content-container bg-gray200 my-4">
+    <div class="ez-dropdown-heading collapsed" data-toggle="collapse" data-target="#collapse-acord24" aria-expanded="true">
+        <h2 class="h2">Location and Building</h2>
+        <a href="javascript:void(0);">
+            <i class="icon-chevron-sign-down linearicon-chevron-down"></i>
+            <i class="icon-chevron-up linearicon-chevron-up"></i>
+        </a>
+    </div>
+
+    <div class="ez-dropdown-content collapse" id="collapse-acord24" tabindex="-1">
+        <p>LOCATION OF PREMISES / DESCRIPTION OF PROPERTY (Attach ACORD 101, Additional Remarks Schedule if more space is required)</p>
+        <div class="form-group">
+            <label>Location </label>
+            <select class="form-control" id="locations"> <!-- onchange="addToMasterRemarks(this)" -->
+                <option>-- Select --</option>
+                <option>1 - 927 Hogsmeade Hwy, Suite 2122, Newbury NE 82190</option>
+                <option>2 - 1232 Jefferson Rd, #1015, Newbury NE 82190</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Building</label>
+            <select class="form-control" id="locations"><!--  onchange="addToMasterRemarks(this)" -->
+                <option>-- Select --</option>
+                <option>Building 1 (927 Hogsmeade Hwy, Suite 2122, Newbury NE 82190)</option>
+                <option>Building 2 (1232 Jefferson Rd, #1015, Newbury NE 82190)</option>
+            </select>
+        </div>
+    </div>
+</div>
+
+<div class="ez-dropdown-container content-container bg-gray200 my-4">
+    <div class="ez-dropdown-heading collapsed" data-toggle="collapse" data-target=".certificate-holder-remarks" aria-expanded="true">
+        <h2 class="h2">Certificate Holder Remarks</h2>
+        <a href="javascript:;">
+            <i class="icon-chevron-sign-down linearicon-chevron-down"></i>
+            <i class="icon-chevron-up linearicon-chevron-up"></i>
+        </a>
+    </div>
+
+    <div class="ez-dropdown-content collapse certificate-holder-remarks" id="certificate-holder-remarks" tabindex="-1" style="">
+        <p>SPECIAL CONDITIONS / OTHER COVERAGES (ACORD 101, Additional Remarks Schedule may be attached if more space is required)</p>
+
+        <div class="bff-include" data-src="app/pages/applicants/certificates/edit-certificate/settings/certificate-master-remarks.html"></div>
+
+    </div>
+</div>

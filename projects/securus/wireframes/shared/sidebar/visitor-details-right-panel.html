@@ -1,0 +1,118 @@
+<h4 class="section-header">
+    <a data-toggle="collapse" href="#visitor-details">
+        Visitor Details
+        <div class="pull-right">
+            <span class="toggle-hide"></span>
+            <span class="toggle-show"></span>
+        </div>
+    </a>
+</h4>
+
+<div class="collapse in" id="visitor-details">
+
+    <div class="row">
+
+        <div class="col-md-5">
+
+            <style>
+                .custom-popup {
+                    left: -200px;
+                    width: 200px;
+                    display: block;
+                }
+            </style>
+
+            <!--
+            <div class="custom-popup popover left">
+                <div class="arrow" style="top: 50%;"></div>
+                <h3 class="popover-title">
+                    Jennifer Smith
+                    <div class="pull-right"><i class="fa fa-times"></i>
+                    </div>
+                </h3>
+                <div class="popover-content">
+                    <p><img src="../images/visitor-id.jpg" class="img-responsive img-rounded">
+                    </p>
+                </div>
+            </div>
+            -->
+
+            <div class="popover-markup">
+                <a href="#" class="trigger">
+                    <img src="http://placekitten.com/320/180" class="img-responsive img-rounded">
+                </a>
+                <div class="head hide">Jennifer Smith
+                    <div class="pull-right"><i class="fa fa-times"></i>
+                    </div>
+                </div>
+                <div class="content hide">
+                    <p>
+                        <img src="//stevensegallery.com/640/320" class="img-responsive img-rounded">
+                    </p>
+                </div>
+            </div>
+
+            <div class="popover-markup" style="margin-top: 10px;">
+                <a href="#" class="trigger"><img src="../images/visitor-id.jpg" class="img-responsive img-rounded">
+                </a>
+                <div class="head hide">Jennifer Smith Identification
+                    <div class="pull-right"><i class="fa fa-times"></i></div>
+                </div>
+                <div class="content hide">
+                    <p><img src="../images/visitor-id.jpg" class="img-responsive img-rounded">
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-md-7">
+            <h4><a href="#/Visitor_Profile.html">Jennifer Smith</a>
+        </h4>
+            <div class="details">Relationship</div>
+            <div>Spouse</div>
+            <div class="details">Visitor Type</div>
+            <div>Home User</div>
+            <div class="details">Location</div>
+            <div>Visitor Lobby</div>
+            <div class="details">Username</div>
+            <div>email@address.com</div>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <h4 class="section-header">
+            <a data-toggle="collapse" href="#additional-visitor-details">
+                Additional Visitors
+                <div class="pull-right">
+                    <span class="toggle-hide"></span>
+                    <span class="toggle-show"></span>
+                </div>
+            </a>
+        </h4>
+        <div class="collapse in" id="additional-visitor-details">
+            <div>Steve Brule, DOB: 2-4-1983</div>
+            <div>Tim Heidecker, DOB: 5-9-1981</div>
+            <div>Eric Wareheim, DOB: 10-20-1976</div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+// Popover Photo
+$('.popover-markup > .trigger').popover({
+    html: true,
+    title: function() {
+        return $(this).parent().find('.head').html();
+    },
+    content: function() {
+        return $(this).parent().find('.content').html();
+    },
+    container: 'body',
+    placement: 'left'
+});
+</script>

@@ -1,0 +1,35 @@
+@font-face {
+  font-family: "fontcustom";
+  src: font-url("fontcustom_b34b0522b10b22dd1871ae71c3cf1ff3.eot");
+  src: font-url("fontcustom_b34b0522b10b22dd1871ae71c3cf1ff3.eot?#iefix") format("embedded-opentype"), font-url("fontcustom_b34b0522b10b22dd1871ae71c3cf1ff3.woff") format("woff"), font-url("fontcustom_b34b0522b10b22dd1871ae71c3cf1ff3.ttf") format("truetype"), font-url("fontcustom_b34b0522b10b22dd1871ae71c3cf1ff3.svg#fontcustom") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: "fontcustom";
+    src: font-url("fontcustom_b34b0522b10b22dd1871ae71c3cf1ff3.svg#fontcustom") format("svg"); } }
+[data-icon]:before {
+  content: attr(data-icon); }
+
+[data-icon]:before,
+.fa-building8:before,
+.fa-facility:before {
+  display: inline-block;
+  font-family: "fontcustom";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased; }
+
+.fa-building8:before {
+  content: "\f104"; }
+
+.fa-facility:before {
+  content: "\f105"; }

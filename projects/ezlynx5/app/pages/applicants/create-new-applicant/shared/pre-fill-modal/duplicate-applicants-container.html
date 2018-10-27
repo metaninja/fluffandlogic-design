@@ -1,0 +1,23 @@
+<div class="content-container-1">
+    <div class="flex-space-between mb-2">
+        <div class="flex-container-align-center">
+            <h5 class="h2 warning-heading mb-0">
+                <i class="fa fa-exclamation-triangle" aria-hidden="true"></i> We found existing applicants
+            </h5>
+
+            <a href="#" class="ml-1 font-weight-bold" onclick="hideDuplicateApplicantsContainer(); toggleShowExistingApplicantsLink();">(Hide)</a>
+        </div>
+
+        <button type="button" class="close" aria-label="Close" onclick="hideDuplicateApplicantsContainer(); toggleShowExistingApplicantsLink();">
+            <i class="linearicon-cross linearicon-lg" aria-hidden="true"></i>
+        </button>
+    </div>
+
+    <div>
+        <p>The following applicants have the <b>same first name, last name, and state</b>.</p>
+
+        <ul class="row js-list-of-duplicate-applicants"></ul>
+    </div>
+</div>
+
+<div class="bff-include" data-src="app/pages/applicants/create-new-applicant/shared/pre-fill-modal/handlebars/duplicate-applicant.html"></div>

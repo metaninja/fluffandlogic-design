@@ -1,0 +1,248 @@
+<div>
+
+    <div class="row">
+
+        <div class="col-md-7">
+
+            <label class="rounded-check" for="rounded-check-active">
+                <input type="checkbox" name="check" id="rounded-check-active" value="None" checked/>
+                <span class="icon"></span>
+                <a href="#" data-toggle="tooltip" title="The phone number settings below will be active within the system">Active</a>
+            </label>
+
+            <hr />
+
+            <label class="rounded-check" for="rounded-check-3way">
+                <input type="checkbox" name="check" id="rounded-check-3way" value="None">
+                <span class="icon"></span>
+                <a href="#" data-toggle="tooltip" title="Detects 3-way calls and flags the CDR record">3-Way Call Detection</a>
+            </label>
+
+            <label class="rounded-check" for="rounded-check-dtmf">
+                <input type="checkbox" name="check" id="rounded-check-dtmf" value="None">
+                <span class="icon"></span>
+                <a href="#" data-toggle="tooltip" title="Dual-tone multi-frequency (allows users to enter and detect extra digits during calls)">DTMF - Allow &amp; Detect</a>
+            </label>
+
+            <div class="form-group rounded-check-indent" id="max-digits-section">
+                <label for="max-digits-allowed">Max Digits Allowed (6 or less)</label>
+                <select class="form-control" id="max-digits-allowed">
+                    <option>--</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                </select>
+            </div>
+
+            <div class="private-number">
+
+                <label class="rounded-check" for="rounded-check-watch">
+                    <input type="checkbox" name="check" id="rounded-check-watch" value="None">
+                    <span class="icon"></span>
+                    <a href="#" data-toggle="tooltip" title="Flag this phone number when it is dialed">Watch</a>
+                </label>
+
+            </div>
+
+            <label class="rounded-check" for="rounded-check-private">
+                <input type="checkbox" name="check" id="rounded-check-private" value="None">
+                <span class="icon"></span>
+                <a href="#" data-toggle="tooltip" title="The phone call will be treated as a private. You will not be able to watch or record private calls.">Private (Use for Attorney/Client Privilege)</a>
+            </label>
+
+            <div class="form-group rounded-check-indent" id="private-schedule-section">
+                <label for="private-schedule">Set Private Schedule</label>
+                <div class="input-group">
+                    <input type="text" id="private-schedule" class="form-control" placeholder="MM/DD/YYYY hh:mm A - MM/DD/YYYY hh:mm A">
+                                                <span class="input-group-addon"><i class="fa fa-calendar"></i>
+                                                </span>
+                </div>
+            </div>
+
+            <label class="rounded-check" for="rounded-check-passive">
+                <input type="checkbox" name="check" id="rounded-check-passive" value="None">
+                <span class="icon"></span>
+                <a href="#" data-toggle="tooltip" title="Does not require dialed party to actively accept the phone call (use this for rotary phone numbers)">Passive Acceptance</a>
+            </label>
+
+            <label class="rounded-check" for="rounded-check-allow-on-suspend">
+                <input type="checkbox" name="check" id="rounded-check-allow-on-suspend" value="None">
+                <span class="icon"></span>
+                <a href="#" data-toggle="tooltip" title="Inmate can call this number (e.g. attorney number) even if inmate is suspended and not able to make any other phone calls">Allow Even if Inmate is Suspended</a>
+            </label>
+
+            <label class="rounded-check" for="rounded-check-biometrics">
+                <input type="checkbox" name="check" id="rounded-check-biometrics" value="None" checked="" disabled="disabled">
+                <span class="icon"></span>
+                <a href="#" data-toggle="tooltip" title="Requires the caller to authenticate with voice biometrics">Voice Biometrics</a>
+                <span class="inherit-badge remove-override" style="display: none;"><a href="javascript:;">Remove override</a> and use setting from: CI Eden.</span>
+                <span class="inherit-badge override">Inheriting from: CI Eden. <a href="javascript:;">Override.</a></span>
+            </label>
+
+            <!--
+                <label class="rounded-check" for="rounded-check-wordspotting">
+                    <input type="checkbox" name="check" id="rounded-check-wordspotting" value="None" >
+                    <span class="icon"></span>
+                    <a href="#" data-toggle="tooltip" title="Calls will be run through the word spotting engine to detect certain words">Word Spotting</a>
+                </label>
+
+
+                <label class="rounded-check" for="rounded-check-cvv">
+                    <input type="checkbox" name="check" id="rounded-check-cvv" value="None" >
+                    <span class="icon"></span>
+                    <a href="#" data-toggle="tooltip" title="Force the recording of calls to this number">Continuous Voice Verification</a>
+                </label>
+            -->
+
+        </div>
+
+        <div class="col-md-5">
+
+            <div class="form-group">
+                <label for="dialing-class">Dialing Class of Service</label>
+                <select class="form-control" id="dialing-class">
+                    <option>None</option>
+                    <option>AIS</option>
+                    <option>Collect</option>
+                    <option>Commisary IVR</option>
+                    <option>Crime Tip</option>
+                    <option>Free</option>
+                    <option>Informant Line</option>
+                    <option>Operator22</option>
+                    <option>Probono</option>
+                    <option>Third Party IVR</option>
+                </select>
+
+                <div class="informant-line">
+
+                    <label class="rounded-check" for="rounded-check-unlist-port">
+                        <input type="checkbox" name="check" id="rounded-check-unlist-port" value="None">
+                        <span class="icon"></span>
+                        <a href="#" data-toggle="tooltip" title="Will not capture the port loacation where call was made on call detail record">Unlist Port Location</a>
+                    </label>
+
+                    <label class="rounded-check" for="rounded-check-unlist-dialed-number">
+                        <input type="checkbox" name="check" id="rounded-check-unlist-dialed-number" value="None">
+                        <span class="icon"></span>
+                        <a href="#" data-toggle="tooltip" title="Will not capture the number dialed on call detail record">Unlist Dialed Number</a>
+                    </label>
+
+                    <label class="rounded-check" for="rounded-check-unlist-speed-dial">
+                        <input type="checkbox" name="check" id="rounded-check-unlist-speed-dial" value="None">
+                        <span class="icon"></span>
+                        <a href="#" data-toggle="tooltip" title="Will not capture the speed dial number on call detail record">Unlist Speed Dial Number</a>
+                    </label>
+
+                    <label class="rounded-check" for="rounded-check-unlist-account-info">
+                        <input type="checkbox" name="check" id="rounded-check-unlist-account-info" value="None">
+                        <span class="icon"></span>
+                        <a href="#" data-toggle="tooltip" title="Will not capture the inmate's identifying information on call detail record">Unlist Inmate Information</a>
+                    </label>
+
+                    <label class="rounded-check" for="rounded-check-enable-dtmf-pass">
+                        <input type="checkbox" name="check" id="rounded-check-enable-dtmf-pass" value="None">
+                        <span class="icon"></span>
+                        <a href="#" data-toggle="tooltip" title="Allows users to skip detection and entering of extra digits during calls">Enable DTMF Pass Thru</a>
+                    </label>
+
+                </div>
+            </div>
+
+
+
+            <div class="form-group">
+                <label for="max-call-duration">Max Call Duration (minutes)</label>
+                <input class="form-control" id="max-call-duration" placeholder="Enter max call duration">
+            </div>
+
+            <div class="form-group">
+                <label for="speed-dial-code">Speed Dial Code</label>
+                <input class="form-control" id="speed-dial-code" placeholder="Enter speed dial code">
+            </div>
+
+            <div class="form-group">
+                <label for="dialing-class">RCFD Action</label>
+                <select class="form-control" id="dialing-class">
+                    <option>None</option>
+                    <option>Disconnect</option>
+                    <option>Mark Only</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="dialing-class">Call Schedule</label>
+                <select class="form-control" id="dialing-class">
+                    <option>--</option>
+                    <option selected>Limit calls after 9:00 p.m.</option>
+                    <option>No calls on Friday</option>
+                    <option>No calls during meals</option>
+                </select>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div>
+                        <img src="../images/call-schedule-2.jpg" class="img-responsive">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="bff-include" data-src="shared/bna-info.html"></div>
+
+</div>
+
+<script>
+    $('#private-schedule').daterangepicker();
+
+    $('#private-schedule-section').hide();
+    $('#max-digits-section').hide();
+    $('.informant-line').hide();
+    $('.conflict-error').hide();
+
+    $('.no-location-selected').hide();
+
+    $('.toggle-locations').click(function() {
+        $('.no-location-selected').show();
+        $('.location-selected').hide();
+    });
+
+
+
+    $('#dialing-class').change(function() {
+        if ($(this).val().toLowerCase() === 'informant line') {
+            $('.informant-line').slideDown(400);
+        } else {
+            $('.informant-line').slideUp(400);
+        }
+    });
+
+    $('#rounded-check-private').change(function() {
+        $('.private-number').slideToggle(400);
+        $('#private-schedule-section').delay(400).slideToggle(400);
+    });
+
+    $('#rounded-check-dtmf').change(function() {
+        $('#max-digits-section').slideToggle();
+    });
+
+
+    //-- Override Voice Biometrics inheritance --
+    $('.inherit-badge.override a').click(function() {
+        $(this).parents('.override').hide();
+        $(this).parents('.override').prev('.remove-override').show();
+        $(this).parents('.rounded-check').children('input').removeAttr('disabled');
+    });
+
+    $('.inherit-badge.remove-override a').click(function() {
+        $(this).parents('.remove-override').hide();
+        $(this).parents('.remove-override').next('.override').show();
+        $(this).parents('.rounded-check').children('input').attr('disabled', 'disabled');
+    });
+</script>

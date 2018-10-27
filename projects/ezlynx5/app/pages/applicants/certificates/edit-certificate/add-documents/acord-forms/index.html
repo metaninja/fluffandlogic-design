@@ -1,0 +1,56 @@
+<div class="search-form">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search" aria-label="Statement #, carrier">
+                <span class="input-group-addon" id="basic-addon2"><i class="linearicon-magnifier"></i></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="results-summary">
+    <div class="results-count">
+        25 forms found
+        <a href="javascript:void(0)" class="results-action btn btn-link filter-link" data-target="#filter-forms">
+            Filters
+        </a>
+
+        <div class="bff-include" data-src="app/pages/applicants/certificates/edit-certificate/add-documents/acord-forms/filters.html"></div>
+    </div>
+
+    <div class="results-actions">
+    </div>
+</div>
+
+<table class="table table-hover bg-white">
+    <thead>
+        <tr>
+            <th>
+                <input type="checkbox">
+            </th>
+            <th>ACORD Form #</th>
+            <th>Form Name</th>
+            <th>Version</th>
+        </tr>
+    </thead>
+
+    <tbody id="forms"></tbody>
+</table>
+
+<div class="bff-include" data-src="app/shared/pagination.html"></div>
+
+<script id="forms-template" type="x-handlebars-template">
+    {{#forms}}
+    <tr>
+        <td>
+            <input type="checkbox">
+        </td>
+        <td>{{acordFormNumber}}</td>
+        <td>{{formName}}</td>
+        <td>{{version}}</td>
+    </tr>
+    {{/forms}}
+</script>
+
+<div class="bff-script" data-src="app/pages/applicants/certificates/edit-certificate/add-documents/acord-forms/index.js"></div>

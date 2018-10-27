@@ -1,0 +1,272 @@
+// =======================================================
+//  
+//  1.  Workspace (Right Panel)
+//
+// =======================================================
+
+@rightPanel-width:              350px;
+@rightPanelExpanded-width:      350px;
+@rightPanelExpanded-extra-width:525px;
+
+@workspaceTitleBG:              #464851;
+@workspaceTitleText:            @white;
+@workspaceZIndex:               50;
+@workspaceExpandedBG:           @white;
+
+.workspaceTitleMixin() {
+    position: relative;
+    color: @workspaceTitleText;
+    display: table;
+    height: 33px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    .borderRadiusNone;
+
+    > h4,
+    > h5 {
+        position: absolute;
+        top: 10px;
+        left: @padding;
+        .font-size (14);
+        .line-height (14);
+        font-weight: bold;
+        color: @white;
+        z-index: 2;
+        margin: 0px;
+        white-space: nowrap;
+    }
+}
+
+// Workspace (Right Panel)
+// ------------------------------
+#RightPanel {
+    background: @white;
+    width: @rightPanel-width;
+    right: -@rightPanel-width;
+    z-index: @workspaceZIndex + 1;
+    border: 0;
+    box-shadow: -1px 0 3px rgba(0,0,0,0.1);
+    -moz-box-shadow: -1px 0 3px rgba(0,0,0,0.1);
+    -webkit-box-shadow: -1px 0 3px rgba(0,0,0,0.1);
+
+    .workspaceTitle {
+        .workspaceTitleMixin;
+        background-color: @workspaceTitleBG;
+        
+        button {
+            display: table-cell;
+            height: 100%;
+            padding: 0 10px;
+            margin-bottom: 0;
+            background: transparent;
+            color: @greyLight;
+            border: none;
+            border-left: 1px solid rgba(255,255,255,0.075);
+            
+            &:hover {
+                color: #FFF;
+            }
+            
+            i {
+                .font-size (16);
+                .line-height (28);
+            }
+        }
+    }
+
+    #workspaceBody {
+        position: relative;
+        overflow-x: hidden;
+        overflow-y: auto;
+        
+        height: 100%;
+
+        #labelsContainer .badge {
+            cursor: pointer;
+        }
+
+        // Note Options/Icons
+        // ------------------------
+        .addNoteSection, .addTaskNote {
+            .noteOptions {
+                padding: 0 @paddingSmall @paddingSmaller;
+                width: 100%;
+
+                button.noteIcon {
+                    border: none;
+                    background: none;
+                    outline: none;
+                    color: @iconColorLight;
+
+                    &[disabled] {
+                        cursor: not-allowed;
+                        i {
+                            color: #d5d5d5;
+                            &:hover {
+                                color: #d5d5d5;
+                            }
+                        }
+                    }
+                    i {
+                        .font-size (18);
+                        color: @iconColorLight;
+
+                        &:hover {
+                          color: @iconColor;
+                        }
+                    }
+
+                    &.hasTask,
+                    &.hasAttachments,
+                    &.hasLabels,
+                    &.stickyToggled,
+                    &.hasPolicies,
+                    &.hasOpportunity {
+                        i {
+                          color: @blue;
+                        }
+                    }
+                }
+
+                .noteButtons {
+                    position: absolute;
+                    right: 2px;
+                    bottom: 6px;
+
+                    .btn {
+                        // we reduced the left/right padding on these buttons to make more horizontal room
+                        padding: 4px 10px;
+                    }
+                    .btn.btn-primary {
+                        float: right;
+                        margin-right: @paddingSmall;
+                    }
+                }
+            }
+        }
+        
+        small {
+            color: @grey;
+            font-style: italic;
+        }
+    }
+}
+#RightPanelExpanded {
+    width: @rightPanelExpanded-width;
+    right: -@rightPanelExpanded-width;
+    background: @workspaceExpandedBG;
+    z-index: @workspaceZIndex;
+    box-shadow: -1px 0 1px 0 rgba(0,0,0,.2);
+
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    transition: all .25s linear;
+
+    &.extra-width {
+        width: @rightPanelExpanded-extra-width;
+    }
+
+    .sidePanelTitle {
+        background-color: #777;
+        .workspaceTitleMixin;
+    }
+    .sidePanelBody {
+        padding: .5rem 1rem;
+    }
+}
+
+.rightPanel-show #RightPanel {
+    right: 0;
+    transition: all .25s linear;
+}
+.rightPanel-show.rightPanelExpanded-show #RightPanelExpanded {
+    right: @rightPanel-width;
+}
+
+.rightPanel-show.rightPanel-pinned {
+    #RightPanel {
+        .box-shadow(none);
+        transition: none;
+        
+        .workspaceTitle {
+            button {
+                border-left: 1px solid rgba(255,255,255,0.075);
+                width: 37px;
+            }
+            
+            #workspace-pin {  
+                position: relative;
+                background: @blueDarkest;      
+                height: 30px;
+                
+                .icon-pushpin {
+                    position: absolute;
+                    top: 3px;
+                    left: 10px;
+                    color: @white;
+                    .rotateLeft();
+                }
+            }
+        }
+    }
+    
+    .ui-layout-center {
+        margin-right: @rightPanel-width;
+    }
+}
+
+#workspaceBody {
+    border-left: 1px solid #ccc;
+    
+    .taskContextHeader {
+        margin: 4px 0 -3px 8px;
+    }
+  
+    .discussionItems .icon-sticky {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      padding: 4px;
+      background: #d5d5d5;
+      color: @blue;
+      border-radius: 4px;
+    }
+  
+}
+
+.rightPanel-trigger {
+    .icon-stack {
+        height: 1.4em; 
+        
+        .icon-stack-base {
+            font-size: 1.4em;
+        }
+    }
+    
+    .icon-ok {
+        padding-top: 2px;
+        font-size: 0.7em;
+    }
+    
+    .label-important {
+        padding: 0px 4px;
+        position: absolute;
+        top: 3px;
+        right: 7px;
+    }
+}
+
+.text-error {
+    color: @red;
+}
+
+#RightPanel .dropdown-menu.typeahead {
+    padding: 0;
+}
+
+body.hasWorkspace {
+    overflow-x: hidden;
+}

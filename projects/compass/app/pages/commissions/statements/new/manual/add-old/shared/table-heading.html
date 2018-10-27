@@ -1,0 +1,49 @@
+<div class="search-form">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search" aria-label="Search">
+                <span class="input-group-addon" id="basic-addon2"><i class="linearicon-magnifier"></i></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="results-summary">
+    <div class="results-count">
+        25 results found
+
+        <a href="javascript:void(0)" class="results-action btn btn-link filter-link" data-target="#filter-unmatched">
+            Filters <i class="linearicon-chevron-down ml-2"></i>
+        </a>
+    </div>
+
+    <div class="results-actions">
+        <button class="btn btn-link js-add-commission-btn mr-1" onclick="addCommissionRow()">Add Commission</button>
+        <button class="btn btn-link mr-1" data-toggle="modal" data-target="#update-commissions-modal">Update Commissions</button>
+        <button class="btn btn-link js-disable-btn js-approve-btn mr-1" data-toggle="modal" data-target="#approve-commissions-modal" disabled>Approve</button>
+        <button class="btn btn-link js-disable-btn js-approve-btn mr-1" data-toggle="modal" data-target="#approve-commissions-modal" disabled>Unapprove</button>
+        <button class="btn btn-link mr-1" data-toggle="modal" data-target="#audit-modal">Audit Trail</button>
+        <button class="btn btn-link btn-link-danger js-disable-btn mr-1" data-toggle="modal" data-target="#delete-commissions-modal" disabled>Delete</button>
+    </div>
+</div>
+
+
+<div class="filter-dropdown" id="filter-unmatched" tabindex="-1">
+    <div class="form-group js-filter-date-type">
+        <label for="match-status">Match Status</label>
+
+        <select class="form-control" id="match-status">
+            <option>All</option>
+            <option>Matched</option>
+            <option>Unmatched</option>
+        </select>
+    </div>
+
+    <div class="form-group js-filter-date-range">
+        <input type="checkbox"> Chargebacks
+    </div>
+</div>
+
+<div class="bff-script" data-src="app/shared/filters/dropdown.js"></div>

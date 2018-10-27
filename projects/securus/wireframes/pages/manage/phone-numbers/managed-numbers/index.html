@@ -1,0 +1,43 @@
+<title>Managed Numbers</title>
+
+<div class="bff-include" data-src="pages/manage/phone-numbers/managed-numbers/header.html"></div>
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-md-3">
+            <!-- begin: sidebar -->
+            <ul class="bsnav bsnav-pills bsnav-stacked">
+                <li>
+                    <a href="#/Phone_SearchBlockedNumbers.html" class="tab-blocked-numbers">
+                        <i class="fa fa-phone"></i> &nbsp; Blocked Numbers
+                    </a>
+                </li>
+
+                <li class="active">
+                    <a href="#" class="tab-managed-numbers">
+                        <i class="fa fa-phone"></i> &nbsp; Managed Numbers
+                    </a>
+                </li>
+            </ul>
+
+            <!-- end: sidebar -->
+        </div>
+        <div class="col-md-9">
+
+            <!-- Managed Numbers search results -->
+            <div class="managed-numbers">
+                <div class="bff-include" data-src="pages/manage/phone-numbers/managed-numbers/search.html"></div>
+
+                <!-- Search Results and Export-->
+                <div class="bff-include" data-src="include/results-export.html" data-event="ResultsExport"></div>
+                <!-- End Search Results and Export -->
+
+                <div class="bff-include" data-src="pages/manage/phone-numbers/managed-numbers/results.html"></div>
+
+            </div>
+            <!-- Configured Numbers search results -->
+
+        </div>
+    </div>
+</div>

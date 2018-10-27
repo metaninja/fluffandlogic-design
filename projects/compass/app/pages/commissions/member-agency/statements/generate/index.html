@@ -1,0 +1,67 @@
+<div class="ez-main-content">
+    <div class="ez-page-header">
+        <div class="row">
+            <div class="col-md-6 ez-page-title">
+                <span class="ez-page-title-icon">
+                    <i class="linearicon-cash-dollar linearicon-3x"></i>
+                </span>
+
+                <h1 class="h1">
+                    <span class="subtitle">Commissions</span>
+                    Create Member Agency Statements
+                </h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="ez-page-body">
+        <div class="ez-page-content content-container">
+
+            <div class="bff-include" data-src="app/pages/commissions/statements/generate/steps.html" data-page-number="1"></div>
+            <h2 class="h4">Select Carrier Statements</h2>
+
+            <div class="search-form">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Statement #, carrier" aria-label="Statement #, carrier">
+                            <span class="input-group-addon" id="basic-addon2"><i class="linearicon-magnifier"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="results-summary">
+                <div class="results-count">
+                    25 statements found
+
+                    <a href="javascript:void(0)" class="results-action btn btn-link filter-link" data-target="#filter-statements">
+                        Filters <i class="linearicon-chevron-down ml-2"></i>
+                    </a>
+                    <div class="bff-include" data-src="app/pages/commissions/member-agency/statements/generate/filters.html"></div>
+                </div>
+            </div>
+
+            <div class="bff-include" data-src="app/pages/commissions/member-agency/statements/generate/table.html"></div>
+            <div class="bff-include" data-src="app/shared/pagination.html"></div>
+
+            <div class="section-footer">
+                <div class="section-footer-left">
+                    <a href="#/app/pages/commissions/member-agency/statements/" class="btn btn-outline-primary mr-2">Cancel</a>
+
+                    <div class="bff-include" data-src="app/pages/commissions/statements/shared/cancel-modal.html"></div>
+                </div>
+                <div class="section-footer-right">
+                    <a href="#/app/pages/commissions/member-agency/statements/generate/review/" class="btn btn-primary">
+                        Review Member Agency Statements <i class="linearicon-arrow-right" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="bff-script" data-src="app/pages/commissions/member-agency/statements/generate/index.js"></div>
+<div class="bff-script" data-src="app/pages/commissions/javascript/main.js"></div>
+<div class="bff-script" data-src="app/shared/filters/dropdown.js"></div>

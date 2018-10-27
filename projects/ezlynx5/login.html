@@ -1,0 +1,207 @@
+<!DOCTYPE html >
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <link rel="shortcut icon" href="images/favicon.ico">
+
+
+  <link rel="stylesheet" href="css/basscss.css">
+  <link rel="stylesheet" href="css/login.css">
+
+  <link rel="shortcut icon" href="favicon.ico" />
+
+  <title>EZLynx</title>
+</head>
+
+<body id="htmlBody" class="hasWorkspace bg-gray-xx-light">
+
+  <div class="login-page bg-gray-xx-light m0">
+    <div class="login-col lg-col lg-col-6 md-col md-col-7 sm-col sm-col-8 mx-auto relative">
+      <!-- Login section -->
+
+        <!-- Login alerts -->
+        <div class="absolute fit-always top-0 left-0 bg-gray-medium color-white p2 shadow display-none">
+          <div class="clearfix">
+            <div class="col col-1 center">
+              <i class="h1 icon-warning-sign mr2 color-yellow"></i>
+            </div>
+            <div class="col col-11 color-gray-x-light">
+
+
+              <!-- System alerts -->
+              <div class="alert-system">
+                <h1 class="h3 m0 p0">EZLynx Alert: </h1>
+                <p class="h5">Note that the system will be going down tomorrow between 12:00pm CST and 2:30pm CST. Please plan your time accordingly.</p>
+              </div>
+              <!-- System alerts -->
+
+
+              <!-- Browser incompatability message -->
+              <div class="">
+                <p class="h5">Sorry! EZLynx no longer supports this version of Internet Explorer.
+                  <strong>(If you're using <abbr title="Internet Explorer 10">IE10</abbr> or greater please
+                    <a class="color-white underline" href="http://windows.microsoft.com/en-us/internet-explorer/use-compatibility-view#ie=ie-10"
+                        target="_blank">turn off compatibility mode</a>).
+                  </strong>
+                </p>
+
+                <ul class="list-reset h5">
+                  <li class="inline-block align-middle">Please upgrade to one of these browsers: </li>
+                  <li class="inline-block align-middle ml1" title="Google Chrome">
+                    <a class="inline-block browser-icon browser-chrome" href="http://www.google.com/chrome">Google Chrome</a>
+                  </li>
+                  <li class="inline-block align-middle ml1" title="Mozilla Firefox">
+                    <a class="inline-block browser-icon browser-firefox" title="Mozilla Firefox" href="http://www.firefox.com/index.html">Mozilla Firefox</a>
+                  </li>
+                  <li class="inline-block align-middle ml1" title="Opera">
+                    <a class="inline-block browser-icon browser-opera" title="Opera" href="http://www.opera.com/index.html">Opera</a>
+                  </li>
+                  <li class="inline-block align-middle ml1" title="Safari">
+                    <a class="inline-block browser-icon browser-safari" title="Apple Safari" href="http://www.apple.com/safari/">Safari</a>
+                  </li>
+                  <li class="inline-block align-middle ml1 mr1">
+                    <a class="inline-block browser-icon browser-ie" title="Internet Explorer" title="Microsoft Internet Explorer" href="http://windows.microsoft.com/ie">Internet Explorer</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- Browser incompatability message -->
+
+
+            </div>
+          </div>
+        </div>
+      <!-- Login alerts -->
+
+        <!-- login container -->
+        <div class="login-container mx-auto mt3">
+
+          <div class="login-container-body bg-white p4 pb4 shadow rounded ml1 mr1">
+
+            <div class="pt2 pb3">
+              <h1 class="login-logo-ezlynx color-gray-medium">
+                EZlynx
+              </h1>
+            </div>
+
+
+            <div class="login-form">
+              <div class="mb3">
+                <label for="login-username" class="h5 block color-gray-light pb1">Username</label>
+                <input type="text" id="login-username" class="input-login fit-always rounded h5 p2 border border-gray-x-light font-family-inherit color-gray-medium"><!--  disabled="disabled" -->
+              </div>
+
+              <div class="mb3">
+                <label for="login-password" class="h5 block color-gray-light pb1">Password</label>
+                <input type="password" id="login-password" class="input-login fit-always rounded p2 border border-gray-x-light font-family-inherit color-gray-medium"><!--  disabled="disabled" -->
+                <small class="color-gray-x-light">No password required</small>
+              </div>
+
+              <div class="clearfix mb3">
+                <div class="lg-col lg-col-6 block">
+                  <button class="login-btn font-family-inherit height-auto border-none bg-bg-blue color-white rounded h4 align-middle fit-always py2 px2 text-decoration-none">Log In</button>
+                </div>
+                <div class="col lg-col-6"></div>
+              </div>
+
+              <div class="clearfix mb2">
+                <a href="#" class="login-forgot-password h5 color-bg-blue">Forgot your password?</a>
+              </div>
+
+              <p class="login-error rounded pt1 pb1 color-red h5 display-none"><i class="icon-warning-sign h4 m0"></i> Username or password is incorrect.</p>
+            </div>
+
+
+            <!-- Logged out -->
+            <div class="logged-out-form display-none">
+              <p class="h5 color-gray-light mb3">You are currently logged out of EZLynx.</p>
+
+              <p class="h5 color-gray-light mb3">Close the browser window to ensure all private information is cleared from memory.</p>
+
+              <div class="clearfix mb2">
+                <div class="lg-col lg-col-6 block">
+                  <button class="login-again-btn height-auto font-family-inherit border-none bg-green color-white rounded h4 align-middle fit-always pt2 pb2">
+                    Back to Log In
+                  </button>
+                </div>
+                <div class="col lg-col-6"></div>
+              </div>
+
+            </div>
+            <!-- Logged out -->
+
+          </div>
+
+          <div class="login-container-footer clearfix mt2">
+            <div class="sm-col sm-col-12 md-col md-col6 lg-col lg-col-6 ">
+              <a href="#" class="color-bg-blue h5 mr1">
+                EZLynx for mobile devices
+              </a>
+            </div>
+            <div class="sm-col sm-col-12 md-col md-col6 lg-col lg-col-6">
+            </div>
+          </div>
+
+        </div>
+        <!-- end login container -->
+
+      <div class="login-footer bg-gray-xx-light center">
+        <ul class="list-reset clearfix mb2 inline-block">
+          <li class="left ml2 mr2"><a href="#" class="circle left p1 h3 bg-gray-light color-white"><i class="icon-facebook"></i></a></li>
+          <li class="left mr2"><a href="#" class="circle left p1 h3 bg-gray-light color-white"><i class="icon-twitter"></i></a></li>
+          <li class="left mr2"><a href="#" class="circle left p1 h3 bg-gray-light color-white"><i class="icon-linkedin"></i></a></li>
+          <li class="left mr2"><a href="#" class="circle left p1 h3 bg-gray-light color-white"><i class="icon-google-plus"></i></a></li>
+          <li class="left mr2"><a href="#" class="circle left p1 h3 bg-gray-light color-white"><i class="icon-youtube"></i></a></li>
+        </ul>
+
+        <br class="clearfix">
+
+        <p class="pl2 h6 color-gray-light center">
+          <span>Copyright &copy; 2004-2016 Webcetera, Inc. All Rights Reserved</span>
+          <span class="inline-block align-middle divider-vertical ml2 mr2 bg-gray-x-light"></span>
+          <span>EZLynx Web version 4.16.11.4 [01]</span>
+        </p>
+      </div>
+
+    </div>
+
+    <div class="lg-col lg-col-6 md-col md-col-5 sm-col sm-col-4 login-ad-container">
+      <div class="login-ad-image" style="background-image:url(images/ad.png); background-size: 100% auto"></div>
+    </div>
+  </div>
+
+
+  <!-- JavaScript libraries. jQuery MUST APPEAR FIRST!!! -->
+  <script src="node_modules/jquery/dist/jquery.js"></script>
+  <script src="node_modules/tether/dist/js/tether.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+  <script>
+
+      $(document).ready(function() {
+          function storeUsername() {
+              try {
+                  var username = $('#login-username').val();
+                  localStorage.setItem('username', username);
+                  location.href = "index.html";
+              }
+              catch(e) {
+                  console.log(e);
+              }
+          };
+
+          $('.login-btn').click(function() {
+              storeUsername();
+          });
+      });
+
+  </script>
+
+
+  <!-- Live Reload -->
+  <script src="http://127.0.0.1:35728/livereload.js?ext=Chrome&amp;extver=2.1.0"></script>
+</body>
+
+</html>

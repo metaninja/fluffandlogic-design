@@ -1,0 +1,81 @@
+<!-- Search field -->
+<div class="row">
+    <div class="col-md-6">
+
+        <div class="form-group">
+            <label class="control-label">
+                Search
+            </label>
+
+            <div class="input-group">
+                <div class="input-group-btn">
+                    <div class="search-criteria-dropdown-checkbox"></div>
+                </div>
+                <input type="text" class="form-control search-text">
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="col-md-4">
+
+        <div class="form-group">
+            <label for="reservation">
+                Date Range
+            </label>
+
+            <div class="input-group">
+                <input type="text" id="reservation" class="form-control">
+                <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="col-md-2">
+        <div class="form-group">
+            <label class="control-label">&nbsp;</label>
+            <a class="btn btn-primary btn-search" href="#">Search</a>
+        </div>
+    </div>
+
+</div>
+<!-- Search field -->
+
+<script>
+    (function () {
+        var grievanceSearchCriteria = [{
+            id: '1',
+            label: 'Charlevoix Country Kitchen',
+            isChecked: true
+        },
+        {
+            id: '2',
+            label: 'Maricopa 3',
+            isChecked: true
+        },
+        {
+            id: '3',
+            label: 'ABCD',
+            isChecked: true
+        },
+        {
+            id: '4',
+            label: 'Maricopa County Jail Grievance Form 1897A',
+            isChecked: true
+        }];
+        
+        bff.setData('grievanceSearchCriteria', grievanceSearchCriteria);
+
+        $('.search-criteria-dropdown-checkbox').dropdownCheckbox({
+            data: bff.getData('grievanceSearchCriteria'),
+            autosearch: true,
+            title: 'Search types',
+            after: '',
+            all: 'All ',
+            btnClass: 'input-group-addon',
+            hideHeader: false
+        });
+    }());
+</script>

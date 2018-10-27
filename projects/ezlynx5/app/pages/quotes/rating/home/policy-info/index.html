@@ -1,0 +1,69 @@
+<div class="ez-main-content">
+    <div class="bff-include js-navigation" data-src="app/pages/applicants/shared/navigation.html" data-page-title="Home" data-page-subtitle="Lenny Bergman"></div>
+
+    <div class="ez-page-body max-width-limit">
+        <div class="ez-page-content">
+            <div class="bff-include js-navigation-ratings" data-src="app/pages/quotes/rating/home/shared/navigation-ratings.html" data-highlight-rating-icon="2"></div>
+
+            <main>
+                <div class="bff-include" data-src="app/pages/quotes/rating/home/policy-info/shared/general-policy-info.html"></div>
+
+                <div class="bff-include" data-src="app/pages/quotes/rating/home/policy-info/shared/underwriting.html"></div>
+
+                <div class="row mb-2">
+                    <div class="col-md-1 border-right-dashed-sm flex-container-align-center">
+                        <span class="font-weight-bold">All Carriers</span>
+                    </div>
+
+                    <div class="col-md-2">
+                        <p>Does the agent want the applicant email to bridge to all carrier sites?</p>
+                    </div>
+
+                    <div class="col-md-2">
+                        <div class="flex-container-align-center">
+                            <label class="switch">
+                                <input type="checkbox" id="togBtn" checked>
+                                <div class="slider round">
+                                    <span class="on">YES</span>
+                                    <span class="off">NO</span>
+                                </div>
+                            </label>
+                            <i class="linearicon-info-circle linearicon-lg ml-3"  data-toggle="tooltip" data-placement="top" title="Some tooltip text!"></i>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 flex-container-align-center">
+                        <div class="mr-4">
+                            <span class="font-weight-bold teal300">Additional Carrier Questions</span>
+                        </div>
+
+                        <div>
+                            <div class="flex-container-align-center">
+                                <span class="font-size-normal font-weight-bold mr-2">Expand All Carriers</span>
+                                <label class="switch">
+                                    <input type="checkbox" id="togBtn" onchange="toggleAllCarriers.call(this)">
+                                    <div class="slider round">
+                                        <span class="on">YES</span>
+                                        <span class="off">NO</span>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bff-include" data-src="app/pages/quotes/rating/home/shared/carrier-questions/carrier.html"></div>
+            </main>
+
+            <footer class="my-5">
+                <div class="content-container flex-space-between">
+                    <a href="#/app/pages/quotes/rating/home/ratings" class="btn btn-primary"><i class="mr-2 fa linearicon-chevron-left linearicon-lg"></i>  Rating</a>
+                    <a href="#/app/pages/quotes/rating/home/dwelling-info" class="btn btn-primary">Dwelling Info <i class="ml-2 fa linearicon-chevron-right linearicon-lg"></i></a>
+                </div>
+            </footer>
+        </div>
+    </div>
+</div>
+
+<div class="bff-script" data-src="app/pages/quotes/rating/home/policy-info/index.js"></div>
+<div class="bff-script" data-src="app/pages/quotes/rating/home/index.js"></div>

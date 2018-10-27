@@ -1,0 +1,35 @@
+<div class="panel panel-action clearfix">
+    <div class="results-number-container pull-left">
+        <span class="results-number" data-count="120"></span>&nbsp;
+        <span class="results-label">Results</span>
+    </div>
+
+    <div class="btn-group btn-group pull-right">
+        <button class="btn btn-link" data-toggle="modal" data-target="#modal-bulk-add-users">Bulk Add Users</button>
+
+        <div class="btn-group btn-export-results">
+            <button class="btn btn-link dropdown-toggle disabled" data-toggle="dropdown">
+                Export Results
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+                <li><a href="#">CSV</a>
+                </li>
+                <li><a href="#">Excel</a>
+                </li>
+                <li><a href="#">PDF</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function() {
+
+        // Enable Download, Export links
+        $('.table input[type=checkbox]').click(function() {
+            $('.panel-action button').removeClass('disabled');
+        });
+    });
+</script>

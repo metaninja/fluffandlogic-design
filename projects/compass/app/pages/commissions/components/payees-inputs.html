@@ -1,0 +1,51 @@
+<div class="row mb-2 criteriaRow">
+	<span class="col-md-1">Pay</span>
+
+	<div class="col-md-2">
+		<select class="form-control width-full" disabled>
+			<option>My Agency</option>
+			<!--<option selected>Member Agency</option>-->
+		</select>
+	</div>
+
+	<div class="col-md-2 js-payee-amount form-inline">
+		<span class="js-agency-commission-input">
+			<input type="text" class="form-control" style="width: 70px" onkeyup="updateAgencyCommissionTotalValue()"> %
+		</span>
+
+		<span class="js-written-premium-input hide-content">
+			<input type="text" class="form-control" style="width: 70px"> %
+		</span>
+
+		<span class="js-flat-fee-input hide-content">
+			$ <input type="text" class="form-control" style="width: 70px">
+		</span>
+
+		<span class="ml-4">of</span>
+	</div>
+
+	<div class="col-md-3 js-payee-typeof-payment">
+        <select onchange="changePayeePayAmount.call(this)">
+            <option selected value="%">My Agency Commission (%A)</option>
+            <option value="%">Written Premium (%P)</option>
+			<option value="%">Agency Fee (%AF)</option>
+			<option value="%">Policy Fee (%PF)</option>
+			<option value="%">Inspection Fee (%IF)</option>
+            <!--<option value="$">Flat Fee ($)</option>-->
+        </select>
+
+		<!--<select onchange="changePayeePayAmount.call(this)">-->
+			<!--<option selected>My Agency Commission (%A)</option>-->
+			<!--<option>Written Premium (%P)</option>-->
+			<!--<option>Flat Fee ($)</option>-->
+		<!--</select>-->
+
+
+	</div>
+
+	<div class="col-md-1 pt1">
+		<a href="javascript:void(0);" class="button-trash" onclick="showDeleteConfirmationModal.call(this, 'Payee')">
+			<i class="linearicon-trash2 linearicon-lg red"></i>
+		</a>
+	</div>
+</div>

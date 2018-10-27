@@ -1,0 +1,171 @@
+<div class="ez-dropdown-container content-container mb-4">
+    <div class="ez-dropdown-heading" data-toggle="collapse" data-target="#policy-information">
+        <h2 class="h2">Policy Information</h2>
+        <a href="#">
+            <i class="icon-chevron-sign-down linearicon-chevron-down"></i>
+            <i class="icon-chevron-up linearicon-chevron-up"></i>
+        </a>
+    </div>
+
+    <div class="ez-dropdown-content collapse show" id="policy-information">
+        <div class="row no-gutters">
+            <div class="col-md-8">
+                <h3 class="h3 text-center">PRIOR POLICY INFORMATION</h3>
+
+                <div class="row no-gutters">
+                    <div class="col-md-6">
+                        <div class="rating-col-left">
+                            <div class="form-group">
+                                <label class="required-label" for="input-expiration-date-current-policy">Expiration Date (current policy)</label>
+                                <div class="input-group md-width">
+                                    <input type="text" class="form-control" id="input-expiration-date-current-policy" aria-describedby="basic-addon2" onblur="formatDate(this)">
+                                    <span class="input-group-addon" id="basic-addon2">
+                                        <i class="linearicon-calendar-full linearicon-lg"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="required-label" for="input-prior-carrier">Prior Carrier</label>
+                                <select class="form-control" id="input-prior-carrier">
+                                    <option value="OtherStandard">Other Standard</option>
+                                    <option value="OtherNonStandard">Other Non-Standard</option>
+                                    <option value="NoPriorInsurance">No Prior Insurance</option>
+                                    <option value="Item21stCentury">21st Century</option>
+                                    <option value="ACentral">A.Central</option>
+                                    <option selected="selected" value="AAA">AAA</option>
+                                    <option value="AARP">AARP</option>
+                                    <option value="Acadia">Acadia</option>
+                                    <option value="Countrywide">Countrywide</option>
+                                    <option value="Encompass">Encompass</option>
+                                    <option value="Farmers">Farmers</option>
+                                    <option value="Foremost">Foremost</option>
+                                    <option value="Infinity">Infinity</option>
+                                    <option value="OmniInsuranceCo">Omni Insurance Co</option>
+                                    <option value="Victoria">Victoria</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="rating-col-middle">
+                            <div class="form-group">
+                                <label class="required-label" for="input-years-with-prior-carrier">Years With Prior Carrier</label>
+                                <div class="input-group mb-2 md-width">
+                                    <select class="form-control" id="input-years-with-prior-carrier">
+                                            <option>0</option>
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                            <option>6</option>
+                                    </select>
+                                    <span class="input-group-addon input-group-addon-md" id="basic-addon2">Years</span>
+                                </div>
+                                <div class="input-group md-width">
+                                    <select class="form-control">
+                                            <option>0</option>
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                            <option>6</option>
+                                    </select>
+                                    <span class="input-group-addon input-group-addon-md" id="basic-addon2">Months</span>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="required-label" for="input-years-with-continuous-coverage">Years With Continuous Coverage</label>
+                                <div class="input-group mb-2 md-width">
+                                    <select class="form-control" id="input-years-with-continuous-coverage">
+                                            <option>0</option>
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                            <option>6</option>
+                                    </select>
+                                    <span class="input-group-addon input-group-addon-md" id="basic-addon2">Years</span>
+                                </div>
+                                <div class="input-group md-width">
+                                    <select class="form-control">
+                                            <option>0</option>
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                            <option>6</option>
+                                    </select>
+                                    <span class="input-group-addon input-group-addon-md" id="basic-addon2">Months</span>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="input-prior-policy-premium">Prior Policy Premium</label>
+                                <input type="text" class="form-control" id="input-prior-policy-premium">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <h3 class="h3 text-center">NEW POLICY INFORMATION</h3>
+
+                <div class="row no-gutters">
+                    <div class="col-md-12">
+                        <div class="rating-col-right">
+                            <div class="form-group">
+                                <label class="required-label" for="input-new-policy-term">New Policy Term</label>
+                                <select class="form-control" id="input-new-policy-term">
+                                    <option>6 Months</option>
+                                    <option>12 Months</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="required-label" for="input-effective-date-new-policy">Effective Date (new policy)</label>
+                                <div class="input-group md-width">
+                                    <input type="text" class="form-control" id="input-effective-date-new-policy" aria-describedby="basic-addon2" onblur="formatDate(this)">
+                                    <span class="input-group-addon" id="basic-addon2">
+                                        <i class="linearicon-calendar-full linearicon-lg"></i>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="required-label" for="input-credit-check-authorized">Credit Check Authorized</label>
+                                <label class="switch">
+                                    <input type="checkbox" id="input-credit-check-authorized" checked>
+                                    <div class="slider round">
+                                        <span class="on">YES</span>
+                                        <span class="off">NO</span>
+                                    </div>
+                                </label>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="required-label" for="input-quote-as-package">Quote as Package</label>
+                                <label class="switch">
+                                    <input type="checkbox" id="input-quote-as-package" checked>
+                                    <div class="slider round">
+                                        <span class="on">YES</span>
+                                        <span class="off">NO</span>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="bff-script" data-src="libs/js/validation/format-date.js"></div>

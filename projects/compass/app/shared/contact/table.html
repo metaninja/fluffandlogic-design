@@ -1,0 +1,55 @@
+<div id="contacts" class="d-inline-flex flex-wrap">
+</div>
+
+<script id="contacts-template" type="x-handlebars-template">
+    {{#contacts}}
+    <div class="card mr-3 mb-3" style="width: 20rem;">
+        <div class="card-header">
+            <div class="d-flex justify-content-between align-center">
+                <div>
+                    <a href="javascript:void(0)" data-toggle="modal" data-target="#add-contact-modal">
+                        <h3 class="h3 card-title">{{Name}}</h3>
+                    </a>
+                    <h5 class="card-subtitle text-muted">{{Type}}</h5>
+                </div>
+                <div>
+                    <a href="javascript:void(0)" class="btn btn-link" data-toggle="modal" data-target="#add-contact-modal">
+                        <i class="linearicon-expand2 linearicon-lg"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="card-body">
+
+            <div class="card-text">
+                <table>
+                    <tr>
+                        <td class="align-top pr-3"><i class="linearicon-map-marker linearicon-lg"></i></td>
+                        <td class="pb-2">
+                            {{AddressLine1}}<br>
+                            {{AddressLine2}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><i class="linearicon-telephone linearicon-lg"></i></td>
+                        <td class="pb-2">{{Phone}}</td>
+                    </tr>
+                    <tr>
+                        <td><i class="linearicon-envelope linearicon-lg"></i></td>
+                        <td class="pb-2"><a href="mailto:{{Email}}">{{Email}}</a></td>
+                    </tr>
+                    {{#if Website}}
+                    <tr>
+                        <td><i class="linearicon-earth linearicon-lg"></i></td>
+                        <td class="pb-2"><a href="http://{{Website}}" target="_blank">{{Website}}</a></td>
+                    </tr>
+                    {{/if}}
+
+                </table>
+            </div>
+        </div>
+    </div>
+    {{/contacts}}
+</script>
+
+<div class="bff-script" data-src="app/shared/contact/table.js"></div>

@@ -1,0 +1,235 @@
+<div class="row no-gutters custom-quote-scenario-layout">
+	<div class="col-md-2 custom-quote-scenario-column striped-column">
+		<div></div>
+
+		<div class="desc-row">
+			<div class="form-inline">
+				<label for="input-home-coverages" class="large-label mr-2">Home Coverages</label>
+				<label class="switch">
+			        <input type="checkbox" id="input-home-coverages" onchange="toggleApplyHomeCoverages.call(this)">
+			        <div class="slider round">
+			            <span class="on">YES</span>
+			            <span class="off">NO</span>
+			        </div>
+			    </label>
+			</div>
+		</div>
+
+		<div>
+			Personal Liability
+		</div>
+
+		<div>
+			Medical Payments
+		</div>
+
+		<div class="desc-row">
+			<div class="form-inline">
+				<label for="input-home-deductibles" class="large-label mr-2">Home Deductibles</label>
+				<label class="switch">
+			        <input type="checkbox" id="input-home-deductibles" onchange="toggleApplyHomeDeductibles.call(this)">
+			        <div class="slider round">
+			            <span class="on">YES</span>
+			            <span class="off">NO</span>
+			        </div>
+			    </label>
+			</div>
+		</div>
+
+		<div>
+			All Perils Deductible
+		</div>
+
+		<div>
+			Wind Deductible
+		</div>
+
+		<div class="desc-row">
+			<div class="form-inline">
+				<label for="input-home-discounts" class="large-label mr-2">Home Discounts</label>
+				<label class="switch">
+			        <input type="checkbox" id="input-home-discounts" onchange="toggleApplyHomeDiscounts.call(this)">
+			        <div class="slider round">
+			            <span class="on">YES</span>
+			            <span class="off">NO</span>
+			        </div>
+			    </label>
+			</div>
+		</div>
+
+		<div>
+			Multipolicy
+		</div>
+	</div>
+
+	<div class="col-md-10">
+		<div class="row no-gutters">
+			<div class="col-md-3 custom-quote-scenario-column">
+				<div>
+					<div class="form-group flex-column text-center">
+					    <label for="input-agent-input">
+					    	<strong>Agent Input</strong>
+					    </label>
+					    <label class="switch">
+					        <input type="checkbox" id="input-agent-input" checked disabled>
+					        <div class="slider round">
+					            <span class="on">YES</span>
+					            <span class="off">NO</span>
+					        </div>
+					    </label>
+					</div>
+				</div>
+
+				<div class="desc-row">
+					<span class="text-desc-info">Use agent selected values in all scenarios</span>
+				</div>
+
+				<div>
+					<select class="form-control" disabled>
+						<option>25000</option>
+						<option>50000</option>
+						<option>75000</option>
+						<option>100000</option>
+					</select>
+				</div>
+
+				<div>
+					<select class="form-control" disabled>
+						<option>No Coverage</option>
+						<option>0</option>
+						<option>50</option>
+						<option>100</option>
+						<option>200</option>
+						<option>250</option>
+						<option>500</option>
+					</select>
+				</div>
+
+				<div class="desc-row">
+					<span class="text-desc-info">Use agent selected values in all scenarios</span>
+				</div>
+
+				<div>
+					<select class="form-control" disabled>
+						<option>1/2%</option>
+						<option>1%</option>
+						<option>2%</option>
+					</select>
+				</div>
+
+				<div>
+					<select class="form-control" disabled>
+						<option>No Coverage</option>
+						<option>0</option>
+						<option>50</option>
+						<option>100</option>
+						<option>200</option>
+						<option>250</option>
+						<option>500</option>
+					</select>
+				</div>
+
+				<div class="desc-row">
+					<span class="text-desc-info">Use agent selected values in all scenarios</span>
+				</div>
+
+				<div>
+					<td>
+						<label class="switch">
+						    <input type="checkbox" checked disabled>
+						    <div class="slider round">
+						        <span class="on">YES</span>
+						        <span class="off">NO</span>
+						    </div>
+						</label>
+					</td>
+				</div>
+			</div>
+
+			<div class="col-md-3 custom-quote-scenario-column js-additional-option striped-column hide-content">
+				<div>
+					<div class="form-group flex-column text-center">
+					    <label for="input-agent-input">
+					    	<strong class="js-option-name">Option 1</strong>
+					    </label>
+					    <label class="switch">
+					        <input type="checkbox" id="input-agent-input" checked>
+					        <div class="slider round">
+					            <span class="on">YES</span>
+					            <span class="off">NO</span>
+					        </div>
+					    </label>
+					</div>
+
+					<i class="linearicon-cross linearicon-2x js-delete-button" aria-hidden="true" onclick="deleteAdditionalOption.call(this)"></i>
+				</div>
+
+				<div class="desc-row"></div>
+
+				<div class="js-home-coverages-input">
+					<select class="form-control">
+						<option>25000</option>
+						<option>50000</option>
+						<option>75000</option>
+						<option>100000</option>
+					</select>
+				</div>
+
+				<div class="js-home-coverages-input">
+					<select class="form-control">
+						<option>No Coverage</option>
+						<option>0</option>
+						<option>50</option>
+						<option>100</option>
+						<option>200</option>
+						<option>250</option>
+						<option>500</option>
+					</select>
+				</div>
+
+				<div class="desc-row"></div>
+
+				<div class="js-home-deductibles-input">
+					<select class="form-control">
+						<option>1/2%</option>
+						<option>1%</option>
+						<option>2%</option>
+					</select>
+				</div>
+
+				<div class="js-home-deductibles-input">
+					<select class="form-control">
+						<option>No Coverage</option>
+						<option>0</option>
+						<option>50</option>
+						<option>100</option>
+						<option>200</option>
+						<option>250</option>
+						<option>500</option>
+					</select>
+				</div>
+
+				<div class="desc-row"></div>
+
+				<div class="js-home-discounts-input">
+					<td>
+						<label class="switch">
+						    <input type="checkbox" checked>
+						    <div class="slider round">
+						        <span class="on">YES</span>
+						        <span class="off">NO</span>
+						    </div>
+						</label>
+					</td>
+				</div>
+			</div>
+
+			<div class="col-md-3 px-1 js-add-quote-scenario-option">
+				<div class="dashboard-widget dashboard-add-widget" onclick="addAdditionalOption()">
+				    <i class="fa fa-plus fa-3x" aria-hidden="true"></i>
+				    <span class="small-desc-text font-weight-bold">Add Scenario</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

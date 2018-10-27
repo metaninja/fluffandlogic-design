@@ -1,0 +1,268 @@
+.ui-layout-center {
+	#PageContentContainer.PageContent {
+		max-width: 1200px;
+	}
+	
+	// Slider 
+	// -----------------------------
+	.slider-wrapper { 
+		max-width: 500px; 
+		max-height: 250px; 
+	}
+	.slider-wrapper img {
+		height:200px;
+		width:500px;
+		overflow:hidden;
+	}
+	
+	// Welcome Panel
+	// ------------------------------
+	.welcomePanel {
+		width: 232px;
+		height: 260px;
+		margin: 0;
+		border: 0;
+		background: @greyLighter;
+		border-bottom: 1px solid #ccc;
+		padding: 18px;
+		.box-shadow(none);
+		border-radius: 2px;
+		overflow: hidden;
+		
+		> span {
+			height: auto;
+		}
+		
+		&.carriernews {
+			span.carriernewstitle {
+				float: left;
+				margin: 0;
+			}
+			
+			a,
+			span {
+				float: right;
+				text-transform: none;
+				padding: 0 @paddingSmaller;
+				.font-size (@fontSizeBase);
+			}
+		}
+		
+		&.products {
+			display: inline-block!important;
+			width: 232px;
+			margin: 0 24px 24px 0;
+		}
+		
+		.panelHeader {
+			background-image: none;
+			padding: 0;
+			margin: 0;
+			height: auto;
+		}
+		
+		&.actions {    
+			.panelHeader {
+				margin-bottom: @paddingSmall;
+				height: 12px;
+				height: 1.2rem;
+			}
+		}
+		
+		table {
+			background: transparent;
+		}
+		
+		tbody {
+			td {
+				height: auto;
+				.line-height (13);
+				padding: 0;
+			}
+		}
+		
+		&.news {
+			padding: 0px;
+			width: 490px;
+			border: 0;
+			
+			// **Remove**
+			.panelHeader {
+				display: none;
+			}
+			
+			img
+				{
+				height: 260px;
+			}
+		}
+		
+		.carriernewstitle,
+		&.news h3 {
+			padding: 0 @paddingLarge;
+			font-weight: bold;
+			
+		}
+		
+		&.carriernews {
+			.cnewsdata {
+				height: 232px;
+			}
+		}
+		
+		table {
+			tbody {
+				li {
+					a {
+						margin: 0;
+						.line-height (24);
+						
+						&[title="Total"] {
+							font-weight: bold;
+						}
+					}
+					
+					a[title="Unmatched Policies"] {
+						margin-bottom: 4px;
+					}
+				}
+			}
+		}
+	  
+	  .downloadsWidget {
+		li {
+		  line-height: 22px; 
+		  margin: 0;
+		}
+		
+		ul > span {
+		  display: block;
+		  margin-top: -5px;
+		}
+		
+		a {
+		  margin: 0;
+		  line-height: 20px;
+		  
+		  span {
+			color: #555;
+		  }
+		}
+		
+		.helptitle {
+		  margin-bottom: 8px;
+		}
+		
+		.subtitle {
+		  display: block;
+		  margin-top: 10px;
+		  margin-bottom: 4px;
+		  font-size: 11px;
+		  font-weight: 600;
+		}
+	  }
+	}
+	
+	.welcomePanel,
+	.news, 
+	.carriernews, 
+	.help,
+	.products,
+	.links {
+		display: inline-block;
+		float: none;
+		margin: 0 24px 24px 0;
+	}
+	
+	.helptitle,
+	.linkstitle,
+	.panelHeader {
+		display: block;
+		font-size: 13px;
+		line-height: 13px;
+		color: @greyDarker;
+		font-weight: bold;
+		padding: 0;
+		margin: 0;
+		border: 0;
+		background-image: none;
+	}
+	
+	.help,
+	.links {
+		
+		img {
+			display: none;
+		}
+		
+		ul {
+			li {
+				a {
+					margin: 0;
+
+					b {
+						color: @blue;
+					}
+				}
+			}
+		}
+	}
+	
+	.rb {
+		display: inline-block;
+		float: none;
+		margin: 0 24px 0 0;
+		width: 232px;
+	}
+	
+	div#_ctl0__ctl0_MainContentPlaceHolder_cphContent_trActions {
+		position: relative;
+		display: inline-block;
+		margin: 0;
+	}
+	
+	#chromeInfo {
+		h3.panelHeader {
+			margin-top: -8px;
+			margin-bottom: 0;
+			font-size: 13px;
+			text-transform: none;
+		}
+		
+		.panelHeader {
+			height: 24px;
+		}
+		#chromeStatus {
+			background-image: none;
+			padding: 0;
+			height: auto;
+			
+			.chromeInstall {
+				height: auto;
+			}
+		}
+	}
+
+	.welcomePanelBlueGradient {
+		background-color: #7EB2D9;
+		filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#7EB2D9, endColorstr=#D5E9FF);
+		background-image: -moz-linear-gradient(top, #7EB2D9 0%, #D5E9FF 20%);
+		background-image: -webkit-linear-gradient(top, #7EB2D9 0%, #D5E9FF 20%);
+		background-image: -ms-linear-gradient(top, #7EB2D9 0%, #D5E9FF 20%);
+		background-image: linear-gradient(top, #7EB2D9 0%, #D5E9FF 20%);
+		background-image: -o-linear-gradient(top, #7EB2D9 0%, #D5E9FF 20%);
+		background-image: -webkit-gradient(linear, right top, right bottom, color-stop(0%, #7EB2D9), color-stop(20%, #D5E9FF));
+
+		hr {
+		  margin: 5px;
+		  border-color: #E1EFFF;
+		}
+	}
+}
+
+// Redirect Message
+// -----------------------------
+#redirectMessage {
+	margin-bottom: 18px;
+	font-size: 1.4em;
+}

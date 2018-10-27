@@ -1,0 +1,115 @@
+<div class="modal fade" id="add-certificate-holders-modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header clearfix">
+                <h5 class="modal-title pull-left">Add Certificate Holders</h5>
+                <button type="button" class="close pull-right" data-dismiss="modal" aria-label="Close">
+                    <i class="linearicon-cross2" aria-hidden="true"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="search-form">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Certificate Holder, LOB, ACORD form, Policy #" aria-label="Statement #, carrier">
+                                <span class="input-group-addon" id="basic-addon2"><i class="linearicon-magnifier"></i></span>
+                            </div>
+                        </div>
+
+                        <div class="col-md-5 text-right">
+                            <a href="javascript:void(0)" class="btn btn-success" onclick="newHolderModal()">
+                                New Certificate Holder
+                                <i class="linearicon-plus ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="results-summary">
+                    <div class="results-count">
+                        25 forms found
+                        <a href="javascript:void(0)" class="results-action btn btn-link filter-link" data-target="#filter-forms">
+                            Filters
+                        </a>
+
+                        <div class="bff-include" data-src="app/pages/applicants/certificates/edit-certificate/select-certificate-holder/certificate-holders-modal/filters.html"></div>
+                    </div>
+
+                    <div class="results-actions"></div>
+                </div>
+
+                <table class="table table-hover js-certificate-holders-table">
+                    <thead>
+                    <tr>
+                        <th>
+                            <input type="checkbox">
+                        </th>
+                        <th>Certificate Holder</th>
+                        <th>Address</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th></th>
+                    </tr>
+                    </thead>
+
+                    <tbody id="add-certificate-holders"></tbody>
+                </table>
+
+                <div class="bff-include" data-src="app/shared/pagination.html"></div>
+            </div>
+
+            <div class="modal-footer">
+                <div class="modal-footer-left"></div>
+                <div class="modal-footer-right">
+                    <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="addCertificateHolders();">Add Certificate Holders</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+    function newHolderModal() {
+        $('#add-certificate-holders-modal').modal('hide');
+        $('#new-certificate-holders-modal').modal('show');
+    }
+
+    function addCertificateHolders() {
+        $('.js-selected-certificate-holders').removeClass('hide-content');
+        $('#add-certificate-holders-modal').modal('hide');
+    }
+</script>
+
+
+<script id="certificate-holders-template" type="x-handlebars-template">
+    {{#certificateHolders}}
+    <tr>
+        <td>
+            <input type="checkbox">
+        </td>
+        <td>{{certificateHolder}}</td>
+        <td>{{address}}</td>
+        <td>{{email}}</td>
+        <td><nobr>{{phone}}</nobr></td>
+        <td>
+            <a href="javascript:void(0)" class="js-certificate-edit" onclick="editCertificateHolder()">Edit</a>
+
+            <div class="dropdown js-certificate-actions" style="display: none;">
+                <a href="javascript:;" class="dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Actions
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="javascript:void(0);">Edit</a>
+                    <a class="dropdown-item" href="javascript:void(0);">Copy</a>
+                    <a class="dropdown-item" href="javascript:void(0);" onclick="deleteRow.call(this)">Delete</a>
+                </div>
+            </div>
+        </td>
+    </tr>
+    {{/certificateHolders}}
+</script>
+
+<div class="bff-script" data-src="app/pages/applicants/certificates/edit-certificate/select-certificate-holder/certificate-holders-modal/table.js"></div>

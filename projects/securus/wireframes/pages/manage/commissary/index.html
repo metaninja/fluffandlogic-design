@@ -1,0 +1,56 @@
+<title>Commissary Requests</title>
+
+<div class="bff-include" data-src="pages/manage/commissary/header.html"></div>
+
+<div class="bff-include" data-src="pages/manage/commissary/breadcrumb.html"></div>
+
+<div class="container">
+
+    <div class="row">
+
+        <div class="bff-include" data-src="pages/manage/commissary/search.html"></div>
+
+    </div>
+
+    <div class="row">
+
+        <div class="col-md-8">
+
+            <div class="bff-include" data-src="pages/manage/commissary/results-export.html" data-event="ResultsToolbarLoaded"></div>
+
+            <ul class="nav nav-tabs">
+                <li class="active"><a href="#open-orders" data-toggle="tab">Open</a>
+                </li>
+                <li><a href="#completed-orders" data-toggle="tab">Confirmed</a>
+                </li>
+            </ul>
+
+            <div class="tab-content">
+
+                <div class="tab-pane fade in active" id="open-orders">
+
+                    <div class="bff-include" data-src="pages/manage/commissary/open-orders.html" data-event="OpenOrdersLoaded"></div>
+
+                </div>
+
+                <div class="tab-pane fade" id="completed-orders">
+
+                    <div class="bff-include" data-src="pages/manage/commissary/completed-orders.html" data-event="CompletedOrdersLoaded"></div>
+
+                </div>
+
+            </div>
+
+            <div class="bff-include" data-src="include/Pagination.html"></div>
+
+        </div>
+
+        <div class="col-md-4">
+
+            <div class="bff-include" data-src="pages/manage/commissary/details.html" data-event="CommissarySearchDetailsLoaded"></div>
+
+        </div>
+
+    </div>
+
+</div>

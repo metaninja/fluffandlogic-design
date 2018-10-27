@@ -1,0 +1,27 @@
+
+<div class="ez-page-header">
+    <div class="row">
+        <div class="col-md-6 ez-page-title">
+            <span class="ez-page-title-icon">
+                <i class="" id="import-page-header-icon"></i>
+            </span>
+            <h1 class="h1">
+                <span class="subtitle">Carrier Commissions</span>
+                <span id="import-page-header-name"></span>
+            </h1>
+        </div>
+        <div class="col-md-6 ez-page-actions">
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function() {
+        importIcon = localStorage.getItem("Import Icon");
+        importName = localStorage.getItem("Import Name");
+
+        $('#import-page-header-icon').removeAttr('class');
+        $('#import-page-header-icon').addClass(importIcon);
+        $('#import-page-header-name').html("Import " + importName);
+    });
+</script>

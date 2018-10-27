@@ -1,0 +1,66 @@
+<nav class="navbar navbar-toggleable-md navbar-light main-topnav custom-background" style="background-color: #37474f !important;">
+
+    <!-- Toggles LEFT NAV between icon only and icon and description text -->
+    
+
+    <div class="navbar-title ml-4 mr-auto">
+        <i class="linearicon-apps linearicon-2x pointer mr-2" style="color: white;" onclick="toggleLeftNav()"></i>
+        
+        <a class="navbar-brand ml-2" href="#/app/pages/dashboard">
+            <img class="gray-ezlynx-logo" src="libs/images/logo-ezlynx-compass--gray.svg" style="width: 8rem; height: 100%" class="ml-3">
+            <img class="white-ezlynx-logo" src="libs/images/logo-ezlynx--white.svg" style="width: 4rem; height: 100%" class="ml-3">
+        </a>
+        <div class="navbar-search ml-2 d-flex align-items-center mr-auto">
+            <input class="form-control " type="text" placeholder="Search">
+            <span class="navbar-search-icon"><i class="linearicon-magnifier"></i></span>
+        </div>
+    </div>
+
+    <ul class="navbar ml-auto topnav-right">
+        <li class="nav-item dropdown nav-login">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img src="" class="user-photo js-agent-photo">
+                <span class="user-name">Shawn Smith</span>
+            </a>
+
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <span class="dropdown-header">
+                <strong>Shawn Smith</strong><br>
+            </span>
+
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#" onclick="showCustomizeModal()">Customize</a>
+                <a class="dropdown-item" href="login.html">Logout</a>
+            </div>
+        </li>
+
+        <li class="nav-item">
+            <a href="#" class="nav-link workspace-toggle-btn">
+                <i class="linearicon-pencil linearicon-lg"></i>
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a href="#" class="nav-link">
+                <i class="linearicon-list linearicon-lg"></i>
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a href="#" class="nav-link">
+                <i class="linearicon-alarm linearicon-lg"></i>
+            </a>
+        </li>
+    </ul>
+
+
+    <!--<div class="collapse navbar-collapse bff-include js-persona js-persona-map-admin" data-src="app/shared/nav/topnav/map-admin.html" id="navbarSupportedContent"></div>-->
+</nav>
+
+<div class="bff-script" data-src="app/shared/persona.js"></div>
+
+<script>
+    function toggleLeftNav() {
+        $(".new-leftnav").toggleClass("new-leftnav-hidden");
+    }
+</script>

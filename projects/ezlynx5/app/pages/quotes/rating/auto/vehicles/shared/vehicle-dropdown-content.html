@@ -1,0 +1,263 @@
+<div>
+    <div class="row">
+        <div class="col-md-2">
+            <div class="form-group">
+                <label class="required-label" for="input-vehicle-vin">VIN</label>
+                <input type="text" class="form-control uppercase" id="input-vehicle-vin" onkeyup="toggleCarImage.call(this)">
+            </div>
+
+            <div class="form-group">
+                <label class="required-label" for="input-vehicle-year">Year</label>
+                <select class="form-control js-vehicle-year" id="input-vehicle-year" onchange="updateVehicleName.call(this)">
+                    <option>2010</option>
+                    <option>2011</option>
+                    <option>2012</option>
+                    <option>2013</option>
+                    <option>2014</option>
+                    <option>2015</option>
+                    <option>2016</option>
+                    <option>2017</option>
+                    <option>2018</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label class="required-label" for="input-vehicle-make">Make</label>
+                <select class="form-control js-vehicle-make" id="input-vehicle-make" onchange="updateVehicleName.call(this)">
+                    <option value="">&lt;Select&gt;</option>
+                    <option value="ACURA">ACURA</option>
+                    <option value="ASTON MARTIN">ASTON MARTIN</option>
+                    <option value="AUDI">AUDI</option>
+                    <option value="HONDA">HONDA</option>
+                    <option value="INFINITI">INFINITI</option>
+                    <option value="LAND ROVER">LAND ROVER</option>
+                    <option value="LEXUS">LEXUS</option>
+                    <option value="TESLA">TESLA</option>
+                    <option value="TOYOTA">TOYOTA</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label class="required-label" for="input-vehicle-model">Model</label>
+                <select class="form-control js-vehicle-model" id="input-vehicle-model" onchange="updateVehicleName.call(this)">
+                    <option value="">&lt;Select&gt;</option>
+                    <option value="CSX ">CSX</option>
+                    <option value="CSX TECHNOLOGY">CSX TECHNOLOGY</option>
+                    <option value="CSX TYPE S">CSX TYPE S</option>
+                    <option value="MDX ">MDX</option>
+                    <option value="MDX SPORT">MDX SPORT</option>
+                    <option value="MDX TECHNOLOGY">MDX TECHNOLOGY</option>
+                    <option value="RDX ">RDX</option>
+                    <option value="RDX TECHNOLOGY">RDX TECHNOLOGY</option>
+                    <option value="RL ">RL</option>
+                    <option value="TL ">TL</option>
+                    <option value="TL TYPE S">TL TYPE S</option>
+                    <option value="TSX ">TSX</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label class="required-label" for="input-vehicle-sub-model">Sub-Model</label>
+                <select class="form-control js-vehicle-sub-model" id="input-vehicle-sub-model" onchange="updateVehicleName.call(this)">
+                    <option value="">&lt;Select&gt;</option>
+                    <option>Sedan 4</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="col-md-2">
+            <div class="form-group">
+                <label for="input-vehicle-passive-restraints">Passive Restraints</label>
+                <select class="form-control" id="input-vehicle-passive-restraints">
+                    <option value="-1">&lt;Select&gt;</option>
+                    <option value="None">None</option>
+                    <option value="AutomaticSeatbelts">Automatic Seatbelts</option>
+                    <option value="AirbagDrvrSide">Airbag (Drvr Side)</option>
+                    <option value="AutoStbeltsDrvrAirbag">Auto Stbelts/Drvr Airbag</option>
+                    <option value="AirbagBothSides">Airbag Both Sides</option>
+                    <option value="AutoStbeltsAirbagBoth">Auto Stbelts/Airbag Both</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="input-vehicle-anti-lock-brakes">Anti-Lock Brakes</label>
+                <select class="form-control" id="input-vehicle-anti-lock-brakes">
+                    <option>Yes</option>
+                    <option>No</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="input-vehicle-daytime-running-lights">Daytime Running Lights</label>
+                <select class="form-control" id="input-vehicle-daytime-running-lights">
+                    <option>Yes</option>
+                    <option>No</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="input-vehicle-cost">Cost New Value</label>
+                <input type="text" class="form-control" id="input-vehicle-cost">
+            </div>
+
+            <div class="form-group">
+                <label for="input-vehicle-anti-theft">Anti-Theft</label>
+                <select class="form-control" id="input-vehicle-anti-theft">
+                    <option value="-1">&lt;Select&gt;</option>
+                    <option value="None">None</option>
+                    <option selected="selected" value="Active">Active</option>
+                    <option value="AlarmOnly">Alarm Only</option>
+                    <option value="Passive">Passive</option>
+                    <option value="VehicleRecoverySystem">Vehicle Recovery System</option>
+                    <option value="BothActiveandPassive">Both Active and Passive</option>
+                    <option value="VINEtching">VIN# Etching</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="col-md-2">
+            <div class="form-group">
+                <label class="required-label" for="input-vehicle-use">Vehicle Use</label>
+                <select class="form-control" id="input-vehicle-use">
+                    <option value="-1">&lt;Select&gt;</option>
+                    <option value="Business">Business</option>
+                    <option value="Farming">Farming</option>
+                    <option value="Pleasure">Pleasure</option>
+                    <option selected="selected" value="ToFromWork">To/From Work</option>
+                    <option value="ToFromSchool">To/From School</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label class="required-label" for="input-vehicle-miles-one-way">Miles One Way</label>
+                <input type="text" class="form-control" id="input-vehicle-miles-one-way">
+            </div>
+
+            <div class="form-group">
+                <label class="required-label" for="input-vehicle-number-days-week"># Days/Week</label>
+                <select class="form-control" id="input-vehicle-number-days-week">
+                    <option>7</option>
+                    <option>6</option>
+                    <option>5</option>
+                    <option>4</option>
+                    <option>3</option>
+                    <option>2</option>
+                    <option>1</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label class="required-label" for="input-vehicle-number-weeks-month"># Weeks/Month</label>
+                <select class="form-control" id="input-vehicle-number-weeks-month">
+                    <option>4</option>
+                    <option>3</option>
+                    <option>2</option>
+                    <option>1</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label class="required-label" for="input-vehicle-annual-miles">Annual Miles</label>
+                <input type="text" class="form-control" id="input-vehicle-annual-miles">
+            </div>
+        </div>
+
+        <div class="col-md-2">
+            <div class="form-group">
+                <label for="input-vehicle-current-odometer">Current Odometer</label>
+                <input type="text" class="form-control" id="input-vehicle-current-odometer">
+            </div>
+
+            <div class="form-group">
+                <label for="input-vehicle-performance">Performance</label>
+                <select class="form-control" id="input-vehicle-performance">
+                    <option value="-1">&lt;Select&gt;</option>
+                    <option selected="selected" value="Standard">Standard</option>
+                    <option value="Sports">Sports</option>
+                    <option value="Intermediate">Intermediate</option>
+                    <option value="HighPerformance">High Performance</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="input-vehicle-modifications-value">Modifications Value</label>
+                <input type="text" class="form-control" id="input-vehicle-modifications-value">
+            </div>
+
+            <div class="form-group">
+                <label for="input-vehicle-new-car">Was the car new?</label>
+                <select class="form-control" id="input-vehicle-new-car">
+                    <option>Yes</option>
+                    <option>No</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label class="required-label" for="input-vehicle-ownership-type">Ownership Type</label>
+                <select class="form-control" id="input-vehicle-ownership-type">
+                    <option value="-1">&lt;Select&gt;</option>
+                    <option selected="selected" value="Owned">Owned</option>
+                    <option value="Leased">Leased</option>
+                    <option value="Lien">Lien</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="col-md-2">
+            <div class="form-group">
+                <label for="input-vehicle-car-pool">Car Pool</label>
+                <select class="form-control" id="input-vehicle-car-pool">
+                    <option>Yes</option>
+                    <option>No</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label class="d-block" for="input-vehicle-prior-damage-present">Prior Damage Present</label>
+                <label class="switch">
+                    <input type="checkbox" id="input-vehicle-prior-damage-present" checked="">
+                    <div class="slider round">
+                        <span class="on">YES</span>
+                        <span class="off">NO</span>
+                    </div>
+                </label>
+            </div>
+
+            <div class="form-group">
+                <label class="d-block" for="input-vehicle-alternate-garage">Alternate Garage</label>
+                <label class="switch">
+                    <input type="checkbox" id="input-vehicle-alternate-garage" checked="">
+                    <div class="slider round">
+                        <span class="on">YES</span>
+                        <span class="off">NO</span>
+                    </div>
+                </label>
+            </div>
+
+            <div class="bg-grey300 p-2">
+                <div class="form-group">
+                    <label for="input-vehicle-principal-operator">Principal Operator</label>
+                    <select class="form-control" id="input-vehicle-principal-operator">
+                        <option>Lenny Bergman</option>
+                        <option>Jason Orth</option>
+                        <option>Mary Orth</option>
+                        <option>Groot Orth</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="input-vehicle-secondary-operator">Secondary Operator</label>
+                    <select class="form-control" id="input-vehicle-secondary-operator">
+                        <option>Mary Orth</option>
+                        <option>Jason Orth</option>
+                        <option>Groot Orth</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-2">
+            <img class="car-image hide-content" src="images/cars/car1.png">
+        </div>
+    </div>
+</div>

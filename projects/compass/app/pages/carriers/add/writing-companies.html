@@ -1,0 +1,135 @@
+<style>
+    #available,
+    #selected {
+        height: 18rem;
+        overflow-y: auto;
+        border-radius: .25rem;
+    }
+</style>
+
+<div class="form-group js-search-form-writing-companies">
+    <div class="search-form">
+        <label>Search Writing Companies</label>
+        <div class="row">
+            <div class="col-md-8">
+                <div class="input-group">
+                    <input type="text" class="form-control js-input-writing-company"
+                           placeholder="Search for writing companies by name or NAIC code"
+                           aria-label="Search for writing companies by name or NAIC code"
+                           onkeyup="searchWritingCompanies(event)">
+                    <a href="javascript:void(0)" class="input-group-addon" id="basic-addon2"
+                       onclick="searchCarriers(event)">
+                        <i class="linearicon-magnifier"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row js-writing-company-results hide-content">
+    <div class="col-md-6">
+        <div class="mb-2"><strong>Available writing companies</strong></div>
+        <ul id="available" class="border border-gray-x-light p-2">
+        </ul>
+    </div>
+    <div class="col-md-6">
+        <div class="mb-2"><strong>Writing companies selected</strong></div>
+        <ul id="selected" class="border border-gray-x-light p-2">
+        </ul>
+    </div>
+</div>
+
+<script id="available-template" type="x-handlebars-template">
+    {{#available}}
+    <li class="p-2">
+        <input type="checkbox" onclick="addToSelected({{ @index }})">
+        {{Name}}
+    </li>
+    {{/available}}
+</script>
+
+<script id="selected-template" type="x-handlebars-template">
+    {{#selected}}
+    <a href="javascript:void(0)" class="d-block clearfix p-2" onclick="removeFromSelected({{ @index }})">
+        <div class="row">
+            <div class="col-md-10">
+                {{Name}}
+            </div>
+            <div class="col-md-2 text-right">
+                <i class="linearicon-cross pull-right text-right"></i>
+            </div>
+        </div>
+    </a>
+    {{/selected}}
+</script>
+
+<script>
+    function searchWritingCompanies(e) {
+        if (e.type == "click" || e.keyCode === 13) {
+            $('.js-writing-company-results').removeClass('hide-content');
+        }
+    }
+
+    function addToSelected(index) {
+        selected.selected.push(available.available[index]);
+        available.available.splice(index,1);
+        renderAvailable();
+        renderSelected();
+    }
+
+    function removeFromSelected(index) {
+        available.available.push(selected.selected[index]);
+        selected.selected.splice(index,1);
+        renderAvailable();
+        renderSelected();
+    }
+
+    var existingCarriers = {
+        existingCarriers: [
+            {
+                Name: "Safeco Insurance",
+                Supported: true
+            },
+            {
+                Name: "Safeco",
+                Supported: false
+            }
+        ]
+    };
+
+    var available = {
+        available: [
+            { Name: "SAFECO INS CO OF AMER - 24740" },
+            { Name: "SAFECO INS CO OF IL - 39012" },
+            { Name: "SAFECO INS CO OF IN - 11215" },
+            { Name: "SAFECO INS CO OF OR - 11071" },
+            { Name: "SAFECO LLOYDS INS CO - 11070" },
+            { Name: "SAFECO NATL INS CO - 24759" },
+            { Name: "SAFECO REINS LTD - 051208" },
+        ]
+    };
+
+    var selected = {
+        selected: [
+            { Name: "SAFECO SURPLUS LINES INS CO - 11100" },
+        ]
+    };
+
+    function renderAvailable() {
+        var availableTemplateScript = $("#available-template").html();
+        var availableTemplate = Handlebars.compile(availableTemplateScript);
+        var availableData = availableTemplate(available);
+        $('#available').html(availableData);
+    }
+
+    function renderSelected() {
+        var selectedTemplateScript = $("#selected-template").html();
+        var selectedTemplate = Handlebars.compile(selectedTemplateScript);
+        var selectedData = selectedTemplate(selected);
+        $('#selected').html(selectedData);
+    }
+
+    renderAvailable();
+    renderSelected();
+</script>

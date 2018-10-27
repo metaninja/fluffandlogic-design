@@ -1,0 +1,62 @@
+<link rel="stylesheet" href="https://cdn.webcetera.com/CommonResources/EZLynx/EzLynxAuto/styles/auto.css">
+<link rel="stylesheet" href="https://communication.webcetera.com/EzLynxCommunicationCenter/Styles/NewCampaign.css">
+
+<style>
+    .container-required {
+        width: 400px;
+        position: relative;
+    }
+
+    .container-required input {
+        display: block;
+        width: 10rem;
+    }
+</style>
+
+<div class="design-container">
+    <div class="design-leftnav">
+        <div class="bff-include" data-src="app/shared/leftnav.html"></div>
+    </div>
+    <div class="design-content">
+        <header class="design-page-header">
+            <h1>Form Validation</h1>
+        </header>
+
+        <section class="design-page-content">
+            <ul>
+                <li>- If a field is required, highlight the field in red but don't display a tooltip.</li>
+                <li>- If the input is invalid, highlight the field in red using the class below, and display a tooltip.</li>
+            </ul>
+
+            <div class="design-demo clearfix" style="margin-top: 40px;">
+                <div class="container-required">
+                    <label class="required">Age</label>
+                    <input type="text" class="input-validation-error" data-toggle="tooltip" data-placement="top" title="Age can only be a number">
+                </div>
+            </div>
+
+
+            <p>&nbsp;</p>
+
+            <pre><code class="html">
+&lt;div class="container-required"&gt;
+    &lt;input type="text" class="input-validation-error" data-toggle="tooltip"
+   data-placement="top" title="Age can only be a number"&gt;
+&lt;/div&gt;
+            </code></pre>
+        </section>
+    </div>
+</div>
+
+
+<script>
+    function toggleAlert() {
+        $('.alert').toggle();
+    }
+
+    $('.input-validation-error').hover(toggleAlert);
+</script>
+
+<div class="bff-script" data-src="app/shared/activate-highlight.js"></div>
+
+

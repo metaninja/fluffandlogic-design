@@ -1,0 +1,38 @@
+{
+  "name": "securus-pattern-library",
+  "version": "0.1.2",
+  "authors": [
+    "Marcelo Somers <marcelos@slalom.com>",
+    "Sherif Tariq <sherift@slalom.com>"
+  ],
+  "description": "The pattern library for Securus",
+  "keywords": [
+    "atomic-design",
+    "atomicdesign",
+    "atomic",
+    "design",
+    "pattern-library",
+    "patternlibrary",
+    "pattern",
+    "library"
+  ],
+  "private": true,
+  "ignore": [
+    "src",
+    "gruntfile.js",
+    "package.json",
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "bower.json",
+    "README.md"
+  ],
+  "dependencies": {
+    "highlightjs": "latest"
+  },
+  "devDependencies": {
+    "bootstrap-sass-official": "~3.3.4"
+  }
+}

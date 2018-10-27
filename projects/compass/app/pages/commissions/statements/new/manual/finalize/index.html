@@ -1,0 +1,67 @@
+<div class="ez-main-content">
+    <div class="bff-include js-cancel-modal" data-src="app/pages/commissions/statements/new/manual/shared/header.html"></div>
+
+    <div class="ez-page-body">
+        <div class="ez-page-content content-container">
+
+            <ol class="wizard2">
+                <li class="complete"><a href="#/app/pages/commissions/statements/new/manual/index.html">Statement Summary</a></li>
+                <li class="complete"><a href="#/app/pages/commissions/statements/new/manual/add/index.html">Add & Approve Commissions</a></li>
+                <!--<li class="active"><a href="#/app/pages/commissions/statements/new/manual/finalize/index.html">Review Statements</a></li>-->
+            </ol>
+
+            <main class="row">
+                <div class="col-md-8">
+
+                    <!--<h2 class="h4">Review Statement</h2>-->
+
+                    <div class="js-valid-callouts">
+                        <div class="bff-include" data-src="app/pages/commissions/statements/new/manual/finalize/shared/valid-callouts.html"></div>
+
+                        <div class="alert alert-success mr-auto">
+                            <i class="linearicon-checkmark-circle linearicon-lg mr-2" aria-hidden="true"></i>
+                            All commissions matched.
+                        </div>
+                    </div>
+
+                    <div class="js-invalid-callouts hide-content">
+                        <div class="bff-include" data-src="app/pages/commissions/statements/new/manual/finalize/shared/invalid-callouts.html"></div>
+
+                        <div class="alert alert-warning mr-auto">
+                            <i class="linearicon-warning linearicon-lg mr-2" aria-hidden="true"></i>
+                            <span>
+                                You have unmatched commissions and unapplied cash.<br>
+                                <a href="#/app/pages/commissions/statements/new/manual/add/index.html">Please fix these issues</a>
+                                before clicking Finalize Statement.
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="section-footer">
+                        <div class="section-footer-left">
+                            <a href="#/app/pages/commissions/statements/" class="btn btn-outline-primary">Create Receipt</a>
+                            <a href="#/app/pages/commissions/statements/" class="btn btn-outline-warning ml2 js-mark-finalize-btn">Mark As Not Ready To Finalize</a>
+                        </div>
+                        <div class="section-footer-right">
+                            <a href="#/app/pages/commissions/statements/new/manual/add" class="btn btn-outline-primary mr-2">
+                                <i class="linearicon-arrow-left" aria-hidden="true"></i> Add & Approve Commissions
+                            </a>
+
+                            <a href="#/app/pages/commissions/statements/" class="btn btn-success js-finish-btn">Finalize Statement <i class="linearicon-check ml-2"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+            </main>
+
+            <button class="btn absolute mt-5" onclick="toggleCallouts()">Click Here To Toggle Different Callouts</button>
+        </div>
+    </div>
+</div>
+
+
+<div class="bff-include js-cancel-modal" data-src="app/pages/commissions/statements/shared/cancel-modal.html"></div>
+
+<div class="bff-script" data-src="app/pages/commissions/javascript/main.js"></div>
+
+<div class="bff-script" data-src="app/pages/commissions/statements/new/manual/finalize/index.js"></div>

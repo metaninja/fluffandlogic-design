@@ -1,0 +1,21 @@
+<script id="applicant-info" type="x-handlebars-template">
+    {{#customerData}}
+        <tr class="js-applicant-info">
+            <td><input type="checkbox" onclick="toggleActionButton()"></td>
+            
+            <td class="js-applicant-name">{{firstName}} {{lastName}}</td>
+            
+            <td>{{city}}</td>
+
+            <td>{{state}}</td>
+
+            <td>{{postalCode}}</td>
+
+            <td>{{phone}}</td>
+
+            <td>Alex Juan</td>
+
+            <td>Opportunities</td>
+        </tr>
+    {{/customerData}}
+</script>

@@ -1,0 +1,106 @@
+<title>System Logs</title>
+
+<div class="bff-include" data-src="pages/search/system-logs/header.html"></div>
+
+<div class="container no-breadcrumb">
+
+    <div class="bff-include" data-src="pages/search/system-logs/search.html"></div>
+
+    <!-- System Logs that have additional details in the sidebar -->
+    <div class="row results-with-details">
+
+        <div class="col-md-8">
+
+            <!-- Search Results and Export-->
+            <div class="bff-include" data-src="include/results-export.html"></div>
+            <!-- End Search Results and Export -->
+
+
+            <div class="results results-communication">
+                <div class="bff-include" data-src="pages/search/system-logs/results-communication.html"></div>
+            </div>
+
+            <div class="results results-data-changes">
+                <div class="bff-include" data-src="pages/search/system-logs/results-data-changes.html"></div>
+            </div>
+
+            <div class="results results-searches">
+                <div class="bff-include" data-src="pages/search/system-logs/results-searches.html"></div>
+            </div>
+
+            <div class="results results-webpage-visitations">
+                <div class="bff-include" data-src="pages/search/system-logs/results-webpage-visitations.html"></div>
+            </div>
+
+            <!-- Pagination -->
+            <div class="bff-include" data-src="include/Pagination.html"></div>
+            <div class="bff-include" data-src="include/view-results-per-page.html"></div>
+            <!-- Pagination -->
+
+        </div>
+
+        <div class="col-md-4">
+
+            <div class="panel panel-default panel-no-call-selected">
+                <div class="panel-body">
+                    <p>Select a result to view its log details.</p>
+                </div>
+            </div>
+
+            <div class="panel-call-details log-details">
+
+                <div class="panel-body">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="#call-details" data-toggle="tab">Log Details</a>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content right-panel-style">
+
+                        <div id="call-details" class="tab-pane active right-panel-content">
+
+                            <div class="bff-include result-details result-details-communication" data-src="pages/search/system-logs/details-communication.html"></div>
+
+                            <div class="bff-include result-details result-details-data-changes" data-src="pages/search/system-logs/details-data-changes.html"></div>
+
+                            <div class="bff-include result-details result-details-searches" data-src="pages/search/system-logs/details-searches.html"></div>
+
+                            <div class="bff-include result-details result-details-webpage-visitations" data-src="pages/search/system-logs/details-webpage-visitations.html"></div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- System Logs that have additional details in the sidebar -->
+
+
+    <!-- System Logs that don't have a sidebar -->
+    <div class="row results-no-details">
+        <div class="col-md-8 col-md-offset-2">
+
+            <!-- Search Results and Export-->
+            <div class="bff-include" data-src="include/results-export.html"></div>
+            <!-- End Search Results and Export -->
+
+            <div class="results results-system-access">
+                <div class="bff-include" data-src="pages/search/system-logs/results-system-access.html"></div>
+            </div>
+
+
+            <!-- Pagination -->
+            <div class="bff-include" data-src="include/Pagination.html"></div>
+            <div class="bff-include" data-src="include/view-results-per-page.html"></div>
+            <!-- Pagination -->
+        </div>
+    </div>
+    <!-- System Logs that don't have a sidebar -->
+
+</div>
+
+<div class="bff-script" data-src="../js/wireframes/pages/search/system-logs/index.js"></div>

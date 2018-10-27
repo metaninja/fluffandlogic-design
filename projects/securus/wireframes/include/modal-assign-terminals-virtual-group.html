@@ -1,0 +1,39 @@
+<!-- begin: Add Terminals to Virtual Group modal -->
+<div class="modal fade" id="addTerminals" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content modal-lg">
+
+            <div class="modal-header modal-primary">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <div class="modal-title">
+                    Add Terminals
+                </div>
+            </div>
+
+            <div class="modal-body">
+
+                <div class="bff-include assign-terminals-modal" data-src="include/modal-select-locations.html"></div>
+
+                <div class="modal-footer">
+                    <a href class="btn btn-link" data-dismiss="modal">Cancel</a>
+                    <button type="button" class="btn btn-primary toggle-terminal-location" data-dismiss="modal">Add Terminals</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+//bff.Inception('.assign-terminals-modal');
+
+$('document').ready(function() {
+    
+    $('.no-terminals-selected').hide();
+
+    $('.toggle-terminal-location').click(function() {
+        $('.no-terminals-selected').show();
+        $('.terminals-selected').hide();
+    });
+});
+</script>

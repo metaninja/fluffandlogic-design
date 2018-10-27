@@ -1,0 +1,496 @@
+<table class="table table-hover ez-table-normal">
+	<thead>
+		<tr>
+			<th>Carrier Name</th>
+			<th>LOB</th>
+			<th>Select For Quote</th>
+			<th>Reuse Prior Prompt Answers</th>
+			<th>Status</th>
+			<th></th>
+		</tr>
+	</thead>
+	<tbody>
+	<tr style="background-color: #fafafa;">
+		<td style="vertical-align: middle"><strong>SELECT ALL</strong></td>
+		<td></td>
+		<td>
+			<label class="switch">
+				<input type="checkbox" checked>
+				<div class="slider round">
+					<span class="on">YES</span>
+					<span class="off">NO</span>
+				</div>
+			</label>
+		</td>
+		<td>
+			<label class="switch">
+				<input type="checkbox" checked>
+				<div class="slider round">
+					<span class="on">YES</span>
+					<span class="off">NO</span>
+				</div>
+			</label>
+		</td>
+		<td></td>
+		<td></td>
+	</tr>
+	</tbody>
+
+	<tbody id="quotes">
+		<!--<tr class="gray-row">-->
+			<!--<td class="uppercase">Select All</td>-->
+
+			<!--<td></td>-->
+
+			<!--<td>-->
+				<!--<label class="switch">-->
+				    <!--<input type="checkbox" checked>-->
+				    <!--<div class="slider round">-->
+				        <!--<span class="on">YES</span>-->
+				        <!--<span class="off">NO</span>-->
+				    <!--</div>-->
+				<!--</label>-->
+			<!--</td>-->
+
+			<!--<td>-->
+				<!--<label class="switch">-->
+				    <!--<input type="checkbox" checked>-->
+				    <!--<div class="slider round">-->
+				        <!--<span class="on">YES</span>-->
+				        <!--<span class="off">NO</span>-->
+				    <!--</div>-->
+				<!--</label>-->
+			<!--</td>-->
+
+			<!--<td></td>-->
+
+			<!--<td></td>-->
+		<!--</tr>-->
+
+		<!--<tr>-->
+			<!--<td style="width: 300px;">-->
+				<!--<img class="insurance-image" src="libs/images/carriers/21st_Century.png">-->
+			<!--</td>-->
+
+			<!--<td>Auto</td>-->
+
+			<!--<td>-->
+				<!--<label class="switch">-->
+				    <!--<input type="checkbox">-->
+				    <!--<div class="slider round">-->
+				        <!--<span class="on">YES</span>-->
+				        <!--<span class="off">NO</span>-->
+				    <!--</div>-->
+				<!--</label>-->
+			<!--</td>-->
+
+			<!--<td>-->
+				<!--<label class="switch">-->
+				    <!--<input type="checkbox" checked>-->
+				    <!--<div class="slider round">-->
+				        <!--<span class="on">YES</span>-->
+				        <!--<span class="off">NO</span>-->
+				    <!--</div>-->
+				<!--</label>-->
+			<!--</td>-->
+
+			<!--<td>-->
+				<!--<p>-->
+					<!--<i class="fa fa-exclamation-triangle fa-lg" aria-hidden="true"></i>-->
+					<!--Carrier login has not been set.-->
+				<!--</p>-->
+				<!--<p class="font-italic text-important">Premium difference testing</p>-->
+			<!--</td>-->
+
+			<!--<td>-->
+				<!--<button class="btn btn-info" role="button">Set Logins</button>-->
+			<!--</td>-->
+		<!--</tr>-->
+
+		<!--<tr>-->
+			<!--<td style="width: 300px;">-->
+				<!--<span>AAA Insurance - Western United Auto</span>-->
+			<!--</td>-->
+
+			<!--<td>Auto</td>-->
+
+			<!--<td>-->
+				<!--<label class="switch">-->
+				    <!--<input type="checkbox">-->
+				    <!--<div class="slider round">-->
+				        <!--<span class="on">YES</span>-->
+				        <!--<span class="off">NO</span>-->
+				    <!--</div>-->
+				<!--</label>-->
+			<!--</td>-->
+
+			<!--<td>-->
+				<!--<label class="switch">-->
+				    <!--<input type="checkbox" checked>-->
+				    <!--<div class="slider round">-->
+				        <!--<span class="on">YES</span>-->
+				        <!--<span class="off">NO</span>-->
+				    <!--</div>-->
+				<!--</label>-->
+			<!--</td>-->
+
+			<!--<td>-->
+				<!--<p>-->
+					<!--<i class="fa fa-exclamation-triangle fa-lg" aria-hidden="true"></i>-->
+					<!--Carrier login has not been set.-->
+				<!--</p>-->
+				<!--<p class="font-italic text-important">ACIC</p>-->
+			<!--</td>-->
+
+			<!--<td>-->
+				<!--<button class="btn btn-info" role="button">Set Logins</button>-->
+			<!--</td>-->
+		<!--</tr>-->
+
+		<!--<tr>-->
+			<!--<td style="width: 300px;">-->
+				<!--<span>Briston West Auto</span>-->
+			<!--</td>-->
+
+			<!--<td>Auto</td>-->
+
+			<!--<td>-->
+				<!--<label class="switch">-->
+				    <!--<input type="checkbox">-->
+				    <!--<div class="slider round">-->
+				        <!--<span class="on">YES</span>-->
+				        <!--<span class="off">NO</span>-->
+				    <!--</div>-->
+				<!--</label>-->
+			<!--</td>-->
+
+			<!--<td>-->
+				<!--<label class="switch">-->
+				    <!--<input type="checkbox" checked>-->
+				    <!--<div class="slider round">-->
+				        <!--<span class="on">YES</span>-->
+				        <!--<span class="off">NO</span>-->
+				    <!--</div>-->
+				<!--</label>-->
+			<!--</td>-->
+
+			<!--<td>-->
+				<!--<p>BETA version of Bristol West Auto for state CT</p>-->
+			<!--</td>-->
+
+			<!--<td>-->
+				<!--<button class="btn btn-info" role="button">Set Logins</button>-->
+			<!--</td>-->
+		<!--</tr>-->
+
+		<!--<tr>-->
+			<!--<td style="width: 300px;">-->
+				<!--<img class="insurance-image" src="libs/images/carriers/central.gif">-->
+			<!--</td>-->
+
+			<!--<td>Auto</td>-->
+
+			<!--<td>-->
+				<!--<label class="switch">-->
+				    <!--<input type="checkbox">-->
+				    <!--<div class="slider round">-->
+				        <!--<span class="on">YES</span>-->
+				        <!--<span class="off">NO</span>-->
+				    <!--</div>-->
+				<!--</label>-->
+			<!--</td>-->
+
+			<!--<td>-->
+				<!--<label class="switch">-->
+				    <!--<input type="checkbox" checked>-->
+				    <!--<div class="slider round">-->
+				        <!--<span class="on">YES</span>-->
+				        <!--<span class="off">NO</span>-->
+				    <!--</div>-->
+				<!--</label>-->
+			<!--</td>-->
+
+			<!--<td>-->
+				<!--<p>BETA version of Central Mutual of OH - Auto XML for state CT</p>-->
+			<!--</td>-->
+
+			<!--<td>-->
+				<!--<button class="btn btn-info" role="button">Set Logins</button>-->
+			<!--</td>-->
+		<!--</tr>-->
+
+		<!--<tr>-->
+			<!--<td style="width: 300px;">-->
+				<!--<img class="insurance-image" src="libs/images/carriers/Encompass.jpg">-->
+			<!--</td>-->
+
+			<!--<td>Auto</td>-->
+
+			<!--<td>-->
+				<!--<label class="switch">-->
+				    <!--<input type="checkbox">-->
+				    <!--<div class="slider round">-->
+				        <!--<span class="on">YES</span>-->
+				        <!--<span class="off">NO</span>-->
+				    <!--</div>-->
+				<!--</label>-->
+			<!--</td>-->
+
+			<!--<td>-->
+				<!--<label class="switch">-->
+				    <!--<input type="checkbox" checked>-->
+				    <!--<div class="slider round">-->
+				        <!--<span class="on">YES</span>-->
+				        <!--<span class="off">NO</span>-->
+				    <!--</div>-->
+				<!--</label>-->
+			<!--</td>-->
+
+			<!--<td>-->
+				<!--<p>-->
+					<!--<i class="fa fa-exclamation-triangle fa-lg" aria-hidden="true"></i>-->
+					<!--Carrier login has not been set.-->
+				<!--</p>-->
+				<!--<p class="font-italic text-important">Temporarily disabled due to carrier site issues</p>-->
+			<!--</td>-->
+
+			<!--<td>-->
+				<!--<button class="btn btn-info" role="button">Set Logins</button>-->
+			<!--</td>-->
+		<!--</tr>-->
+
+		<!--<tr>-->
+			<!--<td style="width: 300px;">-->
+				<!--<img class="insurance-image" src="libs/images/carriers/harleysville.gif">-->
+			<!--</td>-->
+
+			<!--<td>Auto</td>-->
+
+			<!--<td>-->
+				<!--<label class="switch">-->
+				    <!--<input type="checkbox">-->
+				    <!--<div class="slider round">-->
+				        <!--<span class="on">YES</span>-->
+				        <!--<span class="off">NO</span>-->
+				    <!--</div>-->
+				<!--</label>-->
+			<!--</td>-->
+
+			<!--<td>-->
+				<!--<label class="switch">-->
+				    <!--<input type="checkbox" checked>-->
+				    <!--<div class="slider round">-->
+				        <!--<span class="on">YES</span>-->
+				        <!--<span class="off">NO</span>-->
+				    <!--</div>-->
+				<!--</label>-->
+			<!--</td>-->
+
+			<!--<td>-->
+				<!--<p class="font-italic text-important">XML</p>-->
+			<!--</td>-->
+
+			<!--<td>-->
+				<!--<button class="btn btn-info" role="button">Set Logins</button>-->
+			<!--</td>-->
+		<!--</tr>-->
+
+		<!--<tr>-->
+			<!--<td style="width: 300px;">-->
+				<!--<img class="insurance-image" src="libs/images/carriers/American_Commerce.png">-->
+			<!--</td>-->
+
+			<!--<td>Auto</td>-->
+
+			<!--<td>-->
+				<!--<label class="switch">-->
+				    <!--<input type="checkbox">-->
+				    <!--<div class="slider round">-->
+				        <!--<span class="on">YES</span>-->
+				        <!--<span class="off">NO</span>-->
+				    <!--</div>-->
+				<!--</label>-->
+			<!--</td>-->
+
+			<!--<td>-->
+				<!--<label class="switch">-->
+				    <!--<input type="checkbox" checked>-->
+				    <!--<div class="slider round">-->
+				        <!--<span class="on">YES</span>-->
+				        <!--<span class="off">NO</span>-->
+				    <!--</div>-->
+				<!--</label>-->
+			<!--</td>-->
+
+			<!--<td></td>-->
+
+			<!--<td>-->
+				<!--<button class="btn btn-info" role="button">Set Logins</button>-->
+			<!--</td>-->
+		<!--</tr>-->
+
+		<!--<tr>-->
+			<!--<td style="width: 300px;">-->
+				<!--<img class="insurance-image" src="libs/images/carriers/hartford.png">-->
+			<!--</td>-->
+
+			<!--<td>Auto</td>-->
+
+			<!--<td>-->
+				<!--<label class="switch">-->
+				    <!--<input type="checkbox">-->
+				    <!--<div class="slider round">-->
+				        <!--<span class="on">YES</span>-->
+				        <!--<span class="off">NO</span>-->
+				    <!--</div>-->
+				<!--</label>-->
+			<!--</td>-->
+
+			<!--<td>-->
+				<!--<label class="switch">-->
+				    <!--<input type="checkbox" checked>-->
+				    <!--<div class="slider round">-->
+				        <!--<span class="on">YES</span>-->
+				        <!--<span class="off">NO</span>-->
+				    <!--</div>-->
+				<!--</label>-->
+			<!--</td>-->
+
+			<!--<td></td>-->
+
+			<!--<td>-->
+				<!--<button class="btn btn-info" role="button">Set Logins</button>-->
+			<!--</td>-->
+		<!--</tr>-->
+
+		<!--<tr>-->
+			<!--<td style="width: 300px;">-->
+				<!--<img class="insurance-image" src="libs/images/carriers/Kemper_Preferred.jpg">-->
+			<!--</td>-->
+
+			<!--<td>Auto</td>-->
+
+			<!--<td>-->
+				<!--<label class="switch">-->
+				    <!--<input type="checkbox">-->
+				    <!--<div class="slider round">-->
+				        <!--<span class="on">YES</span>-->
+				        <!--<span class="off">NO</span>-->
+				    <!--</div>-->
+				<!--</label>-->
+			<!--</td>-->
+
+			<!--<td>-->
+				<!--<label class="switch">-->
+				    <!--<input type="checkbox" checked>-->
+				    <!--<div class="slider round">-->
+				        <!--<span class="on">YES</span>-->
+				        <!--<span class="off">NO</span>-->
+				    <!--</div>-->
+				<!--</label>-->
+			<!--</td>-->
+
+			<!--<td>-->
+				<!--<p>-->
+					<!--<i class="fa fa-exclamation-triangle fa-lg" aria-hidden="true"></i>-->
+					<!--Carrier login has not been set.-->
+				<!--</p>-->
+			<!--</td>-->
+
+			<!--<td>-->
+				<!--<button class="btn btn-info" role="button">Set Logins</button>-->
+			<!--</td>-->
+		<!--</tr>-->
+
+		<!--<tr>-->
+			<!--<td style="width: 300px;">-->
+				<!--<img class="insurance-image" src="libs/images/carriers/metlife.png">-->
+			<!--</td>-->
+
+			<!--<td>Auto</td>-->
+
+			<!--<td>-->
+				<!--<label class="switch">-->
+				    <!--<input type="checkbox">-->
+				    <!--<div class="slider round">-->
+				        <!--<span class="on">YES</span>-->
+				        <!--<span class="off">NO</span>-->
+				    <!--</div>-->
+				<!--</label>-->
+			<!--</td>-->
+
+			<!--<td>-->
+				<!--<label class="switch">-->
+				    <!--<input type="checkbox" checked>-->
+				    <!--<div class="slider round">-->
+				        <!--<span class="on">YES</span>-->
+				        <!--<span class="off">NO</span>-->
+				    <!--</div>-->
+				<!--</label>-->
+			<!--</td>-->
+
+			<!--<td></td>-->
+
+			<!--<td>-->
+				<!--<button class="btn btn-info" role="button">Set Logins</button>-->
+			<!--</td>-->
+		<!--</tr>-->
+	</tbody>
+</table>
+
+<script id="quotes-template" type="x-handlebars-template">
+	{{#quotes}}
+	<tr>
+		<td style="vertical-align: middle">
+			<img style="height: 4rem; width: auto;" src="{{ Logo }}">
+		</td>
+
+		<td style="vertical-align: middle">
+			{{ LOB }}
+		</td>
+
+		<td style="vertical-align: middle">
+			<label class="switch">
+				<input type="checkbox" checked>
+				<div class="slider round">
+					<span class="on">YES</span>
+					<span class="off">NO</span>
+				</div>
+			</label>
+		</td>
+
+		<td style="vertical-align: middle">
+			<label class="switch">
+				<input type="checkbox" checked>
+				<div class="slider round">
+					<span class="on">YES</span>
+					<span class="off">NO</span>
+				</div>
+			</label>
+		</td>
+
+		<td style="vertical-align: middle">
+			<p>
+				{{#if CarrierLogin }}
+					{{ OptionStatus }}
+				{{else}}
+					<strong>
+						<i class="linearicon-warning linearicon-lg" aria-hidden="true"></i>
+						Carrier login has not been set
+					</strong>
+				{{/if}}
+			</p>
+
+			{{#if Note}}
+				<p><em>{{ Note }}</em></p>
+			{{/if}}
+		</td>
+
+		<td style="vertical-align: middle">
+			<button class="btn btn-info" role="button">Set Logins</button>
+		</td>
+	</tr>
+	{{/quotes}}
+</script>
+
+<div class="bff-script" data-src="app/pages/applicants/quotes/shared/table.js"></div>

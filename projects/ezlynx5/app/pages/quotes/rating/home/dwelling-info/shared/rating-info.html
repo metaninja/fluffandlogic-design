@@ -1,0 +1,272 @@
+<div class="ez-dropdown-container content-container mb-4">
+    <div class="ez-dropdown-heading" data-toggle="collapse" data-target="#rating-information">
+        <h2 class="h2">Rating Information</h2>
+        <a href="#">
+            <i class="icon-chevron-sign-down linearicon-chevron-down"></i>
+            <i class="icon-chevron-up linearicon-chevron-up"></i>
+        </a>
+    </div>
+
+    <div class="ez-dropdown-content collapse show" id="rating-information">
+        <div class="row no-gutters">
+            <div class="col-md-4">
+                <h3 class="h3 text-center uppercase">Home Info</h3>
+
+                <div class="rating-col-left">
+                    <div class="form-group">
+                        <label class="required-label" for="input-year-built">Year Built</label>
+                        <input type="text" class="form-control" id="input-year-built">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="required-label" for="input-exterior-walls">Exterior Walls</label>
+                        <select class="form-control" id="input-exterior-walls">
+                            <option>Adobe</option>
+                            <option>Aluminum/Vinyl</option>
+                            <option value="BarnPlank">Barn Plank</option>
+                            <option value="Brick">Brick</option>
+                            <option value="BrickonBlock">Brick on Block</option>
+                            <option value="BrickonBlockCustom">Brick on Block, Custom</option>
+                            <option value="Logs">Logs</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="required-label" for="input-roof-type">Roof Type (main material)</label>
+                        <select class="form-control" id="input-roof-type">
+                            <option>Architectural Shingles</option>
+                            <option>Asbestos</option>
+                            <option value="ASPHALTSHINGLES">ASPHALT SHINGLES</option>
+                            <option value="COMPOSITION">COMPOSITION</option>
+                            <option value="COPPERPITCHED">COPPER(PITCHED)</option>
+                            <option value="METALPITCHED">METAL(PITCHED)</option>
+                            <option value="PLASTICPITCHED">PLASTIC(PITCHED)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="input-roof-ul-classification">Roof UL Classification</label>
+                        <select class="form-control" id="input-roof-ul-classification">
+                            <option>Class 1</option>
+                            <option>Class 2</option>
+                            <option>Class 3</option>
+                            <option>Class 4</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="required-label" for="input-dwelling-type">Dwelling Type</label>
+                        <select class="form-control" id="input-dwelling-type">
+                            <option>One Family</option>
+                            <option>Two Family</option>
+                            <option>Three Family</option>
+                            <option>Four Family</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="required-label" for="input-construction-style">Construction Style</label>
+                        <select class="form-control" id="input-construction-style">
+                            <option>Apartment</option>
+                            <option>Backsplit</option>
+                            <option>Bi-Level</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="required-label" for="input-dwelling-usage">Dwelling Usage</label>
+                        <select class="form-control" id="input-dwelling-usage">
+                            <option>Primary</option>
+                            <option>Secondary</option>
+                            <option>Seasonal</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="input-number-of-apartments"># of Apartments</label>
+                        <input type="text" class="form-control" id="input-number-of-apartments">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="required-label" for="input-number-of-stories">Number of stories</label>
+                        <select class="form-control" id="input-number-of-stories">
+                            <option>1</option>
+                            <option>1.5</option>
+                            <option>2</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="required-label" for="input-heating-type">Heating Type</label>
+                        <select class="form-control" id="input-heating-type">
+                            <option>Electric</option>
+                            <option>Gas</option>
+                            <option>Oil</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="input-secondary-heating-source">Secondary Heating Source</label>
+                        <label class="switch">
+                            <input type="checkbox" id="input-secondary-heating-source" checked>
+                            <div class="slider round">
+                                <span class="on">YES</span>
+                                <span class="off">NO</span>
+                            </div>
+                        </label>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="input-wood-burning-stove">Wood Burning Stove</label>
+                        <label class="switch">
+                            <input type="checkbox" id="input-wood-burning-stove" checked>
+                            <div class="slider round">
+                                <span class="on">YES</span>
+                                <span class="off">NO</span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <h3 class="h3 text-center uppercase">Geographical  Info</h3>
+
+                <div class="rating-col-middle">
+                    <div class="form-group">
+                        <label class="required-label" for="input-protection-class">
+                            Protection class
+                            <i class="linearicon-info-circle linearicon-lg" data-toggle="tooltip" data-placement="top" title="Overridden if carrier assigns automatically"></i>
+                        </label>
+                        <select class="form-control" id="input-protection-class">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="required-label" for="input-inside-city-limits">Inside City Limits</label>
+                        <label class="switch">
+                            <input type="checkbox" id="input-inside-city-limits" checked>
+                            <div class="slider round">
+                                <span class="on">YES</span>
+                                <span class="off">NO</span>
+                            </div>
+                        </label>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="required-label" for="input-feet-from-hydrant">Feet From Hydrant</label>
+                        <select class="form-control" id="input-feet-from-hydrant">
+                            <option>1-500</option>
+                            <option>501-600</option>
+                            <option>601-1000</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="required-label" for="input-within-fire-district">Within Fire District</label>
+                        <label class="switch">
+                            <input type="checkbox" id="input-within-fire-district" checked>
+                            <div class="slider round">
+                                <span class="on">YES</span>
+                                <span class="off">NO</span>
+                            </div>
+                        </label>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="required-label" for="input-distance-from-fire-station">Distance From Fire Station</label>
+                        <div class="input-group sm-width">
+                            <input type="text" class="form-control input-sm" id="input-distance-from-fire-station">
+                            <span class="input-group-addon" id="basic-addon2">Miles</span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="input-distance-to-tidal-water">Distance To Tidal Water(miles)</label>
+                        <select class="form-control input-md" id="input-distance-to-tidal-water">
+                            <option>0-.5</option>
+                            <option>.5-1</option>
+                            <option>1-2</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="input-purchase-price">Purchase Price</label>
+                        <div class="form-inline">
+                            <input type="text" class="form-control input-md" id="input-purchase-price">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="input-purchase-date">Purchase Date</label>
+                        <div class="input-group md-width">
+                            <input type="text" class="form-control" id="input-purchase-date" aria-describedby="basic-addon2" onblur="formatDate(this)">
+                            <span class="input-group-addon" id="basic-addon2">
+                                <i class="linearicon-calendar-full linearicon-lg"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <h3 class="h3 text-center uppercase">Updates to the House</h3>
+
+                <div class="rating-col-right">
+                    <div class="form-group">
+                        <label class="required-label" for="input-heating-update">Heating Update</label>
+                        <div class="form-inline">
+                            <select class="form-control" id="input-heating-update">
+                                <option>NOT UPDATED</option>
+                                <option>PARTIAL UPDATED</option>
+                                <option>COMPLETE UPDATED</option>
+                            </select>
+                            <input type="text" class="form-control input-md ml-1" placeholder="Yr Updated">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="required-label" for="input-electrical-update">Electrical Update</label>
+                        <div class="form-inline">
+                            <select class="form-control" id="input-electrical-update">
+                                <option>NOT UPDATED</option>
+                                <option>PARTIAL UPDATED</option>
+                                <option>COMPLETE UPDATED</option>
+                            </select>
+                            <input type="text" class="form-control input-md ml-1" placeholder="Yr Updated">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="required-label" for="input-plumbing-update">Plumbing Update</label>
+                        <div class="form-inline">
+                            <select class="form-control" id="input-plumbing-update">
+                                <option>NOT UPDATED</option>
+                                <option>PARTIAL UPDATED</option>
+                                <option>COMPLETE UPDATED</option>
+                            </select>
+                            <input type="text" class="form-control input-md ml-1" placeholder="Yr Updated">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="required-label" for="input-roofing-update">Roofing Update</label>
+                        <div class="form-inline">
+                            <select class="form-control" id="input-roofing-update">
+                                <option>NOT UPDATED</option>
+                                <option>PARTIAL UPDATED</option>
+                                <option>COMPLETE UPDATED</option>
+                            </select>
+                            <input type="text" class="form-control input-md ml-1" placeholder="Yr Updated">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="bff-script" data-src="libs/js/validation/format-date.js"></div>

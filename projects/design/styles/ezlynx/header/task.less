@@ -1,0 +1,92 @@
+#RightPanel {
+    // Task Section
+    // -------------------
+    #taskSection {
+        position: relative;
+        
+        min-width: 339px;
+        width: 100%;
+        
+        // Loading State
+        &.fetchingTask {
+            opacity: .5;
+            filter: alpha(opacity=50);
+        }
+
+        .taskTitle {
+            padding: 9px 12px;
+            min-height: 40px;
+            border-bottom: @borderSmall solid @tableBorderColor;
+        }
+        
+        .editTaskOptions {
+            padding: 12px;
+        }
+        
+        .taskStatus {
+            position: relative;
+            
+            select {
+                margin: 5px 10px;
+                width: 40%;
+            }
+        }
+        .addTaskNote {
+            background: @greyLighter;
+            border-top: @borderSmall solid @inputBorderColor;
+            border-bottom: @borderSmall solid @inputBorderColor;
+            margin-bottom: 0;
+
+            .help-block, .text-error {
+                padding-left: 6px;
+            }
+
+            &.extended {
+                padding-bottom: 22px;
+            }
+
+            textarea { 
+                width: 100%;
+                padding-left: 10px;
+            }
+            .taskButtons {
+                padding-top: 3px;
+            }
+
+            #afterSavingTask {
+                clear: both;
+            }
+        }
+    }
+
+    // Task Form styles
+    // -------------------
+    .taskDueDateSection {
+        // For task time estimate alert area
+        &.alert {
+            padding: 3px;
+            margin-bottom: 0px;
+        }
+
+        .dueDateDesc {
+            line-height: 30px;
+            font-size: 14px;
+        }
+    }
+
+    .taskPriority {
+        color: #777777;
+        padding: 6px;
+
+        transition: all 0.2s cubic-bezier(0.4, 0, 1, 1);
+
+        &.hasPriority {
+            .btn-danger;
+            color: white;
+        }
+    }
+    .addReminderBtn {
+        margin: 0;
+        padding: 0;
+    }
+} 

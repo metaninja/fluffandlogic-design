@@ -1,0 +1,51 @@
+<!-- begin: Terminate Video modal -->
+<div class="modal fade" id="terminateVideoVisit" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content modal-md">
+            <div class="modal-header modal-danger">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <div class="modal-title">
+                    Terminate Video Visitation?
+                </div>
+            </div>
+            <div class="modal-body">
+                <p>If you would like to terminate this video visitation, please select a reason below:</p>
+
+                <div class="form-group">
+                    <label for="termination-reason" class="required">
+                        Termination Reason
+                    </label>
+                    <select class="form-control" id="termination-reason">
+                        <option selected>-- Select a reason --</option>
+                        <option>Inappropriate behavior</option>
+                        <option>Abusive language</option>
+                        <option>Visitor did not show up</option>
+                        <option>Inmate did not show up</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="termination-desc">Additional Details:</label>
+                    <textarea class="form-control" id="termination-desc"></textarea>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-link" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-danger btn-terminate-video-visit" data-dismiss="modal" disabled="disabled">Terminate</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end: Terminate Video modal -->
+<script>
+    $('#termination-reason').change(function() {
+        if ($(this).find(':selected').index() > 0) {
+            $('.btn-terminate-video-visit').removeAttr('disabled');
+        }
+        else {
+            $('.btn-terminate-video-visit').attr('disabled','disabled');
+        }
+    });
+</script>

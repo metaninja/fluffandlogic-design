@@ -1,0 +1,27 @@
+<div class="modal modal-primary fade" id="pre-fill-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Pre-Fill Drivers</h5>
+                <button type="button" class="btn btn-link close" data-dismiss="modal" aria-label="Close">
+                    <i class="linearicon-cross linearicon-lg" aria-hidden="true"></i>
+                </button>
+            </div>
+
+            <div class="pre-fill-modal-agreement">
+                <div class="bff-include" data-src="app/pages/quotes/rating/auto/drivers/shared/drivers-pre-fill-modal/agreement.html"></div>
+            </div>
+
+            <div class="pre-fill-modal-drivers-selection hide-content">
+                <div class="bff-include" data-src="app/pages/quotes/rating/auto/drivers/shared/drivers-pre-fill-modal/drivers.html"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function goToDriversSelection() {
+        $(".pre-fill-modal-agreement").addClass("hide-content");
+        $(".pre-fill-modal-drivers-selection").removeClass("hide-content");
+    }
+</script>

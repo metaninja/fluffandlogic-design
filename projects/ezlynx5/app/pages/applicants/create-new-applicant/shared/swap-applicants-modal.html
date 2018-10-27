@@ -1,0 +1,76 @@
+<div class="modal fade" id="swap-applicants-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <h2>Are you sure you want to swap applicants?</h2>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="swapApplicants()">Yes</button>
+                <button type="button" class="btn btn-outline-primary" data-dismiss="modal">No</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function swapApplicants() {
+        var applicantInfo = {
+            firstName: $("#input-first-name"),
+            middleInitial: $("#input-middle-initial"),
+            lastName: $("#input-last-name"),
+            suffix: $("#input-suffix"),
+            maidenName: $("#input-maiden-name"),
+            nickname: $("#input-nickname"),
+            gender: $("#input-gender"),
+            dob: $("#input-dob"),
+            maritalStatus: $("#input-marital-status"),
+            ssn: $("#input-ssn"),
+            dlNumber: $("#input-dl-number"),
+            dlStatus: $("#input-dl-status"),
+            dlState: $("#input-dl-state"),
+            education: $("#input-education"),
+            industry: $("#input-industry"),
+            occupation: $("#input-occupation"),
+            priorEmployerInYears: $("#input-prior-employer-in-years")
+        };
+
+        var coApplicantInfo = {
+            firstName: $("#input-co-applicant-first-name"),
+            middleInitial: $("#input-co-applicant-middle-initial"),
+            lastName: $("#input-co-applicant-last-name"),
+            suffix: $("#input-co-applicant-suffix"),
+            maidenName: $("#input-co-applicant-maiden-name"),
+            nickname: $("#input-co-applicant-nickname"),
+            gender: $("#input-co-applicant-gender"),
+            dob: $("#input-co-applicant-dob"),
+            maritalStatus: $("#input-co-applicant-marital-status"),
+            ssn: $("#input-co-applicant-ssn"),
+            dlNumber: $("#input-co-applicant-dl-number"),
+            dlStatus: $("#input-co-applicant-dl-status"),
+            dlState: $("#input-co-applicant-dl-state"),
+            education: $("#input-co-applicant-education"),
+            industry: $("#input-co-applicant-industry"),
+            occupation: $("#input-co-applicant-occupation"),
+            priorEmployerInYears: $("#input-co-applicant-prior-employer-in-years")
+        };
+
+        for (var i = 0; i < 17; i++) {
+            var $currentApplicantElement = Object.values(applicantInfo)[i];
+            var $currentCoApplicantElement = Object.values(coApplicantInfo)[i];
+            var applicantVal = $currentApplicantElement.val();
+            var coApplicantVal = $currentCoApplicantElement.val();
+
+            $currentApplicantElement.val(coApplicantVal);
+            $currentCoApplicantElement.val(applicantVal);
+
+            if (i === 0 || i === 2) {
+                updateApplicantName();
+                updateAdditionalApplicantName.call($currentCoApplicantElement);
+            }
+        }
+
+        $(".js-applicants-switched-alert").show();
+        updateDate();
+    }
+</script>

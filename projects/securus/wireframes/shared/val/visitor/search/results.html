@@ -1,0 +1,149 @@
+<div class="collapse fade" id="select-inmate">
+
+    <div class="bff-include" data-src="include/results-export.html"></div>
+
+    <!-- Results Table -->
+    <div class="select-results-container">
+        <table class="table table-hover table-select-inmate">
+            <thead>
+            <tr>
+                <th>
+                    <a href="javascript:;">Last Name <i class="fa fa-caret-down"></i></a>
+                </th>
+                <th>
+                    <a href="javascript:;">First Name</a>
+                </th>
+                <th>
+                    <a href="javascript:;">ID</a>
+                </th>
+                <th>
+                    <a href="javascript:;">Date of Birth</a>
+                </th>
+                <th>
+                    <a href="javascript:;">Housing Unit</a>
+                </th>
+                <th>
+                    <a href="javascript:;">Suspended</a>
+                </th>
+                <th>
+                    Select an inmate
+                </th>
+            </tr>
+            </thead>
+
+            <tbody>
+            <tr href="#/pages/search/inmates/profile/index.html">
+                <td><a href="#/pages/search/inmates/profile/index.html">Canfield</a>
+                </td>
+                <td><a href="#/pages/search/inmates/profile/index.html">Justin</a>
+                </td>
+                <td>087456710</td>
+                <td>02/05/1962</td>
+                <td>MODS-1 East Housing Unit</td>
+                <td><i class="fa fa-check brand-success"></i></td>
+                <td><a href="#" class="btn btn-success btn-select-inmate">Select</a>
+                </td>
+            </tr>
+            <tr href="#/pages/search/inmates/profile/index.html">
+                <td><a href="#/pages/search/inmates/profile/index.html">Emerson</a>
+                </td>
+                <td><a href="#/pages/search/inmates/profile/index.html">Fittipaldi</a>
+                </td>
+                <td>12523678</td>
+                <td>02/05/1962</td>
+                <td>MODS-1 East Housing Unit</td>
+                <td><i class="fa fa-check brand-success"></i></td>
+                <td><a href="#" class="btn btn-success btn-select-inmate">Select</a>
+                </td>
+            </tr>
+            <tr>
+                <td><a href="#/pages/search/inmates/profile/index.html">Cestarte</a>
+                </td>
+                <td><a href="#/pages/search/inmates/profile/index.html">Jay</a>
+                </td>
+                <td>3123414</td>
+                <td>02/05/1962</td>
+                <td>MODS-1 East Housing Unit</td>
+                <td><i class="fa fa-check brand-success"></i></td>
+                <td><a href="#" class="btn btn-success btn-select-inmate">Select</a>
+                </td>
+            </tr>
+            <tr href="#/pages/search/inmates/profile/index.html">
+                <td><a href="#/pages/search/inmates/profile/index.html">Dev</a>
+                </td>
+                <td><a href="#/pages/search/inmates/profile/index.html">Gupta</a>
+                </td>
+                <td>161242969</td>
+                <td>02/05/1962</td>
+                <td>MODS-1 East Housing Unit</td>
+                <td><i class="fa fa-check brand-success"></i></td>
+                <td><a href="#" class="btn btn-success btn-select-inmate">Select</a>
+                </td>
+            </tr>
+            <tr href="#/pages/search/inmates/profile/index.html">
+                <td><a href="#/pages/search/inmates/profile/index.html">Kevin</a>
+                </td>
+                <td><a href="#/pages/search/inmates/profile/index.html">Jordan</a>
+                </td>
+                <td>123459678</td>
+                <td>02/05/1962</td>
+                <td>MODS-1 East Housing Unit</td>
+                <td><i class="fa fa-check brand-success"></i></td>
+                <td><a href="#" class="btn btn-success btn-select-inmate">Select</a>
+                </td>
+            </tr>
+            <tr>
+                <td><a href="#/pages/search/inmates/profile/index.html">Jones</a>
+                </td>
+                <td><a href="#/pages/search/inmates/profile/index.html">Aaron</a>
+                </td>
+                <td>134156789</td>
+                <td>02/05/1962</td>
+                <td>MODS-1 East Housing Unit</td>
+                <td><i class="fa fa-check brand-success"></i></td>
+                <td><a href="#" class="btn btn-success btn-select-inmate">Select</a>
+                </td>
+            </tr>
+            <tr href="#/pages/search/inmates/profile/index.html">
+                <td><a href="#/pages/search/inmates/profile/index.html">Smith</a>
+                </td>
+                <td><a href="#/pages/search/inmates/profile/index.html">Jonathan</a>
+                </td>
+                <td>163247869</td>
+                <td>02/05/1962</td>
+                <td>MODS-1 East Housing Unit</td>
+                <td></td>
+                <td><a href="#" class="btn btn-success btn-select-inmate">Select</a>
+                </td>
+            </tr>
+            <tr href="#/pages/search/inmates/profile/index.html">
+                <td><a href="#/pages/search/inmates/profile/index.html">Hill</a>
+                </td>
+                <td><a href="#/pages/search/inmates/profile/index.html">Graham</a>
+                </td>
+                <td>231956789</td>
+                <td>02/05/1962</td>
+                <td>MODS-1 East Housing Unit</td>
+                <td><i class="fa fa-check brand-success"></i></td>
+                <td><a href="#" class="btn btn-success btn-select-inmate">Select</a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+
+    <div class="bff-include" data-src="include/Pagination.html" data-event="resultsLoaded"></div>
+
+</div>
+
+
+<script>
+    $('.btn-select-inmate').click(function() {
+        $('#select-inmate').removeClass('in');
+        $('.val-list').hide();
+        $('.val-search').hide();
+        $('.val-add-visitor').show();
+    });
+</script>

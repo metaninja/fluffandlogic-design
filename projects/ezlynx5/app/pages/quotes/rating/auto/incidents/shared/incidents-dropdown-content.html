@@ -1,0 +1,195 @@
+<div>
+    <div class="js-container-accidents mb-4">
+        <h3 class="h3">Accidents</h3>
+
+        <table class="table editable-table js-table-accidents hide-content">
+            <thead>
+                <tr>
+                    <th>Date of Accident</th>
+                    <th>Driver</th>
+                    <th>Accident Desc</th>
+                    <th>PD Amount</th>
+                    <th>BI Amount</th>
+                    <th>Collision Amount</th>
+                    <th>MP Amount</th>
+                    <th>Vehicle Involved</th>
+                    <th></th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td class="md-width">
+                        <div class="input-group">
+                            <input type="text" class="form-control" aria-describedby="basic-addon2">
+                            <span class="input-group-addon" id="basic-addon2">
+                                <i class="linearicon-calendar-full linearicon-lg"></i>
+                            </span>
+                        </div>
+                    </td>
+
+                    <td>
+                        <select class="form-control">
+                            <option>Lenny Bergman</option>
+                            <option>Jason Orth</option>
+                            <option>Mary Orth</option>
+                        </select>
+                    </td>
+
+                    <td>
+                        <select class="form-control">
+                            <option>Not At Fault</option>
+                            <option>At Fault with Injury</option>
+                            <option>At Fault with No Injury</option>
+                        </select>
+                    </td>
+
+                    <td>
+                        <input type="text" class="form-control">
+                    </td>
+
+                    <td>
+                        <input type="text" class="form-control">
+                    </td>
+
+                    <td>
+                        <input type="text" class="form-control">
+                    </td>
+
+                    <td>
+                        <input type="text" class="form-control">
+                    </td>
+
+                    <td>
+                        <select class="form-control">
+                            <option>Select</option>
+                            <option>Acura</option>
+                            <option>Honda</option>
+                            <option>Toyota</option>
+                        </select>
+                    </td>
+
+                    <td class="text-right">
+                        <a href="javascript:void(0)" class="js-delete-row"><i class="icon-trash icon-large red pointer" aria-hidden="true"></i></a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <button class="btn btn-primary my-3 js-add-an-accident-btn" role="button" onclick="addAnAccidentRow()">Add Accident <i  class="linearicon-plus ml-2"></i></button>
+    </div>
+
+    <div class="js-container-violations my-4">
+        <h3 class="h3">Violations</h3>
+
+        <table class="table editable-table js-table-violations hide-content">
+            <thead>
+                <tr>
+                    <th>Date of Violation</th>
+                    <th>Driver</th>
+                    <th>Violation Desc</th>
+                    <th></th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td class="md-width">
+                        <div class="input-group">
+                            <input type="text" class="form-control" aria-describedby="basic-addon2">
+                            <span class="input-group-addon" id="basic-addon2">
+                                <i class="linearicon-calendar-full linearicon-lg"></i>
+                            </span>
+                        </div>
+                    </td>
+
+                    <td>
+                        <select class="form-control">
+                            <option>Lenny Bergman</option>
+                            <option>Jason Orth</option>
+                            <option>Mary Orth</option>
+                        </select>
+                    </td>
+
+                    <td>
+                        <select class="form-control">
+                            <option>Careless Driving</option>
+                            <option>Cell Phone</option>
+                            <option>Double Lines</option>
+                            <option>DUI</option>
+                        </select>
+                    </td>
+
+                    <td class="text-right">
+                        <a href="javascript:void(0)" class="js-delete-row"><i class="icon-trash icon-large red pointer" aria-hidden="true"></i></a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <button class="btn btn-primary my-3" role="button" onclick="addAnViolationsRow()">Add Violation <i  class="linearicon-plus ml-2"></i></button>
+    </div>
+
+    <div class="js-container-comp-losses mt-4">
+        <h3 class="h3">Comp Losses</h3>
+
+        <table class="table editable-table js-table-comp-losses hide-content">
+            <thead>
+                <tr>
+                    <th>Date of Loss</th>
+                    <th>Driver</th>
+                    <th>Loss Description</th>
+                    <th>Amount</th>
+                    <th>Vehicle Involved</th>
+                    <th></th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td class="md-width">
+                        <div class="input-group">
+                            <input type="text" class="form-control" aria-describedby="basic-addon2">
+                            <span class="input-group-addon" id="basic-addon2">
+                                <i class="linearicon-calendar-full linearicon-lg"></i>
+                            </span>
+                        </div>
+                    </td>
+
+                    <td>
+                        <select class="form-control">
+                            <option>Lenny Bergman</option>
+                            <option>Jason Orth</option>
+                            <option>Mary Orth</option>
+                        </select>
+                    </td>
+
+                    <td>
+                        <select class="form-control">
+                            <option>Fire</option>
+                            <option>Hit Animal</option>
+                            <option>Theft</option>
+                            <option>Towing</option>
+                        </select>
+                    </td>
+
+                    <td>
+                        <input type="text" class="form-control">
+                    </td>
+
+                    <td>
+                        <select class="form-control">
+                            <option>No longer owned</option>
+                        </select>
+                    </td>
+
+                    <td class="text-right">
+                        <a href="javascript:void(0)" class="js-delete-row"><i class="icon-trash icon-large red pointer" aria-hidden="true"></i></a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <button class="btn btn-primary my-3" role="button" onclick="addAnCompLossesRow()">Add Comp Loss <i  class="linearicon-plus ml-2"></i></button>
+    </div>
+</div>

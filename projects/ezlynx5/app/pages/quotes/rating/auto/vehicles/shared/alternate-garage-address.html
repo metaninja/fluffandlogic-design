@@ -1,0 +1,35 @@
+<div class="ez-dropdown-container content-container mb-4">
+    <div class="ez-dropdown-heading" data-toggle="collapse" data-target="#alternate-garage-address">
+        <h2 class="h2">Alternate Garage Address</h2>
+
+        <div class="flex-container-align-center">
+            <button class="btn btn-outline-danger mr-3 js-delete-button" role="button" onclick="hideAlternateGarageAddressDropdown()">Remove</button>
+            <a href="javascript:;">
+                <i class="icon-chevron-sign-down linearicon-chevron-down"></i>
+                <i class="icon-chevron-up linearicon-chevron-up"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="ez-dropdown-content collapse show" id="alternate-garage-address">
+        <div class="row">
+            <div class="col-md-5">
+                <div class="form-group">
+                    <label class="required-label" for="input-alternate-garage-address">Address</label>
+                    <input type="text" class="form-control" id="input-alternate-garage-address" onkeyup="updateMap.call(this)" onchange="updateMap.call(this)">   
+                </div>
+            </div>
+
+            <div class="col-md-1">
+                <div class="form-group">
+                    <label style="visibility: hidden;">A</label>
+                    <input type="text" class="form-control input-sm" placeholder="Unit">
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <iframe class="js-alternate-garage-map google-map mt-4" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBW54QRY9jPjpkMqPfPM18eVLt_opuQK-Q&q=a" tabindex="-1" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</div>

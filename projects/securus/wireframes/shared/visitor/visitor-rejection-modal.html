@@ -1,0 +1,25 @@
+<div class="modal fade" id="rejection-reason-modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content modal-md">
+            <div class="modal-header modal-danger">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="addScheduleModalTitle">
+                    <strong>Reason for Rejecting Visitor?</strong>
+                </h4>
+            </div>
+            <div class="modal-body">
+                <div class="bff-include" data-src="shared/visitor/visitor-rejection-form.html"></div>
+            </div>
+            <div class="modal-footer">
+                <a href="#" class="btn btn-link" data-dismiss="modal">Cancel</a>
+                <a href="#" class="btn btn-danger btn-modal-reject-visitor" data-dismiss="modal">Reject Visitor</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $('.btn-modal-reject-visitor').click(function() {
+        bff.rejectedVisitorRow.remove();
+    })
+</script>

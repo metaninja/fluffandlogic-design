@@ -1,0 +1,552 @@
+<title>Block Phone Number</title>
+
+<!-- begin: Page Heading -->
+<div class="container-fluid page-header">
+    <div class="container">
+        <div class="pull-left">
+
+            <div class="page-header-icon">
+                <span class="fa fa-phone fa-2x"></span>
+            </div>
+
+            <h2>Block Phone Number</h2>
+
+        </div>
+
+        <div class="page-header-btn-group pull-right">
+            <a class="btn btn-link" href="#/Phone_SearchBlockedNumbers.html">Cancel</a>
+            <a class="btn btn-success" href="#/Phone_SearchBlockedNumbers.html"><i class="fa fa-save"></i>&nbsp; Save</a>
+        </div>
+
+    </div>
+</div>
+<!-- end: Page Heading -->
+
+<!-- begin: Breadcrumb -->
+<div class="container-fluid breadcrumb-container">
+    <div class="container">
+        <ol class="breadcrumb">
+            <li>Admin</li>
+            <li>Blocked Numbers</li>
+            <li>Block Phone Number</li>
+        </ol>
+    </div>
+</div>
+<!-- end: Breadcrumb -->
+
+<div class="container">
+
+    <div class="row">
+
+        <div class="col-md-10 col-md-offset-1">
+
+            <div class="section-header clearfix">
+                <h4>Phone number details</h4>
+
+                <a class="btn btn-danger pull-right section-header-action" href="#" data-toggle="modal" data-target="#deletePhone"><i class="fa fa-times-circle"></i>&nbsp; Delete Phone Number</a>
+            </div>
+
+            <div class="form-group permissions-form-background non-pan-list-options">
+
+                <div class="row form-group no-margin-bottom">
+
+                    <div class="col-md-3">
+                        <label for="countrycode" class="required">Country Code</label>
+                        <select class="form-control" id="countrycode">
+                            <option>1 - United States</option>
+                            <option>31 - Netherlands</option>
+                            <option>40 - Romania</option>
+                            <option>44 - United Kingdom</option>
+                            <option>47 - Norway</option>
+                            <option>51 - Peru</option>
+                            <option>52 - Mexico</option>
+                            <option>55 - Brazil</option>
+                            <option>57 - Colombia</option>
+                            <option>65 - Singapore</option>
+                            <option>91 - India</option>
+                            <option>98 - Iran</option>
+                            <option>233 - Ghana</option>
+                            <option>250 - Rwanda</option>
+                            <option>254 - Kenya</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+
+                    <div class="col-md-3 other-countrycode">
+                        <div class="form-group">
+                            <label for="other-countrycode-input" class="form-label required">Other Country Code</label>
+                            <input type="text" class="form-control other-countrycode-input" id="other-countrycode-input">
+                        </div>
+                    </div>
+
+                    <div class="col-md-9">
+                        <div class="form-group">
+                            <label for="phone-number" class="required">Phone Number (include area or city code)</label>
+                            <input type="email" class="form-control" id="phone-number" placeholder="Enter the phone number to block">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="form-group no-margin-bottom">
+                    <label>Description</label>
+                    <textarea class="form-control" rows="2" placeholder="Enter the blocked description"></textarea>
+                    <div>Character limit: 255</div>
+                </div>
+
+                <div class="view-modified" style="margin-top: 15px;">Last modified 9/17/2014 at 12:03PM by jvalentine.
+                    <a href="#/pages/search/system-logs/index.html">
+                        <small>View change history →</small>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="form-group permissions-form-background pan-list-options">
+
+                <div class="row">
+
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label for="countrycode" class="required">Country Code</label>
+                            <select class="form-control" id="countrycode">
+                                <option>1 - United States</option>
+                                <option>31 - Netherlands</option>
+                                <option>40 - Romania</option>
+                                <option>44 - United Kingdom</option>
+                                <option>47 - Norway</option>
+                                <option>51 - Peru</option>
+                                <option>52 - Mexico</option>
+                                <option>55 - Brazil</option>
+                                <option>57 - Colombia</option>
+                                <option>65 - Singapore</option>
+                                <option>91 - India</option>
+                                <option>98 - Iran</option>
+                                <option>233 - Ghana</option>
+                                <option>250 - Rwanda</option>
+                                <option>254 - Kenya</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 other-countrycode" style="display: none;">
+                        <div class="form-group">
+                            <label for="other-countrycode-input" class="form-label required">Country Code</label>
+                            <input type="text" class="form-control other-countrycode-input" id="other-countrycode-input">
+                        </div>
+                    </div>
+
+                    <div class="col-md-9 phone-number">
+                        <div class="form-group">
+                            <label for="phone-number" class="required">Phone Number (include area or city code)</label>
+                            <input type="tel" class="form-control" id="phone-number" placeholder="Enter the phone number">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="col-md-3">
+
+                        <div class="form-group">
+                            <label>Relationship</label>
+                            <select class="form-control">
+                                <option>Attorney</option>
+                                <option>Aunt</option>
+                                <option>Boyfriend</option>
+                                <option>Brother</option>
+                                <option>Brother in Law</option>
+                                <option>Child Father</option>
+                                <option>Child Mother</option>
+                                <option>Clergy</option>
+                                <option>Cousin</option>
+                                <option>Daughter</option>
+                                <option>Daughter in Law</option>
+                                <option>Employer</option>
+                                <option>Father</option>
+                                <option>Father in Law</option>
+                                <option>Financial Advisor</option>
+                                <option>Friend</option>
+                                <option>Girlfriend</option>
+                                <option>Grandfather</option>
+                                <option>Grandmother</option>
+                                <option>Grandparents</option>
+                                <option>Husband</option>
+                                <option>Mother</option>
+                                <option>Mother in Law</option>
+                                <option>Nephew</option>
+                                <option>Niece</option>
+                                <option>Other - Use Description Field</option>
+                                <option>Parents</option>
+                                <option>Significant Other</option>
+                                <option>Sister</option>
+                                <option>Sister in Law</option>
+                                <option>Step Brother</option>
+                                <option>Step Daughter</option>
+                                <option>Step Father</option>
+                                <option>Step Mother</option>
+                                <option>Step Sister</option>
+                                <option>Step Son</option>
+                                <option>Uncle</option>
+                                <option>Wife</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-6">
+
+                        <div class="form-group no-margin-bottom">
+                            <label>Description</label>
+                            <textarea class="form-control" rows="1" placeholder="Enter the description"></textarea>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-3">
+
+                        <div class="form-group">
+                            <label>Verified</label>
+                            <select class="form-control">
+                                <option>Not Verified</option>
+                                <option>Verified</option>
+                                <option>Denied</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="view-modified">Last modified 9/17/2014 at 12:03PM by jvalentine.
+                    <a href="#/pages/search/system-logs/index.html">
+                        <small>View change history →</small>
+                    </a>
+                </div>
+
+            </div>
+
+            <script type="text/javascript">
+                $('.pan-list-options').hide();
+
+                $('.pan-list-style').click(function() {
+                    $('.pan-list-options').show();
+                    $('.non-pan-list-options').hide();
+                });
+            </script>
+
+            <div class="row">
+
+                <div class="col-md-8">
+
+                    <h4 class="settings-headline">Blocked settings</h4>
+
+                    <div class="all-sites-phone-settings">
+
+                        <div class="row">
+
+                            <div class="col-md-7">
+
+                                <label class="rounded-check" for="rounded-check-reason">
+                                    <input type="checkbox" name="check" id="rounded-check-reason" value="None" checked/>
+                                    <span class="icon"></span>
+                                    <a href="#" data-toggle="tooltip" title="Blocks this phone number from being dialed">Active</a>
+                                </label>
+
+                            </div>
+
+                            <div class="col-md-5">
+
+                                <div class="input-group" style="width: 100%;">
+                                    <label for="blockedReason" class="control-label required">Blocked Reason</label>
+
+                                    <!-- Single button -->
+
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" style="background-color: transparent; color: #333; width: 100%;">
+                                        <span class="pull-right">
+                                            <span class="caret"></span>
+                                        </span>
+                                    </button>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="#">Employee number</a>
+                                        </li>
+                                        <li><a href="#">Friend or family request</a>
+                                        </li>
+                                        <li><a href="#">Harassment</a>
+                                        </li>
+                                        <li><a href="#">Witness</a>
+                                        </li>
+                                        <li class="divider"></li>
+                                        <li><a href="#" data-toggle="modal" data-target="#blockedReasonModal">Add/Edit Blocked Reason...</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="bff-include" data-src="shared/bna-info.html"></div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-4">
+
+                    <h4 class="settings-headline">Applied block locations
+                        <button class="btn btn-link pull-right" style="margin-top:-5px;" data-toggle="modal" data-target="#addLocation">
+                            <span class="no-location-selected"><i class="fa fa-pencil"></i> &nbsp;Manage</span>
+                        </button>
+                    </h4>
+
+                    <div class="no-location-selected">
+                        <p>You have not selected a location for this blocked phone number.</p>
+                        <p><a data-toggle="modal" data-target="#addLocation">Add a blocked location &rarr;</a>
+                        </p>
+                    </div>
+
+                    <div class="bff-include location-selected" data-src="include/PhoneNav.html" data-event="PhoneNavLoaded"></div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="row">
+
+        <div class="col-md-10 col-md-offset-1">
+
+            <hr class="divider" />
+
+            <div class="page-header-btn-group pull-right">
+                <a class="btn btn-link" href="#/Phone_SearchBlockedNumbers.html">Cancel</a>
+                <a class="btn btn-success" href="#/Phone_SearchBlockedNumbers.html"><i class="fa fa-save"></i>&nbsp; Save</a>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<div class="bff-include" data-src="pages/manage/phone-numbers/blocked-numbers/add/modal-select-locations.html"></div>
+
+
+
+<!-- Blocked Reason Modal -->
+<div class="modal fade" id="blockedReasonModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content modal-md">
+            <div class="modal-header modal-primary">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="blockedReasonModal">Blocked Reason</h4>
+            </div>
+            <div class="modal-body">
+
+                <section class="panel">
+
+                    <table class="table table-hover table-editable">
+                        <thead>
+                        <tr>
+                            <th>
+                                Created Blocked Reasons
+                            </th>
+                            <th>
+                                <button class="btn btn-link btn-add pull-right">
+                                    <i class="fa fa-plus-circle"></i> Add
+                                </button>
+                            </th>
+                        </tr>
+                        </thead>
+                        <tbody>
+
+                        <!-- Add Phone Number -->
+                        <tr class="add-row" style="display: none; background-color: rgba(52, 152, 219, 0.0980392);">
+                            <td>
+                                <input type="text" class="form-control" placeholder="Enter blocked reason">
+                            </td>
+                            <td class="close-add-row">
+
+                                <button class="btn btn-danger btn-link">Cancel</button>
+                                <button class="btn btn-success"><i class="fa fa-save"> Save</i>
+                                </button>
+
+                            </td>
+
+                        </tr>
+                        <!-- Add Phone Number -->
+
+                        <!-- Edit Phone Number -->
+                        <tr class="edit-row" style="display: none; background-color: rgba(39, 174, 96,.1)">
+                            <td>
+                                <input type="text" class="form-control" value="Employee number">
+                            </td>
+
+                            <td class="close-edit-row">
+                                <button class="btn btn-danger btn-link">Cancel</button>
+                                <button class="btn btn-success"><i class="fa fa-save"> Save</i>
+                                </button>
+                            </td>
+
+                        </tr>
+                        <!-- Edit Phone Number -->
+
+                        <tr>
+                            <td>Court Order</td>
+                            <td>
+                                <div class="row-actions">
+                                    <button class="btn btn-link btn-edit">
+                                        <i class="fa fa-pencil"></i> Edit
+                                    </button>
+
+                                    <button class="btn btn-link btn-delete" data-toggle="modal" data-target="#DeleteForwardingCallModal">
+                                        <i class="fa fa-trash-o"></i> Delete
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Punishment</td>
+                            <td>
+                                <div class="row-actions">
+                                    <button class="btn btn-link btn-edit">
+                                        <i class="fa fa-pencil"></i> Edit
+                                    </button>
+
+                                    <button class="btn btn-link btn-delete" data-toggle="modal" data-target="#DeleteForwardingCallModal">
+                                        <i class="fa fa-trash-o"></i> Delete
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th>System Blocked Reasons</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Employee number</td>
+                        </tr>
+                        <tr>
+                            <td>Friend or family request</td>
+                        </tr>
+                        <tr>
+                            <td>Harassment</td>
+                        </tr>
+                        <tr>
+                            <td>Witness</td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                </section>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">I'm Done</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="bff-include" data-src="include/modal-relationship-verified.html"></div>
+
+<!-- Delete Blocked Reason Modal -->
+<div class="modal fade" id="DeleteForwardingCallModal" tabindex="-1" role="dialog" aria-labelledby="DeleteForwardingCallModalLabel" aria-hidden="true" style="display: none;">
+    <div class="modal-dialog">
+        <div class="modal-content modal-md">
+            <div class="modal-header modal-danger">
+
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title" id="DeleteForwardingCallModalLabel">Delete Blocked Reason</h4>
+
+            </div>
+            <div class="modal-body">
+                <p>Are you sure you want to delete <b>Friend and family request</b> as a blocked reason?</p>
+
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-link" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Delete Phone Number</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="bff-include" data-src="include/modal-delete-phone-number.html"></div>
+
+
+<script>
+    $(document).ready(function() {
+
+// Other country code
+        $('.other-countrycode').hide();
+        $('#countrycode').change(function() {
+            if ($(this).val().toLowerCase() === 'other') {
+                $('#phone-number').parents('.col-md-9').removeClass('col-md-9').addClass('col-md-6');
+                $('.other-countrycode').show();
+                $('.other-countrycode-input').focus();
+            } else {
+                $('.other-countrycode').hide();
+                $('#phone-number').parents('.col-md-6').removeClass('col-md-6').addClass('col-md-9');
+            }
+        });
+
+
+//--- location conflict error code --
+        $('#rounded-check-1').change(function() {
+            $('#facility-text').toggleClass("brand-warning");
+            $('.conflict-error').toggle();
+        });
+
+
+//-- Blocked Reason Modal --
+        $('.add-row').hide();
+        $('.edit-row').hide();
+
+        $('.btn-add').click(function() {
+            $('.add-row').show();
+            $('.edit-row').hide();
+        });
+
+        var editRow = $('.edit-row').html();
+
+        $('.btn-edit').click(function() {
+            //Remove any existing Edit Rows from the DOM
+            //Don't want duplicates
+            $('.edit-row').remove();
+
+            //Hide the Add Row if it exists
+            $('.add-row').hide();
+            //Dynamically add Edit Row to the DOM
+            $(this).parents('tr').addClass('.row-being-edited')
+                    .after('<tr class="edit-row">' + editRow + '</tr>');
+            $('.row-being-edited').hide();
+
+            // Add the hide Edit Row click action *after*
+            // The row has been added to the DOM.
+            $('.close-edit-row button').click(function() {
+                $('.edit-row').hide();
+                $('.row-being-edited').removeClass('.row-being-edited');
+            });
+
+        });
+
+        $('.close-add-row button').click(function() {
+            $('.add-row').hide();
+        });
+    });
+</script>

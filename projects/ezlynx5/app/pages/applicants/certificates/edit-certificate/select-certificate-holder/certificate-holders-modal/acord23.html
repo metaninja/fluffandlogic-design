@@ -1,0 +1,176 @@
+<div class="ez-dropdown-container content-container bg-gray200 my-4">
+    <div class="ez-dropdown-heading collapsed" data-toggle="collapse" data-target="#collapse-acord23" aria-expanded="true">
+        <h2 class="h2">Certificate Details</h2>
+        <a href="javascript:void(0);">
+            <i class="icon-chevron-sign-down linearicon-chevron-down"></i>
+            <i class="icon-chevron-up linearicon-chevron-up"></i>
+        </a>
+    </div>
+
+    <div class="ez-dropdown-content collapse" id="collapse-acord23" tabindex="-1">
+        <div class="form-group">
+            <label>Vehicle/Scheduled Item</label>
+            <select class="form-control" id="vehicle-equipment"><!-- onchange="addToMasterRemarks(this)" -->
+                <option>-- Select --</option>
+                <option>2011 GMC Savana Cargo Van VIN 23498074309 </option>
+                <option>2011 GMC Savana Cargo Van VIN 23498023460 </option>
+                <option>2010 GMC Savana Cargo Van VIN 23498094806 </option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Serial #</label>
+            <input type="text" class="form-control">
+        </div>
+
+        <hr>
+
+        <h3 class="h3">Additional Insured</h3>
+
+        <div class="row">
+            <div class="col">
+                <div class="form-group">
+                    <label for="additional-vl">
+                        Vehicle Liability
+                    </label>
+
+                    <label class="switch mt-0">
+                        <input type="checkbox" id="additional-vl">
+                        <div class="slider round">
+                            <span class="on">YES</span>
+                            <span class="off">NO</span>
+                        </div>
+                    </label>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="form-group">
+                    <label for="additional-gl">
+                        General Liability
+                    </label>
+
+                    <label class="switch mt-0">
+                        <input type="checkbox" id="additional-gl">
+                        <div class="slider round">
+                            <span class="on">YES</span>
+                            <span class="off">NO</span>
+                        </div>
+                    </label>
+                </div>
+            </div>
+
+            <div class="col"></div>
+        </div>
+
+        <hr>
+
+        <h3 class="h3">Loss Payee</h3>
+
+        <div class="form-group">
+            <select class="form-control" onchange="showVehicleCollisionLossOther(this)">
+                <option>Vehicle Collision Loss</option>
+                <option>Other</option>
+            </select>
+            <input type="text" class="form-control js-vehicle-collision-loss-other hide-content mt-2" style="width:10rem">
+        </div>
+
+        <div class="form-group">
+            <select class="form-control" onchange="showVehicleCollisionLossOther(this)">
+                <option>Vehicle Comp</option>
+                <option>Vehicle OTC</option>
+                <option>Other</option>
+            </select>
+            <input type="text" class="form-control js-vehicle-collision-loss-other hide-content mt-2" style="width:10rem">
+        </div>
+
+        <div class="form-group">
+            <label for="additional-gl">
+                Equipment
+            </label>
+
+            <label class="switch mt-0">
+                <input type="checkbox" id="additional-gl">
+                <div class="slider round">
+                    <span class="on">YES</span>
+                    <span class="off">NO</span>
+                </div>
+            </label>
+        </div>
+
+        <hr>
+
+        <div class="form-group">
+            <label>Select one of the following</label>
+            <select class="form-control">
+                <option>The Additional Interest described has been added to the policy(ies) listed herein by policy number(s). </option>
+                <option>A request has been submitted to add the Additional Interest described to the policy(ies) listed herein by policy number(s).</option>
+            </select>
+        </div>
+
+        <hr>
+
+        <h3 class="h3">Vehicle / Equipment Interest</h3>
+
+        <div class="row">
+            <select class="form-control">
+                <option>-- Select Leased or Financed --</option>
+                <option>Leased</option>
+                <option>Financed</option>
+            </select>
+        </div>
+
+        <hr>
+
+
+        <div class="form-group">
+            <label for="additional-gl">
+                Lender's Loss Payable
+            </label>
+
+            <label class="switch mt-0">
+                <input type="checkbox" id="additional-gl">
+                <div class="slider round">
+                    <span class="on">YES</span>
+                    <span class="off">NO</span>
+                </div>
+            </label>
+        </div>
+
+        <hr>
+
+        <div class="form-group">
+            <label>Loan / Lease #</label>
+            <input type="text" class="form-control">
+        </div>
+
+
+
+    </div>
+</div>
+
+<div class="ez-dropdown-container content-container bg-gray200 my-4">
+    <div class="ez-dropdown-heading collapsed" data-toggle="collapse" data-target=".certificate-holder-remarks" aria-expanded="true">
+        <h2 class="h2">Certificate Holder Remarks</h2>
+        <a href="javascript:;">
+            <i class="icon-chevron-sign-down linearicon-chevron-down"></i>
+            <i class="icon-chevron-up linearicon-chevron-up"></i>
+        </a>
+    </div>
+
+    <div class="ez-dropdown-content collapse certificate-holder-remarks" id="certificate-holder-remarks" tabindex="-1" style="">
+        <p>REMARKS (INCUDING SPECIAL CONDITIONS / OTHER COVERAGES) (ACORD 101, Additional Remarks Schedule, may be attached if more space is required)</p>
+        <div class="bff-include" data-src="app/pages/applicants/certificates/edit-certificate/settings/certificate-master-remarks.html"></div>
+
+    </div>
+</div>
+
+<script>
+    function showVehicleCollisionLossOther(select) {
+        if ($(select).find(':selected').html().toLowerCase() === 'other') {
+            $(select).next('.js-vehicle-collision-loss-other').removeClass('hide-content');
+        } else {
+            $(select).next('.js-vehicle-collision-loss-other').addClass('hide-content');
+        }
+    }
+</script>

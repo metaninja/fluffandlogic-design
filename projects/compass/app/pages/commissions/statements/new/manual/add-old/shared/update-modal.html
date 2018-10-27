@@ -1,0 +1,30 @@
+<div class="modal fade" id="update-commissions-modal" tabindex="-1" role="dialog" aria-labelledby="update-commissions-modal-title">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header clearfix">
+                <h5 class="modal-title pull-left" id="bulk-add-agencies-modal-title">Update Commissions</h5>
+                <button type="button" class="close pull-right" data-dismiss="modal" aria-label="Close">
+                    <i class="linearicon-cross2" aria-hidden="true"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>This will clear and rerun commission rules for all attached commissions not yet approved or overridden. Are you sure you would like to continue?</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-primary" onclick="updateCommissions(true)">Update Commissions</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    function updateCommissions(update) {
+        $('#update-commissions-modal').modal('hide');
+
+        if (update) {
+            $("input[type=checkbox]").prop("checked", false);
+        }
+    }
+</script>

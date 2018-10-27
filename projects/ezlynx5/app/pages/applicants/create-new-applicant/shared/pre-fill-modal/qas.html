@@ -1,0 +1,41 @@
+<div class="modal-body" style="max-height: 600px; overflow-y: auto;">
+    <h2>Quoting-As-A-Service (QAS)</h2>
+    <p>Search for a QAS template or select one below to pre-fill carrier-specific questions.</p>
+
+    <div class="row mb-4">
+        <div class="col-md-6">
+            <label for="search-templates">Search for a template</label>
+            <div class="input-group">
+                <input type="text" class="form-control" id="search-templates" onkeyup="searchQasTemplates.call(this, event)">
+                <span class="input-group-addon" id="basic-addon2">
+                    <i class="linearicon-magnifier"></i>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <h3 class="h3">Recently Used Templates</h3>
+
+    <ul>
+        <li>
+            <a href="javascript:void(0)" class="js-qas-template" onclick="completeAutoApplication()">Template 1</a>
+        </li>
+
+        <li>
+            <a href="javascript:void(0)" class="js-qas-template" onclick="completeAutoApplication()">Auto Template</a>
+        </li>
+
+        <li>
+            <a href="javascript:void(0)" class="js-qas-template" onclick="completeAutoApplication()">Home Template</a>
+        </li>
+
+        <li>
+            <a href="javascript:void(0)" class="js-qas-template" onclick="completeAutoApplication()">Test Template</a>
+        </li>
+    </ul>
+</div>
+
+<div class="modal-footer">
+    <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Cancel</button>
+    <a href="#" class="btn btn-primary" onclick="completeAutoApplication()">Finish</a>
+</div>

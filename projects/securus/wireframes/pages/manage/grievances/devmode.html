@@ -1,0 +1,35 @@
+<div class="alert alert-warning alert-dismissable dev" role="alert">
+
+    <strong>Views (for user Mark Ansen): </strong>
+    <a href="#" class="devmode-view-link devmode-grievance-processor">Processor (My Grievances) only</a> |
+    <a href="#" class="devmode-view-link devmode-grievance-assigner">Assigner</a> |
+    <a href="#" class="devmode-view-link devmode-grievance-mixed">Mixed (assigner, processor, view only)</a>
+
+</div>
+
+<script>
+    $('.devmode-grievance-assigner').click(function() {
+        $('.grievance-view').hide();
+        $('.devmode-view-link').removeClass('selected');
+        $(this).addClass('selected');
+
+        $('.grievance-assigner-view').show();
+    });
+
+    $('.devmode-grievance-processor').click(function() {
+        $('.grievance-view').hide();
+        $('.devmode-view-link').removeClass('selected');
+        $(this).addClass('selected');
+
+        $('.grievance-processor-view').show();
+    });
+
+    $('.devmode-grievance-mixed').click(function() {
+        $('.grievance-view').hide();
+        $('.devmode-view-link').removeClass('selected');
+        $(this).addClass('selected');
+
+        $('.grievance-mixed-view').show();
+    });
+</script>
+

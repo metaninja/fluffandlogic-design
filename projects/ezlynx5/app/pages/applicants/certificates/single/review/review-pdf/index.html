@@ -1,0 +1,46 @@
+<div class="ez-main-content">
+    <div class="ez-page-header">
+        <div class="row">
+            <div class="col ez-page-title">
+                <span class="ez-page-title-icon">
+                    <i class="linearicon-2x linearicon-user"></i>
+                </span>
+
+                <h1 class="h1"><span class="subtitle">Certificates</span>Review Certificates</h1>
+            </div>
+
+            <div class="col ez-page-actions">
+                <div class="dropdown">
+                    <a href="javascript:void(0);" class="dropdown-toggle btn btn-primary" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Actions
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="javascript:void(0)" data-toggle="modal" data-target="#email-modal">Email</a>
+                        <a class="dropdown-item" href="javascript:void(0)" data-toggle="modal" data-target="#text-modal">Text</a>
+                        <a class="dropdown-item" href="javascript:void(0)" onclick="Placeholder: this will begin the Postal Mail workflow">Postal Mail</a>
+                        <a class="dropdown-item" href="#/app/pages/applicants/certificates/index.html">Client Center</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#/app/pages/applicants/certificates/index.html">Download</a>
+                        <a class="dropdown-item" href="#/app/pages/applicants/certificates/index.html">Save and Exit</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item text-warning" href="#/app/pages/applicants/certificates/index.html">Exit without Saving</a>
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </div>
+
+    <div class="ez-page-body">
+        <div class="ez-page-content content-container" style="height: calc(100vh - 200px)">
+            <object data="images/pdf/cert-of-prop.pdf" width="100%" height="100%"></object>
+        </div>
+    </div>
+</div>
+
+<div class="bff-include" data-src="app/pages/applicants/certificates/edit-certificate/shared/cancel-modal.html"></div>
+
+<div class="bff-include" data-src="app/shared/email-modal.html"></div>
+
+<div class="bff-include" data-src="app/shared/text-modal.html"></div>
+
+<div class="bff-script" data-src="app/shared/filters/dropdown.js"></div>

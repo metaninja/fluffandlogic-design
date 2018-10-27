@@ -1,0 +1,35 @@
+<title>Call Forward Numbers</title>
+
+<!-- begin: Page Heading -->
+<div class="bff-include" data-src="pages/manage/call-settings/call-forward-numbers/header.html"></div>
+
+<!-- Breadcrumb -->
+<div class="bff-include" data-src="pages/manage/call-settings/call-forward-numbers/breadcrumb.html"></div>
+
+<div class="container">
+
+    <div class="row">
+
+        <div class="col-md-3">
+
+            <div class="bff-include" data-src="pages/manage/call-settings/shared/call-settings-nav.html" data-event="call-settings-nav"></div>
+
+        </div>
+
+        <div class="col-md-9">
+
+            <div class="bff-include" data-src="pages/manage/call-settings/call-forward-numbers/list.html"></div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="bff-include" data-src="pages/manage/call-settings/call-forward-numbers/modals/modal-delete-call-forward.html"></div>
+
+<script type="text/javascript">
+$('.bff-include').bind('call-settings-nav', function() {
+    $("a:contains('Call Forward Numbers')").parents("li").addClass('active');
+});
+</script>

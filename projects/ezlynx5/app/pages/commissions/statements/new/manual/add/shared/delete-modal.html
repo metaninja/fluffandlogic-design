@@ -1,0 +1,39 @@
+<div class="modalBackground"></div>
+
+<div class="modal ui-dialog ui-widget ui-modalDialog" style="height: auto; width: 500px; display: block; display: block; left: 50%; top: 225px; margin-left: -250px;" tabindex="-1" role="dialog" aria-labelledby="ui-id-5" aria-hidden="false" id="bulkListErrorModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix TitleBar">
+                <span id="ui-id-5" class="ui-dialog-title">Delete Commissions</span>
+                <div class="btn-group">
+                    <button class="ui-dialog-titlebar-full" tabindex="-1"><span class="icon-chevron-up linearicon-chevron-up"></span></button>
+                    <button type="button" class="ui-dialog-titlebar-close" data-dismiss="modal" tabindex="-1" onclick="toggleDeleteModal()"><span class="icon-remove"></span></button>
+                </div>
+            </div>
+            <div class="modal-body">
+                <p>Delete Commissions</p>
+            </div>
+
+            <div class="modal-footer">
+                <div class="right modal-buttons">
+                    <button class="btn btn-secondary" onclick="toggleDeleteModal()">Cancel</button>
+                    <a href="javascript:void(0);" class="btn btn-primary px4" onclick="toggleDeleteModal(true)">Delete Commissions</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function toggleDeleteModal(remove) {
+        $(".js-delete-modal").toggle();
+
+        if (remove) {
+            $(".js-commission-table tbody tr").remove();
+
+            $("input[type=checkbox]").prop("checked", false);
+
+            $(".js-disable-btn").prop("disabled", true);
+        }
+    }
+</script>

@@ -1,0 +1,69 @@
+<div class="editor js-search-for-policy hide-content" onkeyup="EditorKeyPressed(event)">
+    <div class="editor-header">
+        <div class="editor-header-left">
+        </div>
+        <div class="editor-header-right">
+            <em class="text-muted-light">Hit Enter to save your changes, Esc to cancel</em>
+            <a href="javascript:void(0);" class="btn btn-link" onclick="hideEditor()"><i class="linearicon-cross2 ml-2"></i></a>
+        </div>
+    </div>
+
+    <div class="editor-body d-flex align-items-center">
+        <div class="type-ahead js-search-policy-number" style="width: 15rem;">
+            <div class="input-group type-ahead-input-group">
+                <input type="text" class="form-control type-ahead-input" placeholder="Search Policy #" aria-label="Search"
+                       onkeyup="typeAheadSearch.call(this); searchPolicies(this);">
+                <span class="input-group-addon" id="basic-addon-search-policy"><i class="linearicon-magnifier"></i></span>
+            </div>
+
+            <div class="type-ahead-results">
+                <div id="policies">
+                </div>
+                <div class="type-ahead-no-results hide-content">
+                    <div>
+                        No results found.<br>
+                        <a href="javascript:void(0);" onclick="showEditor()">
+                            <strong>Create a new policy</strong>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="type-ahead js-search-transaction-number hide-content ml-2" style="width: 15rem;">
+            <div class="input-group type-ahead-input-group">
+                <input type="text" class="form-control type-ahead-input" placeholder="Search Transaction">
+                <span class="input-group-addon" id="basic-addon-search-transaction"><i class="linearicon-magnifier"></i></span>
+            </div>
+
+            <div class="type-ahead-results show">
+                <a href="javascript:void(0);" class="type-ahead-result" onclick="matchPolicy('PCH')">
+                    <div>Policy Change (PCH)</div>
+                    <div><small class="text-muted">Applied Date: 7/7/2017</small></div>
+                </a>
+                <a href="javascript:void(0);" class="type-ahead-result" onclick="matchPolicy('PCH')">
+                    <div>Policy Change (PCH)<br></div>
+                    <div><small class="text-muted">Applied Date: 7/7/2017</small></div>
+                </a>
+                <a href="javascript:void(0);" class="type-ahead-result" onclick="matchPolicy('PCH')">
+                    <div>Policy Change (PCH)</div>
+                    <div><small class="text-muted">Applied Date: 7/4/2017</small></div>
+                </a>
+                <a href="javascript:void(0);" class="type-ahead-result" onclick="matchPolicy('NBS')">
+                    <div>New Business<br></div>
+                    <div><small class="text-muted">Applied Date: 7/6/2017</small></div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="bff-script" data-src="app/pages/commissions/statements/new/manual/add/match-policy/index.js"></div>
+
+<script id="policies-template" type="x-handlebars-template">
+    {{#policies}}
+        <a href="javascript:void(0);" class="type-ahead-result" onclick="typeAheadSearchResult.call(this); showSearchTransactionNumber('{{ PolicyNumber }}');">{{ PolicyNumber }} ( {{ Carrier }} )</a>
+    {{/policies}}
+</script>
+
+

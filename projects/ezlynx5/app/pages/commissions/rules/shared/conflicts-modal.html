@@ -1,0 +1,77 @@
+<div class="modal fade" id="conflicts-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog" role="document" style="max-width: 1000px;">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				 	<i class="linearicon-cross linearicon-lg" aria-hidden="true"></i>
+				</button>
+				<h5 class="modal-title" id="exampleModalLabel">Conflicts</h5>
+			</div>
+
+			<div class="modal-body">
+				<table class="table">
+					<thead>
+					<tr>
+						<th></th>
+						<th><strong>Rule Name</strong></th>
+						<th><strong>Criteria</strong></th>
+						<th><strong>Payees</strong></th>
+					</tr>
+					</thead>
+						<tbody id="conflicting-rules" class="ui-sortable" style="">
+						
+						
+						<tr class="ui-sortable-handle" style="">
+							<td><i class="icon-reorder" style="color: #aaa;"></i></td>
+							<td><a href="javascript:void(0)">RNWL Commercial - All Amer Marine Slip </a></td>
+							<td style="width: 40%;">
+								If New/Renewal is Renewal and Transaction is Policy Change and LOB is Commercial Property and Master Company is
+								ALL AMER MARINE SLIP and Commission Producer Code is 12345 and Policy Producer Code is 304</td>
+							<td style="width: 30%;">Pay Commission Producer 100% of Agency Commission</td>
+						</tr><tr class="ui-sortable-handle" style="">
+							<td><i class="icon-reorder" style="color: #aaa;"></i></td>
+							<td><a href="javascript:void(0)">RNWL Commercial - All Amer Marine Slip </a></td>
+							<td style="width: 40%;">
+								If New/Renewal is Renewal and Transaction is Policy Change and LOB is Commercial Property and Master Company is
+								ALL AMER MARINE SLIP and Commission Producer Code is 12345 and Policy Producer Code is 304</td>
+							<td style="width: 30%;">Pay Commission Producer 100% of Agency Commission</td>
+						</tr><tr class="ui-sortable-handle" style="">
+							<td><i class="icon-reorder" style="color: #aaa; cursor: move"></i></td>
+							<td><a href="javascript:void(0)"><strong>RNWL Commercial - All Amer Marine Slip</strong> </a></td>
+							<td style="width: 40%;">
+								If New/Renewal is Renewal and Transaction is Policy Change and LOB is Commercial Property and Master Company is
+								ALL AMER MARINE SLIP and Commission Producer Code is 12345 and Policy Producer Code is 304</td>
+							<td style="width: 30%;">Pay Commission Producer 100% of Agency Commission</td>
+						</tr>
+						<tr class="ui-sortable-handle" style="">
+							<td><i class="icon-reorder" style="color: #aaa;"></i></td>
+							<td>
+								<strong>THIS RULE</strong> <span class="label label-draft">Draft</span>
+
+							</td>
+							<td style="width: 40%;">
+								If New/Renewal is Renewal and Transaction is New Business, or Policy Change and State is AZ, AL, KY, or TX
+							</td>
+							<td style="width: 30%;">--</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<div class="modal-footer">
+				<button class="btn btn-outline-primary" data-dismiss="modal">Cancel</button>
+
+				<button class="btn btn-success" data-dismiss="modal">
+					<i class="icon-save mr-1 align-middle"></i>Save
+				</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<script>
+	$(function() {
+		$('#conflicting-rules').sortable();
+	});
+</script>

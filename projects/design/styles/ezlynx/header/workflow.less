@@ -1,0 +1,132 @@
+.workflowIcon
+{
+	position: relative;
+	border:0 !important;
+	background:none;
+	outline:none;
+	color:#aaa;
+}
+
+.workflow-listbutton-highlight {
+    color: #5988cf;
+}
+
+.workflow-applicant-border {
+    border: 1px solid #ccc;
+}
+
+.workflow-padding
+{
+	padding:12px;
+}
+
+.workflow-border-bottom {
+    border-bottom: 1px solid #ccc;
+}
+.workflow-top1
+{
+	top:-1px !important;
+}
+
+.workflow-divBackground {
+    background-color: @greyLighter;
+}
+
+
+.workflow-view {
+    display: block;
+    width: 90%;
+    margin: 24px;
+}
+
+.workflow-criteria {
+    color: #999;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+    .workflow-criteria span {
+        color: #333;
+    }
+
+.workflow-action {
+    display: table;
+    width: 100%;
+}
+
+.workflow-action-status,
+.workflow-action-desc {
+    border-width: 1px;
+    border-style: solid;
+    height: 48px;
+}
+
+.workflow-action-status {
+    width: 48px;
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.workflow-action-desc {
+    display: table-cell;
+    vertical-align: middle;
+    border-color: #ccc;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.workflow-arrow-down {
+    width: 1px;
+    height: 40px;
+    border-left: 1px solid #777;
+    padding-bottom: 40px;
+    position: relative;
+    margin: auto;
+}
+
+    .workflow-arrow-down:after {
+        content: "";
+        display: block;
+        position: absolute;
+        left: -11px;
+        bottom: -1px;
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 10px solid #777;
+    }
+
+.workflow-action-success {
+    background-color: @green;
+    border-color: @green;
+}
+
+.workflow-action-running {
+    background-color: @teal;
+    border-color: @teal;
+}
+
+.workflow-action-failed {
+    background-color: @red;
+    border-color: @red;
+}
+
+.workflow-action-pending {
+    background-color: @greyLight;
+    border-color: @greyLight;
+}
+
+.workflow-info-container {
+    display: block;
+    background-color: lightblue;
+    max-width: 35%;
+    padding: 10px;
+    border-radius: 5px;
+    color: slategray;
+    margin-bottom: 10px;
+}

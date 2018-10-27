@@ -1,0 +1,40 @@
+<div class="modal fade" id="addCovertAlertTarget" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content modal-lg">
+
+            <div class="modal-header modal-primary">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <div class="modal-title">
+                    Apply Covert Alert Target
+                </div>
+            </div>
+
+            <div class="modal-body">
+
+                <p>Select one or more terminals, phone numbers, inmates, and/or geofences to this covert alert recipient.</p>
+
+                <div class="bff-include" data-src="include/modal-select-locations.html"></div>
+
+                <div class="modal-footer">
+                    <a href class="btn btn-link" data-dismiss="modal">Cancel</a>
+                    <button type="button" class="btn btn-primary toggle-locations" data-dismiss="modal">Apply Covert Alert Target</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+$('document').ready(function() {
+
+    $('.no-location-selected').hide();
+
+    $('.toggle-locations').click(function() {
+        $('.no-location-selected').show();
+        $('.location-selected').hide();
+    });
+
+});
+</script>

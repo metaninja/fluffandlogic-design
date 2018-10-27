@@ -1,0 +1,33 @@
+<h1 class="logo">
+    <a href="/#/index.html"><img class="color-gray-medium" src="https://cdn.webcetera.com/CommonResources/EZLynx/Shared/images/logo-ezlynx--gray.svg" alt="EZLynx Logo" border="0"></a>
+</h1>
+
+<ul>
+<li><a href="#/app/pages/home/index.html">Overview</a></li>
+</ul>
+
+<!--<h3 style="line-height: 1.2">Guidelines</h3>-->
+<ul class="design-outline">
+    <li><a href="#/app/pages/guidelines/principles/index.html">Guiding Principles</a></li>
+    <li><a href="#/app/pages/guidelines/content/index.html">Content</a></li>
+    <li><a href="#/app/pages/guidelines/colors/index.html">Colors</a></li>
+    <li><a href="#/app/pages/guidelines/icons/index.html">Icons</a></li>
+</ul>
+
+<p>&nbsp;</p>
+
+<h3 style="line-height: 1.2">Components</h3>
+<input type='text' placeholder='Search Components' id='search-components'>
+<ul class="design-outline" id="js-leftnav">
+
+</ul>
+
+<script id="hbs-leftnav-template" type="text/x-handlebars-template">
+    {{#each leftNavLink}}
+        <li><a href="{{url}}">{{description}}</a></li>
+    {{/each}}
+</script>
+
+<div class="bff-script" data-src="app/shared/leftnav.js"></div>
+
+<div class="bff-script" data-src="app/shared/search-components.js"></div>

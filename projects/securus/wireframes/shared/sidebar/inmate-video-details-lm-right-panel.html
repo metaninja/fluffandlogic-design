@@ -1,0 +1,44 @@
+<div class="row">
+
+    <div class="col-md-5">
+
+        <div class="popover-markup">
+            <a href="#" class="trigger"><img src="//fillmurray.com/g/320/180" class="img-responsive img-rounded">
+            </a>
+            <div class="head hide">Jeremy McPherson
+                <div class="pull-right"><i class="fa fa-times"></i>
+                </div>
+            </div>
+            <div class="content hide">
+                <p><img src="//fillmurray.com/g/640/320" class="img-responsive img-rounded">
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="col-md-7 margin-bottom-20">
+        <h4><a href="#/pages/search/inmates/profile/index.html">Jeremy McPherson</a></h4>
+        <div class="details">Inmate ID</div>
+        <div>23983230</div>
+        <div class="details">PIN</div>
+        <div>515156</div>
+        <div class="details">Prepaid Account</div>
+        <div>852093</div>
+    </div>
+
+</div>
+
+<script type="text/javascript">
+$('.popover-markup > .trigger').popover({
+    html: true,
+    title: function() {
+        return $(this).parent().find('.head').html();
+    },
+    content: function() {
+        return $(this).parent().find('.content').html();
+    },
+    container: 'body',
+    placement: 'left'
+});
+</script>

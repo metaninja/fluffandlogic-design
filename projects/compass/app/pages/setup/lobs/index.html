@@ -1,0 +1,109 @@
+<div class="ez-main-content">
+    <div class="ez-page-header">
+        <div class="row">
+            <div class="col-md-6 ez-page-title">
+                <span class="ez-page-title-icon">
+                    <i class="linearicon-cloud linearicon-3x"></i>
+                </span>
+
+                <h1 class="h1">
+                    <span class="subtitle">Carrier Setup</span>
+                    Lines Of Business
+                </h1>
+            </div>
+            <div class="col-md-6 ez-page-actions">
+                <a href="javascript:void(0);" class="btn btn-success" data-toggle="modal" data-target="#edit-lob-modal">
+                    Add LOB
+                    <i class="linearicon-plus ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="ez-page-body">
+        <div class="ez-page-content content-container">
+
+            <div class="search-form">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="LOB name, Dept, or Short Name" aria-label="LOB name, Dept, or Short Name">
+                            <span class="input-group-addon" id="basic-addon2"><i class="linearicon-magnifier"></i></span>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <!--<button class="btn btn-outline-primary btn-filter" data-toggle="tooltip" data-placement="top" title="Show Filters"><i class="linearicon-funnel"></i></button>-->
+                    </div>
+                </div>
+            </div>
+
+            <div class="results-summary">
+                <div class="results-count">
+                    25 LOBs found
+                </div>
+
+                <div class="results-actions">
+                    <button class="btn btn-link results-actions" data-toggle="modal" data-target="#edit-columns-modal">Edit Columns</button>
+                    <a href="javascript:void(0);" class="btn btn-link results-action">Hide LOBs</a>
+                    <span class="results-action-separator"></span>
+
+                    <label for="show-hidden-lob"><input type="checkbox" id="show-hidden-lob">&nbsp;Show Hidden LOBs</label>
+                </div>
+            </div>
+
+            <table class="table table-hover">
+                <thead>
+                <tr>
+                    <th style="width:1rem;"><input type="checkbox"></th>
+                    <th>Name</th>
+                    <th>Short Name</th>
+                    <th>Department</th>
+                    <th>Visibility</th>
+                    <th style="width: 14rem;">Action</th>
+                </tr>
+                </thead>
+                <tbody id="lob">
+                </tbody>
+            </table>
+
+            <div class="bff-include results-pagination" data-src="app/shared/pagination.html"></div>
+
+        </div>
+    </div>
+</div>
+
+<script id="lob-template" type="x-handlebars-template">
+    {{#lob}}
+        <tr>
+            <td>
+                <input type="checkbox">
+            </td>
+            <td>
+                <strong><a href="javascript:void(0);" data-toggle="modal" data-target="#edit-lob-modal">{{Name}}</a></strong>
+            </td>
+            <td>
+                {{ShortName}}
+            </td>
+            <td>
+                {{Department}}
+            </td>
+            <td>
+                {{#if Visible}}
+                {{else}}
+                    <span class="text-danger">Hidden</span>
+                {{/if}}
+            </td>
+            <td>
+                <a href="javascript:void(0);" class="text-danger">Hide</a>
+            </td>
+        </tr>
+    {{/lob}}
+</script>
+
+
+<div class="bff-include" data-src="app/pages/setup/lobs/edit-lob-modal.html"></div>
+<div class="bff-include" data-src="app/shared/edit-columns/modal.html"></div>
+<div class="bff-include" data-src="app/pages/carriers/add/modal.html"></div>
+
+<div class="bff-script" data-src="app/pages/setup/lobs/index.js"></div>
+<div class="bff-script" data-src="app/shared/persona.js"></div>

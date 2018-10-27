@@ -1,0 +1,78 @@
+<div class="ez-page-header">
+    <div class="row">
+        <div class="col-md-6 ez-page-title">
+            <h1 class="h1">
+                <span class="subtitle js-persona js-persona-map-admin">My Agency</span>
+                <span class="js-persona js-persona-superuser">SmartChoice</span>
+                Profile
+            </h1>
+        </div>
+        <div class="col-md-6 ez-page-actions">
+        </div>
+    </div>
+</div>
+
+<div class="ez-page-body">
+    <div class="ez-page-content p-3">
+
+        <ul class="tabs js-persona js-persona-superuser mb-2">
+            <li class="tab"><a class="tab-link" href="#/app/pages/maps/view/index.html">Overview</a></li>
+            <li class="tab"><a class="tab-link" href="#/app/pages/maps/view/ivans/index.html">IVANS</a></li>
+            <li class="tab"><a class="tab-link active" href="#/app/pages/maps/view/history/index.html">History</a></li>
+        </ul>
+
+        <div class="results-summary">
+            <div class="results-count">
+                250 entries found
+            </div>
+            <div class="results-actions">
+                <a href="javascript:void(0);" class="card-link results-action ml-2">Run</a>
+                <a href="javascript:void(0);" class="card-link results-action ml-2">Refresh</a>
+            </div>
+        </div>
+
+        <table class="table table-hover">
+            <thead>
+            <tr>
+                <th class="col-primary">Started</th>
+                <th>Finished</th>
+                <th>Status</th>
+                <th>Message</th>
+            </tr>
+            </thead>
+            <tbody id="history">
+            </tbody>
+        </table>
+
+        <div class="bff-include" data-src="app/shared/pagination.html"></div>
+
+
+        <!--<div class="bff-include" data-src="app/shared/crud-history.html"></div>-->
+    </div>
+</div>
+
+<script id="history-template" type="x-handlebars-template">
+    {{#history}}
+    <tr>
+        <td>{{Started}}</td>
+        <td>{{Finished}}</td>
+        <td>{{Status}}</td>
+        <td>{{Message}}</td>
+    </tr>
+    {{/history}}
+</script>
+
+<div class="bff-script" data-src="app/pages/maps/view/history/index.js"></div>
+
+
+
+
+
+<div class="bff-include" data-src="app/shared/contact/add-address-modal.html"></div>
+<div class="bff-include" data-src="app/shared/contact/add-phone-modal.html"></div>
+<div class="bff-include" data-src="app/shared/contact/add-email-modal.html"></div>
+<div class="bff-include" data-src="app/shared/unsaved-changes-modal.html"></div>
+
+<div class="bff-script" data-src="app/shared/forms/required.js"></div>
+<div class="bff-script" data-src="app/shared/set-as-primary.js"></div>
+<div class="bff-script" data-src="app/shared/persona.js"></div>

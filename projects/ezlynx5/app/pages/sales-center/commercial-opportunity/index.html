@@ -1,0 +1,56 @@
+<div class="bff-include" data-src="app/shared/topnav.html"></div>
+<div class="bff-include" data-src="app/shared/leftnav/leftnav.html"></div>
+
+<div id="LayoutContainer">
+	<div class="bff-include" data-src="app/shared/rightpanel.html"></div>
+    <div class="bff-include" data-src="app/shared/notifications.html"></div>
+
+    <div class='pane ui-layout-center'>
+        <div class='floatContain'>
+            <div class='PageContent'>
+            	<a href='#/app/pages/sales-center'>
+				    <img src='http://www.free-icons-download.net/images/resize-icon-63154.png' class='resize-icon'>
+            	</a>
+
+				<div class="bff-include" data-src="app/pages/sales-center/opportunity-details-components/header.html"></div>
+
+				<main>
+					<h2 class='blue font-size-xlg'>ABC Trucking</h2>
+
+					<div class='grey-container py1 px2'>
+						<div class="bff-include" data-src="app/pages/sales-center/commercial-opportunity/shared/customer-contact-info.html"></div>
+					</div>
+
+					<div class='grey-container mt3 py3 px2'>
+						<div class="bff-include" data-src="app/pages/sales-center/opportunity-details-components/customer-sales-info.html"></div>
+					</div>
+
+					<div class='mt2 mb3'>
+						<div class="bff-include tab" data-src="app/pages/sales-center/opportunity-details-components/tab.html"></div>
+
+						<div class="bff-include tab-content tab-overview" data-src="app/pages/sales-center/commercial-opportunity/shared/tab-overview.html"></div>
+
+						<div class="bff-include tab-content tab-lines-of-business hide-content" data-src="app/pages/sales-center/opportunity-details-components/tab-line-of-business.html"></div>
+
+						<div class="bff-include tab-content tab-documents hide-content" data-src="app/pages/sales-center/opportunity-details-components/tab-documents.html"></div>
+
+						<div class="bff-include tab-content tab-activity hide-content" data-src="app/pages/sales-center/opportunity-details-components/tab-activity.html"></div>
+
+						<div class="bff-include tab-content tab-quotes hide-content" data-src="app/pages/sales-center/opportunity-details-components/tab-quotes.html"></div>
+					</div>
+				</main>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="footer"> 
+    <div class="AppInfo" id="AppInfo">ApplicantPortal version 4.17.6.2568 [02]</div>
+    <div class="Copyright" id="Copyright">Copyright © 2004-2017 Webcetera, Inc. All Rights Reserved</div>
+</div>
+
+<div class="bff-include email-modal hide-content" data-src="app/shared/email-modal.html"></div>
+<div class="bff-include text-modal hide-content" data-src="app/shared/text-modal.html"></div>
+<div class="bff-include add-quote-modal hide-content" data-src="app/pages/sales-center/opportunity-details-components/add-quote-modal.html"></div>
+
+<div class="bff-script" data-src="app/pages/sales-center/javascript/main.js" data-placement="bottom"></div>

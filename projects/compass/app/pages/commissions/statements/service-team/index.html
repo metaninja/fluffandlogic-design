@@ -1,0 +1,46 @@
+<div class="bff-include" id="commission-statements-tabs" data-src="app/pages/commissions/statements/header.html" data-tab="service-team"></div>
+
+
+<div class="ez-page-body">
+    <div class="ez-page-content">
+
+        <div class="search-form">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Statement #, agency, carrier" aria-label="Statement #, agency, carrier">
+                        <span class="input-group-addon" id="basic-addon2"><i class="linearicon-magnifier"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="results-summary">
+            <div class="results-count">
+                25 statements found
+
+                <a href="javascript:void(0)" class="results-action btn btn-link filter-link" data-target="#filter-statements">
+                    Filters <i class="linearicon-chevron-down ml-2"></i>
+                </a>
+                <div class="bff-include" data-src="app/pages/commissions/statements/carrier/filters.html"></div>
+            </div>
+
+            <div class="results-actions">
+                <button class="btn btn-inverse-link results-actions btn-disabled js-disable-btn mr-2" data-toggle="modal" data-target="#finalize-modal" disabled="disabled">Finalize</button>
+                <button class="btn btn-inverse-link results-actions btn-disabled js-disable-btn mr-2" disabled="disabled">Export</button>
+                <button class="btn btn-inverse-link results-actions">Edit Columns</button>
+            </div>
+        </div>
+
+
+        <div class="bff-include" data-src="app/pages/commissions/statements/service-team/table.html"></div>
+        <div class="bff-include" data-src="app/shared/pagination.html"></div>
+    </div>
+</div>
+
+<div class="bff-include" data-src="app/pages/commissions/statements/service-team/finalize-modal.html"></div>
+<div class="bff-include" data-src="app/shared/edit-columns/modal.html"></div>
+
+<div class="bff-script" data-src="app/pages/commissions/javascript/main.js"></div>
+<div class="bff-script" data-src="app/pages/commissions/statements/service-team/index.js"></div>
+<div class="bff-script" data-src="app/shared/filters/dropdown.js"></div>

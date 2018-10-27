@@ -1,0 +1,39 @@
+<div>
+    <span>Send as <b>Commercial Downloads</b></span>
+    <button class="btn btn-primary">Change</button>
+</div>
+
+<div class="row">
+    <div class="col-md-3">
+        <div class="form-group">
+            <label class="required-label">Envelope Name</label>
+            <input type="text" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label>Password Required?</label>
+            <label class="switch">
+                <input type="checkbox" checked onchange="togglePasswordField()">
+                <div class="slider round">
+                    <span class="on">YES</span>
+                    <span class="off">NO</span>
+                </div>
+            </label>
+        </div>
+
+        <div class="form-group js-password-field">
+            <label class="required-label">
+                Password
+                <i class="linearicon-question" data-toggle="tooltip" data-placement="top" title="" data-original-title="Password will be emailed separately to each recipient once the envelope has been sent."></i>
+            </label>
+            <input type="text" class="form-control">
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="form-group">
+            <label>Reference #</label>
+            <input type="text" class="form-control">
+        </div>
+    </div>
+</div>

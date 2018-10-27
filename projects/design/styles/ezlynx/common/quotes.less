@@ -1,0 +1,318 @@
+// =======================================================
+//  
+//  1.  General Quotes
+//  2.  Auto Quotes
+//  3.  Home Quotes
+//  4.  Status Message
+//  5.  Quote Nav Pager
+//
+// =======================================================
+
+
+// General Quotes
+// --------------------------
+
+.RatingTabs.sideNav
+{
+    margin-bottom: -24px;
+    margin-left: 18px;
+    margin-right: 18px;
+    width: auto;
+}
+
+.floatContain .tabContent
+{
+
+        float: none;
+    
+}
+.tabContent {
+
+    table {
+        a.visibleLink {
+            color: @blue;
+            display: inline-block;
+            margin: @paddingLarger @padding @paddingSmall 0;
+            text-decoration: none;
+        }
+        
+        input[type="checkbox"] {
+            margin-right: @paddingSmall;
+        }
+        
+        label {
+            color: @greyDark;
+            .font-size (12);
+        }
+        
+        .checkbox {
+            label {
+                display: inline-block;
+            }
+        }
+        
+        select,
+        input {
+            height: auto;
+            margin-bottom: @paddingSmaller;
+        }
+        
+        .text {
+            color: @grey;
+            
+            b {
+                text-transform: uppercase;
+                color: @greyDark;
+                .font-size (@fontSizeSmall);
+            }
+        }
+    
+        .textRequired {
+            color: @red;
+        }
+        
+        .textRequiredForCarrier {
+            color: @green;
+        }
+        
+        textarea,
+        .textBox{
+            background: @white;
+            border-color: #ccc;
+            height: auto;
+            width: auto;
+            
+            &:hover {
+                .inputBorderFocus; 
+            }
+        }
+    }
+    
+    table.MRUPanelContainer {
+
+        
+        > tbody {
+            margin: @paddingLarge;
+        }
+    }
+    
+    .questionLocation {
+        td {
+            padding: 0;
+        }
+    }
+    
+    .Section {
+        background: none;
+        background-image: none;
+        
+        .headerText {
+            display: inline-block;
+            white-space: nowrap;
+            font-family: Arial, Helvetica, sans-serif;
+            .font-size (14);
+            .line-height (14);
+            letter-spacing: 0.5px;
+            margin: @paddingLarge 0 @paddingSmall;
+            color: @greyDarker;
+            text-transform: uppercase;
+            margin-right: 12px;
+            margin-bottom: 6px;
+            
+            // first-child
+            &#Label58 {
+                margin-top: 0;
+            }
+        }
+    }
+}
+
+// Auto Quotes
+// --------------------------
+table#tableBody {
+    float: none;
+}
+
+// Home Quotes
+// --------------------------
+
+
+// Status Message
+// ----------------------------
+
+.titleContainer{
+    margin-left: 18px;
+    margin-right: 18px;
+    margin-top: 18px;
+}
+.StatusMessage {
+
+
+    
+    background: @green;
+    height: 26px;
+    padding-right: 105px;
+    .font-size (14);
+    .line-height (28);
+    text-indent: 15px;
+    color: @white;
+    -moz-border-radius: 0 2px 0 0;
+    -webkit-border-radius: 0 2px 0 0;
+    border-radius: 0 2px 0 0;
+
+    #StatusLabel, 
+    .applicationStatusInvalid, 
+    .applicationStatusValid {
+
+        height: 26px;
+
+
+        font-weight: bold;
+        .font-size (@fontSizeBase);
+        
+        padding-left: 10px;
+        margin-left: 0;
+        text-indent: 5px;
+        .line-height (28);
+        width: auto;
+        background: transparent;
+    }
+
+    &.invalid {
+        background: @red;
+    }
+
+    &.valid {
+        padding-right: 90px;
+    }
+}
+.StatusMessage.invalid #StatusLabel, .StatusMessage .applicationStatusInvalid {
+    background-position: right 27px;
+}
+
+// Quote Nav Pager
+// --------------------------
+.siteNavPager {
+    position: relative;
+    background: @greyLighter;
+    margin-top: 15px;
+    height: 50px;
+    border: 1px solid #ccc;
+    .font-size (13);
+    .borderRadiusLarge;
+    
+    a {
+        font-weight: bold;
+        .font-size (12);
+        text-transform: uppercase;
+
+        &:focus,
+        &:active {
+            outline: 0;
+            border: 0;
+            text-decoration: none;
+            .box-shadow(none);
+        }
+        
+        &[disabled] {
+            color: #ccc;
+        }
+    }
+    
+    .linkButton {
+        .btn-link;
+        padding: 0;
+        font-weight: bold;
+        
+        &[disabled="disabled"],
+        &[disabled="disabled"]:hover {
+            color: @btnDisabledText;
+            cursor: default;
+        }
+    }
+    
+    .Previous {
+        position: absolute;
+        top: 15px;
+        left: @paddingLarger;
+    }
+    
+    .Next {
+        position: absolute;
+        top: 15px;
+        right: @paddingLarger;
+    }
+}
+
+#FinishNavItem a {
+    color: @blue;
+}
+
+#finishPagePanel {
+    &.Error {
+        .instructions {
+            color: @red;
+        }
+
+        .pageName:first-child {
+            display: none;
+        }
+    }
+
+    &.Warning {
+        .instructions {
+            color: #D3B510;
+        }
+    }
+
+    .pageName {
+        font-weight: bold;
+    }
+
+    .instructions {
+        font-weight: bold;
+        margin-bottom: 10px;
+        border-bottom: solid 2px;
+        padding-bottom: 4px;
+        margin-top: 0px !important;
+    }
+
+    .errorFixMsg
+    {
+        font-weight: bold;
+        margin-left: 6px;
+    }
+    .errorhover, .warninghover {
+        padding-left: 10px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+    }
+}
+
+.submitBar
+{
+    margin-bottom: 35px;
+    margin-top: 25px;
+}
+.inlineLinkList input[type="submit"] {
+    .btn-primary;
+}
+.tabContent .QuoteDetails #waitingSummary {
+   .borderRadiusLarge;
+    border: 1px solid @gold;
+    background-color: @yellowLight;
+    color: @gold;
+}
+#divCarrierPromptContent
+{
+    .callout.success
+
+    {
+        background: @green;
+        color: @white;
+        font-size: 1.4rem;
+        padding: 11px;
+        margin-bottom: 2rem;
+        .borderRadiusLarge;
+    }
+}

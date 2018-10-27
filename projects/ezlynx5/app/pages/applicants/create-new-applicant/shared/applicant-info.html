@@ -1,0 +1,318 @@
+<div class="ez-dropdown-container content-container mb-4">
+    <div class="ez-dropdown-heading js-applicant-info-header" data-toggle="collapse" data-target="#applicant-info">
+        <div class="heading-with-picture">
+            <div class="applicant-picture-container">
+                <img class="applicant-picture js-current-applicant-picture" src="images/profile.svg">
+                <span class="add-additional-input js-add-applicant-picture icon-solid-white" title="Add a photo" data-toggle="modal" data-target="#applicantPicturesModal">
+                    <i class="linearicon-plus-circle linearicon-lg"></i>
+                </span>
+            </div>
+
+            <div class="mx-2">
+                <h2 class="h2">Applicant Info</h2>
+                <span class="js-applicant-name"></span>
+            </div>
+
+            <div class="flex-container-align-center js-vip-switch" style="margin-left: 2rem;">
+                <label class="text-center mr-2" for="input-personal-lines-applicant-vip">VIP</label>
+                <label class="switch">
+                    <input type="checkbox" id="input-personal-lines-applicant-vip" checked="">
+                    <div class="slider round">
+                        <span class="on">YES</span>
+                        <span class="off">NO</span>
+                    </div>
+                </label>
+            </div>
+
+            <div class="alert alert-success ml-4 mb-0 js-applicants-switched-alert" role="alert" style="display: none">
+                <i class="linearicon-notification-circle linearicon-lg"></i> Applicant and Co-Applicant switched on <span class="js-current-date ml-1"></span>.
+            </div>
+        </div>
+
+        <a href="#">
+            <i class="icon-chevron-sign-down linearicon-chevron-down"></i>
+            <i class="icon-chevron-up linearicon-chevron-up"></i>
+        </a>
+    </div>
+
+    <div class="ez-dropdown-content collapse show" id="applicant-info">
+        <div class="row mb-4">
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label for="input-prefix">Prefix</label>
+                    <select class="form-control" id="input-prefix">
+                        <option>Mr</option>
+                        <option>Mrs</option>
+                        <option>Ms</option>
+                        <option>Dr</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="input-first-name">First Name</label>
+                    <!--  Add is-invalid to class attribute to show invalid feedback-->
+                    <input type="text" class="form-control" id="input-first-name" onkeyup="updateApplicantName(); showDuplicateApplicantsInModal();">
+                    <div class="invalid-feedback">
+                        Please provide a valid first name.
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="input-middle-initial">Middle Initial</label>
+                    <input type="text" class="form-control" id="input-middle-initial">
+                </div>
+
+                <div class="form-group">
+                    <label for="input-last-name">Last Name</label>
+                    <input type="text" class="form-control" id="input-last-name" onkeyup="updateApplicantName(); showDuplicateApplicantsInModal();">
+                </div>
+
+                <div class="form-group">
+                    <label for="input-rating-state">Rating State</label>
+                    <select class="form-control js-usa-states-input" id="input-rating-state" onchange="showDuplicateApplicantsInModal();">
+                        <option>Select</option>
+                    </select>
+                </div>
+
+                <div class="js-show-existing-applicants-link-2 hide-content">
+                    <a href="#" onclick="showDuplicateApplicantsModal()" onfocus="showDuplicateApplicantsModal()">
+                        <i class="fa fa-exclamation-triangle warning-icon" aria-hidden="true"></i> <span class="xs-desc-text font-weight-bold">Existing applicants found. Click for more.</span>
+                    </a>
+                </div>
+
+                <div class="form-group">
+                    <label for="input-suffix">Suffix</label>
+                    <select class="form-control" id="input-suffix">
+                        <option>Select</option>
+                        <option>Jr</option>
+                        <option>Sr</option>
+                        <option>I</option>
+                        <option>II</option>
+                        <option>III</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="input-maiden-name">Maiden Name</label>
+                    <input type="text" class="form-control" id="input-maiden-name">
+                </div>
+
+                <div class="form-group">
+                    <label for="input-nickname">Nickname</label>
+                    <input type="text" class="form-control" id="input-nickname">
+                </div>
+            </div>
+
+            <div class="col-md-3 ml-auto">
+                <div class="form-group">
+                    <label for="input-gender">Gender</label>
+                    <select class="form-control" id="input-gender" onchange="changeApplicantPicutreBasedOnGender.call(this)">
+                        <option>Male</option>
+                        <option>Female</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="input-dob">DOB</label>
+                    <input type="text" class="form-control" id="input-dob" onblur="formatDate(this)">
+                </div>
+
+                <div class="form-group">
+                    <label for="input-marital-status">Marital Status</label>
+                    <!--  Add is-invalid to class attribute to show invalid feedback-->
+                    <select class="form-control" id="input-marital-status">
+                        <option>Select</option>
+                        <option>Married</option>
+                        <option>Single</option>
+                        <option>Divorced</option>
+                        <option>Domestic Partner</option>
+                        <option>Widowed</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="input-ssn">SSN</label>
+                    <!--  Add is-invalid to class attribute to show invalid feedback-->
+                    <input type="text" class="form-control" id="input-ssn" onblur="formatSSN(this)">
+                    <div class="invalid-feedback">
+                        Please provide a valid SSN.
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="input-dl-number">DL#</label>
+                    <input type="text" class="form-control" id="input-dl-number">
+                </div>
+
+                <div class="form-group">
+                    <label for="input-dl-status">DL Status</label>
+                    <select class="form-control" id="input-dl-status">
+                        <option>Valid</option>
+                        <option>Permit</option>
+                        <option>Expired</option>
+                        <option>Suspended</option>
+                        <option>Cancelled</option>
+                        <option>Not Licensed</option>
+                        <option>Permanently Revoked</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="input-dl-state">DL State</label>
+                    <select class="form-control js-usa-states-input" id="input-dl-state"></select>
+                </div>
+
+                <div class="form-group">
+                    <label for="input-education">Education</label>
+                    <select class="form-control" id="input-education">
+                        <option>Select</option>
+                        <option value="NoHighSchoolDiploma">No High School Diploma</option>
+                        <option value="HighSchoolDiploma">High School Diploma</option>
+                        <option value="SomeCollegeNoDegree">Some College - No Degree</option>
+                        <option value="VocationalTechnicalDegree">Vocational/Technical Degree</option>
+                        <option value="AssociatesDegree">Associates Degree</option>
+                        <option value="Bachelors">Bachelors</option>
+                        <option value="Masters">Masters</option>
+                        <option value="Phd">Phd</option>
+                        <option value="MedicalDegree">Medical Degree</option>
+                        <option value="LawDegree">Law Degree</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="col-md-3 mx-auto">
+                <div class="form-group">
+                    <label for="input-industry">Industry</label>
+                    <select class="form-control" id="input-industry">
+                        <option>Select</option>
+                        <option selected="selected" value="1">Homemaker/House person</option>
+                        <option value="2">Retired</option>
+                        <option value="3">Disabled</option>
+                        <option value="4">Unemployed</option>
+                        <option value="5">Student</option>
+                        <option value="6">Agriculture/Forestry/Fishing</option>
+                        <option value="7">Art/Design/Media</option>
+                        <option value="8">Banking/Finance/Real Estate</option>
+                        <option value="9">Business/Sales/Office</option>
+                        <option value="10">Construction/Energy Trades</option>
+                        <option value="11">Education/Library</option>
+                        <option value="12">Engineer/Architect/Science/Math</option>
+                        <option value="13">Government/Military</option>
+                        <option value="14">Information Technology</option>
+                        <option value="15">Insurance</option>
+                        <option value="16">Legal/Law Enforcement/Security</option>
+                        <option value="17">Maintenance/Repair/Housekeeping</option>
+                        <option value="18">Manufacturing/Production</option>
+                        <option value="19">Medical/Social Services/Religion</option>
+                        <option value="20">Personal Care/Service</option>
+                        <option value="21">Restaurant/Hotel Services</option>
+                        <option value="22">Sports/Recreation</option>
+                        <option value="23">Travel/Transportation/Warehousing</option>
+                        <option value="24">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="input-occupation">Occupation</label>
+                    <div class="row">
+                        <div class="col-md-9">
+                            <select class="form-control" id="input-occupation">
+                                <option>Select</option>
+                                <option value="179">Administrative Assistant</option>
+                                <option value="180">Analyst</option>
+                                <option value="181">Clerk</option>
+                                <option value="182">Director/Administrator</option>
+                                <option value="183">Engineer-Hardware</option>
+                                <option value="184">Engineer-Software</option>
+                                <option value="185">Engineer-Systems</option>
+                                <option value="186">Executive</option>
+                                <option value="187">Manager-Systems</option>
+                                <option value="188">Network Administrator</option>
+                                <option value="189">Other</option>
+                                <option value="190">Programmer</option>
+                                <option value="191">Project Coordinator</option>
+                                <option value="192">Receptionist/Secretary</option>
+                                <option value="193">Support Technician</option>
+                                <option value="194">Systems Security</option>
+                                <option value="195">Technical Writer</option>
+                                <option value="196">Web Developer</option>
+                            </select>
+                        </div>
+
+                        <div class="col-md-3">
+                            <input type="text" class="form-control" placeholder="years">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="input-prior-employer-in-years">Prior Employer In Years</label>
+                    <input type="text" class="form-control" id="input-prior-employer-in-years">
+                </div>
+
+                <div class="form-group">
+                    <label for="input-applicant-type">Applicant Type</label>
+                    <select class="form-control" id="input-applicant-type">
+                        <option>Prospect/Lead</option>
+                        <option>Acitve Client</option>
+                        <option>Inactive Client</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="input-customer-since">Customer Since</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control datepicker" id="input-customer-since" aria-describedby="basic-addon2" onblur="formatDate(this)">
+                        <span class="input-group-addon" id="basic-addon2">
+                            <i class="linearicon-calendar-full linearicon-lg"></i>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="input-account-name">Account Name</label>
+                    <input type="text" class="form-control" id="input-account-name">
+                </div>
+
+                <div class="form-group">
+                    <label for="input-lead-source">Lead Source</label>
+                    <select class="form-control" id="input-lead-source">
+                        <option>Ad - Other</option>
+                        <option>Ad - Print</option>
+                        <option>ADD</option>
+                        <option value="2">Agency Mgmt System</option>
+                        <option value="3">Agency Website</option>
+                        <option value="20">AgentInsure</option>
+                        <option value="25">AgentInsure Call Me</option>
+                        <option value="241">AutomationTesting</option>
+                        <option value="234">Bank Rate</option>
+                        <option value="32">Conversion</option>
+                        <option value="29">Facebook ConsumerQouting App</option>
+                        <option value="101">Google Search</option>
+                        <option value="43">Lead Generator - Insuranceagents.com </option>
+                        <option value="12">Web</option>
+                    </select>
+                </div>
+
+                <div class="flex-container-align-center">
+                    <img src="images/photo-user.jpg" class="user-photo">
+                    <div class="form-group ml-2">
+                        <label for="input-assigned-to">Assigned To</label>
+                        <select class="form-control" id="input-assigned-to">
+                            <option>Shawn Smith</option>
+                            <option>CC User</option>
+                            <option>Commercial Download</option>
+                            <option>Commercial Download Two</option>
+                            <option>Tom Thompson</option>
+                            <option>Tom Terry</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bff-include" data-src="app/pages/applicants/create-new-applicant/shared/contact-info.html"></div>
+    </div>
+</div>
+
+<div class="bff-script" data-src="libs/js/validation/format-date.js"></div>

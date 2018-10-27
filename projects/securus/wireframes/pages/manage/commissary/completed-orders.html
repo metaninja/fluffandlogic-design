@@ -1,0 +1,145 @@
+<table class="table table-hover table-commissary table-commissary-completed">
+
+    <thead>
+        <tr>
+            <th>
+                <input type="checkbox">
+            </th>
+            <th>
+                <a href="javascript:;">Inmate (ID) <i class="fa fa-caret-down"></i></a>
+            </th>
+            <th><a href="#">Total</a>
+            </th>
+            <th><a href="#">Confirmed On</a>
+            </th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>
+                <input type="checkbox">
+            </td>
+            <td>Jonathan Smith <span class="small text-muted">(123456789)</span>
+            </td>
+            <td>$14.00</td>
+            <td>12-1-2014 16:02</td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox">
+            </td>
+            <td>Bill Burgess <span class="small text-muted">(123456789)</span>
+            </td>
+            <td>$5.00</td>
+            <td>12-1-2014 16:02</td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox">
+            </td>
+            <td>Erick Norris <span class="small text-muted">(123456789)</span>
+            </td>
+            <td>$7.00</td>
+            <td>12-1-2014 16:02</td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox">
+            </td>
+            <td>Karl Glover <span class="small text-muted">(123456789)</span>
+            </td>
+            <td>$7.00</td>
+            <td>12-1-2014 16:02</td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox">
+            </td>
+            <td>Ismael Jefferson <span class="small text-muted">(123456789)</span>
+            </td>
+            <td>$3.50</td>
+            <td>12-1-2014 16:02</td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox">
+            </td>
+            <td>Troy Wright <span class="small text-muted">(123456789)</span>
+            </td>
+            <td>$9.25</td>
+            <td>12-1-2014 16:02</td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox">
+            </td>
+            <td>Jonathan Smith <span class="small text-muted">(123456789)</span>
+            </td>
+            <td>$14.00</td>
+            <td>12-1-2014 16:02</td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox">
+            </td>
+            <td>Bill Burgess <span class="small text-muted">(123456789)</span>
+            </td>
+            <td>$5.00</td>
+            <td>12-1-2014 16:02</td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox">
+            </td>
+            <td>Erick Norris <span class="small text-muted">(123456789)</span>
+            </td>
+            <td>$7.00</td>
+            <td>12-1-2014 16:02</td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox">
+            </td>
+            <td>Karl Glover <span class="small text-muted">(123456789)</span>
+            </td>
+            <td>$7.00</td>
+            <td>12-1-2014 16:02</td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox">
+            </td>
+            <td>Ismael Jefferson <span class="small text-muted">(123456789)</span>
+            </td>
+            <td>$3.50</td>
+            <td>12-1-2014 16:02</td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox">
+            </td>
+            <td>Troy Wright <span class="small text-muted">(123456789)</span>
+            </td>
+            <td>$9.25</td>
+            <td>12-1-2014 16:02</td>
+        </tr>
+    </tbody>
+
+</table>
+
+<script>
+    $('.table-commissary-completed').click(function(e) {
+        if (e.target.type && e.target.type === "checkbox") {
+            if ($('.table-commissary-completed').find('input[type=checkbox]:checked').length > 0) {
+                $('.btn-delete-commissary-request').removeClass('disabled');
+            }
+            else {
+                $('.btn-delete-commissary-request').addClass('disabled');
+            }
+        }
+    });
+
+
+
+</script>

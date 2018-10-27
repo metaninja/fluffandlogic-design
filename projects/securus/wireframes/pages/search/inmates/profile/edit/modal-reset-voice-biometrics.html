@@ -1,0 +1,30 @@
+<div class="modal fade" id="resetVoiceBiometrics" tabindex="-1" role="dialog" aria-labelledby="resetRecording" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content modal-md">
+            <div class="modal-header modal-danger">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title" id="resetRecording">Reset Voice Biometrics?</h4>
+            </div>
+            <div class="modal-body">
+                <p>Are you sure you want to reset the voice biometrics for <b>Kevin McCaulkin</b>?</p>
+                <p>The inmate will have to re-enroll in voice biometrics the next time they make a phone call.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-link" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-danger btn-reset-biometrics" data-dismiss="modal">Reset Voice Biometrics</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function() {
+        $('.btn-reset-biometrics').click(function() {
+            $('.biometric-enrollment.no-enrollment').show();
+            $('.biometric-enrollment.current').hide();
+        });
+    });
+</script>

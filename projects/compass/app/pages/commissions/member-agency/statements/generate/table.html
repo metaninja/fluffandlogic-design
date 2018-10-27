@@ -1,0 +1,37 @@
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th>
+                <input type="checkbox">
+            </th>
+            <th>Carrier Statement #</th>
+            <th>Carrier</th>
+            <th>Statement Date</th>
+            <th>Premium</th>
+            <th>Commission</th>
+            <th>Download Date</th>
+        </tr>
+    </thead>
+
+    <tbody id="commissions">
+
+    </tbody>
+</table>
+
+<script id="commissions-template" type="x-handlebars-template">
+    {{#commissions}}
+    <tr>
+        <td>
+            <input type="checkbox">
+        </td>
+        <td><a href="#/app/pages/commissions/statements/new/manual/add/index.html">{{StatementNumber}}</a></td>
+        <td>{{Carrier}}</td>
+        <td>{{StatementDate}}</td>
+        <td>{{Premium}}</td>
+        <td>{{Commission}}</td>
+        <td>{{DownloadDate}}</td>
+    </tr>
+    {{/commissions}}
+</script>
+
+<div class="bff-script" data-src="app/pages/commissions/member-agency/statements/generate/table.js"></div>

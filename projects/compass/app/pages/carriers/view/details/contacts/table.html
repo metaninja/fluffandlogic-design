@@ -1,0 +1,48 @@
+<div id="contacts" class="d-inline-flex flex-wrap">
+</div>
+
+<script id="contacts-template" type="x-handlebars-template">
+    {{#contacts}}
+    <div class="card mr-3 mb-3" style="width: 20rem;">
+        <div class="card-header">
+            <div class="row">
+                <div class="col-md-10">
+                    <a href="#/app/pages/carriers/view/details/contacts/view/index.html"><h5 class="h5 card-title">{{Name}}</h5></a>
+                    <h6 class="card-subtitle text-muted">{{Type}}</h6>
+                </div>
+                <div class="col-md-2">
+                    <a href="#/app/pages/carriers/view/details/contacts/view/index.html">
+                        <i class="linearicon-expand2 linearicon-lg"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="card-body">
+
+            <div class="card-text">
+                <table>
+                    <tr>
+                        <td class="align-top pr-3"><i class="linearicon-map-marker linearicon-lg"></i></td>
+                        <td class="pb-2">
+                            {{AddressLine1}}<br>
+                            {{AddressLine2}}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><i class="linearicon-telephone linearicon-lg"></i></td>
+                        <td class="pb-2">{{Phone}}</td>
+                    </tr>
+                    <tr>
+                        <td><i class="linearicon-envelope linearicon-lg"></i></td>
+                        <td class="pb-2"><a href="mailto:{{Email}}">{{Email}}</a></td>
+                    </tr>
+
+
+                </table>
+            </div>
+        </div>
+    </div>
+    {{/contacts}}
+</script>
+
+<div class="bff-script" data-src="app/pages/carriers/view/details/contacts/table.js"></div>

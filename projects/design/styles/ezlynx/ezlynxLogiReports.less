@@ -1,0 +1,45 @@
+﻿@import (reference) "../bootstrap/variables.less";
+@import (reference) "../ezbootstrap/_ezvariables.less";
+@import (reference) "../ezbootstrap/buttons.less";
+
+@import "../bootstrap/mixins.less";
+
+@import "../bootstrap/modals.less";
+@import "../bootstrap/tooltip.less";
+
+@import "../bootstrap/dropdowns.less";
+
+body {
+	margin: 0;
+}
+
+@import "../bootstrap/popovers.less";
+@import "applicantSprites.less";
+
+@import "common/activities-popover.less";
+@import "common/EZAwesome.less";
+
+@import "../jquery-ui/ez-jquery-ui.css";
+@import "common/modal.less";
+
+/* close button needed a few more pixels of height */
+.ui-modalDialog.ui-dialog .ui-dialog-titlebar .btn-group button {
+	height: 25px;
+}
+
+/* added some top margin to dialog title */
+.ui-dialog .ui-dialog-title {
+	margin: 0.6em 0;
+}
+
+/* jquery datepicker style fixes */
+.ui-widget.ui-widget {
+	font-size: .7em !important;
+}
+
+.ui-datepicker-calendar *, .ui-datepicker-header {
+	font-size: 11px !important;
+}
+.ui-datepicker-buttonpane {
+	font-size: 14px;
+}

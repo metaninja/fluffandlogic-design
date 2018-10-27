@@ -1,0 +1,106 @@
+<title>Edit Inmate Profile</title>
+<div class="well securus-panel-style securus-panel-padding">
+    <h4 class="settings-headline">
+        <a data-toggle="collapse" href="#inmate-call-details">
+            Call Settings
+            <div class="pull-right">
+                <span class="toggle-hide"></span>
+                <span class="toggle-show"></span>
+            </div>
+        </a>
+    </h4>
+    <div class="collapse in" id="inmate-call-details">
+        <label class="rounded-check" for="rounded-check1">
+            <input type="checkbox" name="check" id="rounded-check1" value="None" checked/>
+            <span class="icon"></span> <strong>First Call Free? (One allowed)</strong>
+        </label>
+        <label class="rounded-check" for="rounded-check1">
+            <input type="checkbox" name="check" value="None"/>
+            <span class="icon"></span> <strong>Private on VPM Visitation <span class="fa fa-info-circle info-icon" data-toggle="tooltip" title="" data-original-title="Calls using VPM will not be recorded."></span></strong>
+        </label>
+        <label class="rounded-check override-group" for="3-way-calling">
+            <input type="checkbox" name="check" id="3-way-calling" class="override-control" checked>
+            <span class="icon"></span> <strong>3-Way Calling Detection</strong>
+            <span class="inherit-badge enable-override">Enabled at: CI Eden. <a href="#">Override.</a></span>
+            <span class="inherit-badge remove-override"><a href="#">Remove override</a> and use setting from: CI Eden.</span>
+        </label>
+        <label class="rounded-check" for="rounded-check3">
+            <input type="checkbox" name="check" id="rounded-check3" value="None" />
+            <span class="icon"></span> <strong>Private (on visitation)</strong>
+        </label>
+        <label class="rounded-check">
+            <input type="checkbox" />
+            <span class="icon"></span> <strong>Ignore Calling Velocity Rule on Next Call</strong>
+        </label>
+        <hr/>
+        <div class="form-group override-group">
+            <label for="call-duration" class="required">Maximum Call Duration (minutes)</label>
+            <input class="form-control form-control-md override-control" id="call-duration" placeholder="Ex: 60">
+            <span class="inherit-badge enable-override">Enabled at: CI Eden. <a href="#">Override.</a></span>
+            <span class="inherit-badge remove-override"><a href="#">Remove override</a> and use setting from: CI Eden.</span>
+        </div>
+        <hr/>
+        <label class="rounded-check override-group" for="rci-action">
+            <input type="checkbox" name="check" id="rci-action" class="override-control" value="None" checked="">
+            <span class="icon"></span> <strong>Recorded Name Information</strong>
+            <span class="inherit-badge enable-override">Enabled at: CI Eden. <a href="#">Override.</a></span>
+            <span class="inherit-badge remove-override"><a href="#">Remove override</a> and use setting from: CI Eden.</span>
+        </label>
+        <div>
+            <div style="margin-top: 10px;"><a href="#"><i class="fa fa-play-circle"></i> Play Recorded Name</a>
+            </div>
+            <small class="text-muted">Created 10-17-2014 09:30. &nbsp;<a href="#" data-toggle="modal" data-target="#resetRecording">Reset.</a></small>
+        </div>
+        <hr/>
+        <div class="input-group" style="width: 70%;">
+            <label class="rounded-check override-group" for="cvv-status">
+                <input type="checkbox" name="check" id="cvv-status" class="override-control" value="None" checked="">
+                <span class="icon"></span>
+                <strong>Investigator Pro CVV</strong>
+                <span class="fa fa-info-circle info-icon" data-toggle="tooltip" title="" data-original-title="Detects PIN sharing and stealing by continually monitoring the inmates voice on the call against the inmate's enrollment."></span>
+                <span class="inherit-badge enable-override">Enabled at: CI Eden. <a href="#">Override.</a></span>
+                <span class="inherit-badge remove-override"><a href="#">Remove override</a> and use setting from: CI Eden.</span>
+            </label>
+        </div>
+        <div>
+            <div style="margin-top: 10px;">
+                <label for="cvv-status" class="control-label">Enrollment Status:&nbsp;</label>Enrolled
+                <small class="text-muted"> &nbsp;<a href="#" data-toggle="modal" data-target="#resetInvestigatorPro">Reset.</a>
+                    </small>
+            </div>
+        </div>
+        <hr/>
+        <div class="input-group" style="width: 70%;">
+            <label for="rfcd-action" class="control-label">RCFD Action</label>
+            <select id="rfcd-action" class="form-control">
+                <option>None</option>
+                <option>Disconnect</option>
+                <option>Mark Only</option>
+            </select>
+        </div>
+        <hr/>
+        <div class="input-group" style="width: 70%;">
+            <label for="virtual-group" class="control-label">Virtual Group</label>
+            <select id="virtual-group" class="form-control">
+                <option>None</option>
+                <option selected>Cell Block A</option>
+                <option>Cell Block C</option>
+                <option>Cell Block D</option>
+            </select>
+        </div>
+        <hr/>
+        <div class="bff-include" data-src="shared/call-schedule.html"></div>
+        <div class="bff-include facility-and-sites-separator" data-src="shared/call-restrictions.html"></div>
+        <div class="bff-include facility-and-sites-separator" data-src="shared/call-velocity-restrictions.html"></div>
+    </div>
+</div>
+<script>
+$(document).ready(function() {
+    bff.override();
+});
+
+// Show/Hide Call Settings
+$(".inmate-call-settings").click(function() {
+    $(".inmate-call-settings span").toggle();
+});
+</script>

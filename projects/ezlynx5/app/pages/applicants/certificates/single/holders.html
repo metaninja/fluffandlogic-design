@@ -1,0 +1,64 @@
+<a href="javascript:void(0)" class="btn btn-success js-no-certificate-holders" data-toggle="modal" data-target="#add-certificate-holders-modal">
+    Add Certificate Holders
+    <i class="linearicon-plus ml-2"></i>
+</a>
+
+<div class="js-selected-certificate-holders hide-content">
+    <table class="table table-hover js-certificate-holders-table">
+        <thead>
+        <tr>
+            <th>
+                <input type="checkbox">
+            </th>
+            <th>Certificate Holder</th>
+            <th>Address</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th></th>
+        </tr>
+        </thead>
+
+        <tbody id="selected-certificate-holders"></tbody>
+    </table>
+
+    <div class="bff-include" data-src="app/shared/pagination.html"></div>
+
+</div>
+
+<script id="certificate-holders-template" type="x-handlebars-template">
+    {{#certificateHolders}}
+    <tr>
+        <td>
+            <input type="checkbox">
+        </td>
+        <td>{{certificateHolder}}</td>
+        <td>{{address}}</td>
+        <td>{{email}}</td>
+        <td><nobr>{{phone}}</nobr></td>
+        <td>
+            <a href="javascript:void(0)" class="js-certificate-edit" onclick="editCertificateHolder()">Edit</a>
+
+            <div class="dropdown js-certificate-actions" style="display: none;">
+                <a href="javascript:;" class="dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Actions
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="javascript:;">Edit</a>
+                    <a class="dropdown-item" href="javascript:;">Copy</a>
+                    <a class="dropdown-item" href="javascript:;" onclick="deleteRow.call(this)">Delete</a>
+                </div>
+            </div>
+        </td>
+    </tr>
+    {{/certificateHolders}}
+</script>
+
+<div class="bff-include" data-src="app/pages/applicants/certificates/edit-certificate/shared/cancel-modal.html"></div>
+<div class="bff-include" data-src="app/pages/applicants/certificates/edit-certificate/select-certificate-holder/report-modal.html"></div>
+<!--<div class="bff-include" data-src="app/pages/applicants/certificates/edit-certificate/select-certificate-holder/certificate-holders-modal/index.html"></div>-->
+
+<div class="bff-include" data-src="app/pages/applicants/certificates/edit-certificate/select-certificate-holder/certificate-holders-modal/add-modal.html"></div>
+<div class="bff-include" data-src="app/pages/applicants/certificates/edit-certificate/select-certificate-holder/certificate-holders-modal/new-modal.html"></div>
+
+<div class="bff-script" data-src="app/pages/applicants/certificates/edit-certificate/select-certificate-holder/certificate-holders-modal/table.js"></div>
+<div class="bff-script" data-src="app/shared/filters/dropdown.js"></div>

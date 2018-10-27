@@ -1,0 +1,113 @@
+<h3 class="section-header">
+    Visitation <span class="bff-include" data-src="shared/val/devmode-allow-block.html"></span> List for Visitor
+
+    <!-- Buttons for VAN popup -->
+    <div class="pull-right">
+        <a href="#" class="btn btn-link hide-popup-val">Cancel</a>
+        <a href="#" class="btn btn-success hide-popup-val">Save and Close</a>
+    </div>
+</h3>
+
+<div class="panel panel-action clearfix">
+    <div class="results-number-container pull-left">
+        <span class="results-number" data-count="3"></span>&nbsp;
+        <span class="results-label">Results</span>
+    </div>
+
+    <div class="pull-right">
+
+        <span class="bff-include" data-src="shared/export.html"></span>
+
+        <a class="btn btn-link btn-add btn-add-val">
+            <i class="fa fa-plus-circle"></i> Add
+        </a>
+
+    </div>
+
+</div>
+
+<table class="table table-hover table-schedule-inmate">
+    <thead>
+    <tr>
+        <th><input type="checkbox"></th>
+        <th><a href="#">Last Name <i class="fa fa-caret-down"></i></a></th>
+        <th><a href="#">First Name</a></th>
+        <th><a href="#">ID</a></th>
+        <th><a href="#">Housing Unit</a></th>
+        <th><a href="#">Status</a></th>
+        <th><a href="#">Last Modified</a></th>
+        <th><a href="#">Exists On</a></th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr href="#">
+        <td><input type="checkbox"></td>
+        <td><a href="#" class="btn-view-val">Canfield</a></td>
+        <td><a href="#" class="btn-view-val">Justin</a></td>
+        <td>087456710</td>
+        <td>MODS-1 East Housing Unit</td>
+        <td>Active</td>
+        <td>02/05/1962</td>
+        <td></td>
+    </tr>
+    <tr href="#">
+        <td><input type="checkbox"></td>
+        <td><a href="#" class="btn-view-val">Emerson</a></td>
+        <td><a href="#" class="btn-view-val">Fittipaldi</a></td>
+        <td>12523678</td>
+        <td>MODS-1 East Housing Unit</td>
+        <td>Active</td>
+        <td>10-27-2014</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><input type="checkbox"></td>
+        <td><a href="#" class="btn-view-val">Cestarte</a></td>
+        <td><a href="#" class="btn-view-val">Jay</a></td>
+        <td>3123414</td>
+        <td>MODS-1 East Housing Unit</td>
+        <td>Inactive</td>
+        <td>10-27-2014</td>
+        <td><a href="#" data-toggle="modal" data-target="#existsVAL"><i class="fa fa-inmate fa-2x"><span class="badge exists-on-other-val">4</span></i></a></td>
+    </tr>
+    <tr>
+        <td><input type="checkbox"></td>
+        <td><a href="#" class="btn-view-val">Dev</a></td>
+        <td><a href="#" class="btn-view-val">Gupta</a></td>
+        <td>161242969</td>
+        <td>MODS-1 East Housing Unit</td>
+        <td>Inactive</td>
+        <td>10-27-2014</td>
+        <td></td>
+    </tr>
+    </tbody>
+</table>
+
+
+
+
+
+
+
+<script>
+    // Animation to hide the VAL popup
+    $('.hide-popup-val').click(function() {
+        $('.popup-val').hide();
+    });
+
+    $('.btn-view-val').click(function() {
+        $('.val-list').hide();
+        $('.val-add-visitor').show();
+        //View visitor sections
+        $('.visitor-search').hide();
+        $('.visitor-results').hide();
+        $('.visitor-selected').show();
+    });
+
+    $('.btn-add-val').click(function() {
+        $('.val-list').hide();
+        $('.val-search').show();
+        $('.val-add-visitor').hide();
+    });
+</script>

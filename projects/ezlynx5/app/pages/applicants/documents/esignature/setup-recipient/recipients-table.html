@@ -1,0 +1,42 @@
+<div class="clearfix">
+    <div class="pull-right">
+        <a href="javascript:void(0);" class="btn btn-success mr-2" onclick="addNewRecipient()">Add new recipient <i class="linearicon-plus ml-2"></i></a>
+        <a href="javascript:void(0);" class="btn btn-success" onclick="addMe()">Add me <i class="linearicon-plus ml-2"></i></a>
+    </div>
+</div>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Order</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+
+    <tbody class="js-recipients">
+        <tr>
+            <td>
+                <i class="icon-reorder" style="color: #aaa;"></i>
+            </td>
+            <td>
+                <input type="text" class="form-control js-recipient-name">
+            </td>
+            <td>
+                <input type="text" class="form-control js-recipient-email">
+            </td>
+            <td>
+                <a href="javascript:void(0);" class="button-trash" onclick="deleteRecipient.call(this)">
+                    <i class="icon-trash icon-large red"></i>
+                </a>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<script>
+    $(function() {
+        $('.js-recipients').sortable();
+    });
+</script>

@@ -1,0 +1,33 @@
+<div class="modal fade" id="modal-bulk-add-users" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content modal-md">
+            <div class="modal-header modal-primary">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                    <span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title" id="uploadPhoto">Bulk Add Users</h4>
+            </div>
+            <div class="modal-body">
+
+                <p>Upload a CSV file using the <a href="#">Bulk Add Users .CSV file</a> as a template.</p>
+
+                <div class="form-group">
+                    <input type="file" id="upload-bulk-users-file" />
+
+                    <span class="filename" style="display: inline-block; margin-right: 10px;"></span>
+                    <input type="button" id="styled-upload-bulk-users-btn" class="btn btn-primary" value="Browse" name="UploadFile" style="display: inline-block"/>
+
+                    <p class="help-block">Maximum allowed size is ??? (Is there a maximum file size?).</p>
+
+                    <div class="validation-error">The file is not in the correct format. Did you use the template?</div>
+                    <div class="validation-error">The file could not be uploaded. Try again later.</div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-link" data-dismiss="modal">Cancel</button>
+                <button class="btn btn-primary btn-bulk-add-security-roles">Upload File</button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,81 @@
+<div class="row">
+
+    <div class="col-md-12">
+
+        <h4 class="selected-seperator">Permissions</h4>
+
+        <div class="row">
+
+            <div class="col-md-4 location-modal-height" style="padding-bottom: 15px;">
+
+                <ul class="bsnav bsnav-pills bsnav-stacked select-location-nav">
+                    <li class="admin active"><a>Admin</a>
+                    </li>
+                    <li class="facilities-and-sites"><a>Facilities &amp; Sites</a>
+                    </li>
+                    <li class="inmates"><a>Inmates</a>
+                    </li>
+                    <li class="users"><a>Users</a>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="col-md-8 location-modal-height">
+
+                <div class="bff-include modal-location-type admin-selections" data-src="pages/manage/security-roles/modals/locations/admin.html"></div>
+
+                <div class="bff-include modal-location-type facilities-and-sites-selections" data-src="pages/manage/security-roles/modals/locations/facilities-and-sites.html"></div>
+
+                <div class="bff-include modal-location-type users-selections" data-src="pages/manage/security-roles/modals/locations/users.html"></div>
+
+                <div class="bff-include modal-location-type inmates-selections" data-src="pages/manage/security-roles/modals/locations/inmates.html"></div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+$('document').ready(function() {
+
+    $('.modal-selected-type').hide();
+    $('.modal-location-type').hide();
+    $('.admin-selections').show();
+
+    $('.admin').click(function() {
+        $('.modal-location-type').hide();
+        $('.admin-selections').show();
+
+        $('ul li').removeClass('active');
+        $(this).addClass('active');
+    });
+
+    $('.facilities-and-sites').click(function() {
+        $('.modal-location-type').hide();
+        $('.facilities-and-sites-selections').show();
+
+        $('ul li').removeClass('active');
+        $(this).addClass('active');
+    });
+
+    $('.inmates').click(function() {
+        $('.modal-location-type').hide();
+        $('.inmates-selections').show();
+
+        $('ul li').removeClass('active');
+        $(this).addClass('active');
+    });
+
+    $('.users').click(function() {
+        $('.modal-location-type').hide();
+        $('.users-selections').show();
+
+        $('ul li').removeClass('active');
+        $(this).addClass('active');
+    });
+});
+</script>

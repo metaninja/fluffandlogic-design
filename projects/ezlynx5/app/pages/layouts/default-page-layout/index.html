@@ -1,0 +1,154 @@
+<div class="design-container">
+    <div class="design-leftnav">
+        <div class="bff-include" data-src="app/shared/leftnav.html"></div>
+    </div>
+    <div class="design-content">
+        <header class="design-page-header">
+            <h1>Default Page Layout</h1>
+        </header>
+
+        <section class="design-page-content">
+            <ul>
+                <li><a href='#header'>Header HTML</a></li>
+                <li><a href='#navbar'>Navbar HTML</a></li>
+                <li><a href='#layout-container'>Layout Container HTML</a></li>
+                <li><a href='#footer'>Footer HTML</a></li>
+            </ul>
+
+            <p>&nbsp;</p>
+            
+            <p>Most pages in the EZLynx app follow the following structure to build pages.</p>
+
+            <pre><code class="html">
+&lt;div id='Container'&gt;
+    &lt;!-- Replace the bottom div with the appropriate HTML. --&gt;
+    &lt;div id="Header" class="header" ng-controller="HeaderCtrl"&gt;&lt;/div&gt;
+
+    &lt;!-- Replace the bottom div with the appropriate HTML. --&gt;
+    &lt;div id="Navbar" class="topNavBar"&gt;&lt;/div&gt;
+
+    &lt;!-- Replace the bottom div with the appropriate HTML. --&gt;
+    &lt;div id="LayoutContainer" class=""&gt;&lt;/div&gt;
+
+    &lt;!-- Replace the bottom div with the appropriate HTML. --&gt;
+    &lt;div class="footer"&gt;&lt;/div&gt;
+&lt;/div&gt;
+            </code></pre>
+
+            <p>&nbsp;</p>
+
+            <h2 id='header'>Header</h2>
+
+            <pre><code class="html">
+&lt;div class="header" id="Header" ng-controller="HeaderCtrl" ng-init="hasPolicyManagement()"&gt;
+    &lt;!--[if !IE]&gt; START TOP &lt;![endif]--&gt;
+    &lt;div class="top"&gt;
+        &lt;a id="logo" href="https://app.webcetera.com/EZLynxWeb/welcome.aspx"&gt;&lt;img src="https://cdn.webcetera.com/CommonResources/EZLynx/Shared/images/ezlynxLogo.png"&gt;&lt;/a&gt;
+        &lt;form action="https://app.webcetera.com/ApplicantPortal/Search/Index" method="get"&gt;&lt;div id="quickSearchContainer" class="input-append"&gt;&lt;input type="text" id="quickSearchInput" name="searchPhrase" placeholder="Search Applicants" autocomplete="off"&gt;&lt;button type="submit" id="searchSubmitBtn" class="btn"&gt;&lt;i class="icon-search icon-large"&gt;&lt;/i&gt;&lt;/button&gt;&lt;/div&gt;&lt;/form&gt;
+        
+        &lt;workspace-header&gt;&lt;!-- ngIf: isPolicyManagementUser --&gt;&lt;ul class="HeaderNavBar bootstrapForms workspace-owned" id="workspaceIconList" ng-if="isPolicyManagementUser"&gt;&lt;li&gt;&lt;a id="headerAddNote" title="Add Note" ng-click="showNote()"&gt;&lt;i class="icon-add-note icon-large"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a class="taskItem" title="Task List" ng-click="showTasks()"&gt;&lt;i class="icon-list-ul icon-large"&gt;&lt;/i&gt;&lt;!-- ngIf: overDueTaskNum || todayTaskNum --&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a class="notificationItem" title="Notifications" ng-click="showNotifications()"&gt;&lt;i class="icon-bell icon-large"&gt;&lt;/i&gt;&lt;!-- ngIf: notificationNum --&gt;&lt;span class="label notification-bubble" ng-if="notificationNum"&gt;3&lt;/span&gt;&lt;!-- end ngIf: notificationNum --&gt;&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;!-- end ngIf: isPolicyManagementUser --&gt;&lt;/workspace-header&gt;
+        &lt;ul class="HeaderNavBar nav nav-pills bootstrapForms"&gt;
+
+            &lt;li id="1_HelpMenu" class="dropdown" rendernode="HelpAndSupport"&gt;&lt;a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="#1_SupportNodes"&gt;&lt;span&gt;Need Help?&lt;/span&gt;&lt;b class="caret"&gt;&lt;/b&gt;&lt;/a&gt;&lt;ul id="1_SupportNodes" class=" dropdown-menu" role="menu"&gt;
+            &lt;li&gt;&lt;a href="http://support.ezlynx.com" target="_blank"&gt;&lt;span&gt;Support Center&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="http://support.ezlynx.com/training-materials" target="_blank"&gt;&lt;span&gt;Training Materials&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="http://support.ezlynx.com/webinars/" target="_blank"&gt;&lt;span&gt;Webinars&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://app.webcetera.com/EZLynxWeb/ContactSupport.aspx"&gt;&lt;span&gt;Contact Us&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://app.webcetera.com/EZLynxWeb/Support.aspx"&gt;&lt;span&gt;Carrier Library&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li title="Help for this page." onclick="window.open('https://app.ezlynx.com/EzLynxHelp/EZLynx30/htm.html', '_blank'); return false;"&gt;&lt;a href="Plugins/EzLynxWebBase.dll/#"&gt;&lt;span&gt;Page Help&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;&lt;/li&gt;
+
+            &lt;li class="dropdown"&gt;
+                &lt;a href="#UserMenuContainer" class="dropdown-toggle" data-toggle="dropdown"&gt;&lt;span&gt;sherif Tariq (webcet_sherif)&lt;/span&gt;&lt;b class="caret"&gt;&lt;/b&gt;&lt;/a&gt;
+                &lt;ul class="dropdown-menu" role="menu"&gt;
+                    &lt;li&gt;
+                        &lt;a id="FontIncreaseLink" href="#"&gt;Increase Font&lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;a id="FontDecreaseLink" href="#"&gt;Decrease Font&lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;a href="https://app.webcetera.com/EZLynxWeb/myaccounthome.aspx"&gt;Account Settings&lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;a href="https://app.webcetera.com/EZLynxWeb/Logout.aspx"&gt;Logout&lt;/a&gt;
+                    &lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+
+        &lt;span class="SupportPerson" id="SupportPerson"&gt;&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;!--[if !IE]&gt; END TOP &lt;![endif]--&gt;
+&lt;/div&gt;
+            </code></pre>
+
+            <p>&nbsp;</p>
+
+            <h2 id='navbar'>Navbar</h2>
+
+            <pre><code class="html">
+&lt;div id="Navbar" class="topNavBar"&gt;
+    &lt;ul class="TopLevel"&gt;
+        &lt;li class="current"&gt;&lt;a href="https://app.webcetera.com/EZLynxWeb/welcome.aspx" title="Dashboard"&gt;&lt;span class="icon-dashboard"&gt;&lt;/span&gt;&lt;span class="title"&gt;Dashboard&lt;/span&gt;&lt;/a&gt;&lt;ul class=""&gt;&lt;h2&gt;Dashboard&lt;/h2&gt;
+            &lt;li class="current"&gt;&lt;a href="https://app.webcetera.com/EZLynxWeb/welcome.aspx" title="Home Page"&gt;&lt;span class="icon-Home"&gt;&lt;/span&gt;&lt;span class="title"&gt;Home Page&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://app.webcetera.com/applicantportal/Activity/Index" title="Agency Activity"&gt;&lt;span class="title"&gt;Agency Activity&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://app.webcetera.com/applicantportal/Task/Index" title="Agency Tasks"&gt;&lt;span class="title"&gt;Agency Tasks&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://app.webcetera.com/EZLynxWeb/Organization/Directory.aspx" title="Directory"&gt;&lt;span class="title"&gt;Directory&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;&lt;/li&gt;&lt;li class=""&gt;&lt;a href="https://app.webcetera.com/applicantportal/Search/Index" title="Applicants"&gt;&lt;span class="icon-applicants"&gt;&lt;/span&gt;&lt;span class="title"&gt;Applicants&lt;/span&gt;&lt;/a&gt;&lt;ul class=""&gt;&lt;h2&gt;Applicants&lt;/h2&gt;
+            &lt;li&gt;&lt;a href="https://app.webcetera.com/applicantportal/Applicant/Create/Index" title="Create New Applicant"&gt;&lt;span class="title"&gt;Create New Applicant&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://app.webcetera.com/applicantportal/Applicant/Create/CommercialApp" title="Create Commercial Applicant"&gt;&lt;span class="title"&gt;Create Commercial Applicant&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://app.webcetera.com/EZLynxWeb/Applicant/Applicant_List.aspx" title="List Applicant"&gt;&lt;span class="title"&gt;List Applicant&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://app.webcetera.com/applicantportal/search/Index" title="Search Applicants"&gt;&lt;span class="title"&gt;Search Applicants&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://app.webcetera.com/EZLynxWeb/completedapps.aspx" title="Completed Quotes"&gt;&lt;span class="title"&gt;Completed Quotes&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://app.webcetera.com/EZLynxWeb/newUpload.aspx" title="Import"&gt;&lt;span class="title"&gt;Import&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;div id="mruContainer"&gt;
+                &lt;div clientid="MruList"&gt;
+        &lt;div class="menu"&gt;&lt;h2&gt;Recent Applicants&lt;/h2&gt;&lt;ul class="nav nav-list"&gt;&lt;li&gt;&lt;a href="https://app.webcetera.com/applicantportal/Applicant/18997234/Overview/Index"&gt;&lt;span&gt;Hello Tuesday&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div class="menu"&gt;&lt;h2&gt;Recent Quotes&lt;/h2&gt;&lt;ul class="nav nav-list"&gt;&lt;li&gt;&lt;a href="https://app.webcetera.com/EZLynxWeb/Applicant/QuoteDetails.aspx?appquoteid=2051402"&gt;&lt;span&gt;Johns, Jimmy&lt;/span&gt;&nbsp;&lt;span class="lobauto"&gt;(Auto)&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;
+    &lt;/div&gt;
+            &lt;/div&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li class=""&gt;&lt;a href="https://app.webcetera.com/EZLynxWeb/PolicyManagement.aspx" title="Policy Mgmt"&gt;&lt;span class="icon-folder-open"&gt;&lt;/span&gt;&lt;span class="title"&gt;Policy Mgmt&lt;/span&gt;&lt;/a&gt;&lt;ul class=""&gt;&lt;h2&gt;Policy Mgmt&lt;/h2&gt;
+            &lt;li&gt;&lt;a href="https://app.webcetera.com/applicantportal/Policy/Transactions/Index" title="Policy Transactions"&gt;&lt;span class="title"&gt;Policy Transactions&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://app.webcetera.com/EZLynxWeb/Policy/CommissionsMenu.aspx" title="Commissions"&gt;&lt;span class="title"&gt;Commissions&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://app.webcetera.com/EZLynxWeb/Policy/ACORDLibrary.aspx" title="ACORD Library"&gt;&lt;span class="title"&gt;ACORD Library&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://app.webcetera.com/EZLynxBulkCampaigns/Campaigns/Overview" title="Campaigns"&gt;&lt;span class="icon-campaigns"&gt;&lt;/span&gt;&lt;span class="title"&gt;Campaigns&lt;/span&gt;&lt;/a&gt;&lt;ul&gt;&lt;h2&gt;Campaigns&lt;/h2&gt;
+
+        &lt;/ul&gt;&lt;/li&gt;&lt;li class=""&gt;&lt;a href="https://communication.webcetera.com/EzLynxCommunicationCenter/Campaigns/Campaign/Create" title="Communication Center"&gt;&lt;span class="icon-comm-ctr"&gt;&lt;/span&gt;&lt;span class="title"&gt;Communication Center&lt;/span&gt;&lt;/a&gt;&lt;ul class=""&gt;&lt;h2&gt;Email Campaigns&lt;/h2&gt;
+            &lt;li&gt;&lt;a href="https://communication.webcetera.com/EzLynxCommunicationCenter/Campaigns/Overview/Index" title="Campaign Overview"&gt;&lt;span class="title"&gt;Campaign Overview&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://communication.webcetera.com/EzLynxCommunicationCenter/Campaigns/Campaign/Recipients" title="New Campaign"&gt;&lt;span class="title"&gt;New Campaign&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://communication.webcetera.com/EzLynxCommunicationCenter/Campaigns/Drafts/Index" title="Drafts"&gt;&lt;span class="title"&gt;Drafts&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://communication.webcetera.com/EzLynxCommunicationCenter/Campaigns/Sent/Index" title="Sent"&gt;&lt;span class="title"&gt;Sent&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://communication.webcetera.com/EzLynxCommunicationCenter/Campaigns/Scheduled/Index" title="Scheduled"&gt;&lt;span class="title"&gt;Scheduled&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://communication.webcetera.com/EzLynxCommunicationCenter/Lists/View/Organization" title="Lists"&gt;&lt;span class="title"&gt;Lists&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://communication.webcetera.com/EzLynxCommunicationCenter/Template/Templates/Index" title="Templates"&gt;&lt;span class="title"&gt;Templates&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://communication.webcetera.com/EzLynxCommunicationCenter/Suppressions/SuppressionList/Index" title="Suppression List"&gt;&lt;span class="title"&gt;Suppression List&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://communication.webcetera.com/EzLynxCommunicationCenter/Settings/UserSettings/Index" title="Settings"&gt;&lt;span class="title"&gt;Settings&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;br&gt;&lt;h2&gt;Voice &amp; Text&lt;/h2&gt;&lt;li&gt;&lt;a href="https://app.webcetera.com/applicantportal/MessageCenter/DisplayMessages" title="Sent And Received"&gt;&lt;span class="title"&gt;Sent And Received&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://app.webcetera.com/applicantportal/MessageCenter/index" title="Unresolved"&gt;&lt;span class="title"&gt;Unresolved&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://communication.webcetera.com/EzLynxCommunicationCenter/VoiceAndText/Settings" title="Settings"&gt;&lt;span class="title"&gt;Settings&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;br&gt;&lt;h2&gt;Postal Mail&lt;/h2&gt;&lt;li&gt;&lt;a href="https://app.webcetera.com/postalservice/Mailing/Mailbox" title="Mailbox"&gt;&lt;span class="title"&gt;Mailbox&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://app.webcetera.com/postalservice/Settings/settings" title="Settings"&gt;&lt;span class="title"&gt;Settings&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;&lt;/li&gt;&lt;li class=""&gt;&lt;a href="https://reports.webcetera.com/EZLynxReportPortal/LogiReportWrapper.aspx?ReportName=ReportMenu" title="Reporting"&gt;&lt;span class="icon-line-chart"&gt;&lt;/span&gt;&lt;span class="title"&gt;Reporting&lt;/span&gt;&lt;/a&gt;&lt;ul class=""&gt;
+            &lt;li&gt;&lt;li&gt;&lt;h2&gt;Reporting&lt;/h2&gt;&lt;/li&gt;&lt;a href="https://reports.webcetera.com/EZLynxReportPortal/LogiReportWrapper.aspx?ReportName=MyDashboard" title="My Dashboard"&gt;&lt;span class="title"&gt;My Dashboard&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;li style="padding-top:15px;"&gt;&lt;h2&gt;Saved Reports&lt;/h2&gt;&lt;/li&gt;&lt;a href="https://reports.webcetera.com/EZLynxReportPortal/LogiReportWrapper.aspx?ReportName=SavedReportMenu" title="All Saved Reports"&gt;&lt;span class="title"&gt;All Saved Reports&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://reports.webcetera.com/EZLynxReportPortal/LogiReportWrapper.aspx?ReportName=SavedReportMenu&amp;ReportFolder=MySaved" title="My Saved Reports"&gt;&lt;span class="title"&gt;My Saved Reports&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://reports.webcetera.com/EZLynxReportPortal/LogiReportWrapper.aspx?ReportName=SavedReportMenu&amp;ReportFolder=Shared" title="Shared Reports"&gt;&lt;span class="title"&gt;Shared Reports&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://reports.webcetera.com/EZLynxReportPortal/LogiReportWrapper.aspx?ReportName=ScheduledReports" title="Scheduled Report Management"&gt;&lt;span class="title"&gt;Scheduled Report Management&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;li style="padding-top:15px;"&gt;&lt;h2&gt;Standard Reports&lt;/h2&gt;&lt;/li&gt;&lt;a href="https://reports.webcetera.com/EZLynxReportPortal/LogiReportWrapper.aspx?ReportName=ReportMenu" title="All Reports"&gt;&lt;span class="title"&gt;All Reports&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://reports.webcetera.com/EZLynxReportPortal/LogiReportWrapper.aspx?ReportName=ReportMenu&amp;ReportFolder=Activity" title="Activity"&gt;&lt;span class="title"&gt;Activity&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://reports.webcetera.com/EZLynxReportPortal/LogiReportWrapper.aspx?ReportName=ReportMenu&amp;ReportFolder=Applicant" title="Applicant"&gt;&lt;span class="title"&gt;Applicant&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://reports.webcetera.com/EZLynxReportPortal/LogiReportWrapper.aspx?ReportName=ReportMenu&amp;ReportFolder=BookOfBusiness" title="Book of Business"&gt;&lt;span class="title"&gt;Book of Business&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://reports.webcetera.com/EZLynxReportPortal/LogiReportWrapper.aspx?ReportName=ReportMenu&amp;ReportFolder=Claims" title="Claims"&gt;&lt;span class="title"&gt;Claims&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://reports.webcetera.com/EZLynxReportPortal/LogiReportWrapper.aspx?ReportName=ReportMenu&amp;ReportFolder=Commission" title="Commission"&gt;&lt;span class="title"&gt;Commission&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://reports.webcetera.com/EZLynxReportPortal/LogiReportWrapper.aspx?ReportName=ReportMenu&amp;ReportFolder=PolicyManagement" title="Policy Management"&gt;&lt;span class="title"&gt;Policy Management&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://reports.webcetera.com/EZLynxReportPortal/LogiReportWrapper.aspx?ReportName=ReportMenu&amp;ReportFolder=Quote" title="Quote"&gt;&lt;span class="title"&gt;Quote&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://reports.webcetera.com/EZLynxReportPortal/LogiReportWrapper.aspx?ReportName=ReportMenu&amp;ReportFolder=RetentionCenter" title="Retention Center"&gt;&lt;span class="title"&gt;Retention Center&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://reports.webcetera.com/EZLynxReportPortal/LogiReportWrapper.aspx?ReportName=ReportMenu&amp;ReportFolder=SalesCenter" title="Sales Center"&gt;&lt;span class="title"&gt;Sales Center&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;&lt;/li&gt;&lt;li class=""&gt;&lt;a href="https://app.webcetera.com/EZLynxWeb/myaccounthome.aspx" title="Settings"&gt;&lt;span class="icon-cog"&gt;&lt;/span&gt;&lt;span class="title"&gt;Settings&lt;/span&gt;&lt;/a&gt;&lt;ul class=""&gt;&lt;h2&gt;Settings&lt;/h2&gt;
+            &lt;li&gt;&lt;a href="https://app.webcetera.com/EZLynxWeb/CarrierLogins/CarrierLogins.aspx?fromdashboardwidget=false" title="Carrier Quoting Setup"&gt;&lt;span class="title"&gt;Carrier Quoting Setup&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://app.webcetera.com/CarrierPrompts/ExcelUpload/CarrierPromptInfo" title="Carrier Prompts"&gt;&lt;span class="title"&gt;Carrier Prompts&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://app.webcetera.com/EZLynxWeb/mypreferences.aspx" title="EZLynx Preferences"&gt;&lt;span class="title"&gt;EZLynx Preferences&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://app.webcetera.com/EZLynxWeb/mycontactinfo.aspx" title="My Contact Info"&gt;&lt;span class="title"&gt;My Contact Info&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://app.webcetera.com/EZLynxWeb/myAccount.aspx" title="Change Password"&gt;&lt;span class="title"&gt;Change Password&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://app.webcetera.com/EZLynxWeb/Software/SoftwareList.aspx" title="EZLynx Plugins"&gt;&lt;span class="title"&gt;EZLynx Plugins&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://communication.webcetera.com/EzLynxCommunicationCenter/Settings/Signature/Index" title="Email Signature"&gt;&lt;span class="title"&gt;Email Signature&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://communication.webcetera.com/EzLynxCommunicationCenter/Suppressions/SuppressionList/Index" title="Email Suppression List"&gt;&lt;span class="title"&gt;Email Suppression List&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://app.webcetera.com/EZLynxWeb/ConsumerQuoting.aspx" title="Consumer Quoting"&gt;&lt;span class="title"&gt;Consumer Quoting&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://app.webcetera.com/EZLynxCustomerServiceAdmin/CSPAdmin/AgencyAdmin/AdminHome" title="Client Center"&gt;&lt;span class="title"&gt;Client Center&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://app.webcetera.com/applicantportal/Settings/CertificateHolders/Index" title="Certificate Holders"&gt;&lt;span class="title"&gt;Certificate Holders&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://app.webcetera.com/EZLynxWeb/AgencyAdmin/ManageLeadSource.aspx" title="Manage Lead Sources"&gt;&lt;span class="title"&gt;Manage Lead Sources&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://app.webcetera.com/EZLynxWeb/AgencyAdmin/ManageCarrierList.aspx" title="Manage Carriers/Markets"&gt;&lt;span class="title"&gt;Manage Carriers/Markets&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://app.webcetera.com/EZLynxWeb/AgencyAdmin/OrganizationBillingCarriersList.aspx" title="Manage Billing Companies"&gt;&lt;span class="title"&gt;Manage Billing Companies&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://app.webcetera.com/EZLynxWeb/AgencyAdmin/ManageLOBs.aspx" title="Manage Lines of Business"&gt;&lt;span class="title"&gt;Manage Lines of Business&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://app.webcetera.com/EZLynxWeb/AgencyAdmin/ServiceTeamAdmin.aspx" title="Manage Service Team"&gt;&lt;span class="title"&gt;Manage Service Team&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://app.webcetera.com/EZLynxWeb/AgencyAdmin/EmailSubscriptionManagement.aspx" title="Email Subscription Management"&gt;&lt;span class="title"&gt;Email Subscription Management&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://app.webcetera.com/EZLynxWeb/AgencyAdmin/ManageFormTemplates.aspx" title="Manage Form Templates"&gt;&lt;span class="title"&gt;Manage Form Templates&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://app.webcetera.com/applicantportal/Settings/Notes/Index" title="Note Settings"&gt;&lt;span class="title"&gt;Note Settings&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://app.webcetera.com/EZLynxAgencyAdmin/ManageUsers/Index/0" title="Agency Admin"&gt;&lt;span class="title"&gt;Agency Admin&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://app.webcetera.com/EZLynxWeb/SmartQuote/CarrierSelections.aspx" title="Smart Quote Defaults"&gt;&lt;span class="title"&gt;Smart Quote Defaults&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://app.webcetera.com/applicantportal/Settings/SettingsAdmin#/ProductSettingsAdmin" title="Product Settings"&gt;&lt;span class="title"&gt;Product Settings&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://reports.webcetera.com/EZLynxReportPortal/ProductUsageReport.aspx" title="Product Usage Report"&gt;&lt;span class="title"&gt;Product Usage Report&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://app.webcetera.com/templatemanager/Templates" title="Quoting Automation"&gt;&lt;span class="title"&gt;Quoting Automation&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://app.webcetera.com/EZLynxAgencyAdmin/ManageUsers/Index/0" title="Admin"&gt;&lt;span class="icon-key"&gt;&lt;/span&gt;&lt;span class="title"&gt;Admin&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://admin.webcetera.com/EZLynxAdminPortal/adminhome.aspx" title="Internal Admin"&gt;&lt;span class="icon-eye-open"&gt;&lt;/span&gt;&lt;span class="title"&gt;Internal Admin&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li class=""&gt;&lt;a href="http://support.ezlynx.com" title="Support" target="_blank"&gt;&lt;span class="icon-question-sign"&gt;&lt;/span&gt;&lt;span class="title"&gt;Support&lt;/span&gt;&lt;/a&gt;&lt;ul class=""&gt;&lt;h2&gt;Support&lt;/h2&gt;
+            &lt;li&gt;&lt;a href="https://auth.webcetera.com/EzLynxSSO/SupportCenter/Index" title="Support Center" target="_blank"&gt;&lt;span class="title"&gt;Support Center&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.ezlynx.com/blog" title="Blog" target="_blank"&gt;&lt;span class="title"&gt;Blog&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.ezlynx.com/support/training-materials" title="Training Materials" target="_blank"&gt;&lt;span class="title"&gt;Training Materials&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.ezlynx.com/support/webinars/" title="Webinars" target="_blank"&gt;&lt;span class="title"&gt;Webinars&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://auth.webcetera.com/EzLynxSSO/ContactUs/Index" title="Contact Us" target="_blank"&gt;&lt;span class="title"&gt;Contact Us&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://app.webcetera.com/EZLynxWeb/Support.aspx" title="Carrier Library"&gt;&lt;span class="title"&gt;Carrier Library&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;&lt;/li&gt;&lt;li class=""&gt;&lt;a href="https://analytics.webcetera.com/EZLynxAnalytics/Overview.aspx" title="Analytics"&gt;&lt;span class="icon-beaker"&gt;&lt;/span&gt;&lt;span class="title"&gt;Analytics&lt;/span&gt;&lt;/a&gt;&lt;ul class=""&gt;&lt;h2&gt;Analytics&lt;/h2&gt;
+            &lt;li&gt;&lt;a href="https://analytics.webcetera.com/EZLynxAnalytics/Overview.aspx" title="Product Usage"&gt;&lt;span class="title"&gt;Product Usage&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;&lt;/li&gt;&lt;li class=""&gt;&lt;a href="https://billing.webcetera.com/EZLynxBilling/Home/Home/Index?invoiceType=all&amp;recentInvoice=true" title="Billing"&gt;&lt;span class="icon-credit-card"&gt;&lt;/span&gt;&lt;span class="title"&gt;Billing&lt;/span&gt;&lt;/a&gt;&lt;ul class=""&gt;&lt;h2&gt;Billing&lt;/h2&gt;
+            &lt;li&gt;&lt;a href="https://billing.webcetera.com/EZLynxBilling/Home/Home/Index?invoiceType=all&amp;recentInvoice=true" title="Home"&gt;&lt;span class="title"&gt;Home&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://billing.webcetera.com/EZLynxBilling/Invoices/Pending/Index?invoiceType=all" title="Pending"&gt;&lt;span class="title"&gt;Pending&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://billing.webcetera.com/EZLynxBilling/Invoices/Posted/Index?invoiceType=all&amp;recentInvoice=false" title="Posted"&gt;&lt;span class="title"&gt;Posted&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://billing.webcetera.com/EZLynxBilling/Users/BillingUser" title="Users"&gt;&lt;span class="title"&gt;Users&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://app.webcetera.com/EZLynxDataConverter/" title="Data Conversion"&gt;&lt;span class="icon-cloud-download"&gt;&lt;/span&gt;&lt;span class="title"&gt;Data Conversion&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li class=""&gt;&lt;a href="https://renewal.webcetera.com/EZLynxRenewalCenter/overview/index" title="Retention Center"&gt;&lt;span class="icon-magnet"&gt;&lt;/span&gt;&lt;span class="title"&gt;Retention Center&lt;/span&gt;&lt;/a&gt;&lt;ul class=""&gt;&lt;h2&gt;Retention Center&lt;/h2&gt;
+            &lt;li&gt;&lt;a href="https://renewal.webcetera.com/EZLynxRenewalCenter/dashboard/index" title="Dashboard"&gt;&lt;span class="title"&gt;Dashboard&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://renewal.webcetera.com/EZLynxRenewalCenter/overview/index" title="Overview"&gt;&lt;span class="title"&gt;Overview&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://renewal.webcetera.com/EZLynxRenewalCenter/reports/index" title="Reports"&gt;&lt;span class="title"&gt;Reports&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://reports.webcetera.com/EZLynxReportPortal/LogiReportWrapper.aspx?ReportName=ReportMenu&amp;ReportFolder=RetentionCenter" title="Reports"&gt;&lt;span class="title"&gt;Reports&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://renewal.webcetera.com/EZLynxRenewalCenter/settings/index" title="Settings"&gt;&lt;span class="title"&gt;Settings&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;&lt;/li&gt;&lt;li class=""&gt;&lt;a href="https://sales.webcetera.com/SalesCenter/view" title="Sales Center"&gt;&lt;span class="icon-briefcase"&gt;&lt;/span&gt;&lt;span class="title"&gt;Sales Center&lt;/span&gt;&lt;/a&gt;&lt;ul class=""&gt;&lt;h2&gt;Sales Center&lt;/h2&gt;
+            &lt;li&gt;&lt;a href="https://sales.webcetera.com/SalesCenter/view" title="Opportunities"&gt;&lt;span class="title"&gt;Opportunities&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://sales.webcetera.com/SalesCenter/view#!/Prospects" title="Prospecting"&gt;&lt;span class="title"&gt;Prospecting&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://reports.webcetera.com/EZLynxReportPortal/LogiReportWrapper.aspx?ReportName=ReportMenu&amp;ReportFolder=SalesCenter" title="Reports"&gt;&lt;span class="title"&gt;Reports&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="https://sales.webcetera.com/SalesCenter/view#!/Settings" title="Settings"&gt;&lt;span class="title"&gt;Settings&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+            </code></pre>
+
+            <p>&nbsp;</p>
+
+            <h2 id='layout-container'>Layout Container</h2>
+            <p>For the HTML for this section click on 'Layout With Sidebar' or 'Layout Without Sidebar' under the Layouts heading in the left nav.</p>
+
+            <p>&nbsp;</p>
+
+            <h2 id='footer'>Footer</h2>
+
+            <pre><code class='html'>
+&lt;div class="footer"&gt;
+    &lt;div id="_ctl0__ctl0_AppInfo" class="AppInfo"&gt;EZLynx Web version 4.17.6.2568 [02]&lt;/div&gt;
+    &lt;div id="_ctl0__ctl0_Copyright" class="Copyright"&gt;Copyright © 2004-2017 Webcetera, Inc. All Rights Reserved&lt;/div&gt;
+&lt;/div&gt;
+            </code></pre>
+
+        </section>
+    </div>
+</div>
+
+<script>
+    function toggleAccordion() {
+        var $task = $('.task'),
+            $arrow = $('.taskSectionHeader i');
+
+        $task.toggle();
+
+        $arrow.toggleClass('icon-chevron-up')
+              .toggleClass('icon-chevron-down');
+
+    }
+</script>
+
+<div class="bff-script" data-src="app/shared/activate-highlight.js"></div>

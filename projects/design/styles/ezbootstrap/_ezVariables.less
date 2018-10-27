@@ -1,0 +1,207 @@
+// ================================================================
+// EZLynx Variables
+// ================================================================
+
+
+// Greys
+// -------------------------
+@black:                 #000;
+@greyDarker:            #222;
+@greyDark:              #555;
+@grey:                  #777;
+@greyLight:             #aaa;
+@greyLighter:           #f2f2f2;
+@greyLightest:          #f8f8f8;
+@white:                 #fff;
+
+
+// Accent colors
+// -------------------------
+@blueLightest:          #D5E9FF;
+@blueLighter:           #7EB2D9;
+@blueLight:             #5988cf;
+@blue:                  #4976bb;
+@blueDark:              #385c94;
+@blueDarker:            #30333c;
+@blueDarkest:           #212227;
+@greenLighter:          #D7F8C8;
+@greenLight:            #70c7af;
+@green:                 #21B33D;
+@greenDark:             #189931;
+@redLight:              #f37e6a;
+@red:                   #f05148;
+@redDark:               #ce302c;
+@redDarker:             #B4231A;
+@yellowLight:           #fcf797;
+@yellow:                #f9dc3b;
+@gold:                  #B8991F;
+@orange:                #e67e22;
+@pink:                  #c3325f;
+@purple:                #7a43b6;
+@tealLight:             #D0F5E1;
+@teal:                  #26b99a;
+
+// Link Colors
+// ------------------
+@linkColor:             @blue;
+@linkHoverColor:        @blue;
+
+// Border Colors
+// -------------------------
+@tableBorderColor:      #ccc;
+@inputBorderColor:      #ccc;
+@widgetBorderColor:     #ccc;
+@headerBorderColor:     #ccc;
+@dropdownBorderColor:   #ccc;
+
+@iconColor:             @grey;
+@iconColorLight:        @greyLight;
+@headerColor:           #bbb;
+
+
+// Sprite icons path
+// -------------------------
+@iconFontFamily:        'EZAwesome';
+
+// Sizing
+// -------------------------
+@baseFontSize:          12px;
+@baseLineHeight:        20px;
+@inputHeight:           @baseLineHeight * 1.5;
+
+@fontSizeLarge:         18; // ~18px
+@fontSizeBase:          12; // ~12px
+@fontSizeSmall:         11; // ~11px
+@fontSizeSmaller:       10;
+@lineHeightLarge:       18;
+@lineHeightBase:        20;
+
+@paddingLarger:         24px;
+@paddingLarge:          18px;
+@padding:               12px;
+@paddingSmall:          6px;
+@paddingSmaller:        3px;
+
+@tableRowBorderSize:    1px;
+@tableRowHeight:        @inputHeight + 5px;
+
+@borderRadiusLarge:     2px;
+@borderRadius:          1px;
+
+@borderSmall:           1px;
+@borderLarge:           2px;
+
+@inputHeight:           30px;
+
+
+// ================================================================
+// EZLynx Mixins
+// ================================================================
+
+// Rem Mixins
+// -----------------------
+.font-size (@sizeValue) {
+  @remValue: @sizeValue / 10;
+  @pxValue: (@sizeValue);
+  font-size: ~"@{pxValue}px"; 
+  font-size: ~"@{remValue}rem";
+}
+.font-size-important (@sizeValue) {
+  @remValue: @sizeValue / 10;
+  @pxValue: (@sizeValue);
+  font-size: ~"@{pxValue}px!important"; 
+  font-size: ~"@{remValue}rem!important";
+}
+.line-height (@sizeValue) {
+  @remValue: @sizeValue / 10;
+  @pxValue: (@sizeValue);
+  line-height: ~"@{pxValue}px"; 
+  line-height: ~"@{remValue}rem";
+}
+
+
+// Borders
+// -----------------------
+.inputBorder {
+    border: @borderSmall solid @inputBorderColor;
+    outline: none;
+    .box-shadow(none);
+}
+.inputBorderFocus {
+    border: @borderSmall solid @blueLight;
+}
+.widgetBorder {
+    border: 0;
+}
+.tableRowBorder {
+    border-top: @borderSmall solid @tableBorderColor;
+}
+.headerBorder {
+    border-bottom: @borderSmall solid @headerBorderColor;
+}
+.dropdownBorder {
+    border: @borderSmall solid @dropdownBorderColor;
+}
+
+// User Select
+// -----------------------
+.userSelectNone {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+// Transitions
+// -----------------------
+.ease {
+    transition: all 0.2s ease-in-out;
+}
+
+.rotateLeft() {
+  transform: rotate(-90deg);
+}
+
+// Box Shadows
+// -----------------------
+.boxShadow {
+    box-shadow: 0 1px 2px rgba(0,0,0, 0.1);
+}
+.boxShadowNone {
+    box-shadow: none;
+}
+
+
+// Border Radius
+// -----------------------
+.borderRadiusLarge {
+    border-radius: @borderRadiusLarge;
+}
+.borderRadius {
+    border-radius: @borderRadius;
+}
+.borderRadiusTop {
+    border-top-right-radius: @borderLarge;
+    border-top-left-radius: @borderLarge;
+}
+.borderRadiusBottom {
+    border-bottom-right-radius: @borderLarge;
+    border-bottom-left-radius: @borderLarge;
+}
+.borderRadiusNone {
+    border-radius: 0;
+}
+.borderRadiusLeft {
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+.borderRadiusRight {
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+//  Transparent
+// --------------------
+.transparent {
+  opacity: 0.5;
+}
