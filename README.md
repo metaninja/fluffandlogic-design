@@ -11,3 +11,5 @@ A lot of pieces are still missing, including:
 - Illustrations, especially on the homepage
 - Additional per page design
 - Additional content, such as the Design Thinking guide.
+
+Update: Home and Why pages are completed
