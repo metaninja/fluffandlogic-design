@@ -95,7 +95,7 @@ header nav a.active {
 .bottom-line .btn-page-footer {
   border: 4px solid #C100F7;
   color: #C100F7;
-  padding: 20px 32px;
+  padding: 20px 16px;
   text-transform: uppercase; }
 
 .bottom-line .btn-page-footer:hover,

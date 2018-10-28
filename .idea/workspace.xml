@@ -2,23 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b435c2f-462b-4065-b17e-3d0aa9a6d37e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/css/scss/why.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/scss/_general.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/scss/_general.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/scss/_home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/scss/home.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gruntfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/gruntfile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/v2/why/hero.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/v2/why/hero.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/v2/why/people.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/v2/why/problem.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/v2/why/time.svg" beforeDir="false" afterPath="$PROJECT_DIR$/images/v2/why/time.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/home/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/home/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/why/index.html.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/why/index.html.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/why/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/why/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shared/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/shared/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/home.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/home.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/home.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/scss/home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/scss/home.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/scss/why.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/scss/why.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,7 +27,7 @@
           <entry key="jpg" value="4" />
           <entry key="js" value="2" />
           <entry key="php" value="12" />
-          <entry key="scss" value="29" />
+          <entry key="scss" value="30" />
           <entry key="svg" value="7" />
         </counts>
       </usages-collector>
@@ -50,7 +37,7 @@
           <entry key="Image" value="4" />
           <entry key="JavaScript" value="2" />
           <entry key="PHP" value="12" />
-          <entry key="SCSS" value="29" />
+          <entry key="SCSS" value="30" />
           <entry key="SVG" value="7" />
         </counts>
       </usages-collector>
@@ -58,14 +45,14 @@
         <counts>
           <entry key="js" value="37" />
           <entry key="php" value="415" />
-          <entry key="scss" value="3534" />
+          <entry key="scss" value="3541" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JavaScript" value="37" />
           <entry key="PHP" value="415" />
-          <entry key="SCSS" value="3534" />
+          <entry key="SCSS" value="3541" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.php.new.test" />
@@ -84,8 +71,17 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/css/scss/why.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="735">
-                  <caret line="49" column="16" selection-start-line="49" selection-start-column="16" selection-end-line="49" selection-end-column="16" />
+                <state relative-caret-position="394">
+                  <caret line="111" column="18" selection-start-line="111" selection-start-column="18" selection-end-line="111" selection-end-column="18" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/css/scss/home.scss">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="876">
+                  <caret line="82" column="1" lean-forward="true" selection-start-line="82" selection-start-column="1" selection-end-line="82" selection-end-column="1" />
                 </state>
               </provider>
             </entry>
@@ -135,9 +131,9 @@
         <option value="$PROJECT_DIR$/gruntfile.js" />
         <option value="$PROJECT_DIR$/css/scss/_variables.scss" />
         <option value="$PROJECT_DIR$/pages/home/index.php" />
-        <option value="$PROJECT_DIR$/css/scss/home.scss" />
         <option value="$PROJECT_DIR$/css/scss/_general.scss" />
         <option value="$PROJECT_DIR$/pages/why/index.html.php" />
+        <option value="$PROJECT_DIR$/css/scss/home.scss" />
         <option value="$PROJECT_DIR$/css/scss/why.scss" />
       </list>
     </option>
@@ -210,13 +206,6 @@
             <path>
               <item name="www" type="b2602c69:ProjectViewProjectNode" />
               <item name="www" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-              <item name="v2" type="462c0819:PsiDirectoryNode" />
-              <item name="why" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="www" type="b2602c69:ProjectViewProjectNode" />
-              <item name="www" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -281,12 +270,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1540644342456</updated>
-      <workItem from="1540644343646" duration="12824000" />
+      <workItem from="1540644343646" duration="13172000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12824000" />
+    <option name="totallyTimeSpent" value="13172000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1724" height="1417" extended-state="0" />
@@ -470,13 +459,6 @@
     <entry file="file://$PROJECT_DIR$/css/why.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/scss/home.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="35" column="1" lean-forward="true" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/images/v2/why/hero.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -517,10 +499,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/css/scss/home.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="876">
+          <caret line="82" column="1" lean-forward="true" selection-start-line="82" selection-start-column="1" selection-end-line="82" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/css/scss/why.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="49" column="16" selection-start-line="49" selection-start-column="16" selection-end-line="49" selection-end-column="16" />
+        <state relative-caret-position="394">
+          <caret line="111" column="18" selection-start-line="111" selection-start-column="18" selection-end-line="111" selection-end-column="18" />
         </state>
       </provider>
     </entry>
