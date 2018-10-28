@@ -26,6 +26,12 @@
   <link href="/css/fonts/avenir/stylesheet.css" rel="stylesheet">
   <link rel="stylesheet" href="/css/main.css"/>
 
+<?php
+if (isset($css)) {
+    echo '<link rel="stylesheet" href="'.$css.'"/>';
+}
+?>
+
   <title>Design Thinking from Fluff and Logic</title>
 </head>
 

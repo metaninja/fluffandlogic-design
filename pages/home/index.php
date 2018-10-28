@@ -1,4 +1,4 @@
-<article class="home">
+<article class="page-home">
     <section class="hero">
        <h2>
             <div class="hero-desc-subtitle">
