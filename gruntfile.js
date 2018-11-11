@@ -13,9 +13,11 @@ module.exports = function(grunt) {
         sourceMap: true
       },
       dist: {
-        files: {
-          'css/main.css' : 'css/main.scss'
-        }
+        files: [
+            { 'css/main.css' : 'css/main.scss' },
+            { 'css/home.css' : 'css/scss/home.scss' },
+            { 'css/why.css' : 'css/scss/why.scss' },
+        ]
       }
     },
 

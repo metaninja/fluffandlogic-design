@@ -1,16 +1,19 @@
 // Colors
 :root {
-  --brand-white: #fff;
-  --brand-gray100: #F5F5F5;
-  --brand-gray700: #6E6E6E;
-  --brand-gray800: #4E4E4E;
-  --brand-gray900: #3B3B3B;
-  --brand-primary: #5F41EC;
-  --brand-primary-shadow: #5F41EC33;
+  --spacer1: .25rem;
+  --spacer2: .5rem;
+  --spacer3: 1rem;
+  --spacer4: 2rem;
+  --spacer5: 3rem;
+  --spacer6: 4rem;
+  --spacer7: 5rem;
 
-  --body-font: 'Avenir Book', Arial, sans-serif;
-  --strong-font: 'Avenir Heavy', Arial, sans-serif;
-  --title-font: 'Merriweather', Arial, sans-serif;
+  --brand-white: #fff;
+  --brand-gray100: #F2F2F2;
+
+  --body-font: 'Sofia Pro Black', Arial, sans-serif;
+  --strong-font: 'Sofia Pro Black', Arial, sans-serif;
+  --title-font: 'Sofia Pro Black', Arial, sans-serif;
 
   --font-size-display1: 72px;
   --font-size-display2: 48px;
@@ -20,8 +23,7 @@
   --font-display1: 800 72px/88px var(--title-font);
   --font-display2: 800 48px/64px var(--title-font);
   --font-display3: 800 32px/48px var(--title-font);
-  --font-brand: 24px/24px var(--strong-font);
+  --font-brand: 24px/24px var(--title-font);
   --font-body: 20px/36px var(--body-font);
   --border-radius1: 8px;
 }
-
