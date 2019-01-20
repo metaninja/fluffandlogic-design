@@ -1,0 +1,47 @@
+
+.site-body {
+  grid-area: body;
+}
+
+.hero {
+  font-weight: var(--font-weight-bold);
+  font-size: var(--section-title-font-size);
+  line-height: 1.33333;
+  margin-top: 9rem;
+  margin-bottom: 6rem;
+}
+.benefits {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-weight: var(--font-weight-regular);
+  font-size: var(--section-subtitle-font-size);
+  line-height: 1.5;
+  list-style: none;
+  padding: 0;
+}
+.benefits .benefit {
+  width: 29.16666667%;
+  margin-bottom: 4rem;
+}
+.section-title {
+  font-size: var(--section-title-font-size);
+  line-height: 1;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.cards .card {
+  border-top: var(--border-width-1) solid var(--color-gray-lighter);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+  width: 28.6%;
+  font-size: 2rem;
+  font-weight: var(--font-weight-regular);
+  line-height: 1.25;
+}
