@@ -1,0 +1,25 @@
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.cards .card {
+  display: flex;
+  flex-direction: column;
+  border-top: var(--border-width-1) solid var(--color-gray-lighter);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+  width: 28.6%;
+  font-size: 2rem;
+  font-weight: var(--font-weight-regular);
+  line-height: 1.25;
+}
+.card-title {
+  display: block;
+  font-size: var(--section-title-font-size);
+}
+.card-subtitle {
+  display: block;
+  font-size: var(--section-subtitle-font-size);
+}

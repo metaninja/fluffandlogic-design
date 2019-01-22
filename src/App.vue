@@ -1,7 +1,9 @@
 <template>
   <main class="site-container" id="app">
     <site-header></site-header>
+    <div class="site-body">
       <router-view/>
+    </div>
     <site-footer></site-footer>
   </main>
 </template>
@@ -21,10 +23,13 @@ export default {
 </script>
 
 <style lang="scss">
+@import "assets/styles/_inter-ui";
 @import "assets/styles/variables";
 @import "assets/styles/general";
+@import "assets/styles/cards";
 @import "assets/styles/site";
 @import "assets/styles/site-header";
 @import "assets/styles/site-footer";
 @import "assets/styles/site-body";
+@import "assets/styles/page";
 </style>

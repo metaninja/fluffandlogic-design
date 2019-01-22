@@ -13,19 +13,10 @@
             <nav class="site-nav">
                 <ul class="site-nav-list">
                     <li class="site-nav-item">
-                        <router-link to="/" class="site-nav-link active" >Home</router-link>
+                        <router-link to="/" class="site-nav-link">Home</router-link>
                     </li>
                     <li class="site-nav-item">
-                        <a class="site-nav-link" href="projects">Projects</a>
-                    </li>
-                    <li class="site-nav-item">
-                        <a class="site-nav-link" href="process">Process</a>
-                    </li>
-                    <li class="site-nav-item">
-                        <a class="site-nav-link" href="about">About</a>
-                    </li>
-                    <li class="site-nav-item">
-                        <a class="site-nav-link" href="contact">Contact</a>
+                        <router-link to="projects" class="site-nav-link" >Projects</router-link>
                     </li>
                 </ul>
             </nav>
