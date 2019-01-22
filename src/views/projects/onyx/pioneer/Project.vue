@@ -13,13 +13,13 @@
         </section>
       </header>
 
-      <section class="page-abstract">
-        <h3 class="page-abstract-title">About Onyx</h3>
-        <section class="page-abstract-desc">
-          <p>
-            Onyx handled commission payments to event managers from hotels where the event had been held. A few months
-            before the Pioneer project was started, Onyx had done some focus group research and realized they needed to
-            expand beyond the commissions space if they wanted to grow.
+      <section class="page-abstracts">
+        <section class="page-abstract">
+          <h3 class="page-abstract-title">About Onyx</h3>
+          <p class="page-abstract-desc">
+              Onyx handled commission payments to event managers from hotels where the event had been held. A few months
+              before the Pioneer project was started, Onyx had done some focus group research and realized they needed to
+              expand beyond the commissions space if they wanted to grow.
           </p>
         </section>
       </section>
