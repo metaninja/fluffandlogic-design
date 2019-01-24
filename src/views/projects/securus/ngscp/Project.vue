@@ -1,23 +1,22 @@
 <template>
   <section class="site-body-content">
-    <div class="project-page">
 
-      <div class="project-page-header">
-        <h2 class="project-page-header-title">
-          <span class="project-page-header-subtitle">Securus</span>
+      <header class="page-header">
+        <h2 class="page-title">
+          <span class="page-subtitle">Securus</span>
           Secure Communication Platform
         </h2>
 
-        <div class="project-page-header-meta-group">
-          <p class="project-page-header-meta"><strong>Duration:</strong> 22 months</p>
-          <p class="project-page-header-meta"><strong>Roles:</strong> Rapid Prototyping, Design System, Visual Design, Front-End Development, Usability Testing
+        <div class="page-meta-tags">
+          <p class="page-meta-tag"><strong>Duration:</strong> 22 months</p>
+          <p class="page-meta-tag"><strong>Roles:</strong> Rapid Prototyping, Design System, Visual Design, Front-End Development, Usability Testing
           </p>
         </div>
-      </div>
+      </header>
 
-      <div class="project-page-summary">
-        <h3 class="project-page-summary-title">About Securus</h3>
-        <div class="project-page-summary-details">
+      <div class="page-abstracts">
+        <h3 class="page-abstract-title">About Securus</h3>
+        <div class="page-abstract-desc">
           <p>
             Securus’s Secure Communication Platform (SCP) is used by prisons to monitor inmate communications with the
             outside world and to analyze the conversations for potentially criminal activity. By the time Slalom had been
@@ -33,9 +32,9 @@
 
       <div class="project-page-details">
 
-        <section class="project-section">
-          <h3 class="project-section-title">Ideation</h3>
-          <div class="project-section-desc">
+        <section class="page-details">
+          <h3 class="page-details-title">Ideation</h3>
+          <div class="page-details-desc">
             <p>
               I joined the UX team after they had completed the discovery phase and started development. The team was
               struggling with the tools they were using and was starting to fall behind the development efforts. The team
@@ -66,9 +65,9 @@
           </div>
         </section>
 
-        <section class="project-section">
-          <h3 class="project-section-title">Usability Testing</h3>
-          <div class="project-section-desc">
+        <section class="page-details">
+          <h3 class="page-details-title">Usability Testing</h3>
+          <div class="page-details-desc">
             <p>
               About a year in, we had enough functionality to be able to do usability testing. By then a new colleague had
               joined the UX team. I helped write the usability testing script with him, and traveled to three separate
@@ -77,9 +76,9 @@
           </div>
         </section>
 
-        <section class="project-section">
-          <h3 class="project-section-title">Design System</h3>
-          <div class="project-section-desc">
+        <section class="page-details">
+          <h3 class="page-details-title">Design System</h3>
+          <div class="page-details-desc">
             <p>
               Securus wanted to roll out their new identity and the design we had created for SCP to the rest of the
               company. Based on our experience working with multiple geographically distributed agile teams, we began to
@@ -96,9 +95,9 @@
           </div>
         </section>
 
-        <section class="project-section">
-          <h3 class="project-section-title">Results</h3>
-          <div class="project-section-desc">
+        <section class="page-details">
+          <h3 class="page-details-title">Results</h3>
+          <div class="page-details-desc">
             <p>
               I left the Securus project before it was completed. However, the BFF prototyping engine that I built at Slalom
             </p>
@@ -106,6 +105,5 @@
         </section>
 
       </div>
-    </div>
   </section>
 </template>

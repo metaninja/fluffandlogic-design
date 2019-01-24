@@ -13,20 +13,28 @@
 .benefits {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   font-weight: var(--font-weight-regular);
   font-size: var(--section-subtitle-font-size);
   line-height: 1.5;
   list-style: none;
   padding: 0;
+  margin-left: -1rem;
+  margin-right: -1rem;
 }
 .benefits .benefit {
-  width: 29.16666667%;
-  margin-bottom: 4rem;
+  width: calc((100% / 3) - 2rem);
+  margin: 0 2rem 2rem 0;
 }
 .section-title {
   font-size: var(--section-title-font-size);
   line-height: 1;
   margin-top: 4rem;
   margin-bottom: 3rem;
+}
+
+@media only screen and (max-width: 800px) {
+  .benefits .benefit {
+    width: 100%;
+    margin: 0;
+  }
 }

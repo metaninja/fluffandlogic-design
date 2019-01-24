@@ -16,7 +16,7 @@
                         <router-link to="/" class="site-nav-link">Home</router-link>
                     </li>
                     <li class="site-nav-item">
-                        <router-link to="projects" class="site-nav-link" >Projects</router-link>
+                        <router-link to="/projects" class="site-nav-link" >Projects</router-link>
                     </li>
                 </ul>
             </nav>

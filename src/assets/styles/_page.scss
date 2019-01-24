@@ -17,7 +17,7 @@ h1,h2,h3,h4,h5,h6 {
   flex-direction: column;
   margin: 0;
   margin-bottom: 1rem;
-  font-size: 64px;
+  font-size: 4rem;
   line-height: 1;
 }
 .page-subtitle {
@@ -39,6 +39,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 .page-abstracts {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   padding-bottom: 4rem;
   border-bottom: 1px solid #eee;
@@ -49,11 +50,12 @@ h1,h2,h3,h4,h5,h6 {
   flex-grow: 1;
 }
 .page-abstract-title {
-  font-size: 2rem;
-  line-height: 1.5
+  font-size: 2.5rem;
+  line-height: 1;
+  margin-bottom: 1rem;
 }
 .page-abstract-desc {
-  font-size: 1.5rem;
+  font-size: 2rem;
   line-height: 1.5;
 }
 .page-details {
@@ -66,15 +68,21 @@ h1,h2,h3,h4,h5,h6 {
 .page-details-title {
   width: 28.33333333%;
   font-size: 2rem;
-  margin-bottom: 1rem; 
+  margin-bottom: 1rem;
 }
 .page-details-desc {
   width: 69.08333333%;
   font-size: 1.25rem;
-  line-height: 1.75rem;
+  line-height: 2;
 }
 
 @media only screen and (max-width: 900px) {
+  .page-abstracts {
+    flex-direction: column;
+  }
+  .page-abstract {
+    width: 100%;
+  }
   .page-details-title {
     width: 100%;
   }

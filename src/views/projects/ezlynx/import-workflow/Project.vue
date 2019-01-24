@@ -1,22 +1,21 @@
 <template>
   <section class="site-body-content">
-    <div class="project-page">
 
-      <div class="project-page-header">
-        <h2 class="project-page-header-title">
-          <span class="project-page-header-subtitle">EZLynx</span>
+      <header class="page-header">
+        <h2 class="page-title">
+          <span class="page-subtitle">EZLynx</span>
           Import Workflow
         </h2>
 
-        <div class="project-page-header-meta-group">
-          <p class="project-page-header-meta"><strong>Duration:</strong> 2 months</p>
-          <p class="project-page-header-meta"><strong>Roles:</strong> Reusable Workflow, Managing a Team</p>
+        <div class="page-meta-tags">
+          <p class="page-meta-tag"><strong>Duration:</strong> 2 months</p>
+          <p class="page-meta-tag"><strong>Roles:</strong> Reusable Workflow, Managing a Team</p>
         </div>
-      </div>
+      </header>
 
-      <div class="project-page-summary">
-        <h3 class="project-page-summary-title">About EZLynx</h3>
-        <div class="project-page-summary-details">
+      <div class="page-abstracts">
+        <h3 class="page-abstract-title">About EZLynx</h3>
+        <div class="page-abstract-desc">
           <p>
             EZLynx designs software that enables independent insurance agencies to do everything from get multiple quotes
             from competing insurance agencies and manage the end to end agency workflow from sales to pricing to support.
@@ -25,9 +24,9 @@
       </div>
 
       <div class="project-page-details">
-        <section class="project-section">
-          <h3 class="project-section-title">Background</h3>
-          <div class="project-section-desc">
+        <section class="page-details">
+          <h3 class="page-details-title">Background</h3>
+          <div class="page-details-desc">
             <p>
               For insurance agencies dealing with commercial clients (e.g. companies with fleets of vehicles, or managing
               apartment complexes), agents have to input a considerable amount of data for each entity that they want to
@@ -38,9 +37,9 @@
           </div>
         </section>
 
-        <section class="project-section">
-          <h3 class="project-section-title">Discovery</h3>
-          <div class="project-section-desc">
+        <section class="page-details">
+          <h3 class="page-details-title">Discovery</h3>
+          <div class="page-details-desc">
             <p>
               We wanted to extend the ability to bulk upload entities into the many places where users need them. In
               addition, I wanted the developers to create a reusable component that could be reused with minimal
@@ -56,9 +55,9 @@
           </div>
         </section>
 
-        <section class="project-section">
-          <h3 class="project-section-title">Ideation</h3>
-          <div class="project-section-desc">
+        <section class="page-details">
+          <h3 class="page-details-title">Ideation</h3>
+          <div class="page-details-desc">
             <p>
               I created a system flow that showed how we could create a reusable workflow for all entities that needed a
               bulk upload workflow. I reused the Import Workflow I had designed for Commissions and extended it to allow for
@@ -67,9 +66,9 @@
           </div>
         </section>
 
-        <section class="project-section">
-          <h3 class="project-section-title">UI Engineering</h3>
-          <div class="project-section-desc">
+        <section class="page-details">
+          <h3 class="page-details-title">UI Engineering</h3>
+          <div class="page-details-desc">
             <p>
               The agile team initially was not able to implement the design to the satisfaction of the stakeholders. To
               ensure a quality UI, I assigned one of my UI engineers to the team to help with  the UI.
@@ -77,9 +76,9 @@
           </div>
         </section>
 
-        <section class="project-section">
-          <h3 class="project-section-title">Result</h3>
-          <div class="project-section-desc">
+        <section class="page-details">
+          <h3 class="page-details-title">Result</h3>
+          <div class="page-details-desc">
             <p>
               After some initial struggles with figuring out how to handle custom validations required by certain entity
               types, the team has started to realize the value of having single reusable control that can be configured via
@@ -94,6 +93,5 @@
         </section>
 
       </div>
-    </div>
   </section>
 </template>
