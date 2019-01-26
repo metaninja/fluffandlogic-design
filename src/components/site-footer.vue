@@ -32,8 +32,8 @@
                     <h3 class="site-footer-list-item-header">
                         Resume
                     </h3>
-                    <a class="site-footer-list-item-link" href="https://fluffandlogic.com/resume">
-                        fluffandlogic.com/resume
+                    <a class="site-footer-list-item-link" href="/resume.pdf">
+                        fluffandlogic.com/resume.pdf
                     </a>
                     <p class="site-footer-list-item-desc">
                         You can find my phone number and email on my resume.

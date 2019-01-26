@@ -20,13 +20,16 @@
         I have advised product teams on user experience research and ideation.
       </li>
       <li class="benefit">
-        I am a problem solver. I’ve introduced usability testing and design systems to multiple companies, and even developed tools for my team to be more productive.
+        I’ve introduced usability testing and design systems to multiple companies, and developed tools for my team.
       </li>
     </ul>
 
     <h2 class="section-title">
       More About Me
     </h2>
+
+    <p class="benefits">I currently manage a small team of UX designers and UI engineers. Together we support about a dozen product managers and product owners and
+      nearly a dozen agile development teams split between the United States and India, using a full spectrum of UX methodologies and artifacts. </p>
 
     <section class="cards">
       <div class="card">
@@ -35,10 +38,6 @@
 
       <div class="card">
         <router-link to="projects">Learn more about my process and my history as a UX designer.</router-link>
-      </div>
-
-      <div class="card">
-        <router-link to="projects">Ready to talk? Here’s where you can find me.</router-link>
       </div>
 
     </section>

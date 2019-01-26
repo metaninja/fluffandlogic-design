@@ -17,8 +17,11 @@
         <h3 class="page-abstract-title">About EZLynx</h3>
         <div class="page-abstract-desc">
           <p>
-            EZLynx designs software that enables independent insurance agencies to do everything from get multiple quotes
-            from competing insurance agencies and manage the end to end agency workflow from sales to pricing to support.
+            Fifteen years ago, EZLynx rocked the independent insurance industry by developing Rating Engine, a tool that
+            let independent insurance agencies get several quotes from insurance companies in seconds instead of laboriously
+            entering a customers details over and over again on each insurance company's website. Since then, EZlynx has
+            added other features to help an agency run it's entire digital operation, from sales and marketing to support
+            and re-marketing (researching better rates for a customer before renewal time).
           </p>
         </div>
       </div>
@@ -28,50 +31,146 @@
           <h3 class="page-details-title">Background</h3>
           <div class="page-details-desc">
             <p>
-              Sales is the lifeblood of an independent insurance agency. For an agency to survive and grow, agents have to
-              keep track of prospects (potential customers) at various stages of the sales process and make sure customers
-              keep them in mind long after they’ve purchased an insurance policy.
+              Sales is the lifeblood of an independent insurance agency. Most agents only get paid when they sell a policy.
+              For an agency to survive and grow, every agent has to call dozens of new prospects (potential customers)
+              every day; only a handful of those prospects become customers that buy policies. Agents have to keep track
+              of where these prospects are in the sales funnel from calling customers to presenting competitive pricing
+              to convince the customer to switch to their agency.
             </p>
 
             <p>
-              EZLynx developed Sales Center to expand into the sales aspect agency management. The initial release of Sales
-              Center had a lot of usability issues. The interface was dense with information. There was no hierarchy to the
-              information. The user was expected to take each sales prospect through a series of steps but it wasn’t obvious
-              from the interface.
+              EZLynx developed Sales Center to help agents manage this very critical aspect of an agency's workflow.
+              The discovery and development process had taken over a year. By the end, the executive team was ready to launch
+              the product and there wasn't much thought given to the actual user experience. Instead, the team was told
+              to use a workflow and UI design from an existing EZLynx product. The product was rushed to market the week
+              after I joined EZLynx.
             </p>
 
             <p>
-              The poor user experience resulted in numerous customers cancelling their Sales Center paid plans after a couple
-              of months of use. The exec team realized that a drastic overhaul was necessary.
+              This turned out to be a disaster.
             </p>
+
+            <p>The initial release of Sales Center had enormous usability issues.
+              A lot of the initial customers cancelled their Sales Center contracts after a couple of months. Switching
+              products is incredibly painful for an agency, so once EZLynx lost a customer,
+              they wouldn't be coming back for another 4-5 years, unless something radical changed in Sales Center.
+            </p>
+
+            <p>
+              About six months after the botched Sales Center release, the Product team finally had enough sales data to
+              convince the executive team to fix the user experience. That was when I was asked to help.
+            </p>
+
+            <p>I was given one month to do it. No pressure.</p>
           </div>
         </section>
 
         <section class="page-details">
           <h3 class="page-details-title">Discovery</h3>
           <div class="page-details-desc">
-            <p>I knew little about the sales process in general. I interviewed a colleague who had been a sales agent in a
-              previous job so I could better understand the sales process. Based on recommendation I did some research into
-              tools such as Pipedrive , Trello, and Jira to understand.
+            <p>When I started working on the project, I knew little about the sales process. I tried to do some online
+              research to learn about how sales worked and I interviewed the Product Manager, Brenna, to understand the feedback
+              from the users and to get access to sales people or agents. I wasn't able to get access to
+              any real users but one of my colleagues, Ryan, had been a sales person in his previous job.
             </p>
+
+            <p>I interviewed
+              Ryan to understand the mindset of a sales person and build a mental model that I could refer to. In
+              addition I did some competitive research on tools for managing the sales process. I then compared the Sales
+              Center interface with what I had learnt and it was obvious what the problem was.
+            </p>
+          </div>
+        </section>
+
+        <section class="page-details">
+          <h3 class="page-details-title">Analysis</h3>
+          <div class="page-details-desc">
+            <p>The sales process is a pipeline. For each prospect that an agent contacts, they have to walk them
+              through a sequence of steps. They then have to repeat the same process for every single customer in their
+              list.</p>
+
+            <p>Every morning, agents pull up a spreadsheet to see which prospects to call next, and to see what they
+              need to do next to move that prospect closer to purchasing a policy. The process is very similar to a
+              kanban board or a tool like Trello.</p>
+
+            <p>
+              <figure>
+                <img src="@/views/projects/ezlynx/sales-center/5-Pannel-Funnel.jpg" style="width: 100%;">
+                <caption>
+                  Reference: <a href="https://fitsmallbusiness.com/sales-funnel-templates/">Fit Small Business</a>
+                </caption>
+              </figure>
+            </p>
+
+            <p>At each stage of the sales pipeline, there's a large amount of money that will get left on the table if
+            the agent doesn't make an effort to call their prospects and move them to the next step in the pipeline. </p>
+
+            <p>Agents earn commissions as a percentage of the premium from a policy; the bigger the premium, the more
+              money that an agent (and an agency) can make. Agency owners are acutely aware of this and wanted to motivate
+              their agents to spend more time on the larger, more valuable (VIP) prospects.</p>
+
+            <p>An agent can call potentially dozens of people a day,  keeping track of all those prospects, what they
+              said to them, where that prospect is in the conversation, how big of a policy they might potentially purchase,
+              the type of policy that they're interested in (there are dozens of categories beyond just auto and home that
+              you might see in an ad for Liberty Mutual or Progressive).
+            </p>
+
+            <p>Keeping track of the dozens of customers in each stage of the pipeline is where agents struggled with
+              with their current toolset.
+            </p>
+
+            <p>Unfortunately, this was the problem that Sales Center <strong>didn't solve</strong>:</p>
+
+            <ul>
+              <li>While there was a pipeline in Sales Center, it wasn't obvious and there was no flow.</li>
+              <li>The screen was dense with information. When you clicked on a prospect to learn more, the screen
+              filled with even more densely packed information.</li>
+              <li>There was no hierarchy to the information. What should the agent look at first? Which prospect was a
+              VIP? Where were they in the sales funnel? How much money was being left on the table?</li>
+            </ul>
+
           </div>
         </section>
 
         <section class="page-details">
           <h3 class="page-details-title">Ideation</h3>
           <div class="page-details-desc">
-            <p>Based on my research, I updated the Sales Center interface to resemble a pipeline, so it was apparent to users
-              that they had to move each sales opportunity from one stage to the next to close the sales. For each stage of
-              the pipeline, I added a summary of the total estimated premium at that stage, to encourage sales people to move
-              the opportunity forward. In addition, I switched the view from a table to a card view. Each card had just enough
-              information for a user to quickly contact a prospect. Users could then drag and drop the card to the next stage.
-              The card view gave users a birds eye view of all their opportunities to help them prioritize who to call next.
+            <p>Once I had completed my analysis, I was able to mock up a solution in a few days.</p>
+
+            <figure>
+              <img src="@/views/projects/ezlynx/sales-center/sales-center-home.png" style="width: 100%;">
+            </figure>
+
+            <p>In the old interface, the sales funnel was represented as a set of tabs with labels that confused everyone.
+              By changing the tabs into arrows, I made the sales funnel very clear to the users. Each arrow represented a
+            stage in the sales pipeline. Below each stage was a list of prospects that were at that stage of the sales process.
+            The arrows also included information on the number of prospects and the potential sales volume.</p>
+
+            <p>This new interface gave the agents a bird's eye view of all their sales. They could immediately see:</p>
+            <ul>
+              <li>Who to call next</li>
+              <li>Who they had spoken to, their preferred contact method, and the potential value of each sale.</li>
+              <li>The total number of prospects at each stage, and the potential sales volume they could earn if they
+              completed the sales.</li>
+            </ul>
+
+            <p>The card based view acted as a daily todo list to help agents manage their day and helped agency owners
+              motivate their sales team to make the calls and close the deals.
             </p>
 
-            <p>I moved the details for each opportunity into its own screen, away from the main sales list. In addition I
-              re-architected the content to provide a hierarchy based on what was most important to the user. The goal was to
-              make the information scannable so sales agents could make quick decisions.
-            </p>
+            <p>When an agent clicked on a prospect, they would be taken to a detailed view on a different screen, instead
+            of having it clutter up the landing page as in the original design.</p>
+
+            <figure>
+              <img src="@/views/projects/ezlynx/sales-center/sales-center-opportunity.png" style="width: 100%;">
+            </figure>
+
+            <p>The information on this screen was non-negotiable. Insurance agents are used to dealing with an incredible
+              amount of information, so removing any information here would have been a deal-killer. Instead, I introduced
+              an information and functional hierarchy to the data, so the most important information was at the top
+              and easily glanceable. Secondary and tertiary information was moved to tabs that users could look at if
+              they need it.</p>
+
           </div>
         </section>
 
@@ -79,20 +178,30 @@
           <h3 class="page-details-title">Prototyping</h3>
           <div class="page-details-desc">
             <p>The initial design was done in UXPin, but there’s only so much you can show with a static mockup. We needed to
-              prototype the interface in code to show stakeholders and customers how it would really work. I had hired an
-              intern to code the Sales Center prototype. He was able to implement a multitude of features like drag and drop
-              and lazy loading.
+              prototype the interface in code to show stakeholders and customers how it would really work. I hired an
+              intern to prototype the Sales Center mockups in code. I worked closely with him to implement additional
+              functionality like drag-and-drop for the cards, lazy loading the prospects at each stage, and more.
             </p>
           </div>
         </section>
 
         <section class="page-details">
-          <h3 class="page-details-title">Results</h3>
+          <h3 class="page-details-title">Reaction</h3>
           <div class="page-details-desc">
-            <p>The redesigned Sales Center prototype received rave reviews from both stakeholders and agents who were given a
-              demo of the product. The updated interface reversed the sales decline and resulted in additional sales of the
-              product.
+            <p>The reaction from agents was <strong>electric</strong>! Every agency owner and agent that we demoed the product
+              to loved the new interface. In particular, the arrows showing the direction of the sales funnel was the
+              "a-ha!" moment: it turned out to be the biggest pain point in the old interface, and a big reason for the users
+              finally understanding the Sales Center workflow. The new detail view let agents quickly scan and prioritize
+              their tasks in a way they couldn't with the original Sales Center.
             </p>
+
+            <p>Sales Center was re-launched a few months later with some aspects of the new interface I had mocked up.
+            This was enough to reverse the sales decline of Sales Center and reduce support calls for
+            existing customers.</p>
+
+            <p>At the time of writing, the card view had still not been implemented due to competing development priorities.
+            However, customers who had seen the prototype continue to clamor for the card-style interface. My hope is that
+            the card-based UI is eventually prioritized and developed.</p>
           </div>
         </section>
 
@@ -100,3 +209,11 @@
 
   </section>
 </template>
+
+<style lang="scss">
+caption {
+  display: block;
+  width: 100%;
+  font-size: 1rem;
+}
+</style>

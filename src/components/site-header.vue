@@ -5,8 +5,8 @@
                 <h1 class="site-brand">
                     Sherif Tariq
                     <span class="site-tagline">
-            UX Designer
-          </span>
+                        Senior UX Designer
+                    </span>
                 </h1>
             </a>
 
