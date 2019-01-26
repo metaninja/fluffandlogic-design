@@ -11,7 +11,7 @@
                         LinkedIn
                     </h3>
                     <a class="site-footer-list-item-link" href="https://linkedin.com/in/metaninja">
-                        linkedin.com/metaninja
+                        linkedin.com/in/metaninja
                     </a>
                     <p class="site-footer-list-item-desc">
                         Most recuiters prefer LinkedIn, so here you go.
@@ -25,7 +25,7 @@
                         behance.net/metaninja
                     </a>
                     <p class="site-footer-list-item-desc">
-                        Most recruiters prefer LinkedIn, so here you go.
+                        I have some of my older more visual projects on Behance.
                     </p>
                 </li>
                 <li class="site-footer-list-item">

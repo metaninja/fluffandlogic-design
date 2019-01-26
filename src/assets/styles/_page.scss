@@ -76,7 +76,7 @@ h1,h2,h3,h4,h5,h6 {
   line-height: 2;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: var(--responsive-mobile-width)) {
   .page-abstracts {
     flex-direction: column;
   }

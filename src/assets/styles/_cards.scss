@@ -1,8 +1,8 @@
 .cards {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -1rem;
   margin-right: -1rem;
+  margin-left: -1rem;
 }
 .cards .card {
   display: flex;
@@ -26,7 +26,7 @@
   font-size: var(--section-subtitle-font-size);
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: var(--responsive-mobile-width)) {
   .cards .card {
     width: 100%;
     margin: 0;

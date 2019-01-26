@@ -56,7 +56,7 @@
   border-bottom-color: var(--color-red);
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: var(--responsive-mobile-width)) {
   .site-header-content {
     flex-direction: column;
     height: 100%;

@@ -14,13 +14,7 @@
       </header>
 
       <div class="page-abstracts">
-        <h3 class="page-abstract-title">About EZLynx</h3>
-        <div class="page-abstract-desc">
-          <p>
-            EZLynx designs software that enables independent insurance agencies to do everything from get multiple quotes
-            from competing insurance agencies and manage the end to end agency workflow from sales to pricing to support.
-          </p>
-        </div>
+        <company-ezlynx></company-ezlynx>
       </div>
 
       <div class="project-page-details">
@@ -29,10 +23,16 @@
           <div class="page-details-desc">
             <p>
               For insurance agencies dealing with commercial clients (e.g. companies with fleets of vehicles, or managing
-              apartment complexes), agents have to input a considerable amount of data for each entity that they want to
-              insure (vehicles, buildings, locations, etc.). Until recently, agents had to manually type in each entry one
-              at a time with only a couple of places where they could bulk upload spreadsheets into the app, the preferred
-              method.
+              apartment complexes), agents have to type in a considerable amount of data for each entity that they want to
+              insure (vehicles, buildings, locations, etc.) every time they want to submit a request for a quote to an insurance
+              company. The agents then have to enter the information again if the customer added or removed vehicles, equipments,
+              or other things to or from their inventory and wanted to update their policy coverage accordingly.</p>
+            <p>
+              Until recently, agents using EZLynx had to manually add or remove those entries one at a time, for every customer
+              that the agent supported. It's a tedious process that takes hours and takes time away from supporting their customers.
+              There were only a couple of places in EZLynx where they could bulk upload spreadsheets into the app, the preferred method.
+              As EZLynx expands support for other types of insurance, the company will have to continue to add bulk upload support to
+              each and every one of these new "Lines of Businesses".
             </p>
           </div>
         </section>
@@ -40,6 +40,16 @@
         <section class="page-details">
           <h3 class="page-details-title">Discovery</h3>
           <div class="page-details-desc">
+            <p>At the heart of the problem is the need to modularize the EZLynx app with reusable components and API-driven interfaces.
+              Why would a User Experience designer care about what is at it's core a development issue? One of the advantages I brought to
+              EZLynx was a desire to understand the user experience needs of our users (both employees and customers) on a holistic level
+              rather than simply on a project by project basis.
+
+              The end result is that I'm able to see pain points that affect multiple
+              teams and formulate solutions that can scale out across the organization.
+            </p>
+            <p>Why would a User Experience designer </p>
+
             <p>
               We wanted to extend the ability to bulk upload entities into the many places where users need them. In
               addition, I wanted the developers to create a reusable component that could be reused with minimal
@@ -95,3 +105,13 @@
       </div>
   </section>
 </template>
+
+<script>
+import CompanyEzlynx from '@/components/company/ezlynx.vue';
+export default {
+  name: "project-ezlynx-import-assets",
+  components: {
+    CompanyEzlynx
+  }
+};
+</script>

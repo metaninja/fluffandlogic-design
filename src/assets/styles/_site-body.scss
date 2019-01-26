@@ -1,6 +1,7 @@
 
 .site-body {
   grid-area: body;
+  padding-bottom: 3rem;
 }
 
 .hero {
@@ -30,9 +31,9 @@
   margin-bottom: 3rem;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: var(--responsive-mobile-width)) {
   .benefits .benefit {
     width: 100%;
-    margin: 0;
+    margin: 0 0 3rem 0;
   }
 }
