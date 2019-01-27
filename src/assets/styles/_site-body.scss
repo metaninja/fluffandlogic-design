@@ -31,7 +31,7 @@
   margin-bottom: 3rem;
 }
 
-@media only screen and (max-width: var(--responsive-mobile-width)) {
+@media only screen and (max-width: 800px) {
   .benefits .benefit {
     width: 100%;
     margin: 0 0 3rem 0;

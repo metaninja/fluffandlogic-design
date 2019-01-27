@@ -24,9 +24,9 @@ export default new Router({
       component: () => import("./views/projects/ezlynx/design-system/Project.vue")
     },
     {
-      path: "/projects/ezlynx/import-workflow",
-      name: "ezlynx-import-workflow",
-      component: () => import("./views/projects/ezlynx/import-workflow/Project.vue")
+      path: "/projects/ezlynx/import-assets",
+      name: "ezlynx-import-assets",
+      component: () => import("./views/projects/ezlynx/import-assets/Project.vue")
     },
     {
       path: "/projects/ezlynx/sales-center",

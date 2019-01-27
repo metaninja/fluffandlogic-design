@@ -31,7 +31,7 @@
   font-weight: var(--font-weight-semibold);
 }
 
-@media only screen and (max-width: var(--responsive-mobile-width)) {
+@media only screen and (max-width: 800px) {
   .site-footer-list {
     flex-direction: column;
   }
