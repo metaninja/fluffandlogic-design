@@ -1,0 +1,39 @@
+
+.site-body {
+  grid-area: body;
+  padding-bottom: 3rem;
+}
+
+.hero {
+  font-weight: var(--font-weight-bold);
+  font-size: var(--section-title-font-size);
+  line-height: 1.33333;
+  margin-top: 9rem;
+  margin-bottom: 6rem;
+}
+.benefits {
+  display: flex;
+  flex-wrap: wrap;
+  font-weight: var(--font-weight-regular);
+  font-size: var(--section-subtitle-font-size);
+  line-height: 1.5;
+  list-style: none;
+  padding: 0;
+}
+.benefits .benefit {
+  width: calc((100% / 3) - 2rem);
+  margin: 0 2rem 2rem 0;
+}
+.section-title {
+  font-size: var(--section-title-font-size);
+  line-height: 1;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+}
+
+@media only screen and (max-width: 800px) {
+  .benefits .benefit {
+    width: 100%;
+    margin: 0 0 3rem 0;
+  }
+}

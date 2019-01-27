@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: var(--font-family);
+  font-size: var(--body-font-size);
+  background-color: white;
+}
+h1,h2,h3,h4,h5,h6 {
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+}
+p {
+  margin: 0;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+strong {
+  font-weight: 600;
+}
+a,
+a:visited {
+  color: var(--color-red);
+  text-decoration: none;
+}
+
+figure {
+  margin: 2rem 0;
+}
+figure img {
+  display: flex;
+}
+caption {
+  display: block;
+  font-size: .9rem;
+  margin-top: .25rem;
+}
+
+@media only screen and (max-width: 800px) {
+  body {
+    font-size: 16px;
+  }
+}
