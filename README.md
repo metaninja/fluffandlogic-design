@@ -1,29 +1,8 @@
-# fluffandlogic-design
+# Fluff and Logic: The Perpetual Penultimate Version
 
-## Project setup
-```
-npm install
-```
+## New beginnings.
+- Ditched the Design Thinking approach. It wasn't working. And it wasn't me.
+- Went from PHP to Angular to Vue.js.
+- Finally updated a lot of the missing content.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Still a long way to go but much further ahead than I was 2 months ago.
