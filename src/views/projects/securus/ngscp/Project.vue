@@ -19,49 +19,198 @@
         <div class="page-abstract-desc">
           <p>
             Securus’s Secure Communication Platform (SCP) is used by prisons to monitor inmate communications with the
-            outside world and to analyze the conversations for potentially criminal activity. By the time Slalom had been
-            hired to update the software, it was 8 years old and showing its age. Performance was atrociously slow. A single
-            search could take upwards of 5-8 minutes to return results.
+            outside world and to analyze the conversations for potentially criminal activity.
           </p>
-          <p>
-            The user interface was extremely complicated and confusing. The interface had designed by developers and had
-            grown organically over the years as new features were added without any thought to information architecture.
-          </p>
+
         </div>
       </div>
 
       <div class="project-page-details">
 
         <section class="page-details">
-          <h3 class="page-details-title">Ideation</h3>
+          <h3 class="page-details-title">Background</h3>
+          <div class="page-details-desc">
+            <p>Features had been layered organically over the years without much thought to the user experience or
+              performance. By 2013, there were millions of records in the system, and the performance had slowed to a
+              crawl. A single search could take upwards of 5-8 minutes before it returned any results (or no
+              results). Users had time to hit search, go make a fresh batch of coffee, and take their time coming
+              back, and would find the search hadn't finished yet.
+            </p>
+
+            <p>
+              The user interface was extremely complicated and confusing. The interface had been designed by developers
+              and had grown organically over the years as new features were added without any thought to information
+              architecture.
+            </p>
+
+            <p>To say nothing of the branding which had become stale and dated and didn't refect the company's
+              philosophy.</p>
+
+            <p>
+              Securus needed to overhaul everything: the backend software, the frontend code, the visual design,
+              information architecture, and even the branding.
+            </p>
+            <figure>
+              <img src="@/assets/images/securus/login.jpg">
+              <figcaption>Redesigned Login Page Using Identity Developed By My UX Manager, Tracey Nolte</figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <section class="page-details">
+          <h3 class="page-details-title">Discovery</h3>
           <div class="page-details-desc">
             <p>
-              I joined the UX team after they had completed the discovery phase and started development. The team was
-              struggling with the tools they were using and was starting to fall behind the development efforts. The team
-              had started prototyping in Axure, but by this time, they had switched to prototyping in code. To speed up the
-              efforts, I helped research a variety of different prototyping tools, but all of them had problems.
+              Sadly, I was <strong>not</strong> involved in the initial discovery process (user research, personas, existing
+              workflows, etc.) Credit for that goes to my colleagues Jesslyn Beattie and Jason Orth who spent months
+              doing user research, creating personas, and  preparing the project for the development team.
             </p>
 
             <p>
-              Finally, with the team falling further behind, I developed my own prototyping tool, called BFF (Barebones
-              Functional Framework), a collection of development libraries and tools tied together by a custom stripped down
-              JavaScript framework that I had developed to help the UX team quickly prototype in code without the steep
-              learning curve of traditional JavaScript frameworks like Angular JS.
+              Instead, I spent a very painful, but ultimately productive six monthson a parallel project at
+              Securus helping to manage a project that was far behind schedule and poorly managed and lacked any
+              developers. I learnt how to write JavaScript code using the AngularJS UI framework, and about front-end
+              tools like Grunt for task automation, Subversion for source control, and Bower to install packages.
+              Developing with AngularJS not only racheted up my front-end development skills but also taught me the
+              value of breaking up functionality into reusable, API-driven components.
             </p>
 
             <p>
-              By prototyping in code, we were able to continuously build on top of the existing code and create reusable
-              components that could grow with the team. A month or so in, the rest of the UX team left the prototyping to me
-              so they could focus on managing the client stakeholders and the 2-3 agile teams working on the project out of
-              multiple locations.
+              By the time I joined the NGSCP UX team, the discovery process had been completed and development had
+              begun. The team had been struggling to keep pace with the developers. They had been using traditional
+              design tools like Axure, but the developers needed more direct guidance and there wasn't a front-end
+              designer or developer to help convert mockups into usable code.
+            </p>
+          </div>
+        </section>
+
+        <section class="page-details">
+          <h3 class="page-details-title">Discovery</h3>
+          <div class="page-details-desc">
+
+            <p>
+              The UX team of Jesslyn and Jason had resorted to designing in code using a pair of now defunct online
+              editors &mdash; DivShot at first, and then JetStrap &mdash; that outputted HTML using the Bootstrap UI
+              Framework. But the code was only barely usable and the team continued to fall behind.
             </p>
 
             <p>
-              As part of the prototyping effort, I developed a set of design guidelines that the app would follow. A few
-              months in, my UX manager developed a new identity for Securus. I helped roll out the new styles across the
-              prototype. I also jumped into front-end development periodically to ensure the development environment was in
-              sync with the prototype.
+              Once I joined the team, I experimented with with several other tools that could help the UX team be
+              productive. Nothing worked. Frustrated, I set aside a couple of days to develop my own tool, using my
+              experience with AngularJS to understand what would make for an effective tool.
             </p>
+
+            <p>
+              The result of that spike was a tool I named <a href="http://bff.how" target="_blank"><strong>BFF</strong></a>,
+              a tongue-in-cheek acronym that stood for Barebones Functional Framework. It was a collection of
+              development libraries and tools tied together by a custom stripped-down JavaScript framework that I
+              wrote from scratch based on my analysis of how Angular JS worked.
+            </p>
+
+            <figure>
+              <img src="@/assets/images/securus/bff.png">
+              <figcaption>
+                BFF (Barebones Functional Framework)
+                </a>
+              </figcaption>
+            </figure>
+
+            <p>
+              With the BFF tool and my ability to prototype in code faster than Jesslyn or Jason (who weren't
+              front-end developers, especially Jason), we finally caught up to the development team and pushed ahead
+              until we had at least several weeks of backlog for the developers to choose from.
+            </p>
+
+            <p>
+              This was only the beginning of my contribution to the NGSCP project. Listed below are some of the roles
+              that I played and deliverables that I delivered over the next year and a half.
+            </p>
+
+            <table>
+              <tr>
+                <th>Role</th>
+                <th>Deliverable</th>
+              </tr>
+              <tr>
+                <td>
+                  User Researcher and Analyst
+                </td>
+                <td>
+                  <ul>
+                    <li>Stakeholder interviews and reviews</li>
+                    <li>Writing user stories</li>
+                    <li>Business Acceptance</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Front-End Designer
+                </td>
+                <td>
+                  <ul>
+                    <li>Prototype designs in code using BFF every week until the end of the project</li>
+                    <li>Develop a pattern library</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Graphics Design
+                </td>
+                <td>
+                  <ul>
+                    <li>Visual Design For NGSCP application</li>
+                    <li>Color Palette</li>
+                    <li>Icons</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Front-End Developer
+                </td>
+                <td>
+                  <ul>
+                    <li>Experiment with new UI libraries</li>
+                    <li>Migrate prototype styles to development environment</li>
+                    <li>Develop design system (towards the end of the project)</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td>Usability Testing</td>
+                <td>
+                  <ul>
+                    <li>Traveled to multiple sites (including an actual prison) to do on-site usability testing</li>
+                    <li>Facilitated usability testing with my UX colleague Brad Hansen</li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+
+          </div>
+        </section>
+
+        <section class="page-details">
+          <h3 class="page-details-title">Visual Design</h3>
+          <div class="page-details-desc">
+
+            <p>Between building out designs in the BFF prototyping engine, and developing the BFF tool itself, there
+            were several improvements to the visual design of the NGSCP application.</p>
+
+            <figure>
+              <img src="@/assets/images/securus/flat-design.jpg">
+              <figcaption>
+                Visual Design Pitch Deck.
+                <a href="/img/securus/flat-design.pdf">
+                  <strong>
+                    View PDF
+                  </strong>
+                </a>
+              </figcaption>
+            </figure>
+
           </div>
         </section>
 
@@ -69,9 +218,11 @@
           <h3 class="page-details-title">Usability Testing</h3>
           <div class="page-details-desc">
             <p>
-              About a year in, we had enough functionality to be able to do usability testing. By then a new colleague had
-              joined the UX team. I helped write the usability testing script with him, and traveled to three separate
-              facilities (including one inside an actual prison) to get user feedback and tweak the design accordingly.
+              About a year in, we had prototyped enough functionality that we needed to do usability testing to
+              ensure users would be comfortable with the new workflow. In addition to preparing the prototype for
+              usability testing, I wrote the usability testing guidelines and scripts. My colleague Brad and I
+              traveled to three separate facilities (including one inside an actual prison) to get user feedback and
+              tweak the design accordingly.
             </p>
           </div>
         </section>
@@ -80,18 +231,30 @@
           <h3 class="page-details-title">Design System</h3>
           <div class="page-details-desc">
             <p>
-              Securus wanted to roll out their new identity and the design we had created for SCP to the rest of the
-              company. Based on our experience working with multiple geographically distributed agile teams, we began to
-              worry about how to ensure consistency across all the applications. We had recently seen a presentation by Gina
-              at SalesForce about how SalesForce had used a design system to ensure consistency and speed development across
-              their organization.
+              During the two years of development, the number of teams working on the project grew from one small team
+              with a handful of developers, to four teams, one based out of Chicago, and another based out of Montreal,
+              with a total of over 30 developers. Each team had a different way of collaborating and handling UI
+              direction.
             </p>
 
             <p>
-              With that in mind, I worked with my UX colleagues to build a set of guidelines and reusable components that
-              Securus developers could use to ensure consistency with the new identity and the design guidelines we had
-              established for Securus.
+              We started with a pattern library to encourage developers to follow a common set og guidelines. This
+              pattern library eventually evolved into a full fledged design system maintained by a dedicated team of
+              designers and developers.
             </p>
+
+            <figure>
+              <img src="@/assets/images/securus/pattern-library.jpg">
+              <figcaption>
+                Pattern Library. Predecessor To Design System
+                <a href="/img/securus/pattern-library.pdf">
+                  <strong>
+                    View PDF
+                  </strong>
+                </a>
+              </figcaption>
+            </figure>
+
           </div>
         </section>
 
@@ -99,7 +262,32 @@
           <h3 class="page-details-title">Results</h3>
           <div class="page-details-desc">
             <p>
-              I left the Securus project before it was completed. However, the BFF prototyping engine that I built at Slalom
+              The Securus NGSCP project ended up becoming one of the most important projects I've worked on. A lot of
+              my current methodologies and philosophy on how to scale design and support the product design process
+              were forged in the fires of the NGSCP project:
+            </p>
+
+            <ul>
+              <li>
+                Refining my techniques for prototyping in code.
+              </li>
+              <li>Building out the BFF prototyping engine, a tool that I continue to use even to this day. I have
+                researched numerous prototyping and development tools, including Webpack, Angular, Vue.js,
+                and even static site generators, but nothing to date matches the speed or ease of use of BFF.
+              </li>
+              <li>
+                Learning how to manage multiple agile teams.
+              </li>
+              <li>
+                Developing and maintaining a design system.
+              </li>
+            </ul>
+
+            <p>
+              <a href="/projects/securus/wireframes/#/pages/dashboard/">
+                <big><strong>View the fully interactive Securus prototype here &raquo;</strong></big>
+              </a><br>
+              <small><strong>Note:</strong> Be patient as it will take a few seconds for the initial load.</small>
             </p>
           </div>
         </section>

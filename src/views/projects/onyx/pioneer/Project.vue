@@ -295,6 +295,15 @@
               and prototype helped Slalom secure this additional contract from Onyx and gave the new Slalom team a
               step up in the development process.
             </p>
+
+            <!--<p>-->
+              <!--<a href="/projects/onyx/#/app/pages/events/view/pickup/">-->
+                <!--<big><strong>View the fully interactive prototype &raquo;</strong></big>-->
+              <!--</a>-->
+              <!--<br>-->
+              <!--<small>(<strong>Note:</strong> that there may be some errors, as the prototype hasn't been updated in a couple of-->
+                <!--years.)</small>-->
+            <!--</p>-->
           </div>
         </section>
 

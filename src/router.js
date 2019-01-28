@@ -21,12 +21,14 @@ export default new Router({
     {
       path: "/projects/ezlynx/design-system",
       name: "ezlynx-design-system",
-      component: () => import("./views/projects/ezlynx/design-system/Project.vue")
+      component: () =>
+        import("./views/projects/ezlynx/design-system/Project.vue")
     },
     {
       path: "/projects/ezlynx/import-assets",
       name: "ezlynx-import-assets",
-      component: () => import("./views/projects/ezlynx/import-assets/Project.vue")
+      component: () =>
+        import("./views/projects/ezlynx/import-assets/Project.vue")
     },
     {
       path: "/projects/ezlynx/sales-center",
@@ -70,6 +72,6 @@ export default new Router({
     }
   ],
   scrollBehavior() {
-    return {x: 0, y: 0}
+    return { x: 0, y: 0 };
   }
 });
