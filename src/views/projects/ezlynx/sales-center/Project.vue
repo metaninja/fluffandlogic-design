@@ -84,14 +84,12 @@
               need to do next to move that prospect closer to purchasing a policy. The process is very similar to a
               kanban board or a tool like Trello.</p>
 
-            <p>
-              <figure>
-                <img src="@/views/projects/ezlynx/sales-center/5-Pannel-Funnel.jpg" style="width: 100%;">
-                <caption>
-                  Reference: <a href="https://fitsmallbusiness.com/sales-funnel-templates/">Fit Small Business</a>
-                </caption>
-              </figure>
-            </p>
+            <figure>
+              <img src="@/assets/images/ezlynx/sales-center/5-Pannel-Funnel.jpg"  class="figure">
+              <figcaption>
+                Reference: <a href="https://fitsmallbusiness.com/sales-funnel-templates/">Fit Small Business</a>
+              </figcaption>
+            </figure>
 
             <p>At each stage of the sales pipeline, there's a large amount of money that will get left on the table if
             the agent doesn't make an effort to call their prospects and move them to the next step in the pipeline. </p>
@@ -129,7 +127,7 @@
             <p>Once I had completed my analysis, I was able to mock up a solution in a few days.</p>
 
             <figure>
-              <img src="@/views/projects/ezlynx/sales-center/sales-center-home.png" style="width: 100%;">
+              <img src="@/assets/images/ezlynx/sales-center/sales-center-home.png"  class="figure">
             </figure>
 
             <p>In the old interface, the sales funnel was represented as a set of tabs with labels that confused everyone.
@@ -153,7 +151,7 @@
             of having it clutter up the landing page as in the original design.</p>
 
             <figure>
-              <img src="@/views/projects/ezlynx/sales-center/sales-center-opportunity.png" style="width: 100%;">
+              <img src="@/assets/images/ezlynx/sales-center/sales-center-opportunity.png"  class="figure">
             </figure>
 
             <p>The information on this screen was non-negotiable. Insurance agents are used to dealing with an incredible
@@ -202,10 +200,10 @@
 </template>
 
 <script>
-import CompanyEzlynx from '@/components/company/ezlynx.vue';
+import CompanyEzlynx from "@/components/company/ezlynx.vue";
 
 export default {
-  name: 'project-ezlynx-import-assets',
+  name: "project-ezlynx-import-assets",
   components: {
     CompanyEzlynx
   }

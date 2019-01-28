@@ -26,18 +26,6 @@ a:visited {
   text-decoration: none;
 }
 
-figure {
-  margin: 2rem 0;
-}
-figure img {
-  display: flex;
-}
-caption {
-  display: block;
-  font-size: .9rem;
-  margin-top: .25rem;
-}
-
 @media only screen and (max-width: 800px) {
   body {
     font-size: 16px;

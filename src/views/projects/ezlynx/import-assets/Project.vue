@@ -88,7 +88,7 @@
                     </p>
 
                     <figure>
-                        <img src="@/views/projects/ezlynx/import-assets/discovery-workflow.svg" style="width: 100%">
+                        <img src="@/assets/images/ezlynx/import-assets/discovery-workflow.svg" style="width: 100%">
                     </figure>
                 </div>
             </section>
@@ -114,23 +114,23 @@
                     </p>
 
                     <figure>
-                        <img src="@/views/projects/ezlynx/import-assets/10-upload-file.png" style="width: 100%">
-                        <caption>Upload File</caption>
+                        <img src="@/assets/images/ezlynx/import-assets/10-upload-file.png" style="width: 100%">
+                        <figcaption>Upload File</figcaption>
                     </figure>
 
                     <figure>
-                        <img src="@/views/projects/ezlynx/import-assets/20-map-col-headers.png" style="width: 100%">
-                        <caption>Map Column Headers</caption>
+                        <img src="@/assets/images/ezlynx/import-assets/20-map-col-headers.png" style="width: 100%">
+                        <figcaption>Map Column Headers</figcaption>
                     </figure>
 
                     <figure>
-                        <img src="@/views/projects/ezlynx/import-assets/30-validating.png" style="width: 100%">
-                        <caption>Validating Data</caption>
+                        <img src="@/assets/images/ezlynx/import-assets/30-validating.png" style="width: 100%">
+                        <figcaption>Validating Data</figcaption>
                     </figure>
 
                     <figure>
-                        <img src="@/views/projects/ezlynx/import-assets/40-fix-errors.png" style="width: 100%">
-                        <caption>Review Imported Data</caption>
+                        <img src="@/assets/images/ezlynx/import-assets/40-fix-errors.png" style="width: 100%">
+                        <figcaption>Review Imported Data</figcaption>
                     </figure>
 
                     <p>Late in the development process, we added the ability to upload files from either the agent's
@@ -139,7 +139,7 @@
                     workflow, that I had to ideate on how to keep the workflow intuitive.</p>
 
                     <figure>
-                        <img src="@/views/projects/ezlynx/import-assets/00-upload-file-workflows.png" style="width:100%">
+                      <img src="@/assets/images/ezlynx/import-assets/00-upload-file-workflows.png" style="width:100%">
                     </figure>
 
                 </div>
