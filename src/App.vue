@@ -26,6 +26,7 @@ export default {
 @import "assets/styles/_inter-ui";
 @import "assets/styles/variables";
 @import "assets/styles/general";
+@import "assets/styles/typography";
 @import "assets/styles/table";
 @import "assets/styles/media";
 @import "assets/styles/cards";

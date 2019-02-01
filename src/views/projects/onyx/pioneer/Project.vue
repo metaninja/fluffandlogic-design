@@ -298,11 +298,13 @@
 
             <!--<p>-->
               <!--<a href="/projects/onyx/#/app/pages/events/view/pickup/">-->
-                <!--<big><strong>View the fully interactive prototype &raquo;</strong></big>-->
+                <!--<span class="bigger"><strong>View the fully interactive prototype &raquo;</strong></span>-->
               <!--</a>-->
               <!--<br>-->
-              <!--<small>(<strong>Note:</strong> that there may be some errors, as the prototype hasn't been updated in a couple of-->
-                <!--years.)</small>-->
+              <!--<span class="smaller">(<strong>Note:</strong> that there may be some errors, as the prototype hasn't
+              been
+              updated in a couple of-->
+                <!--years.)</span>-->
             <!--</p>-->
           </div>
         </section>

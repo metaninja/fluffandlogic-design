@@ -1,6 +1,7 @@
 <template>
     <section class="site-body-content">
         <h2 class="section-title">Projects</h2>
+        <p>Listed below are some of the projects I'm most proud of.</p>
         <section class="cards">
             <div class="card" v-for="item in items" v-bind:key="item.index">
                 <h3 class="card-title">
@@ -42,30 +43,30 @@ const items = [
     company: "Securus",
     url: "projects/securus/ngscp"
   },
-  {
-    index: 5,
-    name: "Order Entry Simplification",
-    company: "FedEx Office",
-    url: "projects/fedex-office/oes"
-  },
-  {
-    index: 6,
-    name: "Building A Design System",
-    company: "EZLynx",
-    url: "projects/ezlynx/design-system"
-  },
-  {
-    index: 7,
-    name: "Establishing A UX Foundation",
-    company: "EZLynx",
-    url: "projects/ezlynx/ux"
-  },
-  {
-    index: 8,
-    name: "Introducing Usability Testing",
-    company: "Slalom",
-    url: "projects/slalom/usability"
-  }
+  // {
+  //   index: 5,
+  //   name: "Order Entry Simplification",
+  //   company: "FedEx Office",
+  //   url: "projects/fedex-office/oes"
+  // },
+  // {
+  //   index: 6,
+  //   name: "Building A Design System",
+  //   company: "EZLynx",
+  //   url: "projects/ezlynx/design-system"
+  // },
+  // {
+  //   index: 7,
+  //   name: "Establishing A UX Foundation",
+  //   company: "EZLynx",
+  //   url: "projects/ezlynx/ux"
+  // },
+  // {
+  //   index: 8,
+  //   name: "Introducing Usability Testing",
+  //   company: "Slalom",
+  //   url: "projects/slalom/usability"
+  // }
 ];
 export default {
   name: "projects",

@@ -67,11 +67,11 @@
             </p>
 
             <p>
-              Instead, I spent a very painful, but ultimately productive six monthson a parallel project at
+              Instead, I spent a very painful, but ultimately productive six months on a parallel project at
               Securus helping to manage a project that was far behind schedule and poorly managed and lacked any
               developers. I learnt how to write JavaScript code using the AngularJS UI framework, and about front-end
               tools like Grunt for task automation, Subversion for source control, and Bower to install packages.
-              Developing with AngularJS not only racheted up my front-end development skills but also taught me the
+              Developing with AngularJS not only ratcheted up my front-end development skills but also taught me the
               value of breaking up functionality into reusable, API-driven components.
             </p>
 
@@ -111,7 +111,6 @@
               <img src="@/assets/images/securus/bff.png">
               <figcaption>
                 BFF (Barebones Functional Framework)
-                </a>
               </figcaption>
             </figure>
 
@@ -220,7 +219,7 @@
             <p>
               About a year in, we had prototyped enough functionality that we needed to do usability testing to
               ensure users would be comfortable with the new workflow. In addition to preparing the prototype for
-              usability testing, I wrote the usability testing guidelines and scripts. My colleague Brad and I
+              usability testing, I wrote the usability testing guidelines and scripts. My UX colleague, Brad, and I
               traveled to three separate facilities (including one inside an actual prison) to get user feedback and
               tweak the design accordingly.
             </p>
@@ -232,13 +231,13 @@
           <div class="page-details-desc">
             <p>
               During the two years of development, the number of teams working on the project grew from one small team
-              with a handful of developers, to four teams, one based out of Chicago, and another based out of Montreal,
-              with a total of over 30 developers. Each team had a different way of collaborating and handling UI
-              direction.
+              with a handful of developers, to four teams &mdash; two based out of the Securus office, one based out of
+              Chicago, and another based out of Montreal, with a total of over 30 developers. Each team had a
+              different way of collaborating and handling UI direction.
             </p>
 
             <p>
-              We started with a pattern library to encourage developers to follow a common set og guidelines. This
+              We started with a pattern library to encourage developers to follow a common set of guidelines. This
               pattern library eventually evolved into a full fledged design system maintained by a dedicated team of
               designers and developers.
             </p>
@@ -285,9 +284,10 @@
 
             <p>
               <a href="/projects/securus/wireframes/#/pages/dashboard/">
-                <big><strong>View the fully interactive Securus prototype here &raquo;</strong></big>
+                <span class="bigger"><strong>View the fully interactive Securus prototype here &raquo;</strong></span>
               </a><br>
-              <small><strong>Note:</strong> Be patient as it will take a few seconds for the initial load.</small>
+              <span class="smaller"><strong>Note:</strong> Be patient as it will take a few seconds for the initial load
+                .</span>
             </p>
           </div>
         </section>
