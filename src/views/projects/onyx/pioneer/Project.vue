@@ -41,12 +41,12 @@
           <p>
             Onyx handled the commissions process and the payment back and forth between hotel chains and event
             managers, freeing up the hotels and event managers to do what they do best: ensure the guests are
-            having the best time they can have.
+            having the best experience they can have.
           </p>
 
           <p>
             Late in 2015, Onyx realized that if they wanted to grow at all, they were going to have to expand beyond
-            the commissions processing market. Slalom was brought into help them understand the opportunities and
+            the commissions processing market. Slalom was brought in to help them understand the opportunities and
             develop a strategy to expand beyond commissions.
           </p>
 
@@ -56,8 +56,8 @@
             I needed to. There was a lot that I didn't know yet about kicking off and managing a UX project.
           </p>
 
-          <p>On top of that, we only six weeks to complete the entire discovery process, an extremely short time
-            for a completely new industry and a green field projects.</p>
+          <p>On top of that, we only had six weeks to complete the entire discovery process, an extremely short time
+            for a completely new industry and a green field project.</p>
 
           <figure>
             <img src="@/assets/images/onyx/screens/10-Login.png" style="width: 100%">
@@ -186,8 +186,13 @@
           <section class="page-details-desc">
 
             <p>
+              The Vision Board, Lean Business Model Canvas, and Project Model Canvas were important in helping our
+              Onyx stakeholders describe the outcome they were hoping for and how to make it sustainable.
+            </p>
+
+            <p>
               Once I had completed the user interviews and analysed the pain points, I started to build the personas
-              and existing user flow.
+              and existing user flows.
             </p>
 
             <figure>
