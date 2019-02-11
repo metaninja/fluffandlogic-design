@@ -43,7 +43,14 @@ const items = [
     company: "Securus",
     url: "projects/securus/ngscp"
   },
-  // {
+  {
+    index: 5,
+    name: "Submission Center",
+    company: "EZLynx",
+    url: "projects/ezlynx/submission-center"
+  },
+
+    // {
   //   index: 5,
   //   name: "Order Entry Simplification",
   //   company: "FedEx Office",

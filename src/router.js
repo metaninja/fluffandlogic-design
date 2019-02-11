@@ -37,6 +37,12 @@ export default new Router({
         import("./views/projects/ezlynx/sales-center/Project.vue")
     },
     {
+      path: "/projects/ezlynx/submission-center",
+      name: "ezlynx-submission-center",
+      component: () =>
+          import("./views/projects/ezlynx/submission-center/Project.vue")
+    },
+    {
       path: "/projects/ezlynx/ux",
       name: "ezlynx-ux",
       component: () => import("./views/projects/ezlynx/ux/Project.vue")
