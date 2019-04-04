@@ -31,24 +31,19 @@
 
             <p>
               EZLynx developed Sales Center to help agents manage this very critical aspect of an agency's workflow.
-              The discovery and development process had taken over a year. By the end, the executive team was ready to launch
-              the product and there wasn't much thought given to the actual user experience. Instead, the team was told
-              to use a workflow and UI design from an existing EZLynx product. The product was rushed to market the week
-              after I joined EZLynx.
+              The discovery and development process had taken over a year. Due to the prolonged development time, the
+              team had to to use the workflow and UI design from an existing EZLynx product so the product could be
+              released on schedule. The product was released to market the week after I joined EZLynx.
             </p>
 
-            <p>
-              This turned out to be a disaster.
-            </p>
-
-            <p>The initial release of Sales Center had enormous usability issues.
+            <p>The initial release of Sales Center had a lot of usability issues.
               A lot of the initial customers cancelled their Sales Center contracts after a couple of months. Switching
               products is incredibly painful for an agency, so once EZLynx lost a customer,
               they wouldn't be coming back for another 4-5 years, unless something radical changed in Sales Center.
             </p>
 
             <p>
-              About six months after the botched Sales Center release, the Product team finally had enough sales data to
+              About six months after the initial Sales Center release, the Product team finally had enough sales data to
               convince the executive team to fix the user experience. That was when I was asked to help.
             </p>
 
@@ -60,15 +55,15 @@
           <h3 class="page-details-title">Discovery</h3>
           <div class="page-details-desc">
             <p>When I started working on the project, I knew little about the sales process. I tried to do some online
-              research to learn about how sales worked and I interviewed the Product Manager, Brenna, to understand the feedback
+              research to learn about how sales worked and I interviewed the Product Manager, to understand the feedback
               from the users and to get access to sales people or agents. I wasn't able to get access to
-              any real users but one of my colleagues, Ryan, had been a sales person in his previous job.
+              any real users. However, one of my colleagues in the Product team had been a sales person in his
+              previous job.
             </p>
 
-            <p>I interviewed
-              Ryan to understand the mindset of a sales person and build a mental model that I could refer to. In
-              addition I did some competitive research on tools for managing the sales process. I then compared the Sales
-              Center interface with what I had learnt and it was obvious what the problem was.
+            <p>I interviewed my colleague to understand the mindset of a sales person and build a mental model that I
+              could refer to. In addition I did some competitive research on tools for managing the sales process. I
+              then compared the Sales Center interface with what I had learnt and it was obvious what the problem was.
             </p>
           </div>
         </section>

@@ -62,8 +62,8 @@
           <div class="page-details-desc">
             <p>
               Sadly, I was <strong>not</strong> involved in the initial discovery process (user research, personas, existing
-              workflows, etc.) Credit for that goes to my colleagues Jesslyn Beattie and Jason Orth who spent months
-              doing user research, creating personas, and  preparing the project for the development team.
+              workflows, etc.) Credit for that goes to the existing UX team who had spent months doing user research,
+              creating personas, and  preparing the project for the development team.
             </p>
 
             <p>
@@ -89,9 +89,9 @@
           <div class="page-details-desc">
 
             <p>
-              The UX team of Jesslyn and Jason had resorted to designing in code using a pair of now defunct online
-              editors &mdash; DivShot at first, and then JetStrap &mdash; that outputted HTML using the Bootstrap UI
-              Framework. But the code was only barely usable and the team continued to fall behind.
+              The UX team had resorted to designing in code using a pair of now defunct online
+              editors that outputted HTML using the Bootstrap UI Framework. But the code was only barely usable and
+              the team continued to fall behind.
             </p>
 
             <p>
@@ -115,9 +115,9 @@
             </figure>
 
             <p>
-              With the BFF tool and my ability to prototype in code faster than Jesslyn or Jason (who weren't
-              front-end developers, especially Jason), we finally caught up to the development team and pushed ahead
-              until we had at least several weeks of backlog for the developers to choose from.
+              With the BFF tool and my ability to prototype in code faster than with the prior prototyping tools. We
+              finally caught up to the development team and pushed ahead until we had at least several weeks of
+              backlog for the developers to choose from.
             </p>
 
             <p>
@@ -182,7 +182,7 @@
                 <td>
                   <ul>
                     <li>Traveled to multiple sites (including an actual prison) to do on-site usability testing</li>
-                    <li>Facilitated usability testing with my UX colleague Brad Hansen</li>
+                    <li>Facilitated usability testing</li>
                   </ul>
                 </td>
               </tr>
@@ -219,9 +219,8 @@
             <p>
               About a year in, we had prototyped enough functionality that we needed to do usability testing to
               ensure users would be comfortable with the new workflow. In addition to preparing the prototype for
-              usability testing, I wrote the usability testing guidelines and scripts. My UX colleague, Brad, and I
-              traveled to three separate facilities (including one inside an actual prison) to get user feedback and
-              tweak the design accordingly.
+              usability testing, I wrote the usability testing guidelines and scripts. I traveled to three separate
+              facilities (including one inside an actual prison) to get user feedback and tweak the design accordingly.
             </p>
           </div>
         </section>

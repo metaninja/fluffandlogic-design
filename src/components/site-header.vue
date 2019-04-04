@@ -3,7 +3,7 @@
         <section class="site-header-content">
             <a href="">
                 <h1 class="site-brand">
-                    Sherif Tariq
+                    Sherif T.
                     <span class="site-tagline">
                         Senior UX Designer
                     </span>

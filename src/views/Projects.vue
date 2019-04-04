@@ -48,9 +48,8 @@ const items = [
     name: "Submission Center",
     company: "EZLynx",
     url: "projects/ezlynx/submission-center"
-  },
-
-    // {
+  }
+  // {
   //   index: 5,
   //   name: "Order Entry Simplification",
   //   company: "FedEx Office",

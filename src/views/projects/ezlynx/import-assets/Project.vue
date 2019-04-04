@@ -29,37 +29,18 @@
                         the information again if the customer added or removed vehicles, equipments, or other things
                         to or from their inventory and wanted to update their policy coverage accordingly.</p>
                     <p>
-                        Until recently, agents using EZLynx had to manually add or remove those entries one at a time,
+                        Until recently, agents had to manually add or remove those entries one at a time,
                         for every customer that the agent supported. It's a tedious process that takes hours and
-                        takes time away from supporting their customers. There were only a couple of places in EZLynx
-                        where they could bulk upload spreadsheets into the app, the preferred method. As EZLynx
-                        expands support for other types of insurance, the company will have to continue to add bulk
-                        upload support to each and every one of these new "Lines of Businesses".
+                        takes time away from supporting their customers. Agents would prefer to bulk upload
+                        data into the app. As EZLynx expands support for other types of insurance, the company will
+                        have to continue to add bulk upload support to each and every one of these new "Lines of
+                        Businesses".
                     </p>
                 </div>
             </section>
 
             <section class="page-details">
                 <h3 class="page-details-title">Discovery</h3>
-                <div class="page-details-desc">
-                    <p>
-                        The problem went beyond simply creating an intuitive UI and required thinking of the import
-                        workflow across all of EZLynx. Why? Since joining EZLynx, I had run into issues where
-                        developers would push back on all but the simplest UI changes. The product managers were
-                        focusing on speed to market and ignoring the enormous tech debt that had resulted from that
-                        approach.
-                    </p>
-
-                    <p>
-                        To get around this problem, I had factor in reusability, modularity, and API-driven
-                        interfaces into my design discussions and then push the product managers and developers to
-                        factor that into the development process.
-                    </p>
-                </div>
-            </section>
-
-            <section class="page-details">
-                <h3 class="page-details-title">Analysis</h3>
                 <div class="page-details-desc">
                     <p>
                         I had worked on an extensive bulk upload workflow for another feature I had helped design (a
@@ -106,10 +87,10 @@
                     </p>
 
                     <p>
-                        Working with the product owner, Ricky, we tweaked the design, removing redundant text,
+                        Working with the product owner, we tweaked the design, removing redundant text,
                         allowing components to flow next to each other. I was concerned that the development team
                         would not be able to achieve the design to our satisfaction, and that concern was borne out
-                        by the team lead.  To resolve this issue, I added one of my UI engineer, Suhas, to the project to
+                        by the team lead.  To resolve this issue, I added one of my UI engineer, to the project to
                         work on the presentation layer (HTML, CSS, Angular JavaScript code).
                     </p>
 

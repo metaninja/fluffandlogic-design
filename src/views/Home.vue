@@ -3,21 +3,24 @@
 
     <p class="hero">
       Hello.<br>
-      I am a senior user experience designer with over a decade of experience scaling nearly every aspect of user experience design from user research to ideation, prototyping, usability testing, visual design, and UI engineering.
+      I am a senior user experience designer with over a decade of experience scaling nearly every aspect of user
+      experience design from user research to ideation, prototyping, usability testing, visual design, and UI
+      engineering.
     </p>
 
     <ul class="benefits">
       <li class="benefit">
-        I’ve worked on agile projects ranging in size from one team with a couple of developers to multiple agile teams each with their own sprints and schedules.
+        I’ve worked on agile projects ranging in size from one team with a couple of developers, to multiple
+        geographically distributed agile teams.
       </li>
       <li class="benefit">
-        I have collaborated with marketing teams to integrate brand and marketing guidance into the design process.
+        I have worked closely with marketing teams to integrate brand and marketing guidance into the design process.
       </li>
       <li class="benefit">
-        I have introduced pattern libraries and design systems to ensure consistency and scale designs to large teams of developers.
+        I have built and maintained design systems to ensure consistency and scale designs to large teams of developers.
       </li>
       <li class="benefit">
-        I have advised product teams on user experience research and ideation.
+        I advise product teams on user centered design and design thinking.
       </li>
       <li class="benefit">
         I’ve introduced usability testing and design systems to multiple companies, and developed tools for my team.

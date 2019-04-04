@@ -14,7 +14,7 @@
                         linkedin.com/in/metaninja
                     </a>
                     <p class="site-footer-list-item-desc">
-                        Most recuiters prefer LinkedIn, so here you go.
+                        Most recruiters prefer LinkedIn, so here you go.
                     </p>
                 </li>
                 <li class="site-footer-list-item">
