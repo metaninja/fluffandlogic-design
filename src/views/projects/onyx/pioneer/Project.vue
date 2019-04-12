@@ -18,18 +18,9 @@
           <h3 class="page-abstract-title">About Onyx</h3>
 
           <p class="page-abstract-desc">
-              In the hotel industry there's a lot of backdoor exchanges that happen for hotels to encourage event
-              organizers and wedding planners to have an event at their facility.
-          </p>
-
-          <p class="page-abstract-desc">
-              One of the tools that hotels use
-              to build this relationship with event managers and event planners is to pay a percentage of the sales
-              from the hotel hosting the event back to the event organizers. Keeping track of those payments and
-              making sure the payments are made can be complicated.
-          </p>
-          <p class="page-abstract-desc">
-            This is where Onyx came in.
+            Hotels use commissions to build long-term relationships with event managers and event planners and
+            encourage  them to use their facilities and services in the future. For a hotel, keeping track of all of
+            the payments can become involved and result in missed payments.
           </p>
         </section>
       </section>
@@ -39,42 +30,24 @@
         <h3 class="page-details-title">Background</h3>
         <section class="page-details-desc">
           <p>
-            Onyx handled the commissions process and the payment back and forth between hotel chains and event
-            managers, freeing up the hotels and event managers to do what they do best: ensure the guests are
-            having the best experience they can have.
+            This is where Onyx came in. Onyx handled the commissions process and the payment back and forth between
+            hotel  chains and event managers, freeing up the hotels and event managers to do what they do best:
+            ensure  the guests have the best experience they can have.
           </p>
 
           <p>
-            Late in 2015, Onyx realized that if they wanted to grow at all, they were going to have to expand beyond
-            the commissions processing market. Slalom was brought in to help them understand the opportunities and
-            develop a strategy to expand beyond commissions.
+            Late in 2015, Onyx approached Slalom to help them grow beyond the commissions processing market.
           </p>
-
-          <p>
-            This was my first project at Slalom as the lead UX designer on the project. I was apprehensive when I
-            joined the project, even knowing that I could always turn to my UX colleagues and my manager for help if
-            I needed to. There was a lot that I didn't know yet about kicking off and managing a UX project.
-          </p>
-
-          <p>On top of that, we only had six weeks to complete the entire discovery process, an extremely short time
-            for a completely new industry and a green field project.</p>
-
-          <figure>
-            <img src="@/assets/images/onyx/screens/10-Login.png" style="width: 100%">
-          </figure>
 
         </section>
 
           <h3 class="page-details-title">Discovery</h3>
           <section class="page-details-desc">
             <p>
-              How do you squeeze a <strong>complete UX discovery workflow</strong> into <strong>six weeks</strong>
-              with one UX designer? The key was to start with the outcome in mind. Once we knew what we had to
-              deliver at the end, we made a list of what artifacts we would need to get to the outcome, and walked
-              back week by week to figure out which activities needed to be completed at the end of each week.
+              With only six weeks to complete the entire project, I had to carefully schedule every step of my user
+              experience process right from the start. The key was to start with the outcome in mind. I then walked
+              back  week by week to figure out what UX artifacts we would need each week to get to the final deliverable.
             </p>
-
-            <p>The following is a rough time line:</p>
 
             <table>
               <tr>
@@ -167,16 +140,36 @@
                 <td>
                   <ul>
                     <li>Coded Prototype</li>
-                    <li>Business Requirement Document (BRD)<sup>*</sup></li>
+                    <li>Business Requirement Document (BRD)</li>
                   </ul>
                 </td>
               </tr>
             </table>
-            <caption>
-              * BRDs are an archaic way of presenting results from a project, dating back to the digital agencies
-              from the dotcom days. Onyx required a BRD as the final deliverable for the project; hence, it was
-              included in the final deliverable.
-            </caption>
+
+            <p>I kicked off the user research by interviewing various users in the events process, including event
+              managers on both the hotel and event side. I
+              developed a set
+            of personas and mapped each persona's user flow to understand where the pain points were.</p>
+
+            <!--<figure>-->
+            <!--<img src="@/assets/images/onyx/current/Pre-Contract.png" class="figure">-->
+            <!--<figcaption>Existing Workflow: Shopping For Venues</figcaption>-->
+            <!--</figure>-->
+
+            <figure>
+              <img src="@/assets/images/onyx/current/Pre-Event.png" class="figure">
+              <figcaption>Existing Workflow: Before The Event</figcaption>
+            </figure>
+
+            <!--<figure>-->
+            <!--<img src="@/assets/images/onyx/current/Event.png" class="figure">-->
+            <!--<figcaption>Existing Workflow: During The Event</figcaption>-->
+            <!--</figure>-->
+
+            <figure>
+              <img src="@/assets/images/onyx/current/Commissions.png" class="figure">
+              <figcaption>Existing Workflow: Post-Event Getting Paid</figcaption>
+            </figure>
 
           </section>
         </section>
@@ -186,46 +179,10 @@
           <section class="page-details-desc">
 
             <p>
-              The Vision Board, Lean Business Model Canvas, and Project Model Canvas were important in helping our
-              Onyx stakeholders describe the outcome they were hoping for and how to make it sustainable.
+              I realized that there was much overlap between the various personas involved in the event management
+              workflow. I used a journey map to show all that information in an easy-to-digest, scannable way.
             </p>
 
-            <p>
-              Once I had completed the user interviews and analysed the pain points, I started to build the personas
-              and existing user flows.
-            </p>
-
-            <figure>
-              <img src="@/assets/images/onyx/current/Pre-Contract.png" class="figure">
-              <figcaption>Existing Workflow: Shopping For Venues</figcaption>
-            </figure>
-
-            <figure>
-              <img src="@/assets/images/onyx/current/Pre-Event.png" class="figure">
-              <figcaption>Existing Workflow: Before The Event</figcaption>
-            </figure>
-
-            <figure>
-              <img src="@/assets/images/onyx/current/Event.png" class="figure">
-              <figcaption>Existing Workflow: During The Event</figcaption>
-            </figure>
-
-            <figure>
-              <img src="@/assets/images/onyx/current/Commissions.png" class="figure">
-              <figcaption>Existing Workflow: Post-Event Getting Paid</figcaption>
-            </figure>
-
-            <p>
-              When I analyzed the workflows and the personas I had built from the user interviews, I realized that
-              there was a lot of overlap between the various personas involved in the event management workflow.
-            </p>
-
-            <p>
-              I needed a visual representation of the pain points that users ran into at various points in the event
-              workflow. A journey map ended up being the most practical way to show all that information in an
-              easy-to-digest, scannable way (although based on my UX manager's advice, I should split each user's
-              journey into a separate journey map):
-            </p>
 
             <figure>
               <img src="@/assets/images/onyx/current/Journey.png" class="figure">
@@ -247,72 +204,16 @@
               information).</p>
 
             <figure>
-              <img src="@/assets/images/onyx/screens/30-Events-Calendar-View.png" class="figure">
-              <figcaption>Screenshot: Event Manager View</figcaption>
-            </figure>
-
-            <figure>
-              <img src="@/assets/images/onyx/screens/110-View-Event-Rooming-List.png" class="figure">
-              <figcaption>Screenshot: How Many Rooms Were Sold Against Contractual Obligations</figcaption>
-            </figure>
-
-            <figure>
-              <img src="@/assets/images/onyx/screens/80-View-Event-Overview-Post-Event.png" class="figure">
-              <figcaption>Screenshot: Keeping Track of Payments Post-Event</figcaption>
+              <div style="display: flex;">
+                <img src="@/assets/images/onyx/screens/onyx-home.png" class="figure">
+                <img src="@/assets/images/onyx/screens/onyx-event-details.png" class="figure">
+              </div>
             </figure>
 
 
           </section>
         </section>
 
-        <section class="page-details">
-          <h3 class="page-details-title">Results</h3>
-          <div class="page-details-desc">
-            <p>
-              The journey map, coded prototype, and BRD were hugely influential in helping the Onyx executive team
-              consider expanding their business beyond the commissions market and into the much larger event
-              management industry.
-            </p>
-            <p>
-              The journey map helped the executives see at a glance where their customers greatest pain points were, but
-              also where their biggest challenges would be and where they should concentrate their limited capital.
-              Since Onyx was a fairly conservative organization with a small development team, the journey map would
-              help them navigate the uncertain waters ahead of them.
-            </p>
-
-            <p>
-              Meanwhile, the prototype helped Onyx visualize what a solution could look like. The prototype was
-              responsive out of the box (i.e. it worked on everything from mobile devices with small screens to
-              desktop environments with plenty of real estate). The product owner was blown away when I presented the
-              Onyx prototype on my phone one afternoon as we were returning from lunch.
-            </p>
-
-            <p>
-              As we were wrapping up the project, I worked with my team members to pitch the idea of a lean
-              startup-style project using the prototype as a starting point to help jump-start Onyx's push into the
-              event management business.
-            </p>
-
-            <p>
-              It took several months for the Onyx executive team to make a decision, but in the end they gave Slalom
-              the go ahead to start a lean-startup style project to build an app using the lessons we had learnt from
-              the discovery project above. By then I had left Slalom, but I am confident that the journey map
-              and prototype helped Slalom secure this additional contract from Onyx and gave the new Slalom team a
-              step up in the development process.
-            </p>
-
-            <!--<p>-->
-              <!--<a href="/projects/onyx/#/app/pages/events/view/pickup/">-->
-                <!--<span class="bigger"><strong>View the fully interactive prototype &raquo;</strong></span>-->
-              <!--</a>-->
-              <!--<br>-->
-              <!--<span class="smaller">(<strong>Note:</strong> that there may be some errors, as the prototype hasn't
-              been
-              updated in a couple of-->
-                <!--years.)</span>-->
-            <!--</p>-->
-          </div>
-        </section>
 
       </section>
 </template>
