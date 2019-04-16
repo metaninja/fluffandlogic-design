@@ -205,8 +205,8 @@
 
             <figure>
               <div style="display: flex;">
-                <img src="@/assets/images/onyx/screens/onyx-home.png" class="figure">
-                <img src="@/assets/images/onyx/screens/onyx-event-details.png" class="figure">
+                <img src="@/assets/images/onyx/screens/onyx-home.png" class="figure" style="margin: .5rem;">
+                <img src="@/assets/images/onyx/screens/onyx-event-details.png" class="figure" style="margin: .5rem;">
               </div>
             </figure>
 
