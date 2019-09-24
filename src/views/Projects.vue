@@ -10,6 +10,7 @@
                     </span>
                     <router-link v-bind:to="item.url">
                         {{ item.name }}
+                        {{ item.name }}
                     </router-link>
                 </h3>
             </div>
