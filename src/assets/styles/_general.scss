@@ -1,50 +1,16 @@
 * {
   box-sizing: border-box;
 }
+
 body {
   margin: 0;
-  font-family: var(--font-family);
-  font-size: var(--body-font-size);
-  background-color: white;
-  hyphens: auto;
-}
-h1,h2,h3,h4,h5,h6 {
-  margin: 0;
   padding: 0;
-  font-weight: 600;
+  font-size: 16px;
+  background-color: white;
+  font: 16px/36px 'Montserrat', sans-serif;
 }
-p {
-  margin: 0;
-  margin-bottom: 1.5rem;
-  line-height: 1.5;
-}
-strong {
-  font-weight: 600;
-}
+
 a {
-  word-break: break-word;
-  color: var(--color-red);
+  color: $color-black;
   text-decoration: none;
-}
-
-ul,
-ol {
-  line-height: 1.5;
-  padding-left: 1rem;
-}
-
-ul ul,
-ol ol {
-  padding-left: 1.5rem;
-  margin-top: 1rem;
-}
-
-li {
-  margin-bottom: .75rem;
-}
-
-@media only screen and (max-width: 800px) {
-  body {
-    font-size: 16px;
-  }
 }

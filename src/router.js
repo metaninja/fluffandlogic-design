@@ -1,81 +1,66 @@
 import Vue from "vue";
 import Router from "vue-router";
 import Home from "./views/Home.vue";
+import About from "./views/About.vue";
+import Contact from "./views/Contact.vue";
+import Bff from "./views/projects/Bff.vue";
+import Cocoa from "./views/projects/Cocoa.vue";
+import HackerNews from "./views/projects/HackerNews.vue";
+import Onyx from "./views/projects/Onyx.vue";
+import Securus from "./views/projects/Securus.vue";
+import Uptime from "./views/projects/Uptime.vue";
 
 Vue.use(Router);
 
 export default new Router({
-  // mode: "hash",
   base: process.env.BASE_URL,
   routes: [
     {
       path: "/",
+      alias: "/projects",
       name: "home",
       component: Home
     },
     {
-      path: "/projects",
-      name: "projects",
-      component: () => import("./views/Projects.vue")
-    },
-    {
-      path: "/projects/ezlynx/design-system",
-      name: "ezlynx-design-system",
-      component: () =>
-        import("./views/projects/ezlynx/design-system/Project.vue")
-    },
-    {
-      path: "/projects/ezlynx/import-assets",
-      name: "ezlynx-import-assets",
-      component: () =>
-        import("./views/projects/ezlynx/import-assets/Project.vue")
-    },
-    {
-      path: "/projects/ezlynx/sales-center",
-      name: "ezlynx-sales-center",
-      component: () =>
-        import("./views/projects/ezlynx/sales-center/Project.vue")
-    },
-    {
-      path: "/projects/ezlynx/submission-center",
-      name: "ezlynx-submission-center",
-      component: () =>
-          import("./views/projects/ezlynx/submission-center/Project.vue")
-    },
-    {
-      path: "/projects/ezlynx/ux",
-      name: "ezlynx-ux",
-      component: () => import("./views/projects/ezlynx/ux/Project.vue")
-    },
-    {
-      path: "/projects/fedex-office/oes",
-      name: "fedex-office-oes",
-      component: () => import("./views/projects/fedexoffice/oes/Project.vue")
-    },
-    {
-      path: "/projects/onyx/pioneer",
-      name: "onynx-pioneer",
-      component: () => import("./views/projects/onyx/pioneer/Project.vue")
-    },
-    {
-      path: "/projects/securus/ngscp",
-      name: "securus-ngscp",
-      component: () => import("./views/projects/securus/ngscp/Project.vue")
-    },
-    {
-      path: "/projects/slalom/usability",
-      name: "slalom-usability",
-      component: () => import("./views/projects/slalom/usability/Project.vue")
-    },
-    {
       path: "/about",
       name: "about",
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () =>
-        import(/* webpackChunkName: "about" */ "./views/About.vue")
-    }
+      component: About
+    },
+    {
+      path: "/contact",
+      name: "contact",
+      component: Contact
+    },
+    {
+      path: "/project/cocoa",
+      name: "cocoa",
+      component: Cocoa
+    },
+    {
+      path: "/project/securus",
+      name: "securus",
+      component: Securus
+    },
+    {
+      path: "/project/onyx",
+      name: "onyx",
+      component: Onyx
+    },
+    {
+      path: "/project/bff",
+      name: "bff",
+      component: Bff
+    },
+    {
+      path: "/project/hackernews",
+      name: "hackernews",
+      component: HackerNews
+    },
+    {
+      path: "/project/uptime",
+      name: "uptime",
+      component: Uptime
+    },
   ],
   scrollBehavior() {
     return { x: 0, y: 0 };

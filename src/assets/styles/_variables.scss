@@ -1,26 +1,6 @@
-:root {
-  --site-width-max: 1440px;
-  --site-width-min: 600px;
-  --site-header-height: 144px;
-  --footer-height: 496px;
+$color-black: #353535;
+$color-gray-lightest: #F9F9F9;
+$color-inverse: white;
 
-  --color-gray-lightest: #F6F6F6;
-  --color-gray-lighter: #DBDBDB;
-  --color-black: #2A2A2A;
-  --color-red: #EA2100;
-
-  --font-family: "Inter UI";
-  --font-weight-regular: 400;
-  --font-weight-semibold: 600;
-  --font-weight-bold: 700;
-
-  --body-font-size: 20px;
-  --section-title-font-size: 2.5rem;
-  --section-subtitle-font-size: 1.5rem;
-
-  --border-width-1: 1px;
-  --border-width-2: 2px;
-  --border-width-3: 4px;
-}
-
-$responsive-mobile-width: 800px;
+$font-weight-regular: 400;
+$font-weight-bold: 700;
