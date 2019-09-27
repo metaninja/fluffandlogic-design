@@ -19,6 +19,8 @@
         <p>
           Cocoa is a fictional app based on my experience designing insurance software. The goal is to figure out where
           insurance software needs to go to appeal to the next generation of insurance agents: Generation Z and beyond.
+          For more details on this project, including context scenarios and other research information,
+          <router-link to="/contact">contact me</router-link>.
         </p>
       </div>
     </div>
