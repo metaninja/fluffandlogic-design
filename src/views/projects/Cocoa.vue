@@ -27,7 +27,7 @@
 
     <div class="section-container" style="background-color: #f8f8f8;">
       <div class="section pt-64 pb-64">
-        <div class="col">
+        <div class="col center">
           <h3 class="section-title">Meet Maria.</h3>
           <p class="section-desc">
             Maria is a young insurance agent. She’s completed her training and is looking for a way to earn a living as
@@ -43,7 +43,7 @@
             demands a higher quality experience.
           </p>
         </div>
-        <div class="col">
+        <div class="col center">
           <img src="/img/projects/cocoa/photo-maria.jpg" class="cocoa-screenshot" style="width: 350px; height: 350px;">
         </div>
       </div>
