@@ -155,6 +155,10 @@
       </div>
     </div>
 
+    <footer>
+      Photo by Omar Lopez on Unsplash
+    </footer>
+
   </main>
 </template>
 

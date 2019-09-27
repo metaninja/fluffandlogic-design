@@ -6,7 +6,7 @@
             </h1>
         </a>
 
-        <nav class="site-nav">
+        <nav class="site-nav" v-bind:class="{ inverse: inverse}">
             <router-link to="/" class="site-nav-link">Home</router-link>
             <router-link to="about" class="site-nav-link">About</router-link>
             <router-link to="contact" class="site-nav-link">Contact</router-link>
@@ -16,6 +16,14 @@
 
 <script>
 export default {
-  name: "SiteHeader"
+  name: "SiteHeader",
+  props: ["inverse"]
 };
 </script>
+
+<style scoped>
+.inverse,
+.inverse a {
+  color: #fff;
+}
+</style>

@@ -27,6 +27,10 @@
 .hero-desc {
   max-width: 600px;
 }
+.hero-inverse .hero-title,
+.hero-inverse .hero-desc {
+  color: $color-inverse;
+}
 .hero-title {
   font-size: 48px;
   margin-bottom: 48px;
