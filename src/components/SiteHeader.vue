@@ -1,6 +1,6 @@
 <template>
     <section class="site-header">
-        <a href="">
+        <a href="/">
             <h1 class="site-brand">
                 Fluff &amp; Logic
             </h1>

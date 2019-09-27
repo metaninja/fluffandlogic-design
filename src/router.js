@@ -32,32 +32,32 @@ export default new Router({
       component: Contact
     },
     {
-      path: "/project/cocoa",
+      path: "/projects/cocoa",
       name: "cocoa",
       component: Cocoa
     },
     {
-      path: "/project/securus",
+      path: "/projects/securus",
       name: "securus",
       component: Securus
     },
     {
-      path: "/project/onyx",
+      path: "/projects/onyx",
       name: "onyx",
       component: Onyx
     },
     {
-      path: "/project/bff",
+      path: "/projects/bff",
       name: "bff",
       component: Bff
     },
     {
-      path: "/project/hackernews",
+      path: "/projects/hackernews",
       name: "hackernews",
       component: HackerNews
     },
     {
-      path: "/project/uptime",
+      path: "/projects/uptime",
       name: "uptime",
       component: Uptime
     },
