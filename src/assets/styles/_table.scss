@@ -1,0 +1,33 @@
+.data-table {
+  width: 80%;
+  margin: 24px;
+  border-collapse: collapse;
+}
+.data-table,
+.data-table th {
+  border-bottom: 2px solid #ccc;
+}
+.data-table th {
+  text-align: left;
+  vertical-align: bottom;
+  padding-left: 1rem;
+}
+.data-table td {
+  vertical-align: top;
+  padding: .5rem 0 .5rem 1rem;
+}
+.data-table tr:nth-child(2n+1) td{
+  background-color: #f8f8f8;
+}
+
+.data-table td:first-child {
+  white-space: nowrap;
+}
+.data-table ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.data-table li {
+  margin-bottom: .75rem;
+}

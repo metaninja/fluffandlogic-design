@@ -17,5 +17,6 @@ export default {
 @import "assets/styles/layout";
 @import "assets/styles/header";
 @import "assets/styles/typography";
+@import "assets/styles/table";
 @import "assets/styles/utilities";
 </style>

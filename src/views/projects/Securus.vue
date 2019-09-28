@@ -54,123 +54,129 @@
 
     <div class="section-container">
       <div class="section pt-64 pb-64">
-        <div class="col center">
-          <img src="/img/projects/securus/securus-calls.jpg" class="screenshot">
-        </div>
-        <div class="col center">
-          <h3 class="section-title">Prototyping in Code.</h3>
-          <p class="section-desc">
-            When I joined the project, the UX  team had been struggling to keep pace with the developers. They had been
-            using traditional design tools like Axure, but the developers needed more direct guidance. The team had
-            resorted to designing in code using a pair of now defunct online editors. But the code was only barely
-            usable and the team continued to fall behind.
-          </p>
+        <div class="row">
+          <div class="col center">
+            <img src="/img/projects/securus/securus-calls.jpg" class="screenshot">
+          </div>
+          <div class="col center">
+            <h3 class="section-title">Prototyping in Code.</h3>
+            <p class="section-desc">
+              When I joined the project, the UX  team had been struggling to keep pace with the developers. They had been
+              using traditional design tools like Axure, but the developers needed more direct guidance. The team had
+              resorted to designing in code using a pair of now defunct online editors. But the code was only barely
+              usable and the team continued to fall behind.
+            </p>
 
-          <p class="section-desc">
-            I set aside a couple of days to develop my own tool. The result of that spike was a tool I named BFF, a
-            tongue-in-cheek acronym that stood for Barebones Functional Framework. With BFF, we finally caught up to the
-            development team and pushed ahead until we had at least several weeks of backlog for the developers to
-            choose from.
-          </p>
+            <p class="section-desc">
+              I set aside a couple of days to develop my own tool. The result of that spike was a tool I named BFF, a
+              tongue-in-cheek acronym that stood for Barebones Functional Framework. With BFF, we finally caught up to the
+              development team and pushed ahead until we had at least several weeks of backlog for the developers to
+              choose from.
+            </p>
 
-          <p class="section-desc">
-            In addition to building the BFF prototyping tool, I took on others roles over the next year and a half (see
-            below).
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div class="section-container">
-      <div class="section pt-64 pb-64">
-        <div class="col center">
-
-          <table>
-            <tr>
-              <th>Role</th>
-              <th>Deliverable</th>
-            </tr>
-            <tr>
-              <td>
-                User Research and Analysis
-              </td>
-              <td>
-                <ul>
-                  <li>Stakeholder interviews and reviews</li>
-                  <li>Writing user stories</li>
-                  <li>Business Acceptance</li>
-                </ul>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                Front-End Design
-              </td>
-              <td>
-                <ul>
-                  <li>Prototype designs in code using BFF every week until the end of the project</li><li>Develop a pattern library</li>
-                </ul>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                Graphics Design
-              </td>
-              <td>
-                <ul>
-                  <li>Visual Design For NGSCP application</li>
-                  <li>Color Palette</li>
-                  <li>Icons</li>
-                </ul>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                Front-End Development
-              </td>
-              <td>
-                <ul>
-                  <li>Experiment with new UI libraries</li>
-                  <li>Migrate prototype styles to development environment</li>
-                  <li>Develop design system (towards the end of the project)</li>
-                </ul>
-              </td>
-            </tr>
-            <tr>
-              <td>Usability Testing</td>
-              <td>
-                <ul>
-                  <li>Traveled to multiple sites (including an actual prison) to do on-site usability testing</li>
-                  <li>Facilitated usability testing</li>
-                </ul>
-              </td>
-            </tr>
-          </table>
-
-        </div>
-        <div class="col center">
-          <img src="/img/projects/securus/securus-dashboard.jpg" class="screenshot">
+            <p class="section-desc">
+              In addition to building the BFF prototyping tool, I took on others roles over the next year and a half (see
+              below).
+            </p>
+          </div>
         </div>
       </div>
     </div>
 
     <div class="section-container">
       <div class="section pt-64 pb-64">
-        <div class="col center">
-          <img src="/img/projects/securus/securus-design-system.jpg" class="screenshot">
-        </div>
-        <div class="col center">
-          <h3 class="section-title">Building a Design System.</h3>
-          <p class="section-desc">
-            The number of teams working on the project grew from one small team with a handful of developers, to four
-            teams: two based out of the Securus office, one based out of Chicago, and another based out of Montreal,
-            with a total of over 30 developers.
-          </p>
+        <div class="row">
+          <div class="col center">
 
-          <p class="section-desc">
-            To maintain consistency in the design, and reduce developer frustration, I helped build a design system that
-            was eventually maintained by a dedicated team of designers and developers.
-          </p>
+            <table class="data-table">
+              <tr>
+                <th>Role</th>
+                <th>Deliverables</th>
+              </tr>
+              <tr>
+                <td>
+                  User Research and Analysis
+                </td>
+                <td>
+                  <ul>
+                    <li>Stakeholder interviews and reviews</li>
+                    <li>Writing user stories</li>
+                    <li>Business Acceptance</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Front-End Design
+                </td>
+                <td>
+                  <ul>
+                    <li>Prototype designs in code using BFF every week until the end of the project</li><li>Develop a pattern library</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Graphics Design
+                </td>
+                <td>
+                  <ul>
+                    <li>Visual Design For NGSCP application</li>
+                    <li>Color Palette</li>
+                    <li>Icons</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Front-End Development
+                </td>
+                <td>
+                  <ul>
+                    <li>Experiment with new UI libraries</li>
+                    <li>Migrate prototype styles to development environment</li>
+                    <li>Develop design system (towards the end of the project)</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td>Usability Testing</td>
+                <td>
+                  <ul>
+                    <li>Traveled to multiple sites (including an actual prison) to do on-site usability testing</li>
+                    <li>Facilitated usability testing</li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+
+          </div>
+          <div class="col center">
+            <img src="/img/projects/securus/securus-dashboard.jpg" class="screenshot">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-container">
+      <div class="section pt-64 pb-64">
+        <div class="row">
+          <div class="col center">
+            <img src="/img/projects/securus/securus-design-system.jpg" class="screenshot">
+          </div>
+          <div class="col center">
+            <h3 class="section-title">Building a Design System.</h3>
+            <p class="section-desc">
+              The number of teams working on the project grew from one small team with a handful of developers, to four
+              teams: two based out of the Securus office, one based out of Chicago, and another based out of Montreal,
+              with a total of over 30 developers.
+            </p>
+
+            <p class="section-desc">
+              To maintain consistency in the design, and reduce developer frustration, I helped build a design system that
+              was eventually maintained by a dedicated team of designers and developers.
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -187,43 +193,10 @@
 </script>
 
 <style scoped>
-  table {
-    width: 80%;
-    margin: 24px;
-    border-collapse: collapse;
-  }
-  table,
-  th {
-    border-bottom: 2px solid #ccc;
-  }
   .screenshot {
     max-width: 100%;
     border: 1px solid rgba(0,0,0,.12);
     box-shadow: 0 1px 25px rgba(0,0,0,.2);
     border-radius: 8px;
-  }
-  th {
-    text-align: left;
-    vertical-align: bottom;
-    padding-left: 1rem;
-  }
-  td {
-    vertical-align: top;
-    padding: .5rem 0 .5rem 1rem;
-  }
-  tr:nth-child(2n+1) td{
-    background-color: #f8f8f8;
-  }
-
-   td:first-child {
-    white-space: nowrap;
-  }
-  td ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-  li {
-    margin-bottom: .75rem;
   }
 </style>

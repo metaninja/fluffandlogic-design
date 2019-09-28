@@ -46,6 +46,7 @@
   width: 100%;
   max-width: $max-content-width;
   display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 .section .section-title,
