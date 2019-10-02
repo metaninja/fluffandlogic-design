@@ -167,6 +167,7 @@
 
     <footer>
       Photo by Omar Lopez on Unsplash
+      <site-footer class="site-footer-container" style="background-color: #F0CF73;"></site-footer>
     </footer>
 
   </main>
@@ -174,9 +175,10 @@
 
 <script>
     import SiteHeader from '@/components/SiteHeader.vue';
+    import SiteFooter from '@/components/SiteFooter.vue';
     export default {
         name: "Cocoa",
-        components: { SiteHeader }
+        components: { SiteHeader, SiteFooter }
     }
 </script>
 

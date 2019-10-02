@@ -69,22 +69,22 @@
         </div>
       </router-link>
 
-      <router-link to="/projects/bff">
-        <div class="project-container color-inverse" style="background-color: #00305C;">
-          <div class="project">
-            <div class="project-media" style="background: url(/img/home/bff.png) no-repeat center bottom">
-            </div>
-            <div class="project-text">
-              <h3 class="project-title">
-                BFF
-              </h3>
-              <p class="project-desc">
-                A rapid prototyping framework for UX designers.
-              </p>
-            </div>
-          </div>
-        </div>
-      </router-link>
+<!--      <router-link to="/projects/bff">-->
+<!--        <div class="project-container color-inverse" style="background-color: #00305C;">-->
+<!--          <div class="project">-->
+<!--            <div class="project-media" style="background: url(/img/home/bff.png) no-repeat center bottom">-->
+<!--            </div>-->
+<!--            <div class="project-text">-->
+<!--              <h3 class="project-title">-->
+<!--                BFF-->
+<!--              </h3>-->
+<!--              <p class="project-desc">-->
+<!--                A rapid prototyping framework for UX designers.-->
+<!--              </p>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </router-link>-->
 
       <router-link to="/projects/hackernews">
         <div class="project-container color-inverse" style="background-color: #F66403;">
@@ -103,27 +103,33 @@
         </div>
       </router-link>
 
-      <router-link to="/projects/uptime">
-        <div class="project-container color-inverse" style="background-color: #401361;">
-          <div class="project">
-            <div class="project-media" style="background: url(/img/home/uptime.png) no-repeat center center">
-            </div>
-            <div class="project-text">
-              <p class="project-desc">
-                Experimental branding for an environmental control company that I worked for years ago.
-              </p>
-            </div>
-          </div>
-        </div>
-      </router-link>
+<!--      <router-link to="/projects/uptime">-->
+<!--        <div class="project-container color-inverse" style="background-color: #401361;">-->
+<!--          <div class="project">-->
+<!--            <div class="project-media" style="background: url(/img/home/uptime.png) no-repeat center center">-->
+<!--            </div>-->
+<!--            <div class="project-text">-->
+<!--              <p class="project-desc">-->
+<!--                Experimental branding for an environmental control company that I worked for years ago.-->
+<!--              </p>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </router-link>-->
+
+    <footer>
+      <site-footer class="site-footer-container"></site-footer>
+    </footer>
+
   </main>
 </template>
 
 <script>
 import SiteHeader from '@/components/SiteHeader.vue';
+import SiteFooter from "@/components/SiteFooter.vue";
 export default {
   name: "home",
-  components: { SiteHeader }
+  components: { SiteHeader, SiteFooter }
 };
 </script>
 

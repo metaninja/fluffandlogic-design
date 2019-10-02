@@ -198,11 +198,8 @@
       </div>
     </div>
 
-
-
-
     <footer>
-
+      <site-footer class="site-footer-container inverse" style="background-color: #FFA802;"></site-footer>
     </footer>
 
   </main>
@@ -210,9 +207,10 @@
 
 <script>
     import SiteHeader from '@/components/SiteHeader.vue';
+    import SiteFooter from "@/components/SiteFooter.vue";
     export default {
         name: "Onyx",
-        components: { SiteHeader }
+        components: { SiteHeader, SiteFooter }
     }
 </script>
 

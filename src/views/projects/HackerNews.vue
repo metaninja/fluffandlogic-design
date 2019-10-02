@@ -14,43 +14,29 @@
       </div>
     </header>
 
-    <div class="summary-container">
-      <div class="summary">
-        <p>
+<!--    <div class="summary-container">-->
+<!--      <div class="summary">-->
+<!--        <p>-->
 
-        </p>
-      </div>
-    </div>
+<!--        </p>-->
+<!--      </div>-->
+<!--    </div>-->
 
-    <div class="section-container" style="background-color: #f8f8f8;">
-      <div class="section pt-64 pb-64">
-        <div class="row">
-          <div class="col">
-            <h3 class="section-title">Six Weeks.</h3>
-          </div>
-          <div class="col">
-            <p class="section-desc">
+<!--    <div class="section-container" style="background-color: #f8f8f8;">-->
+<!--      <div class="section pt-64 pb-64">-->
+<!--        <div class="row">-->
+<!--          <div class="col">-->
+<!--          </div>-->
+<!--          <div class="col">-->
+<!--            <p class="section-desc">-->
 
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
+<!--            </p>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
 
-    <div class="section-container pt-64 pb-64">
-      <div class="section">
-        <p>
-          I kicked off the user research by interviewing various users in the events process, including event managers
-          on both the hotel and event side. I developed a set of personas and mapped each persona's user flow to
-          understand where the pain points were. Below are some of the user flows.
-        </p>
 
-        <div class="figure">
-          <img src="/img/projects/hacker-news/hacker-news-sitemap.svg" style="width: 100%; max-width: 1440px">
-        </div>
-
-      </div>
-    </div>
 
     <div class="section-container">
       <div class="section center" style="width: auto; max-width: auto;">
@@ -76,11 +62,8 @@
       </div>
     </div>
 
-
-
-
     <footer>
-
+      <site-footer class="site-footer-container inverse" style="background-color: #FF6600;"></site-footer>
     </footer>
 
   </main>
@@ -88,9 +71,10 @@
 
 <script>
     import SiteHeader from '@/components/SiteHeader.vue';
+    import SiteFooter from "@/components/SiteFooter.vue";
     export default {
         name: "HackerNews",
-        components: { SiteHeader }
+        components: { SiteHeader, SiteFooter }
     }
 </script>
 
