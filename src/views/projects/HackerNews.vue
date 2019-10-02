@@ -70,31 +70,7 @@
             <img src="/img/projects/hacker-news/hacker-news-comments.jpg" class="screenshot">
           </div>
           <div class="col center">
-            <img src="/img/projects/hacker-news/hacker-news-reply.jpg" class="screenshot">
-          </div>
-        </div>
-
-        <div class="row pt-64 pb-64">
-          <div class="col center">
-            <img src="/img/projects/hacker-news/hacker-news-submit-link.jpg" class="screenshot">
-          </div>
-          <div class="col center">
-            <img src="/img/projects/hacker-news/hacker-news-discussion-question.jpg" class="screenshot">
-          </div>
-          <div class="col center">
             <img src="/img/projects/hacker-news/hacker-news-navigation.jpg" class="screenshot">
-          </div>
-        </div>
-
-        <div class="row pt-64 pb-64">
-          <div class="col center">
-            <img src="/img/projects/hacker-news/hacker-news-login.jpg" class="screenshot">
-          </div>
-          <div class="col center">
-            <img src="/img/projects/hacker-news/hacker-news-create-account.jpg" class="screenshot">
-          </div>
-          <div class="col center">
-
           </div>
         </div>
       </div>
