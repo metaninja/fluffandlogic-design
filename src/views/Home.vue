@@ -16,58 +16,74 @@
       </div>
     </header>
 
-      <router-link to="/projects/cocoa">
-        <div class="project-container" style="background-color: #F0CF73;">
-          <div class="project">
-            <div class="project-text">
-              <h3 class="project-title">
-                Cocoa
-              </h3>
-              <p class="project-desc">
-                An experiment in branding and app design, exploring the future of commercial  insurance software for
-                Gen Z.
-              </p>
-            </div>
-            <div class="project-media" style="background: url(/img/home/cocoa.jpg) no-repeat center bottom">
-            </div>
+    <router-link to="/projects/yobi">
+      <div class="project-container color-inverse" style="background-color: #852DDD;">
+        <div class="project">
+          <div class="project-text">
+            <h3 class="project-title">
+              Yobi
+            </h3>
+            <p class="project-desc">
+              Designing an innovative mobile experience for a seed-stage startup.
+            </p>
+          </div>
+          <div class="project-media" style="background: url(/img/home/yobi.png) no-repeat center bottom"></div>
+        </div>
+      </div>
+    </router-link>
+
+    <router-link to="/projects/cocoa">
+      <div class="project-container" style="background-color: #F0CF73;">
+        <div class="project">
+          <div class="project-text">
+            <h3 class="project-title">
+              Cocoa
+            </h3>
+            <p class="project-desc">
+              An experiment in branding and app design, exploring the future of commercial  insurance software for
+              Gen Z.
+            </p>
+          </div>
+          <div class="project-media" style="background: url(/img/home/cocoa.jpg) no-repeat center bottom">
           </div>
         </div>
-      </router-link>
+      </div>
+    </router-link>
 
-      <router-link to="/projects/securus">
-        <div class="project-container color-inverse" style="background-color: #0174C8;">
-          <div class="project">
-            <div class="project-media" style="background: url(/img/home/securus.jpg) no-repeat right bottom">
-            </div>
-            <div class="project-text">
-              <h3 class="project-title">
-                Securus
-              </h3>
-              <p class="project-desc">
-                Re-architecting, re-branding, and modernizing a core application.
-              </p>
-            </div>
+    <router-link to="/projects/securus">
+      <div class="project-container color-inverse" style="background-color: #0174C8;">
+        <div class="project">
+          <div class="project-media" style="background: url(/img/home/securus.jpg) no-repeat right bottom">
+          </div>
+          <div class="project-text">
+            <h3 class="project-title">
+              Securus
+            </h3>
+            <p class="project-desc">
+              Re-architecting, re-branding, and modernizing a core application.
+            </p>
           </div>
         </div>
-      </router-link>
+      </div>
+    </router-link>
 
-      <router-link to="/projects/onyx">
-        <div class="project-container" style="background-color: #FFA802;">
-          <div class="project">
-            <div class="project-text">
-              <h3 class="project-title">
-                Onyx
-              </h3>
-              <p class="project-desc">
-                Helping a company break out of their niche into a bigger, more profitable, market.
-              </p>
-            </div>
-            <div class="project-media" style="background: url(/img/home/onyx.jpg) no-repeat center bottom">
+    <router-link to="/projects/onyx">
+      <div class="project-container" style="background-color: #FFA802;">
+        <div class="project">
+          <div class="project-text">
+            <h3 class="project-title">
+              Onyx
+            </h3>
+            <p class="project-desc">
+              Helping a company break out of their niche into a bigger, more profitable, market.
+            </p>
+          </div>
+          <div class="project-media" style="background: url(/img/home/onyx.jpg) no-repeat center bottom">
 
-            </div>
           </div>
         </div>
-      </router-link>
+      </div>
+    </router-link>
 
 <!--      <router-link to="/projects/bff">-->
 <!--        <div class="project-container color-inverse" style="background-color: #00305C;">-->
@@ -86,22 +102,22 @@
 <!--        </div>-->
 <!--      </router-link>-->
 
-      <router-link to="/projects/hackernews">
-        <div class="project-container color-inverse" style="background-color: #F66403;">
-          <div class="project">
-            <div class="project-text">
-              <h3 class="project-title">
-                Hacker News
-              </h3>
-              <p class="project-desc">
-                An experiment in designing a better mobile experience for the Hacker news website.
-              </p>
-            </div>
-            <div class="project-media" style="background: url(/img/home/hacker-news.jpg) no-repeat center bottom">
-            </div>
+    <router-link to="/projects/hackernews">
+      <div class="project-container color-inverse" style="background-color: #F66403;">
+        <div class="project">
+          <div class="project-text">
+            <h3 class="project-title">
+              Hacker News
+            </h3>
+            <p class="project-desc">
+              An experiment in designing a better mobile experience for the Hacker news website.
+            </p>
+          </div>
+          <div class="project-media" style="background: url(/img/home/hacker-news.jpg) no-repeat center bottom">
           </div>
         </div>
-      </router-link>
+      </div>
+    </router-link>
 
 <!--      <router-link to="/projects/uptime">-->
 <!--        <div class="project-container color-inverse" style="background-color: #401361;">-->

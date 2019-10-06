@@ -7,6 +7,7 @@ import Bff from "./views/projects/Bff.vue";
 import Cocoa from "./views/projects/Cocoa.vue";
 import HackerNews from "./views/projects/HackerNews.vue";
 import Onyx from "./views/projects/Onyx.vue";
+import Yobi from "./views/projects/Yobi.vue";
 import Securus from "./views/projects/Securus.vue";
 import Uptime from "./views/projects/Uptime.vue";
 
@@ -47,14 +48,19 @@ export default new Router({
       component: Onyx
     },
     {
-      path: "/projects/bff",
-      name: "bff",
-      component: Bff
-    },
-    {
       path: "/projects/hackernews",
       name: "hackernews",
       component: HackerNews
+    },
+    {
+      path: "/projects/yobi",
+      name: "yobi",
+      component: Yobi
+    },
+    {
+      path: "/projects/bff",
+      name: "bff",
+      component: Bff
     },
     {
       path: "/projects/uptime",
