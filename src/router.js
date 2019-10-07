@@ -5,6 +5,7 @@ import About from "./views/About.vue";
 import Contact from "./views/Contact.vue";
 import Bff from "./views/projects/Bff.vue";
 import Cocoa from "./views/projects/Cocoa.vue";
+import Ezlynx from "./views/projects/Ezlynx.vue";
 import HackerNews from "./views/projects/HackerNews.vue";
 import Onyx from "./views/projects/Onyx.vue";
 import Yobi from "./views/projects/Yobi.vue";
@@ -56,6 +57,11 @@ export default new Router({
       path: "/projects/yobi",
       name: "yobi",
       component: Yobi
+    },
+    {
+      path: "/projects/ezlynx",
+      name: "ezlynx",
+      component: Ezlynx
     },
     {
       path: "/projects/bff",

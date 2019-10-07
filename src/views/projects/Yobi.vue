@@ -33,7 +33,7 @@
               But first, they’re going to need funding.
             </h3>
             <p class="section-desc">
-              Silicon Valley is awash in incredibly brilliant and hard-wokring enterpreneurs working on the next big idea.
+              Silicon Valley is awash in incredibly brilliant and hard-working enterpreneurs working on the next big idea.
               To scale their ideas into million (and billion dollar) companies they need funding from venture capitalists
               and other investors so they can build a team and start growing. Yobi’s founder was candid about the problem:
               to secure much needed investment, the pitch had to look amazing. That’s where I came in.

@@ -3,9 +3,6 @@
     <header class="site-header-container">
       <site-header></site-header>
       <div class="hero">
-        <div class="hero-media">
-          <img src="/img/home/photo-sherif-tariq.jpg">
-        </div>
         <div class="hero-text">
           <h2 class="hero-title">Hi. I’m Sherif.</h2>
           <p class="hero-desc">
@@ -13,12 +10,34 @@
             intuitive, user interfaces. What can I do for you?
           </p>
         </div>
+        <div class="hero-media">
+          <img src="/img/home/photo-sherif-tariq.jpg">
+        </div>
       </div>
     </header>
+
+    <router-link to="/projects/ezlynx">
+      <div class="project-container color-inverse" style="background-color: #37474F;">
+        <div class="project">
+          <div class="project-text">
+            <h3 class="project-title">
+              EZLynx
+            </h3>
+            <p class="project-desc">
+              Designing the next generation EZLynx platform.
+            </p>
+          </div>
+          <div class="project-media">
+            <div style="margin-top: 64px; background: url(/img/projects/ezlynx/ezlynx-policies.png) no-repeat left top; width: 100%; height: 584px; box-shadow: 0 -15px 25px rgba(0,0,0,.48)"></div>
+          </div>
+        </div>
+      </div>
+    </router-link>
 
     <router-link to="/projects/yobi">
       <div class="project-container color-inverse" style="background-color: #852DDD;">
         <div class="project">
+          <div class="project-media" style="background: url(/img/home/yobi.png) no-repeat center bottom"></div>
           <div class="project-text">
             <h3 class="project-title">
               Yobi
@@ -27,7 +46,6 @@
               Designing an innovative mobile experience for a seed-stage startup.
             </p>
           </div>
-          <div class="project-media" style="background: url(/img/home/yobi.png) no-repeat center bottom"></div>
         </div>
       </div>
     </router-link>
@@ -85,6 +103,23 @@
       </div>
     </router-link>
 
+    <router-link to="/projects/hackernews">
+      <div class="project-container color-inverse" style="background-color: #F66403;">
+        <div class="project">
+          <div class="project-media" style="background: url(/img/home/hacker-news.jpg) no-repeat center bottom">
+          </div>
+          <div class="project-text">
+            <h3 class="project-title">
+              Hacker News
+            </h3>
+            <p class="project-desc">
+              An experiment in designing a better mobile experience for the Hacker news website.
+            </p>
+          </div>
+        </div>
+      </div>
+    </router-link>
+
 <!--      <router-link to="/projects/bff">-->
 <!--        <div class="project-container color-inverse" style="background-color: #00305C;">-->
 <!--          <div class="project">-->
@@ -102,22 +137,7 @@
 <!--        </div>-->
 <!--      </router-link>-->
 
-    <router-link to="/projects/hackernews">
-      <div class="project-container color-inverse" style="background-color: #F66403;">
-        <div class="project">
-          <div class="project-text">
-            <h3 class="project-title">
-              Hacker News
-            </h3>
-            <p class="project-desc">
-              An experiment in designing a better mobile experience for the Hacker news website.
-            </p>
-          </div>
-          <div class="project-media" style="background: url(/img/home/hacker-news.jpg) no-repeat center bottom">
-          </div>
-        </div>
-      </div>
-    </router-link>
+
 
 <!--      <router-link to="/projects/uptime">-->
 <!--        <div class="project-container color-inverse" style="background-color: #401361;">-->
