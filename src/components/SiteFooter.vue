@@ -1,6 +1,6 @@
 <template>
     <div class="site-footer">
-        <span>&copy; 2019 Sherif Tariq</span>
+        <div>&copy; 2019 Sherif Tariq</div>
 
         <nav class="site-nav" v-bind:class="{ inverse: inverse}" role="navigation">
             <ul>
@@ -28,6 +28,11 @@ export default {
 </script>
 
 <style lang="scss">
+    .site-footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
     .site-nav {
         ul {
             list-style-type: none;
