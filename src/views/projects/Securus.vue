@@ -33,12 +33,12 @@
             <p class="section-desc">
               Features had been layered organically over the years without much thought to the user experience or
               performance. Performance had slowed to a crawl. Users had time to hit search, go make a fresh batch of
-              coffee, and take their time coming back, and would find the search hadn't finished yet.
+              coffee, and take their time coming back, and would find the search hadn&rsquo;t finished yet.
             </p>
 
             <p class="section-desc">
               The user interface was extremely complicated and confusing. The company brand had become stale and
-              dated and didn't refect the company's philosophy.
+              dated and didn&rsquo;t refect the company's philosophy.
             </p>
           </div>
           <div class="col pl-24">
@@ -56,7 +56,7 @@
       <div class="section pt-64 pb-64">
         <div class="row">
           <div class="col center">
-            <img src="/img/projects/securus/securus-calls.jpg" class="screenshot">
+            <img src="/img/projects/securus/securus-calls.jpg" class="screenshot" alt="">
           </div>
           <div class="col center">
             <h3 class="section-title">Prototyping in Code.</h3>
@@ -152,7 +152,7 @@
 
           </div>
           <div class="col center">
-            <img src="/img/projects/securus/securus-dashboard.jpg" class="screenshot">
+            <img src="/img/projects/securus/securus-dashboard.jpg" class="screenshot" alt="">
           </div>
         </div>
       </div>
@@ -162,7 +162,7 @@
       <div class="section pt-64 pb-64">
         <div class="row">
           <div class="col center">
-            <img src="/img/projects/securus/securus-design-system.jpg" class="screenshot">
+            <img src="/img/projects/securus/securus-design-system.jpg" class="screenshot" alt="">
           </div>
           <div class="col center">
             <h3 class="section-title">Building a Design System.</h3>

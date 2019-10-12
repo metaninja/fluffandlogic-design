@@ -45,7 +45,7 @@
             </p>
           </div>
           <div class="col center">
-            <img src="/img/projects/cocoa/photo-maria.jpg" class="cocoa-screenshot" style="width: 350px; height: 350px;">
+            <img src="/img/projects/cocoa/photo-maria.jpg" class="cocoa-screenshot" style="width: 350px; height: 350px;" alt="">
           </div>
         </div>
       </div>
@@ -58,34 +58,34 @@
 
       <div class="row">
         <div class="col center">
-          <img src="/img/projects/cocoa/workflow-coworker-discussion.png" class="cocoa-userflow">
+          <img src="/img/projects/cocoa/workflow-coworker-discussion.png" class="cocoa-userflow" alt="">
         </div>
         <div class="col center">
-          <img src="/img/projects/cocoa/workflow-customer-discussion.png" class="cocoa-userflow">
+          <img src="/img/projects/cocoa/workflow-customer-discussion.png" class="cocoa-userflow" alt="">
         </div>
         <div class="col center">
-          <img src="/img/projects/cocoa/workflow-customer-requests.png" class="cocoa-userflow">
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col center">
-          <img src="/img/projects/cocoa/workflow-discussions.png" class="cocoa-userflow">
-        </div>
-        <div class="col center">
-          <img src="/img/projects/cocoa/workflow-new-customer.png" class="cocoa-userflow">
-        </div>
-        <div class="col center">
-          <img src="/img/projects/cocoa/workflow-policies.png" class="cocoa-userflow">
+          <img src="/img/projects/cocoa/workflow-customer-requests.png" class="cocoa-userflow" alt="">
         </div>
       </div>
 
       <div class="row">
         <div class="col center">
-          <img src="/img/projects/cocoa/workflow-responding-to-discussions.png" class="cocoa-userflow">
+          <img src="/img/projects/cocoa/workflow-discussions.png" class="cocoa-userflow" alt="">
         </div>
         <div class="col center">
-          <img src="/img/projects/cocoa/workflow-underwriter-discussion.png" class="cocoa-userflow">
+          <img src="/img/projects/cocoa/workflow-new-customer.png" class="cocoa-userflow" alt="">
+        </div>
+        <div class="col center">
+          <img src="/img/projects/cocoa/workflow-policies.png" class="cocoa-userflow" alt="">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col center">
+          <img src="/img/projects/cocoa/workflow-responding-to-discussions.png" class="cocoa-userflow" alt="">
+        </div>
+        <div class="col center">
+          <img src="/img/projects/cocoa/workflow-underwriter-discussion.png" class="cocoa-userflow" alt="">
         </div>
       </div>
 
@@ -95,7 +95,7 @@
       <div class="section pt-64 pb-64">
         <div class="row">
           <div class="col center">
-            <img src="/img/projects/cocoa/cocoa-dashboard.png" class="cocoa-screenshot">
+            <img src="/img/projects/cocoa/cocoa-dashboard.png" class="cocoa-screenshot" alt="">
           </div>
           <div class="col center">
             <h3 class="section-title">Homepage.</h3>
@@ -121,7 +121,7 @@
             </p>
           </div>
           <div class="col center">
-            <img src="/img/projects/cocoa/cocoa-profile.png" class="cocoa-screenshot">
+            <img src="/img/projects/cocoa/cocoa-profile.png" class="cocoa-screenshot" alt="">
           </div>
         </div>
       </div>
@@ -131,7 +131,7 @@
       <div class="section">
         <div class="row">
           <div class="col center">
-            <img src="/img/projects/cocoa/cocoa-chat.png" class="cocoa-screenshot">
+            <img src="/img/projects/cocoa/cocoa-chat.png" class="cocoa-screenshot" alt="">
           </div>
           <div class="col center">
             <h3 class="section-title">Chat With Customers.</h3>
@@ -151,7 +151,7 @@
       <div class="section">
         <div class="row">
           <div class="col center">
-            <h3 class="section-title">Maria's Todos.</h3>
+            <h3 class="section-title">Maria&rsquo;s Todos.</h3>
             <p class="section-desc">
               Maria has a lot on her mind. Rather than try to juggle hundreds of tasks on pieces of paper or across
               several apps, Cocoa has a built-in todo manager that helps Maria keep track of her tasks and relate them to
@@ -159,7 +159,7 @@
             </p>
           </div>
           <div class="col center">
-            <img src="/img/projects/cocoa/cocoa-todos.png" class="cocoa-screenshot">
+            <img src="/img/projects/cocoa/cocoa-todos.png" class="cocoa-screenshot" alt="">
           </div>
         </div>
       </div>

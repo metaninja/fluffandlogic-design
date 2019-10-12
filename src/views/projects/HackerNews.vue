@@ -41,7 +41,7 @@
     <div class="section-container">
       <div class="section center" style="width: auto; max-width: auto;">
         <div class="figure" style="width: auto; max-width: auto;">
-          <img src="/img/projects/hacker-news/hacker-news-workflows.png">
+          <img src="/img/projects/hacker-news/hacker-news-workflows.png" alt="">
         </div>
       </div>
     </div>
@@ -50,13 +50,13 @@
       <div class="section">
         <div class="row pt-64 pb-64">
           <div class="col center">
-            <img src="/img/projects/hacker-news/hacker-news-home.jpg" class="screenshot">
+            <img src="/img/projects/hacker-news/hacker-news-home.jpg" class="screenshot" alt="">
           </div>
           <div class="col center">
-            <img src="/img/projects/hacker-news/hacker-news-comments.jpg" class="screenshot">
+            <img src="/img/projects/hacker-news/hacker-news-comments.jpg" class="screenshot" alt="">
           </div>
           <div class="col center">
-            <img src="/img/projects/hacker-news/hacker-news-navigation.jpg" class="screenshot">
+            <img src="/img/projects/hacker-news/hacker-news-navigation.jpg" class="screenshot" alt="">
           </div>
         </div>
       </div>

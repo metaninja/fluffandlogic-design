@@ -1,17 +1,23 @@
 <template>
-    <div>
-        <section class="site-footer">
-            <span>&copy; 2019 Sherif Tariq</span>
+    <div class="site-footer">
+        <span>&copy; 2019 Sherif Tariq</span>
 
-            <nav class="site-nav" v-bind:class="{ inverse: inverse}">
-                <router-link to="/" class="site-nav-link">Home</router-link>
-                <a class="site-nav-link" href="https://linkedin.com/in/metaninja/">LInkedIn</a>
-                <a class="site-nav-link" href="mailto:fluffandlogic@gmail.com">Email</a>
-                <!--            <router-link to="/" class="site-nav-link">Home</router-link>-->
-                <!--            <router-link to="about" class="site-nav-link">About</router-link>-->
-                <!--            <router-link to="contact" class="site-nav-link">Contact</router-link>-->
-            </nav>
-        </section>
+        <nav class="site-nav" v-bind:class="{ inverse: inverse}" role="navigation">
+            <ul>
+                <li>
+                    <router-link to="/" class="site-nav-link">Home</router-link>
+                </li>
+                <li>
+                    <a class="site-nav-link" href="https://linkedin.com/in/metaninja/">LInkedIn</a>
+                </li>
+                <li>
+                    <a class="site-nav-link" href="mailto:fluffandlogic@gmail.com">Email</a>
+                </li>
+            </ul>
+            <!--            <router-link to="/" class="site-nav-link">Home</router-link>-->
+            <!--            <router-link to="about" class="site-nav-link">About</router-link>-->
+            <!--            <router-link to="contact" class="site-nav-link">Contact</router-link>-->
+        </nav>
     </div>
 </template>
 
@@ -22,4 +28,15 @@ export default {
 </script>
 
 <style lang="scss">
+    .site-nav {
+        ul {
+            list-style-type: none;
+            margin: 0;
+            display: flex;
+
+            li {
+                padding: 0;
+            }
+        }
+    }
 </style>

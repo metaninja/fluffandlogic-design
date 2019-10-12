@@ -65,7 +65,7 @@
       <div class="section center">
         <div class="row">
           <div class="col center">
-            <img src="/img/projects/yobi/yobi-jane-thread-1.png" class="screenshot">
+            <img src="/img/projects/yobi/yobi-jane-thread-1.png" class="screenshot" alt="">
           </div>
           <div class="col center">
             <h3 class="section-title">
@@ -92,12 +92,12 @@
               For Yobi to succeed, the onboarding experience has to be as easy as possible. A poor onboarding experience
               can result in a lot of support calls before the user has even started to use the app, and that can mean
               angry customers and cancellations. To make sure the Yobi onboarding experience is as painless as possible,
-              I had to match the onboarding experience as closely as possible with the user's mental model. I did
+              I had to match the onboarding experience as closely as possible with the user&rsquo;s mental model. I did
               extensive research into various social media apps to understand what users were expecting.
             </p>
           </div>
           <div class="col center">
-            <img src="/img/projects/yobi/yobi-first-time-user.png" class="screenshot">
+            <img src="/img/projects/yobi/yobi-first-time-user.png" class="screenshot" alt="">
           </div>
         </div>
       </div>
@@ -115,7 +115,7 @@
           For Yobi, I designed an interim logo, designed the website, and settled on a brand color.
         </p>
 
-        <img src="/img/projects/yobi/yobi-website.jpg" style="width: 100%; height: auto;">
+        <img src="/img/projects/yobi/yobi-website.jpg" style="width: 100%; height: auto;" alt="">
       </div>
 
     </div>

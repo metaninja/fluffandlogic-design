@@ -1,5 +1,5 @@
 <template>
-  <main class="page-home">
+  <div class="page-home">
     <header class="site-header-container">
       <site-header></site-header>
       <div class="hero">
@@ -11,7 +11,7 @@
           </p>
         </div>
         <div class="hero-media">
-          <img src="/img/home/photo-sherif-tariq.jpg">
+          <img src="/img/home/photo-sherif-tariq.jpg" alt="">
         </div>
       </div>
     </header>
@@ -51,7 +51,7 @@
     </router-link>
 
     <router-link to="/projects/cocoa">
-      <div class="project-container" style="background-color: #F0CF73;">
+      <div class="project-container cocoa-bg">
         <div class="project">
           <div class="project-text">
             <h3 class="project-title">
@@ -62,7 +62,7 @@
               Gen Z.
             </p>
           </div>
-          <div class="project-media" style="background: url(/img/home/cocoa.jpg) no-repeat center bottom">
+          <div class="project-media cocoa-screenshot">
           </div>
         </div>
       </div>
@@ -157,7 +157,7 @@
       <site-footer class="site-footer-container"></site-footer>
     </footer>
 
-  </main>
+  </div>
 </template>
 
 <script>
@@ -206,5 +206,11 @@ export default {
   }
   .project-desc {
     font-size: 20px;
+  }
+  .cocoa-bg {
+    background-image: linear-gradient(180deg, #F9E9AB 0%, #F0CF73 100%);
+  }
+  .cocoa-screenshot {
+    background: url(/img/home/cocoa.png) no-repeat center bottom;
   }
 </style>

@@ -150,12 +150,12 @@
       <div class="section">
         <p>
           I kicked off the user research by interviewing various users in the events process, including event managers
-          on both the hotel and event side. I developed a set of personas and mapped each persona's user flow to
+          on both the hotel and event side. I developed a set of personas and mapped each persona&rsquo;s user flow to
           understand where the pain points were. Below are some of the user flows.
         </p>
 
         <div class="figure">
-          <img src="/img/projects/onyx/onyx-workflow-1.svg" style="width: 100%; max-width: 1440px">
+          <img src="/img/projects/onyx/onyx-workflow-1.svg" style="width: 100%; max-width: 1440px" alt="">
         </div>
 
       </div>
@@ -169,7 +169,7 @@
         </div>
 
         <div class="figure">
-          <img src="/img/projects/onyx/onyx-journey-map.png" style="width: 100%; max-width: 1440px">
+          <img src="/img/projects/onyx/onyx-journey-map.png" style="width: 100%; max-width: 1440px" alt="">
         </div>
       </div>
     </div>
@@ -189,10 +189,10 @@
       <div class="section">
         <div class="row">
           <div class="col center">
-            <img src="/img/projects/onyx/onyx-home.jpg" class="screenshot">
+            <img src="/img/projects/onyx/onyx-home.jpg" class="screenshot" alt="">
           </div>
           <div class="col center">
-            <img src="/img/projects/onyx/onyx-event.jpg" class="screenshot">
+            <img src="/img/projects/onyx/onyx-event.jpg" class="screenshot" alt="">
           </div>
         </div>
       </div>

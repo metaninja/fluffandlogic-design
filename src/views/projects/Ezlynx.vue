@@ -18,7 +18,7 @@
     <div class="summary-container">
       <div class="summary">
         <p>
-          This section is still a work in progress. But, if you're wondering if I can take the most complex enterprise
+          This section is still a work in progress. But, if you&rsquo;re wondering if I can take the most complex enterprise
           workflows and turn them into streamlined, intuitive, interfaces (in this case personal and commercial
           workflows for independent insurance agents), the answer is yes. Yes, I can.
           For more details on this project, including workflows and how many hundreds of mockups, conversations with
@@ -30,13 +30,33 @@
 
     <div class="section-container">
       <div class="section pt-64 pb-64">
-        <img src="/img/projects/ezlynx/ezlynx-certs.png" class="screenshot">
+        <img src="/img/projects/ezlynx/cert-user-flow.jpg" class="figure" alt="">
       </div>
     </div>
 
     <div class="section-container">
       <div class="section pt-64 pb-64">
-        <img src="/img/projects/ezlynx/ezlynx-policies.png" class="screenshot">
+        <div class="row">
+          <div class="col center" style="width: 50%;">
+            <img src="/img/projects/ezlynx/cert-master-wireframe.jpg" class="figure" alt="" style="width: 100%;">
+          </div>
+          <div class="col center" style="width: 50%;">
+            <img src="/img/projects/ezlynx/cert-new-workflow.jpg" class="figure" alt="" style="width: 100%;">
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="section-container">
+      <div class="section pt-64 pb-64">
+        <img src="/img/projects/ezlynx/ezlynx-certs.png" class="screenshot" alt="">
+      </div>
+    </div>
+
+    <div class="section-container">
+      <div class="section pt-64 pb-64">
+        <img src="/img/projects/ezlynx/ezlynx-policies.png" class="screenshot" alt="">
       </div>
     </div>
 
@@ -63,6 +83,7 @@
     box-shadow: 0 5px 25px rgba(0,0,0,.24);
   }
   .figure {
+    width: auto;
     margin: 64px 0;
     padding:24px;
     border:1px solid rgba(0,0,0,.24);
