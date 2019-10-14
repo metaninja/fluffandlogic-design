@@ -28,15 +28,15 @@
             </p>
           </div>
           <div class="project-media media-ezlynx">
+<!--            <img src="/img/home/project-ezlynx.png">-->
           </div>
         </div>
       </div>
     </router-link>
 
     <router-link to="/projects/yobi">
-      <div class="project-container inverse" style="background-color: #852DDD;">
-        <div class="project">
-          <div class="project-media media-yobi"></div>
+      <div class="project-container inverse project-yobi">
+        <div class="project reverse-layout">
           <div class="project-text">
             <h3 class="project-title">
               Yobi
@@ -45,12 +45,15 @@
               Designing an innovative mobile experience for a seed-stage startup.
             </p>
           </div>
+          <div class="project-media">
+            <img src="/img/home/project-yobi.png" alt="">
+          </div>
         </div>
       </div>
     </router-link>
 
     <router-link to="/projects/cocoa">
-      <div class="project-container cocoa-bg">
+      <div class="project-container project-cocoa">
         <div class="project">
           <div class="project-text">
             <h3 class="project-title">
@@ -58,20 +61,19 @@
             </h3>
             <p class="project-desc">
               An experiment in branding and app design, exploring the future of commercial  insurance software for
-              Gen Z.
+              Gen&nbsp;Z.
             </p>
           </div>
-          <div class="project-media media-cocoa">
+          <div class="project-media">
+            <img src="/img/home/project-cocoa.png" alt="">
           </div>
         </div>
       </div>
     </router-link>
 
     <router-link to="/projects/securus">
-      <div class="project-container inverse" style="background-color: #0174C8;">
-        <div class="project">
-          <div class="project-media media-securus">
-          </div>
+      <div class="project-container project-securus inverse">
+        <div class="project reverse-layout">
           <div class="project-text">
             <h3 class="project-title">
               Securus
@@ -80,12 +82,15 @@
               Re-architecting, re-branding, and modernizing a core application.
             </p>
           </div>
+          <div class="project-media">
+            <img src="/img/home/project-securus.png" alt="">
+          </div>
         </div>
       </div>
     </router-link>
 
     <router-link to="/projects/onyx">
-      <div class="project-container" style="background-color: #FFA802;">
+      <div class="project-container project-onyx" style="background-color: #FFA802;">
         <div class="project">
           <div class="project-text">
             <h3 class="project-title">
@@ -95,18 +100,16 @@
               Helping a company break out of their niche into a bigger, more profitable, market.
             </p>
           </div>
-          <div class="project-media media-onyx">
-
+          <div class="project-media">
+            <img src="/img/home/project-onyx.png" alt="">
           </div>
         </div>
       </div>
     </router-link>
 
     <router-link to="/projects/hackernews">
-      <div class="project-container inverse" style="background-color: #F66403;">
-        <div class="project">
-          <div class="project-media media-hacker-news">
-          </div>
+      <div class="project-container project-hacker-news inverse" style="background-color: #F66403;">
+        <div class="project reverse-layout">
           <div class="project-text inverse">
             <h3 class="project-title">
               Hacker News
@@ -114,6 +117,9 @@
             <p class="project-desc">
               An experiment in designing a better mobile experience for the Hacker news website.
             </p>
+          </div>
+          <div class="project-media">
+            <img src="/img/home/project-hacker-news.png" alt="">
           </div>
         </div>
       </div>
@@ -175,19 +181,48 @@ export default {
     align-items: center;
     justify-content: center;
   }
+  .project-container {
+    flex-direction: row-reverse;
+  }
+  .project-yobi {
+    background-image: linear-gradient(180deg, #BB59F0 0%, #852DDD 100%);
+  }
+  .project-cocoa {
+    background-image: linear-gradient(180deg, #F9E9AB 0%, #F3C033 100%);
+  }
+  .project-securus {
+    background-image: linear-gradient(180deg, #1D89D8 41%, #0E5D97 100%);
+  }
+  .project-onyx {
+    background-image: linear-gradient(180deg, #E2C181 18%, #E09606 100%);
+  }
+  .project-hacker-news {
+    background-color: orange;
+  }
   .project-text.inverse {
     color: #fff;
   }
   .project {
     width: 100%;
     max-width: 1440px;
-    height: 648px;
     display: flex;
     justify-content: space-between;
+  }
+  .project.reverse-layout {
+    flex-direction: row-reverse;
   }
   .project-text,
   .project-media {
     width: 50%;
+  }
+  .project-media {
+    display: flex;
+    align-items: flex-end;
+  }
+  .project-media img {
+    width: 100%;
+    height: auto;
+    margin-top: 64px;
   }
   .project-text {
     display: flex;
@@ -215,33 +250,13 @@ export default {
     background: url(/img/projects/ezlynx/ezlynx-policies.png) no-repeat left top;
     height: 584px;
   }
-  .media-yobi {
-    max-width: 562px;
-    height: 629px;
-    background: url(/img/home/yobi.png) no-repeat center bottom;
-  }
-  .media-cocoa {
-    max-width: 509px;
-    height: 621px;
-    background: url(/img/home/cocoa.png) no-repeat center bottom;
-  }
-  .media-securus {
-    max-width: 775px;
-    height: 625px;
-    background: url(/img/home/securus.png) no-repeat right bottom;
-  }
-  .media-onyx {
-    max-width: 596px;
-    height: 549px;
-    background: url(/img/home/onyx.jpg) no-repeat center bottom;
-  }
-  .media-hacker-news {
-    max-width: 707px;
-    height: 525px;
-    background: url(/img/home/hacker-news.jpg) no-repeat center bottom;
-  }
 
   @media only screen and (max-width: 1100px) {
+    .hero {
+      flex-direction: column-reverse;
+      align-items: center;
+      text-align: center;
+    }
     .hero-sherif {
       max-width: 400px;
       width: 90%;
@@ -256,16 +271,15 @@ export default {
       height: auto;
       padding: 48px 20px 0 20px;
     }
+    .project.reverse-layout {
+      flex-direction: column;
+    }
     .project-text {
       width: 90%;
     }
     .project-media {
       max-width: 90%;
       background-size: 100%;
-      height:450px;
-    }
-    .project-container.inverse .project {
-      flex-direction: column-reverse;
     }
   }
 </style>
