@@ -9,7 +9,8 @@
             Helping a company break out of their niche into a bigger, more profitable, market.
           </p>
         </div>
-        <div class="hero-media" style="background: url(/img/home/onyx.jpg) no-repeat center 38px">
+        <div class="hero-media">
+          <img src="/img/home/project-onyx.png" alt="">
         </div>
       </div>
     </header>

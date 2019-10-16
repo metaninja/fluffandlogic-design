@@ -16,9 +16,6 @@
   color: #fff;
 }
 
-.page-project .site-header-container {
-  height: 640px;
-}
 .site-header {
   width: 100%;
   max-width: $max-content-width;
@@ -95,6 +92,9 @@ footer {
 }
 
 @media only screen and (max-width: 610px) {
+  .row {
+    flex-direction: column;
+  }
   .site-header,
   .site-footer {
     flex-direction: column;

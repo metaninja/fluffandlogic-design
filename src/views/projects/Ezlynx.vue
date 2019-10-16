@@ -1,6 +1,6 @@
 <template>
   <main class="page-project">
-    <header class="site-header-container inverse" style="background-color: #37474F;">
+    <header class="site-header-container inverse project-ezlynx">
       <site-header></site-header>
       <div class="hero hero-inverse">
         <div class="hero-text">
@@ -10,7 +10,7 @@
           </p>
         </div>
         <div class="hero-media">
-          <div style="background: url(/img/projects/ezlynx/ezlynx-policies.png) no-repeat left top; width: 100%; height: 455px; box-shadow: 0 -5px 25px rgba(0,0,0,.48)"></div>
+          <img src="/img/home/project-ezlynx.png" alt="">
         </div>
       </div>
     </header>
@@ -35,13 +35,13 @@
     </div>
 
     <div class="section-container">
-      <div class="section pt-64 pb-64">
+      <div class="section">
         <div class="row">
-          <div class="col center" style="width: 50%;">
-            <img src="/img/projects/ezlynx/cert-master-wireframe.jpg" class="figure" alt="" style="width: 100%;">
+          <div class="col center pl-24 pr-24">
+            <img src="/img/projects/ezlynx/cert-master-wireframe.png" class="figure" alt="">
           </div>
-          <div class="col center" style="width: 50%;">
-            <img src="/img/projects/ezlynx/cert-new-workflow.jpg" class="figure" alt="" style="width: 100%;">
+          <div class="col center pl-24 pr-24">
+            <img src="/img/projects/ezlynx/cert-new-workflow.png" class="figure" alt="">
           </div>
         </div>
       </div>
@@ -49,13 +49,13 @@
 
 
     <div class="section-container">
-      <div class="section pt-64 pb-64">
+      <div class="section">
         <img src="/img/projects/ezlynx/ezlynx-certs.png" class="screenshot" alt="">
       </div>
     </div>
 
     <div class="section-container">
-      <div class="section pt-64 pb-64">
+      <div class="section">
         <img src="/img/projects/ezlynx/ezlynx-policies.png" class="screenshot" alt="">
       </div>
     </div>
@@ -77,16 +77,4 @@
 </script>
 
 <style scoped>
-  .screenshot {
-    max-width: 100%;
-    height: auto;
-    box-shadow: 0 5px 25px rgba(0,0,0,.24);
-  }
-  .figure {
-    width: auto;
-    margin: 64px 0;
-    padding:24px;
-    border:1px solid rgba(0,0,0,.24);
-    box-shadow: 0 2px 15px rgba(0,0,0,.12);
-  }
 </style>

@@ -17,7 +17,7 @@
     </header>
 
     <router-link to="/projects/ezlynx">
-      <div class="project-container" style="background-color: #37474F;">
+      <div class="project-container project-ezlynx">
         <div class="project">
           <div class="project-text inverse">
             <h3 class="project-title">
@@ -27,8 +27,8 @@
               Designing the next generation EZLynx platform.
             </p>
           </div>
-          <div class="project-media media-ezlynx">
-<!--            <img src="/img/home/project-ezlynx.png">-->
+          <div class="project-media">
+            <img src="/img/home/project-ezlynx.png">
           </div>
         </div>
       </div>
@@ -175,6 +175,11 @@ export default {
 </script>
 
 <style lang="scss">
+  .hero-sherif {
+    width: 250px;
+    height: 250px;
+    padding: 24px;
+  }
   .project-container {
     width: 100%;
     display: flex;
@@ -183,21 +188,6 @@ export default {
   }
   .project-container {
     flex-direction: row-reverse;
-  }
-  .project-yobi {
-    background-image: linear-gradient(180deg, #BB59F0 0%, #852DDD 100%);
-  }
-  .project-cocoa {
-    background-image: linear-gradient(180deg, #F9E9AB 0%, #F3C033 100%);
-  }
-  .project-securus {
-    background-image: linear-gradient(180deg, #1D89D8 41%, #0E5D97 100%);
-  }
-  .project-onyx {
-    background-image: linear-gradient(180deg, #E2C181 18%, #E09606 100%);
-  }
-  .project-hacker-news {
-    background-color: orange;
   }
   .project-text.inverse {
     color: #fff;
@@ -253,14 +243,8 @@ export default {
 
   @media only screen and (max-width: 1100px) {
     .hero {
-      flex-direction: column-reverse;
       align-items: center;
       text-align: center;
-    }
-    .hero-sherif {
-      max-width: 400px;
-      width: 90%;
-      height: auto;
     }
     .hero-text {
       width: 90%;

@@ -1,6 +1,6 @@
 <template>
   <main class="page-project">
-    <header class="site-header-container inverse" style="background-color: #FF6600;">
+    <header class="site-header-container project-hacker-news inverse">
       <site-header></site-header>
       <div class="hero hero-inverse">
         <div class="hero-text">
@@ -9,7 +9,8 @@
             Designing a better mobile experience for the Hacker news website.
           </p>
         </div>
-        <div class="hero-media" style="background: url(/img/home/hacker-news.jpg) no-repeat center 38px">
+        <div class="hero-media">
+          <img src="/img/home/project-hacker-news.png" alt="">
         </div>
       </div>
     </header>
@@ -40,9 +41,7 @@
 
     <div class="section-container">
       <div class="section center" style="width: auto; max-width: auto;">
-        <div class="figure" style="width: auto; max-width: auto;">
-          <img src="/img/projects/hacker-news/hacker-news-workflows.png" alt="">
-        </div>
+          <img src="/img/projects/hacker-news/hacker-news-workflows.png" class="figure" alt="">
       </div>
     </div>
 

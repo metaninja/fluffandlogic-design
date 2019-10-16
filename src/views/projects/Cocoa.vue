@@ -1,6 +1,6 @@
 <template>
   <main class="page-project">
-    <header class="site-header-container" style="background-color: #F0CF73;">
+    <header class="site-header-container project-cocoa">
       <site-header></site-header>
       <div class="hero">
         <div class="hero-text">
@@ -9,7 +9,8 @@
             An experiment in branding and app design, exploring the future of commercial insurance software for Gen&nbsp;Z.
           </p>
         </div>
-        <div class="hero-media" style="background: url(/img/home/cocoa.jpg) no-repeat center 38px">
+        <div class="hero-media">
+          <img src="/img/home/project-yobi.png">
         </div>
       </div>
     </header>

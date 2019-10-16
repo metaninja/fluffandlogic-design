@@ -19,4 +19,5 @@ export default {
 @import "assets/styles/typography";
 @import "assets/styles/table";
 @import "assets/styles/utilities";
+@import "assets/styles/media";
 </style>

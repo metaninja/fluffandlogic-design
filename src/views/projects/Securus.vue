@@ -1,6 +1,6 @@
 <template>
   <main class="page-project">
-    <header class="site-header-container" style="background-color: #0174C8;">
+    <header class="site-header-container project-securus">
       <site-header inverse="true"></site-header>
       <div class="hero hero-inverse">
         <div class="hero-text">
@@ -9,7 +9,8 @@
             Re-architecting, re-branding, and modernizing a core application.
           </p>
         </div>
-        <div class="hero-media" style="background: url(/img/home/securus.jpg) no-repeat right 38px">
+        <div class="hero-media">
+          <img src="/img/home/project-securus.png" alt="">
         </div>
       </div>
     </header>

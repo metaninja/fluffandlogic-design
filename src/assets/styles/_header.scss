@@ -11,7 +11,6 @@
   width: 50%;
   display: flex;
   justify-content: center;
-  padding: 24px 24px 64px 24px;
 }
 .hero-media {
   align-items: stretch;
@@ -27,14 +26,19 @@
 .hero-desc {
   max-width: 600px;
 }
+.hero-desc {
+  text-align: center;
+}
 .hero-inverse .hero-title,
 .hero-inverse .hero-desc {
   color: $color-inverse;
 }
 .hero-title {
   font-size: 48px;
-  margin-bottom: 48px;
+  margin-bottom: 16px;
 }
+
+// Hero image for project pages
 .page-project .hero-title {
   text-transform: uppercase;
 }
@@ -64,8 +68,28 @@
   justify-content: center;
   padding: 64px 24px;
   color: $color-inverse;
+  text-align: center;
   font-size: 24px;
   line-height: 48px;
+}
+
+.project-ezlynx {
+  background-image: linear-gradient(180deg, #50636D 2%, #182126 100%);
+}
+.project-yobi {
+  background-image: linear-gradient(180deg, #BB59F0 0%, #852DDD 100%);
+}
+.project-cocoa {
+  background-image: linear-gradient(180deg, #F9E9AB 0%, #F3C033 100%);
+}
+.project-securus {
+  background-image: linear-gradient(180deg, #1D89D8 41%, #0E5D97 100%);
+}
+.project-onyx {
+  background-image: linear-gradient(180deg, #FFCE6F 18%, #FFA802 100%);
+}
+.project-hacker-news {
+  background-image: linear-gradient(0deg, #F66403 30%, #F3995D 93%);
 }
 
 @media only screen and (max-width: 800px) {
@@ -74,5 +98,18 @@
     align-items: center;
     text-align: center;
   }
-  .hero-media {}
+  .hero-text {
+    padding:  64px 0 0 0;
+  }
+  .hero-media {
+    width: 90%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  .hero-media img {
+    width: 100%;
+    height: auto;
+  }
+
 }

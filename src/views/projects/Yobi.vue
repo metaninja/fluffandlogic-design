@@ -1,6 +1,6 @@
 <template>
   <main class="page-project">
-    <header class="site-header-container inverse" style="background-color: #852DDD;">
+    <header class="site-header-container inverse project-yobi">
       <site-header></site-header>
       <div class="hero hero-inverse">
         <div class="hero-text">
@@ -9,7 +9,8 @@
             Helping a company break out of their niche into a bigger, more profitable, market.
           </p>
         </div>
-        <div class="hero-media" style="background: url(/img/home/yobi.png) no-repeat center top">
+        <div class="hero-media">
+          <img src="/img/home/project-yobi.png">
         </div>
       </div>
     </header>
