@@ -1,13 +1,16 @@
-.screenshot {
+img {
   max-width: 100%;
-  height: auto;
+}
+.screenshot {
+  display: block;
+  margin: 24px;
+  border-radius: 8px;
+  max-width: 100%;
 }
 .figure {
-  width: auto;
-  max-width: 100%;
-  height: auto;
-  margin: 64px 0;
+  margin: 24px 0;
   padding:12px;
   border:1px solid rgba(0,0,0,.24);
   box-shadow: 0 2px 15px rgba(0,0,0,.12);
 }
+

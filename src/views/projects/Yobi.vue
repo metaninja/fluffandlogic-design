@@ -10,7 +10,7 @@
           </p>
         </div>
         <div class="hero-media">
-          <img src="/img/home/project-yobi.png">
+          <img src="/img/home/project-yobi.png" alt="">
         </div>
       </div>
     </header>
@@ -56,7 +56,7 @@
               complex enterprise apps.
             </p>
           </div>
-          <div class="col center" style="background: url(/img/projects/yobi/yobi-desktop.png) no-repeat center center; background-size: contain; height: 700px; box-shadow: 0 2px 5px rgba(0,0,0,.1)">
+          <img src="/img/projects/yobi/yobi-desktop.png" class="screenshot" alt="">
           </div>
         </div>
       </div>
@@ -116,7 +116,7 @@
           For Yobi, I designed an interim logo, designed the website, and settled on a brand color.
         </p>
 
-        <img src="/img/projects/yobi/yobi-website.jpg" style="width: 100%; height: auto;" alt="">
+        <img src="/img/projects/yobi/yobi-website.jpg" class="screenshot" alt="">
       </div>
 
     </div>
@@ -137,16 +137,3 @@
         components: { SiteHeader, SiteFooter }
     }
 </script>
-
-<style scoped>
-  .screenshot {
-    max-width: 400px;
-  }
-  .figure {
-    margin: 64px 0;
-    padding:24px;
-    border:1px solid rgba(0,0,0,.24);
-    box-shadow: 0 2px 15px rgba(0,0,0,.12);
-  }
-
-</style>

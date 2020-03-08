@@ -197,12 +197,3 @@
         components: { SiteHeader, SiteFooter }
     }
 </script>
-
-<style scoped>
-  .screenshot {
-    max-width: 100%;
-    border: 1px solid rgba(0,0,0,.12);
-    box-shadow: 0 1px 25px rgba(0,0,0,.2);
-    border-radius: 8px;
-  }
-</style>

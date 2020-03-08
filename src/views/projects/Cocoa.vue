@@ -10,7 +10,7 @@
           </p>
         </div>
         <div class="hero-media">
-          <img src="/img/home/project-yobi.png">
+          <img src="/img/home/project-cocoa.png">
         </div>
       </div>
     </header>
@@ -46,7 +46,7 @@
             </p>
           </div>
           <div class="col center">
-            <img src="/img/projects/cocoa/photo-maria.jpg" class="cocoa-screenshot" style="width: 350px; height: 350px;" alt="">
+            <img src="/img/projects/cocoa/photo-maria.jpg" class="screenshot" style="width: 350px; height: 350px;" alt="">
           </div>
         </div>
       </div>
@@ -96,7 +96,7 @@
       <div class="section pt-64 pb-64">
         <div class="row">
           <div class="col center">
-            <img src="/img/projects/cocoa/cocoa-dashboard.png" class="cocoa-screenshot" alt="">
+            <img src="/img/projects/cocoa/cocoa-dashboard.png" class="screenshot" alt="">
           </div>
           <div class="col center">
             <h3 class="section-title">Homepage.</h3>
@@ -122,7 +122,7 @@
             </p>
           </div>
           <div class="col center">
-            <img src="/img/projects/cocoa/cocoa-profile.png" class="cocoa-screenshot" alt="">
+            <img src="/img/projects/cocoa/cocoa-profile.png" class="screenshot" alt="">
           </div>
         </div>
       </div>
@@ -132,7 +132,7 @@
       <div class="section">
         <div class="row">
           <div class="col center">
-            <img src="/img/projects/cocoa/cocoa-chat.png" class="cocoa-screenshot" alt="">
+            <img src="/img/projects/cocoa/cocoa-chat.png" class="screenshot" alt="">
           </div>
           <div class="col center">
             <h3 class="section-title">Chat With Customers.</h3>
@@ -160,7 +160,7 @@
             </p>
           </div>
           <div class="col center">
-            <img src="/img/projects/cocoa/cocoa-todos.png" class="cocoa-screenshot" alt="">
+            <img src="/img/projects/cocoa/cocoa-todos.png" class="screenshot" alt="">
           </div>
         </div>
       </div>
@@ -184,12 +184,8 @@
 </script>
 
 <style scoped>
-  .cocoa-screenshot {
-    max-width: 400px;
-  }
   .cocoa-userflow {
     width: calc(100% - 48px);
-    height: auto;
     margin: 24px;
   }
 </style>

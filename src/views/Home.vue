@@ -210,8 +210,6 @@ export default {
     align-items: flex-end;
   }
   .project-media img {
-    width: 100%;
-    height: auto;
     margin-top: 64px;
   }
   .project-text {
@@ -252,7 +250,6 @@ export default {
     .project {
       flex-direction: column;
       align-items: center;
-      height: auto;
       padding: 48px 20px 0 20px;
     }
     .project.reverse-layout {

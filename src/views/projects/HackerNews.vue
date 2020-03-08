@@ -78,18 +78,8 @@
 </script>
 
 <style scoped>
-  .screenshot {
-    max-width: 400px;
-  }
-  .figure {
-    margin: 64px 0;
-    padding:24px;
-    border:1px solid rgba(0,0,0,.24);
-    box-shadow: 0 2px 15px rgba(0,0,0,.12);
-  }
   .cocoa-userflow {
     width: calc(100% - 48px);
-    height: auto;
     margin: 24px;
   }
 </style>

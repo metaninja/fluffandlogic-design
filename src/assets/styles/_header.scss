@@ -13,7 +13,7 @@
   justify-content: center;
 }
 .hero-media {
-  align-items: stretch;
+  align-items: flex-end;
 }
 .hero-text {
   flex-direction: column;
@@ -102,14 +102,8 @@
     padding:  64px 0 0 0;
   }
   .hero-media {
-    width: 90%;
     padding: 0;
     display: flex;
     justify-content: center;
   }
-  .hero-media img {
-    width: 100%;
-    height: auto;
-  }
-
 }
