@@ -79,7 +79,14 @@
         <img src="/img/projects/ezlynx/ezlynx-certs.png" class="screenshot" alt="">
         <img src="/img/projects/ezlynx/ezlynx-policies.png" class="screenshot" alt="">
 
-        <h3>Step 4: Engineering</h3>
+        <h3>Step 4: Usability Testing</h3>
+        <p>
+          During the ideation process, I'll work with the business analyst to contact customers and get their feedback.
+          I'll facilitate usability testing with the customer including setting up the usability test script, task list,
+          prototype/mockups that the users will use and anything else needed to complete the test.
+        </p>
+
+        <h3>Step 5: Engineering</h3>
         <p>
             Once the business has signed off on the mockups, we’ll review them further with the engineering team to
             validate and surface any engineering concerns. Once engineering has approved the designs, I’ll continue
