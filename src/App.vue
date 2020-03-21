@@ -7,11 +7,10 @@
 <script>
 // @ is an alias to /src
 export default {
-  name: "home",
+  name: "home"
 };
 </script>
 
 <style lang="scss">
 @import "assets/styles/styles";
-
 </style>
