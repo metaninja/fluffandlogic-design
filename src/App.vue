@@ -12,12 +12,6 @@ export default {
 </script>
 
 <style lang="scss">
-@import "assets/styles/variables";
-@import "assets/styles/general";
-@import "assets/styles/layout";
-@import "assets/styles/header";
-@import "assets/styles/typography";
-@import "assets/styles/table";
-@import "assets/styles/utilities";
-@import "assets/styles/media";
+@import "assets/styles/styles";
+
 </style>
