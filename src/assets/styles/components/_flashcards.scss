@@ -1,0 +1,19 @@
+
+.flash-cards {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  max-width: 846px;
+}
+.flash-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 360px;
+  height: 192px;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
+  font-family: var(--muli);
+  font-weight: var(--muli-bold);
+  font-size: 24px;
+  line-height: 40px;
+}

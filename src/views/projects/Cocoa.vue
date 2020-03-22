@@ -1,102 +1,101 @@
 <template>
-  <main class="page-project">
-    <header class="site-header-container project-cocoa">
-      <site-header></site-header>
-      <div class="hero">
-        <div class="hero-text">
-          <h2 class="hero-title">Cocoa</h2>
-          <p class="hero-desc">
-            An experiment in branding and app design, exploring the future of commercial insurance software for Gen&nbsp;Z.
-          </p>
-        </div>
-        <div class="hero-media">
-          <img src="/img/home/project-cocoa.png">
-        </div>
-      </div>
-    </header>
+  <div class="site-container">
+    <SiteHeader />
 
-    <div class="summary-container">
-      <div class="summary">
-        <p>
-          Cocoa is a fictional app based on my experience designing insurance software. The goal is to figure out where
-          insurance software needs to go to appeal to the next generation of insurance agents: Generation Z and beyond.
-          For more details on this project, including context scenarios and other research information,
-          <a href="mailto:sherif.tariq@gmail.com">contact me</a>.
-        </p>
-      </div>
+    <section class="intro">
+      <h2 class="intro-title">
+        EZLynx
+      </h2>
+      <p class="intro-desc">
+        Cocoa is a fictional app based on my experience designing insurance software. The goal is to figure out where
+        insurance software needs to go to appeal to the next generation of insurance agents: Generation Z and beyond.
+        For more details on this project, including context scenarios and other research information,
+        <a href="mailto:sherif.tariq@gmail.com">contact me</a>.
+      </p>
+    </section>
+
+    <section class="body-content">
+      <img src="/img/projects/cocoa/photo-maria.jpg" class="screenshot" style="width: 350px; height: 350px;" alt="">
+      <h3 class="body-content-title">
+        Meet Maria.
+      </h3>
+      <p class="body-content-desc">
+        Maria is a young insurance agent. She’s completed her training and is looking for a way to earn a living as
+        an agent. Maria didn’t choose to become an agent. She did so because there wasn’t enough money coming from
+        freelancing as an Uber driver, or running tasks using Task Rabbit. She wants a more steady source of income.
+        Her mother was an insurance agent and she recommended Maria at least try being an agent. After going through
+        the training she’s ready to at least try being an agent.
+      </p>
+
+      <p class="body-content-desc">
+        Maria wants minimum on-boarding, and maximum productivity from the get-go. She wants a delightful, intuitive,
+        and engaging experience even in a commercial, enterprise app. Maria will not accept sub-par experiences. She
+        demands a higher quality experience.
+      </p>
+    </section>
+
+    <section class="body-content">
+      <h3 class="body-content-title">
+        User Flows
+      </h3>
+    </section>
+
+    <div class="figures">
+      <figure class="figure">
+        <img src="/img/projects/cocoa/workflow-coworker-discussion.png" alt="" />
+        <p class="figure-caption">Test caption</p>
+      </figure>
+
+      <figure class="figure">
+        <img src="/img/projects/cocoa/workflow-customer-discussion.png" alt="" />
+        <p class="figure-caption">Test caption</p>
+      </figure>
     </div>
 
-    <div class="section-container" style="background-color: #f8f8f8;">
-      <div class="section pt-64 pb-64">
-        <div class="row">
-          <div class="col center">
-            <h3 class="section-title">Meet Maria.</h3>
-            <p class="section-desc">
-              Maria is a young insurance agent. She’s completed her training and is looking for a way to earn a living as
-              an agent. Maria didn’t choose to become an agent. She did so because there wasn’t enough money coming from
-              freelancing as an Uber driver, or running tasks using Task Rabbit. She wants a more steady source of income.
-              Her mother was an insurance agent and she recommended Maria at least try being an agent. After going through
-              the training she’s ready to at least try being an agent.
-            </p>
+    <figure class="figure">
+      <img src="/img/projects/cocoa/workflow-customer-requests.png" alt="" />
+      <p class="figure-caption">Test caption</p>
+    </figure>
 
-            <p class="section-desc">
-              Maria wants minimum on-boarding, and maximum productivity from the get-go. She wants a delightful, intuitive,
-              and engaging experience even in a commercial, enterprise app. Maria will not accept sub-par experiences. She
-              demands a higher quality experience.
-            </p>
-          </div>
-          <div class="col center">
-            <img src="/img/projects/cocoa/photo-maria.jpg" class="screenshot" style="width: 350px; height: 350px;" alt="">
-          </div>
-        </div>
-      </div>
-    </div>
+      <figure class="figure">
+        <img src="/img/projects/cocoa/workflow-discussions.png" alt="" />
+        <p class="figure-caption">Test caption</p>
+      </figure>
 
-    <div class="section-container pt-64 pb-64" >
-      <div class="section">
-          <h3 class="section-title" style="text-align: center; max-width: 1440px">User Flows.</h3>
-      </div>
+      <figure class="figure">
+        <img src="/img/projects/cocoa/workflow-policies.png" alt="" />
+        <p class="figure-caption">Test caption</p>
+      </figure>
 
-      <div class="row">
-        <div class="col center">
-          <img src="/img/projects/cocoa/workflow-coworker-discussion.png" class="cocoa-userflow" alt="">
-        </div>
-        <div class="col center">
-          <img src="/img/projects/cocoa/workflow-customer-discussion.png" class="cocoa-userflow" alt="">
-        </div>
-        <div class="col center">
-          <img src="/img/projects/cocoa/workflow-customer-requests.png" class="cocoa-userflow" alt="">
-        </div>
-      </div>
+      <figure class="figure">
+        <img src="/img/projects/cocoa/workflow-customer-discussion.png" alt="" />
+        <p class="figure-caption">Test caption</p>
+      </figure>
 
-      <div class="row">
-        <div class="col center">
-          <img src="/img/projects/cocoa/workflow-discussions.png" class="cocoa-userflow" alt="">
-        </div>
-        <div class="col center">
-          <img src="/img/projects/cocoa/workflow-new-customer.png" class="cocoa-userflow" alt="">
-        </div>
-        <div class="col center">
-          <img src="/img/projects/cocoa/workflow-policies.png" class="cocoa-userflow" alt="">
-        </div>
-      </div>
+      <figure class="figure">
+        <img src="/img/projects/cocoa/workflow-responding-to-discussions.png" alt="" />
+        <p class="figure-caption">Test caption</p>
+      </figure>
 
-      <div class="row">
-        <div class="col center">
-          <img src="/img/projects/cocoa/workflow-responding-to-discussions.png" class="cocoa-userflow" alt="">
-        </div>
-        <div class="col center">
-          <img src="/img/projects/cocoa/workflow-underwriter-discussion.png" class="cocoa-userflow" alt="">
-        </div>
-      </div>
+      <figure class="figure">
+        <img src="/img/projects/cocoa/workflow-underwriter-discussion.png" alt="" />
+        <p class="figure-caption">Test caption</p>
+      </figure>
 
-    </div>
+      <section class="screenshot-container">
+        <div class="screenshots">
+          <img class="screenshot" style="width: 25%" src="/img/projects/cocoa/cocoa-dashboard.png" alt="" />
+          <img class="screenshot" style="width: 25%" src="/img/projects/cocoa/cocoa-profile.png" alt="" />
+          <img class="screenshot" style="width: 25%"  src="/img/projects/cocoa/cocoa-chat.png" alt="">
+          <img class="screenshot" style="width: 25%"  src="/img/projects/cocoa/cocoa-todos.png" alt="">
+        </div>
+      </section>
 
     <div class="section-container">
       <div class="section pt-64 pb-64">
         <div class="row">
           <div class="col center">
-            <img src="/img/projects/cocoa/cocoa-dashboard.png" class="screenshot" alt="">
+            <img src="" class="screenshot" alt="">
           </div>
           <div class="col center">
             <h3 class="section-title">Homepage.</h3>
@@ -122,7 +121,7 @@
             </p>
           </div>
           <div class="col center">
-            <img src="/img/projects/cocoa/cocoa-profile.png" class="screenshot" alt="">
+            <img src="" class="screenshot" alt="">
           </div>
         </div>
       </div>
@@ -132,7 +131,7 @@
       <div class="section">
         <div class="row">
           <div class="col center">
-            <img src="/img/projects/cocoa/cocoa-chat.png" class="screenshot" alt="">
+
           </div>
           <div class="col center">
             <h3 class="section-title">Chat With Customers.</h3>
@@ -160,7 +159,7 @@
             </p>
           </div>
           <div class="col center">
-            <img src="/img/projects/cocoa/cocoa-todos.png" class="screenshot" alt="">
+            <img src="" class="screenshot" alt="">
           </div>
         </div>
       </div>
@@ -171,7 +170,8 @@
       <site-footer class="site-footer-container" style="background-color: #F0CF73;"></site-footer>
     </footer>
 
-  </main>
+    <SiteFooter />
+  </div>
 </template>
 
 <script>
@@ -184,8 +184,4 @@
 </script>
 
 <style scoped>
-  .cocoa-userflow {
-    width: calc(100% - 48px);
-    margin: 24px;
-  }
 </style>
