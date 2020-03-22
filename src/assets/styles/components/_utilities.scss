@@ -1,0 +1,10 @@
+.row {
+  display: flex;
+}
+.col {
+  flex-grow: 1;
+  margin: 0 24px
+}
+.col:last-child {
+  padding-right: 0;
+}

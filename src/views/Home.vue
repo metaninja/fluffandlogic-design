@@ -28,10 +28,6 @@
           <p class="home-project-desc">
             {{project.desc}}
           </p>
-          <router-link class="home-project-link" v-bind:to="project.url">
-            Learn More
-          </router-link>
-
       </div>
     </section>
 

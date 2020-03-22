@@ -21,6 +21,10 @@
   background: #eaeaea;
   border: 1px solid #d4d4d4;
   border-radius: 6px;
+  transition: .15s box-shadow ease-in;
+}
+.home-project-media:hover {
+  box-shadow: 0 0 25px 5px rgba(0,0,0,.24);
 }
 .home-project-title {
   font-weight: var(--merriweather-bold);

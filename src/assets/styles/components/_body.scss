@@ -12,10 +12,19 @@
   line-height: 40px;
   margin-bottom: 16px;
 }
-.body-content-desc {
+.body-content-desc,
+.body-content-list {
   font-family: var(--merriweather);
   font-weight: var(--merriweather-regular);
   font-size: 20px;
   line-height: 40px;
   margin-bottom: 24px;
+}
+.body-content-list {
+  margin-left: 0;
+  padding-left: 0;
+}
+.body-content-list-item {
+  margin-bottom: 16px;
+  padding-left: 24px;
 }

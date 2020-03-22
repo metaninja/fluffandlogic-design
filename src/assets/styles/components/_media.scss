@@ -6,6 +6,7 @@
 .screenshots {
   margin: 0 auto;
   width: 90%;
+  max-width: 1000px;
   display: flex;
   justify-content: space-around;
 }
@@ -13,6 +14,15 @@
   margin: 24px;
   flex: 1 1 auto;
 }
+.screenshots-desc-container {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1100px;
+  display: flex;
+  padding: 24px 0;
+  text-align: left;
+}
+
 .figures {
   display: flex;
   justify-content: space-between;
