@@ -1,107 +1,143 @@
 <template>
-  <main class="page-project">
-    <header class="site-header-container inverse project-ezlynx">
-      <site-header></site-header>
-      <div class="hero hero-inverse">
-        <div class="hero-text">
-          <h2 class="hero-title">EZLynx</h2>
-          <p class="hero-desc">
-            Designing the next generation EZLynx platform.
-          </p>
-        </div>
-        <div class="hero-media">
-          <img src="/img/home/project-ezlynx.png" alt="">
-        </div>
-      </div>
-    </header>
 
-    <div class="summary-container">
-      <div class="summary">
-        <p>
-          This section is still a work in progress. But, if you&rsquo;re wondering if I can take the most complex enterprise
-          workflows and turn them into streamlined, intuitive, interfaces (in this case personal and commercial
-          workflows for independent insurance agents), the answer is yes. Yes, I can.
-          For more details on this project, including workflows and how many hundreds of mockups, conversations with
-          developers, product managers, product owners, and executives I had to have to get to this point,
-          <a href="mailto:sherif.tariq@gmail.com">contact me</a>.
-        </p>
-      </div>
-    </div>
+  <div class="site-container">
+    <SiteHeader />
 
-    <div class="section-container">
-      <div class="section pt-64 pb-64">
+    <section class="intro">
+      <h2 class="intro-title">
+        Cocoa Agency Management
+      </h2>
+      <p class="intro-desc">
+        This section is still a work in progress. But, if you&rsquo;re wondering if I can take the most complex enterprise
+        workflows and turn them into streamlined, intuitive, interfaces (in this case personal and commercial
+        workflows for independent insurance agents), the answer is yes. Yes, I can.
+        For more details on this project, including workflows and how many hundreds of mockups, conversations with
+        developers, product managers, product owners, and executives I had to have to get to this point,
+        <a href="mailto:sherif.tariq@gmail.com">contact me</a>.
+      </p>
+    </section>
+
+    <section class="body-content">
+      <h2 class="body-content-title">
         At EZLynx, I have two roles:
+      </h2>
+    </section>
 
-        <h2>
-          Individual Contributor (IC)
-        </h2>
+    <section class="flash-cards">
+      <div class="flash-card">
+        Individual Contributor (IC)
+      </div>
+      <div class="flash-card">
+        Design Leader
+      </div>
+    </section>
 
-        <p>
-          The first is as an individual contributor on any project that has a user interface. In that role, I work with
-          the Product teams and Developers following a designing thinking approach from concept to execution.
-        </p>
+    <h2 class="intro-title">
+      Individual Contributor (IC)
+    </h2>
 
-        <h3>Step 1: Kick Off</h3>
-        <p>
-            Every product at EZLynx starts either at the executive level or with a product manager.
-        </p>
+    <section class="body-content">
+      <h2 class="body-content-title">
+        Step 1: Kick Off
+      </h2>
+      <p class="body-content-desc">
+        The first is as an individual contributor on any project that has a user interface. In that role, I work with
+        the Product teams and Developers following a designing thinking approach from concept to execution.
+      </p>
 
-        <p>
-            Once a product manager has a high level scope, I meet with them to understand their end goals or outcomes of
-            the project and learn what they already know e.g. pain points, users, feedback on existing products,
-            competitiors, etc.
-        </p>
+      <p class="body-content-desc">
+        Every product at EZLynx starts either at the executive level or with a product manager.
+      </p>
 
-        <h3>Step 2: Discovery</h3>
-        <p>
-            After this, I collaborate with the business analyst for the project to setup some user interviews, so we can
-            understand the mental models and pain points as they exist today. I’ll then flesh out the user flows,
-            personas, context scenarios, information architecture, functional hierarchy.
-        </p>
+      <p class="body-content-desc">
+        Once a product manager has a high level scope, I meet with them to understand their end goals or outcomes of
+        the project and learn what they already know e.g. pain points, users, feedback on existing products,
+        competitiors, etc.
+      </p>
 
-        <img src="/img/projects/ezlynx/cert-user-flow.jpg" class="figure" alt="">
+      <h2 class="body-content-title">
+        Step 2: Discovery
+      </h2>
 
-        <div class="media-grid">
-            <img src="/img/projects/ezlynx/cert-master-wireframe.png" class="figure" alt="">
-            <img src="/img/projects/ezlynx/cert-new-workflow.png" class="figure" alt="">
-        </div>
+      <p class="body-content-desc">
+        After this, I collaborate with the business analyst for the project to setup some user interviews, so we can
+        understand the mental models and pain points as they exist today. I’ll then flesh out the user flows,
+        personas, context scenarios, information architecture, functional hierarchy.
+      </p>
+    </section>
 
-        <h3>Step 3: Ideation</h3>
-        <p>
-            The next step is ideation. This is the fun part and can take the longest. At this point, I’ll start mocking
-            screens in UXPin using reusable components from the EZLynx design systems (more about that later). I’ll
-            usually go through multiple iterations of my mockups. After each iteration, I’ll review the mockups with the
-            product manager, BA, and front-end engineer for the team assigned to the project and refine the mockups
-            based on whether it’s feasible.
-        </p>
+    <figure class="figure">
+      <img src="/img/projects/ezlynx/cert-user-flow.jpg" alt="">
+      <p class="figure-caption">Test caption</p>
+    </figure>
+
+    <figure class="figure">
+      <img src="/img/projects/ezlynx/cert-master-wireframe.png" alt="">
+      <p class="figure-caption">Test caption</p>
+    </figure>
+
+    <figure class="figure">
+      <img src="/img/projects/ezlynx/cert-new-workflow.png" alt="">
+      <p class="figure-caption">Test caption</p>
+    </figure>
+
+    <h2 class="intro-title">
+      Step 3: Ideation
+    </h2>
+
+    <section class="body-content">
+      <p class="body-content-desc">
+        The next step is ideation. This is the fun part and can take the longest. At this point, I’ll start mocking
+        screens in UXPin using reusable components from the EZLynx design systems (more about that later). I’ll
+        usually go through multiple iterations of my mockups. After each iteration, I’ll review the mockups with the
+        product manager, BA, and front-end engineer for the team assigned to the project and refine the mockups
+        based on whether it’s feasible.
+      </p>
+    </section>
+
+    <figure class="figure">
+      <img src="/img/projects/ezlynx/ezlynx-certs.png" alt="">
+    </figure>
+
+    <figure class="figure">
+      <img src="/img/projects/ezlynx/ezlynx-policies.png" alt="">
+    </figure>
+
+    <section class="body-content">
+      <h2 class="body-content-title">
+        Step 4: Usability Testing
+      </h2>
+      <p class="body-content-desc">
+        During the ideation process, I'll work with the business analyst to contact customers and get their feedback.
+        I'll facilitate usability testing with the customer including setting up the usability test script, task list,
+        prototype/mockups that the users will use and anything else needed to complete the test.
+      </p>
+
+      <p class="body-content-desc">
+        Once the business has signed off on the mockups, we’ll review them further with the engineering team to
+        validate and surface any engineering concerns. Once engineering has approved the designs, I’ll continue
+        working with them through the development phase, giving my feedback during sprint reviews, or further
+        iterating on the mockups if the engineers run into any issues that require changes to the mockups.
+      </p>
+    </section>
+
+    <section class="body-content">
+      <h2 class="body-content-title">
+        Step 5: Engineering
+      </h2>
+      <p class="body-content-desc">
+        My other role is that of a design leader for the EZLynx organization. In this role, I work closely with the
+        Product, Engineering, and Marketing teams to maintain the design and branding guidelines that the various
+        teams use to build their deliverables.
+      </p>
+    </section>
 
 
-        <img src="/img/projects/ezlynx/ezlynx-certs.png" class="screenshot" alt="">
-        <img src="/img/projects/ezlynx/ezlynx-policies.png" class="screenshot" alt="">
-
-        <h3>Step 4: Usability Testing</h3>
-        <p>
-          During the ideation process, I'll work with the business analyst to contact customers and get their feedback.
-          I'll facilitate usability testing with the customer including setting up the usability test script, task list,
-          prototype/mockups that the users will use and anything else needed to complete the test.
-        </p>
-
-        <h3>Step 5: Engineering</h3>
-        <p>
-            Once the business has signed off on the mockups, we’ll review them further with the engineering team to
-            validate and surface any engineering concerns. Once engineering has approved the designs, I’ll continue
-            working with them through the development phase, giving my feedback during sprint reviews, or further
-            iterating on the mockups if the engineers run into any issues that require changes to the mockups.
-        </p>
-
-        <p>&nbsp;</p>
 
         <h2>Design Leader</h2>
 
         <p>
-          My other role is that of a design leader for the EZLynx organization. In this role, I work closely with the
-          Product, Engineering, and Marketing teams to maintain the design and branding guidelines that the various
-          teams use to build their deliverables.
+
         </p>
 
         <div class="row">
@@ -213,9 +249,10 @@
     </div>
 
 
-    <footer>
-      <site-footer class="site-footer-container inverse" style="background-color: #37474F;"></site-footer>
-    </footer>
+    <SiteFooter />
+  </div>
+</template>
+
 
   </main>
 </template>
