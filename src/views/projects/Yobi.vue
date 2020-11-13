@@ -60,7 +60,6 @@
           </div>
         </div>
       </div>
-    </div>
 
     <div class="section-container pt-64 pb-64">
       <div class="section center">
