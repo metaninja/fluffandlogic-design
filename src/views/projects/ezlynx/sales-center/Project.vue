@@ -86,7 +86,7 @@
 
             <p>
               <figure>
-                <img src="@/views/projects/ezlynx/sales-center/5-Pannel-Funnel.jpg" style="width: 100%;">
+                <img src="@/views/projects/ezlynx/sales-center/5-Pannel-Funnel.jpg" style="width: 100%;" />
                 <caption>
                   Reference: <a href="https://fitsmallbusiness.com/sales-funnel-templates/">Fit Small Business</a>
                 </caption>
