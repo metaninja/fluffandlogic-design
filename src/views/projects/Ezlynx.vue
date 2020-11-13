@@ -5,7 +5,7 @@
 
     <section class="intro">
       <h2 class="intro-title">
-        Cocoa Agency Management
+        EZLynx
       </h2>
       <p class="intro-desc">
         This section is still a work in progress. But, if you&rsquo;re wondering if I can take the most complex enterprise
@@ -136,10 +136,6 @@
 
         <h2>Design Leader</h2>
 
-        <p>
-
-        </p>
-
         <div class="row">
           <div class="col">
             <h3>
@@ -200,7 +196,6 @@
           </div>
         </div>
 
-
         <div class="row">
           <div class="col">
             <h3>
@@ -226,7 +221,6 @@
           </div>
         </div>
 
-
         <div class="row">
           <div class="col">
 
@@ -245,16 +239,9 @@
         </div>
 
 
-      </div>
-    </div>
-
 
     <SiteFooter />
   </div>
-</template>
-
-
-  </main>
 </template>
 
 <script>
