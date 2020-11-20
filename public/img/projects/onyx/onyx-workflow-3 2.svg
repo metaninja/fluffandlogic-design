@@ -1,0 +1,606 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="2807px" height="907px" viewBox="0 0 2807 907" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>onyx-workflow-3</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 21.5 0 0 14.8545 10.75"></polygon>
+        <polygon id="path-3" points="0 26.0447 0 0 15 13.0223"></polygon>
+        <polygon id="path-5" points="0 21.5 0 0 14.8545 10.75"></polygon>
+        <polygon id="path-7" points="0 21.5 0 0 14.8545 10.75"></polygon>
+        <polygon id="path-9" points="14.8545 0 14.8545 21.5 0 10.75"></polygon>
+        <polygon id="path-11" points="0 0 21.5 0 10.75 14.8545"></polygon>
+        <polygon id="path-13" points="0 0 21.5 0 10.75 14.8545"></polygon>
+        <polygon id="path-15" points="0 0 21.5 0 10.75 14.8545"></polygon>
+        <polygon id="path-17" points="0 21.5 0 0 14.855 10.75"></polygon>
+        <polygon id="path-19" points="0 21.5 0 0 14.855 10.75"></polygon>
+        <polygon id="path-21" points="0 21.5 0 0 14.855 10.75"></polygon>
+        <polygon id="path-23" points="0 0 21.5 0 10.75 14.8545"></polygon>
+        <polygon id="path-25" points="0 21.5 0 0 14.855 10.75"></polygon>
+        <polygon id="path-27" points="0 21.5 0 0 14.855 10.75"></polygon>
+        <polygon id="path-29" points="0 0.5 211 0.5 210.5 0 210.5 93 211 92.5 0 92.5 0.5 93 0.5 0"></polygon>
+        <polygon id="path-31" points="0 0.5 211 0.5 210.5 0 210.5 93 211 92.5 0 92.5 0.5 93 0.5 0"></polygon>
+        <polygon id="path-33" points="0 0.5 211 0.5 210.5 0 210.5 93 211 92.5 0 92.5 0.5 93 0.5 0"></polygon>
+        <polygon id="path-35" points="0 0.5 211 0.5 210.5 0 210.5 93 211 92.5 0 92.5 0.5 93 0.5 0"></polygon>
+        <polygon id="path-37" points="0 0.5 211 0.5 210.5 0 210.5 93 211 92.5 0 92.5 0.5 93 0.5 0"></polygon>
+        <polygon id="path-39" points="0 0.5 211 0.5 210.5 0 210.5 93 211 92.5 0 92.5 0.5 93 0.5 0"></polygon>
+        <polygon id="path-41" points="0 0.5 211 0.5 210.5 0 210.5 93 211 92.5 0 92.5 0.5 93 0.5 0"></polygon>
+        <polygon id="path-43" points="0 0.5 211 0.5 210.5 0 210.5 93 211 92.5 0 92.5 0.5 93 0.5 0"></polygon>
+        <polygon id="path-45" points="0 0.5 211 0.5 210.5 0 210.5 93 211 92.5 0 92.5 0.5 93 0.5 0"></polygon>
+        <polygon id="path-47" points="0 0.5 211 0.5 210.5 0 210.5 93 211 92.5 0 92.5 0.5 93 0.5 0"></polygon>
+        <polygon id="path-49" points="0 0.5 211 0.5 210.5 0 210.5 93 211 92.5 0 92.5 0.5 93 0.5 0"></polygon>
+        <polygon id="path-51" points="0 0.5 211 0.5 210.5 0 210.5 93 211 92.5 0 92.5 0.5 93 0.5 0"></polygon>
+        <polygon id="path-53" points="0 113.8442 113.844 0 227.688 113.8442 113.844 227.6884"></polygon>
+        <polygon id="path-55" points="15 0.5 15 22 0.1455 11.25"></polygon>
+        <polygon id="path-57" points="0 0 21.5 0 10.75 14.8545"></polygon>
+        <polygon id="path-59" points="0 0.5 211 0.5 210.5 0 210.5 93 211 92.5 0 92.5 0.5 93 0.5 0"></polygon>
+    </defs>
+    <g id="onyx-workflow-3" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="light" transform="translate(1563.000000, 81.000000)"></g>
+        <g id="60-Reconcile-Commissions" transform="translate(48.000000, 59.000000)">
+            <path d="M205.36143,172.5 L280.5,172.5" id="Stroke-1" stroke="#979797" stroke-linecap="square"></path>
+            <g id="Group-4" transform="translate(274.000000, 161.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-3"></g>
+                <polygon id="Fill-2" fill="#979797" mask="url(#mask-2)" points="-5 -5 19.8545 -5 19.8545 26.5 -5 26.5"></polygon>
+            </g>
+            <g id="Group-7" transform="translate(500.000000, 172.000000)" stroke="#979797" stroke-linecap="square">
+                <path d="M0,1.001718 L141,1.001718" id="Stroke-5"></path>
+                <path d="M66.5,145.5034 L66.5,0.4006711" id="Stroke-6"></path>
+            </g>
+            <g id="Group-10" transform="translate(635.000000, 161.000000)">
+                <mask id="mask-4" fill="white">
+                    <use xlink:href="#path-3"></use>
+                </mask>
+                <g id="Clip-9"></g>
+                <polygon id="Fill-8" fill="#979797" mask="url(#mask-4)" points="-5 -5 20 -5 20 31.0447 -5 31.0447"></polygon>
+            </g>
+            <path d="M566.36143,316.5 L641.5,316.5" id="Stroke-11" stroke="#979797" stroke-linecap="square"></path>
+            <g id="Group-14" transform="translate(635.000000, 305.000000)">
+                <mask id="mask-6" fill="white">
+                    <use xlink:href="#path-5"></use>
+                </mask>
+                <g id="Clip-13"></g>
+                <polygon id="Fill-12" fill="#979797" mask="url(#mask-6)" points="-5 -5 19.8545 -5 19.8545 26.5 -5 26.5"></polygon>
+            </g>
+            <path d="M860.36143,172.5 L935.5,172.5" id="Stroke-15" stroke="#979797" stroke-linecap="square"></path>
+            <g id="Group-18" transform="translate(929.000000, 161.000000)">
+                <mask id="mask-8" fill="white">
+                    <use xlink:href="#path-7"></use>
+                </mask>
+                <g id="Clip-17"></g>
+                <polygon id="Fill-16" fill="#979797" mask="url(#mask-8)" points="-5 -5 19.8545 -5 19.8545 26.5 -5 26.5"></polygon>
+            </g>
+            <g id="Group-21" transform="translate(861.000000, 306.000000)">
+                <mask id="mask-10" fill="white">
+                    <use xlink:href="#path-9"></use>
+                </mask>
+                <g id="Clip-20"></g>
+                <polygon id="Fill-19" fill="#979797" mask="url(#mask-10)" points="19.8545 26.5 -5 26.5 -5 -5 19.8545 -5"></polygon>
+            </g>
+            <g id="Group-24" transform="translate(745.000000, 396.000000)">
+                <mask id="mask-12" fill="white">
+                    <use xlink:href="#path-11"></use>
+                </mask>
+                <g id="Clip-23"></g>
+                <polygon id="Fill-22" fill="#979797" mask="url(#mask-12)" points="26.5 -5 26.5 19.8545 -5 19.8545 -5 -5"></polygon>
+            </g>
+            <g id="Group-27" transform="translate(745.000000, 538.000000)">
+                <mask id="mask-14" fill="white">
+                    <use xlink:href="#path-13"></use>
+                </mask>
+                <g id="Clip-26"></g>
+                <polygon id="Fill-25" fill="#979797" mask="url(#mask-14)" points="26.5 -5 26.5 19.8545 -5 19.8545 -5 -5"></polygon>
+            </g>
+            <g id="Group-30" transform="translate(745.000000, 682.000000)">
+                <mask id="mask-16" fill="white">
+                    <use xlink:href="#path-15"></use>
+                </mask>
+                <g id="Clip-29"></g>
+                <polygon id="Fill-28" fill="#979797" mask="url(#mask-16)" points="26.5 -5 26.5 19.8545 -5 19.8545 -5 -5"></polygon>
+            </g>
+            <path d="M1447.36143,172.5 L1522.5,172.5" id="Stroke-31" stroke="#979797" stroke-linecap="square"></path>
+            <g id="Group-34" transform="translate(1516.000000, 161.000000)">
+                <mask id="mask-18" fill="white">
+                    <use xlink:href="#path-17"></use>
+                </mask>
+                <g id="Clip-33"></g>
+                <polygon id="Fill-32" fill="#979797" mask="url(#mask-18)" points="-5 -5 19.855 -5 19.855 26.5 -5 26.5"></polygon>
+            </g>
+            <path d="M1154.36143,172.5 L1229.5,172.5" id="Stroke-35" stroke="#979797" stroke-linecap="square"></path>
+            <g id="Group-38" transform="translate(1223.000000, 161.000000)">
+                <mask id="mask-20" fill="white">
+                    <use xlink:href="#path-19"></use>
+                </mask>
+                <g id="Clip-37"></g>
+                <polygon id="Fill-36" fill="#979797" mask="url(#mask-20)" points="-5 -5 19.855 -5 19.855 26.5 -5 26.5"></polygon>
+            </g>
+            <path d="M1740.36143,172.5 L1815.5,172.5" id="Stroke-39" stroke="#979797" stroke-linecap="square"></path>
+            <g id="Group-42" transform="translate(1809.000000, 161.000000)">
+                <mask id="mask-22" fill="white">
+                    <use xlink:href="#path-21"></use>
+                </mask>
+                <g id="Clip-41"></g>
+                <polygon id="Fill-40" fill="#979797" mask="url(#mask-22)" points="-5 -5 19.855 -5 19.855 26.5 -5 26.5"></polygon>
+            </g>
+            <g id="Group-45" transform="translate(1924.000000, 113.000000)">
+                <mask id="mask-24" fill="white">
+                    <use xlink:href="#path-23"></use>
+                </mask>
+                <g id="Clip-44"></g>
+                <polygon id="Fill-43" fill="#979797" mask="url(#mask-24)" points="26.5 -5 26.5 19.8545 -5 19.8545 -5 -5"></polygon>
+            </g>
+            <path d="M2343.36143,173.5 L2418.5,173.5" id="Stroke-46" stroke="#979797" stroke-linecap="square"></path>
+            <g id="Group-49" transform="translate(2412.000000, 162.000000)">
+                <mask id="mask-26" fill="white">
+                    <use xlink:href="#path-25"></use>
+                </mask>
+                <g id="Clip-48"></g>
+                <polygon id="Fill-47" fill="#979797" mask="url(#mask-26)" points="-5 -5 19.855 -5 19.855 26.5 -5 26.5"></polygon>
+            </g>
+            <path d="M2033.36143,173.5 L2108.5,173.5" id="Stroke-50" stroke="#979797" stroke-linecap="square"></path>
+            <g id="Group-53" transform="translate(2102.000000, 162.000000)">
+                <mask id="mask-28" fill="white">
+                    <use xlink:href="#path-27"></use>
+                </mask>
+                <g id="Clip-52"></g>
+                <polygon id="Fill-51" fill="#979797" mask="url(#mask-28)" points="-5 -5 19.855 -5 19.855 26.5 -5 26.5"></polygon>
+            </g>
+            <g id="Group-56" transform="translate(0.000000, 128.000000)">
+                <mask id="mask-30" fill="white">
+                    <use xlink:href="#path-29"></use>
+                </mask>
+                <g id="Clip-55"></g>
+                <polygon id="Fill-54" fill="#FFFFFF" mask="url(#mask-30)" points="0 0 211 0 211 93 0 93"></polygon>
+            </g>
+            <polygon id="Stroke-57" stroke="#979797" stroke-width="2" points="0 128 211 128 211 221 0 221"></polygon>
+            <g id="Group-61" transform="translate(289.000000, 128.000000)">
+                <mask id="mask-32" fill="white">
+                    <use xlink:href="#path-31"></use>
+                </mask>
+                <g id="Clip-60"></g>
+                <polygon id="Fill-59" fill="#FFFFFF" mask="url(#mask-32)" points="0 0 211 0 211 93 0 93"></polygon>
+            </g>
+            <polygon id="Stroke-62" stroke="#979797" stroke-width="2" points="289 128 500 128 500 221 289 221"></polygon>
+            <g id="Group-66" transform="translate(1238.000000, 128.000000)">
+                <mask id="mask-34" fill="white">
+                    <use xlink:href="#path-33"></use>
+                </mask>
+                <g id="Clip-65"></g>
+                <polygon id="Fill-64" fill="#FFFFFF" mask="url(#mask-34)" points="0 0 211 0 211 93 0 93"></polygon>
+            </g>
+            <polygon id="Stroke-67" stroke="#979797" stroke-width="2" points="1238 128 1449 128 1449 221 1238 221"></polygon>
+            <g id="Group-71" transform="translate(1531.000000, 128.000000)">
+                <mask id="mask-36" fill="white">
+                    <use xlink:href="#path-35"></use>
+                </mask>
+                <g id="Clip-70"></g>
+                <polygon id="Fill-69" fill="#FFFFFF" mask="url(#mask-36)" points="0 0 211 0 211 93 0 93"></polygon>
+            </g>
+            <polygon id="Stroke-72" stroke="#979797" stroke-width="2" points="1531 128 1742 128 1742 221 1531 221"></polygon>
+            <g id="Group-76" transform="translate(1824.000000, 128.000000)">
+                <mask id="mask-38" fill="white">
+                    <use xlink:href="#path-37"></use>
+                </mask>
+                <g id="Clip-75"></g>
+                <polygon id="Fill-74" fill="#FFFFFF" mask="url(#mask-38)" points="0 0 211 0 211 93 0 93"></polygon>
+            </g>
+            <polygon id="Stroke-77" stroke="#979797" stroke-width="2" points="1824 128 2035 128 2035 221 1824 221"></polygon>
+            <g id="Group-81" transform="translate(2427.000000, 128.000000)">
+                <mask id="mask-40" fill="white">
+                    <use xlink:href="#path-39"></use>
+                </mask>
+                <g id="Clip-80"></g>
+                <polygon id="Fill-79" fill="#FFFFFF" mask="url(#mask-40)" points="0 0 211 0 211 93 0 93"></polygon>
+            </g>
+            <polygon id="Stroke-82" stroke="#979797" stroke-width="2" points="2427 128 2638 128 2638 221 2427 221"></polygon>
+            <g id="Group-84" transform="translate(25.000000, 145.000000)" fill="#838383" font-family="GillSans, Gill Sans" font-size="22" font-weight="normal">
+                <text id="View-event-details">
+                    <tspan x="0.3427734" y="31.734375">V</tspan>
+                    <tspan x="13.6308593" y="31.734375" letter-spacing="0.0044">i</tspan>
+                    <tspan x="18.4585015" y="31.734375">e</tspan>
+                    <tspan x="28.6635796" y="31.734375" letter-spacing="0.0044">w</tspan>
+                    <tspan x="44.4912218" y="31.734375" letter-spacing="-0.0044"> </tspan>
+                    <tspan x="50.5991265" y="31.734375">event</tspan>
+                    <tspan x="98.863775" y="31.734375" letter-spacing="-0.0044"> d</tspan>
+                    <tspan x="116.182123" y="31.734375">et</tspan>
+                    <tspan x="134.046381" y="31.734375" letter-spacing="-0.0044">a</tspan>
+                    <tspan x="143.430653" y="31.734375" letter-spacing="0.0044">il</tspan>
+                    <tspan x="153.085937" y="31.734375">s</tspan>
+                </text>
+                <text id="Display-commission-">
+                    <tspan x="284.919434" y="20.734375">D</tspan>
+                    <tspan x="301.419434" y="20.734375" letter-spacing="0.0044">i</tspan>
+                    <tspan x="306.247076" y="20.734375" letter-spacing="-0.0044">s</tspan>
+                    <tspan x="314.70752" y="20.734375">p</tspan>
+                    <tspan x="325.70752" y="20.734375" letter-spacing="0.0044">l</tspan>
+                    <tspan x="330.535162" y="20.734375" letter-spacing="-0.0044">a</tspan>
+                    <tspan x="339.038575" y="20.734375">y</tspan>
+                    <tspan x="348.674317" y="20.734375" letter-spacing="-0.0044"> </tspan>
+                    <tspan x="354.782221" y="20.734375">c</tspan>
+                    <tspan x="364.417964" y="20.734375" letter-spacing="-0.0044">o</tspan>
+                    <tspan x="376.552236" y="20.734375">mm</tspan>
+                    <tspan x="410.476064" y="20.734375" letter-spacing="0.0044">i</tspan>
+                    <tspan x="415.303706" y="20.734375" letter-spacing="-0.0044">ss</tspan>
+                    <tspan x="432.224593" y="20.734375" letter-spacing="0.0044">i</tspan>
+                    <tspan x="437.052236" y="20.734375" letter-spacing="-0.0044">o</tspan>
+                    <tspan x="449.186507" y="20.734375">n </tspan>
+                </text>
+                <text id="to-be-paid">
+                    <tspan x="328.17285" y="44.734375">t</tspan>
+                    <tspan x="335.499022" y="44.734375" letter-spacing="-0.0044">o </tspan>
+                    <tspan x="353.741198" y="44.734375">be</tspan>
+                    <tspan x="375.279284" y="44.734375" letter-spacing="-0.0044"> </tspan>
+                    <tspan x="381.387189" y="44.734375">p</tspan>
+                    <tspan x="392.387189" y="44.734375" letter-spacing="-0.0044">a</tspan>
+                    <tspan x="401.771461" y="44.734375" letter-spacing="0.0044">i</tspan>
+                    <tspan x="406.599103" y="44.734375">d</tspan>
+                </text>
+            </g>
+            <g id="Group-87" transform="translate(650.000000, 553.000000)">
+                <mask id="mask-42" fill="white">
+                    <use xlink:href="#path-41"></use>
+                </mask>
+                <g id="Clip-86"></g>
+                <polygon id="Fill-85" fill="#FFFFFF" mask="url(#mask-42)" points="0 0 211 0 211 93 0 93"></polygon>
+            </g>
+            <polygon id="Stroke-88" stroke="#979797" stroke-width="2" points="650 553 861 553 861 646 650 646"></polygon>
+            <g id="Group-92" transform="translate(650.000000, 697.000000)">
+                <mask id="mask-44" fill="white">
+                    <use xlink:href="#path-43"></use>
+                </mask>
+                <g id="Clip-91"></g>
+                <polygon id="Fill-90" fill="#FFFFFF" mask="url(#mask-44)" points="0 0 211 0 211 93 0 93"></polygon>
+            </g>
+            <polygon id="Stroke-93" stroke="#979797" stroke-width="2" points="650 697 861 697 861 790 650 790"></polygon>
+            <g id="Group-95" transform="translate(674.000000, 570.000000)" fill="#838383" font-family="GillSans, Gill Sans" font-size="22" font-weight="normal">
+                <text id="Mark-commission-" letter-spacing="-0.0044">
+                    <tspan x="0.80313" y="20.734375">Ma</tspan>
+                    <tspan x="27.3597597" y="20.734375">rk</tspan>
+                    <tspan x="46.6097597" y="20.734375"> </tspan>
+                    <tspan x="52.7176644" y="20.734375">c</tspan>
+                    <tspan x="62.3534066" y="20.734375">o</tspan>
+                    <tspan x="74.4876784" y="20.734375">mm</tspan>
+                    <tspan x="108.411507" y="20.734375" letter-spacing="0.0044">i</tspan>
+                    <tspan x="113.239149" y="20.734375">ss</tspan>
+                    <tspan x="130.160036" y="20.734375" letter-spacing="0.0044">i</tspan>
+                    <tspan x="134.987678" y="20.734375">o</tspan>
+                    <tspan x="147.12195" y="20.734375">n </tspan>
+                </text>
+                <text id="as-paid" letter-spacing="-0.0044">
+                    <tspan x="49.27725" y="44.734375">as </tspan>
+                    <tspan x="73.2298703" y="44.734375">p</tspan>
+                    <tspan x="84.2298703" y="44.734375">a</tspan>
+                    <tspan x="93.6141422" y="44.734375" letter-spacing="0.0044">i</tspan>
+                    <tspan x="98.4417844" y="44.734375">d</tspan>
+                </text>
+                <text id="Close-event">
+                    <tspan x="26.12784" y="174.734375">C</tspan>
+                    <tspan x="41.7040119" y="174.734375" letter-spacing="0.0044">l</tspan>
+                    <tspan x="46.5316541" y="174.734375" letter-spacing="-0.0044">os</tspan>
+                    <tspan x="67.1263697" y="174.734375">e</tspan>
+                    <tspan x="77.6644556" y="174.734375" letter-spacing="-0.0044"> </tspan>
+                    <tspan x="83.7723603" y="174.734375">event</tspan>
+                </text>
+            </g>
+            <g id="Group-98" transform="translate(650.000000, 128.000000)">
+                <mask id="mask-46" fill="white">
+                    <use xlink:href="#path-45"></use>
+                </mask>
+                <g id="Clip-97"></g>
+                <polygon id="Fill-96" fill="#FFFFFF" mask="url(#mask-46)" points="0 0 211 0 211 93 0 93"></polygon>
+            </g>
+            <polygon id="Stroke-99" stroke="#979797" stroke-width="2" points="650 128 861 128 861 221 650 221"></polygon>
+            <g id="Group-101" transform="translate(707.000000, 143.000000)" fill="#838383" font-family="GillSans, Gill Sans" font-size="22" font-weight="normal">
+                <text id="Dispute-">
+                    <tspan x="18.64737" y="20.734375">D</tspan>
+                    <tspan x="35.14737" y="20.734375" letter-spacing="0.0044">i</tspan>
+                    <tspan x="39.9750122" y="20.734375" letter-spacing="-0.0044">s</tspan>
+                    <tspan x="48.4354559" y="20.734375">pute </tspan>
+                </text>
+                <text id="commission">
+                    <tspan x="0.767" y="44.734375">c</tspan>
+                    <tspan x="10.4027422" y="44.734375" letter-spacing="-0.0044">o</tspan>
+                    <tspan x="22.5370141" y="44.734375">mm</tspan>
+                    <tspan x="56.4608422" y="44.734375" letter-spacing="0.0044">i</tspan>
+                    <tspan x="61.2884844" y="44.734375" letter-spacing="-0.0044">ss</tspan>
+                    <tspan x="78.2093719" y="44.734375" letter-spacing="0.0044">i</tspan>
+                    <tspan x="83.0370141" y="44.734375" letter-spacing="-0.0044">o</tspan>
+                    <tspan x="95.1712859" y="44.734375">n</tspan>
+                </text>
+            </g>
+            <g id="Group-104" transform="translate(944.000000, 128.000000)">
+                <mask id="mask-48" fill="white">
+                    <use xlink:href="#path-47"></use>
+                </mask>
+                <g id="Clip-103"></g>
+                <polygon id="Fill-102" fill="#FFFFFF" mask="url(#mask-48)" points="0 0 211 0 211 93 0 93"></polygon>
+            </g>
+            <polygon id="Stroke-105" stroke="#979797" stroke-width="2" points="944 128 1155 128 1155 221 944 221"></polygon>
+            <g id="Group-107" transform="translate(969.000000, 142.000000)" fill="#838383" font-family="GillSans, Gill Sans" font-size="22" font-weight="normal">
+                <text id="View-commission-">
+                    <tspan x="0.47452" y="20.734375">V</tspan>
+                    <tspan x="13.7626059" y="20.734375" letter-spacing="0.0044">i</tspan>
+                    <tspan x="18.5902481" y="20.734375">e</tspan>
+                    <tspan x="28.7953262" y="20.734375" letter-spacing="0.0044">w</tspan>
+                    <tspan x="44.6229684" y="20.734375" letter-spacing="-0.0044"> </tspan>
+                    <tspan x="50.7308731" y="20.734375">c</tspan>
+                    <tspan x="60.3666153" y="20.734375" letter-spacing="-0.0044">o</tspan>
+                    <tspan x="72.5008872" y="20.734375">mm</tspan>
+                    <tspan x="106.424715" y="20.734375" letter-spacing="0.0044">i</tspan>
+                    <tspan x="111.252357" y="20.734375" letter-spacing="-0.0044">ss</tspan>
+                    <tspan x="128.173245" y="20.734375" letter-spacing="0.0044">i</tspan>
+                    <tspan x="133.000887" y="20.734375" letter-spacing="-0.0044">o</tspan>
+                    <tspan x="145.135159" y="20.734375">n </tspan>
+                </text>
+                <text id="details" letter-spacing="-0.0044">
+                    <tspan x="50.18399" y="44.734375">d</tspan>
+                    <tspan x="61.3944337" y="44.734375">et</tspan>
+                    <tspan x="79.2586916" y="44.734375">a</tspan>
+                    <tspan x="88.6429634" y="44.734375" letter-spacing="0.0044">il</tspan>
+                    <tspan x="98.2982478" y="44.734375">s</tspan>
+                </text>
+            </g>
+            <g id="Group-110" transform="translate(650.000000, 269.000000)">
+                <mask id="mask-50" fill="white">
+                    <use xlink:href="#path-49"></use>
+                </mask>
+                <g id="Clip-109"></g>
+                <polygon id="Fill-108" fill="#FFFFFF" mask="url(#mask-50)" points="0 0 211 0 211 93 0 93"></polygon>
+            </g>
+            <polygon id="Stroke-111" stroke="#979797" stroke-width="2" points="650 269 861 269 861 362 650 362"></polygon>
+            <g id="Group-113" transform="translate(667.000000, 284.000000)" fill="#838383" font-family="GillSans, Gill Sans" font-size="22" font-weight="normal">
+                <text id="Update-commission-">
+                    <tspan x="0.1888721" y="20.734375">Up</tspan>
+                    <tspan x="26.765044" y="20.734375" letter-spacing="-0.0044">da</tspan>
+                    <tspan x="47.3597596" y="20.734375">te</tspan>
+                    <tspan x="65.2240174" y="20.734375" letter-spacing="-0.0044"> </tspan>
+                    <tspan x="71.3319221" y="20.734375">c</tspan>
+                    <tspan x="80.9676643" y="20.734375" letter-spacing="-0.0044">o</tspan>
+                    <tspan x="93.1019362" y="20.734375">mm</tspan>
+                    <tspan x="127.025764" y="20.734375" letter-spacing="0.0044">i</tspan>
+                    <tspan x="131.853406" y="20.734375" letter-spacing="-0.0044">ss</tspan>
+                    <tspan x="148.774294" y="20.734375" letter-spacing="0.0044">i</tspan>
+                    <tspan x="153.601936" y="20.734375" letter-spacing="-0.0044">o</tspan>
+                    <tspan x="165.736208" y="20.734375">n </tspan>
+                </text>
+                <text id="to-be-paid">
+                    <tspan x="43.64639" y="44.734375">t</tspan>
+                    <tspan x="50.9725619" y="44.734375" letter-spacing="-0.0044">o </tspan>
+                    <tspan x="69.2147384" y="44.734375">be</tspan>
+                    <tspan x="90.7528244" y="44.734375" letter-spacing="-0.0044"> </tspan>
+                    <tspan x="96.8607291" y="44.734375">p</tspan>
+                    <tspan x="107.860729" y="44.734375" letter-spacing="-0.0044">a</tspan>
+                    <tspan x="117.245001" y="44.734375" letter-spacing="0.0044">i</tspan>
+                    <tspan x="122.072643" y="44.734375">d</tspan>
+                </text>
+            </g>
+            <g id="Group-116" transform="translate(650.000000, 410.000000)">
+                <mask id="mask-52" fill="white">
+                    <use xlink:href="#path-51"></use>
+                </mask>
+                <g id="Clip-115"></g>
+                <polygon id="Fill-114" fill="#FFFFFF" mask="url(#mask-52)" points="0 0 211 0 211 93 0 93"></polygon>
+            </g>
+            <polygon id="Stroke-117" stroke="#979797" stroke-width="2" points="650 410 861 410 861 503 650 503"></polygon>
+            <g id="Group-119" transform="translate(666.000000, 131.000000)" fill="#838383" font-family="GillSans, Gill Sans" font-size="22" font-weight="normal">
+                <text id="Mark-commission-" letter-spacing="-0.0044">
+                    <tspan x="8.80313" y="302.734375">Ma</tspan>
+                    <tspan x="35.3597597" y="302.734375">rk</tspan>
+                    <tspan x="54.6097597" y="302.734375"> </tspan>
+                    <tspan x="60.7176644" y="302.734375">c</tspan>
+                    <tspan x="70.3534066" y="302.734375">o</tspan>
+                    <tspan x="82.4876784" y="302.734375">mm</tspan>
+                    <tspan x="116.411507" y="302.734375" letter-spacing="0.0044">i</tspan>
+                    <tspan x="121.239149" y="302.734375">ss</tspan>
+                    <tspan x="138.160036" y="302.734375" letter-spacing="0.0044">i</tspan>
+                    <tspan x="142.987678" y="302.734375">o</tspan>
+                    <tspan x="155.12195" y="302.734375">n </tspan>
+                </text>
+                <text id="as-payment-pending-" letter-spacing="-0.0044">
+                    <tspan x="0.026763" y="326.734375">as </tspan>
+                    <tspan x="23.9793833" y="326.734375">p</tspan>
+                    <tspan x="34.9793833" y="326.734375">a</tspan>
+                    <tspan x="43.4827958" y="326.734375">yment</tspan>
+                    <tspan x="98.9447099" y="326.734375"> </tspan>
+                    <tspan x="105.052615" y="326.734375">pen</tspan>
+                    <tspan x="137.5907" y="326.734375">d</tspan>
+                    <tspan x="148.801144" y="326.734375" letter-spacing="0.0044">i</tspan>
+                    <tspan x="153.628786" y="326.734375">n</tspan>
+                    <tspan x="164.628786" y="326.734375">g</tspan>
+                    <tspan x="174.013058" y="326.734375"> </tspan>
+                </text>
+                <text id="(manual/auto)" letter-spacing="0.0044">
+                    <tspan x="26.06583" y="350.734375">(</tspan>
+                    <tspan x="33.1815581" y="350.734375">m</tspan>
+                    <tspan x="50.1434722" y="350.734375" letter-spacing="-0.0044">a</tspan>
+                    <tspan x="59.5277441" y="350.734375">nu</tspan>
+                    <tspan x="81.3129003" y="350.734375" letter-spacing="-0.0044">a</tspan>
+                    <tspan x="90.6971722" y="350.734375">l</tspan>
+                    <tspan x="95.5248144" y="350.734375" letter-spacing="-0.0044">/a</tspan>
+                    <tspan x="111.081444" y="350.734375">ut</tspan>
+                    <tspan x="129.407616" y="350.734375" letter-spacing="-0.0044">o</tspan>
+                    <tspan x="141.541888" y="350.734375">)</tspan>
+                </text>
+                <text id="Mark-items-in-" letter-spacing="-0.0044">
+                    <tspan x="616.51123" y="34.734375">Ma</tspan>
+                    <tspan x="643.06786" y="34.734375">rk</tspan>
+                    <tspan x="662.31786" y="34.734375"> </tspan>
+                    <tspan x="668.425764" y="34.734375" letter-spacing="0.0044">i</tspan>
+                    <tspan x="673.253407" y="34.734375">tem</tspan>
+                    <tspan x="708.079578" y="34.734375">s </tspan>
+                    <tspan x="722.647927" y="34.734375" letter-spacing="0.0044">i</tspan>
+                    <tspan x="727.475569" y="34.734375">n </tspan>
+                </text>
+                <text id="dispute" letter-spacing="-0.0044">
+                    <tspan x="645.31641" y="58.734375">d</tspan>
+                    <tspan x="656.526854" y="58.734375" letter-spacing="0.0044">i</tspan>
+                    <tspan x="661.354496" y="58.734375">s</tspan>
+                    <tspan x="669.81494" y="58.734375">pute</tspan>
+                </text>
+                <text id="Add-reason-for-">
+                    <tspan x="902.539551" y="34.734375">A</tspan>
+                    <tspan x="917.213379" y="34.734375" letter-spacing="-0.0044">dd </tspan>
+                    <tspan x="945.527328" y="34.734375">re</tspan>
+                    <tspan x="964.336898" y="34.734375" letter-spacing="-0.0044">aso</tspan>
+                    <tspan x="994.315885" y="34.734375">n</tspan>
+                    <tspan x="1005.31589" y="34.734375" letter-spacing="-0.0044"> </tspan>
+                    <tspan x="1011.42379" y="34.734375">f</tspan>
+                    <tspan x="1016.70895" y="34.734375" letter-spacing="-0.0044">o</tspan>
+                    <tspan x="1028.84322" y="34.734375">r </tspan>
+                </text>
+                <text id="dispute" letter-spacing="-0.0044">
+                    <tspan x="938.31641" y="58.734375">d</tspan>
+                    <tspan x="949.526854" y="58.734375" letter-spacing="0.0044">i</tspan>
+                    <tspan x="954.354496" y="58.734375">s</tspan>
+                    <tspan x="962.81494" y="58.734375">pute</tspan>
+                </text>
+                <text id="Notify-hotel-event-" letter-spacing="-0.0044">
+                    <tspan x="1185.65527" y="20.734375">No</tspan>
+                    <tspan x="1214.9619" y="20.734375">t</tspan>
+                    <tspan x="1222.28807" y="20.734375" letter-spacing="0.0044">i</tspan>
+                    <tspan x="1227.11572" y="20.734375">fy</tspan>
+                    <tspan x="1242.25146" y="20.734375"> </tspan>
+                    <tspan x="1248.35936" y="20.734375">h</tspan>
+                    <tspan x="1259.35936" y="20.734375">o</tspan>
+                    <tspan x="1271.49364" y="20.734375">te</tspan>
+                    <tspan x="1289.35789" y="20.734375" letter-spacing="0.0044">l</tspan>
+                    <tspan x="1294.18554" y="20.734375"> </tspan>
+                    <tspan x="1300.29344" y="20.734375">event </tspan>
+                </text>
+                <text id="manager/hotel-">
+                    <tspan x="1203.80957" y="44.734375">m</tspan>
+                    <tspan x="1220.77148" y="44.734375" letter-spacing="-0.0044">a</tspan>
+                    <tspan x="1230.15576" y="44.734375">n</tspan>
+                    <tspan x="1241.15576" y="44.734375" letter-spacing="-0.0044">ag</tspan>
+                    <tspan x="1259.9243" y="44.734375">er</tspan>
+                    <tspan x="1279.1743" y="44.734375" letter-spacing="-0.0044">/</tspan>
+                    <tspan x="1285.34666" y="44.734375">h</tspan>
+                    <tspan x="1296.34666" y="44.734375" letter-spacing="-0.0044">o</tspan>
+                    <tspan x="1308.48093" y="44.734375">te</tspan>
+                    <tspan x="1326.34519" y="44.734375" letter-spacing="0.0044">l</tspan>
+                    <tspan x="1331.17283" y="44.734375"> </tspan>
+                </text>
+                <text id="corporation">
+                    <tspan x="1213.99316" y="68.734375">c</tspan>
+                    <tspan x="1223.6289" y="68.734375" letter-spacing="-0.0044">o</tspan>
+                    <tspan x="1235.76317" y="68.734375">rp</tspan>
+                    <tspan x="1255.47509" y="68.734375" letter-spacing="-0.0044">o</tspan>
+                    <tspan x="1267.60936" y="68.734375">r</tspan>
+                    <tspan x="1276.32127" y="68.734375" letter-spacing="-0.0044">a</tspan>
+                    <tspan x="1285.70555" y="68.734375">t</tspan>
+                    <tspan x="1293.03172" y="68.734375" letter-spacing="0.0044">i</tspan>
+                    <tspan x="1297.85936" y="68.734375" letter-spacing="-0.0044">o</tspan>
+                    <tspan x="1309.99363" y="68.734375">n</tspan>
+                </text>
+                <text id="Mark-items-as-" letter-spacing="-0.0044">
+                    <tspan x="1804.49609" y="34.734375">Ma</tspan>
+                    <tspan x="1831.05272" y="34.734375">rk</tspan>
+                    <tspan x="1850.30272" y="34.734375"> </tspan>
+                    <tspan x="1856.41062" y="34.734375" letter-spacing="0.0044">i</tspan>
+                    <tspan x="1861.23827" y="34.734375">tem</tspan>
+                    <tspan x="1896.06444" y="34.734375">s as</tspan>
+                    <tspan x="1928.4775" y="34.734375"> </tspan>
+                </text>
+                <text id="resolved">
+                    <tspan x="1828.46729" y="58.734375">re</tspan>
+                    <tspan x="1847.27686" y="58.734375" letter-spacing="-0.0044">so</tspan>
+                    <tspan x="1867.87158" y="58.734375" letter-spacing="0.0044">l</tspan>
+                    <tspan x="1872.69922" y="58.734375">ved</tspan>
+                </text>
+            </g>
+            <polygon id="Fill-120" fill="#FFFFFF" points="2116 172.8442 2229.844 59 2343.688 172.8442 2229.844 286.6884"></polygon>
+            <g id="Group-123" transform="translate(2116.000000, 59.000000)">
+                <mask id="mask-54" fill="white">
+                    <use xlink:href="#path-53"></use>
+                </mask>
+                <g id="Clip-122"></g>
+                <polygon id="Stroke-121" stroke="#979797" stroke-width="2" mask="url(#mask-54)" points="0 113.8442 113.844195 5.20000003e-06 227.68839 113.8442 113.844195 227.688395"></polygon>
+            </g>
+            <g id="Group-130">
+                <text id="Dispute-" font-family="GillSans, Gill Sans" font-size="22" font-weight="normal" fill="#838383">
+                    <tspan x="2195.17383" y="163.734375">D</tspan>
+                    <tspan x="2211.67383" y="163.734375" letter-spacing="0.0044">i</tspan>
+                    <tspan x="2216.50147" y="163.734375" letter-spacing="-0.0044">s</tspan>
+                    <tspan x="2224.96192" y="163.734375">pute </tspan>
+                </text>
+                <text id="resolved?" font-family="GillSans, Gill Sans" font-size="22" font-weight="normal" fill="#838383">
+                    <tspan x="2188.3042" y="187.734375">re</tspan>
+                    <tspan x="2207.11377" y="187.734375" letter-spacing="-0.0044">so</tspan>
+                    <tspan x="2227.70849" y="187.734375" letter-spacing="0.0044">l</tspan>
+                    <tspan x="2232.53613" y="187.734375">ve</tspan>
+                    <tspan x="2252.26953" y="187.734375" letter-spacing="-0.0044">d</tspan>
+                    <tspan x="2263.47997" y="187.734375">?</tspan>
+                </text>
+                <polyline id="Stroke-124" stroke="#979797" points="2229.375 59.10642 2229.375 0 1935 0 1935 118.2128"></polyline>
+                <text id="yes" font-family="GillSans, Gill Sans" font-size="22" font-weight="normal" fill="#838383">
+                    <tspan x="2363.18066" y="156.734375">yes</tspan>
+                </text>
+                <text id="no" font-family="GillSans, Gill Sans" font-size="18" font-weight="normal" fill="#838383">
+                    <tspan x="2235.03418" y="32.990625">no</tspan>
+                </text>
+                <path d="M755.5,361.5 L755.5,399.5" id="Stroke-125" stroke="#979797" stroke-linecap="square"></path>
+                <path d="M755.5,503.5 L755.5,541.5" id="Stroke-126" stroke="#979797" stroke-linecap="square"></path>
+                <path d="M755.5,646.5 L755.5,684.5" id="Stroke-127" stroke="#979797" stroke-linecap="square"></path>
+                <polyline id="Stroke-128" stroke="#979797" points="2633.666 173 2710.062 173.598964 2710.062 317.1543 870 317.1543"></polyline>
+                <text id="Commission-Reconciliation" font-family="GillSans-SemiBold, Gill Sans" font-size="36" font-weight="500" letter-spacing="0.0036" fill="#838383">
+                    <tspan x="0" y="61.4608106">C</tspan>
+                    <tspan x="26.1071156" y="61.4608106" letter-spacing="0.0072">omm</tspan>
+                    <tspan x="107.691216" y="61.4608106">i</tspan>
+                    <tspan x="116.620903" y="61.4608106" letter-spacing="-0.0072">ss</tspan>
+                    <tspan x="145.680722" y="61.4608106">i</tspan>
+                    <tspan x="154.610409" y="61.4608106" letter-spacing="0.0072">o</tspan>
+                    <tspan x="175.254328" y="61.4608106">n</tspan>
+                    <tspan x="194.730891" y="61.4608106" letter-spacing="-0.0072"> </tspan>
+                    <tspan x="204.725644" y="61.4608106">R</tspan>
+                    <tspan x="227.190487" y="61.4608106">e</tspan>
+                    <tspan x="245.774166" y="61.4608106" letter-spacing="-0.0036">c</tspan>
+                    <tspan x="262.364316" y="61.4608106" letter-spacing="0.0072">o</tspan>
+                    <tspan x="283.008234" y="61.4608106">n</tspan>
+                    <tspan x="302.484797" y="61.4608106" letter-spacing="-0.0036">c</tspan>
+                    <tspan x="319.074947" y="61.4608106">ili</tspan>
+                    <tspan x="345.864009" y="61.4608106" letter-spacing="-0.0036">a</tspan>
+                    <tspan x="363.245175" y="61.4608106">t</tspan>
+                    <tspan x="376.537838" y="61.4608106">i</tspan>
+                    <tspan x="385.467525" y="61.4608106" letter-spacing="0.0072">o</tspan>
+                    <tspan x="406.111444" y="61.4608106">n</tspan>
+                </text>
+                <path d="M939.63857,599.5 L869.5,599.5" id="Stroke-129" stroke="#979797" stroke-linecap="square"></path>
+            </g>
+            <g id="Group-133" transform="translate(860.000000, 589.000000)">
+                <mask id="mask-56" fill="white">
+                    <use xlink:href="#path-55"></use>
+                </mask>
+                <g id="Clip-132"></g>
+                <polygon id="Fill-131" fill="#979797" mask="url(#mask-56)" points="20 27 -4.8545 27 -4.8545 -4.5 20 -4.5"></polygon>
+            </g>
+            <g id="Group-136" transform="translate(1034.000000, 538.000000)">
+                <mask id="mask-58" fill="white">
+                    <use xlink:href="#path-57"></use>
+                </mask>
+                <g id="Clip-135"></g>
+                <polygon id="Fill-134" fill="#979797" mask="url(#mask-58)" points="26.5 -5 26.5 19.8545 -5 19.8545 -5 -5"></polygon>
+            </g>
+            <g id="Group-139" transform="translate(939.000000, 553.000000)">
+                <mask id="mask-60" fill="white">
+                    <use xlink:href="#path-59"></use>
+                </mask>
+                <g id="Clip-138"></g>
+                <polygon id="Fill-137" fill="#FFFFFF" mask="url(#mask-60)" points="0 0 211 0 211 93 0 93"></polygon>
+            </g>
+            <polygon id="Stroke-140" stroke="#979797" stroke-width="2" points="939 553 1150 553 1150 646 939 646"></polygon>
+            <g id="Group-143" transform="translate(861.000000, 457.000000)">
+                <text id="“Pay-Now”" font-family="GillSans, Gill Sans" font-size="22" font-weight="normal" letter-spacing="-0.0044" fill="#838383">
+                    <tspan x="131.33975" y="145.734375">“Pa</tspan>
+                    <tspan x="160.437878" y="145.734375">y</tspan>
+                    <tspan x="170.07362" y="145.734375"> No</tspan>
+                    <tspan x="205.273311" y="145.734375" letter-spacing="0.0044">w</tspan>
+                    <tspan x="221.100953" y="145.734375">”</tspan>
+                </text>
+                <polyline id="Stroke-142" stroke="#979797" points="0 0 183.5892 0 183.5892 87.13599"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

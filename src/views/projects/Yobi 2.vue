@@ -57,6 +57,7 @@
             </p>
           </div>
           <img src="/img/projects/yobi/yobi-desktop.png" class="screenshot" alt="">
+          </div>
         </div>
       </div>
     </div>
