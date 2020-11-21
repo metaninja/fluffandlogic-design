@@ -10,7 +10,7 @@
     <div class="profile">
       <section class="profile-left">
         <h2>Saadia Ahmed</h2>
-        <h3>Senior Marketing Consultant </h3>
+        <h3>Communications, Development, & Strategy Consultant; Community Advocate and Connector</h3>
 
         <p>
           Saadia has over 20 years of experience in helping non-profits and charitable organizations 
@@ -18,11 +18,11 @@
         </p>
 
         <p>
-          I have worked with almost every masjid in the DFW area, TMWF, Gem Advisers, and many others.
+          She has worked with almost every masjid in the DFW area, TMWF, Gem Advisers, and many others.
         </p>
 
         <div class="profile-contact">
-          <a href="#">Contact me</a>
+          <a href="https://www.facebook.com/saadia.ahmed">Contact me</a>
         </div>
         
       </section>
@@ -37,7 +37,7 @@
         </p>
 
         <p>
-          I have consulted startups and companies in Silicon Valley, Las Vegas, DFW, Boston, and many other cities.
+          He has consulted startups and companies in Silicon Valley, Las Vegas, DFW, Boston, and many other cities.
         </p>
 
         <div class="profile-contact">
@@ -68,8 +68,8 @@ export default {
     background-color: #013143;
     color: rgba(255,255,255,.8);    
     font-family: 'Roboto', sans-serif;
-    font-size: 24px;
-    line-height: 40px;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
   }
 
   h1, 
@@ -87,32 +87,32 @@ export default {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 640px;
+    width: 41.875%; //640px
     margin: auto;
     text-align: center;
     flex-direction: column;
-    margin-top: 74px;
-    margin-bottom: 165px;
+    margin-top: 4rem;
+    margin-bottom: 10rem;
     border-bottom: 1px solid #fff;
-    font-size: 120px;
+    font-size: 7.5rem;
   }
 
   h1 span {
     display: flex;
-    margin-bottom: 24px;
-    font-size: 24px;
-    line-height: 24px;  
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    line-height: 1.5rem;  
     color: rgba(255,255,255,.8);
   }
 
   h2 {
-    font-size: 64px;
-    margin-bottom: 24px;
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
   }
 
   h3 {
-    font-size: 32px;
-    margin-bottom: 48px;
+    font-size: 2rem;
+    margin-bottom: 4rem;
   }
 
   a {
@@ -125,17 +125,17 @@ export default {
     align-items: center;
   }
   footer p {    
-    margin-top: 128px;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    width: 300px;
+    margin-top: 8rem;
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    width: 20%;
     border-top: 1px solid rgba(255,255,255, 0.6);
     border-bottom: 1px solid rgba(255,255,255, 0.6);
-    font-size: 40px;
-    line-height: 40px;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
     text-align: center;    
     font-family: 'Bebas Neue', cursive;
-    font-size: 40px;
+    font-size: 2.5rem;
     color: rgba(255,255,255,.6);
 
   }
@@ -145,18 +145,46 @@ export default {
     justify-content: center;    
   }
   .profile section {
-    width: 457px;
+    width: 31.7361111%;
     text-align: center;
   }
   .profile-left {
-    padding-right: 128px;
+    padding-right: 8.888888%;
     border-right: 1px dashed rgba(255,255,255,.6)
   }
   .profile-right {
-    padding-left: 128px;
+    padding-left: 8.888888%;
+  }
+  .profile-contact {    
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    padding-bottom: 4rem;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3rem;
   }
 
-  @media only screen and (max-width: 1100px) {
+  @media only screen and (max-width: 1024px) {
+    h1 {
+      width: 90%;
+    }
+    .profile {
+      flex-direction: column;
+      align-items: center;
+    }
+    .profile section {
+      width: 90%;
+      padding: 0;
+    }
+    .profile-left {
+      border-right: none;
+    }
+    .profile-contact {
+      border-bottom: 1px solid rgba(255,255,255,.4);
+    }
+
+    footer p {
+      width: 20rem;
+    }
     
   }
 </style>

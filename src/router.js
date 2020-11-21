@@ -25,8 +25,7 @@ export default new Router({
       component: Home
     },
     {
-      path: "/",
-      alias: "/sherif",
+      path: "/sherif",
       name: "sherif",
       component: Sherif
     },
