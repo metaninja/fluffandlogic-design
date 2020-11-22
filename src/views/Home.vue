@@ -14,11 +14,11 @@
 
         <p>
           Saadia has over 20 years of experience in helping non-profits and charitable organizations 
-          build concensus with their community. I have been doing social media since 2008.
+          build concensus with their community. She has been doing social media since 2008.
         </p>
 
         <p>
-          She has worked with almost every masjid in the DFW area, TMWF, Gem Advisers, and many others.
+          She has worked with almost every masjid in the DFW area; TMWF; Gem Advisers; and many others.
         </p>
 
         <div class="profile-contact">
