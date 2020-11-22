@@ -59,6 +59,7 @@
           <img src="/img/projects/yobi/yobi-desktop.png" class="screenshot" alt="">
         </div>
       </div>
+    </div>
 
     <div class="section-container pt-64 pb-64">
       <div class="section center">

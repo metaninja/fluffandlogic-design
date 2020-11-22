@@ -3,7 +3,9 @@
     <header>
       <h1>
         <span>We are</span>
-        Fluff And Logic
+          Fluff And Logic
+          <span class="title-underline"></span>
+          <span class="title-underline"></span>
       </h1>
     </header>
 
@@ -13,18 +15,23 @@
         <h3>Communications, Development, & Strategy Consultant; Community Advocate and Connector</h3>
 
         <p>
-          Saadia has over 20 years of experience in helping non-profits and charitable organizations 
-          build concensus with their community. She has been doing social media since 2008.
+          Saadia Ahmed graduated in International Studies from Austin College where she intensified her commitment to serving the community.
+          She is a community and thought leader in Dallas/Fort Worth in addition to being the founder and adviser to numerous nonprofit and
+          community initiatives. 
         </p>
 
         <p>
-          She has worked with almost every masjid in the DFW area; TMWF; Gem Advisers; and many others.
+          Saadia was awarded the "Trailblazer" award by Texas Muslim Women's Foundation and "Community Leader of the Year" award by CAIR D/FW.
+           She was also the first recipient of Radio Azad’s “Unsung Hero” recognition. 
+        </p>
+
+        <p>
+          Saadia's areas of expertise include event planning, social media optimization, individual major giving, DEI training, and annual fund development.
         </p>
 
         <div class="profile-contact">
           <a href="https://www.facebook.com/saadia.ahmed">Contact me</a>
-        </div>
-        
+        </div>        
       </section>
 
       <section class="profile-right">
@@ -45,8 +52,6 @@
         </div>
       </section>
     </div>
-
-
 
     <footer>
       <p>How can we help you?</p>
@@ -92,8 +97,7 @@ export default {
     text-align: center;
     flex-direction: column;
     margin-top: 4rem;
-    margin-bottom: 10rem;
-    border-bottom: 1px solid #fff;
+    margin-bottom: 10rem;    
     font-size: 7.5rem;
   }
 
@@ -140,12 +144,21 @@ export default {
 
   }
 
+  .title-underline {
+    display: block;
+    width: 100%;
+    height: 0;
+    border-bottom: 1px solid rgba(255,255,255,.6);
+    margin-top: 4px;
+    margin-bottom: 4px;
+  }
+
   .profile {
     display: flex;
     justify-content: center;    
   }
   .profile section {
-    width: 31.7361111%;
+    width: 45.55555%;
     text-align: center;
   }
   .profile-left {
@@ -184,7 +197,6 @@ export default {
 
     footer p {
       width: 20rem;
-    }
-    
+    }    
   }
 </style>
