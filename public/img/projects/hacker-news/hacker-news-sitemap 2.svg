@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="4432px" height="1454px" viewBox="0 0 4432 1454" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>hacker-news-sitemap</title>
+    <desc>Created with Sketch.</desc>
+    <g id="hacker-news-sitemap" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Block-/-Green-/-Solid" transform="translate(740.000000, 0.000000)">
+            <rect id="Rectangle" fill="#00AA00" fill-rule="evenodd" x="90" y="90" width="180" height="180" rx="30"></rect>
+            <text id="Label" font-family="Helvetica" font-size="18" font-weight="normal" line-spacing="21" fill="#FFFFFF">
+                <tspan x="140.383301" y="122.811523">News</tspan>
+            </text>
+        </g>
+        <g id="Flow-/-Down-/-Snake-/-Left-/-Default" transform="translate(380.000000, 268.000000)">
+            <g id="Master-/-Vertical-/-Snake-/-Right-/-Default" transform="translate(360.000000, 180.000000) scale(-1, 1) translate(-360.000000, -180.000000) ">
+                <path d="M540,360 L540,260 C540,215.81722 504.18278,180 460,180 L260,180 C215.81722,180 180,144.18278 180,100 L180,0 L180,0" id="Rectangle" stroke="#222222" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path>
+                <g id="End-Points-/-Cap-/-Arrow-/-Default" transform="translate(540.000000, 360.000000) rotate(-270.000000) translate(-540.000000, -360.000000) translate(500.000000, 320.000000)" fill="#222222" fill-rule="evenodd">
+                    <path d="M30,48.4676192 L30,31.5323808 C30,30.4278113 30.8954305,29.5323808 32,29.5323808 C32.3624879,29.5323808 32.7181607,29.6308964 33.0289915,29.8173949 L47.1416902,38.2850141 C48.0888508,38.8533105 48.3959809,40.081831 47.8276846,41.0289915 C47.6587851,41.3104907 47.4231895,41.5460863 47.1416902,41.7149859 L33.0289915,50.1826051 C32.081831,50.7509014 30.8533105,50.4437713 30.2850141,49.4966108 C30.0985157,49.1857799 30,48.8301071 30,48.4676192 Z" id="arrow"></path>
+                </g>
+                <g id="End-Points-/-Cap-/-Circle-/-Default" transform="translate(180.000000, 0.000000) rotate(-90.000000) translate(-180.000000, -0.000000) translate(140.000000, -40.000000)" fill="#222222" fill-rule="evenodd">
+                    <circle id="circle" cx="40" cy="40" r="8"></circle>
+                </g>
+            </g>
+        </g>
+        <g id="Flow-/-Down-/-Snake-/-Left-/-Default" transform="translate(3352.000000, 808.000000)">
+            <g id="Master-/-Vertical-/-Snake-/-Right-/-Default" transform="translate(270.000000, 180.000000) scale(-1, 1) translate(-270.000000, -180.000000) ">
+                <path d="M360,360 L360,260 C360,215.81722 324.18278,180 280,180 L260,180 C215.81722,180 180,144.18278 180,100 L180,0 L180,0" id="Rectangle" stroke="#222222" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path>
+                <g id="End-Points-/-Cap-/-Arrow-/-Default" transform="translate(360.000000, 360.000000) rotate(-270.000000) translate(-360.000000, -360.000000) translate(320.000000, 320.000000)" fill="#222222" fill-rule="evenodd">
+                    <path d="M30,48.4676192 L30,31.5323808 C30,30.4278113 30.8954305,29.5323808 32,29.5323808 C32.3624879,29.5323808 32.7181607,29.6308964 33.0289915,29.8173949 L47.1416902,38.2850141 C48.0888508,38.8533105 48.3959809,40.081831 47.8276846,41.0289915 C47.6587851,41.3104907 47.4231895,41.5460863 47.1416902,41.7149859 L33.0289915,50.1826051 C32.081831,50.7509014 30.8533105,50.4437713 30.2850141,49.4966108 C30.0985157,49.1857799 30,48.8301071 30,48.4676192 Z" id="arrow"></path>
+                </g>
+                <g id="End-Points-/-Cap-/-Circle-/-Default" transform="translate(180.000000, 0.000000) rotate(-90.000000) translate(-180.000000, -0.000000) translate(140.000000, -40.000000)" fill="#222222" fill-rule="evenodd">
+                    <circle id="circle" cx="40" cy="40" r="8"></circle>
+                </g>
+            </g>
+        </g>
+        <g id="Flow-/-Down-/-Snake-/-Left-/-Default" transform="translate(2992.000000, 808.000000)">
+            <g id="Master-/-Vertical-/-Snake-/-Right-/-Default" transform="translate(450.000000, 180.000000) scale(-1, 1) translate(-450.000000, -180.000000) ">
+                <path d="M720,360 L720,260 C720,215.81722 684.18278,180 640,180 L260,180 C215.81722,180 180,144.18278 180,100 L180,0 L180,0" id="Rectangle" stroke="#222222" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path>
+                <g id="End-Points-/-Cap-/-Arrow-/-Default" transform="translate(720.000000, 360.000000) rotate(-270.000000) translate(-720.000000, -360.000000) translate(680.000000, 320.000000)" fill="#222222" fill-rule="evenodd">
+                    <path d="M30,48.4676192 L30,31.5323808 C30,30.4278113 30.8954305,29.5323808 32,29.5323808 C32.3624879,29.5323808 32.7181607,29.6308964 33.0289915,29.8173949 L47.1416902,38.2850141 C48.0888508,38.8533105 48.3959809,40.081831 47.8276846,41.0289915 C47.6587851,41.3104907 47.4231895,41.5460863 47.1416902,41.7149859 L33.0289915,50.1826051 C32.081831,50.7509014 30.8533105,50.4437713 30.2850141,49.4966108 C30.0985157,49.1857799 30,48.8301071 30,48.4676192 Z" id="arrow"></path>
+                </g>
+                <g id="End-Points-/-Cap-/-Circle-/-Default" transform="translate(180.000000, 0.000000) rotate(-90.000000) translate(-180.000000, -0.000000) translate(140.000000, -40.000000)" fill="#222222" fill-rule="evenodd">
+                    <circle id="circle" cx="40" cy="40" r="8"></circle>
+                </g>
+            </g>
+        </g>
+        <g id="Block-/-Default-/-Default" transform="translate(1610.000000, 0.000000)">
+            <rect id="Rectangle" stroke="#222222" stroke-width="4" fill="#F7F7F7" fill-rule="evenodd" x="92" y="92" width="176" height="176" rx="30"></rect>
+            <text id="Label" font-family="Helvetica" font-size="18" font-weight="normal" line-spacing="21" fill="#222222">
+                <tspan x="134.876953" y="122.811523">Submit</tspan>
+            </text>
+        </g>
+        <g id="Block-/-Green-/-Default" fill="#00AA00">
+            <rect id="Rectangle" stroke="#00AA00" stroke-width="4" fill-opacity="0.05" fill-rule="evenodd" x="92" y="92" width="176" height="176" rx="30"></rect>
+            <text id="Label" font-family="Helvetica" font-size="18" font-weight="normal" line-spacing="21">
+                <tspan x="110" y="128">Login / Create </tspan>
+                <tspan x="134.016113" y="149">Account</tspan>
+            </text>
+        </g>
+        <g id="Flow-/-Down-/-Snake-/-Left-/-Default" transform="translate(740.000000, 815.000000)">
+            <g id="Master-/-Vertical-/-Snake-/-Right-/-Default" transform="translate(360.000000, 180.000000) scale(-1, 1) translate(-360.000000, -180.000000) ">
+                <path d="M540,360 L540,260 C540,215.81722 504.18278,180 460,180 L260,180 C215.81722,180 180,144.18278 180,100 L180,0 L180,0" id="Rectangle" stroke="#222222" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path>
+                <g id="End-Points-/-Cap-/-Arrow-/-Default" transform="translate(540.000000, 360.000000) rotate(-270.000000) translate(-540.000000, -360.000000) translate(500.000000, 320.000000)" fill="#222222" fill-rule="evenodd">
+                    <path d="M30,48.4676192 L30,31.5323808 C30,30.4278113 30.8954305,29.5323808 32,29.5323808 C32.3624879,29.5323808 32.7181607,29.6308964 33.0289915,29.8173949 L47.1416902,38.2850141 C48.0888508,38.8533105 48.3959809,40.081831 47.8276846,41.0289915 C47.6587851,41.3104907 47.4231895,41.5460863 47.1416902,41.7149859 L33.0289915,50.1826051 C32.081831,50.7509014 30.8533105,50.4437713 30.2850141,49.4966108 C30.0985157,49.1857799 30,48.8301071 30,48.4676192 Z" id="arrow"></path>
+                </g>
+                <g id="End-Points-/-Cap-/-Circle-/-Default" transform="translate(180.000000, 0.000000) rotate(-90.000000) translate(-180.000000, -0.000000) translate(140.000000, -40.000000)" fill="#222222" fill-rule="evenodd">
+                    <circle id="circle" cx="40" cy="40" r="8"></circle>
+                </g>
+            </g>
+        </g>
+        <g id="Block-/-Default-/-Default" transform="translate(380.000000, 546.000000)">
+            <rect id="Rectangle" stroke="#222222" stroke-width="4" fill="#F7F7F7" fill-rule="evenodd" x="92" y="92" width="176" height="176" rx="30"></rect>
+            <text id="Label" font-family="Helvetica" font-size="18" font-weight="normal" line-spacing="21" fill="#222222">
+                <tspan x="147.884766" y="122.811523">Ask</tspan>
+            </text>
+        </g>
+        <g id="Block-/-Default-/-Default" transform="translate(740.000000, 546.000000)">
+            <rect id="Rectangle" stroke="#222222" stroke-width="4" fill="#F7F7F7" fill-rule="evenodd" x="92" y="92" width="176" height="176" rx="30"></rect>
+            <text id="Label" font-family="Helvetica" font-size="18" font-weight="normal" line-spacing="21" fill="#222222">
+                <tspan x="140.374512" y="122.811523">Show</tspan>
+            </text>
+        </g>
+        <g id="Block-/-Default-/-Default" transform="translate(2150.000000, 546.000000)">
+            <rect id="Rectangle" stroke="#222222" stroke-width="4" fill="#F7F7F7" fill-rule="evenodd" x="92" y="92" width="176" height="176" rx="30"></rect>
+            <text id="Label" font-family="Helvetica" font-size="18" font-weight="normal" line-spacing="21" fill="#222222">
+                <tspan x="131.365723" y="122.811523">Support</tspan>
+            </text>
+        </g>
+        <g id="Block-/-Blue-/-Default" transform="translate(2992.000000, 1086.000000)" fill="#0066FF">
+            <rect id="Rectangle" stroke="#0066FF" stroke-width="4" fill-opacity="0.05" fill-rule="evenodd" x="92" y="92" width="176" height="176" rx="30"></rect>
+            <text id="Label" font-family="Helvetica" font-size="18" font-weight="normal" line-spacing="21">
+                <tspan x="148.381348" y="122.811523">API</tspan>
+            </text>
+        </g>
+        <g id="Block-/-Blue-/-Solid" transform="translate(3532.000000, 540.000000)">
+            <rect id="Rectangle" fill="#0066FF" fill-rule="evenodd" x="90" y="90" width="180" height="180" rx="30"></rect>
+            <text id="Label" font-family="Helvetica" font-size="18" font-weight="normal" line-spacing="21" fill="#FFFFFF">
+                <tspan x="124.369629" y="122.811523">Technical</tspan>
+            </text>
+        </g>
+        <g id="Block-/-Blue-/-Default" transform="translate(3352.000000, 1086.000000)" fill="#0066FF">
+            <rect id="Rectangle" stroke="#0066FF" stroke-width="4" fill-opacity="0.05" fill-rule="evenodd" x="92" y="92" width="176" height="176" rx="30"></rect>
+            <text id="Label" font-family="Helvetica" font-size="18" font-weight="normal" line-spacing="21">
+                <tspan x="130.376953" y="122.811523">Security</tspan>
+            </text>
+        </g>
+        <g id="Block-/-Default-/-Default" transform="translate(2510.000000, 1092.000000)">
+            <rect id="Rectangle" stroke="#222222" stroke-width="4" fill="#F7F7F7" fill-rule="evenodd" x="92" y="92" width="176" height="176" rx="30"></rect>
+            <text id="Label" font-family="Helvetica" font-size="18" font-weight="normal" line-spacing="21" fill="#222222">
+                <tspan x="115.365234" y="122.811523">Apply to YC</tspan>
+            </text>
+        </g>
+        <g id="Block-/-Blue-/-Default" transform="translate(4072.000000, 1075.000000)" fill="#0066FF">
+            <rect id="Rectangle" stroke="#0066FF" stroke-width="4" fill-opacity="0.05" fill-rule="evenodd" x="92" y="92" width="176" height="176" rx="30"></rect>
+            <text id="Label" font-family="Helvetica" font-size="18" font-weight="normal" line-spacing="21">
+                <tspan x="144.382324" y="122.811523">Lists</tspan>
+            </text>
+        </g>
+        <g id="Block-/-Blue-/-Default" transform="translate(3712.000000, 1075.000000)" fill="#0066FF">
+            <rect id="Rectangle" stroke="#0066FF" stroke-width="4" fill-opacity="0.05" fill-rule="evenodd" x="92" y="92" width="176" height="176" rx="30"></rect>
+            <text id="Label" font-family="Helvetica" font-size="18" font-weight="normal" line-spacing="21">
+                <tspan x="112.869141" y="122.811523">Bookmarklet</tspan>
+            </text>
+        </g>
+        <g id="Block-/-Default-/-Default" transform="translate(2840.000000, 540.000000)">
+            <rect id="Rectangle" stroke="#222222" stroke-width="4" fill="#F7F7F7" fill-rule="evenodd" x="92" y="92" width="176" height="176" rx="30"></rect>
+            <text id="Label" font-family="Helvetica" font-size="18" font-weight="normal" line-spacing="21" fill="#222222">
+                <tspan x="140.866699" y="122.811523">Legal</tspan>
+            </text>
+        </g>
+        <g id="Block-/-Default-/-Default" transform="translate(2510.000000, 546.000000)">
+            <rect id="Rectangle" stroke="#222222" stroke-width="4" fill="#F7F7F7" fill-rule="evenodd" x="92" y="92" width="176" height="176" rx="30"></rect>
+            <text id="Label" font-family="Helvetica" font-size="18" font-weight="normal" line-spacing="21" fill="#222222">
+                <tspan x="131.871094" y="122.811523">Contact</tspan>
+            </text>
+        </g>
+        <g id="Block-/-Default-/-Default" transform="translate(1100.000000, 546.000000)">
+            <rect id="Rectangle" stroke="#222222" stroke-width="4" fill="#F7F7F7" fill-rule="evenodd" x="92" y="92" width="176" height="176" rx="30"></rect>
+            <text id="Label" font-family="Helvetica" font-size="18" font-weight="normal" line-spacing="21" fill="#222222">
+                <tspan x="143.876953" y="122.811523">Jobs</tspan>
+            </text>
+        </g>
+        <g id="Block-/-Default-/-Default" transform="translate(1790.000000, 546.000000)">
+            <rect id="Rectangle" stroke="#222222" stroke-width="4" fill="#F7F7F7" fill-rule="evenodd" x="92" y="92" width="176" height="176" rx="30"></rect>
+            <text id="Label" font-family="Helvetica" font-size="18" font-weight="normal" line-spacing="21" fill="#222222">
+                <tspan x="139.886719" y="122.811523">FAQs</tspan>
+            </text>
+        </g>
+        <g id="Block-/-Default-/-Default" transform="translate(1460.000000, 546.000000)">
+            <rect id="Rectangle" stroke="#222222" stroke-width="4" fill="#F7F7F7" fill-rule="evenodd" x="92" y="92" width="176" height="176" rx="30"></rect>
+            <text id="Label" font-family="Helvetica" font-size="18" font-weight="normal" line-spacing="21" fill="#222222">
+                <tspan x="120.361816" y="122.811523">Guidelines</tspan>
+            </text>
+        </g>
+        <g id="Block-/-Default-/-Default" transform="translate(740.000000, 1094.000000)">
+            <rect id="Rectangle" stroke="#222222" stroke-width="4" fill="#F7F7F7" fill-rule="evenodd" x="92" y="92" width="176" height="176" rx="30"></rect>
+            <text id="Label" font-family="Helvetica" font-size="18" font-weight="normal" line-spacing="21" fill="#222222">
+                <tspan x="119.377441" y="122.811523">Comments</tspan>
+            </text>
+        </g>
+        <g id="Flow-/-Down-/-Snake-/-Right-/-Default" transform="translate(740.000000, 268.000000)">
+            <g id="Master-/-Vertical-/-Snake-/-Right-/-Default">
+                <path d="M540,360 L540,260 C540,215.81722 504.18278,180 460,180 L260,180 C215.81722,180 180,144.18278 180,100 L180,0 L180,0" id="Rectangle" stroke="#222222" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path>
+                <g id="End-Points-/-Cap-/-Arrow-/-Default" transform="translate(540.000000, 360.000000) rotate(-270.000000) translate(-540.000000, -360.000000) translate(500.000000, 320.000000)" fill="#222222" fill-rule="evenodd">
+                    <path d="M30,48.4676192 L30,31.5323808 C30,30.4278113 30.8954305,29.5323808 32,29.5323808 C32.3624879,29.5323808 32.7181607,29.6308964 33.0289915,29.8173949 L47.1416902,38.2850141 C48.0888508,38.8533105 48.3959809,40.081831 47.8276846,41.0289915 C47.6587851,41.3104907 47.4231895,41.5460863 47.1416902,41.7149859 L33.0289915,50.1826051 C32.081831,50.7509014 30.8533105,50.4437713 30.2850141,49.4966108 C30.0985157,49.1857799 30,48.8301071 30,48.4676192 Z" id="arrow"></path>
+                </g>
+                <g id="End-Points-/-Cap-/-Circle-/-Default" transform="translate(180.000000, 0.000000) rotate(-90.000000) translate(-180.000000, -0.000000) translate(140.000000, -40.000000)" fill="#222222" fill-rule="evenodd">
+                    <circle id="circle" cx="40" cy="40" r="8"></circle>
+                </g>
+            </g>
+        </g>
+        <g id="Flow-/-Down-/-Snake-/-Right-/-Default" transform="translate(3532.000000, 808.000000)">
+            <g id="Master-/-Vertical-/-Snake-/-Right-/-Default">
+                <path d="M720,360 L720,260 C720,215.81722 684.18278,180 640,180 L260,180 C215.81722,180 180,144.18278 180,100 L180,0 L180,0" id="Rectangle" stroke="#222222" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path>
+                <g id="End-Points-/-Cap-/-Arrow-/-Default" transform="translate(720.000000, 360.000000) rotate(-270.000000) translate(-720.000000, -360.000000) translate(680.000000, 320.000000)" fill="#222222" fill-rule="evenodd">
+                    <path d="M30,48.4676192 L30,31.5323808 C30,30.4278113 30.8954305,29.5323808 32,29.5323808 C32.3624879,29.5323808 32.7181607,29.6308964 33.0289915,29.8173949 L47.1416902,38.2850141 C48.0888508,38.8533105 48.3959809,40.081831 47.8276846,41.0289915 C47.6587851,41.3104907 47.4231895,41.5460863 47.1416902,41.7149859 L33.0289915,50.1826051 C32.081831,50.7509014 30.8533105,50.4437713 30.2850141,49.4966108 C30.0985157,49.1857799 30,48.8301071 30,48.4676192 Z" id="arrow"></path>
+                </g>
+                <g id="End-Points-/-Cap-/-Circle-/-Default" transform="translate(180.000000, 0.000000) rotate(-90.000000) translate(-180.000000, -0.000000) translate(140.000000, -40.000000)" fill="#222222" fill-rule="evenodd">
+                    <circle id="circle" cx="40" cy="40" r="8"></circle>
+                </g>
+            </g>
+        </g>
+        <g id="Flow-/-Down-/-Snake-/-Right-/-Default" transform="translate(3532.000000, 808.000000)">
+            <g id="Master-/-Vertical-/-Snake-/-Right-/-Default">
+                <path d="M360,360 L360,260 C360,215.81722 324.18278,180 280,180 L260,180 C215.81722,180 180,144.18278 180,100 L180,0 L180,0" id="Rectangle" stroke="#222222" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path>
+                <g id="End-Points-/-Cap-/-Arrow-/-Default" transform="translate(360.000000, 360.000000) rotate(-270.000000) translate(-360.000000, -360.000000) translate(320.000000, 320.000000)" fill="#222222" fill-rule="evenodd">
+                    <path d="M30,48.4676192 L30,31.5323808 C30,30.4278113 30.8954305,29.5323808 32,29.5323808 C32.3624879,29.5323808 32.7181607,29.6308964 33.0289915,29.8173949 L47.1416902,38.2850141 C48.0888508,38.8533105 48.3959809,40.081831 47.8276846,41.0289915 C47.6587851,41.3104907 47.4231895,41.5460863 47.1416902,41.7149859 L33.0289915,50.1826051 C32.081831,50.7509014 30.8533105,50.4437713 30.2850141,49.4966108 C30.0985157,49.1857799 30,48.8301071 30,48.4676192 Z" id="arrow"></path>
+                </g>
+                <g id="End-Points-/-Cap-/-Circle-/-Default" transform="translate(180.000000, 0.000000) rotate(-90.000000) translate(-180.000000, -0.000000) translate(140.000000, -40.000000)" fill="#222222" fill-rule="evenodd">
+                    <circle id="circle" cx="40" cy="40" r="8"></circle>
+                </g>
+            </g>
+        </g>
+        <g id="Flow-/-Down-/-Snake-/-Right-/-Default" transform="translate(1880.000000, 448.000000) rotate(-180.000000) translate(-1880.000000, -448.000000) translate(1610.000000, 268.000000)">
+            <g id="Master-/-Vertical-/-Snake-/-Right-/-Default">
+                <path d="M360,360 L360,260 C360,215.81722 324.18278,180 280,180 L260,180 C215.81722,180 180,144.18278 180,100 L180,0 L180,0" id="Rectangle" stroke="#222222" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path>
+                <g id="End-Points-/-Cap-/-Arrow-/-Default" transform="translate(360.000000, 360.000000) rotate(-270.000000) translate(-360.000000, -360.000000) translate(320.000000, 320.000000)" fill="#222222" fill-rule="evenodd">
+                    <path d="M30,48.4676192 L30,31.5323808 C30,30.4278113 30.8954305,29.5323808 32,29.5323808 C32.3624879,29.5323808 32.7181607,29.6308964 33.0289915,29.8173949 L47.1416902,38.2850141 C48.0888508,38.8533105 48.3959809,40.081831 47.8276846,41.0289915 C47.6587851,41.3104907 47.4231895,41.5460863 47.1416902,41.7149859 L33.0289915,50.1826051 C32.081831,50.7509014 30.8533105,50.4437713 30.2850141,49.4966108 C30.0985157,49.1857799 30,48.8301071 30,48.4676192 Z" id="arrow"></path>
+                </g>
+                <g id="End-Points-/-Cap-/-Circle-/-Default" transform="translate(180.000000, 0.000000) rotate(-90.000000) translate(-180.000000, -0.000000) translate(140.000000, -40.000000)" fill="#222222" fill-rule="evenodd">
+                    <circle id="circle" cx="40" cy="40" r="8"></circle>
+                </g>
+            </g>
+        </g>
+        <g id="Flow-/-Down-/-Snake-/-Right-/-Default" transform="translate(380.000000, 815.000000)">
+            <g id="Master-/-Vertical-/-Snake-/-Right-/-Default">
+                <path d="M540,360 L540,260 C540,215.81722 504.18278,180 460,180 L260,180 C215.81722,180 180,144.18278 180,100 L180,0 L180,0" id="Rectangle" stroke="#222222" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path>
+                <g id="End-Points-/-Cap-/-Arrow-/-Default" transform="translate(540.000000, 360.000000) rotate(-270.000000) translate(-540.000000, -360.000000) translate(500.000000, 320.000000)" fill="#222222" fill-rule="evenodd">
+                    <path d="M30,48.4676192 L30,31.5323808 C30,30.4278113 30.8954305,29.5323808 32,29.5323808 C32.3624879,29.5323808 32.7181607,29.6308964 33.0289915,29.8173949 L47.1416902,38.2850141 C48.0888508,38.8533105 48.3959809,40.081831 47.8276846,41.0289915 C47.6587851,41.3104907 47.4231895,41.5460863 47.1416902,41.7149859 L33.0289915,50.1826051 C32.081831,50.7509014 30.8533105,50.4437713 30.2850141,49.4966108 C30.0985157,49.1857799 30,48.8301071 30,48.4676192 Z" id="arrow"></path>
+                </g>
+                <g id="End-Points-/-Cap-/-Circle-/-Default" transform="translate(180.000000, 0.000000) rotate(-90.000000) translate(-180.000000, -0.000000) translate(140.000000, -40.000000)" fill="#222222" fill-rule="evenodd">
+                    <circle id="circle" cx="40" cy="40" r="8"></circle>
+                </g>
+            </g>
+        </g>
+        <g id="Flow-/-Down-/-Straight" transform="translate(740.000000, 268.000000)">
+            <g id="Master-/-Vertical-/-Straight">
+                <path d="M180,360 L180,2.55795385e-13" id="path" stroke="#222222" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path>
+                <g id="End-Points-/-Cap-/-Arrow-/-Default" transform="translate(180.000000, 360.000000) rotate(-270.000000) translate(-180.000000, -360.000000) translate(140.000000, 320.000000)" fill="#222222" fill-rule="evenodd">
+                    <path d="M30,48.4676192 L30,31.5323808 C30,30.4278113 30.8954305,29.5323808 32,29.5323808 C32.3624879,29.5323808 32.7181607,29.6308964 33.0289915,29.8173949 L47.1416902,38.2850141 C48.0888508,38.8533105 48.3959809,40.081831 47.8276846,41.0289915 C47.6587851,41.3104907 47.4231895,41.5460863 47.1416902,41.7149859 L33.0289915,50.1826051 C32.081831,50.7509014 30.8533105,50.4437713 30.2850141,49.4966108 C30.0985157,49.1857799 30,48.8301071 30,48.4676192 Z" id="arrow"></path>
+                </g>
+                <g id="End-Points-/-Cap-/-Circle-/-Default" transform="translate(180.000000, 0.000000) rotate(-90.000000) translate(-180.000000, -0.000000) translate(140.000000, -40.000000)" fill="#222222" fill-rule="evenodd">
+                    <circle id="circle" cx="40" cy="40" r="8"></circle>
+                </g>
+            </g>
+        </g>
+        <g id="Flow-/-Down-/-Straight" transform="translate(2510.000000, 815.000000)">
+            <g id="Master-/-Vertical-/-Straight">
+                <path d="M180,360 L180,2.55795385e-13" id="path" stroke="#222222" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path>
+                <g id="End-Points-/-Cap-/-Arrow-/-Default" transform="translate(180.000000, 360.000000) rotate(-270.000000) translate(-180.000000, -360.000000) translate(140.000000, 320.000000)" fill="#222222" fill-rule="evenodd">
+                    <path d="M30,48.4676192 L30,31.5323808 C30,30.4278113 30.8954305,29.5323808 32,29.5323808 C32.3624879,29.5323808 32.7181607,29.6308964 33.0289915,29.8173949 L47.1416902,38.2850141 C48.0888508,38.8533105 48.3959809,40.081831 47.8276846,41.0289915 C47.6587851,41.3104907 47.4231895,41.5460863 47.1416902,41.7149859 L33.0289915,50.1826051 C32.081831,50.7509014 30.8533105,50.4437713 30.2850141,49.4966108 C30.0985157,49.1857799 30,48.8301071 30,48.4676192 Z" id="arrow"></path>
+                </g>
+                <g id="End-Points-/-Cap-/-Circle-/-Default" transform="translate(180.000000, 0.000000) rotate(-90.000000) translate(-180.000000, -0.000000) translate(140.000000, -40.000000)" fill="#222222" fill-rule="evenodd">
+                    <circle id="circle" cx="40" cy="40" r="8"></circle>
+                </g>
+            </g>
+        </g>
+        <g id="Flow-/-Down-/-Straight" transform="translate(740.000000, 815.000000)">
+            <g id="Master-/-Vertical-/-Straight">
+                <path d="M180,360 L180,2.55795385e-13" id="path" stroke="#222222" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path>
+                <g id="End-Points-/-Cap-/-Arrow-/-Default" transform="translate(180.000000, 360.000000) rotate(-270.000000) translate(-180.000000, -360.000000) translate(140.000000, 320.000000)" fill="#222222" fill-rule="evenodd">
+                    <path d="M30,48.4676192 L30,31.5323808 C30,30.4278113 30.8954305,29.5323808 32,29.5323808 C32.3624879,29.5323808 32.7181607,29.6308964 33.0289915,29.8173949 L47.1416902,38.2850141 C48.0888508,38.8533105 48.3959809,40.081831 47.8276846,41.0289915 C47.6587851,41.3104907 47.4231895,41.5460863 47.1416902,41.7149859 L33.0289915,50.1826051 C32.081831,50.7509014 30.8533105,50.4437713 30.2850141,49.4966108 C30.0985157,49.1857799 30,48.8301071 30,48.4676192 Z" id="arrow"></path>
+                </g>
+                <g id="End-Points-/-Cap-/-Circle-/-Default" transform="translate(180.000000, 0.000000) rotate(-90.000000) translate(-180.000000, -0.000000) translate(140.000000, -40.000000)" fill="#222222" fill-rule="evenodd">
+                    <circle id="circle" cx="40" cy="40" r="8"></circle>
+                </g>
+            </g>
+        </g>
+        <g id="Flow-/-Left-/-Straight" transform="translate(1018.000000, 0.000000)">
+            <g id="Master-/-Horizontal-/-Straight" transform="translate(341.500000, 180.000000) scale(-1, 1) translate(-341.500000, -180.000000) ">
+                <path d="M0,180 L683,180" id="path" stroke="#222222" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path>
+                <g id="End-Points-/-Cap-/-Arrow-/-Default" transform="translate(643.000000, 140.000000)" fill="#222222" fill-rule="evenodd">
+                    <path d="M30,48.4676192 L30,31.5323808 C30,30.4278113 30.8954305,29.5323808 32,29.5323808 C32.3624879,29.5323808 32.7181607,29.6308964 33.0289915,29.8173949 L47.1416902,38.2850141 C48.0888508,38.8533105 48.3959809,40.081831 47.8276846,41.0289915 C47.6587851,41.3104907 47.4231895,41.5460863 47.1416902,41.7149859 L33.0289915,50.1826051 C32.081831,50.7509014 30.8533105,50.4437713 30.2850141,49.4966108 C30.0985157,49.1857799 30,48.8301071 30,48.4676192 Z" id="arrow"></path>
+                </g>
+                <g id="End-Points-/-Cap-/-Circle-/-Default" transform="translate(1.000000, 180.000000) scale(-1, 1) translate(-1.000000, -180.000000) translate(-39.000000, 140.000000)" fill="#222222" fill-rule="evenodd">
+                    <circle id="circle" cx="40" cy="40" r="8"></circle>
+                </g>
+            </g>
+        </g>
+        <g id="Flow-/-Left-/-Straight" transform="translate(547.000000, 180.000000) rotate(-180.000000) translate(-547.000000, -180.000000) translate(274.000000, 0.000000)">
+            <g id="Master-/-Horizontal-/-Straight" transform="translate(273.000000, 180.000000) scale(-1, 1) translate(-273.000000, -180.000000) ">
+                <path d="M0,180 L546,180" id="path" stroke="#222222" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path>
+                <g id="End-Points-/-Cap-/-Arrow-/-Default" transform="translate(506.000000, 140.000000)" fill="#222222" fill-rule="evenodd">
+                    <path d="M30,48.4676192 L30,31.5323808 C30,30.4278113 30.8954305,29.5323808 32,29.5323808 C32.3624879,29.5323808 32.7181607,29.6308964 33.0289915,29.8173949 L47.1416902,38.2850141 C48.0888508,38.8533105 48.3959809,40.081831 47.8276846,41.0289915 C47.6587851,41.3104907 47.4231895,41.5460863 47.1416902,41.7149859 L33.0289915,50.1826051 C32.081831,50.7509014 30.8533105,50.4437713 30.2850141,49.4966108 C30.0985157,49.1857799 30,48.8301071 30,48.4676192 Z" id="arrow"></path>
+                </g>
+                <g id="End-Points-/-Cap-/-Circle-/-Default" transform="translate(1.000000, 180.000000) scale(-1, 1) translate(-1.000000, -180.000000) translate(-39.000000, 140.000000)" fill="#222222" fill-rule="evenodd">
+                    <circle id="circle" cx="40" cy="40" r="8"></circle>
+                </g>
+            </g>
+        </g>
+        <g id="Flow-/-Down-/-Snake-/-Left-/-Default" transform="translate(1715.000000, 448.000000) rotate(-180.000000) translate(-1715.000000, -448.000000) translate(1460.000000, 268.000000)">
+            <g id="Master-/-Vertical-/-Snake-/-Right-/-Default" transform="translate(255.000000, 180.000000) scale(-1, 1) translate(-255.000000, -180.000000) ">
+                <path d="M330,360 L330,255 C330,213.578644 296.421356,180 255,180 C213.578644,180 180,146.421356 180,105 L180,0 L180,0" id="Rectangle" stroke="#222222" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path>
+                <g id="End-Points-/-Cap-/-Arrow-/-Default" transform="translate(330.000000, 360.000000) rotate(-270.000000) translate(-330.000000, -360.000000) translate(290.000000, 320.000000)" fill="#222222" fill-rule="evenodd">
+                    <path d="M30,48.4676192 L30,31.5323808 C30,30.4278113 30.8954305,29.5323808 32,29.5323808 C32.3624879,29.5323808 32.7181607,29.6308964 33.0289915,29.8173949 L47.1416902,38.2850141 C48.0888508,38.8533105 48.3959809,40.081831 47.8276846,41.0289915 C47.6587851,41.3104907 47.4231895,41.5460863 47.1416902,41.7149859 L33.0289915,50.1826051 C32.081831,50.7509014 30.8533105,50.4437713 30.2850141,49.4966108 C30.0985157,49.1857799 30,48.8301071 30,48.4676192 Z" id="arrow"></path>
+                </g>
+                <g id="End-Points-/-Cap-/-Circle-/-Default" transform="translate(180.000000, 0.000000) rotate(-90.000000) translate(-180.000000, -0.000000) translate(140.000000, -40.000000)" fill="#222222" fill-rule="evenodd">
+                    <circle id="circle" cx="40" cy="40" r="8"></circle>
+                </g>
+            </g>
+        </g>
+        <g id="Flow-/-Down-/-Curve-/-Left-/-Straight" transform="translate(1018.000000, 815.000000)">
+            <g id="Master-/-Vertical-/-Curve-/-Down-/-Default" transform="translate(407.000000, 319.500000) scale(-1, 1) translate(-407.000000, -319.500000) ">
+                <path d="M180,0 L180,379 C180,423.18278 215.81722,459 260,459 L814,459 L814,459" id="path" stroke="#222222" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path>
+                <g id="End-Points-/-Cap-/-Arrow-/-Default" transform="translate(814.000000, 459.000000) scale(-1, 1) rotate(-180.000000) translate(-814.000000, -459.000000) translate(774.000000, 419.000000)" fill="#222222" fill-rule="evenodd">
+                    <path d="M30,48.4676192 L30,31.5323808 C30,30.4278113 30.8954305,29.5323808 32,29.5323808 C32.3624879,29.5323808 32.7181607,29.6308964 33.0289915,29.8173949 L47.1416902,38.2850141 C48.0888508,38.8533105 48.3959809,40.081831 47.8276846,41.0289915 C47.6587851,41.3104907 47.4231895,41.5460863 47.1416902,41.7149859 L33.0289915,50.1826051 C32.081831,50.7509014 30.8533105,50.4437713 30.2850141,49.4966108 C30.0985157,49.1857799 30,48.8301071 30,48.4676192 Z" id="arrow"></path>
+                </g>
+                <g id="End-Points-/-Cap-/-Circle-/-Default" transform="translate(180.000000, 0.000000) scale(1, -1) rotate(90.000000) translate(-180.000000, -0.000000) translate(140.000000, -40.000000)" fill="#222222" fill-rule="evenodd">
+                    <circle id="circle" cx="40" cy="40" r="8"></circle>
+                </g>
+            </g>
+        </g>
+        <g id="Flow-/-Down-/-Curve-/-Left-/-Straight" transform="translate(1018.000000, 815.000000)">
+            <g id="Master-/-Vertical-/-Curve-/-Down-/-Default" transform="translate(566.000000, 319.500000) scale(-1, 1) translate(-566.000000, -319.500000) ">
+                <path d="M180,0 L180,379 C180,423.18278 215.81722,459 260,459 L1132,459 L1132,459" id="path" stroke="#222222" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path>
+                <g id="End-Points-/-Cap-/-Arrow-/-Default" transform="translate(1132.000000, 459.000000) scale(-1, 1) rotate(-180.000000) translate(-1132.000000, -459.000000) translate(1092.000000, 419.000000)" fill="#222222" fill-rule="evenodd">
+                    <path d="M30,48.4676192 L30,31.5323808 C30,30.4278113 30.8954305,29.5323808 32,29.5323808 C32.3624879,29.5323808 32.7181607,29.6308964 33.0289915,29.8173949 L47.1416902,38.2850141 C48.0888508,38.8533105 48.3959809,40.081831 47.8276846,41.0289915 C47.6587851,41.3104907 47.4231895,41.5460863 47.1416902,41.7149859 L33.0289915,50.1826051 C32.081831,50.7509014 30.8533105,50.4437713 30.2850141,49.4966108 C30.0985157,49.1857799 30,48.8301071 30,48.4676192 Z" id="arrow"></path>
+                </g>
+                <g id="End-Points-/-Cap-/-Circle-/-Default" transform="translate(180.000000, 0.000000) scale(1, -1) rotate(90.000000) translate(-180.000000, -0.000000) translate(140.000000, -40.000000)" fill="#222222" fill-rule="evenodd">
+                    <circle id="circle" cx="40" cy="40" r="8"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

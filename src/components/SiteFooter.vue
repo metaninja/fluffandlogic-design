@@ -2,7 +2,7 @@
     <div class="site-footer">
         <div>&copy; 2019 Sherif Tariq</div>
 
-        <nav class="site-nav" v-bind:class="{ inverse: inverse}" role="navigation">
+        <nav class="site-nav" role="navigation">
             <ul>
                 <li>
                     <router-link to="/" class="site-nav-link">Home</router-link>
@@ -14,9 +14,6 @@
                     <a class="site-nav-link" href="mailto:fluffandlogic@gmail.com">Email</a>
                 </li>
             </ul>
-            <!--            <router-link to="/" class="site-nav-link">Home</router-link>-->
-            <!--            <router-link to="about" class="site-nav-link">About</router-link>-->
-            <!--            <router-link to="contact" class="site-nav-link">Contact</router-link>-->
         </nav>
     </div>
 </template>

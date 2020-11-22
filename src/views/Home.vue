@@ -1,266 +1,190 @@
 <template>
-  <div class="page-home">
-    <header class="site-header-container">
-      <site-header></site-header>
-      <div class="hero">
-        <div class="hero-text">
-          <h2 class="hero-title">Hi. I’m Sherif.</h2>
-          <p class="hero-desc">
-            I’m a seasoned UX designer with a passion for turning incredibly complex business problems into streamlined,
-            intuitive, user interfaces. What can I do for you?
-          </p>
-        </div>
-        <div class="hero-media">
-          <img src="/img/home/photo-sherif-tariq.jpg" class="hero-sherif" alt="">
-        </div>
-      </div>
+  <main>
+    <header>
+      <h1>
+        <span>We are</span>
+        Fluff And Logic
+      </h1>
     </header>
 
-    <router-link to="/projects/ezlynx">
-      <div class="project-container project-ezlynx">
-        <div class="project">
-          <div class="project-text inverse">
-            <h3 class="project-title">
-              EZLynx
-            </h3>
-            <p class="project-desc">
-              Designing the next generation EZLynx platform.
-            </p>
-          </div>
-          <div class="project-media">
-            <img src="/img/home/project-ezlynx.png">
-          </div>
+    <div class="profile">
+      <section class="profile-left">
+        <h2>Saadia Ahmed</h2>
+        <h3>Communications, Development, & Strategy Consultant; Community Advocate and Connector</h3>
+
+        <p>
+          Saadia has over 20 years of experience in helping non-profits and charitable organizations 
+          build concensus with their community. I have been doing social media since 2008.
+        </p>
+
+        <p>
+          She has worked with almost every masjid in the DFW area, TMWF, Gem Advisers, and many others.
+        </p>
+
+        <div class="profile-contact">
+          <a href="https://www.facebook.com/saadia.ahmed">Contact me</a>
         </div>
-      </div>
-    </router-link>
+        
+      </section>
 
-    <router-link to="/projects/yobi">
-      <div class="project-container inverse project-yobi">
-        <div class="project reverse-layout">
-          <div class="project-text">
-            <h3 class="project-title">
-              Yobi
-            </h3>
-            <p class="project-desc">
-              Designing an innovative mobile experience for a seed-stage startup.
-            </p>
-          </div>
-          <div class="project-media">
-            <img src="/img/home/project-yobi.png" alt="">
-          </div>
+      <section class="profile-right">
+        <h2>Sherif Tariq</h2>
+        <h3>Senior UX Consultant </h3>
+
+        <p>
+          Sherif has over 20 years of experience as a web designer and over 10 years as a user 
+          experience designer, leading teams to sucessful product launches. 
+        </p>
+
+        <p>
+          He has consulted startups and companies in Silicon Valley, Las Vegas, DFW, Boston, and many other cities.
+        </p>
+
+        <div class="profile-contact">
+          <router-link to="/sherif">View my portfolio</router-link>
         </div>
-      </div>
-    </router-link>
-
-    <router-link to="/projects/cocoa">
-      <div class="project-container project-cocoa">
-        <div class="project">
-          <div class="project-text">
-            <h3 class="project-title">
-              Cocoa
-            </h3>
-            <p class="project-desc">
-              An experiment in branding and app design, exploring the future of commercial  insurance software for
-              Gen&nbsp;Z.
-            </p>
-          </div>
-          <div class="project-media">
-            <img src="/img/home/project-cocoa.png" alt="">
-          </div>
-        </div>
-      </div>
-    </router-link>
-
-    <router-link to="/projects/securus">
-      <div class="project-container project-securus inverse">
-        <div class="project reverse-layout">
-          <div class="project-text">
-            <h3 class="project-title">
-              Securus
-            </h3>
-            <p class="project-desc">
-              Re-architecting, re-branding, and modernizing a core application.
-            </p>
-          </div>
-          <div class="project-media">
-            <img src="/img/home/project-securus.png" alt="">
-          </div>
-        </div>
-      </div>
-    </router-link>
-
-    <router-link to="/projects/onyx">
-      <div class="project-container project-onyx" style="background-color: #FFA802;">
-        <div class="project">
-          <div class="project-text">
-            <h3 class="project-title">
-              Onyx
-            </h3>
-            <p class="project-desc">
-              Helping a company break out of their niche into a bigger, more profitable, market.
-            </p>
-          </div>
-          <div class="project-media">
-            <img src="/img/home/project-onyx.png" alt="">
-          </div>
-        </div>
-      </div>
-    </router-link>
-
-    <router-link to="/projects/hackernews">
-      <div class="project-container project-hacker-news inverse" style="background-color: #F66403;">
-        <div class="project reverse-layout">
-          <div class="project-text inverse">
-            <h3 class="project-title">
-              Hacker News
-            </h3>
-            <p class="project-desc">
-              An experiment in designing a better mobile experience for the Hacker news website.
-            </p>
-          </div>
-          <div class="project-media">
-            <img src="/img/home/project-hacker-news.png" alt="">
-          </div>
-        </div>
-      </div>
-    </router-link>
-
-<!--      <router-link to="/projects/bff">-->
-<!--        <div class="project-container inverse" style="background-color: #00305C;">-->
-<!--          <div class="project">-->
-<!--            <div class="project-media" style="background: url(/img/home/bff.png) no-repeat center bottom">-->
-<!--            </div>-->
-<!--            <div class="project-text">-->
-<!--              <h3 class="project-title">-->
-<!--                BFF-->
-<!--              </h3>-->
-<!--              <p class="project-desc">-->
-<!--                A rapid prototyping framework for UX designers.-->
-<!--              </p>-->
-<!--            </div>-->
-<!--          </div>-->
-<!--        </div>-->
-<!--      </router-link>-->
+      </section>
+    </div>
 
 
-
-<!--      <router-link to="/projects/uptime">-->
-<!--        <div class="project-container inverse" style="background-color: #401361;">-->
-<!--          <div class="project">-->
-<!--            <div class="project-media" style="background: url(/img/home/uptime.png) no-repeat center center">-->
-<!--            </div>-->
-<!--            <div class="project-text">-->
-<!--              <p class="project-desc">-->
-<!--                Experimental branding for an environmental control company that I worked for years ago.-->
-<!--              </p>-->
-<!--            </div>-->
-<!--          </div>-->
-<!--        </div>-->
-<!--      </router-link>-->
 
     <footer>
-      <site-footer class="site-footer-container"></site-footer>
+      <p>How can we help you?</p>
     </footer>
 
-  </div>
+  </main>
 </template>
 
 <script>
-import SiteHeader from '@/components/SiteHeader.vue';
-import SiteFooter from "@/components/SiteFooter.vue";
 export default {
   name: "home",
-  components: { SiteHeader, SiteFooter }
 };
 </script>
 
 <style lang="scss">
-  .hero-sherif {
-    width: 250px;
-    height: 250px;
-    padding: 24px;
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap');
+
+  body {
+    background-color: #013143;
+    color: rgba(255,255,255,.8);    
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
   }
-  .project-container {
-    width: 100%;
+
+  h1, 
+  h2, 
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+    font-family: 'Bebas Neue', cursive;
+    color: #fff;    
+  }
+
+  h1 {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 41.875%; //640px
+    margin: auto;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 4rem;
+    margin-bottom: 10rem;
+    border-bottom: 1px solid #fff;
+    font-size: 7.5rem;
   }
-  .project-container {
-    flex-direction: row-reverse;
-  }
-  .project-text.inverse {
-    color: #fff;
-  }
-  .project {
-    width: 100%;
-    max-width: 1440px;
+
+  h1 span {
     display: flex;
-    justify-content: space-between;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    line-height: 1.5rem;  
+    color: rgba(255,255,255,.8);
   }
-  .project.reverse-layout {
-    flex-direction: row-reverse;
+
+  h2 {
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
   }
-  .project-text,
-  .project-media {
-    width: 50%;
+
+  h3 {
+    font-size: 2rem;
+    margin-bottom: 4rem;
   }
-  .project-media {
-    display: flex;
-    align-items: flex-end;
+
+  a {
+    color: #84DCC6;
   }
-  .project-media img {
-    margin-top: 64px;
-  }
-  .project-text {
+
+  footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    padding-left: 10%;
-    padding-right: 10%;
-    text-align: center;
   }
-  .project-title {
-    font-size: 48px;
-    margin-bottom: 24px;
-    line-height: 1;
-    text-transform: uppercase;
-  }
-  .project-desc {
-    font-size: 20px;
-  }
-  .cocoa-bg {
-    background-image: linear-gradient(180deg, #F9E9AB 0%, #F0CF73 100%);
-  }
-  .media-ezlynx {
-    max-width: 90%;
-    background: url(/img/projects/ezlynx/ezlynx-policies.png) no-repeat left top;
-    height: 584px;
+  footer p {    
+    margin-top: 8rem;
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    width: 20%;
+    border-top: 1px solid rgba(255,255,255, 0.6);
+    border-bottom: 1px solid rgba(255,255,255, 0.6);
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    text-align: center;    
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2.5rem;
+    color: rgba(255,255,255,.6);
+
   }
 
-  @media only screen and (max-width: 1100px) {
-    .hero {
-      align-items: center;
-      text-align: center;
-    }
-    .hero-text {
+  .profile {
+    display: flex;
+    justify-content: center;    
+  }
+  .profile section {
+    width: 31.7361111%;
+    text-align: center;
+  }
+  .profile-left {
+    padding-right: 8.888888%;
+    border-right: 1px dashed rgba(255,255,255,.6)
+  }
+  .profile-right {
+    padding-left: 8.888888%;
+  }
+  .profile-contact {    
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    padding-bottom: 4rem;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3rem;
+  }
+
+  @media only screen and (max-width: 1024px) {
+    h1 {
       width: 90%;
     }
-    .project {
+    .profile {
       flex-direction: column;
       align-items: center;
-      padding: 48px 20px 0 20px;
     }
-    .project.reverse-layout {
-      flex-direction: column;
-    }
-    .project-text {
+    .profile section {
       width: 90%;
+      padding: 0;
     }
-    .project-media {
-      max-width: 90%;
-      background-size: 100%;
+    .profile-left {
+      border-right: none;
     }
+    .profile-contact {
+      border-bottom: 1px solid rgba(255,255,255,.4);
+    }
+
+    footer p {
+      width: 20rem;
+    }
+    
   }
 </style>
